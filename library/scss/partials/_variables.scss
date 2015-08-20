@@ -17,31 +17,42 @@ Need help w/ choosing your colors? Try this site out:
 http://0to255.com/
 *********************/
 
-$alert-yellow:      #ebe16f;
-$alert-red:         #fbe3e4;
-$alert-green:       #e6efc2;
-$alert-blue:        #d5edf8;
+$alert-yellow:     		#ebe16f;
+$alert-red:         	#fbe3e4;
+$alert-green:       	#e6efc2;
+$alert-blue:        	#d5edf8;
 
-$black:             #323944;
-$white:             #fff;
+$black:             	#333;
+$white:             	#fff;
 
-$light-gray:        #f8f9fa;
-$gray:              #eaedf2;
-$text-color:        #5c6b80;
-$meta-gray:         #9fa6b4;
+$light-gray:        	#f8f9fa;
+$gray:              	#eaedf2;
+$text-color:        	#5c6b80;
+$meta-gray:         	#9fa6b4;
 
-$tan:               #eceee5;
+$sundial-orange			#f39930;
+$sundial-dark-orange	#f05629;
+$sundial-red			#c01d2e;
+$sundial-pink			#de1a58;
+$sundial-blue			#0e515d;
+$sundial-dark-blue		#125860;
+$sundial-green			#046838;
+$sundial-purple			#682c96;
+$nubian-gray			#565553;
+$shea-brown				#56280e;
 
-$green:             #7dd667;
+$tan:               	#eceee5;
 
-$bones-pink:        #f01d4f;
-$blue:              #2980b9;
+$green:             	#7dd667;
 
-$link-color:        $bones-pink;
-$link-hover:        darken($link-color, 9%);
+$bones-pink:        	#f01d4f;
+$blue:              	#2980b9;
 
-$border-color:      #ccc;
-$disabled-gray:     #cfcfcf;
+$link-color:        	$bones-pink;
+$link-hover:        	darken($link-color, 9%);
+
+$border-color:      	#ccc;
+$disabled-gray:     	#cfcfcf;
 
 
 /*
