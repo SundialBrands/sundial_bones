@@ -346,7 +346,7 @@ NAVIGATION STYLES
 }
 /* line 44, ../scss/breakpoints/_768up.scss */
 .nav ul {
-  background: #333;
+  background: transparent;
   margin-top: 0;
 }
 /* line 48, ../scss/breakpoints/_768up.scss */
@@ -368,8 +368,8 @@ NAVIGATION STYLES
 }
 /* line 59, ../scss/breakpoints/_768up.scss */
 .nav li a:hover, .nav li a:focus {
-  color: #fff;
-  text-decoration: underline;
+  color: #f05629;
+  text-decoration: none;
 }
 /* line 71, ../scss/breakpoints/_768up.scss */
 .nav li ul.sub-menu,
