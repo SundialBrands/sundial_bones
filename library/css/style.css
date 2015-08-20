@@ -1532,7 +1532,7 @@ GENERAL STYLES
 *********************/
 /* line 18, ../scss/breakpoints/_base.scss */
 body {
-  font-family: "Lato", "Gotham", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Gotham", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 100%;
   line-height: 1.5;
   color: #5c6b80;
@@ -1668,7 +1668,7 @@ HEADER STYLES
 *********************/
 /* line 155, ../scss/breakpoints/_base.scss */
 .header {
-  background-color: #333;
+  background-color: #fff;
 }
 
 /* line 159, ../scss/breakpoints/_base.scss */
@@ -1677,7 +1677,7 @@ HEADER STYLES
 }
 /* line 162, ../scss/breakpoints/_base.scss */
 #logo a {
-  color: #fff;
+  color: #f39930;
 }
 
 /*********************
@@ -1711,7 +1711,7 @@ and more scalable.
 /* line 185, ../scss/breakpoints/_base.scss */
 .nav li a {
   display: block;
-  color: #fff;
+  color: #f39930;
   text-decoration: none;
   padding: 0.75em;
   /*
