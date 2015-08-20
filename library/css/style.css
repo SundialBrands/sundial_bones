@@ -1721,6 +1721,10 @@ and more scalable.
   keep this file as small as possible!
   */
 }
+/* line 197, ../scss/breakpoints/_base.scss */
+.nav li a:hover, .nav li a:focus {
+  color: #f05629;
+}
 /* line 218, ../scss/breakpoints/_base.scss */
 .nav li ul.sub-menu li a,
 .nav li ul.children li a {
