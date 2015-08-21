@@ -136,7 +136,7 @@ h1.front-page-top {
 
 h1.front-page-bottom {
 	font-weight: 700;
-	font-size: 2.25em;
+	font-size: 2em;
 	text-align: center;
 }
 
@@ -208,7 +208,9 @@ and more scalable.
 			display: block;
 			color: $sundial-orange;
 			text-decoration: none;
-			padding: 0.75em;
+			padding: 0.75em .5em;
+    		border-right: 1px solid;
+    		font-size: .9em;
 
 			/*
 			remember this is for mobile ONLY, so there's no need
@@ -223,7 +225,7 @@ and more scalable.
 
 		&:first-child {}
 
-		&:last-child {}
+		&:last-child { a{border:0;}}
 
 		/*
 		so you really have to rethink your dropdowns for mobile.
