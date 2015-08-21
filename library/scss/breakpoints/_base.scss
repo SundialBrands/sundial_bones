@@ -481,6 +481,7 @@ POSTS & CONTENT STYLES
 				height: 200px;
 				overflow: hidden;
 				position: relative;
+				margin-bottom: 1em;
 				
 				img {
 					position: relative;
@@ -497,6 +498,17 @@ POSTS & CONTENT STYLES
 					position: absolute;
 					top: 20px;
 					left: 20px;
+					text-align: left;
+					h1 {
+						margin: 15px 0 0;
+						font-size: 4em;
+						line-height: .75;
+						font-weight: 700;
+					}
+					p {
+						text-align: left;
+						margin: 0 5px 0;
+					}
 				}
 			}
 
