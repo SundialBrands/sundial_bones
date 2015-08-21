@@ -288,10 +288,8 @@ function sundial_bones_page_styles_fields() {
 	</script>
 	<?php wp_nonce_field( 'sundial_bones_page_styles_meta_box', 'sundial_bones_page_styles_nonce' ); ?>
 	<?php 
-		if( !empty(get_post_meta( $post->id, 'sundial_bones_text_color' ) ) ) {
-			$tc = get_post_meta( $post->id, 'sundial_bones_text_color' );
-		}
-		else {
+		$tc = get_post_meta( $post->id, 'sundial_bones_text_color' );
+		if( empty( $tc ) ) {
 			$tc = 'default';
 		}
 	?>
