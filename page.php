@@ -7,10 +7,10 @@
 						<main id="main" class="m-all t-all d-all cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 							<?php get_header(); ?>
 							<?php 
-								$txtcolor = get_post_meta( $post->ID, 'sundial_bones_text-color', true );
+								$txtcolor = get_post_meta( $post->ID, 'sundial_bones_text_color', true );
 								if( is_page() && !empty( $txtcolor ) ) {
 		
-									$txtcolor = 'text-color-' . get_post_meta( $post->ID, 'sundial_bones_text-color', true );
+									$txtcolor = 'page-color-' . get_post_meta( $post->ID, 'sundial_bones_text_color', true );
 								}
 								else {
 								
