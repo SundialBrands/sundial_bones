@@ -21,13 +21,14 @@
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class( array( 'cf', $txtcolor ) ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
-
+							<?php //hide article header on front page ?>
+							<?php if( !( is_front_page() ) ): ?>
 								<header class="article-header">
 
 									<h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1>
 
 								</header> <?php // end article header ?>
-
+							<?php endif ?>
 								<section class="entry-content cf" itemprop="articleBody">
 									<?php
 										// the content (pretty self explanatory huh)
