@@ -272,16 +272,45 @@ function sundial_bones_page_styles_fields( $page ) {
 ?>
 	<script type="text/Javascript">
 	jQuery(document).ready(function() {
+		var isBgClick = false;
 		jQuery('#upload_image_button').click(function() {
+			isBgClick = true;
 			formfield = jQuery('#upload_image').attr('name');
 			tb_show('', 'media-upload.php?type=image&TB_iframe=true');
 		return false;
 	});
 
 	window.send_to_editor = function(html) {
-		imgurl = jQuery('img',html).attr('src');
-		jQuery('#upload_image').val(imgurl);
-		tb_remove();
+		if (isBgClick) {
+			imgurl = jQuery('img',html).attr('src');
+			jQuery('#upload_image').val(imgurl);
+			tb_remove();
+			isBgClick = false;
+		}
+		else {
+			var editor,
+				hasTinymce = typeof tinymce !== 'undefined',
+				hasQuicktags = typeof QTags !== 'undefined';
+
+			if ( ! wpActiveEditor ) {
+				if ( hasTinymce && tinymce.activeEditor ) {
+					editor = tinymce.activeEditor;
+					wpActiveEditor = editor.id;
+				} else if ( ! hasQuicktags ) {
+					return false;
+				}
+			} else if ( hasTinymce ) {
+				editor = tinymce.get( wpActiveEditor );
+			}
+
+			if ( editor && ! editor.isHidden() ) {
+				editor.execCommand( 'mceInsertContent', false, html );
+			} else if ( hasQuicktags ) {
+				QTags.insertContent( html );
+			} else {
+				document.getElementById( wpActiveEditor ).value += html;
+			}
+				}
 	}
 
 	});
