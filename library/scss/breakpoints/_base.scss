@@ -899,7 +899,14 @@ FOOTER STYLES
 
 		ul {
 
-			li {}
+			li {
+				a {
+					color: $white;
+				}
+				a:hover {
+					color: $sundial-dark-orange;
+				}
+			}
 
 		}
 

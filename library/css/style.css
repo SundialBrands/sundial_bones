@@ -2227,6 +2227,15 @@ it simple because you'll have to
 override these styles for the desktop
 view.
 */
+/* line 903, ../scss/breakpoints/_base.scss */
+.footer-links ul li a {
+  color: #fff;
+}
+/* line 906, ../scss/breakpoints/_base.scss */
+.footer-links ul li a:hover {
+  color: #f05629;
+}
+
 /* end .footer-links */
 /*********************
 LARGER MOBILE DEVICES
