@@ -293,9 +293,11 @@ function sundial_bones_page_styles_fields( $page ) {
 			$tc = 'default';
 		}
 		$bgimg = get_post_meta( $page->id, 'sundial_bones_background_image', true );
+		var_dump($tc);
+		var_dump($bgimg);
 	?>
 	<tr valign="top">
-		<td>Upload Image</td>
+		<td>Upload Image:</td>
 		<td><label for="upload_image">
 			<input id="upload_image" type="text" size="36" name="upload_image" value="<?php $bgimg ?>" />
 			<input id="upload_image_button" type="button" value="Upload Image" />
@@ -304,7 +306,7 @@ function sundial_bones_page_styles_fields( $page ) {
 		</td>
 	</tr>
 	<tr valign="top">
-		<td><br />Text Color</td>
+		<td><br />Text Color: </td>
 		<td><label for="text_color">
 			<select name="text_color">
 				<option value="default" <?php selected( $tc, 'default' ); ?>>Default</option>
