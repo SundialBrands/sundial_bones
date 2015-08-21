@@ -23,6 +23,7 @@ body {
 	background-color: $gray;
   	-webkit-font-smoothing: antialiased;
   	-moz-osx-font-smoothing: grayscale;
+  	background-size: contain;
 }
 
 /********************
@@ -265,7 +266,7 @@ POSTS & CONTENT STYLES
 }
 
 		.hentry {
-			background-color: rgba( $white, 0.95 );
+			background-color: rgba( $white, 0.9 );
 			border-radius: 0;
 			margin-bottom: 1.5em;
 			border: 0;
