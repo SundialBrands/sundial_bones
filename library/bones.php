@@ -187,7 +187,7 @@ function bones_theme_support() {
 		'width'         => 960,
 		'height'        => 200,
 		'flex-height'    => true,
-		'default-image' => get_template_directory_uri() . '/images/SUNDIALLOGO960.png',
+		'default-image' => get_template_directory_uri() . '/library/images/SUNDIALLOGO960.png',
 		'uploads'       => true,
 	);
 	add_theme_support( 'custom-header', $args );
