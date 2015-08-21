@@ -154,15 +154,15 @@ add_action( 'customize_register', 'bones_theme_customizer' );
 
 // Sidebars & Widgetizes Areas
 function bones_register_sidebars() {
-	register_sidebar(array(
-		'id' => 'sidebar1',
-		'name' => __( 'Sidebar 1', 'bonestheme' ),
-		'description' => __( 'The first (primary) sidebar.', 'bonestheme' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget' => '</div>',
-		'before_title' => '<h4 class="widgettitle">',
-		'after_title' => '</h4>',
-	));
+//		register_sidebar(array(
+// 		'id' => 'sidebar1',
+// 		'name' => __( 'Sidebar 1', 'bonestheme' ),
+// 		'description' => __( 'The first (primary) sidebar.', 'bonestheme' ),
+// 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+// 		'after_widget' => '</div>',
+// 		'before_title' => '<h4 class="widgettitle">',
+// 		'after_title' => '</h4>',
+// 	));
 
 	/*
 	to add more sidebars or widgetized areas, just copy
@@ -210,7 +210,7 @@ function bones_comments( $comment, $args, $depth ) {
           // create variable
           $bgauthemail = get_comment_author_email();
         ?>
-        <img data-gravatar="http://www.gravatar.com/avatar/<?php echo md5( $bgauthemail ); ?>?s=40" class="load-gravatar avatar avatar-48 photo" height="40" width="40" src="<?php echo get_template_directory_uri(); ?>/library/images/nothing.gif" />
+        <img data-gravatar="http://www.gravatar.com/avatar/<?php echo md5( $bgauthemail ); ?>?s=40" class="load-gravatar avatar avatar-48 photo" height="40" width="40" src="<?php echo get_template_directory_uri(); ?>/library/images/sundialsqare.gif" />
         <?php // end custom gravatar call ?>
         <?php printf(__( '<cite class="fn">%1$s</cite> %2$s', 'bonestheme' ), get_comment_author_link(), edit_comment_link(__( '(Edit)', 'bonestheme' ),'  ','') ) ?>
         <time datetime="<?php echo comment_time('Y-m-j'); ?>"><a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>"><?php comment_time(__( 'F jS, Y', 'bonestheme' )); ?> </a></time>
@@ -238,10 +238,99 @@ external fonts. If you're using Google Fonts, you
 can replace these fonts, change it in your scss files
 and be up and running in seconds.
 */
-function bones_fonts() {
-  wp_enqueue_style('googleFonts', 'http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic');
-}
+// function bones_fonts() {
+//   wp_enqueue_style('googleFonts', 'http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic');
+// }
 
 add_action('wp_enqueue_scripts', 'bones_fonts');
+
+/*
+Add media selector to page post type for background image.
+*/
+function sundial_bones_admin_scripts() {
+	wp_enqueue_script('media-upload');
+	wp_enqueue_script('thickbox');
+	wp_enqueue_script('jquery');
+}
+
+function sundial_bones_admin_styles() {
+	wp_enqueue_style('thickbox');
+}
+
+add_action('admin_print_scripts', 'sundial_bones_admin_scripts');
+add_action('admin_print_styles', 'sundial_bones_admin_styles');
+
+function sundial_bones_background_image_metabox() {
+
+	add_meta_box( 'sundial_bones_background_image_meta_box', 'Background Image', 'sundial_bones_background_image_fields', 'page', 'normal', 'high' );
+
+}
+
+function sundial_bones_background_image_fields() {
+
+?>
+	<script type="text/Javascript">
+	jQuery(document).ready(function() {
+		jQuery('#upload_image_button').click(function() {
+			formfield = jQuery('#upload_image').attr('name');
+			tb_show('', 'media-upload.php?type=image&TB_iframe=true');
+		return false;
+	});
+
+	window.send_to_editor = function(html) {
+		imgurl = jQuery('img',html).attr('src');
+		jQuery('#upload_image').val(imgurl);
+		tb_remove();
+	}
+
+	});
+	</script>
+	<?php wp_nonce_field( 'sundial_bones_background_image_meta_box', 'sundial_bones_background_image_nonce' ); ?>
+	<tr valign="top">
+		<td>Upload Image</td>
+		<td><label for="upload_image">
+			<input id="upload_image" type="text" size="36" name="upload_image" value="<?php echo $gearimage; ?>" />
+			<input id="upload_image_button" type="button" value="Upload Image" />
+			<br />Enter an URL or upload an image for the background of this page.
+			</label>
+		</td>
+	</tr>
+
+<?php
+}
+
+add_action( 'save_post', 'save_sundial_bones_background_image', 5, 2 );
+
+function save_sundial_bones_background_image( $page_id, $page ) {
+
+	//check security
+	if ( ! isset( $_POST['sundial_bones_background_image_nonce'] ) ) {
+	
+    	return $page_id;
+    
+    }	//end if ( ! isset( $_POST['tekserve_vendors_nonce'] ) )
+    $nonce = $_POST['sundial_bones_background_image_nonce'];
+	if ( ! wp_verify_nonce( $nonce, 'sundial_bones_background_image_meta_box' ) ) {
+	
+	  return $page_id;
+	
+	}	//end if ( ! wp_verify_nonce( $nonce, 'tekserve_vendors_meta_box' ) )
+	// If this is an autosave, our form has not been submitted, so we don't want to do anything.
+	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
+	
+	  return $page_id;
+	
+	}	//end if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE )
+    // Check post type for 'tekserve_vendors'
+    if ( $page->post_type == 'page' ) {
+    
+        // Store data in post meta table if present in post data
+        if ( isset( $_POST['upload_image'] ) ) {
+        
+            update_post_meta( $page_id, 'sundial_bones_background_image', $_REQUEST['upload_image'] );
+            
+        }	
+	}
+}
 
 /* DON'T DELETE THIS CLOSING TAG */ ?>

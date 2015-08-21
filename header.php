@@ -37,10 +37,20 @@
 
 		<?php // drop Google Analytics Here ?>
 		<?php // end analytics ?>
+		<?php 
+		
+		$pagebg = "";
+		if( is_page ) {
+		
+			$pagebg = 'style="background-image: url(' . get_post_meta( $post->ID, 'sundial_bones_background_image', true ) . ')"';
+		
+		}
+		
+		?>
 
 	</head>
 
-	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
+	<body <?php body_class(); ?> <?php itemscope itemtype="http://schema.org/WebPage">
 
 		<div id="container">
 

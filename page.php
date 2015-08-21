@@ -1,11 +1,11 @@
-<?php get_header(); ?>
+
 
 			<div id="content">
 
 				<div id="inner-content" class="wrap cf">
 
 						<main id="main" class="m-all t-all d-all cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
-
+							<?php get_header(); ?>
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
@@ -37,12 +37,12 @@
 										 * http://gizmodo.com/5841121/google-wants-to-help-you-avoid-stupid-annoying-multiple-page-articles
 										 *
 										*/
-										wp_link_pages( array(
-											'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'bonestheme' ) . '</span>',
-											'after'       => '</div>',
-											'link_before' => '<span>',
-											'link_after'  => '</span>',
-										) );
+										// wp_link_pages( array(
+// 											'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'bonestheme' ) . '</span>',
+// 											'after'       => '</div>',
+// 											'link_before' => '<span>',
+// 											'link_after'  => '</span>',
+// 										) );
 									?>
 								</section> <?php // end article section ?>
 
