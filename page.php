@@ -63,11 +63,11 @@
 							</article>
 
 							<?php endwhile; endif; ?>
-
+							<?php get_footer(); ?>
 						</main>
 
 				</div>
 
 			</div>
 
-<?php get_footer(); ?>
+
