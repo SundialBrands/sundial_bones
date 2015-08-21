@@ -260,6 +260,7 @@ function sundial_bones_admin_styles() {
 add_action('admin_print_scripts', 'sundial_bones_admin_scripts');
 add_action('admin_print_styles', 'sundial_bones_admin_styles');
 
+add_action( 'admin_init', 'sundial_bones_background_image_metabox' );
 function sundial_bones_background_image_metabox() {
 
 	add_meta_box( 'sundial_bones_background_image_meta_box', 'Background Image', 'sundial_bones_background_image_fields', 'page', 'normal', 'high' );
