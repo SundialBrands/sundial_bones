@@ -1998,9 +1998,9 @@ POSTS & CONTENT STYLES
 }
 /* line 502, ../scss/breakpoints/_base.scss */
 .entry-content .img-button .shade h1 {
-  margin: 15px 0 0;
-  font-size: 2.5em;
-  line-height: .75;
+  margin: 15px 5px 0;
+  font-size: 2.25em;
+  line-height: .95;
   font-weight: 700;
 }
 /* line 508, ../scss/breakpoints/_base.scss */
