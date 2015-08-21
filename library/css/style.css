@@ -1764,7 +1764,7 @@ POSTS & CONTENT STYLES
 /* line 278, ../scss/breakpoints/_base.scss */
 .hentry footer {
   padding: 1.5em;
-  border-top: 1px solid #f8f9fa;
+  border-top: 0;
 }
 /* line 282, ../scss/breakpoints/_base.scss */
 .hentry footer p {
@@ -2214,8 +2214,8 @@ FOOTER STYLES
 /* line 883, ../scss/breakpoints/_base.scss */
 .footer {
   clear: both;
-  background-color: #333;
-  color: #f8f9fa;
+  background-color: #f39930;
+  color: #fff;
 }
 
 /*

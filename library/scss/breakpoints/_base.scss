@@ -277,7 +277,7 @@ POSTS & CONTENT STYLES
 
 			footer {
 				padding: 1.5em;
-				border-top: 1px solid $light-gray;
+				border-top: 0;
 
 				p {
 					margin: 0;
@@ -882,8 +882,8 @@ FOOTER STYLES
 
 .footer {
 	clear: both;
-	background-color: $black;
-	color: $light-gray;
+	background-color: $sundial-orange;
+	color: $white;
 }
 
 	/*
