@@ -263,7 +263,7 @@ add_action('admin_print_styles', 'sundial_bones_admin_styles');
 add_action( 'admin_init', 'sundial_bones_page_styles_metabox' );
 function sundial_bones_page_styles_metabox() {
 
-	add_meta_box( 'sundial_bones_page_styles_meta_box', 'Background Image', 'sundial_bones_page_styles_fields', 'page', 'normal', 'high' );
+	add_meta_box( 'sundial_bones_page_styles_meta_box', 'Page Styles', 'sundial_bones_page_styles_fields', 'page', 'normal', 'high' );
 
 }
 
@@ -304,7 +304,7 @@ function sundial_bones_page_styles_fields( $page ) {
 		</td>
 	</tr>
 	<tr valign="top">
-		<td><br />Text Color: </td>
+		<td><hr /><br />Text Color: </td>
 		<td><label for="text_color">
 			<select name="text_color">
 				<option value="default" <?php selected( $tc, 'default' ); ?>>Default</option>
