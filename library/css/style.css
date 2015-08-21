@@ -1752,9 +1752,9 @@ POSTS & CONTENT STYLES
 /* line 267, ../scss/breakpoints/_base.scss */
 .hentry {
   background-color: #fff;
-  border-radius: 3px;
+  border-radius: 0;
   margin-bottom: 1.5em;
-  border: 1px solid #ccc;
+  border: 0;
 }
 /* line 273, ../scss/breakpoints/_base.scss */
 .hentry header {
