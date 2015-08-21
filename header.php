@@ -64,6 +64,7 @@
 					<?php // if you'd like to use the site description you can un-comment it below ?>
 					<?php // bloginfo('description'); ?>
 
+					<?php //hide nav on front page ?>
 					<?php if( !( is_front_page() ) ): ?>
 					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
 						<?php wp_nav_menu(array(
@@ -81,8 +82,6 @@
 						)); ?>
 
 					</nav>
-					<?php else: ?>
-						<h1> Home </h1>
 					<?php endif ?>
 
 				</div>
