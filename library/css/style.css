@@ -2216,8 +2216,9 @@ FOOTER STYLES
   clear: both;
   background-color: #f39930;
   color: #fff;
+  font-size: 8px;
 }
-/* line 888, ../scss/breakpoints/_base.scss */
+/* line 889, ../scss/breakpoints/_base.scss */
 .footer nav {
   display: table-cell;
 }
@@ -2231,18 +2232,18 @@ it simple because you'll have to
 override these styles for the desktop
 view.
 */
-/* line 908, ../scss/breakpoints/_base.scss */
+/* line 909, ../scss/breakpoints/_base.scss */
 .footer-links ul li a {
   color: #fff;
 }
-/* line 911, ../scss/breakpoints/_base.scss */
+/* line 912, ../scss/breakpoints/_base.scss */
 .footer-links ul li a:hover {
   color: #f05629;
 }
 
 /* end .footer-links */
-/* line 921, ../scss/breakpoints/_base.scss */
-.copyright {
+/* line 922, ../scss/breakpoints/_base.scss */
+.copyright, .address {
   display: table-cell;
   vertical-align: middle;
 }

@@ -884,6 +884,7 @@ FOOTER STYLES
 	clear: both;
 	background-color: $sundial-orange;
 	color: $white;
+	font-size: 8px;
 	
 	nav {
 		display: table-cell;
@@ -918,7 +919,7 @@ FOOTER STYLES
 	} /* end .footer-links */
 
 
-	.copyright {
+	.copyright, .address {
 		display: table-cell;
 		vertical-align: middle;
 	}
