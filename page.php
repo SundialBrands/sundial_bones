@@ -23,10 +23,11 @@
 							<article id="post-<?php the_ID(); ?>" <?php post_class( array( 'cf', $txtcolor ) ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 							<?php //hide article header on front page ?>
 							<?php if( !( is_front_page() ) ): ?>
+								<?php remove_filter('the_content', 'wpautop'); ?>
 								<header class="article-header">
 
 									<h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1>
-
+								
 								</header> <?php // end article header ?>
 							<?php endif ?>
 								<section class="entry-content cf" itemprop="articleBody">
