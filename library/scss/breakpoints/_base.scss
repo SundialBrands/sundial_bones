@@ -456,7 +456,7 @@ POSTS & CONTENT STYLES
 			*/
 			.alignleft, img.alignleft {}
 			.alignright, img.alignright {}
-			.aligncenter, img.aligncenter {}
+			.aligncenter, img.aligncenter {text-align:center;}
 
 			.size-auto,
 			.size-full,
@@ -474,6 +474,22 @@ POSTS & CONTENT STYLES
 				padding: 1.5em;
 				margin: 0 0 1.5em;
 				border-radius: 3px;
+			}
+			
+			.img-button {
+				max-width: 300px;
+				max-height: 200px;
+				overflow-y: hidden;
+				
+				img {
+					position: relative;
+					top: -1em;
+				}
+				
+				.shade {
+					background: rgba( $white, 0.9);
+					margin: 1em;
+				}
 			}
 
 		} /* end .entry-content */
