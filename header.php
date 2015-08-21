@@ -50,7 +50,7 @@
 
 	</head>
 
-	<body <?php body_class(); ?> <?php itemscope itemtype="http://schema.org/WebPage">
+	<body <?php body_class(); ?> <?php echo $pagebg ?>itemscope itemtype="http://schema.org/WebPage">
 
 		<div id="container">
 
