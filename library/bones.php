@@ -182,6 +182,15 @@ function bones_theme_support() {
 	    'admin-preview-callback' => ''
 	    )
 	);
+	
+	$args = array(
+		'width'         => 960,
+		'height'        => 200,
+		'flex-height'    => true,
+		'default-image' => get_template_directory_uri() . '/images/SUNDIALLOGO960.png',
+		'uploads'       => true,
+	);
+	add_theme_support( 'custom-header', $args );
 
 	// rss thingy
 	add_theme_support('automatic-feed-links');
