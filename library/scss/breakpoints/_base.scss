@@ -477,18 +477,26 @@ POSTS & CONTENT STYLES
 			}
 			
 			.img-button {
-				max-width: 300px;
-				max-height: 200px;
-				overflow-y: hidden;
+				width: 300px;
+				height: 200px;
+				overflow: hidden;
+				position: relative;
 				
 				img {
 					position: relative;
 					top: -1em;
+					max-width: 320px;
+					margin: 0;
 				}
 				
 				.shade {
 					background: rgba( $white, 0.9);
-					margin: 1em;
+					display: inline-block;
+					width: 260px;
+					height: 160px;
+					position: absolute;
+					top: 20px;
+					left: 20px;
 				}
 			}
 
