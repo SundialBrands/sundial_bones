@@ -1670,7 +1670,7 @@ HEADER STYLES
 *********************/
 /* line 157, ../scss/breakpoints/_base.scss */
 .header {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 /* line 161, ../scss/breakpoints/_base.scss */
