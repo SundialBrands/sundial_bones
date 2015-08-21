@@ -128,6 +128,16 @@ h1, .h1 {
 	line-height: 1.333em;
 }
 
+h1.front-page-top {
+	font-weight: 400;
+	font-size: 2em;
+}
+
+h1.front-page-bottom {
+	font-weight: 700;
+	font-size: 2.25em;
+}
+
 h2, .h2 {
 	font-size: 1.75em;
 	line-height: 1.4em;
@@ -300,7 +310,9 @@ POSTS & CONTENT STYLES
 
 		.single-title {}
 
-		.page-title {}
+		.page-title {
+			font-size: 3em;
+		}
 
 		.entry-title {}
 
