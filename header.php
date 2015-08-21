@@ -43,6 +43,9 @@
 		if( is_page ) {
 		
 			$pagebg = 'style="background-image: url(' . get_post_meta( $post->ID, 'sundial_bones_background_image', true ) . ')"';
+			if( empty( $pagebg ) ) {
+				$pagebg = "";
+			}
 		
 		}
 		

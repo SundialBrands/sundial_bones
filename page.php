@@ -6,17 +6,20 @@
 
 						<main id="main" class="m-all t-all d-all cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 							<?php get_header(); ?>
+							<?php 
+								$txtcolor = "";
+								if( is_page() && !empty( get_post_meta( $post->ID, 'sundial_bones_text-color', true ) ) ) {
+		
+									$txtcolor = 'text-color-' . get_post_meta( $post->ID, 'sundial_bones_text-color', true );
+								}
+							?>
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+							<article id="post-<?php the_ID(); ?>" <?php post_class( array( 'cf', $txtcolor ) ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
 								<header class="article-header">
 
 									<h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1>
-
-									<p class="byline vcard">
-										<?php printf( __( 'Posted', 'bonestheme').' <time class="updated" datetime="%1$s" itemprop="datePublished">%2$s</time> '.__( 'by',  'bonestheme').' <span class="author">%3$s</span>', get_the_time('Y-m-j'), get_the_time(get_option('date_format')), get_the_author_link( get_the_author_meta( 'ID' ) )); ?>
-									</p>
 
 								</header> <?php // end article header ?>
 

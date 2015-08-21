@@ -285,6 +285,12 @@ POSTS & CONTENT STYLES
 			}
 
 		} /* end .hentry */
+		
+		@each $pagecolor, $color in $page-colors {
+			.page-color-#{$pagecolor} {
+				color: $color;
+			}
+		}
 
 		.single-title,
 		.page-title,

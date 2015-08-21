@@ -260,14 +260,14 @@ function sundial_bones_admin_styles() {
 add_action('admin_print_scripts', 'sundial_bones_admin_scripts');
 add_action('admin_print_styles', 'sundial_bones_admin_styles');
 
-add_action( 'admin_init', 'sundial_bones_background_image_metabox' );
-function sundial_bones_background_image_metabox() {
+add_action( 'admin_init', 'sundial_bones_page_styles_metabox' );
+function sundial_bones_page_styles_metabox() {
 
-	add_meta_box( 'sundial_bones_background_image_meta_box', 'Background Image', 'sundial_bones_background_image_fields', 'page', 'normal', 'high' );
+	add_meta_box( 'sundial_bones_page_styles_meta_box', 'Background Image', 'sundial_bones_page_styles_fields', 'page', 'normal', 'high' );
 
 }
 
-function sundial_bones_background_image_fields() {
+function sundial_bones_page_styles_fields() {
 
 ?>
 	<script type="text/Javascript">
@@ -286,13 +286,41 @@ function sundial_bones_background_image_fields() {
 
 	});
 	</script>
-	<?php wp_nonce_field( 'sundial_bones_background_image_meta_box', 'sundial_bones_background_image_nonce' ); ?>
+	<?php wp_nonce_field( 'sundial_bones_page_styles_meta_box', 'sundial_bones_page_styles_nonce' ); ?>
+	<?php 
+		if( !empty(get_post_meta( $post->id, 'sundial_bones_text_color' ) ) ) {
+			$tc = get_post_meta( $post->id, 'sundial_bones_text_color' );
+		}
+		else {
+			$tc = 'default';
+		}
+	?>
 	<tr valign="top">
 		<td>Upload Image</td>
 		<td><label for="upload_image">
-			<input id="upload_image" type="text" size="36" name="upload_image" value="<?php echo $gearimage; ?>" />
+			<input id="upload_image" type="text" size="36" name="upload_image" value="" />
 			<input id="upload_image_button" type="button" value="Upload Image" />
 			<br />Enter an URL or upload an image for the background of this page.
+			</label>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td>Text Color</td>
+		<td><label for="text_color">
+			<select name="text_color">
+				<option value="default" <?php selected( $tc, 'default' ); ?>>Default</option>
+				<option value="orange" <?php selected( $tc, 'orange' ); ?>>Orange</option>
+				<option value="drkorange" <?php selected( $tc, 'drkorange' ); ?>>Dark Orange</option>
+				<option value="red" <?php selected( $tc, 'red' ); ?>>Red</option>
+				<option value="pink" <?php selected( $tc, 'pink' ); ?>>Pink</option>
+				<option value="blue" <?php selected( $tc, 'blue' ); ?>>Blue</option>
+				<option value="drkblue" <?php selected( $tc, 'drkblue' ); ?>>Dark Blue</option>
+				<option value="green" <?php selected( $tc, 'green' ); ?>>Green</option>
+				<option value="purple" <?php selected( $tc, 'purple' ); ?>>Purple</option>
+				<option value="gray" <?php selected( $tc, 'gray' ); ?>>Gray</option>
+				<option value="brown" <?php selected( $tc, 'brown' ); ?>>Brown</option>
+			</select>
+			<br />Select text color for this page.
 			</label>
 		</td>
 	</tr>
@@ -305,13 +333,13 @@ add_action( 'save_post', 'save_sundial_bones_background_image', 5, 2 );
 function save_sundial_bones_background_image( $page_id, $page ) {
 
 	//check security
-	if ( ! isset( $_POST['sundial_bones_background_image_nonce'] ) ) {
+	if ( ! isset( $_POST['sundial_bones_page_styles_nonce'] ) ) {
 	
     	return $page_id;
     
     }	//end if ( ! isset( $_POST['tekserve_vendors_nonce'] ) )
-    $nonce = $_POST['sundial_bones_background_image_nonce'];
-	if ( ! wp_verify_nonce( $nonce, 'sundial_bones_background_image_meta_box' ) ) {
+    $nonce = $_POST['sundial_bones_page_styles_nonce'];
+	if ( ! wp_verify_nonce( $nonce, 'sundial_bones_page_styles_meta_box' ) ) {
 	
 	  return $page_id;
 	
@@ -329,6 +357,12 @@ function save_sundial_bones_background_image( $page_id, $page ) {
         if ( isset( $_POST['upload_image'] ) ) {
         
             update_post_meta( $page_id, 'sundial_bones_background_image', $_REQUEST['upload_image'] );
+            
+        }
+        
+        if ( isset( $_POST['text_color'] ) ) {
+        
+            update_post_meta( $page_id, 'sundial_bones_text_color', $_REQUEST['text_color'] );
             
         }	
 	}
