@@ -884,6 +884,11 @@ FOOTER STYLES
 	clear: both;
 	background-color: $sundial-orange;
 	color: $white;
+	
+	nav {
+		display: table-cell;
+	}
+	
 }
 
 	/*
@@ -913,4 +918,7 @@ FOOTER STYLES
 	} /* end .footer-links */
 
 
-	.copyright {}
+	.copyright {
+		display: table-cell;
+		vertical-align: middle;
+	}

@@ -2217,6 +2217,10 @@ FOOTER STYLES
   background-color: #f39930;
   color: #fff;
 }
+/* line 888, ../scss/breakpoints/_base.scss */
+.footer nav {
+  display: table-cell;
+}
 
 /*
 if you checked out the link above:
@@ -2227,16 +2231,22 @@ it simple because you'll have to
 override these styles for the desktop
 view.
 */
-/* line 903, ../scss/breakpoints/_base.scss */
+/* line 908, ../scss/breakpoints/_base.scss */
 .footer-links ul li a {
   color: #fff;
 }
-/* line 906, ../scss/breakpoints/_base.scss */
+/* line 911, ../scss/breakpoints/_base.scss */
 .footer-links ul li a:hover {
   color: #f05629;
 }
 
 /* end .footer-links */
+/* line 921, ../scss/breakpoints/_base.scss */
+.copyright {
+  display: table-cell;
+  vertical-align: middle;
+}
+
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
