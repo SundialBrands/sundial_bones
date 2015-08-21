@@ -267,7 +267,7 @@ function sundial_bones_page_styles_metabox() {
 
 }
 
-function sundial_bones_page_styles_fields() {
+function sundial_bones_page_styles_fields( $page ) {
 
 ?>
 	<script type="text/Javascript">
@@ -288,22 +288,23 @@ function sundial_bones_page_styles_fields() {
 	</script>
 	<?php wp_nonce_field( 'sundial_bones_page_styles_meta_box', 'sundial_bones_page_styles_nonce' ); ?>
 	<?php 
-		$tc = get_post_meta( $post->id, 'sundial_bones_text_color' );
+		$tc = get_post_meta( $page->id, 'sundial_bones_text_color', true );
 		if( empty( $tc ) ) {
 			$tc = 'default';
 		}
+		$bgimg = get_post_meta( $page->id, 'sundial_bones_background_image', true );
 	?>
 	<tr valign="top">
 		<td>Upload Image</td>
 		<td><label for="upload_image">
-			<input id="upload_image" type="text" size="36" name="upload_image" value="" />
+			<input id="upload_image" type="text" size="36" name="upload_image" value="<?php $bgimg ?>" />
 			<input id="upload_image_button" type="button" value="Upload Image" />
 			<br />Enter an URL or upload an image for the background of this page.
 			</label>
 		</td>
 	</tr>
 	<tr valign="top">
-		<td>Text Color</td>
+		<td><br />Text Color</td>
 		<td><label for="text_color">
 			<select name="text_color">
 				<option value="default" <?php selected( $tc, 'default' ); ?>>Default</option>
