@@ -1539,7 +1539,7 @@ body {
   background-color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-size: cover;
+  background-size: contain;
 }
 
 /********************
