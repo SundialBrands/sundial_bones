@@ -2852,20 +2852,18 @@ you can add resource intensive styles.
   /* line 56, ../scss/breakpoints/_768up.scss */
   .nav li a {
     border-bottom: 0;
-    padding: 0.75em .5em;
     border-right: 1px solid;
     /*
     you can use hover styles here even though this size
     has the possibility of being a mobile device.
     */
   }
-  /* line 65, ../scss/breakpoints/_768up.scss */
+  /* line 64, ../scss/breakpoints/_768up.scss */
   .nav li a:hover, .nav li a:focus {
     color: #f05629;
     text-decoration: none;
-    border-right-color: #f39930;
   }
-  /* line 78, ../scss/breakpoints/_768up.scss */
+  /* line 76, ../scss/breakpoints/_768up.scss */
   .nav li ul.sub-menu,
   .nav li ul.children {
     margin-top: 0;
@@ -2876,7 +2874,7 @@ you can add resource intensive styles.
     z-index: 8999;
     /* highlight sub-menu current page */
   }
-  /* line 87, ../scss/breakpoints/_768up.scss */
+  /* line 85, ../scss/breakpoints/_768up.scss */
   .nav li ul.sub-menu li,
   .nav li ul.children li {
     /*
@@ -2885,7 +2883,7 @@ you can add resource intensive styles.
     for usability. k, bai.
     */
   }
-  /* line 89, ../scss/breakpoints/_768up.scss */
+  /* line 87, ../scss/breakpoints/_768up.scss */
   .nav li ul.sub-menu li a,
   .nav li ul.children li a {
     padding-left: 10px;
@@ -2894,25 +2892,31 @@ you can add resource intensive styles.
     width: 180px;
     border-bottom: 1px solid #ccc;
   }
-  /* line 106, ../scss/breakpoints/_768up.scss */
+  /* line 104, ../scss/breakpoints/_768up.scss */
   .nav li ul.sub-menu li:last-child a,
   .nav li ul.children li:last-child a {
     border-bottom: 0;
   }
-  /* line 116, ../scss/breakpoints/_768up.scss */
+  /* line 114, ../scss/breakpoints/_768up.scss */
   .nav li ul.sub-menu li ul,
   .nav li ul.children li ul {
     top: 0;
     left: 100%;
   }
-  /* line 131, ../scss/breakpoints/_768up.scss */
+  /* line 129, ../scss/breakpoints/_768up.scss */
   .nav li:hover > ul {
     top: auto;
     visibility: visible;
   }
 
   /* end .nav */
-  /* line 147, ../scss/breakpoints/_768up.scss */
+  /* line 144, ../scss/breakpoints/_768up.scss */
+  header .nav {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  /* line 148, ../scss/breakpoints/_768up.scss */
   #menu-main {
     display: block;
     opacity: 1;
@@ -2920,51 +2924,55 @@ you can add resource intensive styles.
     padding: 0;
     border: 0;
     background: transparent;
-    font-size: .75em;
+    font-size: .85em;
+    margin: 0 auto;
   }
-  /* line 155, ../scss/breakpoints/_768up.scss */
+  /* line 157, ../scss/breakpoints/_768up.scss */
   #menu-main li {
     float: left;
   }
-  /* line 157, ../scss/breakpoints/_768up.scss */
+  /* line 159, ../scss/breakpoints/_768up.scss */
   #menu-main li a {
     border-bottom: 0;
     padding: 0.75em .5em;
     border-right: 1px solid;
   }
-  /* line 162, ../scss/breakpoints/_768up.scss */
+  /* line 164, ../scss/breakpoints/_768up.scss */
   #menu-main li > a:hover, #menu-main li > a:active, #menu-main li > a:focus {
     background: transparent;
     box-shadow: none;
-    padding: 15px;
     border-right-color: #f39930;
+  }
+  /* line 170, ../scss/breakpoints/_768up.scss */
+  #menu-main li:last-child a {
+    border-right: 0;
   }
 
   /*********************
   SIDEBARS & ASIDES
   *********************/
-  /* line 175, ../scss/breakpoints/_768up.scss */
+  /* line 181, ../scss/breakpoints/_768up.scss */
   .sidebar {
     margin-top: 2.2em;
   }
 
-  /* line 179, ../scss/breakpoints/_768up.scss */
+  /* line 185, ../scss/breakpoints/_768up.scss */
   .widgettitle {
     border-bottom: 2px solid #444;
     margin-bottom: 0.75em;
   }
 
-  /* line 184, ../scss/breakpoints/_768up.scss */
+  /* line 190, ../scss/breakpoints/_768up.scss */
   .widget {
     padding: 0 10px;
     margin: 2.2em 0;
   }
-  /* line 189, ../scss/breakpoints/_768up.scss */
+  /* line 195, ../scss/breakpoints/_768up.scss */
   .widget ul li {
     margin-bottom: 0.75em;
     /* deep nesting */
   }
-  /* line 197, ../scss/breakpoints/_768up.scss */
+  /* line 203, ../scss/breakpoints/_768up.scss */
   .widget ul li ul {
     margin-top: 0.75em;
     padding-left: 1em;
@@ -2989,33 +2997,33 @@ you can add resource intensive styles.
   of overriding here if you styled them for
   mobile. Make sure to double check these!
   */
-  /* line 303, ../scss/breakpoints/_768up.scss */
+  /* line 309, ../scss/breakpoints/_768up.scss */
   #container > footer {
     position: fixed;
     bottom: 0;
     padding: 1em 0;
   }
 
-  /* line 309, ../scss/breakpoints/_768up.scss */
+  /* line 315, ../scss/breakpoints/_768up.scss */
   #inner-footer {
     width: 728px;
     display: table;
   }
 
-  /* line 314, ../scss/breakpoints/_768up.scss */
+  /* line 320, ../scss/breakpoints/_768up.scss */
   #inner-footer .copyright, #inner-footer .address {
     display: table-cell;
     vertical-align: middle;
     text-align: left;
   }
 
-  /* line 320, ../scss/breakpoints/_768up.scss */
+  /* line 326, ../scss/breakpoints/_768up.scss */
   .footer .wrap nav {
     display: table-cell;
     text-align: left;
   }
 
-  /* line 327, ../scss/breakpoints/_768up.scss */
+  /* line 333, ../scss/breakpoints/_768up.scss */
   .footer-links ul li {
     /*
     be careful with the depth of your menus.

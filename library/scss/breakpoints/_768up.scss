@@ -55,7 +55,6 @@ NAVIGATION STYLES
 
 		a {
 			border-bottom: 0;
-			padding: 0.75em .5em;
 			border-right: 1px solid;
 
 			/*
@@ -65,7 +64,6 @@ NAVIGATION STYLES
 			&:hover, &:focus {
 				color: $sundial-dark-orange;
 				text-decoration: none;
-				border-right-color: $sundial-orange;
 			}
 		}
 
@@ -143,7 +141,10 @@ NAVIGATION STYLES
 	}  /* end current highlighters */
 
 } /* end .nav */
-
+header .nav {
+	width: 75%;
+	margin: 0 auto;
+}
 #menu-main {
 	display: block;
 	opacity: 1;
@@ -151,7 +152,8 @@ NAVIGATION STYLES
     padding: 0;
     border: 0;
     background: transparent;
-    font-size: .75em;
+    font-size: .85em;
+    margin: 0 auto;
     li {
     	float: left;
     	a {
@@ -162,9 +164,13 @@ NAVIGATION STYLES
 		> a:hover, > a:active, > a:focus {
 			background: transparent;
 			box-shadow: none;
-			padding: 15px;
 			border-right-color: $sundial-orange;
 		}
+    	&:last-child {
+    		a {
+    			border-right: 0;
+    		}
+    	}
     }
 }
 
