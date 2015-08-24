@@ -311,6 +311,13 @@ POSTS & CONTENT STYLES
 					}
 				}
 			}
+			a.page-color-#{$pagecolor} {
+				color: $color;
+				text-decoration: none;
+				&:hover, &:active {
+					color: darken( $color, 10% );
+				}
+			}
 		}
 
 		.single-title,
