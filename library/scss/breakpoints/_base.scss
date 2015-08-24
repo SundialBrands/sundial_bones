@@ -303,6 +303,13 @@ POSTS & CONTENT STYLES
 		@each $pagecolor, $color in $page-colors {
 			.page-color-#{$pagecolor} {
 				color: $color;
+				a {
+					color: $color;
+					text-decoration: none;
+					&:hover, &:active {
+						color: darken( $color, 10% );
+					}
+				}
 			}
 		}
 
