@@ -2847,7 +2847,7 @@ you can add resource intensive styles.
   }
 
   /* line 288, ../scss/breakpoints/_768up.scss */
-  footer nav {
+  footer > nav {
     display: table-cell;
     text-align: left;
   }

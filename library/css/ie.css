@@ -487,7 +487,7 @@ mobile. Make sure to double check these!
 }
 
 /* line 288, ../scss/breakpoints/_768up.scss */
-footer nav {
+footer > nav {
   display: table-cell;
   text-align: left;
 }
