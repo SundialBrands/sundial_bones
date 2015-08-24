@@ -333,7 +333,7 @@ function sundial_bones_page_styles_fields( $page ) {
 		</td>
 	</tr>
 	<tr valign="top">
-		<td><hr /><br />Text Color: </td>
+		<td><hr /><br />Content Background Color: </td>
 		<td><label for="text_color">
 			<select name="text_color">
 				<option value="default" <?php selected( $tc, 'default' ); ?>>Default</option>
@@ -348,7 +348,7 @@ function sundial_bones_page_styles_fields( $page ) {
 				<option value="gray" <?php selected( $tc, 'gray' ); ?>>Gray</option>
 				<option value="brown" <?php selected( $tc, 'brown' ); ?>>Brown</option>
 			</select>
-			<br />Select text color for this page.
+			<br />Select color for the background color for content on this page.
 			</label>
 		</td>
 	</tr>

@@ -412,21 +412,45 @@ POSTS & CONTENT STYLES
 		} /* end .hentry */
 		
 		@each $pagecolor, $color in $page-colors {
-			.page-color-#{$pagecolor} {
-				color: $color;
-				a {
-					color: $color;
+			@if $color == default {
+				header.page-color-#{$pagecolor},
+				.hentry.page-color-#{$pagecolor} {
+					color: $sundial-orange;
+					a {
+						color: $sundial-orange;
+						text-decoration: none;
+						&:hover, &:active {
+							color: darken( $sundial-orange, 10% );
+						}
+					}
+				}
+				a.page-color-#{$pagecolor} {
+					color: $sundial-orange;
 					text-decoration: none;
 					&:hover, &:active {
-						color: darken( $color, 10% );
+						color: darken( $sundial-orange, 10% );
 					}
 				}
 			}
-			a.page-color-#{$pagecolor} {
-				color: $color;
-				text-decoration: none;
-				&:hover, &:active {
-					color: darken( $color, 10% );
+			@else {
+				header.page-color-#{$pagecolor},
+				.hentry.page-color-#{$pagecolor} {
+					color: $white;
+					background-color: $color;
+					a {
+						darken( $white, 10% );
+						text-decoration: none;
+						&:hover, &:active {
+							color: darken( $white, 20% );
+						}
+					}
+				}
+				a.page-color-#{$pagecolor} {
+					color: $white;
+					text-decoration: none;
+					&:hover, &:active {
+						color: darken( $white, 10% );
+					}
 				}
 			}
 		}

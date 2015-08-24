@@ -50,6 +50,19 @@
 		}
 		
 		?>
+		
+		<?php 
+			$txtcolor = get_post_meta( $post->ID, 'sundial_bones_text_color', true );
+			if( is_page() && !empty( $txtcolor ) ) {
+
+				$txtcolor = ' page-color-' . get_post_meta( $post->ID, 'sundial_bones_text_color', true );
+			}
+			else {
+			
+				$txtcolor = "";
+			
+			}
+		?>
 
 	</head>
 
@@ -57,7 +70,7 @@
 
 		<div id="container">
 
-			<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+			<header class="header<?php echo $txtcolor ?>" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 
 				<div id="inner-header" class="wrap cf">
 
