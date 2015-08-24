@@ -244,6 +244,7 @@ and more scalable.
 			*/
 			&:hover, &:focus {
 				color: $sundial-dark-orange;
+				border-color: $sundial-orange;
 			}
 		}
 
@@ -316,13 +317,13 @@ and more scalable.
 	width: 200px;
 	z-index: 2; 
     &:after {
-		background: #51C1F1;
+		background: $sundial-orange;
 		-webkit-border-radius: 2px;
 		border-radius: 2px;
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box; 
-		color: #FFFFFF;
+		color: $white;
 		content: attr(data-open);
 		display: block;
 		font-size: 12px;
@@ -352,7 +353,7 @@ and more scalable.
 	height: auto;
 	display: none;
 	position: absolute;
-    right: 0;
+    left: 0;
     opacity: 0;
     min-width: 100%;
     z-index: 99;
@@ -360,9 +361,12 @@ and more scalable.
 
     li {
           height: auto;
+          display: block;
+          float: none;
      	a {
 			padding: 15px 15px;
 			height: auto;
+			border-right: 0;
 			&:hover, &:focus {
 				background: #F2F2F2;
 				box-shadow: inset 5px 0px $sundial:orange;

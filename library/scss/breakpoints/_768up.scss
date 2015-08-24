@@ -141,6 +141,21 @@ NAVIGATION STYLES
 
 } /* end .nav */
 
+#menu-main {
+	display: block;
+	opacity: 1;
+	position: relative;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    font-size: .75em;
+    li > a:hover, li > a:active  {
+    	background: transparent;
+    	box-shadow: 0;
+    	padding: 15px;
+    }
+}
+
 /*********************
 SIDEBARS & ASIDES
 *********************/
