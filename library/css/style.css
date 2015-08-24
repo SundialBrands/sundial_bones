@@ -2840,17 +2840,19 @@ you can add resource intensive styles.
   }
 
   /* line 282, ../scss/breakpoints/_768up.scss */
-  .copyright, .address {
+  #inner-footer .copyright, #inner-footer .address {
     display: table-cell;
     vertical-align: middle;
+    text-align: left;
   }
 
-  /* line 287, ../scss/breakpoints/_768up.scss */
+  /* line 288, ../scss/breakpoints/_768up.scss */
   footer nav {
     display: table-cell;
+    text-align: left;
   }
 
-  /* line 293, ../scss/breakpoints/_768up.scss */
+  /* line 295, ../scss/breakpoints/_768up.scss */
   .footer-links ul li {
     /*
     be careful with the depth of your menus.

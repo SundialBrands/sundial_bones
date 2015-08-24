@@ -279,13 +279,15 @@ mobile. Make sure to double check these!
 	width: 728px;
 }
 
-.copyright, .address {
+#inner-footer .copyright, #inner-footer .address {
 	display: table-cell;
 	vertical-align: middle;
+	text-align: left;
 }
 
 footer nav {
 	display: table-cell;
+	text-align: left;
 }
 
 .footer-links {
