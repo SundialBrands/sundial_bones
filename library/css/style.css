@@ -2893,7 +2893,7 @@ you can add resource intensive styles.
 
   /* line 20, ../scss/breakpoints/_1030up.scss */
   .hentry {
-    min-height: 60%;
+    min-height: 75%;
   }
 }
 /*********************
@@ -2911,6 +2911,10 @@ This is for the larger monitors and possibly full screen viewers.
   on larger screens.
   
   ******************************************************************/
+  /* line 12, ../scss/breakpoints/_1240up.scss */
+  .hentry {
+    min-height: 100%;
+  }
 }
 /*********************
 RETINA (2x RESOLUTION DEVICES)
