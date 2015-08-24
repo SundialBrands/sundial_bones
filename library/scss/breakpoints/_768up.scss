@@ -279,6 +279,15 @@ mobile. Make sure to double check these!
 	width: 728px;
 }
 
+.copyright, .address {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+footer nav {
+	display: table-cell;
+}
+
 .footer-links {
 	ul {
 		li {

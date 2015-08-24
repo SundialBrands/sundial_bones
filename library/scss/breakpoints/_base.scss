@@ -964,7 +964,8 @@ FOOTER STYLES
 	font-size: 8px;
 	
 	nav {
-		display: table-cell;
+		display: block;
+		text-align: center;
 	}
 	
 }
@@ -997,6 +998,6 @@ FOOTER STYLES
 
 
 	.copyright, .address {
-		display: table-cell;
-		vertical-align: middle;
+		display: block;
+		text-align: center;
 	}

@@ -2535,7 +2535,8 @@ FOOTER STYLES
 }
 /* line 966, ../scss/breakpoints/_base.scss */
 .footer nav {
-  display: table-cell;
+  display: block;
+  text-align: center;
 }
 
 /*
@@ -2547,20 +2548,20 @@ it simple because you'll have to
 override these styles for the desktop
 view.
 */
-/* line 986, ../scss/breakpoints/_base.scss */
+/* line 987, ../scss/breakpoints/_base.scss */
 .footer-links ul li a {
   color: #fff;
 }
-/* line 989, ../scss/breakpoints/_base.scss */
+/* line 990, ../scss/breakpoints/_base.scss */
 .footer-links ul li a:hover {
   color: #f05629;
 }
 
 /* end .footer-links */
-/* line 999, ../scss/breakpoints/_base.scss */
+/* line 1000, ../scss/breakpoints/_base.scss */
 .copyright, .address {
-  display: table-cell;
-  vertical-align: middle;
+  display: block;
+  text-align: center;
 }
 
 /*********************
@@ -2838,7 +2839,18 @@ you can add resource intensive styles.
     width: 728px;
   }
 
-  /* line 284, ../scss/breakpoints/_768up.scss */
+  /* line 282, ../scss/breakpoints/_768up.scss */
+  .copyright, .address {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  /* line 287, ../scss/breakpoints/_768up.scss */
+  footer nav {
+    display: table-cell;
+  }
+
+  /* line 293, ../scss/breakpoints/_768up.scss */
   .footer-links ul li {
     /*
     be careful with the depth of your menus.
