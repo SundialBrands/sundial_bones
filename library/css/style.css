@@ -1920,21 +1920,17 @@ POSTS & CONTENT STYLES
 }
 
 /* end .hentry */
-/* line 415, ../scss/breakpoints/_base.scss */
-header.page-color-default,
+/* line 416, ../scss/breakpoints/_base.scss */
 .hentry.page-color-default {
   color: #f39930;
 }
 /* line 418, ../scss/breakpoints/_base.scss */
-header.page-color-default a,
 .hentry.page-color-default a {
   color: #f39930;
   text-decoration: none;
 }
 /* line 421, ../scss/breakpoints/_base.scss */
-header.page-color-default a:hover, header.page-color-default a:active,
-.hentry.page-color-default a:hover,
-.hentry.page-color-default a:active {
+.hentry.page-color-default a:hover, .hentry.page-color-default a:active {
   color: #e3800d;
 }
 
@@ -1948,22 +1944,18 @@ header.page-color-default a:hover, header.page-color-default a:active,
   color: #e3800d;
 }
 
-/* line 435, ../scss/breakpoints/_base.scss */
-header.page-color-orange,
+/* line 436, ../scss/breakpoints/_base.scss */
 .hentry.page-color-orange {
   color: #fff;
   background-color: #f39930;
 }
 /* line 439, ../scss/breakpoints/_base.scss */
-header.page-color-orange a,
 .hentry.page-color-orange a {
   color: #e6e6e6;
   text-decoration: none;
 }
 /* line 442, ../scss/breakpoints/_base.scss */
-header.page-color-orange a:hover, header.page-color-orange a:active,
-.hentry.page-color-orange a:hover,
-.hentry.page-color-orange a:active {
+.hentry.page-color-orange a:hover, .hentry.page-color-orange a:active {
   color: #cccccc;
 }
 
@@ -1978,22 +1970,18 @@ header.page-color-orange a:hover, header.page-color-orange a:active,
   color: #e6e6e6;
 }
 
-/* line 435, ../scss/breakpoints/_base.scss */
-header.page-color-drkorange,
+/* line 436, ../scss/breakpoints/_base.scss */
 .hentry.page-color-drkorange {
   color: #fff;
   background-color: #f05629;
 }
 /* line 439, ../scss/breakpoints/_base.scss */
-header.page-color-drkorange a,
 .hentry.page-color-drkorange a {
   color: #e6e6e6;
   text-decoration: none;
 }
 /* line 442, ../scss/breakpoints/_base.scss */
-header.page-color-drkorange a:hover, header.page-color-drkorange a:active,
-.hentry.page-color-drkorange a:hover,
-.hentry.page-color-drkorange a:active {
+.hentry.page-color-drkorange a:hover, .hentry.page-color-drkorange a:active {
   color: #cccccc;
 }
 
@@ -2008,22 +1996,18 @@ header.page-color-drkorange a:hover, header.page-color-drkorange a:active,
   color: #e6e6e6;
 }
 
-/* line 435, ../scss/breakpoints/_base.scss */
-header.page-color-red,
+/* line 436, ../scss/breakpoints/_base.scss */
 .hentry.page-color-red {
   color: #fff;
   background-color: #CE2C00;
 }
 /* line 439, ../scss/breakpoints/_base.scss */
-header.page-color-red a,
 .hentry.page-color-red a {
   color: #e6e6e6;
   text-decoration: none;
 }
 /* line 442, ../scss/breakpoints/_base.scss */
-header.page-color-red a:hover, header.page-color-red a:active,
-.hentry.page-color-red a:hover,
-.hentry.page-color-red a:active {
+.hentry.page-color-red a:hover, .hentry.page-color-red a:active {
   color: #cccccc;
 }
 
@@ -2038,22 +2022,18 @@ header.page-color-red a:hover, header.page-color-red a:active,
   color: #e6e6e6;
 }
 
-/* line 435, ../scss/breakpoints/_base.scss */
-header.page-color-salmon,
+/* line 436, ../scss/breakpoints/_base.scss */
 .hentry.page-color-salmon {
   color: #fff;
   background-color: #F15261;
 }
 /* line 439, ../scss/breakpoints/_base.scss */
-header.page-color-salmon a,
 .hentry.page-color-salmon a {
   color: #e6e6e6;
   text-decoration: none;
 }
 /* line 442, ../scss/breakpoints/_base.scss */
-header.page-color-salmon a:hover, header.page-color-salmon a:active,
-.hentry.page-color-salmon a:hover,
-.hentry.page-color-salmon a:active {
+.hentry.page-color-salmon a:hover, .hentry.page-color-salmon a:active {
   color: #cccccc;
 }
 
@@ -2068,22 +2048,18 @@ header.page-color-salmon a:hover, header.page-color-salmon a:active,
   color: #e6e6e6;
 }
 
-/* line 435, ../scss/breakpoints/_base.scss */
-header.page-color-pink,
+/* line 436, ../scss/breakpoints/_base.scss */
 .hentry.page-color-pink {
   color: #fff;
   background-color: #CC4FBF;
 }
 /* line 439, ../scss/breakpoints/_base.scss */
-header.page-color-pink a,
 .hentry.page-color-pink a {
   color: #e6e6e6;
   text-decoration: none;
 }
 /* line 442, ../scss/breakpoints/_base.scss */
-header.page-color-pink a:hover, header.page-color-pink a:active,
-.hentry.page-color-pink a:hover,
-.hentry.page-color-pink a:active {
+.hentry.page-color-pink a:hover, .hentry.page-color-pink a:active {
   color: #cccccc;
 }
 
@@ -2098,22 +2074,18 @@ header.page-color-pink a:hover, header.page-color-pink a:active,
   color: #e6e6e6;
 }
 
-/* line 435, ../scss/breakpoints/_base.scss */
-header.page-color-blue,
+/* line 436, ../scss/breakpoints/_base.scss */
 .hentry.page-color-blue {
   color: #fff;
   background-color: #420BEE;
 }
 /* line 439, ../scss/breakpoints/_base.scss */
-header.page-color-blue a,
 .hentry.page-color-blue a {
   color: #e6e6e6;
   text-decoration: none;
 }
 /* line 442, ../scss/breakpoints/_base.scss */
-header.page-color-blue a:hover, header.page-color-blue a:active,
-.hentry.page-color-blue a:hover,
-.hentry.page-color-blue a:active {
+.hentry.page-color-blue a:hover, .hentry.page-color-blue a:active {
   color: #cccccc;
 }
 
@@ -2128,22 +2100,18 @@ header.page-color-blue a:hover, header.page-color-blue a:active,
   color: #e6e6e6;
 }
 
-/* line 435, ../scss/breakpoints/_base.scss */
-header.page-color-drkblue,
+/* line 436, ../scss/breakpoints/_base.scss */
 .hentry.page-color-drkblue {
   color: #fff;
   background-color: #125860;
 }
 /* line 439, ../scss/breakpoints/_base.scss */
-header.page-color-drkblue a,
 .hentry.page-color-drkblue a {
   color: #e6e6e6;
   text-decoration: none;
 }
 /* line 442, ../scss/breakpoints/_base.scss */
-header.page-color-drkblue a:hover, header.page-color-drkblue a:active,
-.hentry.page-color-drkblue a:hover,
-.hentry.page-color-drkblue a:active {
+.hentry.page-color-drkblue a:hover, .hentry.page-color-drkblue a:active {
   color: #cccccc;
 }
 
@@ -2158,22 +2126,18 @@ header.page-color-drkblue a:hover, header.page-color-drkblue a:active,
   color: #e6e6e6;
 }
 
-/* line 435, ../scss/breakpoints/_base.scss */
-header.page-color-green,
+/* line 436, ../scss/breakpoints/_base.scss */
 .hentry.page-color-green {
   color: #fff;
   background-color: #046838;
 }
 /* line 439, ../scss/breakpoints/_base.scss */
-header.page-color-green a,
 .hentry.page-color-green a {
   color: #e6e6e6;
   text-decoration: none;
 }
 /* line 442, ../scss/breakpoints/_base.scss */
-header.page-color-green a:hover, header.page-color-green a:active,
-.hentry.page-color-green a:hover,
-.hentry.page-color-green a:active {
+.hentry.page-color-green a:hover, .hentry.page-color-green a:active {
   color: #cccccc;
 }
 
@@ -2188,22 +2152,18 @@ header.page-color-green a:hover, header.page-color-green a:active,
   color: #e6e6e6;
 }
 
-/* line 435, ../scss/breakpoints/_base.scss */
-header.page-color-lime,
+/* line 436, ../scss/breakpoints/_base.scss */
 .hentry.page-color-lime {
   color: #fff;
   background-color: #9DCC15;
 }
 /* line 439, ../scss/breakpoints/_base.scss */
-header.page-color-lime a,
 .hentry.page-color-lime a {
   color: #e6e6e6;
   text-decoration: none;
 }
 /* line 442, ../scss/breakpoints/_base.scss */
-header.page-color-lime a:hover, header.page-color-lime a:active,
-.hentry.page-color-lime a:hover,
-.hentry.page-color-lime a:active {
+.hentry.page-color-lime a:hover, .hentry.page-color-lime a:active {
   color: #cccccc;
 }
 
@@ -2218,22 +2178,18 @@ header.page-color-lime a:hover, header.page-color-lime a:active,
   color: #e6e6e6;
 }
 
-/* line 435, ../scss/breakpoints/_base.scss */
-header.page-color-purple,
+/* line 436, ../scss/breakpoints/_base.scss */
 .hentry.page-color-purple {
   color: #fff;
   background-color: #8B23FF;
 }
 /* line 439, ../scss/breakpoints/_base.scss */
-header.page-color-purple a,
 .hentry.page-color-purple a {
   color: #e6e6e6;
   text-decoration: none;
 }
 /* line 442, ../scss/breakpoints/_base.scss */
-header.page-color-purple a:hover, header.page-color-purple a:active,
-.hentry.page-color-purple a:hover,
-.hentry.page-color-purple a:active {
+.hentry.page-color-purple a:hover, .hentry.page-color-purple a:active {
   color: #cccccc;
 }
 
@@ -2248,22 +2204,18 @@ header.page-color-purple a:hover, header.page-color-purple a:active,
   color: #e6e6e6;
 }
 
-/* line 435, ../scss/breakpoints/_base.scss */
-header.page-color-gray,
+/* line 436, ../scss/breakpoints/_base.scss */
 .hentry.page-color-gray {
   color: #fff;
   background-color: #565553;
 }
 /* line 439, ../scss/breakpoints/_base.scss */
-header.page-color-gray a,
 .hentry.page-color-gray a {
   color: #e6e6e6;
   text-decoration: none;
 }
 /* line 442, ../scss/breakpoints/_base.scss */
-header.page-color-gray a:hover, header.page-color-gray a:active,
-.hentry.page-color-gray a:hover,
-.hentry.page-color-gray a:active {
+.hentry.page-color-gray a:hover, .hentry.page-color-gray a:active {
   color: #cccccc;
 }
 
@@ -2278,22 +2230,18 @@ header.page-color-gray a:hover, header.page-color-gray a:active,
   color: #e6e6e6;
 }
 
-/* line 435, ../scss/breakpoints/_base.scss */
-header.page-color-brown,
+/* line 436, ../scss/breakpoints/_base.scss */
 .hentry.page-color-brown {
   color: #fff;
   background-color: #56280e;
 }
 /* line 439, ../scss/breakpoints/_base.scss */
-header.page-color-brown a,
 .hentry.page-color-brown a {
   color: #e6e6e6;
   text-decoration: none;
 }
 /* line 442, ../scss/breakpoints/_base.scss */
-header.page-color-brown a:hover, header.page-color-brown a:active,
-.hentry.page-color-brown a:hover,
-.hentry.page-color-brown a:active {
+.hentry.page-color-brown a:hover, .hentry.page-color-brown a:active {
   color: #cccccc;
 }
 

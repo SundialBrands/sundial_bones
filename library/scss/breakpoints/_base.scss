@@ -412,7 +412,7 @@ POSTS & CONTENT STYLES
 		
 		@each $pagecolor, $color in $page-colors {
 			@if $color == default {
-				header.page-color-#{$pagecolor},
+				// header.page-color-#{$pagecolor},
 				.hentry.page-color-#{$pagecolor} {
 					color: $sundial-orange;
 					a {
@@ -432,7 +432,7 @@ POSTS & CONTENT STYLES
 				}
 			}
 			@else {
-				header.page-color-#{$pagecolor},
+				// header.page-color-#{$pagecolor},
 				.hentry.page-color-#{$pagecolor} {
 					color: $white;
 					background-color: $color;
