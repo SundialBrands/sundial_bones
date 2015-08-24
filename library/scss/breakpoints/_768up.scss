@@ -149,10 +149,13 @@ NAVIGATION STYLES
     border: 0;
     background: transparent;
     font-size: .75em;
-    li > a:hover, li > a:active  {
-    	background: transparent;
-    	box-shadow: 0;
-    	padding: 15px;
+    li {
+    	float: left;
+		> a:hover, > a:active  {
+			background: transparent;
+			box-shadow: none;
+			padding: 15px;
+		}
     }
 }
 
