@@ -438,7 +438,7 @@ POSTS & CONTENT STYLES
 					color: $white;
 					background-color: $color;
 					a {
-						darken( $white, 10% );
+						color: darken( $white, 10% );
 						text-decoration: none;
 						&:hover, &:active {
 							color: darken( $white, 20% );
@@ -447,6 +447,7 @@ POSTS & CONTENT STYLES
 				}
 				a.page-color-#{$pagecolor} {
 					color: $white;
+					background-color: rgba( $color, 0.95);
 					text-decoration: none;
 					&:hover, &:active {
 						color: darken( $white, 10% );
