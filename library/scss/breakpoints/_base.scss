@@ -294,13 +294,13 @@ and more scalable.
 
 } /* end .nav */
 
-.main-menu > li {
+#menu-main > li {
      float:left;
      list-style: none;
 }
 #toggle {
 	display: none;
-	&:checked ~ .main-menu {
+	&:checked ~ #menu-main {
           display: block;
           opacity: 1;
     }
@@ -345,7 +345,7 @@ and more scalable.
 	     content: attr(data-close);
      }
 
-.main-menu {
+#menu-main {
 	background: #FFF;
 	border-top: 1px solid #51C1F1;
 	padding-top: 1em;
@@ -369,7 +369,7 @@ and more scalable.
     }
 
 }
-.main-menu > li > a:hover, .main-menu > li > a:focus {
+#menu-main > li > a:hover, #menu-main > li > a:focus {
 	background: #F2F2F2;
 	box-shadow: inset 5px 0px #51C1F1;
 	padding: 15px 15px 15px 25px;
