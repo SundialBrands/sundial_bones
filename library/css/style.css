@@ -1697,7 +1697,7 @@ HEADER STYLES
 }
 /* line 179, ../scss/breakpoints/_base.scss */
 #logo a {
-  color: #f39930;
+  color: #F1A64F;
   width: 25%;
   display: block;
 }
@@ -1762,7 +1762,7 @@ and more scalable.
 /* line 230, ../scss/breakpoints/_base.scss */
 .nav li a {
   display: block;
-  color: #f39930;
+  color: #F1A64F;
   text-decoration: none;
   padding: 0.75em .5em;
   border-right: 1px solid;
@@ -1777,7 +1777,7 @@ and more scalable.
 /* line 244, ../scss/breakpoints/_base.scss */
 .nav li a:hover, .nav li a:focus {
   color: #f05629;
-  border-color: #f39930;
+  border-color: #F1A64F;
 }
 /* line 252, ../scss/breakpoints/_base.scss */
 .nav li:last-child a {
@@ -1821,7 +1821,7 @@ and more scalable.
 }
 /* line 318, ../scss/breakpoints/_base.scss */
 .toggle:after {
-  background: #f39930;
+  background: #F1A64F;
   -webkit-border-radius: 2px;
   border-radius: 2px;
   -webkit-box-sizing: border-box;
@@ -1853,7 +1853,7 @@ and more scalable.
 /* line 348, ../scss/breakpoints/_base.scss */
 #menu-main {
   background: #FFF;
-  border-top: 1px solid #f39930;
+  border-top: 1px solid #F1A64F;
   padding-top: 1em;
   height: auto;
   display: none;
@@ -1879,7 +1879,7 @@ and more scalable.
 /* line 369, ../scss/breakpoints/_base.scss */
 #menu-main li a:hover, #menu-main li a:focus {
   background: #F2F2F2;
-  box-shadow: inset 5px 0px #f39930;
+  box-shadow: inset 5px 0px #F1A64F;
   padding: 15px 15px 15px 25px;
 }
 
@@ -1922,32 +1922,32 @@ POSTS & CONTENT STYLES
 /* end .hentry */
 /* line 416, ../scss/breakpoints/_base.scss */
 .hentry.page-color-default {
-  color: #f39930;
+  color: #F1A64F;
 }
 /* line 418, ../scss/breakpoints/_base.scss */
 .hentry.page-color-default a {
-  color: #f39930;
+  color: #F1A64F;
   text-decoration: none;
 }
 /* line 421, ../scss/breakpoints/_base.scss */
 .hentry.page-color-default a:hover, .hentry.page-color-default a:active {
-  color: #e3800d;
+  color: #ed8e20;
 }
 
 /* line 426, ../scss/breakpoints/_base.scss */
 .hentry a.page-color-default {
-  color: #f39930;
+  color: #F1A64F;
   text-decoration: none;
 }
 /* line 429, ../scss/breakpoints/_base.scss */
 .hentry a.page-color-default:hover, .hentry a.page-color-default:active {
-  color: #e3800d;
+  color: #ed8e20;
 }
 
 /* line 436, ../scss/breakpoints/_base.scss */
 .hentry.page-color-orange {
   color: #fff;
-  background-color: #f39930;
+  background-color: #F1A64F;
 }
 /* line 439, ../scss/breakpoints/_base.scss */
 .hentry.page-color-orange a {
@@ -1962,7 +1962,7 @@ POSTS & CONTENT STYLES
 /* line 447, ../scss/breakpoints/_base.scss */
 .hentry a.page-color-orange {
   color: #fff;
-  background-color: rgba(243, 153, 48, 0.95);
+  background-color: rgba(241, 166, 79, 0.95);
   text-decoration: none;
 }
 /* line 451, ../scss/breakpoints/_base.scss */
@@ -2749,7 +2749,7 @@ FOOTER STYLES
 .footer {
   clear: both;
   background-color: rgba(255, 255, 255, 0.95);
-  color: #f39930;
+  color: #F1A64F;
   font-size: 8px;
 }
 /* line 1097, ../scss/breakpoints/_base.scss */
@@ -2769,12 +2769,12 @@ view.
 */
 /* line 1118, ../scss/breakpoints/_base.scss */
 .footer-links ul li a {
-  color: #f39930;
+  color: #F1A64F;
 }
 /* line 1121, ../scss/breakpoints/_base.scss */
 .footer-links ul li a:hover {
   color: #f05629;
-  border-right: #f39930;
+  border-right: #F1A64F;
 }
 
 /* end .footer-links */
@@ -3029,7 +3029,7 @@ you can add resource intensive styles.
   #menu-main li > a:hover, #menu-main li > a:active, #menu-main li > a:focus {
     background: transparent;
     box-shadow: none;
-    border-right-color: #f39930;
+    border-right-color: #F1A64F;
     padding: 0.75em .5em;
   }
   /* line 169, ../scss/breakpoints/_768up.scss */

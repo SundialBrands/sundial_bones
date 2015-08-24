@@ -449,7 +449,7 @@ NAVIGATION STYLES
 #menu-main li > a:hover, #menu-main li > a:active, #menu-main li > a:focus {
   background: transparent;
   box-shadow: none;
-  border-right-color: #f39930;
+  border-right-color: #F1A64F;
   padding: 0.75em .5em;
 }
 /* line 169, ../scss/breakpoints/_768up.scss */
