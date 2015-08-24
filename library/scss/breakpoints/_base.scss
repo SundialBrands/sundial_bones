@@ -168,6 +168,9 @@ HEADER STYLES
 
 .header {
 	background-color: rgba( $white, 0.9 );
+	&.article-header {
+		padding-bottom: 0;
+	}
 }
 
 	#logo {
@@ -342,6 +345,8 @@ POSTS & CONTENT STYLES
 		.page {
 		
 			.entry-content {
+			
+				padding-top: 0;
 		
 				p {
 					text-align: justify;
