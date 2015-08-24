@@ -442,37 +442,44 @@ NAVIGATION STYLES
   float: left;
 }
 /* line 157, ../scss/breakpoints/_768up.scss */
+#menu-main li a {
+  border-bottom: 0;
+  padding: 0.75em .5em;
+  border-right: 1px solid;
+}
+/* line 162, ../scss/breakpoints/_768up.scss */
 #menu-main li > a:hover, #menu-main li > a:active, #menu-main li > a:focus {
   background: transparent;
   box-shadow: none;
   padding: 15px;
+  border-right-color: #f39930;
 }
 
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 169, ../scss/breakpoints/_768up.scss */
+/* line 175, ../scss/breakpoints/_768up.scss */
 .sidebar {
   margin-top: 2.2em;
 }
 
-/* line 173, ../scss/breakpoints/_768up.scss */
+/* line 179, ../scss/breakpoints/_768up.scss */
 .widgettitle {
   border-bottom: 2px solid #444;
   margin-bottom: 0.75em;
 }
 
-/* line 178, ../scss/breakpoints/_768up.scss */
+/* line 184, ../scss/breakpoints/_768up.scss */
 .widget {
   padding: 0 10px;
   margin: 2.2em 0;
 }
-/* line 183, ../scss/breakpoints/_768up.scss */
+/* line 189, ../scss/breakpoints/_768up.scss */
 .widget ul li {
   margin-bottom: 0.75em;
   /* deep nesting */
 }
-/* line 191, ../scss/breakpoints/_768up.scss */
+/* line 197, ../scss/breakpoints/_768up.scss */
 .widget ul li ul {
   margin-top: 0.75em;
   padding-left: 1em;
@@ -497,33 +504,33 @@ you'll probably need to do quite a bit
 of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
-/* line 297, ../scss/breakpoints/_768up.scss */
+/* line 303, ../scss/breakpoints/_768up.scss */
 #container > footer {
   position: fixed;
   bottom: 0;
   padding: 1em 0;
 }
 
-/* line 303, ../scss/breakpoints/_768up.scss */
+/* line 309, ../scss/breakpoints/_768up.scss */
 #inner-footer {
   width: 728px;
   display: table;
 }
 
-/* line 308, ../scss/breakpoints/_768up.scss */
+/* line 314, ../scss/breakpoints/_768up.scss */
 #inner-footer .copyright, #inner-footer .address {
   display: table-cell;
   vertical-align: middle;
   text-align: left;
 }
 
-/* line 314, ../scss/breakpoints/_768up.scss */
+/* line 320, ../scss/breakpoints/_768up.scss */
 .footer .wrap nav {
   display: table-cell;
   text-align: left;
 }
 
-/* line 321, ../scss/breakpoints/_768up.scss */
+/* line 327, ../scss/breakpoints/_768up.scss */
 .footer-links ul li {
   /*
   be careful with the depth of your menus.
