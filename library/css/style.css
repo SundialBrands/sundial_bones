@@ -1697,7 +1697,7 @@ HEADER STYLES
 }
 /* line 179, ../scss/breakpoints/_base.scss */
 #logo a {
-  color: #F1A64F;
+  color: #f05629;
   width: 25%;
   display: block;
 }
@@ -1762,7 +1762,7 @@ and more scalable.
 /* line 230, ../scss/breakpoints/_base.scss */
 .nav li a {
   display: block;
-  color: #F1A64F;
+  color: #f05629;
   text-decoration: none;
   padding: 0.75em .5em;
   border-right: 1px solid;
@@ -1821,7 +1821,7 @@ and more scalable.
 }
 /* line 318, ../scss/breakpoints/_base.scss */
 .toggle:after {
-  background: #F1A64F;
+  background: #f05629;
   -webkit-border-radius: 2px;
   border-radius: 2px;
   -webkit-box-sizing: border-box;
@@ -1842,7 +1842,7 @@ and more scalable.
 }
 /* line 339, ../scss/breakpoints/_base.scss */
 .toggle:hover:after {
-  background: #45ABD6;
+  background: #F1A64F;
 }
 
 /* line 344, ../scss/breakpoints/_base.scss */
@@ -1853,7 +1853,7 @@ and more scalable.
 /* line 348, ../scss/breakpoints/_base.scss */
 #menu-main {
   background: #FFF;
-  border-top: 1px solid #F1A64F;
+  border-top: 1px solid #f05629;
   padding-top: 1em;
   height: auto;
   display: none;
@@ -1922,26 +1922,26 @@ POSTS & CONTENT STYLES
 /* end .hentry */
 /* line 416, ../scss/breakpoints/_base.scss */
 .hentry.page-color-default {
-  color: #F1A64F;
+  color: #f05629;
 }
 /* line 418, ../scss/breakpoints/_base.scss */
 .hentry.page-color-default a {
-  color: #F1A64F;
+  color: #f05629;
   text-decoration: none;
 }
 /* line 421, ../scss/breakpoints/_base.scss */
 .hentry.page-color-default a:hover, .hentry.page-color-default a:active {
-  color: #ed8e20;
+  color: #d73c0f;
 }
 
 /* line 426, ../scss/breakpoints/_base.scss */
 .hentry a.page-color-default {
-  color: #F1A64F;
+  color: #f05629;
   text-decoration: none;
 }
 /* line 429, ../scss/breakpoints/_base.scss */
 .hentry a.page-color-default:hover, .hentry a.page-color-default:active {
-  color: #ed8e20;
+  color: #d73c0f;
 }
 
 /* line 436, ../scss/breakpoints/_base.scss */
@@ -2750,7 +2750,7 @@ FOOTER STYLES
 .footer {
   clear: both;
   background-color: rgba(255, 255, 255, 0.95);
-  color: #F1A64F;
+  color: #f05629;
   font-size: 8px;
 }
 /* line 1098, ../scss/breakpoints/_base.scss */
@@ -2770,12 +2770,12 @@ view.
 */
 /* line 1119, ../scss/breakpoints/_base.scss */
 .footer-links ul li a {
-  color: #F1A64F;
+  color: #f05629;
 }
 /* line 1122, ../scss/breakpoints/_base.scss */
 .footer-links ul li a:hover {
-  color: #f05629;
-  border-right: #F1A64F;
+  color: #F1A64F;
+  border-right: #f05629;
 }
 
 /* end .footer-links */

@@ -177,7 +177,7 @@ HEADER STYLES
 		margin: 0.75em 0;
 
 		a {
-			color: $sundial-orange;
+			color: $sundial-dark-orange;
 			width: 25%;
 			display: block;
 			
@@ -229,7 +229,7 @@ and more scalable.
 
 		a {
 			display: block;
-			color: $sundial-orange;
+			color: $sundial-dark-orange;
 			text-decoration: none;
 			padding: 0.75em .5em;
     		border-right: 1px solid;
@@ -316,7 +316,7 @@ and more scalable.
 	width: 200px;
 	z-index: 2; 
     &:after {
-		background: $sundial-orange;
+		background: $sundial-dark-orange;
 		-webkit-border-radius: 2px;
 		border-radius: 2px;
 		-webkit-box-sizing: border-box;
@@ -337,7 +337,7 @@ and more scalable.
      }
 
 	&:hover:after {
-	    background: #45ABD6;
+	    background: $sundial-orange;
      }
 }
 
@@ -347,7 +347,7 @@ and more scalable.
 
 #menu-main {
 	background: #FFF;
-	border-top: 1px solid $sundial-orange;
+	border-top: 1px solid $sundial-dark-orange;
 	padding-top: 1em;
 	height: auto;
 	display: none;
@@ -414,20 +414,20 @@ POSTS & CONTENT STYLES
 			@if $color == default {
 				// header.page-color-#{$pagecolor},
 				.hentry.page-color-#{$pagecolor} {
-					color: $sundial-orange;
+					color: $sundial-dark-orange;
 					a {
-						color: $sundial-orange;
+						color: $sundial-dark-orange;
 						text-decoration: none;
 						&:hover, &:active {
-							color: darken( $sundial-orange, 10% );
+							color: darken( $sundial-dark-orange, 10% );
 						}
 					}
 				}
 				.hentry a.page-color-#{$pagecolor} {
-					color: $sundial-orange;
+					color: $sundial-dark-orange;
 					text-decoration: none;
 					&:hover, &:active {
-						color: darken( $sundial-orange, 10% );
+						color: darken( $sundial-dark-orange, 10% );
 					}
 				}
 			}
@@ -1092,7 +1092,7 @@ FOOTER STYLES
 .footer {
 	clear: both;
 	background-color: rgba($white, 0.95);
-	color: $sundial-orange;
+	color: $sundial-dark-orange;
 	font-size: 8px;
 	
 	nav {
@@ -1117,11 +1117,11 @@ FOOTER STYLES
 
 			li {
 				a {
-					color: $sundial-orange;
+					color: $sundial-dark-orange;
 				}
 				a:hover {
-					color: $sundial-dark-orange;
-					border-right: $sundial-orange;
+					color: $sundial-orange;
+					border-right: $sundial-dark-orange;
 				}
 			}
 
