@@ -396,7 +396,7 @@ POSTS & CONTENT STYLES
 			border: 0;
 
 			header {
-				padding: 1.5em;
+				padding: 1.5em 1.5em 0;
 			}
 
 			footer {
@@ -479,6 +479,10 @@ POSTS & CONTENT STYLES
 			.entry-content {
 			
 				padding-top: 0;
+				
+				h2:first-child {
+					margin-top: 0;
+				}
 		
 				p {
 					text-align: justify;
