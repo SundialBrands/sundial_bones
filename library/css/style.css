@@ -2749,7 +2749,7 @@ FOOTER STYLES
 .footer {
   clear: both;
   background-color: rgba(255, 255, 255, 0.95);
-  color: #fff;
+  color: #f39930;
   font-size: 8px;
 }
 /* line 1097, ../scss/breakpoints/_base.scss */
@@ -2769,15 +2769,16 @@ view.
 */
 /* line 1118, ../scss/breakpoints/_base.scss */
 .footer-links ul li a {
-  color: #fff;
+  color: #f39930;
 }
 /* line 1121, ../scss/breakpoints/_base.scss */
 .footer-links ul li a:hover {
   color: #f05629;
+  border-right: #f39930;
 }
 
 /* end .footer-links */
-/* line 1131, ../scss/breakpoints/_base.scss */
+/* line 1132, ../scss/breakpoints/_base.scss */
 .copyright, .address {
   display: block;
   text-align: center;

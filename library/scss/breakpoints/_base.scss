@@ -1091,7 +1091,7 @@ FOOTER STYLES
 .footer {
 	clear: both;
 	background-color: rgba($white, 0.95);
-	color: $white;
+	color: $sundial-orange;
 	font-size: 8px;
 	
 	nav {
@@ -1116,10 +1116,11 @@ FOOTER STYLES
 
 			li {
 				a {
-					color: $white;
+					color: $sundial-orange;
 				}
 				a:hover {
 					color: $sundial-dark-orange;
+					border-right: $sundial-orange;
 				}
 			}
 
