@@ -468,7 +468,14 @@ you'll probably need to do quite a bit
 of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
-/* line 275, ../scss/breakpoints/_768up.scss */
+/* line 273, ../scss/breakpoints/_768up.scss */
+#container > footer {
+  position: fixed;
+  width: 729px;
+  bottom: 0;
+}
+
+/* line 281, ../scss/breakpoints/_768up.scss */
 .footer-links ul li {
   /*
   be careful with the depth of your menus.
