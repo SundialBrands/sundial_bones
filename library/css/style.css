@@ -2912,7 +2912,7 @@ you can add resource intensive styles.
   /* end .nav */
   /* line 144, ../scss/breakpoints/_768up.scss */
   header nav {
-    width: 75%;
+    width: 90%;
     margin: 0 auto;
   }
 
@@ -2942,8 +2942,9 @@ you can add resource intensive styles.
     background: transparent;
     box-shadow: none;
     border-right-color: #f39930;
+    padding: 0.75em .5em;
   }
-  /* line 170, ../scss/breakpoints/_768up.scss */
+  /* line 171, ../scss/breakpoints/_768up.scss */
   #menu-main li:last-child a {
     border-right: 0;
   }
@@ -2951,28 +2952,28 @@ you can add resource intensive styles.
   /*********************
   SIDEBARS & ASIDES
   *********************/
-  /* line 181, ../scss/breakpoints/_768up.scss */
+  /* line 182, ../scss/breakpoints/_768up.scss */
   .sidebar {
     margin-top: 2.2em;
   }
 
-  /* line 185, ../scss/breakpoints/_768up.scss */
+  /* line 186, ../scss/breakpoints/_768up.scss */
   .widgettitle {
     border-bottom: 2px solid #444;
     margin-bottom: 0.75em;
   }
 
-  /* line 190, ../scss/breakpoints/_768up.scss */
+  /* line 191, ../scss/breakpoints/_768up.scss */
   .widget {
     padding: 0 10px;
     margin: 2.2em 0;
   }
-  /* line 195, ../scss/breakpoints/_768up.scss */
+  /* line 196, ../scss/breakpoints/_768up.scss */
   .widget ul li {
     margin-bottom: 0.75em;
     /* deep nesting */
   }
-  /* line 203, ../scss/breakpoints/_768up.scss */
+  /* line 204, ../scss/breakpoints/_768up.scss */
   .widget ul li ul {
     margin-top: 0.75em;
     padding-left: 1em;
@@ -2997,33 +2998,33 @@ you can add resource intensive styles.
   of overriding here if you styled them for
   mobile. Make sure to double check these!
   */
-  /* line 309, ../scss/breakpoints/_768up.scss */
+  /* line 310, ../scss/breakpoints/_768up.scss */
   #container > footer {
     position: fixed;
     bottom: 0;
     padding: 1em 0;
   }
 
-  /* line 315, ../scss/breakpoints/_768up.scss */
+  /* line 316, ../scss/breakpoints/_768up.scss */
   #inner-footer {
     width: 728px;
     display: table;
   }
 
-  /* line 320, ../scss/breakpoints/_768up.scss */
+  /* line 321, ../scss/breakpoints/_768up.scss */
   #inner-footer .copyright, #inner-footer .address {
     display: table-cell;
     vertical-align: middle;
     text-align: left;
   }
 
-  /* line 326, ../scss/breakpoints/_768up.scss */
+  /* line 327, ../scss/breakpoints/_768up.scss */
   .footer .wrap nav {
     display: table-cell;
     text-align: left;
   }
 
-  /* line 333, ../scss/breakpoints/_768up.scss */
+  /* line 334, ../scss/breakpoints/_768up.scss */
   .footer-links ul li {
     /*
     be careful with the depth of your menus.

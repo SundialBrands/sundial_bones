@@ -142,7 +142,7 @@ NAVIGATION STYLES
 
 } /* end .nav */
 header nav {
-	width: 75%;
+	width: 90%;
 	margin: 0 auto;
 }
 #menu-main {
@@ -165,6 +165,7 @@ header nav {
 			background: transparent;
 			box-shadow: none;
 			border-right-color: $sundial-orange;
+			padding: 0.75em .5em;
 		}
     	&:last-child {
     		a {
