@@ -300,6 +300,10 @@ and more scalable.
 }
 #toggle {
 	display: none;
+	&:checked ~ .main-menu {
+          display: block;
+          opacity: 1;
+    }
 }
 .toggle {
 	cursor: pointer;
@@ -311,10 +315,6 @@ and more scalable.
 	margin: 0 auto;
 	width: 200px;
 	z-index: 2; 
-	&:checked ~ .nav-menu, ul.main-menu {
-          display: block;
-          opacity: 1;
-    }
     &:after {
 		background: #51C1F1;
 		-webkit-border-radius: 2px;
@@ -346,11 +346,14 @@ and more scalable.
      }
 
 .main-menu {
-          background: #FFF;
-          border-top: 1px solid #51C1F1;
-          padding-top: 1em;
-          height: auto;
-     
+	background: #FFF;
+	border-top: 1px solid #51C1F1;
+	padding-top: 1em;
+	height: auto;
+	display: none;
+	position: absolute;
+    right: 0;
+    opacity: 0;
 
     li {
           height: auto;
