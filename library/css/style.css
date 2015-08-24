@@ -2911,7 +2911,7 @@ you can add resource intensive styles.
 
   /* end .nav */
   /* line 144, ../scss/breakpoints/_768up.scss */
-  header .nav {
+  header nav {
     width: 75%;
     margin: 0 auto;
   }
