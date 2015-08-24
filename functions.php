@@ -341,9 +341,11 @@ function sundial_bones_page_styles_fields( $page ) {
 				<option value="drkorange" <?php selected( $tc, 'drkorange' ); ?>>Dark Orange</option>
 				<option value="red" <?php selected( $tc, 'red' ); ?>>Red</option>
 				<option value="pink" <?php selected( $tc, 'pink' ); ?>>Pink</option>
+				<option value="salmon" <?php selected( $tc, 'salmon' ); ?>>Salmon</option>
 				<option value="blue" <?php selected( $tc, 'blue' ); ?>>Blue</option>
 				<option value="drkblue" <?php selected( $tc, 'drkblue' ); ?>>Dark Blue</option>
 				<option value="green" <?php selected( $tc, 'green' ); ?>>Green</option>
+				<option value="lime" <?php selected( $tc, 'lime' ); ?>>Lime</option>
 				<option value="purple" <?php selected( $tc, 'purple' ); ?>>Purple</option>
 				<option value="gray" <?php selected( $tc, 'gray' ); ?>>Gray</option>
 				<option value="brown" <?php selected( $tc, 'brown' ); ?>>Brown</option>

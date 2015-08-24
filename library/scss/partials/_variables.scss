@@ -32,12 +32,14 @@ $meta-gray:         	#9fa6b4;
 
 $sundial-orange:		#f39930;
 $sundial-dark-orange:	#f05629;
-$sundial-red:			#c01d2e;
-$sundial-pink:			#de1a58;
-$sundial-blue:			#0e515d;
+$sundial-red:			#CE2C00;
+$sundial-pink:			#CC4FBF;
+$sundial-blue:			#420BEE;
 $sundial-dark-blue:		#125860;
 $sundial-green:			#046838;
-$sundial-purple:		#682c96;
+$sundial-lime:			#9DCC15
+$sundial-purple:		#8B23FF;
+$sundial-salmon:		#F15261;
 $nubian-gray:			#565553;
 $shea-brown:			#56280e;
 
@@ -66,10 +68,12 @@ $page-colors: (
 	orange: $sundial-orange,
 	drkorange: $sundial-dark-orange,
 	red: $sundial-red,
+	salmon: $sundial-salmon,
 	pink: $sundial-pink,
 	blue: $sundial-blue,
 	drkblue: $sundial-dark-blue,
 	green: $sundial-green,
+	lime: $sundial-lime,
 	purple: $sundial-purple,
 	gray: $nubian-gray,
 	brown: $shea-brown
