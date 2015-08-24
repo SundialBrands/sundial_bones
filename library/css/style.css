@@ -1776,8 +1776,8 @@ and more scalable.
 }
 /* line 244, ../scss/breakpoints/_base.scss */
 .nav li a:hover, .nav li a:focus {
-  color: #f05629;
-  border-color: #F1A64F;
+  color: #F1A64F;
+  border-color: #f05629;
 }
 /* line 252, ../scss/breakpoints/_base.scss */
 .nav li:last-child a {
