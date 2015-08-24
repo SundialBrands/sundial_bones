@@ -1939,12 +1939,12 @@ header.page-color-default a:hover, header.page-color-default a:active,
 }
 
 /* line 426, ../scss/breakpoints/_base.scss */
-a.page-color-default {
+.hentry a.page-color-default {
   color: #f39930;
   text-decoration: none;
 }
 /* line 429, ../scss/breakpoints/_base.scss */
-a.page-color-default:hover, a.page-color-default:active {
+.hentry a.page-color-default:hover, .hentry a.page-color-default:active {
   color: #e3800d;
 }
 
@@ -1968,13 +1968,13 @@ header.page-color-orange a:hover, header.page-color-orange a:active,
 }
 
 /* line 447, ../scss/breakpoints/_base.scss */
-a.page-color-orange {
+.hentry a.page-color-orange {
   color: #fff;
   background-color: rgba(243, 153, 48, 0.95);
   text-decoration: none;
 }
 /* line 451, ../scss/breakpoints/_base.scss */
-a.page-color-orange:hover, a.page-color-orange:active {
+.hentry a.page-color-orange:hover, .hentry a.page-color-orange:active {
   color: #e6e6e6;
 }
 
@@ -1998,13 +1998,13 @@ header.page-color-drkorange a:hover, header.page-color-drkorange a:active,
 }
 
 /* line 447, ../scss/breakpoints/_base.scss */
-a.page-color-drkorange {
+.hentry a.page-color-drkorange {
   color: #fff;
   background-color: rgba(240, 86, 41, 0.95);
   text-decoration: none;
 }
 /* line 451, ../scss/breakpoints/_base.scss */
-a.page-color-drkorange:hover, a.page-color-drkorange:active {
+.hentry a.page-color-drkorange:hover, .hentry a.page-color-drkorange:active {
   color: #e6e6e6;
 }
 
@@ -2028,13 +2028,13 @@ header.page-color-red a:hover, header.page-color-red a:active,
 }
 
 /* line 447, ../scss/breakpoints/_base.scss */
-a.page-color-red {
+.hentry a.page-color-red {
   color: #fff;
   background-color: rgba(192, 29, 46, 0.95);
   text-decoration: none;
 }
 /* line 451, ../scss/breakpoints/_base.scss */
-a.page-color-red:hover, a.page-color-red:active {
+.hentry a.page-color-red:hover, .hentry a.page-color-red:active {
   color: #e6e6e6;
 }
 
@@ -2058,13 +2058,13 @@ header.page-color-pink a:hover, header.page-color-pink a:active,
 }
 
 /* line 447, ../scss/breakpoints/_base.scss */
-a.page-color-pink {
+.hentry a.page-color-pink {
   color: #fff;
   background-color: rgba(222, 26, 88, 0.95);
   text-decoration: none;
 }
 /* line 451, ../scss/breakpoints/_base.scss */
-a.page-color-pink:hover, a.page-color-pink:active {
+.hentry a.page-color-pink:hover, .hentry a.page-color-pink:active {
   color: #e6e6e6;
 }
 
@@ -2088,13 +2088,13 @@ header.page-color-blue a:hover, header.page-color-blue a:active,
 }
 
 /* line 447, ../scss/breakpoints/_base.scss */
-a.page-color-blue {
+.hentry a.page-color-blue {
   color: #fff;
   background-color: rgba(14, 81, 93, 0.95);
   text-decoration: none;
 }
 /* line 451, ../scss/breakpoints/_base.scss */
-a.page-color-blue:hover, a.page-color-blue:active {
+.hentry a.page-color-blue:hover, .hentry a.page-color-blue:active {
   color: #e6e6e6;
 }
 
@@ -2118,13 +2118,13 @@ header.page-color-drkblue a:hover, header.page-color-drkblue a:active,
 }
 
 /* line 447, ../scss/breakpoints/_base.scss */
-a.page-color-drkblue {
+.hentry a.page-color-drkblue {
   color: #fff;
   background-color: rgba(18, 88, 96, 0.95);
   text-decoration: none;
 }
 /* line 451, ../scss/breakpoints/_base.scss */
-a.page-color-drkblue:hover, a.page-color-drkblue:active {
+.hentry a.page-color-drkblue:hover, .hentry a.page-color-drkblue:active {
   color: #e6e6e6;
 }
 
@@ -2148,13 +2148,13 @@ header.page-color-green a:hover, header.page-color-green a:active,
 }
 
 /* line 447, ../scss/breakpoints/_base.scss */
-a.page-color-green {
+.hentry a.page-color-green {
   color: #fff;
   background-color: rgba(4, 104, 56, 0.95);
   text-decoration: none;
 }
 /* line 451, ../scss/breakpoints/_base.scss */
-a.page-color-green:hover, a.page-color-green:active {
+.hentry a.page-color-green:hover, .hentry a.page-color-green:active {
   color: #e6e6e6;
 }
 
@@ -2178,13 +2178,13 @@ header.page-color-purple a:hover, header.page-color-purple a:active,
 }
 
 /* line 447, ../scss/breakpoints/_base.scss */
-a.page-color-purple {
+.hentry a.page-color-purple {
   color: #fff;
   background-color: rgba(104, 44, 150, 0.95);
   text-decoration: none;
 }
 /* line 451, ../scss/breakpoints/_base.scss */
-a.page-color-purple:hover, a.page-color-purple:active {
+.hentry a.page-color-purple:hover, .hentry a.page-color-purple:active {
   color: #e6e6e6;
 }
 
@@ -2208,13 +2208,13 @@ header.page-color-gray a:hover, header.page-color-gray a:active,
 }
 
 /* line 447, ../scss/breakpoints/_base.scss */
-a.page-color-gray {
+.hentry a.page-color-gray {
   color: #fff;
   background-color: rgba(86, 85, 83, 0.95);
   text-decoration: none;
 }
 /* line 451, ../scss/breakpoints/_base.scss */
-a.page-color-gray:hover, a.page-color-gray:active {
+.hentry a.page-color-gray:hover, .hentry a.page-color-gray:active {
   color: #e6e6e6;
 }
 
@@ -2238,13 +2238,13 @@ header.page-color-brown a:hover, header.page-color-brown a:active,
 }
 
 /* line 447, ../scss/breakpoints/_base.scss */
-a.page-color-brown {
+.hentry a.page-color-brown {
   color: #fff;
   background-color: rgba(86, 40, 14, 0.95);
   text-decoration: none;
 }
 /* line 451, ../scss/breakpoints/_base.scss */
-a.page-color-brown:hover, a.page-color-brown:active {
+.hentry a.page-color-brown:hover, .hentry a.page-color-brown:active {
   color: #e6e6e6;
 }
 
@@ -2997,13 +2997,7 @@ you can add resource intensive styles.
   }
 
   /* end .nav */
-  /* line 144, ../scss/breakpoints/_768up.scss */
-  header nav {
-    width: 90%;
-    margin: 0 auto;
-  }
-
-  /* line 148, ../scss/breakpoints/_768up.scss */
+  /* line 147, ../scss/breakpoints/_768up.scss */
   #menu-main {
     display: block;
     opacity: 1;
@@ -3012,26 +3006,25 @@ you can add resource intensive styles.
     border: 0;
     background: transparent;
     font-size: .85em;
-    margin: 0 auto;
   }
-  /* line 157, ../scss/breakpoints/_768up.scss */
+  /* line 155, ../scss/breakpoints/_768up.scss */
   #menu-main li {
     float: left;
   }
-  /* line 159, ../scss/breakpoints/_768up.scss */
+  /* line 157, ../scss/breakpoints/_768up.scss */
   #menu-main li a {
     border-bottom: 0;
     padding: 0.75em .5em;
     border-right: 1px solid;
   }
-  /* line 164, ../scss/breakpoints/_768up.scss */
+  /* line 162, ../scss/breakpoints/_768up.scss */
   #menu-main li > a:hover, #menu-main li > a:active, #menu-main li > a:focus {
     background: transparent;
     box-shadow: none;
     border-right-color: #f39930;
     padding: 0.75em .5em;
   }
-  /* line 171, ../scss/breakpoints/_768up.scss */
+  /* line 169, ../scss/breakpoints/_768up.scss */
   #menu-main li:last-child a {
     border-right: 0;
   }
@@ -3039,28 +3032,28 @@ you can add resource intensive styles.
   /*********************
   SIDEBARS & ASIDES
   *********************/
-  /* line 182, ../scss/breakpoints/_768up.scss */
+  /* line 180, ../scss/breakpoints/_768up.scss */
   .sidebar {
     margin-top: 2.2em;
   }
 
-  /* line 186, ../scss/breakpoints/_768up.scss */
+  /* line 184, ../scss/breakpoints/_768up.scss */
   .widgettitle {
     border-bottom: 2px solid #444;
     margin-bottom: 0.75em;
   }
 
-  /* line 191, ../scss/breakpoints/_768up.scss */
+  /* line 189, ../scss/breakpoints/_768up.scss */
   .widget {
     padding: 0 10px;
     margin: 2.2em 0;
   }
-  /* line 196, ../scss/breakpoints/_768up.scss */
+  /* line 194, ../scss/breakpoints/_768up.scss */
   .widget ul li {
     margin-bottom: 0.75em;
     /* deep nesting */
   }
-  /* line 204, ../scss/breakpoints/_768up.scss */
+  /* line 202, ../scss/breakpoints/_768up.scss */
   .widget ul li ul {
     margin-top: 0.75em;
     padding-left: 1em;
@@ -3085,33 +3078,33 @@ you can add resource intensive styles.
   of overriding here if you styled them for
   mobile. Make sure to double check these!
   */
-  /* line 310, ../scss/breakpoints/_768up.scss */
+  /* line 308, ../scss/breakpoints/_768up.scss */
   #container > footer {
     position: fixed;
     bottom: 0;
     padding: 1em 0;
   }
 
-  /* line 316, ../scss/breakpoints/_768up.scss */
+  /* line 314, ../scss/breakpoints/_768up.scss */
   #inner-footer {
     width: 728px;
     display: table;
   }
 
-  /* line 321, ../scss/breakpoints/_768up.scss */
+  /* line 319, ../scss/breakpoints/_768up.scss */
   #inner-footer .copyright, #inner-footer .address {
     display: table-cell;
     vertical-align: middle;
     text-align: left;
   }
 
-  /* line 327, ../scss/breakpoints/_768up.scss */
+  /* line 325, ../scss/breakpoints/_768up.scss */
   .footer .wrap nav {
     display: table-cell;
     text-align: left;
   }
 
-  /* line 334, ../scss/breakpoints/_768up.scss */
+  /* line 332, ../scss/breakpoints/_768up.scss */
   .footer-links ul li {
     /*
     be careful with the depth of your menus.
