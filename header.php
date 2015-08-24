@@ -70,6 +70,9 @@
 					<?php //hide nav on front page ?>
 					<?php if( !( is_front_page() ) ): ?>
 					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+						<h3 class="menu-toggle"><?php _e( 'Menu', 'twentytwelve' ); ?></h3>
+						<input type='checkbox' id='toggle'/>
+						<label for="toggle" class="toggle" data-open="Main Menu" data-close="Close Menu" onclick></label>
 						<?php wp_nav_menu(array(
     					         'container' => false,                           // remove nav container
     					         'container_class' => 'menu cf',                 // class of container (should you choose to use it)

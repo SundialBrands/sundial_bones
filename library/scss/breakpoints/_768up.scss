@@ -39,7 +39,39 @@ HEADER STYLES
 /*********************
 NAVIGATION STYLES
 *********************/
+.menu-main {
+	display: none;
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	width: 100%;
+	li {
+        display: block;
+        margin: 0;
+        width: 100%;
+        a {
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			display: block;
+			text-decoration: none;
+			width: 100%;
+		}
+	}
+}
 
+.toggle {
+	cursor: pointer;
+	display: block;
+	position: relative; 
+	-webkit-touch-callout: none; /* Disables OS callout when touching and holding a link */
+	-webkit-user-select: none;
+	user-select: none;
+	&:checked ~ .nav-menu, ul.main-menu {
+          display: block;
+          opacity: 1;
+     }
+}
 .nav {
 	border: 0;
 	ul {

@@ -201,6 +201,27 @@ the navs on the site so our css is cleaner
 and more scalable.
 */
 
+.menu-main {
+	display: none;
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	width: 100%;
+	li {
+        display: block;
+        margin: 0;
+        width: 100%;
+        a {
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			display: block;
+			text-decoration: none;
+			width: 100%;
+		}
+	}
+}
+
 .nav {
 	border-bottom: 0;
 	margin: 0;
@@ -272,6 +293,23 @@ and more scalable.
 	}  /* end current highlighters */
 
 } /* end .nav */
+
+.main-menu > li {
+     float:left;
+     list-style: none;
+}
+.toggle {
+	cursor: pointer;
+	display: block;
+	position: relative; 
+	-webkit-touch-callout: none; /* Disables OS callout when touching and holding a link */
+	-webkit-user-select: none;
+	user-select: none;
+	&:checked ~ .nav-menu, ul.main-menu {
+          display: block;
+          opacity: 1;
+     }
+}
 
 
 /*********************
