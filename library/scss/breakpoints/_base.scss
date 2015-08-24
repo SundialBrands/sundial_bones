@@ -298,6 +298,9 @@ and more scalable.
      float:left;
      list-style: none;
 }
+#toggle {
+	display: none;
+}
 .toggle {
 	cursor: pointer;
 	display: block;

@@ -1,22 +1,22 @@
 /*
 Error: Invalid CSS after "     }": expected selector or at-rule, was "}"
-        on line 370 of /Users/ccarino/sundial_bones/library/scss/breakpoints/_base.scss
+        on line 373 of /Users/ccarino/sundial_bones/library/scss/breakpoints/_base.scss
         from line 69 of /Users/ccarino/sundial_bones/library/scss/./style.scss
 
-365:      .main-menu > li > a:hover, .main-menu > li > a:focus {
-366:           background: #F2F2F2;
-367:           box-shadow: inset 5px 0px #51C1F1;
-368:           padding: 15px 15px 15px 25px;
-369:      }
-370: }
-371: 
-372: /*********************
-373: POSTS & CONTENT STYLES
-374: *********************\/
-375: 
+368:      .main-menu > li > a:hover, .main-menu > li > a:focus {
+369:           background: #F2F2F2;
+370:           box-shadow: inset 5px 0px #51C1F1;
+371:           padding: 15px 15px 15px 25px;
+372:      }
+373: }
+374: 
+375: /*********************
+376: POSTS & CONTENT STYLES
+377: *********************\/
+378: 
 
 Backtrace:
-/Users/ccarino/sundial_bones/library/scss/breakpoints/_base.scss:370
+/Users/ccarino/sundial_bones/library/scss/breakpoints/_base.scss:373
 /Users/ccarino/sundial_bones/library/scss/./style.scss:69
 /Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/scss/parser.rb:1162:in `expected'
 /Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/scss/parser.rb:1098:in `expected'
@@ -65,4 +65,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"     }\": expected selector or at-rule, was \"}\"\A         on line 370 of /Users/ccarino/sundial_bones/library/scss/breakpoints/_base.scss\A         from line 69 of /Users/ccarino/sundial_bones/library/scss/./style.scss\A \A 365:      .main-menu > li > a:hover, .main-menu > li > a:focus {\A 366:           background: #F2F2F2;\A 367:           box-shadow: inset 5px 0px #51C1F1;\A 368:           padding: 15px 15px 15px 25px;\A 369:      }\A 370: }\A 371: \A 372: /*********************\A 373: POSTS & CONTENT STYLES\A 374: *********************/\A 375: "; }
+  content: "Error: Invalid CSS after \"     }\": expected selector or at-rule, was \"}\"\A         on line 373 of /Users/ccarino/sundial_bones/library/scss/breakpoints/_base.scss\A         from line 69 of /Users/ccarino/sundial_bones/library/scss/./style.scss\A \A 368:      .main-menu > li > a:hover, .main-menu > li > a:focus {\A 369:           background: #F2F2F2;\A 370:           box-shadow: inset 5px 0px #51C1F1;\A 371:           padding: 15px 15px 15px 25px;\A 372:      }\A 373: }\A 374: \A 375: /*********************\A 376: POSTS & CONTENT STYLES\A 377: *********************/\A 378: "; }
