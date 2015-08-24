@@ -2830,11 +2830,15 @@ you can add resource intensive styles.
   /* line 273, ../scss/breakpoints/_768up.scss */
   #container > footer {
     position: fixed;
-    width: 729px;
     bottom: 0;
   }
 
-  /* line 281, ../scss/breakpoints/_768up.scss */
+  /* line 278, ../scss/breakpoints/_768up.scss */
+  #inner-footer {
+    width: 728px;
+  }
+
+  /* line 284, ../scss/breakpoints/_768up.scss */
   .footer-links ul li {
     /*
     be careful with the depth of your menus.
@@ -2865,6 +2869,11 @@ you can add resource intensive styles.
   /* line 12, ../scss/breakpoints/_1030up.scss */
   .wrap {
     width: 1040px;
+  }
+
+  /* line 16, ../scss/breakpoints/_1030up.scss */
+  #inner-footer {
+    width: 1008px;
   }
 }
 /*********************

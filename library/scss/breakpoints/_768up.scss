@@ -272,8 +272,11 @@ mobile. Make sure to double check these!
 */
 #container > footer {
 	position: fixed;
-	width: 729px;
 	bottom: 0;
+}
+
+#inner-footer {
+	width: 728px;
 }
 
 .footer-links {
