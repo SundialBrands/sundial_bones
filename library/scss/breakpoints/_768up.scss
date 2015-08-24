@@ -277,6 +277,7 @@ mobile. Make sure to double check these!
 
 #inner-footer {
 	width: 728px;
+	display: table;
 }
 
 #inner-footer .copyright, #inner-footer .address {
@@ -285,7 +286,7 @@ mobile. Make sure to double check these!
 	text-align: left;
 }
 
-footer > nav {
+.footer .wrap nav {
 	display: table-cell;
 	text-align: left;
 }

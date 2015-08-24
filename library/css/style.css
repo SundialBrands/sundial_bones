@@ -2837,22 +2837,23 @@ you can add resource intensive styles.
   /* line 278, ../scss/breakpoints/_768up.scss */
   #inner-footer {
     width: 728px;
+    display: table;
   }
 
-  /* line 282, ../scss/breakpoints/_768up.scss */
+  /* line 283, ../scss/breakpoints/_768up.scss */
   #inner-footer .copyright, #inner-footer .address {
     display: table-cell;
     vertical-align: middle;
     text-align: left;
   }
 
-  /* line 288, ../scss/breakpoints/_768up.scss */
-  footer > nav {
+  /* line 289, ../scss/breakpoints/_768up.scss */
+  .footer .wrap nav {
     display: table-cell;
     text-align: left;
   }
 
-  /* line 295, ../scss/breakpoints/_768up.scss */
+  /* line 296, ../scss/breakpoints/_768up.scss */
   .footer-links ul li {
     /*
     be careful with the depth of your menus.
