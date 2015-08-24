@@ -350,11 +350,11 @@ and more scalable.
           border-top: 1px solid #51C1F1;
           padding-top: 1em;
           height: auto;
-     }
+     
 
     li {
           height: auto;
-     	a{
+     	a {
 			padding: 15px 15px;
 			height: auto;
 			&:hover, &:focus {
@@ -363,13 +363,13 @@ and more scalable.
 				padding: 15px 15px 15px 25px;
 			}
         }
-     }
+    }
 
-     .main-menu > li > a:hover, .main-menu > li > a:focus {
-          background: #F2F2F2;
-          box-shadow: inset 5px 0px #51C1F1;
-          padding: 15px 15px 15px 25px;
-     }
+}
+.main-menu > li > a:hover, .main-menu > li > a:focus {
+	background: #F2F2F2;
+	box-shadow: inset 5px 0px #51C1F1;
+	padding: 15px 15px 15px 25px;
 }
 
 /*********************
