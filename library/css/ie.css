@@ -525,7 +525,7 @@ be seen on the Desktop.
 
 /* line 20, ../scss/breakpoints/_1030up.scss */
 .hentry {
-  min-height: 100%;
+  min-height: 60%;
 }
 
 /*
