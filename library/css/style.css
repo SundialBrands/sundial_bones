@@ -2832,28 +2832,29 @@ you can add resource intensive styles.
   #container > footer {
     position: fixed;
     bottom: 0;
+    padding: 1em 0;
   }
 
-  /* line 278, ../scss/breakpoints/_768up.scss */
+  /* line 279, ../scss/breakpoints/_768up.scss */
   #inner-footer {
     width: 728px;
     display: table;
   }
 
-  /* line 283, ../scss/breakpoints/_768up.scss */
+  /* line 284, ../scss/breakpoints/_768up.scss */
   #inner-footer .copyright, #inner-footer .address {
     display: table-cell;
     vertical-align: middle;
     text-align: left;
   }
 
-  /* line 289, ../scss/breakpoints/_768up.scss */
+  /* line 290, ../scss/breakpoints/_768up.scss */
   .footer .wrap nav {
     display: table-cell;
     text-align: left;
   }
 
-  /* line 296, ../scss/breakpoints/_768up.scss */
+  /* line 297, ../scss/breakpoints/_768up.scss */
   .footer-links ul li {
     /*
     be careful with the depth of your menus.
