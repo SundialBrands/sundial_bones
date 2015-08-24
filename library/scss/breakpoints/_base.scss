@@ -347,13 +347,16 @@ and more scalable.
 
 #menu-main {
 	background: #FFF;
-	border-top: 1px solid #51C1F1;
+	border-top: 1px solid $sundial-orange;
 	padding-top: 1em;
 	height: auto;
 	display: none;
 	position: absolute;
     right: 0;
     opacity: 0;
+    min-width: 100%;
+    z-index: 99;
+    transition: all .5s ease-in-out;
 
     li {
           height: auto;
@@ -362,7 +365,7 @@ and more scalable.
 			height: auto;
 			&:hover, &:focus {
 				background: #F2F2F2;
-				box-shadow: inset 5px 0px #51C1F1;
+				box-shadow: inset 5px 0px $sundial:orange;
 				padding: 15px 15px 15px 25px;
 			}
         }
