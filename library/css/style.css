@@ -1,39 +1,56 @@
 /*
-Error: Undefined variable: "$default".
-        on line 65 of /Users/ccarino/sundial_bones/library/scss/partials/_variables.scss
-        from line 30 of /Users/ccarino/sundial_bones/library/scss/./style.scss
+Error: Invalid CSS after "...( $white, 10% )": expected "{", was ";"
+        on line 441 of /Users/ccarino/sundial_bones/library/scss/breakpoints/_base.scss
+        from line 69 of /Users/ccarino/sundial_bones/library/scss/./style.scss
 
-60: 
-61: /*********************
-62: BASE (MOBILE) SIZE
-63: This are the mobile styles. It's what people see on their phones. If
-64: you set a great foundation, you won't need to add too many styles in
-65: the other stylesheets. Remember, keep it light: Speed is Important.
-66: *********************\/
-67: 
-68: // styles in base.scss
-69: @import "breakpoints/base";
-70: 
+436: 				header.page-color-#{$pagecolor},
+437: 				.hentry.page-color-#{$pagecolor} {
+438: 					color: $white;
+439: 					background-color: $color;
+440: 					a {
+441: 						darken( $white, 10% );
+442: 						text-decoration: none;
+443: 						&:hover, &:active {
+444: 							color: darken( $white, 20% );
+445: 						}
+446: 					}
 
 Backtrace:
-/Users/ccarino/sundial_bones/library/scss/partials/_variables.scss:65
-/Users/ccarino/sundial_bones/library/scss/./style.scss:30
-/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/script/tree/variable.rb:49:in `_perform'
-/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/script/tree/node.rb:50:in `perform'
-/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/script/tree/map_literal.rb:53:in `block in _perform'
-/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/script/tree/map_literal.rb:52:in `map'
-/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/script/tree/map_literal.rb:52:in `_perform'
-/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/script/tree/node.rb:50:in `perform'
-/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:468:in `visit_variable'
-/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/stack.rb:79:in `block in with_base'
-/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/stack.rb:115:in `with_frame'
-/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/stack.rb:79:in `with_base'
-/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:325:in `block (2 levels) in visit_import'
-/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:325:in `map'
-/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:325:in `block in visit_import'
+/Users/ccarino/sundial_bones/library/scss/breakpoints/_base.scss:441
+/Users/ccarino/sundial_bones/library/scss/./style.scss:69
+/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/scss/parser.rb:1162:in `expected'
+/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/scss/parser.rb:1098:in `expected'
+/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/scss/parser.rb:1093:in `tok!'
+/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/scss/parser.rb:638:in `block'
+/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/scss/parser.rb:708:in `declaration_or_ruleset'
+/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/scss/parser.rb:658:in `block_child'
+/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/scss/parser.rb:647:in `block_contents'
+/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/scss/parser.rb:639:in `block'
+/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/scss/parser.rb:708:in `declaration_or_ruleset'
+/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/scss/parser.rb:658:in `block_child'
+/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/scss/parser.rb:650:in `block_contents'
+/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/scss/parser.rb:639:in `block'
+/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/scss/parser.rb:708:in `declaration_or_ruleset'
+/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/scss/parser.rb:658:in `block_child'
+/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/scss/parser.rb:647:in `block_contents'
+/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/scss/parser.rb:639:in `block'
+/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/scss/parser.rb:334:in `else_block'
+/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/scss/parser.rb:321:in `if_directive'
+/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/scss/parser.rb:219:in `special_directive'
+/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/scss/parser.rb:194:in `directive'
+/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/scss/parser.rb:658:in `block_child'
+/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/scss/parser.rb:647:in `block_contents'
+/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/scss/parser.rb:639:in `block'
+/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/scss/parser.rb:304:in `each_directive'
+/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/scss/parser.rb:219:in `special_directive'
+/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/scss/parser.rb:194:in `directive'
+/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/scss/parser.rb:657:in `block_child'
+/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/scss/parser.rb:650:in `block_contents'
+/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/scss/parser.rb:117:in `stylesheet'
+/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/scss/parser.rb:42:in `parse'
+/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/engine.rb:403:in `_to_tree'
+/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/engine.rb:309:in `to_tree'
+/Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:323:in `block in visit_import'
 /Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/stack.rb:88:in `block in with_import'
 /Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/stack.rb:115:in `with_frame'
 /Users/ccarino/.rvm/gems/ruby-2.2.1/gems/sass-3.4.16/lib/sass/stack.rb:88:in `with_import'
@@ -75,4 +92,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$default\".\A         on line 65 of /Users/ccarino/sundial_bones/library/scss/partials/_variables.scss\A         from line 30 of /Users/ccarino/sundial_bones/library/scss/./style.scss\A \A 60: \A 61: /*********************\A 62: BASE (MOBILE) SIZE\A 63: This are the mobile styles. It's what people see on their phones. If\A 64: you set a great foundation, you won't need to add too many styles in\A 65: the other stylesheets. Remember, keep it light: Speed is Important.\A 66: *********************/\A 67: \A 68: // styles in base.scss\A 69: @import \"breakpoints/base\";\A 70: "; }
+  content: "Error: Invalid CSS after \"...( $white, 10% )\": expected \"{\", was \";\"\A         on line 441 of /Users/ccarino/sundial_bones/library/scss/breakpoints/_base.scss\A         from line 69 of /Users/ccarino/sundial_bones/library/scss/./style.scss\A \A 436: 				header.page-color-#{$pagecolor},\A 437: 				.hentry.page-color-#{$pagecolor} {\A 438: 					color: $white;\A 439: 					background-color: $color;\A 440: 					a {\A 441: 						darken( $white, 10% );\A 442: 						text-decoration: none;\A 443: 						&:hover, &:active {\A 444: 							color: darken( $white, 20% );\A 445: 						}\A 446: 					}"; }
