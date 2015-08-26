@@ -1697,7 +1697,7 @@ HEADER STYLES
 }
 /* line 179, ../scss/breakpoints/_base.scss */
 #logo a {
-  color: #f05629;
+  color: #F48D2F;
   width: 25%;
   display: block;
 }
@@ -1762,7 +1762,7 @@ and more scalable.
 /* line 230, ../scss/breakpoints/_base.scss */
 .nav li a {
   display: block;
-  color: #f05629;
+  color: #F48D2F;
   text-decoration: none;
   padding: 0.75em .5em;
   border-right: 1px solid;
@@ -1776,8 +1776,8 @@ and more scalable.
 }
 /* line 244, ../scss/breakpoints/_base.scss */
 .nav li a:hover, .nav li a:focus {
-  color: #F1A64F;
-  border-color: #f05629;
+  color: #F6BF3C;
+  border-color: #F48D2F;
 }
 /* line 252, ../scss/breakpoints/_base.scss */
 .nav li:last-child a {
@@ -1821,7 +1821,7 @@ and more scalable.
 }
 /* line 318, ../scss/breakpoints/_base.scss */
 .toggle:after {
-  background: #f05629;
+  background: #F48D2F;
   -webkit-border-radius: 2px;
   border-radius: 2px;
   -webkit-box-sizing: border-box;
@@ -1842,7 +1842,7 @@ and more scalable.
 }
 /* line 339, ../scss/breakpoints/_base.scss */
 .toggle:hover:after {
-  background: #F1A64F;
+  background: #F6BF3C;
 }
 
 /* line 344, ../scss/breakpoints/_base.scss */
@@ -1853,7 +1853,7 @@ and more scalable.
 /* line 348, ../scss/breakpoints/_base.scss */
 #menu-main {
   background: #FFF;
-  border-top: 1px solid #f05629;
+  border-top: 1px solid #F48D2F;
   padding-top: 1em;
   height: auto;
   display: none;
@@ -1879,7 +1879,7 @@ and more scalable.
 /* line 369, ../scss/breakpoints/_base.scss */
 #menu-main li a:hover, #menu-main li a:focus {
   background: #F2F2F2;
-  box-shadow: inset 5px 0px #F1A64F;
+  box-shadow: inset 5px 0px #F6BF3C;
   padding: 15px 15px 15px 25px;
 }
 
@@ -1922,32 +1922,32 @@ POSTS & CONTENT STYLES
 /* end .hentry */
 /* line 416, ../scss/breakpoints/_base.scss */
 .hentry.page-color-default {
-  color: #f05629;
+  color: #F48D2F;
 }
 /* line 418, ../scss/breakpoints/_base.scss */
 .hentry.page-color-default a {
-  color: #f05629;
+  color: #F48D2F;
   text-decoration: none;
 }
 /* line 421, ../scss/breakpoints/_base.scss */
 .hentry.page-color-default a:hover, .hentry.page-color-default a:active {
-  color: #d73c0f;
+  color: #e4730c;
 }
 
 /* line 426, ../scss/breakpoints/_base.scss */
 .hentry .shade.page-color-default {
-  color: #f05629;
+  color: #F48D2F;
   text-decoration: none;
 }
 /* line 429, ../scss/breakpoints/_base.scss */
 .hentry .shade.page-color-default:hover, .hentry .shade.page-color-default:active {
-  color: #d73c0f;
+  color: #e4730c;
 }
 
 /* line 436, ../scss/breakpoints/_base.scss */
 .hentry.page-color-orange {
   color: #fff;
-  background-color: #F1A64F;
+  background-color: #F6BF3C;
 }
 /* line 439, ../scss/breakpoints/_base.scss */
 .hentry.page-color-orange a {
@@ -1962,7 +1962,7 @@ POSTS & CONTENT STYLES
 /* line 447, ../scss/breakpoints/_base.scss */
 .hentry .shade.page-color-orange {
   color: #fff;
-  background-color: rgba(241, 166, 79, 0.95);
+  background-color: rgba(246, 191, 60, 0.95);
   text-decoration: none;
 }
 /* line 451, ../scss/breakpoints/_base.scss */
@@ -1973,7 +1973,7 @@ POSTS & CONTENT STYLES
 /* line 436, ../scss/breakpoints/_base.scss */
 .hentry.page-color-drkorange {
   color: #fff;
-  background-color: #f05629;
+  background-color: #F48D2F;
 }
 /* line 439, ../scss/breakpoints/_base.scss */
 .hentry.page-color-drkorange a {
@@ -1988,7 +1988,7 @@ POSTS & CONTENT STYLES
 /* line 447, ../scss/breakpoints/_base.scss */
 .hentry .shade.page-color-drkorange {
   color: #fff;
-  background-color: rgba(240, 86, 41, 0.95);
+  background-color: rgba(244, 141, 47, 0.95);
   text-decoration: none;
 }
 /* line 451, ../scss/breakpoints/_base.scss */
@@ -2759,7 +2759,7 @@ FOOTER STYLES
 .footer {
   clear: both;
   background-color: rgba(255, 255, 255, 0.95);
-  color: #f05629;
+  color: #F48D2F;
   font-size: 8px;
 }
 /* line 1104, ../scss/breakpoints/_base.scss */
@@ -2779,12 +2779,12 @@ view.
 */
 /* line 1125, ../scss/breakpoints/_base.scss */
 .footer-links ul li a {
-  color: #f05629;
+  color: #F48D2F;
 }
 /* line 1128, ../scss/breakpoints/_base.scss */
 .footer-links ul li a:hover {
-  color: #F1A64F;
-  border-right: #f05629;
+  color: #F6BF3C;
+  border-right: #F48D2F;
 }
 
 /* end .footer-links */
@@ -2965,7 +2965,7 @@ you can add resource intensive styles.
   }
   /* line 64, ../scss/breakpoints/_768up.scss */
   .nav li a:hover, .nav li a:focus {
-    color: #f05629;
+    color: #F48D2F;
     text-decoration: none;
   }
   /* line 76, ../scss/breakpoints/_768up.scss */
@@ -3037,10 +3037,10 @@ you can add resource intensive styles.
   }
   /* line 162, ../scss/breakpoints/_768up.scss */
   #menu-main li > a:hover, #menu-main li > a:active, #menu-main li > a:focus {
-    color: #F1A64F;
+    color: #F6BF3C;
     background: transparent;
     box-shadow: none;
-    border-right-color: #f05629;
+    border-right-color: #F48D2F;
     padding: 0.75em .5em;
   }
   /* line 170, ../scss/breakpoints/_768up.scss */

@@ -375,7 +375,7 @@ NAVIGATION STYLES
 }
 /* line 64, ../scss/breakpoints/_768up.scss */
 .nav li a:hover, .nav li a:focus {
-  color: #f05629;
+  color: #F48D2F;
   text-decoration: none;
 }
 /* line 76, ../scss/breakpoints/_768up.scss */
@@ -447,10 +447,10 @@ NAVIGATION STYLES
 }
 /* line 162, ../scss/breakpoints/_768up.scss */
 #menu-main li > a:hover, #menu-main li > a:active, #menu-main li > a:focus {
-  color: #F1A64F;
+  color: #F6BF3C;
   background: transparent;
   box-shadow: none;
-  border-right-color: #f05629;
+  border-right-color: #F48D2F;
   padding: 0.75em .5em;
 }
 /* line 170, ../scss/breakpoints/_768up.scss */
