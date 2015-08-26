@@ -423,7 +423,7 @@ POSTS & CONTENT STYLES
 						}
 					}
 				}
-				.hentry a.page-color-#{$pagecolor} {
+				.hentry .shade.page-color-#{$pagecolor} {
 					color: $sundial-dark-orange;
 					text-decoration: none;
 					&:hover, &:active {
@@ -444,7 +444,7 @@ POSTS & CONTENT STYLES
 						}
 					}
 				}
-				.hentry a.page-color-#{$pagecolor} {
+				.hentry .shade.page-color-#{$pagecolor} {
 					color: $white;
 					background-color: rgba( $color, 0.95);
 					text-decoration: none;

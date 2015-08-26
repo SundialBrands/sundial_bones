@@ -1935,12 +1935,12 @@ POSTS & CONTENT STYLES
 }
 
 /* line 426, ../scss/breakpoints/_base.scss */
-.hentry a.page-color-default {
+.hentry .shade.page-color-default {
   color: #f05629;
   text-decoration: none;
 }
 /* line 429, ../scss/breakpoints/_base.scss */
-.hentry a.page-color-default:hover, .hentry a.page-color-default:active {
+.hentry .shade.page-color-default:hover, .hentry .shade.page-color-default:active {
   color: #d73c0f;
 }
 
@@ -1960,13 +1960,13 @@ POSTS & CONTENT STYLES
 }
 
 /* line 447, ../scss/breakpoints/_base.scss */
-.hentry a.page-color-orange {
+.hentry .shade.page-color-orange {
   color: #fff;
   background-color: rgba(241, 166, 79, 0.95);
   text-decoration: none;
 }
 /* line 451, ../scss/breakpoints/_base.scss */
-.hentry a.page-color-orange:hover, .hentry a.page-color-orange:active {
+.hentry .shade.page-color-orange:hover, .hentry .shade.page-color-orange:active {
   color: #e6e6e6;
 }
 
@@ -1986,13 +1986,13 @@ POSTS & CONTENT STYLES
 }
 
 /* line 447, ../scss/breakpoints/_base.scss */
-.hentry a.page-color-drkorange {
+.hentry .shade.page-color-drkorange {
   color: #fff;
   background-color: rgba(240, 86, 41, 0.95);
   text-decoration: none;
 }
 /* line 451, ../scss/breakpoints/_base.scss */
-.hentry a.page-color-drkorange:hover, .hentry a.page-color-drkorange:active {
+.hentry .shade.page-color-drkorange:hover, .hentry .shade.page-color-drkorange:active {
   color: #e6e6e6;
 }
 
@@ -2012,13 +2012,13 @@ POSTS & CONTENT STYLES
 }
 
 /* line 447, ../scss/breakpoints/_base.scss */
-.hentry a.page-color-red {
+.hentry .shade.page-color-red {
   color: #fff;
   background-color: rgba(206, 44, 0, 0.95);
   text-decoration: none;
 }
 /* line 451, ../scss/breakpoints/_base.scss */
-.hentry a.page-color-red:hover, .hentry a.page-color-red:active {
+.hentry .shade.page-color-red:hover, .hentry .shade.page-color-red:active {
   color: #e6e6e6;
 }
 
@@ -2038,13 +2038,13 @@ POSTS & CONTENT STYLES
 }
 
 /* line 447, ../scss/breakpoints/_base.scss */
-.hentry a.page-color-salmon {
+.hentry .shade.page-color-salmon {
   color: #fff;
   background-color: rgba(241, 82, 97, 0.95);
   text-decoration: none;
 }
 /* line 451, ../scss/breakpoints/_base.scss */
-.hentry a.page-color-salmon:hover, .hentry a.page-color-salmon:active {
+.hentry .shade.page-color-salmon:hover, .hentry .shade.page-color-salmon:active {
   color: #e6e6e6;
 }
 
@@ -2064,13 +2064,13 @@ POSTS & CONTENT STYLES
 }
 
 /* line 447, ../scss/breakpoints/_base.scss */
-.hentry a.page-color-pink {
+.hentry .shade.page-color-pink {
   color: #fff;
   background-color: rgba(204, 79, 191, 0.95);
   text-decoration: none;
 }
 /* line 451, ../scss/breakpoints/_base.scss */
-.hentry a.page-color-pink:hover, .hentry a.page-color-pink:active {
+.hentry .shade.page-color-pink:hover, .hentry .shade.page-color-pink:active {
   color: #e6e6e6;
 }
 
@@ -2090,13 +2090,13 @@ POSTS & CONTENT STYLES
 }
 
 /* line 447, ../scss/breakpoints/_base.scss */
-.hentry a.page-color-blue {
+.hentry .shade.page-color-blue {
   color: #fff;
   background-color: rgba(66, 11, 238, 0.95);
   text-decoration: none;
 }
 /* line 451, ../scss/breakpoints/_base.scss */
-.hentry a.page-color-blue:hover, .hentry a.page-color-blue:active {
+.hentry .shade.page-color-blue:hover, .hentry .shade.page-color-blue:active {
   color: #e6e6e6;
 }
 
@@ -2116,13 +2116,13 @@ POSTS & CONTENT STYLES
 }
 
 /* line 447, ../scss/breakpoints/_base.scss */
-.hentry a.page-color-drkblue {
+.hentry .shade.page-color-drkblue {
   color: #fff;
   background-color: rgba(18, 88, 96, 0.95);
   text-decoration: none;
 }
 /* line 451, ../scss/breakpoints/_base.scss */
-.hentry a.page-color-drkblue:hover, .hentry a.page-color-drkblue:active {
+.hentry .shade.page-color-drkblue:hover, .hentry .shade.page-color-drkblue:active {
   color: #e6e6e6;
 }
 
@@ -2142,13 +2142,13 @@ POSTS & CONTENT STYLES
 }
 
 /* line 447, ../scss/breakpoints/_base.scss */
-.hentry a.page-color-green {
+.hentry .shade.page-color-green {
   color: #fff;
   background-color: rgba(4, 104, 56, 0.95);
   text-decoration: none;
 }
 /* line 451, ../scss/breakpoints/_base.scss */
-.hentry a.page-color-green:hover, .hentry a.page-color-green:active {
+.hentry .shade.page-color-green:hover, .hentry .shade.page-color-green:active {
   color: #e6e6e6;
 }
 
@@ -2168,13 +2168,13 @@ POSTS & CONTENT STYLES
 }
 
 /* line 447, ../scss/breakpoints/_base.scss */
-.hentry a.page-color-lime {
+.hentry .shade.page-color-lime {
   color: #fff;
   background-color: rgba(157, 204, 21, 0.95);
   text-decoration: none;
 }
 /* line 451, ../scss/breakpoints/_base.scss */
-.hentry a.page-color-lime:hover, .hentry a.page-color-lime:active {
+.hentry .shade.page-color-lime:hover, .hentry .shade.page-color-lime:active {
   color: #e6e6e6;
 }
 
@@ -2194,13 +2194,13 @@ POSTS & CONTENT STYLES
 }
 
 /* line 447, ../scss/breakpoints/_base.scss */
-.hentry a.page-color-purple {
+.hentry .shade.page-color-purple {
   color: #fff;
   background-color: rgba(139, 35, 255, 0.95);
   text-decoration: none;
 }
 /* line 451, ../scss/breakpoints/_base.scss */
-.hentry a.page-color-purple:hover, .hentry a.page-color-purple:active {
+.hentry .shade.page-color-purple:hover, .hentry .shade.page-color-purple:active {
   color: #e6e6e6;
 }
 
@@ -2220,13 +2220,13 @@ POSTS & CONTENT STYLES
 }
 
 /* line 447, ../scss/breakpoints/_base.scss */
-.hentry a.page-color-gray {
+.hentry .shade.page-color-gray {
   color: #fff;
   background-color: rgba(86, 85, 83, 0.95);
   text-decoration: none;
 }
 /* line 451, ../scss/breakpoints/_base.scss */
-.hentry a.page-color-gray:hover, .hentry a.page-color-gray:active {
+.hentry .shade.page-color-gray:hover, .hentry .shade.page-color-gray:active {
   color: #e6e6e6;
 }
 
@@ -2246,13 +2246,13 @@ POSTS & CONTENT STYLES
 }
 
 /* line 447, ../scss/breakpoints/_base.scss */
-.hentry a.page-color-brown {
+.hentry .shade.page-color-brown {
   color: #fff;
   background-color: rgba(86, 40, 14, 0.95);
   text-decoration: none;
 }
 /* line 451, ../scss/breakpoints/_base.scss */
-.hentry a.page-color-brown:hover, .hentry a.page-color-brown:active {
+.hentry .shade.page-color-brown:hover, .hentry .shade.page-color-brown:active {
   color: #e6e6e6;
 }
 
