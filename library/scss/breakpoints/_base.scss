@@ -634,8 +634,8 @@ POSTS & CONTENT STYLES
 				border-radius: 3px;
 			}
 			.front-page-row-col {
-				width: 280px;
-				height: 200px;
+				width: auto;
+				min-height: 200px;
 				overflow: hidden;
 				position: relative;
 				margin-bottom: 1em;

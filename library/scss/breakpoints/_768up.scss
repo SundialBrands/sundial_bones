@@ -28,6 +28,17 @@ LAYOUT & GRID STYLES
 	padding-left: 2em;
 }
 
+.page .entry-content {
+	.front-page-tiles {
+		width: 90%;
+		margin: 0 auto;
+		.front-page-row-col {
+			width: 280px;
+			height: 200px;
+		}
+	}
+}
+
 /*********************
 HEADER STYLES
 *********************/
