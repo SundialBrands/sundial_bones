@@ -629,16 +629,33 @@ be seen on the Desktop.
 
 ******************************************************************/
 /* line 12, ../scss/breakpoints/_1030up.scss */
+body {
+  height: 100%;
+}
+/* line 14, ../scss/breakpoints/_1030up.scss */
+body #content {
+  height: 100%;
+}
+/* line 16, ../scss/breakpoints/_1030up.scss */
+body #content #inner-content {
+  height: 100%;
+}
+/* line 18, ../scss/breakpoints/_1030up.scss */
+body #content #inner-content .main {
+  height: 100%;
+}
+
+/* line 25, ../scss/breakpoints/_1030up.scss */
 .wrap {
   width: 1040px;
 }
 
-/* line 16, ../scss/breakpoints/_1030up.scss */
+/* line 29, ../scss/breakpoints/_1030up.scss */
 #menu-main {
   font-size: .85em;
 }
 
-/* line 20, ../scss/breakpoints/_1030up.scss */
+/* line 33, ../scss/breakpoints/_1030up.scss */
 #container > footer {
   position: fixed;
   bottom: 0;
@@ -646,17 +663,17 @@ be seen on the Desktop.
   font-size: 12px;
 }
 
-/* line 26, ../scss/breakpoints/_1030up.scss */
+/* line 39, ../scss/breakpoints/_1030up.scss */
 .home #container > footer {
   background-color: #fff;
 }
 
-/* line 30, ../scss/breakpoints/_1030up.scss */
+/* line 43, ../scss/breakpoints/_1030up.scss */
 #inner-footer {
   width: 1008px;
 }
 
-/* line 34, ../scss/breakpoints/_1030up.scss */
+/* line 47, ../scss/breakpoints/_1030up.scss */
 .hentry {
   min-height: 80%;
 }

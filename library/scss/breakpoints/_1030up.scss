@@ -9,6 +9,19 @@ be seen on the Desktop.
 
 ******************************************************************/
 
+body {
+	height: 100%;
+	#content {
+		height: 100%;
+		#inner-content {
+			height: 100%;
+			.main {
+				height: 100%;
+			}
+		}
+	}
+}
+
 .wrap {
   width: 1040px;
 }
