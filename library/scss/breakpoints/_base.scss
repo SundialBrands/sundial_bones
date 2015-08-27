@@ -656,6 +656,8 @@ POSTS & CONTENT STYLES
 					margin: 1em;
 					padding: .5em;
 					max-width: 260px;
+					transition: color,background-color .25s ease-in-out;
+					-webkit-transition: -webkit-tap-highlight-color .25s ease-in-out;
 					h1, a h1 {
 						color: #fff;
 						margin: 15px 5px 0;
@@ -759,17 +761,18 @@ PAGE NAVI STYLES
     }
 
     a, span {
-      margin: 0;
-      text-decoration: none;
-      padding: 0;
-      line-height: 1em;
-      font-size: 1em;
-      font-weight: normal;
-      padding: 0.75em;
-      min-width: 1em;
-      display: block;
-      color: $blue;
-
+		margin: 0;
+		text-decoration: none;
+		padding: 0;
+		line-height: 1em;
+		font-size: 1em;
+		font-weight: normal;
+		padding: 0.75em;
+		min-width: 1em;
+		display: block;
+		color: $blue;
+		transition: color,background-color .25s ease-in-out;
+		-webkit-transition: -webkit-tap-highlight-color .25s ease-in-out;
       &:hover, &:focus {
       	background-color: $blue;
       	color: $white;
@@ -779,6 +782,8 @@ PAGE NAVI STYLES
     .current{
     	cursor: default;
     	color: $text-color;
+		transition: color,background-color .25s ease-in-out;
+		-webkit-transition: -webkit-tap-highlight-color .25s ease-in-out;
 
     	&:hover, &:focus {
     		background-color: $white;
