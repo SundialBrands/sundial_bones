@@ -630,27 +630,27 @@ be seen on the Desktop.
 ******************************************************************/
 /* line 11, ../scss/breakpoints/_1030up.scss */
 html {
-  height: 100%;
+  min-height: 100%;
 }
 /* line 13, ../scss/breakpoints/_1030up.scss */
 html body {
-  height: 100%;
+  min-height: 100%;
 }
 /* line 15, ../scss/breakpoints/_1030up.scss */
 html body #content {
-  height: 100%;
+  min-height: 100%;
 }
 /* line 17, ../scss/breakpoints/_1030up.scss */
 html body #content #inner-content {
-  height: 100%;
+  min-height: 100%;
 }
 /* line 19, ../scss/breakpoints/_1030up.scss */
 html body #content #inner-content main {
-  height: 100%;
+  min-height: 100%;
 }
 /* line 21, ../scss/breakpoints/_1030up.scss */
 html body #content #inner-content main #container {
-  height: 100%;
+  min-height: 100%;
 }
 
 /* line 29, ../scss/breakpoints/_1030up.scss */
