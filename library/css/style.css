@@ -2901,6 +2901,11 @@ tweeners.
   }
 
   /* end .entry-content */
+  /* line 107, ../scss/breakpoints/_481up.scss */
+  .page .entry-content .front-page-tiles {
+    width: 280px;
+  }
+
   /*********************
   FOOTER STYLES
   *********************/
