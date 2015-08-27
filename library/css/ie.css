@@ -628,38 +628,42 @@ This is the desktop size. It's larger than an iPad so it will only
 be seen on the Desktop.
 
 ******************************************************************/
-/* line 12, ../scss/breakpoints/_1030up.scss */
-body {
+/* line 11, ../scss/breakpoints/_1030up.scss */
+html {
   height: 100%;
 }
-/* line 14, ../scss/breakpoints/_1030up.scss */
-body #content {
+/* line 13, ../scss/breakpoints/_1030up.scss */
+html body {
   height: 100%;
 }
-/* line 16, ../scss/breakpoints/_1030up.scss */
-body #content #inner-content {
+/* line 15, ../scss/breakpoints/_1030up.scss */
+html body #content {
   height: 100%;
 }
-/* line 18, ../scss/breakpoints/_1030up.scss */
-body #content #inner-content main {
+/* line 17, ../scss/breakpoints/_1030up.scss */
+html body #content #inner-content {
   height: 100%;
 }
-/* line 20, ../scss/breakpoints/_1030up.scss */
-body #content #inner-content main #container {
+/* line 19, ../scss/breakpoints/_1030up.scss */
+html body #content #inner-content main {
+  height: 100%;
+}
+/* line 21, ../scss/breakpoints/_1030up.scss */
+html body #content #inner-content main #container {
   height: 100%;
 }
 
-/* line 28, ../scss/breakpoints/_1030up.scss */
+/* line 29, ../scss/breakpoints/_1030up.scss */
 .wrap {
   width: 1040px;
 }
 
-/* line 32, ../scss/breakpoints/_1030up.scss */
+/* line 33, ../scss/breakpoints/_1030up.scss */
 #menu-main {
   font-size: .85em;
 }
 
-/* line 36, ../scss/breakpoints/_1030up.scss */
+/* line 37, ../scss/breakpoints/_1030up.scss */
 #container > footer {
   position: fixed;
   bottom: 0;
@@ -667,17 +671,17 @@ body #content #inner-content main #container {
   font-size: 12px;
 }
 
-/* line 42, ../scss/breakpoints/_1030up.scss */
+/* line 43, ../scss/breakpoints/_1030up.scss */
 .home #container > footer {
   background-color: #fff;
 }
 
-/* line 46, ../scss/breakpoints/_1030up.scss */
+/* line 47, ../scss/breakpoints/_1030up.scss */
 #inner-footer {
   width: 1008px;
 }
 
-/* line 50, ../scss/breakpoints/_1030up.scss */
+/* line 51, ../scss/breakpoints/_1030up.scss */
 .hentry {
   min-height: 80%;
 }

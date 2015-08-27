@@ -8,23 +8,24 @@ This is the desktop size. It's larger than an iPad so it will only
 be seen on the Desktop.
 
 ******************************************************************/
-
-body {
+html {
 	height: 100%;
-	#content {
+	body {
 		height: 100%;
-		#inner-content {
+		#content {
 			height: 100%;
-			main {
+			#inner-content {
 				height: 100%;
-				#container {
+				main {
 					height: 100%;
+					#container {
+						height: 100%;
+					}
 				}
 			}
 		}
 	}
 }
-
 .wrap {
   width: 1040px;
 }
