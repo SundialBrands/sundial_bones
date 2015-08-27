@@ -3237,11 +3237,6 @@ This is for the larger monitors and possibly full screen viewers.
   .hentry {
     min-height: 100%;
   }
-
-  /* line 20, ../scss/breakpoints/_1240up.scss */
-  #container > footer {
-    font-size: 14px;
-  }
 }
 /*********************
 RETINA (2x RESOLUTION DEVICES)
