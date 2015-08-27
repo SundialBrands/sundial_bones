@@ -219,7 +219,8 @@ and more scalable.
     		border-right: 1px solid;
     		font-size: .9em;
     		border-width: 0;
-
+			transition: color,background-color .25s ease-in-out;
+			-webkit-transition: -webkit-tap-highlight-color,color,background-color .25s ease-in-out;
 			/*
 			remember this is for mobile ONLY, so there's no need
 			to even declare hover styles here, you can do it in
