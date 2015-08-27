@@ -1,4 +1,4 @@
-
+<?php get_head() ?>
 
 			<div id="content">
 

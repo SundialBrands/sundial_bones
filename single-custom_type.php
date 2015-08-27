@@ -15,13 +15,14 @@
 */
 ?>
 
-<?php get_header(); ?>
+<?php get_head(); ?>
 
 			<div id="content">
 
 				<div id="inner-content" class="wrap cf">
 
 						<main id="main" class="m-all t-2of3 d-5of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+							<?php get_header(); ?>
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -88,7 +89,7 @@
 									</article>
 
 							<?php endif; ?>
-
+							<?php get_footer(); ?>
 						</main>
 
 						<?php get_sidebar(); ?>
@@ -97,4 +98,4 @@
 
 			</div>
 
-<?php get_footer(); ?>
+
