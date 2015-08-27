@@ -6,14 +6,14 @@
 
 						<main id="main" class="m-all t-all d-all cf" role="main">
 					<?php get_header(); ?>
-						<h1 class="archive-title"><span><?php _e( 'Search Results for:', 'bonestheme' ); ?></span> <?php echo esc_attr(get_search_query()); ?></h1>
+						
 						
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class('cf'); ?> role="article">
 
 								<header class="entry-header article-header">
-
+<h1 class="archive-title"><span><?php _e( 'Search Results for:', 'bonestheme' ); ?></span> <?php echo esc_attr(get_search_query()); ?></h1>
 									<h3 class="search-title entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
 
                   						<p class="byline entry-meta vcard">
@@ -68,8 +68,7 @@
 
 						</main>
 
-							<?php get_sidebar(); ?>
-
+						
 					</div>
 
 			</div>

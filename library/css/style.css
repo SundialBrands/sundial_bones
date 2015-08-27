@@ -1510,6 +1510,11 @@ select {
   background-position: 97.5% center;
 }
 
+/* line 129, ../scss/modules/_forms.scss */
+.search .search-field {
+  width: auto;
+}
+
 /*********************
 BASE (MOBILE) SIZE
 This are the mobile styles. It's what people see on their phones. If
