@@ -183,6 +183,9 @@ header nav {
     font-size: .85em;
     li {
     	float: left;
+		position: relative;
+		width: auto;
+		line-height: 4em;
     	a {
     		border-bottom: 0;
 			padding: 0.75em .5em;
