@@ -354,27 +354,33 @@ LAYOUT & GRID STYLES
 /*********************
 HEADER STYLES
 *********************/
+/* line 56, ../scss/breakpoints/_768up.scss */
+#logo a {
+  width: 25%;
+  margin: 0;
+}
+
 /*********************
 NAVIGATION STYLES
 *********************/
-/* line 61, ../scss/breakpoints/_768up.scss */
+/* line 66, ../scss/breakpoints/_768up.scss */
 #toggle, .toggle {
   display: none;
 }
 
-/* line 64, ../scss/breakpoints/_768up.scss */
+/* line 69, ../scss/breakpoints/_768up.scss */
 .nav {
   border: 0;
   /* end .menu ul li */
   /* highlight current page */
   /* end current highlighters */
 }
-/* line 66, ../scss/breakpoints/_768up.scss */
+/* line 71, ../scss/breakpoints/_768up.scss */
 .nav ul {
   background: transparent;
   margin-top: 0;
 }
-/* line 70, ../scss/breakpoints/_768up.scss */
+/* line 75, ../scss/breakpoints/_768up.scss */
 .nav li {
   float: left;
   position: relative;
@@ -383,7 +389,7 @@ NAVIGATION STYLES
   */
   /* showing sub-menus */
 }
-/* line 74, ../scss/breakpoints/_768up.scss */
+/* line 79, ../scss/breakpoints/_768up.scss */
 .nav li a {
   border-bottom: 0;
   border-right: 1px solid;
@@ -392,12 +398,12 @@ NAVIGATION STYLES
   has the possibility of being a mobile device.
   */
 }
-/* line 82, ../scss/breakpoints/_768up.scss */
+/* line 87, ../scss/breakpoints/_768up.scss */
 .nav li a:hover, .nav li a:focus {
   color: #F48D2F;
   text-decoration: none;
 }
-/* line 94, ../scss/breakpoints/_768up.scss */
+/* line 99, ../scss/breakpoints/_768up.scss */
 .nav li ul.sub-menu,
 .nav li ul.children {
   margin-top: 0;
@@ -408,7 +414,7 @@ NAVIGATION STYLES
   z-index: 8999;
   /* highlight sub-menu current page */
 }
-/* line 103, ../scss/breakpoints/_768up.scss */
+/* line 108, ../scss/breakpoints/_768up.scss */
 .nav li ul.sub-menu li,
 .nav li ul.children li {
   /*
@@ -417,7 +423,7 @@ NAVIGATION STYLES
   for usability. k, bai.
   */
 }
-/* line 105, ../scss/breakpoints/_768up.scss */
+/* line 110, ../scss/breakpoints/_768up.scss */
 .nav li ul.sub-menu li a,
 .nav li ul.children li a {
   padding-left: 10px;
@@ -426,25 +432,25 @@ NAVIGATION STYLES
   width: 180px;
   border-bottom: 1px solid #ccc;
 }
-/* line 122, ../scss/breakpoints/_768up.scss */
+/* line 127, ../scss/breakpoints/_768up.scss */
 .nav li ul.sub-menu li:last-child a,
 .nav li ul.children li:last-child a {
   border-bottom: 0;
 }
-/* line 132, ../scss/breakpoints/_768up.scss */
+/* line 137, ../scss/breakpoints/_768up.scss */
 .nav li ul.sub-menu li ul,
 .nav li ul.children li ul {
   top: 0;
   left: 100%;
 }
-/* line 147, ../scss/breakpoints/_768up.scss */
+/* line 152, ../scss/breakpoints/_768up.scss */
 .nav li:hover > ul {
   top: auto;
   visibility: visible;
 }
 
 /* end .nav */
-/* line 165, ../scss/breakpoints/_768up.scss */
+/* line 170, ../scss/breakpoints/_768up.scss */
 #menu-main {
   display: block;
   opacity: 1;
@@ -454,17 +460,17 @@ NAVIGATION STYLES
   background: transparent;
   font-size: .85em;
 }
-/* line 173, ../scss/breakpoints/_768up.scss */
+/* line 178, ../scss/breakpoints/_768up.scss */
 #menu-main li {
   float: left;
 }
-/* line 175, ../scss/breakpoints/_768up.scss */
+/* line 180, ../scss/breakpoints/_768up.scss */
 #menu-main li a {
   border-bottom: 0;
   padding: 0.75em .5em;
   border-right: 1px solid;
 }
-/* line 180, ../scss/breakpoints/_768up.scss */
+/* line 185, ../scss/breakpoints/_768up.scss */
 #menu-main li > a:hover, #menu-main li > a:active, #menu-main li > a:focus {
   color: #F6BF3C;
   background: transparent;
@@ -472,7 +478,7 @@ NAVIGATION STYLES
   border-right-color: #F48D2F;
   padding: 0.75em .5em;
 }
-/* line 188, ../scss/breakpoints/_768up.scss */
+/* line 193, ../scss/breakpoints/_768up.scss */
 #menu-main li:last-child a {
   border-right: 0;
 }
@@ -480,28 +486,28 @@ NAVIGATION STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 199, ../scss/breakpoints/_768up.scss */
+/* line 204, ../scss/breakpoints/_768up.scss */
 .sidebar {
   margin-top: 2.2em;
 }
 
-/* line 203, ../scss/breakpoints/_768up.scss */
+/* line 208, ../scss/breakpoints/_768up.scss */
 .widgettitle {
   border-bottom: 2px solid #444;
   margin-bottom: 0.75em;
 }
 
-/* line 208, ../scss/breakpoints/_768up.scss */
+/* line 213, ../scss/breakpoints/_768up.scss */
 .widget {
   padding: 0 10px;
   margin: 2.2em 0;
 }
-/* line 213, ../scss/breakpoints/_768up.scss */
+/* line 218, ../scss/breakpoints/_768up.scss */
 .widget ul li {
   margin-bottom: 0.75em;
   /* deep nesting */
 }
-/* line 221, ../scss/breakpoints/_768up.scss */
+/* line 226, ../scss/breakpoints/_768up.scss */
 .widget ul li ul {
   margin-top: 0.75em;
   padding-left: 1em;
@@ -526,33 +532,33 @@ you'll probably need to do quite a bit
 of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
-/* line 327, ../scss/breakpoints/_768up.scss */
+/* line 332, ../scss/breakpoints/_768up.scss */
 #container > footer {
   position: fixed;
   bottom: 0;
   padding: 1em 0;
 }
 
-/* line 333, ../scss/breakpoints/_768up.scss */
+/* line 338, ../scss/breakpoints/_768up.scss */
 #inner-footer {
   width: 728px;
   display: table;
 }
 
-/* line 338, ../scss/breakpoints/_768up.scss */
+/* line 343, ../scss/breakpoints/_768up.scss */
 #inner-footer .copyright, #inner-footer .address {
   display: table-cell;
   vertical-align: middle;
   text-align: left;
 }
 
-/* line 344, ../scss/breakpoints/_768up.scss */
+/* line 349, ../scss/breakpoints/_768up.scss */
 .footer .wrap nav {
   display: table-cell;
   text-align: left;
 }
 
-/* line 351, ../scss/breakpoints/_768up.scss */
+/* line 356, ../scss/breakpoints/_768up.scss */
 .footer-links ul li {
   /*
   be careful with the depth of your menus.

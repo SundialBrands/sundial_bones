@@ -52,7 +52,12 @@ HEADER STYLES
 
 .header {}
 
-	#logo {}
+	#logo {
+		a {
+			width: 25%;
+			margin: 0;
+		}
+	}
 
 /*********************
 NAVIGATION STYLES
