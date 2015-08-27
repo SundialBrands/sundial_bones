@@ -20,10 +20,11 @@ body {
 	font-size: 100%;
 	line-height: 1.5;
 	color: $text-color;
-	background-color: $white;
+	background-color: $default;
   	-webkit-font-smoothing: antialiased;
   	-moz-osx-font-smoothing: grayscale;
   	background-size: cover;
+  	transition: all .25s ease-in-out;
 }
 
 /********************

@@ -27,7 +27,7 @@ $white:             	#fff;
 
 $light-gray:        	#f8f9fa;
 $gray:              	#eaedf2;
-$text-color:        	#5c6b80;
+$default:       	 	#5c6b80;
 $meta-gray:         	#9fa6b4;
 
 $sundial-orange:		#F6BF3C;
@@ -55,7 +55,7 @@ $link-hover:        	darken($link-color, 9%);
 
 $border-color:      	#ccc;
 $disabled-gray:     	#cfcfcf;
-
+$text-color: 			$sundial-dark-orange;
 
 /*
 Here's a great tutorial on how to
