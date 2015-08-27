@@ -641,11 +641,11 @@ body #content #inner-content {
   height: 100%;
 }
 /* line 18, ../scss/breakpoints/_1030up.scss */
-body #content #inner-content .main {
+body #content #inner-content main {
   height: 100%;
 }
 /* line 20, ../scss/breakpoints/_1030up.scss */
-body #content #inner-content .main .container {
+body #content #inner-content main .container {
   height: 100%;
 }
 
