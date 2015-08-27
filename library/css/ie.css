@@ -472,7 +472,7 @@ NAVIGATION STYLES
   padding: 0;
   border: 0;
   background: transparent;
-  font-size: .85em;
+  font-size: .7em;
   margin-bottom: 1em;
 }
 /* line 185, ../scss/breakpoints/_768up.scss */
@@ -594,19 +594,24 @@ be seen on the Desktop.
   width: 1040px;
 }
 
-/* line 15, ../scss/breakpoints/_1030up.scss */
+/* line 16, ../scss/breakpoints/_1030up.scss */
+#menu-main {
+  font-size: .85em;
+}
+
+/* line 20, ../scss/breakpoints/_1030up.scss */
 #container > footer {
   position: fixed;
   bottom: 0;
   padding: 1em 0;
 }
 
-/* line 21, ../scss/breakpoints/_1030up.scss */
+/* line 26, ../scss/breakpoints/_1030up.scss */
 #inner-footer {
   width: 1008px;
 }
 
-/* line 25, ../scss/breakpoints/_1030up.scss */
+/* line 30, ../scss/breakpoints/_1030up.scss */
 .hentry {
   min-height: 75%;
 }
