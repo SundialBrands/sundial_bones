@@ -657,17 +657,26 @@ html body #content #inner-content main #container {
   height: 100%;
 }
 
-/* line 29, ../scss/breakpoints/_1030up.scss */
+/* line 30, ../scss/breakpoints/_1030up.scss */
+.header .searchform {
+  text-align: left;
+}
+/* line 32, ../scss/breakpoints/_1030up.scss */
+.header .searchform .search-field {
+  max-width: 100%;
+}
+
+/* line 37, ../scss/breakpoints/_1030up.scss */
 .wrap {
   width: 1040px;
 }
 
-/* line 33, ../scss/breakpoints/_1030up.scss */
+/* line 41, ../scss/breakpoints/_1030up.scss */
 #menu-main {
   font-size: .85em;
 }
 
-/* line 37, ../scss/breakpoints/_1030up.scss */
+/* line 45, ../scss/breakpoints/_1030up.scss */
 #container > footer {
   position: fixed;
   bottom: 0;
@@ -675,17 +684,17 @@ html body #content #inner-content main #container {
   font-size: 12px;
 }
 
-/* line 43, ../scss/breakpoints/_1030up.scss */
+/* line 51, ../scss/breakpoints/_1030up.scss */
 .home #container > footer {
   background-color: #fff;
 }
 
-/* line 47, ../scss/breakpoints/_1030up.scss */
+/* line 55, ../scss/breakpoints/_1030up.scss */
 #inner-footer {
   width: 1008px;
 }
 
-/* line 51, ../scss/breakpoints/_1030up.scss */
+/* line 59, ../scss/breakpoints/_1030up.scss */
 .hentry {
   min-height: 80%;
 }

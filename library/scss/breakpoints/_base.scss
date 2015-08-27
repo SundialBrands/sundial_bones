@@ -188,6 +188,12 @@ HEADER STYLES
 	&.article-header {
 		padding-bottom: 0;
 	}
+	.searchform {
+		text-align: center;
+		.search-field {
+			max-width: 90%
+		}
+	}
 }
 
 	#logo {
@@ -195,7 +201,6 @@ HEADER STYLES
 
 		a {
 			color: $sundial-dark-orange;
-			width: 25%;
 			display: block;
 			width: 50%;
 			margin: 0 auto;
