@@ -23,11 +23,14 @@ be seen on the Desktop.
 	padding: 1em 0;
 	font-size: 12px;
 }
+.home #container > footer {
+	background-color: #fff;
+}
 
 #inner-footer {
 	width: 1008px;
 }
 
 .hentry {
-	min-height: 75%;
+	min-height: 80%;
 }

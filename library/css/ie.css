@@ -607,14 +607,19 @@ be seen on the Desktop.
   font-size: 12px;
 }
 
-/* line 27, ../scss/breakpoints/_1030up.scss */
+/* line 26, ../scss/breakpoints/_1030up.scss */
+.home #container > footer {
+  background-color: #fff;
+}
+
+/* line 30, ../scss/breakpoints/_1030up.scss */
 #inner-footer {
   width: 1008px;
 }
 
-/* line 31, ../scss/breakpoints/_1030up.scss */
+/* line 34, ../scss/breakpoints/_1030up.scss */
 .hentry {
-  min-height: 75%;
+  min-height: 80%;
 }
 
 /*
