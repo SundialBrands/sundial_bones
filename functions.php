@@ -348,6 +348,7 @@ function sundial_bones_page_styles_fields( $page ) {
 				<option value="lime" <?php selected( $tc, 'lime' ); ?>>Lime</option>
 				<option value="purple" <?php selected( $tc, 'purple' ); ?>>Purple</option>
 				<option value="gray" <?php selected( $tc, 'gray' ); ?>>Gray</option>
+				<option value="ltgray" <?php selected( $tc, 'ltgray' ); ?>>Light Gray</option>
 				<option value="brown" <?php selected( $tc, 'brown' ); ?>>Brown</option>
 			</select>
 			<br />Select color for the background color for content on this page.
