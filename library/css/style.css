@@ -1254,7 +1254,7 @@ textarea,
   width: 100%;
   max-width: 400px;
   font-family: montserrat, "Gotham", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #eaedf2;
+  background-color: #aaa;
   -webkit-transition: background-color 0.24s ease-in-out;
   transition: background-color 0.24s ease-in-out;
 }
@@ -1292,7 +1292,7 @@ textarea:focus,
 textarea:active,
 .field:focus,
 .field:active {
-  background-color: #f7f8fa;
+  background-color: #fff;
   outline: none;
 }
 /* line 66, ../scss/modules/_forms.scss */
