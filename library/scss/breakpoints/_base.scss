@@ -491,6 +491,14 @@ POSTS & CONTENT STYLES
 					text-transform: none;
 					font-weight: 600;
 				}
+				.front-page-tiles {
+					width: 95%;
+					margin: 0 auto;
+					&:after {
+						display: table;
+						clear: both;
+					}
+				}
 		
 			}
 		
