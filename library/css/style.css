@@ -1571,7 +1571,7 @@ article .search {
 
 /* line 47, ../scss/breakpoints/_base.scss */
 .search h1.archive-title {
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 255, 255, 0.9);
   margin: 0;
   padding: .67em;
 }
