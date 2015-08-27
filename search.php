@@ -7,13 +7,27 @@
 						<main id="main" class="m-all t-all d-all cf" role="main">
 					<?php get_header(); ?>
 						
-						
+					<?php
+						global $query_string;
+
+						$query_args = explode("&", $query_string);
+						$search_query = array();
+
+						foreach($query_args as $key => $string) {
+							$query_split = explode("=", $string);
+							$search_query[$query_split[0]] = urldecode($query_split[1]);
+						} // foreach
+
+						$search = new WP_Query($search_query);
+					?>
+					<h1 class="archive-title"><span><?php _e( 'Search Results for:', 'bonestheme' ); ?></span> <?php echo esc_attr(get_search_query()); ?></h1>
+
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class('cf'); ?> role="article">
 
 								<header class="entry-header article-header">
-<h1 class="archive-title"><span><?php _e( 'Search Results for:', 'bonestheme' ); ?></span> <?php echo esc_attr(get_search_query()); ?></h1>
+
 									<h3 class="search-title entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
 
 								</header>
