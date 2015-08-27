@@ -497,6 +497,11 @@ POSTS & CONTENT STYLES
 					&:after {
 						display: table;
 						clear: both;
+						content: "";
+					}
+					&:before {
+						display: table;
+						content: "";
 					}
 				}
 		
