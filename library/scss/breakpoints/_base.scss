@@ -83,6 +83,8 @@ LINK STYLES
 
 a, a:visited {
 	color: $link-color;
+	transition: color,background-color .25s ease-in-out;
+	-webkit-transition: -webkit-tap-highlight-color .25s ease-in-out;
 
 	/* on hover */
 	&:hover, &:focus {
