@@ -37,7 +37,12 @@ style a page via class
 .blog {}                          /* blog template page */
 .archive {}                       /* archive page */
 .date {}                          /* date archive page */
-	.date-paged-1 {}                /* replace the number to the corresponding page number */
+	.date-paged-1 {}               /* replace the number to the corresponding page number */
+article {
+	.search {
+		padding: 1.5em 1.5em 0;
+	}
+}
 .search {}                        /* search page */
 	.search-results {}              /* search result page */
 	.search-no-results {}           /* no results search page */
