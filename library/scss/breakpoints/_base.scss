@@ -202,27 +202,6 @@ the navs on the site so our css is cleaner
 and more scalable.
 */
 
-.menu-main {
-	display: none;
-	opacity: 0;
-	position: absolute;
-	right: 0;
-	width: 100%;
-	li {
-        display: block;
-        margin: 0;
-        width: 100%;
-        a {
-			-webkit-box-sizing: border-box;
-			-moz-box-sizing: border-box;
-			box-sizing: border-box;
-			display: block;
-			text-decoration: none;
-			width: 100%;
-		}
-	}
-}
-
 .nav {
 	border-bottom: 0;
 	margin: 0;
@@ -297,10 +276,6 @@ and more scalable.
 
 } /* end .nav */
 
-#menu-main > li {
-     float:left;
-     list-style: none;
-}
 #toggle {
 	display: none;
 	&:checked ~ #menu-main {
@@ -361,19 +336,30 @@ and more scalable.
     min-width: 100%;
     z-index: 99;
     transition: all .5s ease-in-out;
+    width: 100%;
 
     li {
-          height: auto;
-          display: block;
-          float: none;
+		height: auto;
+		display: block;
+		float: none;
+		margin: 0;
+		width: 100%;
+		list-style: none;
      	a {
 			padding: 15px 15px;
 			height: auto;
 			border-right: 0;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			display: block;
+			text-decoration: none;
+			width: 100%;
 			&:hover, &:focus {
 				background: $nubian-gray;
 				box-shadow: inset 5px 0px $sundial-orange;
 				padding: 15px 15px 15px 25px;
+				color: $sundial-orange;
 			}
         }
     }
