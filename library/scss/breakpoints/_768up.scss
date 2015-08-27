@@ -35,6 +35,13 @@ LAYOUT & GRID STYLES
 		.front-page-row-col {
 			width: 280px;
 			height: 200px;
+			.shade {
+			display: inline-block;
+			position: absolute;
+			height: 100%;
+			padding: 0 .5em;
+			max-width: 100%;
+			}
 		}
 	}
 }
