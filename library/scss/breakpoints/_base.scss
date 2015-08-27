@@ -43,7 +43,16 @@ article {
 		padding: 1.5em 1.5em 0;
 	}
 }
-.search {}                        /* search page */
+.search {
+	h1.archive-title {
+		background-color: rgba($white,0.95);
+		margin: 0;
+		padding: .67em;
+    }
+    .hentry {
+    	min-height: 0;
+    }
+}                        /* search page */
 	.search-results {}              /* search result page */
 	.search-no-results {}           /* no results search page */
 	.search-paged-1 {}              /* individual paged search (i.e. body.search-paged-3) */
