@@ -44,7 +44,7 @@ textarea,
   padding: 0 12px;
   margin-bottom: 14px;
   font-size: 1em;
-  color: $text-color;
+  color: $white;
   border-radius: 3px;
   vertical-align: middle;
   box-shadow: none;
@@ -60,6 +60,7 @@ textarea,
   &:active {
     background-color: $white;
     outline: none; 
+    color: $text-color;
   } // end hover or focus
 
   // error notification
