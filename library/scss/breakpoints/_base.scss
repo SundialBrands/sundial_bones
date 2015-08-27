@@ -409,7 +409,7 @@ POSTS & CONTENT STYLES
 						color: $sundial-dark-orange;
 						text-decoration: none;
 						&:hover, &:active {
-							color: darken( $sundial-dark-orange, 10% );
+							color: darken( $sundial-dark-orange, 20% );
 						}
 					}
 				}
@@ -417,7 +417,7 @@ POSTS & CONTENT STYLES
 					color: $sundial-dark-orange;
 					text-decoration: none;
 					&:hover, &:active {
-						color: darken( $sundial-dark-orange, 10% );
+						background-color: darken( $white, 20% );
 					}
 				}
 			}
@@ -439,7 +439,7 @@ POSTS & CONTENT STYLES
 					background-color: rgba( $color, 0.95);
 					text-decoration: none;
 					&:hover, &:active {
-						color: darken( $white, 10% );
+						background-color: darken( $color, 10% );
 					}
 				}
 			}
