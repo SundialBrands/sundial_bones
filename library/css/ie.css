@@ -490,7 +490,7 @@ NAVIGATION STYLES
 }
 /* line 195, ../scss/breakpoints/_768up.scss */
 #menu-main li > a:hover, #menu-main li > a:active, #menu-main li > a:focus {
-  color: #F6BF3C;
+  color: #565553;
   background: transparent;
   box-shadow: none;
   border-right-color: #F48D2F;

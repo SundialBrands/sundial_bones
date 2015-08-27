@@ -358,6 +358,7 @@ and more scalable.
 			display: block;
 			text-decoration: none;
 			width: 100%;
+			transition: all .5s ease-in-out;
 			&:hover, &:focus {
 				background: $nubian-gray;
 				box-shadow: inset 5px 0px $sundial-orange;
@@ -658,6 +659,11 @@ POSTS & CONTENT STYLES
 					max-width: 260px;
 					transition: color,background-color .25s ease-in-out;
 					-webkit-transition: -webkit-tap-highlight-color,color,background-color .25s ease-in-out;
+					a {
+						width: 100%;
+						height: 100%;
+						display: block;
+					}
 					h1, a h1 {
 						color: #fff;
 						margin: 15px 5px 0;
