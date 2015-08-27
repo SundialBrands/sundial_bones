@@ -181,15 +181,16 @@ header nav {
     border: 0;
     background: transparent;
     font-size: .85em;
+    margin-bottom: 1em;
     li {
     	float: left;
 		position: relative;
 		width: auto;
-		line-height: 4em;
     	a {
     		border-bottom: 0;
 			padding: 0.75em .5em;
 			border-right: 1px solid;
+			line-height: 1em;
     	}
 		> a:hover, > a:active, > a:focus {
 			color: $sundial-orange;
@@ -338,11 +339,7 @@ you'll probably need to do quite a bit
 of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
-#container > footer {
-	position: fixed;
-	bottom: 0;
-	padding: 1em 0;
-}
+
 
 #inner-footer {
 	width: 728px;

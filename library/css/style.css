@@ -3061,21 +3061,22 @@ you can add resource intensive styles.
     border: 0;
     background: transparent;
     font-size: .85em;
+    margin-bottom: 1em;
   }
-  /* line 184, ../scss/breakpoints/_768up.scss */
+  /* line 185, ../scss/breakpoints/_768up.scss */
   #menu-main li {
     float: left;
     position: relative;
     width: auto;
-    line-height: 4em;
   }
   /* line 189, ../scss/breakpoints/_768up.scss */
   #menu-main li a {
     border-bottom: 0;
     padding: 0.75em .5em;
     border-right: 1px solid;
+    line-height: 1em;
   }
-  /* line 194, ../scss/breakpoints/_768up.scss */
+  /* line 195, ../scss/breakpoints/_768up.scss */
   #menu-main li > a:hover, #menu-main li > a:active, #menu-main li > a:focus {
     color: #F6BF3C;
     background: transparent;
@@ -3083,7 +3084,7 @@ you can add resource intensive styles.
     border-right-color: #F48D2F;
     padding: 0.75em .5em;
   }
-  /* line 202, ../scss/breakpoints/_768up.scss */
+  /* line 203, ../scss/breakpoints/_768up.scss */
   #menu-main li:last-child a {
     border-right: 0;
   }
@@ -3091,28 +3092,28 @@ you can add resource intensive styles.
   /*********************
   SIDEBARS & ASIDES
   *********************/
-  /* line 213, ../scss/breakpoints/_768up.scss */
+  /* line 214, ../scss/breakpoints/_768up.scss */
   .sidebar {
     margin-top: 2.2em;
   }
 
-  /* line 217, ../scss/breakpoints/_768up.scss */
+  /* line 218, ../scss/breakpoints/_768up.scss */
   .widgettitle {
     border-bottom: 2px solid #444;
     margin-bottom: 0.75em;
   }
 
-  /* line 222, ../scss/breakpoints/_768up.scss */
+  /* line 223, ../scss/breakpoints/_768up.scss */
   .widget {
     padding: 0 10px;
     margin: 2.2em 0;
   }
-  /* line 227, ../scss/breakpoints/_768up.scss */
+  /* line 228, ../scss/breakpoints/_768up.scss */
   .widget ul li {
     margin-bottom: 0.75em;
     /* deep nesting */
   }
-  /* line 235, ../scss/breakpoints/_768up.scss */
+  /* line 236, ../scss/breakpoints/_768up.scss */
   .widget ul li ul {
     margin-top: 0.75em;
     padding-left: 1em;
@@ -3137,33 +3138,26 @@ you can add resource intensive styles.
   of overriding here if you styled them for
   mobile. Make sure to double check these!
   */
-  /* line 341, ../scss/breakpoints/_768up.scss */
-  #container > footer {
-    position: fixed;
-    bottom: 0;
-    padding: 1em 0;
-  }
-
-  /* line 347, ../scss/breakpoints/_768up.scss */
+  /* line 344, ../scss/breakpoints/_768up.scss */
   #inner-footer {
     width: 728px;
     display: table;
   }
 
-  /* line 352, ../scss/breakpoints/_768up.scss */
+  /* line 349, ../scss/breakpoints/_768up.scss */
   #inner-footer .copyright, #inner-footer .address {
     display: table-cell;
     vertical-align: middle;
     text-align: left;
   }
 
-  /* line 358, ../scss/breakpoints/_768up.scss */
+  /* line 355, ../scss/breakpoints/_768up.scss */
   .footer .wrap nav {
     display: table-cell;
     text-align: left;
   }
 
-  /* line 365, ../scss/breakpoints/_768up.scss */
+  /* line 362, ../scss/breakpoints/_768up.scss */
   .footer-links ul li {
     /*
     be careful with the depth of your menus.
@@ -3196,12 +3190,19 @@ you can add resource intensive styles.
     width: 1040px;
   }
 
-  /* line 16, ../scss/breakpoints/_1030up.scss */
+  /* line 15, ../scss/breakpoints/_1030up.scss */
+  #container > footer {
+    position: fixed;
+    bottom: 0;
+    padding: 1em 0;
+  }
+
+  /* line 21, ../scss/breakpoints/_1030up.scss */
   #inner-footer {
     width: 1008px;
   }
 
-  /* line 20, ../scss/breakpoints/_1030up.scss */
+  /* line 25, ../scss/breakpoints/_1030up.scss */
   .hentry {
     min-height: 75%;
   }

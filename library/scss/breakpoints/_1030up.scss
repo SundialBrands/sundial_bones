@@ -12,6 +12,11 @@ be seen on the Desktop.
 .wrap {
   width: 1040px;
 }
+#container > footer {
+	position: fixed;
+	bottom: 0;
+	padding: 1em 0;
+}
 
 #inner-footer {
 	width: 1008px;
