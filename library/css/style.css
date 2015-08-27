@@ -3200,14 +3200,15 @@ you can add resource intensive styles.
     position: fixed;
     bottom: 0;
     padding: 1em 0;
+    font-size: 12px;
   }
 
-  /* line 26, ../scss/breakpoints/_1030up.scss */
+  /* line 27, ../scss/breakpoints/_1030up.scss */
   #inner-footer {
     width: 1008px;
   }
 
-  /* line 30, ../scss/breakpoints/_1030up.scss */
+  /* line 31, ../scss/breakpoints/_1030up.scss */
   .hentry {
     min-height: 75%;
   }
@@ -3235,6 +3236,11 @@ This is for the larger monitors and possibly full screen viewers.
   /* line 16, ../scss/breakpoints/_1240up.scss */
   .hentry {
     min-height: 100%;
+  }
+
+  /* line 20, ../scss/breakpoints/_1240up.scss */
+  #container > footer {
+    font-size: 14px;
   }
 }
 /*********************

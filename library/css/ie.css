@@ -604,14 +604,15 @@ be seen on the Desktop.
   position: fixed;
   bottom: 0;
   padding: 1em 0;
+  font-size: 12px;
 }
 
-/* line 26, ../scss/breakpoints/_1030up.scss */
+/* line 27, ../scss/breakpoints/_1030up.scss */
 #inner-footer {
   width: 1008px;
 }
 
-/* line 30, ../scss/breakpoints/_1030up.scss */
+/* line 31, ../scss/breakpoints/_1030up.scss */
 .hentry {
   min-height: 75%;
 }
