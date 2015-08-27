@@ -1598,7 +1598,7 @@ LINK STYLES
 a, a:visited {
   color: #f01d4f;
   transition: color,background-color .25s ease-in-out;
-  -webkit-transition: -webkit-tap-highlight-color .25s ease-in-out;
+  -webkit-transition: -webkit-tap-highlight-color,color,background-color .25s ease-in-out;
   /* on hover */
   /* on click */
   /* mobile tap color */
@@ -2420,7 +2420,7 @@ POSTS & CONTENT STYLES
   padding: .5em;
   max-width: 260px;
   transition: color,background-color .25s ease-in-out;
-  -webkit-transition: -webkit-tap-highlight-color .25s ease-in-out;
+  -webkit-transition: -webkit-tap-highlight-color,color,background-color .25s ease-in-out;
 }
 /* line 661, ../scss/breakpoints/_base.scss */
 .entry-content .front-page-row-col .shade h1, .entry-content .front-page-row-col .shade a h1 {
@@ -2519,7 +2519,7 @@ PAGE NAVI STYLES
   display: block;
   color: #2980b9;
   transition: color,background-color .25s ease-in-out;
-  -webkit-transition: -webkit-tap-highlight-color .25s ease-in-out;
+  -webkit-transition: -webkit-tap-highlight-color,color,background-color .25s ease-in-out;
 }
 /* line 776, ../scss/breakpoints/_base.scss */
 .pagination a:hover, .pagination a:focus, .pagination span:hover, .pagination span:focus {
@@ -2531,7 +2531,7 @@ PAGE NAVI STYLES
   cursor: default;
   color: #F48D2F;
   transition: color,background-color .25s ease-in-out;
-  -webkit-transition: -webkit-tap-highlight-color .25s ease-in-out;
+  -webkit-transition: -webkit-tap-highlight-color,color,background-color .25s ease-in-out;
 }
 /* line 788, ../scss/breakpoints/_base.scss */
 .pagination .current:hover, .pagination .current:focus {
