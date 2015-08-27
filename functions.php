@@ -397,5 +397,7 @@ function save_sundial_bones_background_image( $page_id, $page ) {
         }	
 	}
 }
-// remove_filter('the_content', 'wpautop');
+if( is_home() ) {
+	remove_filter('the_content', 'wpautop');
+}
 /* DON'T DELETE THIS CLOSING TAG */ ?>
