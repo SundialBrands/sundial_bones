@@ -2981,13 +2981,13 @@ you can add resource intensive styles.
   HEADER STYLES
   *********************/
   /* line 58, ../scss/breakpoints/_768up.scss */
-  .header .search-form {
+  .header .searchform {
     position: absolute;
-    right: 20px;
-    top: 1px;
+    right: 1em;
+    top: 1em;
   }
   /* line 63, ../scss/breakpoints/_768up.scss */
-  .header .search-form .search-field {
+  .header .searchform .search-field {
     background-color: transparent;
     background-image: url(http://api.ning.com:80/files/dr2jDpSXWFhyuoGJ4YR5Fu-PwuqLz70YxRaUcpdKNxf2HI5ECzddyx3NHuPz-MB4ujGS4rEtdtS-aQoFlQrtv*XwVOu*AvC8/searchicon.png);
     background-position: 5px center;
@@ -3004,7 +3004,7 @@ you can add resource intensive styles.
     width: 0;
   }
   /* line 79, ../scss/breakpoints/_768up.scss */
-  .header .search-form .search-field:focus {
+  .header .searchform .search-field:focus {
     background-color: #fff;
     border: 2px solid black;
     cursor: text;
@@ -3012,11 +3012,11 @@ you can add resource intensive styles.
     width: 230px;
   }
   /* line 89, ../scss/breakpoints/_768up.scss */
-  .header .search-form .search-submit {
+  .header .searchform .search-submit {
     display: none;
   }
   /* line 93, ../scss/breakpoints/_768up.scss */
-  .header .search-form input[type="search"] {
+  .header .searchform input[type="search"] {
     -webkit-appearance: textfield;
   }
   /* line 101, ../scss/breakpoints/_768up.scss */
