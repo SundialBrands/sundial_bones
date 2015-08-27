@@ -245,7 +245,7 @@ and more scalable.
 			keep this file as small as possible!
 			*/
 			&:hover, &:focus {
-				color: $sundial-orange;
+				color: $nubian-gray;
 				border-color: $sundial-dark-orange;
 			}
 		}
@@ -341,6 +341,7 @@ and more scalable.
 
 	&:hover:after {
 	    background: $sundial-orange;
+	    color: $nubian-gray
      }
 }
 
@@ -370,7 +371,7 @@ and more scalable.
 			height: auto;
 			border-right: 0;
 			&:hover, &:focus {
-				background: #F2F2F2;
+				background: $nubian-gray;
 				box-shadow: inset 5px 0px $sundial-orange;
 				padding: 15px 15px 15px 25px;
 			}
@@ -1142,7 +1143,7 @@ FOOTER STYLES
 					color: $sundial-dark-orange;
 				}
 				a:hover {
-					color: $sundial-orange;
+					color: $nubian-gray;
 					border-right-color: $sundial-dark-orange;
 				}
 			}
