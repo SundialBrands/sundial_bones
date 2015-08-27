@@ -1917,12 +1917,12 @@ POSTS & CONTENT STYLES
 }
 /* line 413, ../scss/breakpoints/_base.scss */
 .hentry.page-color-default a {
-  color: #F48D2F;
+  color: #5c6b80;
   text-decoration: none;
 }
 /* line 416, ../scss/breakpoints/_base.scss */
 .hentry.page-color-default a:hover, .hentry.page-color-default a:active {
-  color: #b45b09;
+  color: #929eb0;
 }
 
 /* line 421, ../scss/breakpoints/_base.scss */

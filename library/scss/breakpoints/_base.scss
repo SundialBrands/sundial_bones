@@ -411,10 +411,10 @@ POSTS & CONTENT STYLES
 				.hentry.page-color-#{$pagecolor} {
 					color: $sundial-dark-orange;
 					a {
-						color: $sundial-dark-orange;
+						color: $default;
 						text-decoration: none;
 						&:hover, &:active {
-							color: darken( $sundial-dark-orange, 20% );
+							color: lighten( $default, 20% );
 						}
 					}
 				}
