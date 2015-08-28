@@ -3355,7 +3355,7 @@ you can add resource intensive styles.
 
   /* line 42, ../scss/breakpoints/_1030up.scss */
   #menu-main {
-    font-size: .85em;
+    font-size: .9em;
   }
 
   /* line 46, ../scss/breakpoints/_1030up.scss */
@@ -3398,7 +3398,7 @@ This is for the larger monitors and possibly full screen viewers.
   ******************************************************************/
   /* line 12, ../scss/breakpoints/_1240up.scss */
   #menu-main {
-    menu-size: 1em;
+    font-size: 1em;
   }
 
   /* line 16, ../scss/breakpoints/_1240up.scss */
