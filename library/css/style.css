@@ -1727,9 +1727,9 @@ HEADER STYLES
 }
 /* line 194, ../scss/breakpoints/_base.scss */
 .header .searchform .search-field {
-  max-width: 90%;
+  max-width: 66%;
   margin: 0 auto;
-  padding-left: 48px;
+  padding-left: 70px;
 }
 /* line 199, ../scss/breakpoints/_base.scss */
 .header .searchform .search-submit {
