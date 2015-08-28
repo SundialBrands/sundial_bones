@@ -193,6 +193,24 @@ HEADER STYLES
 		.search-field {
 			max-width: 90%;
 			margin: 0 auto;
+			padding-left: 48px;
+		}
+		.search-submit {
+			-webkit-appearance: none;
+			border: 0;
+			color: $white;
+			background-color: $sundial-dark-orange;
+			font-size: 12px;
+			position: absolute;
+			top: 0;
+			left: 15px;
+			padding: 12.5px;
+			border-radius: 3px 0 0 3px;
+			transition: all .5s linear;
+			&:hover, &:active {
+				color: $nubian-gray;
+				background-color: $sundial-orange;
+			}
 		}
 	}
 }
