@@ -2488,7 +2488,7 @@ POSTS & CONTENT STYLES
 }
 /* line 683, ../scss/breakpoints/_base.scss */
 .entry-content .front-page-row-col .shade a {
-  width: 100%;
+  width: 95%;
   height: 100%;
   display: block;
 }
