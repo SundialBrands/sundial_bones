@@ -10,6 +10,8 @@ sidebars, comments, etc.
 
 // LOAD BONES CORE (if you remove this, the theme will break)
 require_once( 'library/bones.php' );
+update_option('siteurl','http://www.sundialbrands.com');
+update_option('home','http://www.sundialbrands.com');
 
 // CUSTOMIZE THE WORDPRESS ADMIN (off by default)
 // require_once( 'library/admin.php' );
