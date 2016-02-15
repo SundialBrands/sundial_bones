@@ -1,0 +1,94 @@
+#divGiftBox {
+	
+	form {
+		
+		.header {
+			border-bottom: 0;
+    		margin: 0 0 0 0.75em;
+    		text-transform: uppercase;
+    		font-family: $sans-serif;
+    		
+    		h3 {
+    			font-size: 130%;
+   				line-height: 1.8em;
+    		}
+    		
+		}
+		
+		#divGiftwrapItem {
+			margin: 0.75em 0;
+			display: flex;
+			-ms-flex-pack: justify;
+			-webkit-justify-content: space-around;
+			justify-content: space-around;
+			
+			.gb-image {
+				display: inline-block;
+				
+				img {
+					width: auto;
+					height: 6em;
+				}
+				
+			}
+			
+			.gb-title {
+				display: inline-block;
+				
+				h1 {
+					line-height: 3em;
+    				margin-bottom: 1em;
+    				font-size: 1.25em;
+				}
+				
+			}
+			
+		}			
+
+		.gb-actions {
+			display: flex;
+			-ms-flex-pack: justify;
+			-webkit-justify-content: space-around;
+			justify-content: space-around;
+			margin: 0.75em 0;
+			
+			#cmdGWCancel {
+				margin: 0;
+			}
+			
+		}
+		
+		.gb-description {
+			display: block;
+			margin: 0.75em auto;
+			max-width: 95%;
+		}
+		
+	}
+	
+}
+
+
+#simplemodal-container {
+	overflow-x: hidden;
+	overflow-y: auto;
+	padding-top: 2em !important;
+	background: $white;
+	min-height: 280px;
+	min-width: 320px;
+	
+	a.modalCloseImg {
+		top: 2em;
+	}
+	
+}
+
+
+@media only screen and (min-width: 481px) {
+
+	#simplemodal-container {
+		min-height: 340px;
+		min-width: 480px;
+	}
+
+}

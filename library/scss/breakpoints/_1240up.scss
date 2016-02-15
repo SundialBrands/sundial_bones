@@ -1,6 +1,6 @@
 /******************************************************************
-Site Name: 
-Author: 
+Site Name: SheaMoisture v1.5
+Author: Chad A. Carino
 
 Stylesheet: Super Large Monitor Stylesheet
 
@@ -8,4 +8,206 @@ You can add some advanced styles here if you like. This kicks in
 on larger screens.
 
 ******************************************************************/
+
+body {
+	font-size: 14px;
+}
+
+/* BREAKPOINT SHOW & HIDE */
+
+.feodn,
+.ssedn,
+.ttdn,
+.tfdn {
+	display: none !important;
+}
+
+.feoup,
+.sseup,
+.ttup,
+.tfup {
+	display: inline !important;
+}
+
+/* GRID */
+
+.row div[class*="col-lg-"] {
+	float: left;
+}
+
+.col-lg-1 {
+	width: 8%;
+}
+
+.col-lg-2 {
+	width: 16.33%;
+}
+
+.col-lg-3 {
+	width: 24.66%;
+}
+
+.col-lg-4 {
+	width: 33%;
+}
+
+.col-lg-5 {
+	width: 41.33%;
+}
+
+.col-lg-6 {
+	width: 49.66%;
+}
+
+.col-lg-7 {
+	width: 58%;
+}
+
+.col-lg-8 {
+	width: 66.33%;
+}
+
+.col-lg-9 {
+	width: 74.66%;
+}
+
+.col-lg-10 {
+	width: 83%;
+}
+
+.col-lg-11 {
+	width: 91.33%;
+}
+
+.col-lg-12 {
+	width: 100%;
+}
+
+nav.cbp-hrmenu {
+
+	> ul {
+	
+		> li {
+			
+			&.hasMega {
+			
+				&:hover, &:active {
+					
+					.cbp-hrsub {
+						top: 40px;
+					}
+				
+				}
+					
+			}
+		
+		}
+		
+	}
+
+}
+
+.productBlockContainer {
+	
+	.productContainer {
+	
+		.product-item {
+			
+			.img {
+				min-height: 300px;
+			}
+			
+		}
+		
+	}
+	
+}
+
+#category #subcategoriesBlock {
+	max-width: 1200px;
+	margin: 0 auto 1em;
+
+	ul {
+
+		li .sub-categories .img .subcat-name {
+			font-size: 1em;
+		}
+	
+	}
+
+}
+
+/* BORDER */
+
+[class*="col-lg-"] {
+
+	.topborder:before, .rightborder:after {
+		display: block;
+	}
+
+}
+
+
+
+/* BOX */
+
+.box {
+
+	&.paint-bg {
+		background-size: cover;
+	}
+
+}
+
+
+
+/* MENU */
+nav {
+	
+	&.cbp-hrmenu {
+	
+		> ul {
+			max-width: 1300px;
+			margin: 0;
+			
+			> li {
+
+				.toggle ~ a, a { 
+					padding: 0 1em;
+				}
+				
+			}
+			
+		}
+	
+	}
+
+}
+
+
+
+/* HOME */
+#mainContainer {
+	
+	.wrapper {
+		
+		&.home {
+
+			#home {
+
+				#homeCarousel {
+					width: 95%;
+					height: auto;
+					position: relative;
+					left: -1em;
+					margin: 0 auto 2em;
+		
+				}
+
+			}
+		}
+		
+	}
+	
+}
 

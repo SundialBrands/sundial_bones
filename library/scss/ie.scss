@@ -21,9 +21,9 @@ import the mixins file so SASS can understand the variables.
 ******************************************************************/
 
 @import "partials/variables"; // import variables
-@import "partials/typography"; // import typography
 @import "partials/mixins"; // import mixins
-@import "partials/ie_grid"; // import grid
+@import "partials/typography"; // import typography
+// @import "partials/ie_grid"; // import grid
 
 // import everything inside media queries
 @import "breakpoints/481up";
@@ -56,3 +56,38 @@ header.php file to see what they are:
 .lt-ie8 .class { ... }
 
 */
+
+/* ie versions of rewrites from fontello, mobileicons, and flexslider font to fontawesome */
+
+.icon-search-1 { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '#{$ieslash}#{$fa-var-search};&nbsp;'); }
+.icon-right-circle { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '#{$ieslash}#{$fa-var-chevron-circle-right};&nbsp;'); }
+.icon-heart { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '#{$ieslash}#{$fa-var-heart};&nbsp;'); }
+.icon-basket { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '#{$ieslash}#{$fa-var-shopping-cart};&nbsp;'); }
+.icon-ok { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '#{$ieslash}#{$fa-var-check};&nbsp;'); }
+.icon-ok-circled { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '#{$ieslash}#{$fa-var-check-circle};&nbsp;'); }
+.icon-ok-circled2 { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '#{$ieslash}#{$fa-var-check-circle-o};&nbsp;'); }
+.icon-cancel { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '#{$ieslash}#{$fa-var-times};&nbsp;'); }
+.icon-cancel-circled { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '#{$ieslash}#{$fa-var-times-circle};&nbsp;'); }
+.icon-cancel-circled2 { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '#{$ieslash}#{$fa-var-times-circle-o};&nbsp;'); }
+.icon-home { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '#{$ieslash}#{$fa-var-home};&nbsp;'); }
+.icon-link { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '#{$ieslash}#{$fa-var-link};&nbsp;'); }
+.icon-tag { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '#{$ieslash}#{$fa-var-tag};&nbsp;'); }
+.icon-bookmark { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '#{$ieslash}#{$fa-var-bookmark};&nbsp;'); }
+.icon-print { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '#{$ieslash}#{$fa-var-print};&nbsp;'); }
+.icon-comment { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '#{$ieslash}#{$fa-var-comment};&nbsp;'); }
+.icon-chat-empty { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '#{$ieslash}#{$fa-var-comments-o};&nbsp;'); }
+.icon-th { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '#{$ieslash}#{$fa-var-th};&nbsp;'); }
+.icon-rss { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '#{$ieslash}#{$fa-var-rss};&nbsp;'); }
+.icon-menu { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '#{$ieslash}#{$fa-var-bars};&nbsp;'); }
+.icon-left-open { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '#{$ieslash}#{$fa-var-chevron-left};&nbsp;'); }
+.icon-right-open { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '#{$ieslash}#{$fa-var-chevron-right};&nbsp;'); }
+.icon-ellipsis-vert { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '#{$ieslash}#{$fa-var-ellipsis-v};&nbsp;'); }
+.icon-facebook { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '#{$ieslash}#{$fa-var-facebook};&nbsp;'); }
+.icon-gplus { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '#{$ieslash}#{$fa-var-google-plus};&nbsp;'); }
+.icon-instagramm { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '#{$ieslash}#{$fa-var-instagram};&nbsp;'); }
+.icon-linkedin-squared { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '#{$ieslash}#{$fa-var-linkedin-square};&nbsp;'); }
+.icon-pinterest-circled { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '#{$ieslash}#{$fa-var-pinterest};&nbsp;'); }
+.icon-tumblr { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '#{$ieslash}#{$fa-var-tumblr};&nbsp;'); }
+.icon-twitter { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '#{$ieslash}#{$fa-var-twitter};&nbsp;'); }
+.icon-youtube-play { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '#{$ieslash}#{$fa-var-youtube-play};&nbsp;'); }
+.icon-attention { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '#{$ieslash}#{$fa-var-exclamation-triangle};&nbsp;'); }

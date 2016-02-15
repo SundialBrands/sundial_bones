@@ -1,0 +1,39 @@
+/******************************************************************
+Site Name: SheaMoisture v1.5
+Author: Chad A. Carino
+
+Stylesheet: Desk.com Styles
+******************************************************************/
+
+.assistly-widget {
+	position: fixed;
+    bottom: -0.25em;
+    right: 0;
+    display: none;
+
+	> a, > span {
+		min-height: 20px !important;
+		background-image: url('#{$imgRoot}Interface/launch_chat_sprite.png') !important;
+		width: 120px !important;
+		@include transition(background-position 0s);
+	}
+
+}
+
+
+@media only screen and (min-width: 768px) {
+
+	.assistly-widget {
+		display: block;
+	}
+
+}
+
+
+@media only screen and (min-width: 1240px) {
+
+	.assistly-widget {
+// 		bottom: -0.4em;
+	}
+
+}

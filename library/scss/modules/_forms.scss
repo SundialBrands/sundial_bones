@@ -1,20 +1,414 @@
 /******************************************************************
-Site Name:
-Author:
+Site Name: SheaMoisture v1.5
+Author: Chad A. Carino
 
 Stylesheet: Form Styles
-
-We put all the form and button styles in here to setup a consistent
-look. If we need to customize them, we can do this in the main
-stylesheets and just override them. Easy Peasy.
-
-You're gonna see a few data-uri thingies down there. If you're not
-sure what they are, check this link out:
-http://css-tricks.com/data-uris/
-If you want to create your own, use this helpful link:
-http://websemantics.co.uk/online_tools/image_to_data_uri_convertor/
-
 ******************************************************************/
+
+select {
+	color: $shea-brown;
+    background: $white url("#{$imgThis}select-arrow.png") no-repeat scroll 99% center;
+    background-size: 1.5em;
+    border: 1px solid $shea-brown;
+    padding: 6px;
+    width: 100%;
+	-moz-appearance: none;
+	-webkit-appearance:none;
+	appearance: none;
+	border-radius: 0;
+	font-weight: inherit;
+	text-transform: inherit;	
+}
+
+form > div, div.form-field {
+
+	&:before, &:after {
+		content: ' ';
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+	
+	select {
+		float: left;
+		width: 100%;
+	}
+	
+	label {
+		float: left;
+		line-height: 2.4em;
+		width: auto;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	
+	input {
+		float: left;
+		margin: 0;
+		width: 100% !important;	//override 'responsive.css' !important directive
+		border: 1px solid $shea-brown;
+		padding: 10px;
+		
+		&[type="checkbox"], &[type="radio"] {
+			float: none;
+			display: inline-block;
+			width: auto !important;
+			margin: 0 0.5em;
+			
+			~ label {
+				float: none;
+				display: inline-block;
+				width: auto !important;
+			}
+		
+		}
+	
+		&.btn {
+			width: auto !important;	//override the override of 'responsive.css' !important directive
+		}
+		
+	}
+	
+	textarea {
+		border: 1px solid $shea-brown;
+		float: left;
+		height: 100px;
+		width: 100%;
+		padding:10px;
+	}
+	
+}
+
+#loginAccount {
+
+	.header {
+		border-bottom: 0;
+		
+		h3 {
+			text-transform: uppercase;
+			font-family: sans-serif;
+		}
+		
+	}
+
+	.submit-button {
+		float: none;
+		margin: 1.4em 0 2em;
+	}
+	
+	.reset-button {
+		margin: 1.4em 0 .7em 0;
+	}
+	
+	.resetpassword-text {
+		margin: 0;
+	}
+	
+	h1 {
+		margin-bottom: 0;
+	}
+	
+	
+	
+	.loginField {
+	
+		@extend div.form-field;
+		
+		margin: .7em 0 0;
+		
+	}		
+	
+}
+
+#registration0 {
+
+	.header {
+		border: 0;
+		
+		h3 {
+			text-transform: uppercase;
+			font-family: sans-serif;
+		}
+		
+		
+		
+	}
+	
+	.required {
+		margin: 1em 0 0;
+		background: $light-gray;
+		padding: .25em 1em;
+		display: inline-block;
+		
+		h4 {
+			margin-bottom: 0;
+			font-family: $sans-serif;
+			
+			.error-img {
+				line-height: 1.5em !important;	//override of 'layout.css' !important directive
+			}
+		
+		}
+		
+	}
+	
+	.accountRegForm {
+	
+		margin-bottom: 2em;
+	
+		.loginField {
+	
+			@extend div.form-field;
+		
+			margin: .7em 0 0;
+		
+			.strong-pass-bar {
+				background-repeat: no-repeat;
+				background-position: 100% 50%;
+				background-size: auto 94%;
+				background-color: rgba($seagreen,.5);
+				border: 1px solid $darkred;
+				border-left: 40px solid $darkred;
+				margin-left: 0;
+				background-image: url(#{$imgThis}check.png);
+			}
+		
+		}
+		
+		.submit-button {
+			float: none;
+			margin: 1.4em 0 2em;
+		}
+	
+	}
+	
+	.PasswordMSG {
+		margin-left: 0;
+	}
+
+}
+
+#contactUs, #crmRequest {
+
+	.header {
+		margin: 0 0 0.7em;
+		border: 0;
+	}
+	
+	.required {
+		margin: 1em 0;
+		background: $light-gray;
+		padding: .25em 1em;
+		display: inline-block;
+		
+		h4 {
+			margin-bottom: 0;
+			font-family: $sans-serif;
+			
+			.error-img {
+				line-height: 1.5em !important;	//override of 'layout.css' !important directive
+			}
+		
+		}
+		
+	}
+	
+	.box {
+		
+		h3 {
+			text-transform: none;
+		}
+		
+	}
+
+	form {
+
+		.header {
+		
+			h3 {
+				text-transform: uppercase;
+				font-family: sans-serif;
+			}
+		
+		}
+	
+		.crmField {
+	
+			@extend div.form-field;
+		
+			margin: .7em 0 0;
+			
+			.recaptcha {
+				float: none;
+			}
+		
+		}
+		
+		div#divSubmitButton {
+			margin: 1.4em 0 2em;
+		}
+	
+	}
+
+}
+
+
+#productReviewNew {
+
+
+	.header {
+		margin: 0 0 0.7em;
+		border: 0;
+	}
+	
+	.required {
+		margin: 1em 0;
+		background: $light-gray;
+		padding: .25em 1em;
+		display: inline-block;
+		
+		h4 {
+			margin-bottom: 0;
+			font-family: $sans-serif;
+			
+			.error-img {
+				line-height: 1.5em !important;	//override of 'layout.css' !important directive
+			}
+		
+		}
+		
+	}
+	
+	.box {
+		
+		h3 {
+			text-transform: none;
+		}
+		
+	}
+
+	form {
+
+		.header {
+		
+			h3 {
+				text-transform: uppercase;
+				font-family: sans-serif;
+				width: 90%;
+    			margin-left: 1em;
+			}
+		
+		}
+	
+		.reviewField {
+	
+			@extend div.form-field;
+		
+			margin: .7em 0 0;
+			
+			&.verification {
+				
+				label {
+					float: none;
+				}
+			}
+			
+			.recaptcha {
+				float: none;
+			}
+			
+			.error-img {
+				line-height: 2.4em !important;	//override of 'layout.css' !important directive
+				margin: 0 .5em 0 0;
+			}
+			
+			.label-block {
+				display: block;
+				float: none;
+			}
+			
+			.rating {
+				display: inline-block;
+				margin-right: 2em;
+				
+				input {
+					display: inline;
+					float: none;
+					width: 1em !important;	//override the override of 'layout.css' !important directive
+				}
+				
+				img {
+					margin: 0 0 0 1em;
+					float: none;
+				}
+				
+			}
+		
+		}
+		
+		div.review-submit-button {
+			margin: 1.4em 0 2em;
+		}
+	
+	}
+
+}
+
+
+#checkoutSinglePage {
+
+	.button {
+		display: inline-block;
+		padding: 10px;
+	}
+
+	.header {
+		border-bottom:none;
+		margin-bottom: 10px;
+	}
+	
+	.chkField, .chkComments {
+		margin-bottom: 0.75em;
+		
+		label {
+			float: left;
+			line-height: 2.5em;
+			margin-right: 0;
+			text-align: left;
+			width: auto;
+		}
+		
+		input, select, textarea {
+			@include float(100% !important);
+			border: 1px solid $shea-brown;
+			padding: 0.75em;
+		}
+		
+		.checkbox-format {
+			background: $warm-tan;
+			
+			label, input {
+				float: none;
+				display: inline-block;
+				max-width: 90%;
+				width: auto !important;
+				margin: 0 0.5%;
+			}
+			
+		}
+	
+	}
+
+}
+
+
+ .crmField .recaptcha {  
+   float: left !important; //override of 'layout.css' !important directive
+}
+
+
 
 /*********************
 INPUTS
@@ -51,7 +445,6 @@ textarea,
   border: 0;
   width: 100%;
   max-width: 400px;
-  font-family: $lato;
   background-color: $gray;
   @include transition(background-color 0.24s ease-in-out);
 
@@ -65,25 +458,25 @@ textarea,
   // error notification
   &.error,
   &.is-invalid {
-    color: $alert-red;
-    border-color: $alert-red;
+    color: $error;
+    border-color: $error;
     background-color: $white;
     background-position: 99% center;
     background-repeat: no-repeat;
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2NDM0NDREQkYwNEIxMUUyOTI4REZGQTEzMzA2MDcyNiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2NDM0NDREQ0YwNEIxMUUyOTI4REZGQTEzMzA2MDcyNiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjQ3ODRGRkE2RjA0QTExRTI5MjhERkZBMTMzMDYwNzI2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjY0MzQ0NERBRjA0QjExRTI5MjhERkZBMTMzMDYwNzI2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+U8iT5wAAAedJREFUeNqk1U9I02Ecx/HtV3aIFAc1hcRDUoGXRAq0oNLA2CrsEFmHbikZu0iQYIFGYAiegkCpLipBxPpDEBMUzB0EhSG2LhG7hMR2GviPgUTvB57Bw8P3+U23B16HPX8+e/b8nt93wezZSMCnhXETF3AcB5BDCnH8Dq98ExcGHcFn8Ah3cdDni+fxnPDv9oAnTB7CKu6VCFXtChZy56LxUjt+jfuB8toSOth9wd7xWAWhqrUjYR/FRTwWJm+iIPT/w7bQf5ljiZnBg45dtKFX6H+LU8gIY8OEV6vgTkStwXWE8BPTGDHGPqNPz2mCfSOOYkA99TvCt1bhGPL68zMcwmncMuape10jrI+q4BbHi/FLn31S9z2x5tRhTc+1W506ipM+T3oRD4X+8+qtc4SqFvL0z/Fr14S+Szjis8bz9Lvvaq8cwS/wwGfdlqfPSWqTiFlX77o13u9Ym1PBs8JAytpRoy44X9Ft9E/gvbA+rYKn8NcaaMVc8UHgBw4b9/iqUQZ6hOAJFbyDcUflmsEX4a6+wTtHGfhAIUqa1U29Zc2BytouThD8x6xuN5CtMPi2CrXLZkZf/HyZoRFCP7n+QVR4PV7uI/AjGghN7OU/r1ilnqILtfpNC+o6vIFljBKYlhb/F2AAgaBsWR5wRiIAAAAASUVORK5CYII=);
-    outline-color: $alert-red;
+    outline-color: $error;
   } // end invalid input
 
   // success notification
   &.success,
   &.is-valid {
-    color: $alert-green;
-    border-color: $alert-green;
+    color: $confirmation;
+    border-color: $confirmation;
     background-color: $white;
     background-position: 99% center;
     background-repeat: no-repeat;
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2NDM0NDRERkYwNEIxMUUyOTI4REZGQTEzMzA2MDcyNiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2NDM0NDRFMEYwNEIxMUUyOTI4REZGQTEzMzA2MDcyNiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjY0MzQ0NERERjA0QjExRTI5MjhERkZBMTMzMDYwNzI2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjY0MzQ0NERFRjA0QjExRTI5MjhERkZBMTMzMDYwNzI2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+7olkTQAAAfhJREFUeNqklU9oE0EUhzdroWjw0tBeWlDxkEaIp55TsCU9VKIgCrHBelA8CQ1Kr1WPbZrQ3gqtQqvGqxpQc2jBk6BIIaAGD4qNCKURpDSKiPi98gLDsJt//uBjsztvfnk7895sIPAw6/joGMThFJyAXn2+A+9gA57/TaY/eU0OeBgfhGm4DiGnsb7DAszxBz/NAdcKjMJLuNWCqagHbsscN5+L+hmH4QkMOe1L5jzFfNA2PgT34ajTuY7AGuZB0/hmh5m+gS0r8xv1zRvg+gGCHZiOwnF4DP3iB3sQkYxPd2C6CWfhB9Xwlus5+K1j4jXuaq3a+gM1H9OPcAa+7q9lPidZJqHbiIm7Wg22rsEI7FrPSzAMX/T+ADyAKSsu7Fr1KplehLvwCs5DvfBf65p+MypqRbO1FXK9utH4/QKuaqYTsG3E3INJv00Q46px3+XxanJ/Ute2/vqP4FKDza2KcdljIKdnhS0xXYULTaqmLMZFn8FFSFtvt6x70ExFCS5oUXspq2ssa7oEl1swFa+CGFdgtkHgPDyDKy02zyxNU6lXRUZb1EuHYayNNs+Yh5B0WQo+/8fpJnNTZFuzz2OpjoQ2QruSOQlMy35fEGmEGMxY9e1brxobw7TkWA1h6xfckUPb+JhGoE/Hpfvew7qUld/H9J8AAwDpw3WYrxcZ3QAAAABJRU5ErkJggg==);
-    outline-color: $alert-green;
+    outline-color: $confirmation;
   } // end valid input
 
   // a disabled input
@@ -95,7 +488,7 @@ textarea,
 
     &:focus,
     &:active {
-      background-color: $alert-blue;
+      background-color: $highlight;
     } // end disabled focus
 
   } // end disabled input

@@ -65,7 +65,7 @@ template {
  */
 
 html {
-    font-family: sans-serif; /* 1 */
+    font-family: Helvetica, Arial, sans-serif; /* 1 */
     -ms-text-size-adjust: 100%; /* 2 */
     -webkit-text-size-adjust: 100%; /* 2 */
 }
@@ -95,7 +95,7 @@ a {
  */
 
 a:focus {
-    outline: thin dotted;
+    outline: 0;
 }
 
 /**
@@ -375,6 +375,8 @@ select {
     text-transform: none;
 }
 
+
+
 /**
  * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
  *    and `video` controls.
@@ -465,6 +467,7 @@ textarea {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+	width:100%;
 }
 
 

@@ -15,15 +15,152 @@ and will be used across all viewports.
 GENERAL STYLES
 *********************/
 
+html {
+	border: none;
+	max-width: 100% !important;
+	overflow-x: hidden;
+}
+
 body {
-	font-family: $lato;
-	font-size: 100%;
+	font-family: $serif;
+	font-size: 10px;
 	line-height: 1.5;
 	color: $text-color;
-	background-color: $gray;
+	background-color: $white;
   	-webkit-font-smoothing: antialiased;
   	-moz-osx-font-smoothing: grayscale;
+  	background-size: cover;
+  	@include transition(all .25s ease-in-out);
+  	padding: 0;
 }
+
+
+img {
+    max-width: 100%;
+}
+
+hr {
+	background:url(#{$imgThis}stroke.png) repeat-x top center;
+	height:8px;
+	display: block;
+	border:none !important;
+}
+
+section {
+    margin: 0;
+    padding: 0;
+}
+
+/* BREAKPOINT SHOW & HIDE */
+
+.feoup,
+.sseup,
+.ttup,
+.tfup {
+	display: none !important;
+}
+
+.feodn,
+.ssedn,
+.ttdn,
+.tfdn {
+	display: inline !important;
+}
+
+.breadcrumbs {
+    display: none;
+}
+
+
+#itemsBlock .products-header span {
+    display: none;
+}
+
+.paging {
+    text-align: center;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	
+
+}
+
+
+
+/* UTILITIES */
+
+.aligncenter, .alignjustify {
+	text-align: center;
+	
+	.alignleft {
+		text-align: left;
+	}
+	
+	.alignright {
+		text-align: right;
+	}
+	
+	.alignjustify {
+		text-align: center;
+	}
+	
+}
+
+.alignleft {
+	text-align: left;
+	
+	.alignright {
+		text-align: right;
+	}
+	
+	.alignleft {
+		text-align: left;
+	}
+	
+	.alignjustify {
+		text-align: center;
+	}
+	
+}
+
+.alignright {
+	text-align: center !important;
+	
+	.alignleft {
+		text-align: left;
+	}
+	
+	.aligncenter {
+		text-align: center;
+	}
+	
+	.alignjustify {
+		text-align: center;
+	}
+	
+}
+
+.serif {
+	font-family: $serif;
+}
+
+.sans-serif {
+	font-family: $sans-serif;
+}
+
 
 /********************
 WORDPRESS BODY CLASSES
@@ -79,28 +216,25 @@ LAYOUT & GRID STYLES
 LINK STYLES
 *********************/
 
-a, a:visited {
-	color: $link-color;
-
-	/* on hover */
-	&:hover, &:focus {
-		color: $link-hover;
+a {
+	text-decoration: none;
+	color: $shea-brown;
+	cursor: pointer;
+	@include transition(all .25s ease-in-out);
+	
+	&:visited {
+		color: $shea-brown;
 	}
-
-	/* on click */
-	&:active {
-
+	
+	&:hover, &:active {
+		color: lighten($shea-brown, 20%);
 	}
-
+	
 	/* mobile tap color */
 	&:link {
-		/*
-		this highlights links on iPhones/iPads.
-		so it basically works like the :hover selector
-		for mobile devices.
-		*/
-		-webkit-tap-highlight-color : rgba( 0, 0, 0, 0.3 );
+		-webkit-tap-highlight-color: lighten($shea-brown, 20%);
 	}
+	
 }
 
 /******************************************************************
@@ -163,6 +297,349 @@ HEADER STYLES
 			color: $white;
 		}
 	}
+
+/* MAIN */
+
+#mainContainer {
+	
+	margin-top: 5em !important;
+	
+	.wrapper {
+		width: auto;
+		margin: 1em;
+		
+		&.menu-wrap {
+			margin: 3em 1em 1em;
+		}
+		
+	}
+	
+}
+
+/* HEADER */
+
+header {
+	
+	position: relative;
+	height: auto !important;
+	
+	#logo {
+		width: 150px;
+		height: auto;
+		margin: 0 auto;
+		
+		img {
+			max-height: 50px;
+		}
+		
+	}
+
+}
+
+/* PAGE HEADER (not category or product) */
+
+.page_headers {
+
+	background: $orange;
+	padding: 1em;
+	text-align: center;
+	color: $shea-brown;
+	text-transform: uppercase;
+	
+	h1 {
+		font-family: $serif;
+		margin-bottom: 0;
+	}
+	
+	p {
+		font-family: $sans-serif;
+	}
+
+}
+
+
+
+/* GRID */
+
+//general
+
+.row {
+    width: 100%;
+    
+    &:after, &:before {
+		display: table;
+		content: " ";
+		clear: both;
+		
+	}
+	
+	[class*="col-"] {
+		min-height: 1px;
+		padding: 0.5em;
+	}
+	
+	.row {
+		&:after, &:before {
+			display: table;
+			content: " ";
+			clear: none;
+		}
+	}
+
+}
+
+[class*="col-"] {
+	width: 100%;
+}
+
+//nested xs columns
+
+.row .row {
+
+	div[class^="col-xs-"] {
+		float: left;
+	}
+
+	.col-xs-1 {
+		width: 8%;
+	}
+
+	.col-xs-2 {
+		width: 16.33%;
+	}
+
+	.col-xs-3 {
+		width: 24.66%;
+	}
+
+	.col-xs-4 {
+		width: 33%;
+	}
+
+	.col-xs-5 {
+		width: 41.33%;
+	}
+
+	.col-xs-6 {
+		width: 49.66%;
+	}
+
+	.col-xs-7 {
+		width: 58%;
+	}
+
+	.col-xs-8 {
+		width: 66.33%;
+	}
+
+	.col-xs-9 {
+		width: 74.66%;
+	}
+
+	.col-xs-10 {
+		width: 83%;
+	}
+
+	.col-xs-11 {
+		width: 91.33%;
+	}
+
+	.col-xs-12 {
+		width: 100%;
+	}
+
+}
+
+
+
+
+//reset js columns for >768
+@media (max-width: 767px) {
+	.productBlockContainer .productContainer {
+		width: 100% !important;
+		float: none !important;
+	}
+}
+
+//product-container
+.productBlockContainer {
+	margin-right: -1em;
+    margin-left: -0.5em;
+    width: 100%;
+    clear: none;
+    
+     &:after, &:before {
+		display: table;
+		content: " ";
+		clear: both;	
+	}
+	
+	.productContainer {
+		padding-right: 1em;
+		padding-left: 1em;
+		position: relative;
+// 		border:1px solid #572701;
+		
+		.product-item {
+			text-align: center;
+			
+			.img {
+				width: 100%;
+				height: auto;
+			}
+			
+			.name {
+				max-width: 100%;
+				margin-bottom: 0;
+				min-height: 1em;
+			}
+		
+			.action {
+				visibility: hidden;
+				position: absolute;
+				top: 40%;
+				left: 4%;
+				width: 90%;
+				
+				input[type="button"] {
+					min-width: 0;
+					width: 100% !important;	//override of override of 'layout.css' !important directive	
+					display: block;
+					padding: 1em;
+				}
+			
+			}
+			
+			&:hover {
+				@include box-shadow(none);
+				
+				.action {
+					visibility: initial;
+				
+				}
+				
+			}
+			
+		}
+		
+	}
+    
+}
+
+//subcategories-container
+#category #subcategoriesBlock {
+	/* niharika*/
+	margin: 1em 1em 0;
+	
+	.sub-cat-info {
+				float: left;
+				width: auto;
+				padding: 1em 1.5em;
+				/* niharika*/
+// 				margin: 0 -1em;
+				background: $gray;
+				
+				> .name {
+					font-size: 1.5em;
+					font-family: $sans-serif;
+					font-weight: 900;
+				}
+				.desc {
+				
+					.name {
+						font-size: 1.25em;
+						font-family: $sans-serif;
+						font-weight: 600;
+					}
+				
+				}
+				
+				.action {
+					margin-top: 1em;
+				}
+				
+			}
+
+	ul {
+		margin: 0;
+		width: 100%;
+		clear: none;
+	
+		 &:after, &:before {
+			display: table;
+			content: " ";
+			clear: both;	
+		}
+	
+		li {
+			width: 100%;
+			padding-right: 0;
+			padding-left: 0 !important;
+			position: relative;
+			/* niharika*/
+
+			margin-left: 0;
+			margin-bottom: 0;
+		
+			.sub-categories {
+				margin: 0;
+				padding: 0;
+
+				.action {
+				
+					margin: .5em 0;
+			
+				}
+				
+				.img {
+					 min-height: auto !important;
+				
+					a {
+						width: 100%;
+						display: inline-block;
+					}
+				
+					img {
+						max-width: 100%;
+						display:block;
+						margin: 0 auto;
+						
+					}
+				
+					.subcat-name {
+						font-family: $sans-serif;
+						text-transform: uppercase;
+						font-size: 1em;
+						line-height: 1;
+						padding: 0.5em 0;
+						background-color: $white;
+						color: $shea-brown;
+						width: 100%;
+						@include transition(all 0.25s ease-in-out);
+						display: inline-block;
+					}
+				
+				}			
+				&:hover, &.active {
+					@include box-shadow(none);
+					background: $gray;
+				
+				
+				}
+				
+				.sub-cat-info {
+					display: none;
+					background: $gray;
+				}
+			
+			}
+		
+		}
+    }
+}
+
+
+
 
 /*********************
 NAVIGATION STYLES
@@ -303,7 +780,7 @@ POSTS & CONTENT STYLES
 
 		/* post meta */
 		.byline {
-			color: $meta-gray;
+			color: $gray;
 			font-style: italic;
 			margin: 0;
 
@@ -347,7 +824,7 @@ POSTS & CONTENT STYLES
 				caption {
 					margin: 0 0 7px;
 					font-size: 0.75em;
-					color: $meta-gray;
+					color: $gray;
 					text-transform: uppercase;
 					letter-spacing: 1px;
 				}
@@ -385,7 +862,7 @@ POSTS & CONTENT STYLES
 				padding: 0 0 0 0.75em;
 				border-left: 3px solid $blue;
 				font-style: italic;
-				color: $meta-gray;
+				color: $gray;
 
 				&:before {}
 
@@ -487,6 +964,329 @@ POSTS & CONTENT STYLES
 	.tags {
 		margin: 0;
 	}
+	
+ #listing0 {
+ 
+ 	.basic-info {
+ 	
+ 		.item-images{
+ 			
+		#mediaContainer {
+ 				
+// 				@include transition( all 1s ease-in-out );
+				background: $white;
+ 				
+				#zoomOutBtn {
+					display: none;
+				}
+								
+				.main-image {
+				
+					a {
+				
+						img {
+							max-height: 400px;
+							width: auto !important;	//override of 'responsive.css' !important directive
+							background-color: $warm-tan;
+							background-image: url(#{$imgThis}paint-img-bg.png);
+							background-size: cover;
+							background-repeat: no-repeat;
+							max-width: 100%;
+						}
+				
+					}
+					
+				}
+				
+				.addl-images {
+					height: auto;
+					min-height: 100px;
+					max-height: 450px;
+					display: flex;
+					flex-direction: row;
+					-ms-flex-pack: justify;
+					-webkit-justify-content: center;
+					justify-content: center;
+					align-items: center;
+					flex-wrap: wrap;
+					overflow-y: hidden;
+
+				
+					> div {
+						display: inline;
+						max-width: 25%;
+						position: relative;
+					
+						a {
+							display: initial;
+						
+							img {
+								max-height: 100%;
+								max-width: 70px;
+								width: 70px;
+								height: auto;
+							}
+						
+						}
+				
+					}
+				
+				}
+				
+				&.full-width {
+					width: 100%;
+					height: 100%;
+					margin: 0 auto;
+					background: #fff;
+					left: 0;
+					top: 0;
+					
+					#zoomOutBtn {
+						display: inline-block;
+						font-size: 1.5em;
+						float: right;
+						margin: 1em;
+						
+						a.btn {
+							padding: 0.5em;
+							min-width: 2em;
+							display: inline-block;
+						}
+						
+
+ 					}
+					
+					.main-image {
+				
+						a {
+ 				
+							img {
+								max-height: 1024px;
+							}
+						
+						}
+
+					}
+					
+ 				}
+ 				
+ 			}
+ 			
+			
+			
+ 		}
+
+		
+		.item-description {
+			text-align: center;
+	
+			.item-title {
+				font-family: $sans-serif;
+				text-transform: uppercase;
+					
+				> span {
+					font-size: 0.6em;
+					display: block;
+				}
+				
+			}
+		
+			.pricingBlock {
+				font-size: 1.5em;
+				font-family: $sans-serif;
+				font-weight: 700;
+			}
+		
+			.product-id {
+				font-family: $sans-serif;
+			}
+		
+			.availabilityInfo {
+		
+				.product_availability {
+					font-family: $sans-serif;
+					text-transform: uppercase;
+				}
+		
+				.waitinglist {
+					display: inline-block;
+				}
+			
+			}
+		
+			.totalrating {
+		
+				float: none;
+				
+				> div {
+					display: inline-block;
+					float: none;
+					
+					&.review_average {
+						display: none;
+					}
+					
+				}
+		
+			}
+		
+			.create_first_review, .create_review_link {
+				max-width: 14em;
+				display: inline-block;			
+			}
+			
+			#divOptionsBlock {
+				border: 0;
+				
+				.header {
+					border: 0;
+					
+					h3 {
+						text-transform: uppercase;
+					}
+					
+				}
+				
+				.opt-regular {
+					text-transform: uppercase;
+					font-weight: 700;
+					font-family: $sans-serif;
+					height: 4em;
+					
+					.opt-field {
+						font-weight: 400;
+						text-transform: none;
+					}
+					
+				}
+					
+			}
+		
+			.addToCartBlock {
+				display: inline;
+		
+				.qtybox {
+					font-family: $sans-serif;
+					text-transform: uppercase;
+					display: inline-block;
+				
+					label {
+						float: none;
+						display: inline;
+					}
+				
+				}
+			
+				.addcart-button {
+					font-family: $sans-serif;
+					text-transform: uppercase;
+					display: block;
+					margin: 1em auto;
+					width: 16em;
+				
+					.btn {
+						min-width: 16em;
+						float: none;
+					}
+				
+				}
+		
+			}
+
+			.addToListBlock {
+				display: block;;
+			
+				.addWishlist, .addGiftRegistry {
+					font-family: $sans-serif;
+					text-transform: uppercase;
+					display: block;
+					margin: 1em auto;
+					width: 16em;
+				
+					.btn {
+						min-width: 0;
+					}
+			
+				}
+		
+			}
+			
+			.extended_descriptionBlock {
+			
+				h2 {
+					font-size: 2em;
+					font-family: $sans-serif;
+					text-transform: uppercase;
+				}
+			
+			}
+			
+		}
+	
+	}
+	
+	.extrafieldsBlock {
+	
+		.extra_field {
+			display: block;
+		
+			> h4 {
+				float: none;
+				font-size: 1.1em;
+				margin: 1em 0 1em .25em;
+			}
+			
+			> .info {
+				float: none;
+				margin-left: 4em;
+			}
+		
+		}
+	
+	}
+	
+	.reviewsBlock {
+	
+		.user_reviews {
+		
+			.review-info {
+			
+				.rev_allowratings {
+				
+					input {
+						width: auto !important;
+						float: none;
+						min-width: 4em;
+						margin: 0.5em 1em 1em 0;
+					}
+				
+				}
+			
+			}
+		
+		}
+	
+	}
+
+	.relatedBlock {
+	
+		.header {
+			border-bottom: 0;
+			
+			h2 {
+				font-size: 1.5em;
+				margin-bottom: 1em;
+				text-align: center;
+				text-transform: uppercase;
+				font-family: $sans-serif;
+			}
+			
+		}
+	
+	}
+
+}
+
 
 /******************************************************************
 PAGE NAVI STYLES
@@ -622,7 +1422,7 @@ COMMENT STYLES
 			font-style: italic;
 
 			a {
-				color: $meta-gray;
+				color: $gray;
 				text-decoration: none;
 
 				&:hover {
@@ -734,7 +1534,7 @@ COMMENT STYLES
 
 	/* comment reply link */
 	.comment-reply-link {
-		@extend .blue-btn;
+		@extend .btn;
 		font-size: 0.9em;
 		float: right;
 
@@ -769,7 +1569,7 @@ COMMENT FORM STYLES
 	}
 
 	.logged-in-as {
-		color: $meta-gray;
+		color: $gray;
 		font-style: italic;
 		margin: 0;
 
@@ -790,7 +1590,8 @@ COMMENT FORM STYLES
 
 	/* comment submit button */
 	#submit {
-		@extend .blue-btn;
+	
+		@extend .btn;
 		float: right;
 		font-size: 1em;
 	}
@@ -887,3 +1688,128 @@ FOOTER STYLES
 
 
 	.copyright {}
+	
+footer {
+	
+	a, h4 {
+		text-transform: uppercase;
+	}
+	
+	h4 {
+		margin-bottom: .25em;
+	}
+	
+	ul {
+		margin-top: 0;
+		
+		li {
+			line-height: 1;
+			margin: 0.5em 0;
+		}
+		
+	}
+	
+	img {
+		max-width: 320px;
+		height: auto;
+		width: 100%;
+	}
+
+	.social-icons_lrg {
+		/* niharika*/
+// 		text-align: center;
+		margin-bottom: 1em;
+		
+		a {
+			padding: .2em;
+		}
+		
+	}
+	
+	#modMailist {
+	
+		position: relative;
+		margin-bottom: 1em;
+		
+		input.email {
+			/* niharika*/
+// 			padding: 0.25em;
+// 			width: 99%;
+			padding: 0.78em;
+    		width: 100%;
+    		background: $gray;
+    		color: $shea-brown;
+    		border: 0;
+		}
+		
+		input.btn {
+			position: absolute;
+			min-width: 0;
+			top: 0;
+			right: 0;
+			line-height: 1.5em
+		}
+		
+	}
+
+}
+
+.hidden-mobile {
+    display: none !important;
+}
+.show-mobile {
+    display: block !important;
+}
+
+.data {
+    font-family: $sans-serif;
+} 
+
+
+.text-center {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+.fyre-cp-form {
+
+	input[type="text"],
+	input[type="password"]
+	.fyre-cp-form textarea {
+	
+   		width: 265px !important;
+    
+	}
+	
+	label {
+
+		margin: 6px 0 !important;
+	}
+	
+	.fyre-cp-form-btns {
+	
+		line-height: 25px !important;
+
+	}
+	
+	.fyre-tos {
+
+		margin: 30px 0 0 !important;
+
+	}
+
+}
+
+.janrainHeader {
+    padding: 0 !important;
+}
+

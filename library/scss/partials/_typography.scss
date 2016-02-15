@@ -1,6 +1,6 @@
 /******************************************************************
-Site Name:
-Author:
+Site Name: SheaMoisture v1.5
+Author: Chad A. Carino
 
 Stylesheet: Typography
 
@@ -30,16 +30,112 @@ FONT FACE (IN YOUR FACE)
 
 /*  @font-face {
       font-family: 'Font Name';
-      src: url('library/fonts/font-name.eot');
-      src: url('library/fonts/font-name.eot?#iefix') format('embedded-opentype'),
-             url('library/fonts/font-name.woff') format('woff'),
-             url('library/fonts/font-name.ttf') format('truetype'),
-             url('library/fonts/font-name.svg#font-name') format('svg');
+      src: url('#{$fontThis}font-name.eot');
+      src: url('#{$fontThis}font-name.eot?#iefix') format('embedded-opentype'),
+             url('#{$fontThis}font-name.woff') format('woff'),
+             url('#{$fontThis}font-name.ttf') format('truetype'),
+             url('#{$fontThis}font-name.svg#font-name') format('svg');
       font-weight: normal;
       font-style: normal;
   }
 */
 
+/* Rewrites for old school icons from disparate icon fonts to fontawesome */
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin: 0 .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-search-1:before { @include facontent($fa-var-search); } /* '' */
+.icon-right-circle:before { @include facontent($fa-var-chevron-circle-right); } /* '' */
+.icon-heart:before { @include facontent($fa-var-heart); } /* '' */
+.icon-basket:before { @include facontent($fa-var-shopping-cart); } /* '' */
+.icon-ok:before { @include facontent($fa-var-check); } /* '' */
+.icon-ok-circled:before { @include facontent($fa-var-check-circle); } /* '' */
+.icon-ok-circled2:before { @include facontent($fa-var-check-circle-o); } /* '' */
+.icon-cancel:before { @include facontent($fa-var-times); } /* '' */
+.icon-cancel-circled:before { @include facontent($fa-var-times-circle); } /* '' */
+.icon-cancel-circled2:before { @include facontent($fa-var-times-circle-o); } /* '' */
+.icon-home:before { @include facontent($fa-var-home); } /* '' */
+.icon-link:before { @include facontent($fa-var-link); } /* '' */
+.icon-tag:before { @include facontent($fa-var-tag); } /* '' */
+.icon-bookmark:before { @include facontent($fa-var-bookmark); } /* '' */
+.icon-print:before { @include facontent($fa-var-print); } /* '' */
+.icon-comment:before { @include facontent($fa-var-comment); } /* '' */
+.icon-chat-empty:before { @include facontent($fa-var-comments-o); } /* '' */
+.icon-th:before { @include facontent($fa-var-th); } /* '' */
+.icon-rss:before { @include facontent($fa-var-rss); } /* '' */
+.icon-menu:before { @include facontent($fa-var-bars); } /* '' */
+.icon-left-open:before { @include facontent($fa-var-chevron-left); } /* '' */
+.icon-right-open:before { @include facontent($fa-var-chevron-right); } /* '' */
+.icon-ellipsis-vert:before { @include facontent($fa-var-ellipsis-v); } /* '' */
+.icon-facebook:before { @include facontent($fa-var-facebook); } /* '' */
+.icon-gplus:before { @include facontent($fa-var-google-plus); } /* '' */
+.icon-instagramm:before { @include facontent($fa-var-instagram); } /* '' */
+.icon-linkedin-squared:before { @include facontent($fa-var-linkedin-square); } /* '' */
+.icon-pinterest-circled:before { @include facontent($fa-var-pinterest); } /* '' */
+.icon-tumblr:before { @include facontent($fa-var-tumblr); } /* '' */
+.icon-twitter:before { @include facontent($fa-var-twitter); } /* '' */
+.icon-youtube-play:before { @include facontent($fa-var-youtube-play); } /* '' */
+.icon-attention:before { @include facontent($fa-var-exclamation-triangle); } /* '' */
+.icon-truck:before  { @include facontent($fa-var-truck); }
+
+.flex-direction-nav a:before {
+	font: normal normal normal 30px/1 FontAwesome;
+  	text-rendering: auto;
+  	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+	display: inline-block;
+	/* niharika*/
+// 	@include facontent($fa-var-chevron-right);
+	@include facontent($fa-var-chevron-left);
+}
+.flex-direction-nav a.flex-next:before {
+	/* niharika*/
+// 	@include facontent($fa-var-chevron-left);
+	@include facontent($fa-var-chevron-right);
+	
+}
+
+.flex-pauseplay a:before {
+	font: normal normal normal 20px/1 FontAwesome;
+  	text-rendering: auto;
+  	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+	display: inline-block;
+	@include facontent($fa-var-pause);
+}
+.flex-pauseplay a:hover {
+	opacity: 1;
+}
+.flex-pauseplay a.flex-play:before {
+	@include facontent($fa-var-play);
+}
 
 /*
 The following is based of Typebase:
@@ -49,19 +145,15 @@ I've edited it a bit, but it's a nice starting point.
 
 
 // font stacks
-$sans-serif:        "Helvetica Neue", Helvetica, Arial, sans-serif;
-$serif:             "Georgia", Cambria, Times New Roman, Times, serif;
+$sans-serif:        "news-gothic-std", Futura, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif:             "adobe-garamond-pro", Garamond, Palatino, "Times New Roman", Times, serif;
 
-/*
- i imported this one in the functions file so bones would look sweet.
- don't forget to remove it for your site.
-*/
-$lato:              'Lato', $sans-serif;
 
 /*
 some nice typographical defaults
 more here: http://www.newnet-soft.com/blog/csstypography
 */
+
 p {
   -ms-word-wrap: break-word;
   word-break: break-word; //non-standart css for webkit

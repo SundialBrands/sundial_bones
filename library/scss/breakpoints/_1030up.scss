@@ -1,6 +1,6 @@
 /******************************************************************
-Site Name:
-Author:
+Site Name: SheaMoisture v1.5
+Author: Chad A. Carino
 
 Stylesheet: Desktop Stylsheet
 
@@ -11,4 +11,219 @@ be seen on the Desktop.
 
 .wrap {
   width: 1040px;
+}
+
+/* BREAKPOINT SHOW & HIDE */
+
+.feodn,
+.ssedn,
+.ttdn,
+.tfup {
+	display: none !important;
+}
+
+.feoup,
+.sseup,
+.ttup,
+.tfdn {
+	display: inline !important;
+}
+
+/* GRID */
+
+.row {
+
+	&.basic-info {
+		max-width: 1024px;
+		margin: 0 auto;
+	}
+
+	div[class*="col-md-"] {
+		float: left;
+	
+		&.margin-auto {
+			float: none;
+			margin: 0 auto;
+		}
+
+	}
+	
+}
+
+.col-md-1 {
+	width: 8%;
+}
+
+.col-md-2 {
+	width: 16.33%;
+}
+
+.col-md-3 {
+	width: 24.66%;
+}
+
+.col-md-4 {
+	width: 33%;
+}
+
+.col-md-5 {
+	width: 41.33%;
+}
+
+.col-md-6 {
+	width: 49.66%;
+}
+
+.col-md-7 {
+	width: 58%;
+}
+
+.col-md-8 {
+	width: 66.33%;
+}
+
+.col-md-9 {
+	width: 74.66%;
+}
+
+.col-md-10 {
+	width: 83%;
+}
+
+.col-md-11 {
+	width: 91.33%;
+}
+
+.col-md-12 {
+	width: 100%;
+}
+
+#category #subcategoriesBlock ul {
+
+	li .sub-categories .img .subcat-name {
+		font-size: 0.8em;
+	}
+
+}
+
+nav {
+	
+	&.cbp-hrmenu {
+	
+		> ul {
+			
+			> li {
+
+				.toggle ~ a, a { 
+					padding: 0 0.75em
+				}
+				
+				&.hasMega .cbp-hrsub {
+
+					ul > li {
+					
+						a {
+							font-size: 1em;
+						}
+					
+					}
+					
+				}
+				
+			}
+			
+		}
+	
+	}
+	
+}
+
+
+/* BORDER */
+
+[class*="col-md-"] {
+
+	.topborder:before, .rightborder:after {
+		display: block;
+	}
+
+}
+
+
+
+/* LISTING */
+
+#listing0 {
+
+	.basic-info {
+	
+		.item-images{
+			
+			#mediaContainer {
+				
+				.main-image {
+				
+					a {
+				
+						img {
+							max-height: 640px;
+						}
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
+
+
+/* EVENTS */
+
+.event-grid {
+    padding: 0;
+    text-align: center;
+    
+	h3 {
+		color: $white;
+		display: block;
+		font-size: 5em;
+		padding: 0.5em 0;
+		font-family: $sans-serif;
+		position: absolute;
+		top: 30%;
+		width: 100%;
+	}
+	h4 {
+		color: $white;
+		display: block;
+		font-size: 2em;
+		padding: 0.5em 0;
+		position: absolute;
+		top: 40%;
+		width: 100%;
+		font-family: $sans-serif;
+	}
+	
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+
+/* FOOTER */
+
+footer {
+
+	#copyright {
+		text-align: right;
+	}
+
 }

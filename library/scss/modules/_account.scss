@@ -1,0 +1,78 @@
+/******************************************************************
+Site Name: SheaMoisture v1.5
+Author: Chad A. Carino
+
+Stylesheet: Account Page Styles
+******************************************************************/
+
+
+#updateAccount {
+
+	h1 {
+		@include unfloat('auto');
+	}
+	
+	.updaccField {
+	
+		label {
+		   float: left;
+		   line-height: 2.4em;
+		   margin-right: 10px;
+		   text-align: left;
+		   width: 100%;
+		}
+		
+		select {
+		   float: left;
+		   width: 100%;
+		}
+		
+		.mailist-chk {
+			float: left;
+			margin-right: 10px;
+			width: auto;
+		}
+		
+	}
+	
+}
+
+
+
+#orderHistory {
+
+	h1 {
+		@include unfloat('auto');
+	}
+	
+}
+
+
+
+#crmRequest {
+
+	h1 {
+		@include unfloat('auto');
+	}
+	
+}
+
+
+
+#viewWishlist {
+
+	h1 {
+		@include unfloat('auto');
+	}
+	
+}
+
+
+
+#gcView {
+
+	h1 {
+		@include unfloat('auto');
+	}
+	
+}

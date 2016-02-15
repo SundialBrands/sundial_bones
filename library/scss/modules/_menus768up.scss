@@ -1,0 +1,558 @@
+/******************************************************************
+Site Name: SheaMoisture v1.5
+Author: Chad A. Carino
+
+Stylesheet: Desktop Menu Styles
+******************************************************************/
+
+
+
+
+nav {
+
+	&.cbp-topmenu {
+	    position: absolute;
+		width: auto;
+		height: 1.5em;
+		right: 1em; 
+		top: 0;
+
+		z-index: 1000;
+// 		overflow: hidden;
+		
+		a, a:visited {
+			display: inline-block;
+			color: $shea-brown;
+// 			font-size: 0.75em;
+
+			text-align: left;
+			text-decoration: none;
+			
+			&:hover, &:active {
+				color: lighten($shea-brown,20%);
+			}
+			
+		}
+		
+		.international-menu-trigger {
+			
+			padding: .25em .5em;
+			
+			&.active {
+				@include box-shadow(5px 5px 2px 0px rgba(0,0,0,0.11));
+				background: $warm-tan;
+			}
+		
+		}
+		
+		.international-menu {
+			float: none;
+			display: inline-block;
+		
+			.international-menu-select {
+				right: -0.8em;
+				top: 8px;
+				left: auto;
+				@include box-shadow(5px 5px 2px 0px rgba(0,0,0,0.11));
+			}
+			
+		}
+			
+		#search {
+			float: right;
+			margin-top: 9px;
+			width: 250px;
+		}
+
+		.search {
+			padding: 5px 0;
+			width: 230px;
+			height: 30px;
+			position: relative;
+			left: 10px;
+			float: left;
+			line-height: 22px;
+			
+			input {
+				position: absolute;
+				width: 0px;
+				float: left;
+				margin-left: 210px;
+				@include transition(all 0.7s ease-in-out);
+				height: 30px;
+				line-height: 18px;
+				padding: 0 2px;
+				border-radius: 1px;
+
+				&:hover input, input:focus {
+					width: 200px;
+					margin-left: 0px;
+				}
+			
+			}
+
+			.btn {
+				height: 30px;
+				position: absolute;
+				right: 0;
+				top: 5px;
+				border-radius:1px;
+			}
+			
+		}
+
+		
+		.searchBox {
+			display: inline-block;
+			font-size: .75em;
+			width:2em;
+			cursor:default;
+			z-index: 10; 
+
+			
+			span i {
+				position: relative;
+				 cursor:pointer;
+   				 top: 1.5em; 
+   				 left: 1em;
+   				 
+   				 &:before {
+   				 	pointer-events: none;
+   				 }
+   				 
+			}
+			
+			form {
+				opacity: 0;
+				pointer-events: none;
+				width: 0;
+				padding: 0;
+				margin: 0;
+				@include transition(width .25s linear);
+				
+				input {
+					opacity: 0;
+					width: 0;
+					padding: 0;
+					margin: 0;
+					@include transition(inherit);
+				}
+				
+				button {
+					opacity: 0;
+					pointer-events: auto;
+					width: 0;
+					padding: 0;
+					margin: 0;
+					@include transition(inherit);
+				}
+				
+			}
+			
+			&.active {
+				width: auto;
+				margin-left: 1em;
+				margin-top: 2em;
+				cursor: text;
+				
+				span i {
+					display: none;
+				}
+				
+				form {
+					opacity: 1;
+					width: auto;
+					padding: 0;
+					margin: 0;
+				
+					input {
+						opacity: 1;
+						width: auto;
+						width: 165px;
+						padding: 0.25em 0 0 0.6em;
+					}
+				
+					button {
+						opacity: 1;
+						width: auto;
+						min-width: 0;
+						position: relative;
+						top: 0;
+						padding: 0.2em 1em 0.3em;
+					}
+				
+				}
+			}
+
+		}
+		
+	}
+
+	&.cbp-spmenu {
+		display: block;
+		position: absolute;
+		width: auto;
+		height: 1.5em;
+		right: 1em;
+		top: 4em;
+		z-index: 100;
+		overflow: hidden;
+		
+		a, a:visited {
+			display: inline-block;
+			color: $shea-brown;
+			text-align: left;
+			text-decoration: none;
+			
+			&:hover, &:active {
+				color: lighten($shea-brown,20%);
+			}
+			
+		}
+	
+	}
+	
+	&.cbp-hrmenu {
+		
+		display: block;
+		height: 40px;
+		background: transparent;
+		margin: 0;
+		overflow: hidden;
+		width: 100%;
+		text-transform: uppercase;
+		text-align: center;
+		
+		
+		.toggle {
+			display: none;
+		}
+		
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			float: none;
+			display: block;
+		}
+		
+		> ul {
+			width: 100%;
+			margin: 0 auto;
+			padding: 0;
+			position: static;
+			display: block;
+			display: flex;
+			/* niharika*/
+			-ms-flex-pack: justify;
+			-webkit-justify-content: space-between;
+			justify-content: space-between;
+			
+			
+			> li {
+				display: inline-block;
+				background: transparent;
+				@include unfloat(auto);
+				
+				&:last-child {
+					border-right: 0;
+				}
+				
+				> a {
+					font-weight: 700;
+					font-size: 1.2em;
+				}
+				
+				.toggle ~ a,
+				a {
+					padding: 0 0.5em;
+					display: block;
+					text-decoration: none;
+					color: $shea-brown;
+					white-space: nowrap;
+					
+					&:hover, &:active {
+						color: lighten($shea-brown,20%);
+					}
+					
+				}
+				
+			}
+			
+			> li.hasMega {
+					
+				background: transparent;
+				
+				&:hover, &:active {
+				
+					border-right: 0;
+				
+					> a {
+						color: $shea-brown;
+						background-color: $warm-tan;
+						@include box-shadow(5px 5px 2px 0px rgba(0,0,0,0.11));
+						z-index: 10;
+						position: relative;
+					}
+					
+				}
+					
+				.cbp-hrsub {
+
+					ul > li {
+					
+						a {
+							font-size: .8em;
+						}
+					
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+	.submenu.alignleft a:hover {
+    	background:none;
+    	color: lighten($shea-brown,20%);
+		
+	}
+		
+		.cbp-hrsub {
+			display: none;
+			@include transition(min-height,max-height .2s ease-in-out);
+			position: absolute;
+			background: $warm-tan;
+			width: 100%;
+			left: 0;
+			@include box-shadow(5px 5px 2px 0px rgba(0,0,0,0.11));
+			font-family: $sans-serif;
+			
+			.cbp-hrsub-inner {
+				width: 95%;
+				margin: 0 auto;
+				padding: 0;
+				
+				&:before, &:after {
+					content: " ";
+					display: table;
+				}
+				
+				&:after {
+					clear: both;
+				}
+				
+				> div {
+					float: left;
+					padding-right: 6px;
+					
+					&.active {
+				
+						h4, ul {
+							background: transparent;
+					
+							&:after {
+								content: "";
+							}
+					
+						}
+					}
+					
+					h4 {
+						padding: 0.75em 0 0;
+						margin: 0;
+						font-size: 1em;
+						font-weight: 700;
+						text-align: inherit;
+						text-transform: none;
+						
+						&:after {
+							content: "";
+						}
+					
+					}
+					
+					hr {
+						width: 95%;
+						margin: 0 auto 0.5em;
+						display: block
+					}
+					
+					ul {
+						display: block;
+						position: static;
+					
+						&[class^="col-xs"], &[class^="col-sm"] {
+							float: left;
+						}
+						
+						li {
+							display: block;
+							position: static;
+							width: auto;
+							margin: 0;
+							font-size: 1em;
+
+							a {
+								text-transform: none;
+								line-height: 1;
+								margin-bottom: 0.8em;
+								text-align: inherit;
+							}
+							
+							&:last-child {
+								
+								a {
+									margin-bottom: 1.8em;
+								}
+								
+							}
+						
+						}
+					
+					}
+					
+					
+					&.col1 {
+						padding: 0;
+					}
+					
+					&.twosubs ul {
+						width: 49%;
+					}
+					
+					&.threesubs ul {
+						width: 32%;
+					}
+					
+					&.alignleft {
+						text-align: left;
+			
+						h4 {
+							margin-left: 0.75em;
+						}
+			
+					}
+
+					&.alignright {
+						text-align: right;
+			
+						h4 {
+							margin-right: 0.75em;
+						}
+			
+					}
+
+					&.aligncenter {
+						text-align: center;
+					}
+					
+					&.best-selling {
+						text-align: center;
+						padding-left: 9px;
+						
+						li {
+							display: block;
+							width: auto;
+	
+							div {
+								margin-bottom: 5px;
+								
+								&.price {
+									font-size: 1em;
+								}
+								
+							}
+	
+						}
+					}
+				
+					
+				
+				}
+				
+			}
+		
+		}
+	
+	}
+
+}
+
+
+.cbp-hropen .cbp-hrsub {
+	display: block;
+	z-index: 99;
+}
+
+.cbp-hrsub {
+	display: block;
+	position: absolute;
+	z-index: 20;
+}
+
+
+// annoying bunch of resets can be cleaned up by refactoring mobile menu behavior in _menus
+[id^=drop]:checked ~ .cbp-hrsub {
+	display: none;
+	width: 96%;
+}
+
+.cbp-hrsub .active h4 ~ ul {
+	
+	&[class^="col-xs"], &[class^="col-sm"] {
+		float: left;
+		
+		&[class$="-1"] {
+			width: 8%;
+		}
+
+		&[class$="-2"] {
+			width: 16.33%;
+		}
+
+		&[class$="-3"] {
+			width: 24.66%;
+		}
+
+		&[class$="-4"] {
+			width: 33%;
+		}
+
+		&[class$="-5"] {
+			width: 41.33%;
+		}
+
+		&[class$="-6"] {
+			width: 49.66%;
+		}
+
+		&[class$="-7"] {
+			width: 58%;
+		}
+
+		&[class$="-8"] {
+			width: 66.33%;
+		}
+
+		&[class$="-9"] {
+			width: 74.66%;
+		}
+
+		&[class$="-10"] {
+			width: 83%;
+		}
+
+		&[class$="-11"] {
+			width: 91.33%;
+		}
+		
+	}
+	
+}
+
+	html.no-touch #mainNav li.hasMega:hover .cbp-hrsub, .cbp-hrmenu .cbp-hrsub.show {
+		position: absolute;
+		z-index: 20;
+	}

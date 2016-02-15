@@ -1,18 +1,8 @@
 /******************************************************************
-Site Name:
-Author:
+Site Name: SheaMoisture v1.5
+Author: Chad A. Carino
 
 Stylesheet: Sass Functions
-
-You can do a lot of really cool things in Sass. Functions help you
-make repeated actions a lot easier. They are really similar to mixins,
-but can be used for so much more.
-
-Anyway, keep them all in here so it's easier to find when you're
-looking for one.
-
-For more info on functions, go here:
-http://sass-lang.com/documentation/Sass/Script/Functions.html
 
 ******************************************************************/
 
@@ -31,14 +21,13 @@ box-shadow: 0 0 4px rgba(0,0,0,0.3);
 
 // black
 @function black($opacity) {
-    @return rgba(0,0,0,$opacity);
+    @return rgba(3,3,3,$opacity);
 }
 
 // white
 @function white($opacity) {
     @return rgba(255,255,255,$opacity);
 }
-
 
 /*********************
 RESPONSIVE HELPER FUNCTION

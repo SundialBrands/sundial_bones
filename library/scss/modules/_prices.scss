@@ -1,0 +1,86 @@
+/******************************************************************
+Site Name: SheaMoisture v1.5
+Author: Chad A. Carino
+
+Stylesheet: Price Styles
+******************************************************************/
+
+.prices, .pricingBlock {
+
+	.price {
+	
+		font-size: 1.25em;
+		font-weight: 700;
+		color: $darkorange;
+	}
+	
+	.retail {
+		font-size: 1em;
+		font-weight: 400;
+		text-decoration: line-through;
+		color: $shea-brown;
+	}
+	
+	.sale {
+		font-size: 1.5em;
+		font-weight: 700;
+		color: $deeporange;
+	}
+	
+	.on-sale {
+		background-color: $darkred;
+		font-size: .75em;
+		padding: .45em 0 0 .9em;
+		position: absolute;
+		opacity: .9;
+		top: 1em;
+		right: 1em;
+		width: 4em;
+		height: 4em;
+		text-transform: uppercase;
+		font-family: $sans-serif;
+		text-align: left;
+		font-weight: 700;
+	}
+
+}
+
+@each $class, $colors in $boxcolors {
+
+	.#{$class} {
+	
+		.prices, .pricingBlock {
+		
+			.price {
+				color: nth($colors, 3);
+			}
+		
+			.retail {
+				color: nth($colors, 2);
+			}
+		
+			.sale {
+				color: nth($colors, 4);
+			}
+		
+			.on-sale {
+				background-color: nth($colors, 4);
+			}
+		
+			&~ .btn {
+				color: nth($colors, 1);
+				background-color: nth($colors, 2);
+			}
+		
+			&~ .btn:hover,
+			&~ .btn:focus,
+			&~ .btn:active {
+				background-color: nth($colors, 3);
+			}
+		
+		}
+				
+	}
+
+}
+

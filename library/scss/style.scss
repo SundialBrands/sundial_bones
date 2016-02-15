@@ -1,26 +1,13 @@
-/*! Made with Bones: http://themble.com/bones :) */
-
 /******************************************************************
-Site Name:
-Author:
+Site Name: SheaMoisture v1.5
+Author: Chad A. Carino
 
 Stylesheet: Main Stylesheet
-
-Here's where the magic happens. Here, you'll see we are calling in
-the separate media queries. The base mobile goes outside any query
-and is called at the beginning, after that we call the rest
-of the styles inside media queries.
-
-Helpful articles on Sass file organization:
-http://thesassway.com/advanced/modular-css-naming-conventions
 
 ******************************************************************/
 
 /*********************
 IMPORTING PARTIALS
-These files are needed at the beginning so that we establish all
-our mixins, functions, and variables that we'll be using across
-the whole project.
 *********************/
 
 // normalize: http://necolas.github.io/normalize.css/
@@ -29,17 +16,14 @@ the whole project.
 // Sass variables
 @import "partials/variables";
 
-// typography
-@import "partials/typography";
-
 // Sass functions
 @import "partials/functions";
 
 // import mixins
 @import "partials/mixins";
 
-// the grid
-@import "partials/grid";
+// typography
+@import "partials/typography";
 
 /*********************
 IMPORTING MODULES
@@ -58,11 +42,40 @@ you hate oysters, then the world is your peanut butter & jelly sandwich.
 // forms (inputs & labels)
 @import "modules/forms";
 
+// menus
+@import "modules/menus";
+
+// prices
+@import "modules/prices";
+
+// tabs
+@import "modules/tabs";
+
+// jquery flexslider
+@import "modules/flexslider";
+
+// solid color boxes
+@import "modules/boxes";
+
+// category styles
+@import "modules/categories";
+
+// account page styles
+@import "modules/account";
+
+// giftbox styles
+@import "modules/giftbox";
+
+
+// Desk.com live chat widget
+@import "modules/deskdotcom";
+
+// MailChimp popup email capture modal
+@import "modules/mailchimp";
+
 /*********************
 BASE (MOBILE) SIZE
-This are the mobile styles. It's what people see on their phones. If
-you set a great foundation, you won't need to add too many styles in
-the other stylesheets. Remember, keep it light: Speed is Important.
+This are the mobile styles. It's what people see on their phones.
 *********************/
 
 // styles in base.scss
@@ -83,9 +96,6 @@ tweeners.
 
 /*********************
 TABLET & SMALLER LAPTOPS
-This is the average viewing window. So Desktops, Laptops, and
-in general anyone not viewing on a mobile device. Here's where
-you can add resource intensive styles.
 *********************/
 @media only screen and (min-width: 768px) {
 

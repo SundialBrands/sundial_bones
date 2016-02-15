@@ -1,0 +1,279 @@
+/******************************************************************
+Site Name: SheaMoisture v1.5
+Author: Chad A. Carino
+
+Stylesheet: Menu Styles
+******************************************************************/
+
+
+
+
+nav {
+
+	&.cbp-topmenu {
+		width: 18em;
+		height: 2em;
+		z-index: 100;
+		margin: 0 auto;
+		
+		a, a:visited {
+			display: inline-block;
+			color: $shea-brown;
+			text-align: center;
+			text-decoration: none;
+			text-transform: uppercase;
+			
+			&:hover, &:active {
+				color: lighten($shea-brown,20%);
+			}
+			
+		}
+		
+		.international-menu-trigger {
+			display: inline-block;
+		}
+		
+		.international-menu {
+			position: relative;
+			width: 0;
+		
+			.international-menu-select {
+				display:none;
+				position: absolute;
+				background: $warm-tan;
+				width: 12.2em;
+				top: 0;
+				left: 0;
+				z-index: 200;
+				padding: 0.25em 1em;
+			
+				.international-menu-option {
+					padding: .25em 0;
+				
+					.checked:before {
+						content:"\f00c";
+						font-family: FontAwesome;
+						margin-right: 1em;
+					}
+				
+				}
+			
+			}
+			
+		}
+		
+		.searchBox {
+			display: inline-block;
+			font-size: .75em;
+			
+			input {
+				width: 17.5em;
+				border: 1px solid $shea-brown;
+				-webkit-appearance: textfield;
+				border-radius: 0;
+				padding: 2px 37px 1px 5px;
+			}
+			
+			button {
+				min-width: 0;
+				position: relative;
+				right: .15em;
+				top: 0;
+				padding: 0.3em 1em 0.4em;
+				float: right;
+			}
+
+		}
+		
+	}
+
+	&.cbp-spmenu {
+		display: none;
+		width: 14em;
+		height: 4em;
+		z-index: 100;
+		overflow: hidden;
+		
+		a, a:visited {
+			display: inline-block;
+			color: $shea-brown;
+			text-align: center;
+			text-decoration: none;
+			text-transform: uppercase;
+			
+			&:hover, &:active {
+				color: lighten($shea-brown,20%);
+			}
+			
+		}
+		
+		span:last-of-type {
+			display: none;
+		}
+	
+	}
+
+	&.cbp-hrmenu {
+		margin: 0;
+		padding: 0;
+		background: $warm-tan;
+	  
+		&:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		
+		.toggle {
+			display: block;
+			background-color: $shea-brown;
+			padding: 0 20px;
+			color: $cool-tan;
+			font-size: 1.5em;
+			line-height: 50px;
+			text-transform: uppercase;
+			text-decoration: none;
+			border: none;
+			
+			&:hover, &:active {
+				background-color: lighten($shea-brown, 20%);
+			}
+			
+		}
+		
+		ul {
+			float: right;
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			position: relative;
+			display: none;
+			
+			li {
+				margin: 0px;
+				display: inline-block;
+				float: left;
+				background-color: $warm-tan;
+				display: block;
+				width: 100%;
+				
+				a {
+					display: block;
+					padding: 0 20px;
+					color: $shea-brown;
+					font-size: 1.5em;
+					line-height: 2.5em;
+					text-decoration: none;
+					text-align: center;
+					text-transform: uppercase;
+				}
+				
+				.toggle {
+					background: $warm-tan;
+					color: $shea-brown;
+					&:after {
+						content: ' +';
+					}
+				}
+				
+				.cbp-hrsub {
+					display: none;
+					
+					hr {
+						display: none;
+					}
+					
+					h4 {
+						font-size: 1.25em;
+						margin: 0;
+						padding: 0.5em 0;
+						text-align: center;
+						text-transform: uppercase;
+						
+						
+						&:after {
+							content: ' +';
+						}
+					}
+					
+					.active {
+					
+						ul, h4 {
+							background: darken($cool-tan, 10%);
+						}
+						
+						h4:after {
+							content: ' -';
+						}
+					
+					}
+					
+					ul {
+						
+						li {
+							width: 170px;
+							float: none;
+							display: list-item;
+							position: relative;
+							margin: 0 auto;
+							font-size: .75em;
+							background: transparent;
+						}
+						
+					}
+					
+					.best-selling {
+						
+						ul li {
+							width: 90%;
+							text-align: center;
+							
+							.price {
+								font-size: 2.5em;
+							}
+							
+						}
+						
+					}
+				
+				}
+				
+				&:hover, &:active {
+					
+					.toggle {
+						background: darken($warm-tan, 20%);
+					}
+					
+				}
+				
+				.toggle ~ a {
+					display: none;
+				}
+				
+			}
+			
+		}
+	  
+	}
+	
+}
+
+nav.cbp-hrmenu ul ul li {
+}
+
+
+
+[id^=drop]:checked ~ .toggle:after {
+	content: ' -';
+}
+
+
+
+[id^=drop]:checked ~ .cbp-hrsub,
+.cbp-hrsub .active h4 ~ ul,
+[id^=drop]:checked ~ ul  { display: block; @include unfloat(100%); }
+
+
+[id^=drop] {
+ display: none;
+}

@@ -1,22 +1,8 @@
 /******************************************************************
-Site Name:
-Author:
+Site Name: SheaMoisture v1.5
+Author: Chad A. Carino
 
 Stylesheet: Mixins Stylesheet
-
-This is where you can take advantage of Sass' great features: Mixins.
-I won't go in-depth on how they work exactly,
-there are a few articles below that will help do that. What I will
-tell you is that this will help speed up simple changes like
-changing a color or adding CSS3 techniques gradients.
-
-A WORD OF WARNING: It's very easy to overdo it here. Be careful and
-remember less is more.
-
-Helpful:
-http://sachagreif.com/useful-sass-mixins/
-http://thesassway.com/intermediate/leveraging-sass-mixins-for-cleaner-code
-http://web-design-weekly.com/blog/2013/05/12/handy-sass-mixins/
 
 ******************************************************************/
 
@@ -34,10 +20,114 @@ USAGE: @include transition(all 0.2s ease-in-out);
 
 @mixin transition($transition...) {
   // defining prefixes so we can use them in mixins below
-  $prefixes:      ("-webkit-", "" );
+  $prefixes:      ("-webkit-", "-moz-", "-ms-", "-o-", "" );
   @each $prefix in $prefixes {
     #{$prefix}transition: $transition;
   }
+}
+
+/*********************
+BOX SHADOW
+*********************/
+
+@mixin box-shadow($boxshadow) {
+  // defining prefixes so we can use them in mixins below
+  $prefixes:      ("-webkit-", "-moz-", "-ms-", "-o-", "" );
+  @each $prefix in $prefixes {
+    #{$prefix}box-shadow: $boxshadow;
+  }
+}
+
+
+/*********************
+GRADIENTS
+*********************/
+
+@mixin gradBG-H($start, $end) {
+    background-color: 	$start;
+    background-image: 	-webkit-gradient(linear, left top, right top, from($start), to($end));
+    background-image: 	-webkit-linear-gradient(left, $start, $end);
+    background-image:	-moz-linear-gradient(left, $start, $end);
+    background-image:	-ms-linear-gradient(left, $start, $end);
+    background-image:	-o-linear-gradient(left, $start, $end);
+    background-image:	linear-gradient(left, $start, $end);
+    filter:				progid:DXImageTransform.Microsoft.gradient(startStr='#{$start}', endStr='#{$end}', gradientType='1');
+}
+
+@mixin gradBG-V($start, $end) {
+    background-color: $start;
+    background-image:	-webkit-gradient(linear, left top, left bottom, from($start), to($end));
+    background-image:	-webkit-linear-gradient(top, $start, $end);
+    background-image:	-moz-linear-gradient(top, $start, $end);
+    background-image:	-ms-linear-gradient(top, $start, $end);
+    background-image:	-o-linear-gradient(top, $start, $end);
+    background-image:	linear-gradient(top, $start, $end);
+    filter:				progid:DXImageTransform.Microsoft.gradient(startStr='#{$start}', endStr='#{$end}');
+}
+
+/*********************
+UNICODE FA CONTENT
+*********************/
+
+/*
+@include facontent($fa-var-pause);
+renders to:
+	content: '\f04c';
+*/
+
+@mixin facontent($fa-var) {
+	$pre: '"\\';
+	$post: '"';
+	content: #{$pre}#{$fa-var}#{$post};
+}
+
+/*********************
+CALC
+*********************/
+
+/*
+@include calc('height','100%','-','20px');
+renders to:
+	height: -webkit-calc(100% - 20px);
+	height: -moz-calc(100% - 20px);
+	height: -ms-calc(100% - 20px);
+	height: -o-calc(100% - 20px);
+	height: calc(100% - 20px);
+*/
+
+@mixin calc($property, $val1, $operator, $val2) {
+	  $prefixes:      ("-webkit-", "-moz-", "-ms-", "-o-", "" );
+	  @each $prefix in $prefixes {
+		#{$property}: #{$prefix}calc(#{$val1} #{$operator} #{$val2});
+	  }
+}
+
+/*********************
+PLACEHOLDER
+*********************/
+
+/*
+Placeholders need to be individual lines, therefore selector must be defined as well.
+Use outside of desired selector.
+USAGE: @include placeholder(input, italic 400 1em $sans-serif, $text-color);
+OUTPUT: input::-webkit-input-placeholder {
+			font: italic 400 1em sans-serif;
+			color: #333333;
+		}
+		input::-webkit-input-placeholder {
+			font: italic 400 1em sans-serif;
+			color: #333333;
+		}
+*/
+
+@mixin placeholder($selector, $font, $color) {
+  $ph-prefixes: ("::-webkit-input-placeholder", ":-moz-placeholder", "::-moz-placeholder", ":-ms-input-placeholder", ":input-placeholder", ":placeholder");
+	@each $prefix in $ph-prefixes {
+		#{selector}#{$prefix} {
+			font: $font;
+			color: $color;
+		}
+	}
 }
 
 /*********************
@@ -70,4 +160,128 @@ probably best not to use it. I mean, were you going to anyway? */
 	box-sizing:         $type;
 }
 
+/*********************
+RESET FLOATS
+These allow you to float or unfloat elements.
+Width is set by full width value, not just number.
+Buttons/fields are usually contained in a floated element,
+so those mixins apply float to container
+and width/padding/align to element.
+
+Example:
+@include float(auto, right);
+*********************/
+
+@mixin unfloat($width) {
+	float: none;
+	width: $width;
+}
+
+@mixin float($width, $float: left) {
+	float: $float;
+	width: $width;
+}
+
+@mixin unfloatbtn($padding: 1em 0) {
+	float: none;
+	button, input.btn {
+		
+		
+		text-align: center;
+	}
+}
+
+@mixin floatbtn($float: left, $padding: 0.5em 1em 0) {
+	float: $float;
+	button, input.btn {
+		width: auto;
+		padding: $padding;
+		text-align: initial;
+	}
+}
+
+@mixin unfloatfield($padding: 1em 0) {
+	label {
+		float: none;
+		width: auto;
+		line-height: normal;
+		text-align: left;
+		display: block;
+		margin: 0 0 0.5em;
+	}
+	input {
+		padding: 10px;
+	}
+}
+
+@mixin floatfield($float: left, $width: 200px, $padding: 0 1em 0) {
+	label {
+		float: $float;
+		width: $width;
+		line-height: 1.8em;
+		text-align: right;
+		display: initial;
+		margin: 0 1em 0 0;
+	}
+	input {
+		width: auto;
+		padding: $padding;
+		text-align: initial;
+	}
+}
+
+/*********************
+RETINA IMAGES
+Quick way to include @2x and @3x versions of images.
+Parts Copyright 2012, Joe Lambert.
+http://www.joelambert.co.uk
+Free to use under the MIT license.
+http://joelambert.mit-license.org/
+*********************/
+
+@import "compass/css3/background-size";
+
+@mixin bgimg-2x($image) {
+	background-image: image-url($image);
+	
+	// If we have a retina image then add styles for it too
+	@if file_exists(retina2_filename($image))
+	{
+		@include background-size(image-width($image) auto);
+		background-image: image-url(retina2_filename($image));
+	}
+}
+
+@mixin inline-bgimg-2x($image) {
+	background-image: inline-image($image);
+	
+	// If we have a retina image then add styles for it too
+	@if file_exists(retina2_filename($image))
+	{
+		@include background-size(image-width($image) auto);
+		background-image: inline-image(retina2_filename($image));
+	}
+}
+
+@mixin bgimg-3x($image) {
+	background-image: image-url($image);
+	
+	// If we have a retina image then add styles for it too
+	@if file_exists(retina3_filename($image))
+	{
+		@include background-size(image-width($image) auto);
+		background-image: image-url(retina3_filename($image));
+	}
+}
+
+@mixin inline-bgimg-3x($image) {
+	background-image: inline-image($image);
+	
+	// If we have a retina image then add styles for it too
+	@if file_exists(retina3_filename($image))
+	{
+		@include background-size(image-width($image) auto);
+		background-image: inline-image(retina3_filename($image));
+	}
+}
 

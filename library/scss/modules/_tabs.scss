@@ -1,0 +1,84 @@
+/******************************************************************
+Site Name: SheaMoisture v1.5
+Author: Chad A. Carino
+
+Stylesheet: Tab Styles
+******************************************************************/
+
+.ui-tabs {
+
+	.ui-tabs-nav {
+		margin: 0;
+		padding: 0.2em 0.2em 0 0;
+		
+		.ui-state-default {
+			border: 1px solid $shea-brown;
+			background: $shea-brown;
+			color: $warm-tan;
+		}
+		
+		li {
+			list-style: none;
+			float: left;
+			position: relative;
+			top: 1px;
+			margin: 1px 2em 0 0;
+			border-bottom-width: 0;
+			padding: 0;
+			white-space: nowrap;
+			.ui-tabs-anchor {
+				float: left;
+				padding: .25em 4em;
+				text-decoration: none;
+				text-transform: uppercase;
+				font-weight: 700;
+				color: inherit;
+				font-family: $sans-serif;
+			}
+			
+		}
+		
+		.ui-state-hover {
+			background: lighten($shea-brown, 20%);
+			border-color: lighten($shea-brown, 20%);
+		}
+		
+		.ui-state-active {
+			background: $white;
+			color: $shea-brown;
+    		z-index: 10;
+    		border-color: $shea-brown;
+    		border-bottom-color: $white;
+    		
+    		&:first-child {
+    			border-left-width: 0;
+    		}
+			
+			.ui-tabs-anchor {
+				cursor: text;
+			}
+			
+		}
+
+	}
+	
+	.ui-tabs-panel {
+		display: block;
+		border-width: 0;
+		padding: 1em 1.4em;
+		background: $white;
+		border-top: 1px solid $shea-brown;
+		z-index: 1;
+	}
+
+}
+
+.ui-helper-clearfix:before, .ui-helper-clearfix:after {
+    content: "";
+    display: table;
+    border-collapse: collapse;
+}
+
+.ui-helper-clearfix:after {
+    clear: both;
+}

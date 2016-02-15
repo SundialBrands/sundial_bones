@@ -1,0 +1,99 @@
+/******************************************************************
+Site Name: SheaMoisture v1.5
+Author: Chad A. Carino
+
+Stylesheet: Box Styles
+******************************************************************/
+
+.box {
+	padding: 2em;
+	background-color: $warm-tan;
+	
+	h3 {
+		text-transform: uppercase;
+		font-size: 1.5em;
+	}
+	
+	h4 {
+		text-transform: uppercase;
+		font-size: 1.1em;
+	}
+	
+	&.pen-border {
+		border: 1em solid transparent;
+		border-image: url('#{$imgThis}sb100-01.png') 20% round;
+		border-image-outset: 7px;
+	}
+	
+	&.paint-bg {
+		background-image: url('#{$imgThis}paint.png');
+		background-size: contain;
+		background-position: 5% 50%;
+		background-repeat: repeat-y;
+	}
+	
+}
+
+.row .box {
+	min-height: 100%;
+
+	
+	
+	&[class^="col-"] {
+		padding: 1em 3em;
+	}
+	
+}
+
+.prohibackground {
+	background-image: url(#{$imgThis}NO.png);
+	background-size: auto 65%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+@each $class, $colors in $boxcolors {
+
+	.box.#{$class} {
+		background-color: nth($colors, 1);
+		color: nth($colors, 2);
+		
+		
+		a {
+			color: nth($colors, 2);
+			
+			&:hover, &:active {
+				color: nth($colors, 3);
+			}
+			
+		}
+		
+		.btn {
+			color: nth($colors, 1);
+			background-color: nth($colors, 2);
+		
+			&:hover,
+			&:focus,
+			&:active {
+				background-color: nth($colors, 3);
+			}
+				
+		}
+		
+		&.paint-bg, &.paint-bg a {
+// 			text-shadow: 1px 1px $shea-brown;
+		}
+		
+	}
+
+}
+
+
+// .box.limegreen.alignleft.sans-serif.topborder p {
+//     font-size: 24px;
+//     text-align: center;
+// }
+// 
+// .box.limegreen.alignleft.sans-serif.topborder h3 {
+//     text-align: center;
+// }

@@ -1,6 +1,6 @@
 /******************************************************************
-Site Name:
-Author:
+Site Name: SheaMoisture v1.5
+Author: Chad A. Carino
 
 Stylesheet: 481px and Up Stylesheet
 
@@ -21,6 +21,137 @@ You can't use @extend within media queries
 anymore, so just be aware that if you drop
 them in here, they won't work.
 */
+
+body {
+	font-size: 14px;
+}
+
+
+/* BREAKPOINT SHOW & HIDE */
+
+.feodn,
+.sseup,
+.ttup,
+.tfup {
+	display: none !important;
+}
+
+.feoup,
+.ssedn,
+.ttdn,
+.tfdn {
+	display: inline !important;
+}
+
+//breakpoint GRID
+
+.row div[class*="col-xs-"] {
+	float: left;
+}
+
+.col-xs-1 {
+	width: 8%;
+}
+
+.col-xs-2 {
+	width: 16.33%;
+}
+
+.col-xs-3 {
+	width: 24.66%;
+}
+
+.col-xs-4 {
+	width: 33%;
+}
+
+.col-xs-5 {
+	width: 41.33%;
+}
+
+.col-xs-6 {
+	width: 49.66%;
+}
+
+.col-xs-7 {
+	width: 58%;
+}
+
+.col-xs-8 {
+	width: 66.33%;
+}
+
+.col-xs-9 {
+	width: 74.66%;
+}
+
+.col-xs-10 {
+	width: 83%;
+}
+
+.col-xs-11 {
+	width: 91.33%;
+}
+
+.col-xs-12 {
+	width: 100%;
+}
+
+#mainContainer {
+
+	.wrapper {
+	
+		&.menu-wrap {
+			margin-top: 1em;
+		}
+	
+	}
+
+}
+
+
+/* HEADER */
+
+header {
+	
+	#logo {
+		width: auto;
+		height: auto;
+		display: inline-block;
+	}
+
+}
+
+/* menu adjustments */
+
+.nav {
+
+	.menu {
+	
+		width: auto;
+		display: inline-block;
+		padding-left: 33%;
+		height: auto;
+	
+		.searchBox {
+		
+			button {
+				top: 0;
+				right: 0;
+				padding: 0.3em 1em 0.2em;
+			}
+		
+		}
+		
+	}
+	
+}
+
+.prohibackground {
+    background-size: auto 65%;
+}
+
+
 
 
 /*********************
