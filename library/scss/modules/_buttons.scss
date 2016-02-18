@@ -17,18 +17,21 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
 *********************/
 
 %btn {
-  font-family: $sans-serif;
+  	font-family: $sans-serif;
 	color: $cool-tan;
 	text-transform: uppercase;
 	background: $shea-brown;
 	padding: 0.7em 1em;
 	text-align: center;
-	min-width: 14em;
+	min-width: 4em;
+	display: inline-block;
 	cursor: pointer;
 	border: 0;
 	@include transition(all .25s ease-in-out);
 	
-	
+	&:visited {
+		color: $cool-tan;
+	}
 	
 	
 	i.fa {
@@ -37,12 +40,10 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
 	}
 	
 
-  // hovering on the btn
-  &:hover, &:focus {
-    background: lighten($shea-brown, 20%);
-	color: $cool-tan;
-		
-		
+  	// hovering on the btn
+  	&:hover, &:focus {
+    	background: lighten($shea-brown, 20%);
+		color: $cool-tan;	
 	}
 	
 
@@ -78,6 +79,10 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
 		clear: both;
 	}
 	
+}
+
+.btn {
+	@extend %btn;
 }
 
 .btn-block {

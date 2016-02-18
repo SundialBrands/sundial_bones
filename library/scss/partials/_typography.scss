@@ -40,6 +40,13 @@ FONT FACE (IN YOUR FACE)
   }
 */
 
+/*
+	import FontAwesome
+*/
+
+@import "lib/fontawesome/font-awesome";
+
+
 /* Rewrites for old school icons from disparate icon fonts to fontawesome */
 
 [class^="icon-"]:before, [class*=" icon-"]:before {

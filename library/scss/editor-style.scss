@@ -22,17 +22,17 @@ body#tinymce.wp-editor {
 	// Sass variables
 	@import "partials/variables";
 
-	// typography
-	@import "partials/typography";
-
 	// Sass functions
 	@import "partials/functions";
 
 	// import mixins
 	@import "partials/mixins";
+	
+	// typography
+	@import "partials/typography";
 
 	width: 731px;
-	font-family: $lato;
+	font-family: $sans-serif;
 	font-size: 100%;
 	line-height: 1.5;
 	color: $text-color;
@@ -114,7 +114,7 @@ body#tinymce.wp-editor {
 			caption {
 				margin: 0 0 7px;
 				font-size: 0.75em;
-				color: $meta-gray;
+				color: $gray;
 				text-transform: uppercase;
 				letter-spacing: 1px;
 			}
@@ -151,7 +151,7 @@ body#tinymce.wp-editor {
 			padding: 0 0 0 0.75em;
 			border-left: 3px solid $blue;
 			font-style: italic;
-			color: $meta-gray;
+			color: $gray;
 
 			&:before {}
 

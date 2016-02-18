@@ -118,31 +118,26 @@ Stylesheet: Category Styles
 	
 }
 
-	@each $class, $colors in $boxcolors {
+@each $class, $colors in $boxcolors {
 
 	.titles.#{$class} {
 		background-color: nth($colors, 1);
 		color: nth($colors, 2);
 	}
 	
-	#category {
+
 		
-		.category {
+	#subcategoriesBlock ul li .sub-categories.#{$class} {
 		
-			.category-header.#{$class} {
+		background-color: hsl(hue(nth($colors, 1)), 5%, lightness(nth($colors, 1)));
 			
-				background-color: nth($colors, 1);
-				color: nth($colors, 2);
-			
-			}
-		
-		}
-		
-		#subcategoriesBlock ul li .sub-categories.#{$class} {
-			background-color: hsl(hue(nth($colors, 1)), 5%, lightness(nth($colors, 1)));
 		.img > a {
 			outline: none;
 			color: nth($colors, 2);
+			
+			&:visited {
+				color: nth($colors, 2);
+			}
 		
 			&:hover, &:active {
 				color: nth($colors, 2);
@@ -156,150 +151,45 @@ Stylesheet: Category Styles
 	
 		}
 		
-			&:hover {
-				background-color: nth($colors, 1);
-			}
-		
-			&.active {
-				background-color: nth($colors, 1);
-			}
-		
+		&:hover {
+			background-color: nth($colors, 1);
 		}
 	
-		#subcategoriesBlock .sub-cat-info.#{$class} {
+		&.active {
 			background-color: nth($colors, 1);
+		}
+	
+	}
+	
+	#subcategoriesBlock .sub-cat-info.#{$class} {
+		background-color: nth($colors, 1);
+		color: nth($colors, 2);
+	
+		a {
 			color: nth($colors, 2);
 		
-			a {
+			&:hover, &:active {
+				color: nth($colors, 3);
+			}
+		
+		}
+	
+		.btn {
+			color: nth($colors, 1);
+			background-color: nth($colors, 2);
+			
+			&:visited {
 				color: nth($colors, 2);
-			
-				&:hover, &:active {
-					color: nth($colors, 3);
-				}
-			
 			}
-		
-			.btn {
+			
+			&:hover, &:active {
+				background-color: nth($colors, 3);
 				color: nth($colors, 1);
-				background-color: nth($colors, 2);
-				
-				&:hover, &:active {
-					background-color: nth($colors, 3);
-					color: nth($colors, 1);
-				}
-		
 			}
-		
+	
 		}
-
-	}
 	
-	#listing0 {
-		
-		.basic-info .item-images {
-		
-			div#mediaContainer.#{$class} {
-			
-				.main-image {
-	
-					a {
-		
-						img {
-							background-color: nth($colors, 1);
-						}
-	
-					}
-				
-				}
-	
-			}
-			
-		}
-		
 	}
 
 }
 
-
-
-@media (min-width: 768px) {
-
-	#itemsBlock {
-	
-		.row {
-		
-			> div {
-				text-align: initial;
-			}
-		
-		}
-	
-		.products-header.row {
-			font-size: 1em;
-			font-weight: bold;
-			text-transform: uppercase;
-
-			.paging {
-				margin: 0;
-				float: left;
-				text-align: center;
-			}
-
-			.sort-by {
-
-			}
-	
-		}
-	
-	}
-	
-	
-	
-	#category {
-	
-		.default {
-		
-			.page-header {
-				width: 75%;
-				margin: 2em auto 2em;
-				
-				p {
-					font-size: 1.1em;
-				}
-				
-			}
-
-		
-		}
-	
-		.root-category, .separate-headers {
-
-			.category-header {
-				padding: 2em 25%;
-			}
-	
-			.page-header {
-	
-				.cat-header-wrapper {
-					width: 75%;
-					flex-direction: row;
-				
-					p {
-						max-width: 35%;
-						text-align: justify;
-					}
-				
-					p, ul {
-						display: inline-block;
-						margin: 0 2%;
-					}
-				
-				}
-		
-			}
-
-		}
-
-	}
-
-}

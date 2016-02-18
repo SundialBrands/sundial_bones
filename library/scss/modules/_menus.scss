@@ -6,274 +6,155 @@ Stylesheet: Menu Styles
 ******************************************************************/
 
 
+/*********************
+NAVIGATION STYLES
+*********************/
 
+/*
+all navs have a .nav class applied via
+the wp_menu function; this is so we can
+easily write one group of styles for
+the navs on the site so our css is cleaner
+and more scalable.
+*/
+
+.to-nav {
+	position: absolute;
+	right: 0;
+	z-index: 10;
+}
 
 nav {
-
-	&.cbp-topmenu {
-		width: 18em;
-		height: 2em;
-		z-index: 100;
-		margin: 0 auto;
-		
-		a, a:visited {
-			display: inline-block;
-			color: $shea-brown;
-			text-align: center;
-			text-decoration: none;
-			text-transform: uppercase;
-			
-			&:hover, &:active {
-				color: lighten($shea-brown,20%);
-			}
-			
-		}
-		
-		.international-menu-trigger {
-			display: inline-block;
-		}
-		
-		.international-menu {
-			position: relative;
-			width: 0;
-		
-			.international-menu-select {
-				display:none;
-				position: absolute;
-				background: $warm-tan;
-				width: 12.2em;
-				top: 0;
-				left: 0;
-				z-index: 200;
-				padding: 0.25em 1em;
-			
-				.international-menu-option {
-					padding: .25em 0;
-				
-					.checked:before {
-						content:"\f00c";
-						font-family: FontAwesome;
-						margin-right: 1em;
-					}
-				
-				}
-			
-			}
-			
-		}
-		
-		.searchBox {
-			display: inline-block;
-			font-size: .75em;
-			
-			input {
-				width: 17.5em;
-				border: 1px solid $shea-brown;
-				-webkit-appearance: textfield;
-				border-radius: 0;
-				padding: 2px 37px 1px 5px;
-			}
-			
-			button {
-				min-width: 0;
-				position: relative;
-				right: .15em;
-				top: 0;
-				padding: 0.3em 1em 0.4em;
-				float: right;
-			}
-
-		}
-		
-	}
-
-	&.cbp-spmenu {
-		display: none;
-		width: 14em;
-		height: 4em;
-		z-index: 100;
-		overflow: hidden;
-		
-		a, a:visited {
-			display: inline-block;
-			color: $shea-brown;
-			text-align: center;
-			text-decoration: none;
-			text-transform: uppercase;
-			
-			&:hover, &:active {
-				color: lighten($shea-brown,20%);
-			}
-			
-		}
-		
-		span:last-of-type {
-			display: none;
-		}
 	
-	}
 
-	&.cbp-hrmenu {
+	.nav {
+		border-bottom: 0;
 		margin: 0;
-		padding: 0;
-		background: $warm-tan;
-	  
-		&:after {
-			content: "";
-			display: table;
-			clear: both;
-		}
-		
-		.toggle {
-			display: block;
-			background-color: $shea-brown;
-			padding: 0 20px;
-			color: $cool-tan;
-			font-size: 1.5em;
-			line-height: 50px;
-			text-transform: uppercase;
-			text-decoration: none;
-			border: none;
+	
+		&#menu-main {
+	
+			background: $warm-tan;
+			color: $shea-brown;
+			text-align: center;
+			font-family: $serif;
+			padding: 1.5rem 0;
+			position: absolute;
+			@include transition( all 750ms cubic-bezier(0.28,0,0.04,1) );
+			z-index: 5;
+			left: -1000%;
 			
-			&:hover, &:active {
-				background-color: lighten($shea-brown, 20%);
+			&.active {
+				left: 0;
 			}
-			
-		}
-		
-		ul {
-			float: right;
-			padding: 0;
-			margin: 0;
-			list-style: none;
-			position: relative;
-			display: none;
-			
+
 			li {
-				margin: 0px;
-				display: inline-block;
-				float: left;
-				background-color: $warm-tan;
-				display: block;
-				width: 100%;
-				
+
 				a {
-					display: block;
-					padding: 0 20px;
-					color: $shea-brown;
-					font-size: 1.5em;
-					line-height: 2.5em;
+
 					text-decoration: none;
-					text-align: center;
+					display: block;
+					min-height: 3rem;
+					font-size: 1.5rem;
+					padding: 1.5rem 0;
+					line-height: 1;
+					border: none;
 					text-transform: uppercase;
-				}
 				
-				.toggle {
-					background: $warm-tan;
-					color: $shea-brown;
-					&:after {
-						content: ' +';
-					}
-				}
-				
-				.cbp-hrsub {
-					display: none;
-					
-					hr {
-						display: none;
-					}
-					
-					h4 {
-						font-size: 1.25em;
-						margin: 0;
-						padding: 0.5em 0;
-						text-align: center;
-						text-transform: uppercase;
-						
-						
-						&:after {
-							content: ' +';
-						}
-					}
-					
-					.active {
-					
-						ul, h4 {
-							background: darken($cool-tan, 10%);
-						}
-						
-						h4:after {
-							content: ' -';
-						}
-					
-					}
-					
-					ul {
-						
-						li {
-							width: 170px;
-							float: none;
-							display: list-item;
-							position: relative;
-							margin: 0 auto;
-							font-size: .75em;
-							background: transparent;
-						}
-						
-					}
-					
-					.best-selling {
-						
-						ul li {
-							width: 90%;
-							text-align: center;
-							
-							.price {
-								font-size: 2.5em;
-							}
-							
-						}
-						
-					}
-				
-				}
-				
-				&:hover, &:active {
-					
-					.toggle {
+
+					&:focus, &:hover {
 						background: darken($warm-tan, 20%);
 					}
 					
 				}
+
+				&:first-child {
 				
-				.toggle ~ a {
-					display: none;
+				
+			
+				}
+
+				&:last-child {
+				
+				
+				
 				}
 				
-			}
-			
+				&.menu-item-has-children {
+					
+					> a,
+					> a:hover {
+						color: $shea-brown;
+					}
+					
+					> a {
+						background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%2…%22%20points%3D%2212.55%200.43%2017%202.98%2012.3%205.68%22/%3E%3C/svg%3E");
+						background-repeat: no-repeat;
+						background-size: 2rem;
+						background-position: 100% 50%;
+					}
+					
+					@include swipe-icon();
+						
+					&:hover {
+						color: lighten($shea-brown, 20%);
+					}
+					
+					&.open,
+					&:focus {
+						
+						&:after {
+							content: '';
+						}
+						
+					}
+					
+				}
+
+				/*
+				so you really have to rethink your dropdowns for mobile.
+				you don't want to have it expand too much because the
+				screen is so small. How you manage your menu should
+				depend on the project. Here's some great info on it:
+				http://www.alistapart.com/articles/organizing-mobile/
+				*/
+				ul.sub-menu,
+				ul.children {
+
+					li {
+
+						a {
+							padding-left: 30px;
+
+							&:hover,
+							&:focus {}
+
+							&:link {}
+
+						}
+
+						&:first-child {}
+
+						&:last-child {}
+
+					}
+
+				}
+
+			} /* end .menu li */
+
+			/* highlight current page */
+			li.current-menu-item,
+			li.current_page_item,
+			li.current_page_ancestor {
+
+				a {}
+
+			}  /* end current highlighters */
+		
 		}
-	  
-	}
-	
-}
 
-nav.cbp-hrmenu ul ul li {
-}
+	} /* end .nav */
 
 
+}	//end nav
 
-[id^=drop]:checked ~ .toggle:after {
-	content: ' -';
-}
-
-
-
-[id^=drop]:checked ~ .cbp-hrsub,
-.cbp-hrsub .active h4 ~ ul,
-[id^=drop]:checked ~ ul  { display: block; @include unfloat(100%); }
-
-
-[id^=drop] {
- display: none;
-}

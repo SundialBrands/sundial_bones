@@ -25,7 +25,7 @@
 			<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 		<![endif]-->
 		<?php // or, set /favicon.ico for IE10 win ?>
-		<meta name="msapplication-TileColor" content="#f01d4f">
+		<meta name="msapplication-TileColor" content="#f6ebb3">
 		<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/library/images/win8-tile-icon.png">
             <meta name="theme-color" content="#121212">
 
@@ -37,6 +37,8 @@
 
 		<?php // drop Google Analytics Here ?>
 		<?php // end analytics ?>
+		<script src="https://use.typekit.net/aiy5nih.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 
 	</head>
 
@@ -47,31 +49,34 @@
 			<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 
 				<div id="inner-header" class="wrap cf">
-
-					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
-					<p id="logo" class="h1" itemscope itemtype="http://schema.org/Organization"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
-
-					<?php // if you'd like to use the site description you can un-comment it below ?>
-					<?php // bloginfo('description'); ?>
-
-
+				
+					<div class="to-nav">
+						<a id="show-menu" class="btn" href="#menu-main"><i class="fa fa-bars fa-lg"></i></a>
+					</div>
+					
+					<div id="logo" class="h1" itemscope itemtype="http://schema.org/Organization">
+						<a href="http://www.sheamoisture.com" rel="nofollow"><img src="/wp-content/themes/sundial_bones/library/images/logo.png" alt="SheaMoisture. Established 1912." />
+						</a>
+					</div>
+					
 					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
 						<?php wp_nav_menu(array(
-    					         'container' => false,                           // remove nav container
-    					         'container_class' => 'menu cf',                 // class of container (should you choose to use it)
-    					         'menu' => __( 'The Main Menu', 'bonestheme' ),  // nav name
-    					         'menu_class' => 'nav top-nav cf',               // adding custom nav class
-    					         'theme_location' => 'main-nav',                 // where it's located in the theme
-    					         'before' => '',                                 // before the menu
-        			               'after' => '',                                  // after the menu
-        			               'link_before' => '',                            // before each link
-        			               'link_after' => '',                             // after each link
-        			               'depth' => 0,                                   // limit the depth of the nav
-    					         'fallback_cb' => ''                             // fallback function (if there is one)
+								 'container' => true,                           // remove nav container
+								 'container_class' => 'menu cf',                 // class of container (should you choose to use it)
+								 'menu' => __( 'Top Main Menu', 'bonestheme' ),  // nav name
+								 'menu_class' => 'nav top-nav cf',               // adding custom nav class
+								 'theme_location' => 'main-nav',                 // where it's located in the theme
+								 'before' => '',                                 // before the menu
+								   'after' => '',                                  // after the menu
+								   'link_before' => '',                            // before each link
+								   'link_after' => '',                             // after each link
+								   'depth' => 0,                                   // limit the depth of the nav
+								 'fallback_cb' => ''                             // fallback function (if there is one)
 						)); ?>
 
 					</nav>
 
+					
 				</div>
 
 			</header>

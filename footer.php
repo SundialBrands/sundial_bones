@@ -1,3 +1,4 @@
+						
 			<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
 
 				<div id="inner-footer" class="wrap cf">
@@ -14,11 +15,11 @@
     					'link_before' => '',                            // before each link
     					'link_after' => '',                             // after each link
     					'depth' => 0,                                   // limit the depth of the nav
-    					'fallback_cb' => 'bones_footer_links_fallback'  // fallback function
+    					'fallback_cb' => ''  // fallback function
 						)); ?>
 					</nav>
 
-					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
+					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> Sundial Brands LLC.</p>
 
 				</div>
 

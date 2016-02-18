@@ -161,6 +161,189 @@ probably best not to use it. I mean, were you going to anyway? */
 }
 
 /*********************
+SWIPE ANIMATED ICONS
+Before or after the selector, include an animated icon indicating swiping:
+@include swipe-icon(location, direction, color)
+
+location can be either 'before' or 'after'
+direction can be 'up', 'down', 'left', or 'right'
+color can be any color value (inherit doesn't show a circle)
+
+defaults are 'after', 'left', 'inherit'
+
+Parts adapted from font-awesome-animation - v0.0.8
+®2016 Louis Lin
+https://github.com/l-lin/font-awesome-animation
+License: MIT
+*********************/
+
+//first, define keyframes for each animation
+@keyframes passing-right {
+
+	0% {
+		-webkit-transform: translateX(-50%) rotate(-15deg);
+		-ms-transform: translateX(-50%) rotate(-15deg);
+		transform: translateX(-50%) rotate(-15deg);
+		opacity: 0;
+	}
+
+	50% {
+		-webkit-transform: translateX(0%) rotate(0deg);
+		-ms-transform: translateX(0%) rotate(0deg);
+		transform: translateX(0%) rotate(0deg);
+		opacity: 1;
+	}
+
+	100% {
+		-webkit-transform: translateX(50%) rotate(15deg);
+		-ms-transform: translateX(50%) rotate(15deg);
+		transform: translateX(50%) rotate(15deg);
+		opacity: 0;
+	}
+
+}
+
+@keyframes passing-left {
+
+	0% {
+		-webkit-transform: translateX(50%) rotate(15deg);
+		-ms-transform: translateX(50%) rotate(15deg);
+		transform: translateX(50%) rotate(15deg);
+		opacity: 0;
+	}
+
+	50% {
+		-webkit-transform: translateX(0%) rotate(0deg);
+		-ms-transform: translateX(0%) rotate(0deg);
+		transform: translateX(0%) rotate(0deg);
+		opacity: 1;
+	}
+
+	100% {
+		-webkit-transform: translateX(-50%) rotate(-15deg);
+		-ms-transform: translateX(-50%) rotate(-15deg);
+		transform: translateX(-50%) rotate(-15deg);
+		opacity: 0;
+	}
+
+}
+
+@keyframes passing-down {
+
+	0% {
+		-webkit-transform: translateY(-50%) rotateX(0deg);
+		-ms-transform: translateY(-50%) rotateX(0deg);
+		transform: translateY(-50%) rotateX(0deg);
+		opacity: 0;
+	}
+
+	50% {
+		-webkit-transform: translateY(0%) rotateX(30deg);
+		-ms-transform: translateY(0%) rotateX(30deg);
+		transform: translateY(0%) rotateX(30deg);
+		opacity: 1;
+	}
+
+	100% {
+		-webkit-transform: translateY(50%) rotateX(60deg);
+		-ms-transform: translateY(50%) rotateX(60deg);
+		transform: translateY(50%) rotateX(60deg);
+		opacity: 0;
+	}
+
+}
+
+@keyframes passing-up {
+
+	0% {
+		-webkit-transform: translateY(50%) rotateX(60deg);
+		-ms-transform: translateY(50%) rotateX(60deg);
+		transform: translateY(50%) rotateX(60deg);
+		opacity: 0;
+	}
+
+	50% {
+		-webkit-transform: translateY(0%) rotateX(30deg);
+		-ms-transform: translateY(0%) rotateX(30deg);
+		transform: translateY(0%) rotateX(30deg);
+		opacity: 1;
+	}
+
+	100% {
+		-webkit-transform: translateY(-50%) rotateX(0deg);
+		-ms-transform: translateY(-50%) rotateX(0deg);
+		transform: translateY(-50%) rotateX(0deg);
+		opacity: 0;
+	}
+
+}
+
+//then we can define our mixin
+@mixin swipe-icon($position: after, $direction: left, $color: inherit) {
+
+	position: relative;
+	&:#{$position} {
+		content: $fa-var-hand-o-up;
+		position: absolute;
+		animation: passing-#{$direction} 2s linear infinite;
+		@include fa-icon();
+		font-size: 2em;
+		color: $color;
+		left: auto;
+		right: 2rem;
+		top: 45%;
+		bottom: auto;
+		
+		@if $position == after {
+			
+			@if $direction == down {
+				bottom: 2rem;
+				left: 50%;
+				top: auto;
+				right: auto;
+			}
+			
+			@if $direction == up {
+				bottom: 2rem;
+				left: 50%;
+				top: auto;
+				right: auto;
+			}
+			
+		}
+		
+		@if $position == before {
+			
+			@if $direction == left {
+				left: 2rem;
+				right: auto;
+			}
+			
+			@if $direction == right {
+				left: 2rem;
+				right: auto;
+			}
+			
+			@if $direction == down {
+				top: 2rem;
+				left: 50%;
+				right: auto;
+			}
+			
+			@if $direction == up {
+				top: 2rem;
+				left: 50%;
+				right: auto;
+			}
+			
+		}
+		
+	}
+
+}
+
+
+/*********************
 RESET FLOATS
 These allow you to float or unfloat elements.
 Width is set by full width value, not just number.

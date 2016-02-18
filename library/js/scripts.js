@@ -115,6 +115,103 @@ jQuery(document).ready(function($) {
    * You can remove this if you don't need it
   */
   loadGravatars();
+  
+  //show or hide .catinfo with class catImageId
+	function showCatInfo(catImageId) {
+		
+		var catParent = jQuery('.sub-categories.'+catImageId);
+		var catInfo = jQuery('.sub-cat-info.'+catImageId);
+		var isStacked = true;
+		//if elements are not 'stacked', the width of the li will be less than that of the ul
+		if (jQuery(catParent).closest('li').width() !== jQuery(catParent).closest('ul').width()) {
+			
+			isStacked = false;
+		
+		}	//if (jQuery(catParent).closest('li').width() !== jQuery(catParent).closest('ul').width())
+		//if catinfo is already showing, hide it
+		if (jQuery(catParent).hasClass('active')) {
+			
+			hideCatInfo(catParent, catInfo);
+		
+		}
+		//otherwise, we'll show it
+		else {
+		
+			//first, hide any other .catInfo that is showing
+			if (jQuery('.sub-categories.active').length > 0) {
+			
+				var activeCatClass = jQuery('.sub-categories.active').find('a.show-subcat-info').attr('id');
+				var activeCatParent = jQuery('.sub-categories.'+activeCatClass);
+				var activeCatInfo = jQuery('.sub-cat-info.'+activeCatClass);
+				hideCatInfo(activeCatParent, activeCatInfo, false);
+			
+			}	//end if (jQuery('.sub-categories.active').length > 0)
+			//show this .catinfo
+			jQuery(catParent).addClass('active');
+			var tempInfo = catInfo.detach();
+			//we always want .catInfo to display under the image that was clicked or tapped
+			//therefore, if they are 'stacked', we append the .catinfo to the li (column)
+			//and if they are not 'stacked', we append the .catInfo to the ul
+			var row = (isStacked) ? jQuery(catParent).closest('li') : jQuery(catParent).closest('ul');
+			jQuery(row).after(tempInfo);
+			jQuery('.sub-cat-info.'+catImageId).slideDown("slow");
+		
+		}	//end if (jQuery(catParent).hasClass('active'))
+	
+	}	//end showCatInfo(catImageId)
+	
+	//reverse process to hide .catInfo
+	function hideCatInfo(catParent, catInfo, slide) {
+		
+		//use argument to determine slide or hide animation, default to true (use slide)
+		slide = (typeof slide === 'undefined') ? 'true' : slide;
+		jQuery(catParent).removeClass('active');
+		//hide or slide
+		if (slide) {
+		
+			jQuery(catInfo).slideUp("fast", function() {
+			
+				var tempInfo = catInfo.detach();
+				jQuery(catParent).append(tempInfo);
+			
+			});	//end jQuery(catInfo).slideUp("fast", function()
+		
+		}
+		else {
+		
+			jQuery(catInfo).hide("fast", function() {
+			
+				var tempInfo = catInfo.detach();
+				jQuery(catParent).append(tempInfo);
+			
+			});
+		
+		}	//end if (slide)
+	
+	}
+	
+	if (jQuery('.show-subcat-info').length > 0 ) {
+	
+		jQuery('.show-subcat-info').click( function(event) {
+		
+			event.preventDefault();
+			showCatInfo(this.id);
+		
+		});	//end jQuery(catInfo).slideUp("fast", function()
+	
+	}	//end if (jQuery('.show-subcat-info').length > 0 )
+	
+	
+	if (jQuery('#show-menu').length > 0 ) {
+	
+		jQuery('#show-menu').click( function(e) {
+		
+			e.preventDefault();
+			jQuery('#menu-main').toggleClass('active');
+		
+		});	//end jQuery('#show-menu').click( function(e)
+	
+	}	//end if (jQuery('.show-subcat-info').length > 0 )
 
 
 }); /* end of as page load scripts */
