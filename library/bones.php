@@ -313,6 +313,13 @@ function bones_excerpt_more($more) {
 	return '...  <a class="excerpt-read-more" href="'. get_permalink( $post->ID ) . '" title="'. __( 'Read ', 'bonestheme' ) . esc_attr( get_the_title( $post->ID ) ).'">'. __( 'Read more &raquo;', 'bonestheme' ) .'</a>';
 }
 
+//change text for sentence dropdown here (placeholder for theme option, natch)
+function bones_sentence_start( $content ) {
+	return $content . ' MY... ';
+}
 
+function bones_sentence_end( $content ) {
+	return str_replace( '.', '', $content );
+}
 
 ?>

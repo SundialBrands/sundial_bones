@@ -57,6 +57,9 @@ function bones_ahoy() {
   add_filter( 'the_content', 'bones_filter_ptags_on_images' );
   // cleaning up excerpt
   add_filter( 'excerpt_more', 'bones_excerpt_more' );
+  //custom text for sentence menu
+  add_filter( 'bones_before_dropdown', 'bones_sentence_start' );
+  add_filter( 'bones_after_dropdown', 'bones_sentence_end' );
 
 } /* end bones ahoy */
 
@@ -230,18 +233,5 @@ function bones_comments( $comment, $args, $depth ) {
 <?php
 } // don't remove this bracket!
 
-
-/*
-This is a modification of a function found in the
-twentythirteen theme where we can declare some
-external fonts. If you're using Google Fonts, you
-can replace these fonts, change it in your scss files
-and be up and running in seconds.
-*/
-function bones_fonts() {
-  wp_enqueue_style('googleFonts', 'http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic');
-}
-
-add_action('wp_enqueue_scripts', 'bones_fonts');
 
 /* DON'T DELETE THIS CLOSING TAG */ ?>
