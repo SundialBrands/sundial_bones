@@ -385,11 +385,11 @@ body#tinymce.wp-editor {
   */
   /*  @font-face {
         font-family: 'Font Name';
-        src: url('https://shea-moisture.scdn4.secure.raxcdn.com/assets/templates/sheamoisture-v15/font/font-name.eot');
-        src: url('https://shea-moisture.scdn4.secure.raxcdn.com/assets/templates/sheamoisture-v15/font/font-name.eot?#iefix') format('embedded-opentype'),
-               url('https://shea-moisture.scdn4.secure.raxcdn.com/assets/templates/sheamoisture-v15/font/font-name.woff') format('woff'),
-               url('https://shea-moisture.scdn4.secure.raxcdn.com/assets/templates/sheamoisture-v15/font/font-name.ttf') format('truetype'),
-               url('https://shea-moisture.scdn4.secure.raxcdn.com/assets/templates/sheamoisture-v15/font/font-name.svg#font-name') format('svg');
+        src: url('/wp-content/themes/sundial_bones/library/font/font-name.eot');
+        src: url('/wp-content/themes/sundial_bones/library/font/font-name.eot?#iefix') format('embedded-opentype'),
+               url('/wp-content/themes/sundial_bones/library/font/font-name.woff') format('woff'),
+               url('/wp-content/themes/sundial_bones/library/font/font-name.ttf') format('truetype'),
+               url('/wp-content/themes/sundial_bones/library/font/font-name.svg#font-name') format('svg');
         font-weight: normal;
         font-style: normal;
     }

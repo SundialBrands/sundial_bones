@@ -132,6 +132,18 @@ function bones_scripts_and_styles() {
 
 		// ie-only style sheet
 		wp_register_style( 'bones-ie-only', get_stylesheet_directory_uri() . '/library/css/ie.css', array(), '' );
+		
+		//register jquery mobile style sheet
+		wp_register_style( 'bones-jquery-mobile', '://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css', array(), '1.4.5' );
+		
+		//register jquery mobile theme style sheet
+		wp_register_style( 'bones-jquery-mobile-theme', get_stylesheet_directory_uri() . '/library/scss/themes/sm1.5.css', array('bones-jquery-mobile'), '1.4.5' );
+		
+		// register jquery mobile
+		wp_register_script( 'bones-jquery-mobile', 'http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js', array('jquery'), '1.4.5', false );
+		
+		// register jquery mobile (minified)
+		// wp_register_script( 'bones-jquery-mobile', '://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js', array('jquery'), '1.4.5', false );
 
     // comment reply script for threaded comments
     if ( is_singular() AND comments_open() AND (get_option('thread_comments') == 1)) {
@@ -145,6 +157,9 @@ function bones_scripts_and_styles() {
 		wp_enqueue_script( 'bones-modernizr' );
 		wp_enqueue_style( 'bones-stylesheet' );
 		wp_enqueue_style( 'bones-ie-only' );
+// 		wp_enqueue_style( 'bones-jquery-mobile' );
+// 		wp_enqueue_style( 'bones-jquery-mobile-theme' );
+		wp_enqueue_script( 'bones-jquery-mobile' );
 
 		$wp_styles->add_data( 'bones-ie-only', 'conditional', 'lt IE 9' ); // add conditional wrapper around ie stylesheet
 
@@ -155,6 +170,7 @@ function bones_scripts_and_styles() {
 		*/
 		wp_enqueue_script( 'jquery' );
 		wp_enqueue_script( 'bones-js' );
+		
 
 	}
 }
@@ -209,8 +225,9 @@ function bones_theme_support() {
 	// registering wp3+ menus
 	register_nav_menus(
 		array(
-			'main-nav' => __( 'Top Main Menu', 'bonestheme' ),   // main nav in header
-			'footer-links' => __( 'Footer Links', 'bonestheme' ) // secondary nav in footer
+			'main-nav' 		=> __( 'Top Main Menu', 'bonestheme' ),   // main nav in header
+			'top-dropdown'	=> __( 'Top Dropdown', 'bonestheme' ), // secondary nav in header
+			'footer-links'	=> __( 'Footer Links', 'bonestheme' ) // secondary nav in footer
 		)
 	);
 

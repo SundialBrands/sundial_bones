@@ -11,21 +11,21 @@ URL
 *********************/
 
 $cdn:					"https://shea-moisture.scdn4.secure.raxcdn.com";
-$tCommon: 				"/assets/templates/common-html5/";
-$tDefault: 				"/assets/templates/default-html5/";
-$tThis:					"/assets/templates/sheamoisture-v15/";
+$tCommon: 				"/wp-content/themes/sundial_bones/library/";
+$tDefault: 				"/wp-content/themes/sundial_bones/library/";
+$tThis:					"/wp-content/themes/sundial_bones/library/";
 
 // using CDN paths for production
-$imgRoot: 				"#{$cdn}/assets/images/";
-$imgCommon: 			"#{$cdn}#{$tCommon}images/";
-$imgThis:			"#{$cdn}#{$tThis}images/";
-$fontCommon: 			"#{$cdn}#{$tCommon}font/";
-$fontThis:				"#{$cdn}#{$tThis}font/";
-// $imgCommon: 			"#{$tCommon}images/";
-// $imgRoot: 				"/assets/images/";
-// $imgThis:				"#{$tThis}images/";
-// $fontCommon: 			"#{$tCommon}font/";
-// $fontThis:				"#{$tThis}font/";
+// $imgRoot: 				"#{$cdn}/assets/images/";
+// $imgCommon: 			"#{$cdn}#{$tCommon}images/";
+// $imgThis:				"#{$cdn}#{$tThis}images/";
+// $fontCommon: 			"#{$cdn}#{$tCommon}font/";
+// $fontThis:				"#{$cdn}#{$tThis}font/";
+$imgCommon: 			"#{$tCommon}images/";
+$imgRoot: 				"#{$tCommon}images/";
+$imgThis:				"#{$tThis}images/";
+$fontCommon: 			"#{$tCommon}font/";
+$fontThis:				"#{$tThis}font/";
 
 
 

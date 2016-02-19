@@ -805,11 +805,11 @@ FONT FACE (IN YOUR FACE)
 */
 /*  @font-face {
       font-family: 'Font Name';
-      src: url('https://shea-moisture.scdn4.secure.raxcdn.com/assets/templates/sheamoisture-v15/font/font-name.eot');
-      src: url('https://shea-moisture.scdn4.secure.raxcdn.com/assets/templates/sheamoisture-v15/font/font-name.eot?#iefix') format('embedded-opentype'),
-             url('https://shea-moisture.scdn4.secure.raxcdn.com/assets/templates/sheamoisture-v15/font/font-name.woff') format('woff'),
-             url('https://shea-moisture.scdn4.secure.raxcdn.com/assets/templates/sheamoisture-v15/font/font-name.ttf') format('truetype'),
-             url('https://shea-moisture.scdn4.secure.raxcdn.com/assets/templates/sheamoisture-v15/font/font-name.svg#font-name') format('svg');
+      src: url('/wp-content/themes/sundial_bones/library/font/font-name.eot');
+      src: url('/wp-content/themes/sundial_bones/library/font/font-name.eot?#iefix') format('embedded-opentype'),
+             url('/wp-content/themes/sundial_bones/library/font/font-name.woff') format('woff'),
+             url('/wp-content/themes/sundial_bones/library/font/font-name.ttf') format('truetype'),
+             url('/wp-content/themes/sundial_bones/library/font/font-name.svg#font-name') format('svg');
       font-weight: normal;
       font-style: normal;
   }
@@ -4480,7 +4480,7 @@ you can just remove this stylesheet.
 ******************************************************************/
 /* line 15, ../scss/modules/_alerts.scss */
 .alert-help, .alert-info, .alert-error, .alert-success {
-  background: rgba(255, 228, 201, 0.5) url("https://shea-moisture.scdn4.secure.raxcdn.com/assets/templates/sheamoisture-v15/images/error.png") no-repeat scroll 1% 50%;
+  background: rgba(255, 228, 201, 0.5) url("/wp-content/themes/sundial_bones/library/images/error.png") no-repeat scroll 1% 50%;
   min-height: 400px;
   text-align: center;
 }
@@ -4708,7 +4708,7 @@ Stylesheet: Form Styles
 /* line 8, ../scss/modules/_forms.scss */
 select {
   color: #572701;
-  background: #fff url("https://shea-moisture.scdn4.secure.raxcdn.com/assets/templates/sheamoisture-v15/images/select-arrow.png") no-repeat scroll 99% center;
+  background: #fff url("/wp-content/themes/sundial_bones/library/images/select-arrow.png") no-repeat scroll 99% center;
   background-size: 1.5em;
   border: 1px solid #572701;
   padding: 6px;
@@ -4850,7 +4850,7 @@ form > div textarea, div.form-field textarea, #loginAccount .loginField textarea
   border: 1px solid #790032;
   border-left: 40px solid #790032;
   margin-left: 0;
-  background-image: url(https://shea-moisture.scdn4.secure.raxcdn.com/assets/templates/sheamoisture-v15/images/check.png);
+  background-image: url(/wp-content/themes/sundial_bones/library/images/check.png);
 }
 /* line 180, ../scss/modules/_forms.scss */
 #registration0 .accountRegForm .submit-button {
@@ -5350,6 +5350,7 @@ nav {
 nav .nav {
   border-bottom: 0;
   margin: 0;
+  /* end &#menu-main */
 }
 /* line 34, ../scss/modules/_menus.scss */
 nav .nav#menu-main {
@@ -5401,19 +5402,24 @@ nav .nav#menu-main li a:focus, nav .nav#menu-main li a:hover {
 }
 /* line 82, ../scss/modules/_menus.scss */
 nav .nav#menu-main li.menu-item-has-children {
+  overflow: hidden;
+  display: inline-block;
+  width: 100%;
+  padding-right: 2rem;
   position: relative;
 }
-/* line 84, ../scss/modules/_menus.scss */
+/* line 90, ../scss/modules/_menus.scss */
 nav .nav#menu-main li.menu-item-has-children > a,
 nav .nav#menu-main li.menu-item-has-children > a:hover {
   color: #572701;
 }
-/* line 89, ../scss/modules/_menus.scss */
+/* line 95, ../scss/modules/_menus.scss */
 nav .nav#menu-main li.menu-item-has-children > a {
-  background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%2…%22%20points%3D%2212.55%200.43%2017%202.98%2012.3%205.68%22/%3E%3C/svg%3E");
+  background: url('data:image/svg+xml;utf8,<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.01 6.11"><defs><style>.cls-1{fill:#fff;stroke-dasharray:2;}.cls-1,.cls-2{stroke:#572701;stroke-miterlimit:10;}.cls-2{fill:none;}</style></defs><title>Untitled-1</title><line class="cls-1" y1="3.06" x2="17" y2="3.06"/><polyline class="cls-2" points="12.55 0.43 17 2.98 12.3 5.68"/></svg>');
   background-repeat: no-repeat;
   background-size: 2rem;
-  background-position: 100% 50%;
+  background-position: 99% 50%;
+  display: inline-block;
 }
 /* line 285, ../scss/partials/_mixins.scss */
 nav .nav#menu-main li.menu-item-has-children:after {
@@ -5433,18 +5439,139 @@ nav .nav#menu-main li.menu-item-has-children:after {
   top: 45%;
   bottom: auto;
 }
-/* line 98, ../scss/modules/_menus.scss */
+/* line 105, ../scss/modules/_menus.scss */
 nav .nav#menu-main li.menu-item-has-children:hover {
   color: #bc5402;
 }
-/* line 105, ../scss/modules/_menus.scss */
+/* line 112, ../scss/modules/_menus.scss */
 nav .nav#menu-main li.menu-item-has-children.open:after, nav .nav#menu-main li.menu-item-has-children:focus:after {
   content: '';
 }
-/* line 125, ../scss/modules/_menus.scss */
+/* line 116, ../scss/modules/_menus.scss */
+nav .nav#menu-main li.menu-item-has-children.open ul.sub-menu,
+nav .nav#menu-main li.menu-item-has-children.open ul.children, nav .nav#menu-main li.menu-item-has-children:focus ul.sub-menu,
+nav .nav#menu-main li.menu-item-has-children:focus ul.children {
+  right: calc(-1*100%);
+  position: relative;
+}
+/* line 285, ../scss/partials/_mixins.scss */
+nav .nav#menu-main li.menu-item-has-children.open ul.sub-menu:before right,
+nav .nav#menu-main li.menu-item-has-children.open ul.children:before right, nav .nav#menu-main li.menu-item-has-children:focus ul.sub-menu:before right,
+nav .nav#menu-main li.menu-item-has-children:focus ul.children:before right {
+  content: "";
+  position: absolute;
+  animation: passing-left 2s linear infinite;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 2em;
+  color: inherit;
+  left: auto;
+  right: 2rem;
+  top: 45%;
+  bottom: auto;
+}
+/* line 154, ../scss/modules/_menus.scss */
+nav .nav#menu-main li ul.sub-menu,
+nav .nav#menu-main li ul.children {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  z-index: 20;
+  background: #FFE4C9;
+  width: 100%;
+  height: 100%;
+}
+/* line 167, ../scss/modules/_menus.scss */
 nav .nav#menu-main li ul.sub-menu li a,
 nav .nav#menu-main li ul.children li a {
   padding-left: 30px;
+}
+/* line 199, ../scss/modules/_menus.scss */
+nav .nav#menu-dropdown {
+  position: absolute;
+  left: 0;
+  display: none;
+  margin: 0 0 0 -1px;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+  border: 1px solid #572701;
+  background: #fff;
+  z-index: 10;
+  margin-top: 0.9em;
+}
+/* line 213, ../scss/modules/_menus.scss */
+nav .nav#menu-dropdown > li {
+  float: left;
+  border-top: 1px solid #fff;
+  width: 100%;
+  white-space: nowrap;
+}
+/* line 220, ../scss/modules/_menus.scss */
+nav .nav#menu-dropdown > li > a {
+  display: block;
+  padding: 0.25em;
+  text-decoration: none;
+  font-size: 1rem;
+}
+/* line 237, ../scss/modules/_menus.scss */
+nav .bones-dropdown-sentence .dropdown-items {
+  display: inline-block;
+  min-width: 10em;
+  text-align: right;
+  height: 1em;
+  line-height: 1;
+  position: relative;
+  font-size: 0.75em;
+}
+/* line 247, ../scss/modules/_menus.scss */
+nav .bones-dropdown-sentence .dropdown-items:after {
+  background: url(/wp-content/themes/sundial_bones/library/images/stroke.png) repeat-x center;
+  height: 8px;
+  content: " ";
+  width: 100%;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+/* line 257, ../scss/modules/_menus.scss */
+nav .bones-dropdown-sentence .dropdown-items i.fa {
+  z-index: 15;
+  position: relative;
+  right: 0.25em;
+  top: 0;
+  color: #572701;
+  font-size: 0.75em;
+}
+/* line 266, ../scss/modules/_menus.scss */
+nav .bones-dropdown-sentence .dropdown-items:before {
+  content: attr(select-text);
+  text-align: right;
+  display: block;
+  position: absolute;
+  font-family: "adobe-garamond-pro", Garamond, Palatino, "Times New Roman", Times, serif;
+  font-weight: 400;
+}
+/* line 275, ../scss/modules/_menus.scss */
+nav .bones-dropdown-sentence .dropdown-items.active {
+  background: #bc5402;
+}
+/* line 278, ../scss/modules/_menus.scss */
+nav .bones-dropdown-sentence .dropdown-items.active:before {
+  content: attr(select-text);
+  color: #fff;
+}
+/* line 287, ../scss/modules/_menus.scss */
+nav .bones-dropdown-sentence .dropdown-items.active .nav#menu-dropdown {
+  display: inline-block;
+}
+/* line 293, ../scss/modules/_menus.scss */
+nav .bones-dropdown-sentence .dropdown-items.active i.fa {
+  color: #fff;
 }
 
 /******************************************************************
@@ -6824,12 +6951,12 @@ Stylesheet: Box Styles
 /* line 22, ../scss/modules/_boxes.scss */
 .box.pen-border {
   border: 1em solid transparent;
-  border-image: url("https://shea-moisture.scdn4.secure.raxcdn.com/assets/templates/sheamoisture-v15/images/sb100-01.png") 20% round;
+  border-image: url("/wp-content/themes/sundial_bones/library/images/sb100-01.png") 20% round;
   border-image-outset: 7px;
 }
 /* line 28, ../scss/modules/_boxes.scss */
 .box.paint-bg {
-  background-image: url("https://shea-moisture.scdn4.secure.raxcdn.com/assets/templates/sheamoisture-v15/images/paint.png");
+  background-image: url("/wp-content/themes/sundial_bones/library/images/paint.png");
   background-size: contain;
   background-position: 5% 50%;
   background-repeat: repeat-y;
@@ -6846,7 +6973,7 @@ Stylesheet: Box Styles
 
 /* line 48, ../scss/modules/_boxes.scss */
 .prohibackground {
-  background-image: url(https://shea-moisture.scdn4.secure.raxcdn.com/assets/templates/sheamoisture-v15/images/NO.png);
+  background-image: url(/wp-content/themes/sundial_bones/library/images/NO.png);
   background-size: auto 65%;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -10268,7 +10395,7 @@ Stylesheet: Desk.com Styles
 /* line 14, ../scss/modules/_deskdotcom.scss */
 .assistly-widget > a, .assistly-widget > span {
   min-height: 20px !important;
-  background-image: url("https://shea-moisture.scdn4.secure.raxcdn.com/assets/images/Interface/launch_chat_sprite.png") !important;
+  background-image: url("/wp-content/themes/sundial_bones/library/images/Interface/launch_chat_sprite.png") !important;
   width: 120px !important;
   -webkit-transition: background-position 0s;
   -moz-transition: background-position 0s;
@@ -10503,7 +10630,7 @@ img {
 
 /* line 42, ../scss/breakpoints/_base.scss */
 hr {
-  background: url(https://shea-moisture.scdn4.secure.raxcdn.com/assets/templates/sheamoisture-v15/images/stroke.png) repeat-x top center;
+  background: url(/wp-content/themes/sundial_bones/library/images/stroke.png) repeat-x top center;
   height: 8px;
   display: block;
   border: none !important;
@@ -11263,7 +11390,7 @@ POSTS & CONTENT STYLES
   max-height: 400px;
   width: auto !important;
   background-color: #f6efe9;
-  background-image: url(https://shea-moisture.scdn4.secure.raxcdn.com/assets/templates/sheamoisture-v15/images/paint-img-bg.png);
+  background-image: url(/wp-content/themes/sundial_bones/library/images/paint-img-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   max-width: 100%;
@@ -12147,7 +12274,7 @@ TABLET & SMALLER LAPTOPS
   }
   /* line 48, ../scss/breakpoints/_768up.scss */
   .rightborder:after {
-    background: url(https://shea-moisture.scdn4.secure.raxcdn.com/assets/templates/sheamoisture-v15/images/stroke_v.png) repeat-y center;
+    background: url(/wp-content/themes/sundial_bones/library/images/stroke_v.png) repeat-y center;
     height: 100%;
     content: " ";
     width: 4px;
@@ -12162,7 +12289,7 @@ TABLET & SMALLER LAPTOPS
   }
   /* line 63, ../scss/breakpoints/_768up.scss */
   .topborder:before {
-    background: url(https://shea-moisture.scdn4.secure.raxcdn.com/assets/templates/sheamoisture-v15/images/stroke.png) repeat-x center;
+    background: url(/wp-content/themes/sundial_bones/library/images/stroke.png) repeat-x center;
     height: 8px;
     content: " ";
     width: 100%;
@@ -12397,7 +12524,7 @@ TABLET & SMALLER LAPTOPS
   #mainContainer .wrapper.menu-wrap:after {
     content: " ";
     display: block;
-    background: url(https://shea-moisture.scdn4.secure.raxcdn.com/assets/templates/sheamoisture-v15/images/stroke.png) repeat-x top center;
+    background: url(/wp-content/themes/sundial_bones/library/images/stroke.png) repeat-x top center;
     height: 8px;
     display: block;
     position: relative;
@@ -12522,25 +12649,25 @@ TABLET & SMALLER LAPTOPS
     font-size: 0.75em;
     padding: 1em 0;
   }
-  /* line 588, ../scss/breakpoints/_768up.scss */
+  /* line 589, ../scss/breakpoints/_768up.scss */
   #subcategoriesBlock ul.columns-5 li {
     width: 19.5%;
   }
 
   /* PRODUCT GRID */
-  /* line 605, ../scss/breakpoints/_768up.scss */
+  /* line 606, ../scss/breakpoints/_768up.scss */
   .productBlockContainer .product-container {
     padding-left: 0;
     min-height: 320px;
     float: left !important;
   }
-  /* line 611, ../scss/breakpoints/_768up.scss */
+  /* line 612, ../scss/breakpoints/_768up.scss */
   .productBlockContainer .product-container.first-item {
     padding-left: 1em !important;
   }
-  /* line 625, ../scss/breakpoints/_768up.scss */
+  /* line 626, ../scss/breakpoints/_768up.scss */
   .productBlockContainer.columns-2 .product-container.first-item .product-item:after, .productBlockContainer.columns-2 .product-container.middle-item .product-item:after {
-    background: url(https://shea-moisture.scdn4.secure.raxcdn.com/assets/templates/sheamoisture-v15/images/stroke_v.png) repeat-y center;
+    background: url(/wp-content/themes/sundial_bones/library/images/stroke_v.png) repeat-y center;
     height: 300px;
     height: -webkit-calc(100% - 20px);
     height: -moz-calc(100% - 20px);
@@ -12553,13 +12680,13 @@ TABLET & SMALLER LAPTOPS
     top: 20px;
     right: -4px;
   }
-  /* line 635, ../scss/breakpoints/_768up.scss */
+  /* line 636, ../scss/breakpoints/_768up.scss */
   .productBlockContainer.columns-2 .product-container.first-item .product-item:empty:after, .productBlockContainer.columns-2 .product-container.middle-item .product-item:empty:after {
     width: 0;
   }
-  /* line 646, ../scss/breakpoints/_768up.scss */
+  /* line 647, ../scss/breakpoints/_768up.scss */
   .productBlockContainer.columns-3 .product-container.first-item .product-item:after, .productBlockContainer.columns-3 .product-container.middle-item .product-item:after {
-    background: url(https://shea-moisture.scdn4.secure.raxcdn.com/assets/templates/sheamoisture-v15/images/stroke_v.png) repeat-y center;
+    background: url(/wp-content/themes/sundial_bones/library/images/stroke_v.png) repeat-y center;
     height: 300px;
     height: -webkit-calc(100% - 20px);
     height: -moz-calc(100% - 20px);
@@ -12572,13 +12699,13 @@ TABLET & SMALLER LAPTOPS
     top: 20px;
     right: -4px;
   }
-  /* line 656, ../scss/breakpoints/_768up.scss */
+  /* line 657, ../scss/breakpoints/_768up.scss */
   .productBlockContainer.columns-3 .product-container.first-item .product-item:empty:after, .productBlockContainer.columns-3 .product-container.middle-item .product-item:empty:after {
     width: 0;
   }
-  /* line 667, ../scss/breakpoints/_768up.scss */
+  /* line 668, ../scss/breakpoints/_768up.scss */
   .productBlockContainer.columns-4 .product-container.first-item .product-item:after, .productBlockContainer.columns-4 .product-container.middle-item .product-item:after {
-    background: url(https://shea-moisture.scdn4.secure.raxcdn.com/assets/templates/sheamoisture-v15/images/stroke_v.png) repeat-y center;
+    background: url(/wp-content/themes/sundial_bones/library/images/stroke_v.png) repeat-y center;
     height: 300px;
     height: -webkit-calc(100% - 20px);
     height: -moz-calc(100% - 20px);
@@ -12591,17 +12718,17 @@ TABLET & SMALLER LAPTOPS
     top: 20px;
     right: -4px;
   }
-  /* line 677, ../scss/breakpoints/_768up.scss */
+  /* line 678, ../scss/breakpoints/_768up.scss */
   .productBlockContainer.columns-4 .product-container.first-item .product-item:empty:after, .productBlockContainer.columns-4 .product-container.middle-item .product-item:empty:after {
     width: 0;
   }
-  /* line 684, ../scss/breakpoints/_768up.scss */
+  /* line 685, ../scss/breakpoints/_768up.scss */
   .productBlockContainer.columns-5 .product-container {
     width: 19.5%;
   }
-  /* line 688, ../scss/breakpoints/_768up.scss */
+  /* line 689, ../scss/breakpoints/_768up.scss */
   .productBlockContainer.columns-5 .product-container.first-item .product-item:after, .productBlockContainer.columns-5 .product-container.middle-item .product-item:after {
-    background: url(https://shea-moisture.scdn4.secure.raxcdn.com/assets/templates/sheamoisture-v15/images/stroke_v.png) repeat-y center;
+    background: url(/wp-content/themes/sundial_bones/library/images/stroke_v.png) repeat-y center;
     height: 300px;
     height: -webkit-calc(100% - 20px);
     height: -moz-calc(100% - 20px);
@@ -12614,13 +12741,13 @@ TABLET & SMALLER LAPTOPS
     top: 20px;
     right: -4px;
   }
-  /* line 698, ../scss/breakpoints/_768up.scss */
+  /* line 699, ../scss/breakpoints/_768up.scss */
   .productBlockContainer.columns-5 .product-container.first-item .product-item:empty:after, .productBlockContainer.columns-5 .product-container.middle-item .product-item:empty:after {
     width: 0;
   }
-  /* line 709, ../scss/breakpoints/_768up.scss */
+  /* line 710, ../scss/breakpoints/_768up.scss */
   .productBlockContainer.columns-6 .product-container.first-item .product-item:after, .productBlockContainer.columns-6 .product-container.middle-item .product-item:after {
-    background: url(https://shea-moisture.scdn4.secure.raxcdn.com/assets/templates/sheamoisture-v15/images/stroke_v.png) repeat-y center;
+    background: url(/wp-content/themes/sundial_bones/library/images/stroke_v.png) repeat-y center;
     height: 300px;
     height: -webkit-calc(100% - 20px);
     height: -moz-calc(100% - 20px);
@@ -12633,223 +12760,223 @@ TABLET & SMALLER LAPTOPS
     top: 20px;
     right: -4px;
   }
-  /* line 719, ../scss/breakpoints/_768up.scss */
+  /* line 720, ../scss/breakpoints/_768up.scss */
   .productBlockContainer.columns-6 .product-container.first-item .product-item:empty:after, .productBlockContainer.columns-6 .product-container.middle-item .product-item:empty:after {
     width: 0;
   }
 
   /* LISTING */
-  /* line 740, ../scss/breakpoints/_768up.scss */
+  /* line 741, ../scss/breakpoints/_768up.scss */
   #listing0 .basic-info .item-images .main-image a {
     max-width: initial;
   }
-  /* line 743, ../scss/breakpoints/_768up.scss */
+  /* line 744, ../scss/breakpoints/_768up.scss */
   #listing0 .basic-info .item-images .main-image a img {
     max-height: initial;
     max-width: 100%;
   }
-  /* line 754, ../scss/breakpoints/_768up.scss */
+  /* line 755, ../scss/breakpoints/_768up.scss */
   #listing0 .basic-info .item-description {
     text-align: left;
   }
-  /* line 757, ../scss/breakpoints/_768up.scss */
+  /* line 758, ../scss/breakpoints/_768up.scss */
   #listing0 .basic-info .item-description .item-title {
     font-size: 1.5em;
   }
-  /* line 763, ../scss/breakpoints/_768up.scss */
+  /* line 764, ../scss/breakpoints/_768up.scss */
   #listing0 .basic-info .item-description .addToCartBlock .qtybox {
     width: 33%;
   }
-  /* line 766, ../scss/breakpoints/_768up.scss */
+  /* line 767, ../scss/breakpoints/_768up.scss */
   #listing0 .basic-info .item-description .addToCartBlock .qtybox label {
     display: inline;
   }
-  /* line 770, ../scss/breakpoints/_768up.scss */
+  /* line 771, ../scss/breakpoints/_768up.scss */
   #listing0 .basic-info .item-description .addToCartBlock .qtybox input {
     float: none;
     max-width: 3em;
   }
-  /* line 777, ../scss/breakpoints/_768up.scss */
+  /* line 778, ../scss/breakpoints/_768up.scss */
   #listing0 .basic-info .item-description .addToCartBlock .addcart-button {
     display: inline-block;
     margin: 0 0 0 1%;
     width: 65%;
   }
-  /* line 782, ../scss/breakpoints/_768up.scss */
+  /* line 783, ../scss/breakpoints/_768up.scss */
   #listing0 .basic-info .item-description .addToCartBlock .addcart-button .btn, #listing0 .basic-info .item-description .addToCartBlock .addcart-button .comment-reply-link, #listing0 .basic-info .item-description .addToCartBlock .addcart-button #submit {
     width: 100%;
     min-width: 100%;
   }
-  /* line 793, ../scss/breakpoints/_768up.scss */
+  /* line 794, ../scss/breakpoints/_768up.scss */
   #listing0 .basic-info .item-description .addToListBlock .addGiftRegistry, #listing0 .basic-info .item-description .addToListBlock .addWishlist {
     display: inline-block;
     margin: 0.5em 0 0.5em 1%;
     width: 48%;
   }
-  /* line 803, ../scss/breakpoints/_768up.scss */
+  /* line 804, ../scss/breakpoints/_768up.scss */
   #listing0 .basic-info .item-description .extended_descriptionBlock h2 {
     font-size: 1.5em;
     text-align: left;
   }
-  /* line 814, ../scss/breakpoints/_768up.scss */
+  /* line 815, ../scss/breakpoints/_768up.scss */
   #listing0 #listing-tabs {
     padding: 0 1em;
   }
-  /* line 822, ../scss/breakpoints/_768up.scss */
+  /* line 823, ../scss/breakpoints/_768up.scss */
   #listing0 .reviewsBlock .user_reviews .review-info {
     float: none;
   }
-  /* line 834, ../scss/breakpoints/_768up.scss */
+  /* line 835, ../scss/breakpoints/_768up.scss */
   #listing0 .extrafieldsBlock .extra_field > h4 {
     float: none;
     display: block;
   }
-  /* line 839, ../scss/breakpoints/_768up.scss */
+  /* line 840, ../scss/breakpoints/_768up.scss */
   #listing0 .extrafieldsBlock .extra_field > div {
     float: none;
     display: block;
   }
-  /* line 848, ../scss/breakpoints/_768up.scss */
+  /* line 849, ../scss/breakpoints/_768up.scss */
   #listing0 .relatedBlock {
     margin: 0 2em 1em;
   }
 
   /* CART */
-  /* line 861, ../scss/breakpoints/_768up.scss */
+  /* line 862, ../scss/breakpoints/_768up.scss */
   #viewCart .shoppingCartItems {
     margin-left: 1em;
   }
-  /* line 864, ../scss/breakpoints/_768up.scss */
+  /* line 865, ../scss/breakpoints/_768up.scss */
   #viewCart .shoppingCartItems .item, #viewCart .shoppingCartItems .cart-titles {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  /* line 869, ../scss/breakpoints/_768up.scss */
+  /* line 870, ../scss/breakpoints/_768up.scss */
   #viewCart .shoppingCartItems .item > div, #viewCart .shoppingCartItems .cart-titles > div {
     float: none;
     width: auto;
     line-height: 1;
   }
-  /* line 876, ../scss/breakpoints/_768up.scss */
+  /* line 877, ../scss/breakpoints/_768up.scss */
   #viewCart .shoppingCartItems .item > div.item-info .product-image, #viewCart .shoppingCartItems .cart-titles > div.item-info .product-image {
     margin: 0;
   }
-  /* line 880, ../scss/breakpoints/_768up.scss */
+  /* line 881, ../scss/breakpoints/_768up.scss */
   #viewCart .shoppingCartItems .item > div.item-info .product-name-options, #viewCart .shoppingCartItems .cart-titles > div.item-info .product-name-options {
     float: none;
     width: auto;
     text-align: center;
     margin-top: 0.5em;
   }
-  /* line 884, ../scss/breakpoints/_768up.scss */
+  /* line 885, ../scss/breakpoints/_768up.scss */
   #viewCart .shoppingCartItems .item > div.item-info .product-name-options > *, #viewCart .shoppingCartItems .cart-titles > div.item-info .product-name-options > * {
     text-align: center;
   }
-  /* line 895, ../scss/breakpoints/_768up.scss */
+  /* line 896, ../scss/breakpoints/_768up.scss */
   #viewCart .shoppingCartItems .item > div.item-price, #viewCart .shoppingCartItems .cart-titles > div.item-price {
     display: none;
   }
-  /* line 902, ../scss/breakpoints/_768up.scss */
+  /* line 903, ../scss/breakpoints/_768up.scss */
   #viewCart .shoppingCartItems .item > div.item-qty input, #viewCart .shoppingCartItems .cart-titles > div.item-qty input {
     width: auto !important;
   }
-  /* line 908, ../scss/breakpoints/_768up.scss */
+  /* line 909, ../scss/breakpoints/_768up.scss */
   #viewCart .shoppingCartItems .item > div.item-remove, #viewCart .shoppingCartItems .cart-titles > div.item-remove {
     top: 0.5em;
   }
-  /* line 911, ../scss/breakpoints/_768up.scss */
+  /* line 912, ../scss/breakpoints/_768up.scss */
   #viewCart .shoppingCartItems .item > div.item-remove i, #viewCart .shoppingCartItems .cart-titles > div.item-remove i {
     font-size: 2em;
     line-height: 2em;
   }
-  /* line 924, ../scss/breakpoints/_768up.scss */
+  /* line 925, ../scss/breakpoints/_768up.scss */
   #viewCart .chk-buttons {
     margin-right: 1em;
   }
-  /* line 928, ../scss/breakpoints/_768up.scss */
+  /* line 929, ../scss/breakpoints/_768up.scss */
   #viewCart .chk-buttons .btn, #viewCart .chk-buttons .comment-reply-link, #viewCart .chk-buttons #submit {
     width: auto;
     display: inline-block;
     padding: 1em;
   }
-  /* line 934, ../scss/breakpoints/_768up.scss */
+  /* line 935, ../scss/breakpoints/_768up.scss */
   #viewCart .chk-buttons:before {
     clear: none;
   }
-  /* line 942, ../scss/breakpoints/_768up.scss */
+  /* line 943, ../scss/breakpoints/_768up.scss */
   #viewCart #recalculate:before, #viewCart #recalculate:after {
     display: table;
     content: " ";
     clear: both;
   }
-  /* line 950, ../scss/breakpoints/_768up.scss */
+  /* line 951, ../scss/breakpoints/_768up.scss */
   #viewCart #recalculate .shipQuote > div {
     float: none;
     width: 100%;
   }
-  /* line 955, ../scss/breakpoints/_768up.scss */
+  /* line 956, ../scss/breakpoints/_768up.scss */
   #viewCart #recalculate .shipQuote .shipquote-location {
     height: 2em;
   }
-  /* line 965, ../scss/breakpoints/_768up.scss */
+  /* line 966, ../scss/breakpoints/_768up.scss */
   #viewCart .displayPromotions .promo-desc {
     width: 50%;
   }
-  /* line 971, ../scss/breakpoints/_768up.scss */
+  /* line 972, ../scss/breakpoints/_768up.scss */
   #viewCart .displayPromotions .promo-remove input {
     margin-right: 2%;
     min-width: 0;
   }
-  /* line 980, ../scss/breakpoints/_768up.scss */
+  /* line 981, ../scss/breakpoints/_768up.scss */
   #viewCart .authorize_net {
     float: left;
     margin: 0;
     width: 16.33%;
   }
-  /* line 986, ../scss/breakpoints/_768up.scss */
+  /* line 987, ../scss/breakpoints/_768up.scss */
   #viewCart .authorize_net .AuthorizeNetSeal {
     margin-left: 2em !important;
   }
-  /* line 990, ../scss/breakpoints/_768up.scss */
+  /* line 991, ../scss/breakpoints/_768up.scss */
   #viewCart .authorize_net:before, #viewCart .authorize_net:after {
     display: none;
     clear: none;
   }
-  /* line 997, ../scss/breakpoints/_768up.scss */
+  /* line 998, ../scss/breakpoints/_768up.scss */
   #viewCart .third-party-payment {
     float: right;
   }
-  /* line 1001, ../scss/breakpoints/_768up.scss */
+  /* line 1002, ../scss/breakpoints/_768up.scss */
   #viewCart .third-party-payment:before, #viewCart .third-party-payment:after {
     display: table;
     content: " ";
     clear: both;
   }
 
-  /* line 1024, ../scss/breakpoints/_768up.scss */
+  /* line 1025, ../scss/breakpoints/_768up.scss */
   #myaccount .trackOrders tbody tr td .btn-transparent, #myaccount .savedOrders tbody tr td .btn-transparent {
     break-word: normal;
     display: inline-block;
     text-align: center;
   }
-  /* line 1029, ../scss/breakpoints/_768up.scss */
+  /* line 1030, ../scss/breakpoints/_768up.scss */
   #myaccount .trackOrders tbody tr td .btn-transparent:first-child, #myaccount .savedOrders tbody tr td .btn-transparent:first-child {
     padding-left: 0;
   }
-  /* line 1037, ../scss/breakpoints/_768up.scss */
+  /* line 1038, ../scss/breakpoints/_768up.scss */
   #myaccount .trackOrders tbody tr:nth-child(2n), #myaccount .savedOrders tbody tr:nth-child(2n) {
     background: #f6efe9;
   }
 
   /* FOOTER */
-  /* line 1056, ../scss/breakpoints/_768up.scss */
+  /* line 1057, ../scss/breakpoints/_768up.scss */
   footer:before, footer:after {
     display: table;
     content: " ";
     clear: both;
   }
-  /* line 1062, ../scss/breakpoints/_768up.scss */
+  /* line 1063, ../scss/breakpoints/_768up.scss */
   footer .wrapper {
     margin: 1em;
     position: relative;
@@ -12889,10 +13016,9 @@ TABLET & SMALLER LAPTOPS
   }
   /* line 22, ../scss/modules/_menus768up.scss */
   .nav li a:hover, .nav li a:focus {
-    color: #fff;
-    text-decoration: underline;
+    text-decoration: none;
   }
-  /* line 34, ../scss/modules/_menus768up.scss */
+  /* line 33, ../scss/modules/_menus768up.scss */
   .nav li ul.sub-menu,
   .nav li ul.children {
     margin-top: 0;
@@ -12903,7 +13029,7 @@ TABLET & SMALLER LAPTOPS
     z-index: 8999;
     /* highlight sub-menu current page */
   }
-  /* line 43, ../scss/modules/_menus768up.scss */
+  /* line 42, ../scss/modules/_menus768up.scss */
   .nav li ul.sub-menu li,
   .nav li ul.children li {
     /*
@@ -12912,7 +13038,7 @@ TABLET & SMALLER LAPTOPS
     for usability. k, bai.
     */
   }
-  /* line 45, ../scss/modules/_menus768up.scss */
+  /* line 44, ../scss/modules/_menus768up.scss */
   .nav li ul.sub-menu li a,
   .nav li ul.children li a {
     padding-left: 10px;
@@ -12921,18 +13047,18 @@ TABLET & SMALLER LAPTOPS
     width: 180px;
     border-bottom: 1px solid #ccc;
   }
-  /* line 62, ../scss/modules/_menus768up.scss */
+  /* line 61, ../scss/modules/_menus768up.scss */
   .nav li ul.sub-menu li:last-child a,
   .nav li ul.children li:last-child a {
     border-bottom: 0;
   }
-  /* line 72, ../scss/modules/_menus768up.scss */
+  /* line 71, ../scss/modules/_menus768up.scss */
   .nav li ul.sub-menu li ul,
   .nav li ul.children li ul {
     top: 0;
     left: 100%;
   }
-  /* line 87, ../scss/modules/_menus768up.scss */
+  /* line 86, ../scss/modules/_menus768up.scss */
   .nav li:hover > ul {
     top: auto;
     visibility: visible;

@@ -81,16 +81,23 @@ nav {
 				
 				&.menu-item-has-children {
 					
+					overflow: hidden;
+					display: inline-block;
+					width: 100%;
+					padding-right: 2rem;
+
+					
 					> a,
 					> a:hover {
 						color: $shea-brown;
 					}
 					
 					> a {
-						background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%2…%22%20points%3D%2212.55%200.43%2017%202.98%2012.3%205.68%22/%3E%3C/svg%3E");
+						background: url('data:image/svg+xml;utf8,<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.01 6.11"><defs><style>.cls-1{fill:#fff;stroke-dasharray:2;}.cls-1,.cls-2{stroke:#572701;stroke-miterlimit:10;}.cls-2{fill:none;}</style></defs><title>Untitled-1</title><line class="cls-1" y1="3.06" x2="17" y2="3.06"/><polyline class="cls-2" points="12.55 0.43 17 2.98 12.3 5.68"/></svg>');
 						background-repeat: no-repeat;
 						background-size: 2rem;
-						background-position: 100% 50%;
+						background-position: 99% 50%;
+						display: inline-block;
 					}
 					
 					@include swipe-icon();
@@ -106,6 +113,33 @@ nav {
 							content: '';
 						}
 						
+						ul.sub-menu,
+						ul.children {
+				
+							
+							right: calc(-1*100%);
+							@include swipe-icon( before right );
+
+							li {
+
+								a {
+									
+
+									&:hover,
+									&:focus {}
+
+									&:link {}
+
+								}
+
+								&:first-child {}
+
+								&:last-child {}
+
+							}
+
+						}
+						
 					}
 					
 				}
@@ -119,6 +153,14 @@ nav {
 				*/
 				ul.sub-menu,
 				ul.children {
+				
+					display: inline-block;
+					position: absolute;
+					right: 0;
+					z-index: 20;
+					background: $warmer-tan;
+					width: 100%;
+					height: 100%;
 
 					li {
 
@@ -151,9 +193,112 @@ nav {
 
 			}  /* end current highlighters */
 		
+		}	/* end &#menu-main */
+		
+		
+		&#menu-dropdown {
+		
+			position: absolute;
+			left: 0;
+			display: none;
+			margin: 0 0 0 -1px;
+			padding: 0;
+			list-style: none;
+			text-align: left;
+			border: 1px solid $shea-brown;
+			background: $white;
+			z-index: 10;
+			margin-top: 0.9em;
+			
+			> li {
+				float: left;
+				border-top: 1px solid #fff;
+				width: 100%;
+				white-space: nowrap;
+				
+				
+				> a {
+				
+					display: block;
+					padding: 0.25em;
+					text-decoration: none;
+					font-size:1rem;
+				
+				}
+				
+			}
+		
 		}
 
 	} /* end .nav */
+	
+	.bones-dropdown-sentence {
+		
+		.dropdown-items {
+			display: inline-block;
+			min-width: 10em;
+			text-align: right;
+			height: 1em;
+			line-height: 1;
+			position: relative;
+			font-size: 0.75em;
+	
+			
+			&:after {
+				background:url(#{$imgThis}stroke.png) repeat-x center;
+				height: 8px;
+				content: " ";
+				width: 100%;
+				position: absolute;
+				bottom: -4px;
+				left: 0;
+			}
+			
+			i.fa {
+				z-index: 15;
+				position: relative;
+				right: 0.25em;
+				top: 0;
+				color: $shea-brown;
+				font-size: 0.75em;
+			}
+			
+			&:before {
+				content: attr(select-text);
+				text-align: right;
+				display: block;
+				position: absolute;
+				font-family: $serif;
+				font-weight: 400;
+			}
+			
+			&.active {
+				background: lighten($shea-brown, 20%);
+				
+				&:before {
+					content: attr(select-text);
+					color: $white;
+					
+					
+				}
+				
+				.nav {
+				
+					&#menu-dropdown {
+						display: inline-block;
+					}
+					
+				}
+				
+				i.fa {
+					color: $white;
+				}
+			
+			}
+			
+		}
+	
+	}
 
 
 }	//end nav

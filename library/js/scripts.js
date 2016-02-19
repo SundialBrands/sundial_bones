@@ -105,10 +105,20 @@ function loadGravatars() {
 } // end function
 
 
+
+
 /*
  * Put all your regular jQuery in here.
 */
 jQuery(document).ready(function($) {
+
+	$.urlParam = function(name){
+		var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+		if (null == results) {
+			return '';
+		}
+		return results[1] || 0;
+	}
 
   /*
    * Let's fire off the gravatar function
@@ -212,6 +222,73 @@ jQuery(document).ready(function($) {
 		});	//end jQuery('#show-menu').click( function(e)
 	
 	}	//end if (jQuery('.show-subcat-info').length > 0 )
+	
+	if (jQuery('#menu-main li.menu-item-has-children').length > 0 ) {
+	
+		jQuery('#menu-main li.menu-item-has-children').on('swipe', function(e){ 
+		
+			alert('swipe'); 
+			
+		});
+	
+	}
+	
+	if (jQuery('nav .dropdown-items').length > 0 ) {
+	
+		var selectedItem = jQuery.urlParam('dropdownMenuSelected');
+		var selected = false;
+		if( selectedItem ) {
+			jQuery('#' + selectedItem).find('a').addClass('selected');
+		}
+		selected = jQuery('nav .dropdown-items .selected');
+		if ( '' != selected && selected ) {
+		
+			selected = jQuery(selected).text();
+			jQuery('nav .dropdown-items').attr('select-text', selected);
+		
+		}
+		else {
+		
+			jQuery('nav .dropdown-items:before').css('content', 'select:');
+		
+		}
+		
+		jQuery('nav .dropdown-items').click( function(e) {
+		
+			e.preventDefault();
+			console.log(e);
+			jQuery(this).toggleClass('active');
+			jQuery('nav .dropdown-items:before').css('content', 'select:');
+			var link = false;
+			if( 'A' == e.srcElement.tagName ) {
+			
+				link = e.srcElement.href;
+			
+			}
+			if (link) {
+			
+				jQuery(e.srcElement).addClass('selected');
+				jQuery('nav .dropdown-items').attr('select-text', jQuery(e.srcElement).text() );
+				link = link + '?dropdownMenuSelected=' + jQuery(e.srcElement).closest('li').attr('id');
+				window.location = link;
+				
+			}
+			var selected = jQuery('nav .dropdown-items .selected');
+			if ( '' != selected && selected ) {
+		
+				selected = jQuery(selected).text();
+				jQuery('nav .dropdown-items').attr('select-text', selected);
+		
+			}
+			else {
+		
+				jQuery('nav .dropdown-items').attr('select-text', 'select:');
+		
+			}
+			
+		});
+	
+	}
 
 
 }); /* end of as page load scripts */
