@@ -233,6 +233,8 @@ nav {
 	} /* end .nav */
 	
 	.bones-dropdown-sentence {
+   	 	font-size: 3em;
+    	font-weight: 800;
 		
 		.dropdown-items {
 			display: inline-block;
@@ -268,7 +270,7 @@ nav {
 				text-align: right;
 				display: block;
 				position: absolute;
-				font-family: $serif;
+				font-family: $cursive;
 				font-weight: 400;
 			}
 			

@@ -159,7 +159,7 @@ function bones_scripts_and_styles() {
 		wp_enqueue_style( 'bones-ie-only' );
 // 		wp_enqueue_style( 'bones-jquery-mobile' );
 // 		wp_enqueue_style( 'bones-jquery-mobile-theme' );
-		wp_enqueue_script( 'bones-jquery-mobile' );
+// 		wp_enqueue_script( 'bones-jquery-mobile' );
 
 		$wp_styles->add_data( 'bones-ie-only', 'conditional', 'lt IE 9' ); // add conditional wrapper around ie stylesheet
 

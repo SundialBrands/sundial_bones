@@ -1,8 +1,16 @@
 /*********************
 NAVIGATION STYLES
 *********************/
+nav {
+	.bones-dropdown-sentence {
+		
+		text-align: right;
+		
+	}
+}
 
 .nav {
+
 	border: 0;
 	ul {
 		background:$black;

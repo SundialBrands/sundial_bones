@@ -385,11 +385,11 @@ body#tinymce.wp-editor {
   */
   /*  @font-face {
         font-family: 'Font Name';
-        src: url('/wp-content/themes/sundial_bones/library/font/font-name.eot');
-        src: url('/wp-content/themes/sundial_bones/library/font/font-name.eot?#iefix') format('embedded-opentype'),
-               url('/wp-content/themes/sundial_bones/library/font/font-name.woff') format('woff'),
-               url('/wp-content/themes/sundial_bones/library/font/font-name.ttf') format('truetype'),
-               url('/wp-content/themes/sundial_bones/library/font/font-name.svg#font-name') format('svg');
+        src: url('/wp-content/themes/sundial_bones/library/fonts/font-name.eot');
+        src: url('/wp-content/themes/sundial_bones/library/fonts/font-name.eot?#iefix') format('embedded-opentype'),
+               url('/wp-content/themes/sundial_bones/library/fonts/font-name.woff') format('woff'),
+               url('/wp-content/themes/sundial_bones/library/fonts/font-name.ttf') format('truetype'),
+               url('/wp-content/themes/sundial_bones/library/fonts/font-name.svg#font-name') format('svg');
         font-weight: normal;
         font-style: normal;
     }
@@ -845,6 +845,15 @@ body#tinymce.wp-editor span.amp {
     -ms-transform: translateY(-50%) rotateX(0deg);
     transform: translateY(-50%) rotateX(0deg);
     opacity: 0;
+  }
+}
+@font-face {
+  /* line 17, ../scss/editor-style.scss */
+  body#tinymce.wp-editor {
+    font-family: 'TrashHand';
+    src: url("/wp-content/themes/sundial_bones/library/fonts/TrashHand.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/sundial_bones/library/fonts/TrashHand.woff") format("woff"), url("/wp-content/themes/sundial_bones/library/fonts/TrashHand.ttf") format("truetype"), url("/wp-content/themes/sundial_bones/library/fonts/TrashHand.svg#TrashHand") format("svg");
+    font-weight: normal;
+    font-style: normal;
   }
 }
 @font-face {
@@ -3563,7 +3572,7 @@ body#tinymce.wp-editor .fa-bluetooth-b:before {
 body#tinymce.wp-editor .fa-percent:before {
   content: "";
 }
-/* line 52, ../scss/partials/_typography.scss */
+/* line 59, ../scss/partials/_typography.scss */
 body#tinymce.wp-editor [class^="icon-"]:before, body#tinymce.wp-editor [class*=" icon-"]:before {
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -3587,139 +3596,139 @@ body#tinymce.wp-editor [class^="icon-"]:before, body#tinymce.wp-editor [class*="
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
-/* line 81, ../scss/partials/_typography.scss */
+/* line 88, ../scss/partials/_typography.scss */
 body#tinymce.wp-editor .icon-search-1:before {
   content: "\";
 }
-/* line 82, ../scss/partials/_typography.scss */
+/* line 89, ../scss/partials/_typography.scss */
 body#tinymce.wp-editor .icon-right-circle:before {
   content: "\";
 }
-/* line 83, ../scss/partials/_typography.scss */
+/* line 90, ../scss/partials/_typography.scss */
 body#tinymce.wp-editor .icon-heart:before {
   content: "\";
 }
-/* line 84, ../scss/partials/_typography.scss */
+/* line 91, ../scss/partials/_typography.scss */
 body#tinymce.wp-editor .icon-basket:before {
   content: "\";
 }
-/* line 85, ../scss/partials/_typography.scss */
+/* line 92, ../scss/partials/_typography.scss */
 body#tinymce.wp-editor .icon-ok:before {
   content: "\";
 }
-/* line 86, ../scss/partials/_typography.scss */
+/* line 93, ../scss/partials/_typography.scss */
 body#tinymce.wp-editor .icon-ok-circled:before {
   content: "\";
 }
-/* line 87, ../scss/partials/_typography.scss */
+/* line 94, ../scss/partials/_typography.scss */
 body#tinymce.wp-editor .icon-ok-circled2:before {
   content: "\";
 }
-/* line 88, ../scss/partials/_typography.scss */
+/* line 95, ../scss/partials/_typography.scss */
 body#tinymce.wp-editor .icon-cancel:before {
   content: "\";
 }
-/* line 89, ../scss/partials/_typography.scss */
+/* line 96, ../scss/partials/_typography.scss */
 body#tinymce.wp-editor .icon-cancel-circled:before {
   content: "\";
 }
-/* line 90, ../scss/partials/_typography.scss */
+/* line 97, ../scss/partials/_typography.scss */
 body#tinymce.wp-editor .icon-cancel-circled2:before {
   content: "\";
 }
-/* line 91, ../scss/partials/_typography.scss */
+/* line 98, ../scss/partials/_typography.scss */
 body#tinymce.wp-editor .icon-home:before {
   content: "\";
 }
-/* line 92, ../scss/partials/_typography.scss */
+/* line 99, ../scss/partials/_typography.scss */
 body#tinymce.wp-editor .icon-link:before {
   content: "\";
 }
-/* line 93, ../scss/partials/_typography.scss */
+/* line 100, ../scss/partials/_typography.scss */
 body#tinymce.wp-editor .icon-tag:before {
   content: "\";
 }
-/* line 94, ../scss/partials/_typography.scss */
+/* line 101, ../scss/partials/_typography.scss */
 body#tinymce.wp-editor .icon-bookmark:before {
   content: "\";
 }
-/* line 95, ../scss/partials/_typography.scss */
+/* line 102, ../scss/partials/_typography.scss */
 body#tinymce.wp-editor .icon-print:before {
   content: "\";
 }
-/* line 96, ../scss/partials/_typography.scss */
+/* line 103, ../scss/partials/_typography.scss */
 body#tinymce.wp-editor .icon-comment:before {
   content: "\";
 }
-/* line 97, ../scss/partials/_typography.scss */
+/* line 104, ../scss/partials/_typography.scss */
 body#tinymce.wp-editor .icon-chat-empty:before {
   content: "\";
 }
-/* line 98, ../scss/partials/_typography.scss */
+/* line 105, ../scss/partials/_typography.scss */
 body#tinymce.wp-editor .icon-th:before {
   content: "\";
 }
-/* line 99, ../scss/partials/_typography.scss */
+/* line 106, ../scss/partials/_typography.scss */
 body#tinymce.wp-editor .icon-rss:before {
   content: "\";
 }
-/* line 100, ../scss/partials/_typography.scss */
+/* line 107, ../scss/partials/_typography.scss */
 body#tinymce.wp-editor .icon-menu:before {
   content: "\";
 }
-/* line 101, ../scss/partials/_typography.scss */
+/* line 108, ../scss/partials/_typography.scss */
 body#tinymce.wp-editor .icon-left-open:before {
   content: "\";
 }
-/* line 102, ../scss/partials/_typography.scss */
+/* line 109, ../scss/partials/_typography.scss */
 body#tinymce.wp-editor .icon-right-open:before {
   content: "\";
 }
-/* line 103, ../scss/partials/_typography.scss */
+/* line 110, ../scss/partials/_typography.scss */
 body#tinymce.wp-editor .icon-ellipsis-vert:before {
   content: "\";
 }
-/* line 104, ../scss/partials/_typography.scss */
+/* line 111, ../scss/partials/_typography.scss */
 body#tinymce.wp-editor .icon-facebook:before {
   content: "\";
 }
-/* line 105, ../scss/partials/_typography.scss */
+/* line 112, ../scss/partials/_typography.scss */
 body#tinymce.wp-editor .icon-gplus:before {
   content: "\";
 }
-/* line 106, ../scss/partials/_typography.scss */
+/* line 113, ../scss/partials/_typography.scss */
 body#tinymce.wp-editor .icon-instagramm:before {
   content: "\";
 }
-/* line 107, ../scss/partials/_typography.scss */
+/* line 114, ../scss/partials/_typography.scss */
 body#tinymce.wp-editor .icon-linkedin-squared:before {
   content: "\";
 }
-/* line 108, ../scss/partials/_typography.scss */
+/* line 115, ../scss/partials/_typography.scss */
 body#tinymce.wp-editor .icon-pinterest-circled:before {
   content: "\";
 }
-/* line 109, ../scss/partials/_typography.scss */
+/* line 116, ../scss/partials/_typography.scss */
 body#tinymce.wp-editor .icon-tumblr:before {
   content: "\";
 }
-/* line 110, ../scss/partials/_typography.scss */
+/* line 117, ../scss/partials/_typography.scss */
 body#tinymce.wp-editor .icon-twitter:before {
   content: "\";
 }
-/* line 111, ../scss/partials/_typography.scss */
+/* line 118, ../scss/partials/_typography.scss */
 body#tinymce.wp-editor .icon-youtube-play:before {
   content: "\";
 }
-/* line 112, ../scss/partials/_typography.scss */
+/* line 119, ../scss/partials/_typography.scss */
 body#tinymce.wp-editor .icon-attention:before {
   content: "\";
 }
-/* line 113, ../scss/partials/_typography.scss */
+/* line 120, ../scss/partials/_typography.scss */
 body#tinymce.wp-editor .icon-truck:before {
   content: "\";
 }
-/* line 115, ../scss/partials/_typography.scss */
+/* line 122, ../scss/partials/_typography.scss */
 body#tinymce.wp-editor .flex-direction-nav a:before {
   font: normal normal normal 30px/1 FontAwesome;
   text-rendering: auto;
@@ -3729,12 +3738,12 @@ body#tinymce.wp-editor .flex-direction-nav a:before {
   /* niharika*/
   content: "\";
 }
-/* line 125, ../scss/partials/_typography.scss */
+/* line 132, ../scss/partials/_typography.scss */
 body#tinymce.wp-editor .flex-direction-nav a.flex-next:before {
   /* niharika*/
   content: "\";
 }
-/* line 132, ../scss/partials/_typography.scss */
+/* line 139, ../scss/partials/_typography.scss */
 body#tinymce.wp-editor .flex-pauseplay a:before {
   font: normal normal normal 20px/1 FontAwesome;
   text-rendering: auto;
@@ -3743,15 +3752,15 @@ body#tinymce.wp-editor .flex-pauseplay a:before {
   display: inline-block;
   content: "\";
 }
-/* line 140, ../scss/partials/_typography.scss */
+/* line 147, ../scss/partials/_typography.scss */
 body#tinymce.wp-editor .flex-pauseplay a:hover {
   opacity: 1;
 }
-/* line 143, ../scss/partials/_typography.scss */
+/* line 150, ../scss/partials/_typography.scss */
 body#tinymce.wp-editor .flex-pauseplay a.flex-play:before {
   content: "\";
 }
-/* line 164, ../scss/partials/_typography.scss */
+/* line 172, ../scss/partials/_typography.scss */
 body#tinymce.wp-editor p {
   -ms-word-wrap: break-word;
   word-break: break-word;

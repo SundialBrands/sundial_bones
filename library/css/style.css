@@ -805,15 +805,21 @@ FONT FACE (IN YOUR FACE)
 */
 /*  @font-face {
       font-family: 'Font Name';
-      src: url('/wp-content/themes/sundial_bones/library/font/font-name.eot');
-      src: url('/wp-content/themes/sundial_bones/library/font/font-name.eot?#iefix') format('embedded-opentype'),
-             url('/wp-content/themes/sundial_bones/library/font/font-name.woff') format('woff'),
-             url('/wp-content/themes/sundial_bones/library/font/font-name.ttf') format('truetype'),
-             url('/wp-content/themes/sundial_bones/library/font/font-name.svg#font-name') format('svg');
+      src: url('/wp-content/themes/sundial_bones/library/fonts/font-name.eot');
+      src: url('/wp-content/themes/sundial_bones/library/fonts/font-name.eot?#iefix') format('embedded-opentype'),
+             url('/wp-content/themes/sundial_bones/library/fonts/font-name.woff') format('woff'),
+             url('/wp-content/themes/sundial_bones/library/fonts/font-name.ttf') format('truetype'),
+             url('/wp-content/themes/sundial_bones/library/fonts/font-name.svg#font-name') format('svg');
       font-weight: normal;
       font-style: normal;
   }
 */
+@font-face {
+  font-family: 'TrashHand';
+  src: url("/wp-content/themes/sundial_bones/library/fonts/TrashHand.eot?#iefix") format("embedded-opentype"), url("/wp-content/themes/sundial_bones/library/fonts/TrashHand.woff") format("woff"), url("/wp-content/themes/sundial_bones/library/fonts/TrashHand.ttf") format("truetype"), url("/wp-content/themes/sundial_bones/library/fonts/TrashHand.svg#TrashHand") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 /*
 	import FontAwesome
 */
@@ -4175,7 +4181,7 @@ FONT FACE (IN YOUR FACE)
 }
 
 /* Rewrites for old school icons from disparate icon fonts to fontawesome */
-/* line 52, ../scss/partials/_typography.scss */
+/* line 59, ../scss/partials/_typography.scss */
 [class^="icon-"]:before, [class*=" icon-"]:before {
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -4200,204 +4206,204 @@ FONT FACE (IN YOUR FACE)
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-/* line 81, ../scss/partials/_typography.scss */
+/* line 88, ../scss/partials/_typography.scss */
 .icon-search-1:before {
   content: "\";
 }
 
 /* '' */
-/* line 82, ../scss/partials/_typography.scss */
+/* line 89, ../scss/partials/_typography.scss */
 .icon-right-circle:before {
   content: "\";
 }
 
 /* '' */
-/* line 83, ../scss/partials/_typography.scss */
+/* line 90, ../scss/partials/_typography.scss */
 .icon-heart:before {
   content: "\";
 }
 
 /* '' */
-/* line 84, ../scss/partials/_typography.scss */
+/* line 91, ../scss/partials/_typography.scss */
 .icon-basket:before {
   content: "\";
 }
 
 /* '' */
-/* line 85, ../scss/partials/_typography.scss */
+/* line 92, ../scss/partials/_typography.scss */
 .icon-ok:before {
   content: "\";
 }
 
 /* '' */
-/* line 86, ../scss/partials/_typography.scss */
+/* line 93, ../scss/partials/_typography.scss */
 .icon-ok-circled:before {
   content: "\";
 }
 
 /* '' */
-/* line 87, ../scss/partials/_typography.scss */
+/* line 94, ../scss/partials/_typography.scss */
 .icon-ok-circled2:before {
   content: "\";
 }
 
 /* '' */
-/* line 88, ../scss/partials/_typography.scss */
+/* line 95, ../scss/partials/_typography.scss */
 .icon-cancel:before {
   content: "\";
 }
 
 /* '' */
-/* line 89, ../scss/partials/_typography.scss */
+/* line 96, ../scss/partials/_typography.scss */
 .icon-cancel-circled:before {
   content: "\";
 }
 
 /* '' */
-/* line 90, ../scss/partials/_typography.scss */
+/* line 97, ../scss/partials/_typography.scss */
 .icon-cancel-circled2:before {
   content: "\";
 }
 
 /* '' */
-/* line 91, ../scss/partials/_typography.scss */
+/* line 98, ../scss/partials/_typography.scss */
 .icon-home:before {
   content: "\";
 }
 
 /* '' */
-/* line 92, ../scss/partials/_typography.scss */
+/* line 99, ../scss/partials/_typography.scss */
 .icon-link:before {
   content: "\";
 }
 
 /* '' */
-/* line 93, ../scss/partials/_typography.scss */
+/* line 100, ../scss/partials/_typography.scss */
 .icon-tag:before {
   content: "\";
 }
 
 /* '' */
-/* line 94, ../scss/partials/_typography.scss */
+/* line 101, ../scss/partials/_typography.scss */
 .icon-bookmark:before {
   content: "\";
 }
 
 /* '' */
-/* line 95, ../scss/partials/_typography.scss */
+/* line 102, ../scss/partials/_typography.scss */
 .icon-print:before {
   content: "\";
 }
 
 /* '' */
-/* line 96, ../scss/partials/_typography.scss */
+/* line 103, ../scss/partials/_typography.scss */
 .icon-comment:before {
   content: "\";
 }
 
 /* '' */
-/* line 97, ../scss/partials/_typography.scss */
+/* line 104, ../scss/partials/_typography.scss */
 .icon-chat-empty:before {
   content: "\";
 }
 
 /* '' */
-/* line 98, ../scss/partials/_typography.scss */
+/* line 105, ../scss/partials/_typography.scss */
 .icon-th:before {
   content: "\";
 }
 
 /* '' */
-/* line 99, ../scss/partials/_typography.scss */
+/* line 106, ../scss/partials/_typography.scss */
 .icon-rss:before {
   content: "\";
 }
 
 /* '' */
-/* line 100, ../scss/partials/_typography.scss */
+/* line 107, ../scss/partials/_typography.scss */
 .icon-menu:before {
   content: "\";
 }
 
 /* '' */
-/* line 101, ../scss/partials/_typography.scss */
+/* line 108, ../scss/partials/_typography.scss */
 .icon-left-open:before {
   content: "\";
 }
 
 /* '' */
-/* line 102, ../scss/partials/_typography.scss */
+/* line 109, ../scss/partials/_typography.scss */
 .icon-right-open:before {
   content: "\";
 }
 
 /* '' */
-/* line 103, ../scss/partials/_typography.scss */
+/* line 110, ../scss/partials/_typography.scss */
 .icon-ellipsis-vert:before {
   content: "\";
 }
 
 /* '' */
-/* line 104, ../scss/partials/_typography.scss */
+/* line 111, ../scss/partials/_typography.scss */
 .icon-facebook:before {
   content: "\";
 }
 
 /* '' */
-/* line 105, ../scss/partials/_typography.scss */
+/* line 112, ../scss/partials/_typography.scss */
 .icon-gplus:before {
   content: "\";
 }
 
 /* '' */
-/* line 106, ../scss/partials/_typography.scss */
+/* line 113, ../scss/partials/_typography.scss */
 .icon-instagramm:before {
   content: "\";
 }
 
 /* '' */
-/* line 107, ../scss/partials/_typography.scss */
+/* line 114, ../scss/partials/_typography.scss */
 .icon-linkedin-squared:before {
   content: "\";
 }
 
 /* '' */
-/* line 108, ../scss/partials/_typography.scss */
+/* line 115, ../scss/partials/_typography.scss */
 .icon-pinterest-circled:before {
   content: "\";
 }
 
 /* '' */
-/* line 109, ../scss/partials/_typography.scss */
+/* line 116, ../scss/partials/_typography.scss */
 .icon-tumblr:before {
   content: "\";
 }
 
 /* '' */
-/* line 110, ../scss/partials/_typography.scss */
+/* line 117, ../scss/partials/_typography.scss */
 .icon-twitter:before {
   content: "\";
 }
 
 /* '' */
-/* line 111, ../scss/partials/_typography.scss */
+/* line 118, ../scss/partials/_typography.scss */
 .icon-youtube-play:before {
   content: "\";
 }
 
 /* '' */
-/* line 112, ../scss/partials/_typography.scss */
+/* line 119, ../scss/partials/_typography.scss */
 .icon-attention:before {
   content: "\";
 }
 
 /* '' */
-/* line 113, ../scss/partials/_typography.scss */
+/* line 120, ../scss/partials/_typography.scss */
 .icon-truck:before {
   content: "\";
 }
 
-/* line 115, ../scss/partials/_typography.scss */
+/* line 122, ../scss/partials/_typography.scss */
 .flex-direction-nav a:before {
   font: normal normal normal 30px/1 FontAwesome;
   text-rendering: auto;
@@ -4408,13 +4414,13 @@ FONT FACE (IN YOUR FACE)
   content: "\";
 }
 
-/* line 125, ../scss/partials/_typography.scss */
+/* line 132, ../scss/partials/_typography.scss */
 .flex-direction-nav a.flex-next:before {
   /* niharika*/
   content: "\";
 }
 
-/* line 132, ../scss/partials/_typography.scss */
+/* line 139, ../scss/partials/_typography.scss */
 .flex-pauseplay a:before {
   font: normal normal normal 20px/1 FontAwesome;
   text-rendering: auto;
@@ -4424,12 +4430,12 @@ FONT FACE (IN YOUR FACE)
   content: "\";
 }
 
-/* line 140, ../scss/partials/_typography.scss */
+/* line 147, ../scss/partials/_typography.scss */
 .flex-pauseplay a:hover {
   opacity: 1;
 }
 
-/* line 143, ../scss/partials/_typography.scss */
+/* line 150, ../scss/partials/_typography.scss */
 .flex-pauseplay a.flex-play:before {
   content: "\";
 }
@@ -4443,7 +4449,7 @@ I've edited it a bit, but it's a nice starting point.
 some nice typographical defaults
 more here: http://www.newnet-soft.com/blog/csstypography
 */
-/* line 164, ../scss/partials/_typography.scss */
+/* line 172, ../scss/partials/_typography.scss */
 p {
   -ms-word-wrap: break-word;
   word-break: break-word;
@@ -5518,7 +5524,12 @@ nav .nav#menu-dropdown > li > a {
   text-decoration: none;
   font-size: 1rem;
 }
-/* line 237, ../scss/modules/_menus.scss */
+/* line 235, ../scss/modules/_menus.scss */
+nav .bones-dropdown-sentence {
+  font-size: 3em;
+  font-weight: 800;
+}
+/* line 239, ../scss/modules/_menus.scss */
 nav .bones-dropdown-sentence .dropdown-items {
   display: inline-block;
   min-width: 10em;
@@ -5528,7 +5539,7 @@ nav .bones-dropdown-sentence .dropdown-items {
   position: relative;
   font-size: 0.75em;
 }
-/* line 247, ../scss/modules/_menus.scss */
+/* line 249, ../scss/modules/_menus.scss */
 nav .bones-dropdown-sentence .dropdown-items:after {
   background: url(/wp-content/themes/sundial_bones/library/images/stroke.png) repeat-x center;
   height: 8px;
@@ -5538,7 +5549,7 @@ nav .bones-dropdown-sentence .dropdown-items:after {
   bottom: -4px;
   left: 0;
 }
-/* line 257, ../scss/modules/_menus.scss */
+/* line 259, ../scss/modules/_menus.scss */
 nav .bones-dropdown-sentence .dropdown-items i.fa {
   z-index: 15;
   position: relative;
@@ -5547,29 +5558,29 @@ nav .bones-dropdown-sentence .dropdown-items i.fa {
   color: #572701;
   font-size: 0.75em;
 }
-/* line 266, ../scss/modules/_menus.scss */
+/* line 268, ../scss/modules/_menus.scss */
 nav .bones-dropdown-sentence .dropdown-items:before {
   content: attr(select-text);
   text-align: right;
   display: block;
   position: absolute;
-  font-family: "adobe-garamond-pro", Garamond, Palatino, "Times New Roman", Times, serif;
+  font-family: "TrashHand", Comic Sans, Comic Sans MS, cursive;
   font-weight: 400;
 }
-/* line 275, ../scss/modules/_menus.scss */
+/* line 277, ../scss/modules/_menus.scss */
 nav .bones-dropdown-sentence .dropdown-items.active {
   background: #bc5402;
 }
-/* line 278, ../scss/modules/_menus.scss */
+/* line 280, ../scss/modules/_menus.scss */
 nav .bones-dropdown-sentence .dropdown-items.active:before {
   content: attr(select-text);
   color: #fff;
 }
-/* line 287, ../scss/modules/_menus.scss */
+/* line 289, ../scss/modules/_menus.scss */
 nav .bones-dropdown-sentence .dropdown-items.active .nav#menu-dropdown {
   display: inline-block;
 }
-/* line 293, ../scss/modules/_menus.scss */
+/* line 295, ../scss/modules/_menus.scss */
 nav .bones-dropdown-sentence .dropdown-items.active i.fa {
   color: #fff;
 }
@@ -12986,18 +12997,23 @@ TABLET & SMALLER LAPTOPS
   NAVIGATION STYLES
   *********************/
   /* line 5, ../scss/modules/_menus768up.scss */
+  nav .bones-dropdown-sentence {
+    text-align: right;
+  }
+
+  /* line 12, ../scss/modules/_menus768up.scss */
   .nav {
     border: 0;
     /* end .menu ul li */
     /* highlight current page */
     /* end current highlighters */
   }
-  /* line 7, ../scss/modules/_menus768up.scss */
+  /* line 15, ../scss/modules/_menus768up.scss */
   .nav ul {
     background: #333;
     margin-top: 0;
   }
-  /* line 11, ../scss/modules/_menus768up.scss */
+  /* line 19, ../scss/modules/_menus768up.scss */
   .nav li {
     float: left;
     position: relative;
@@ -13006,7 +13022,7 @@ TABLET & SMALLER LAPTOPS
     */
     /* showing sub-menus */
   }
-  /* line 15, ../scss/modules/_menus768up.scss */
+  /* line 23, ../scss/modules/_menus768up.scss */
   .nav li a {
     border-bottom: 0;
     /*
@@ -13014,11 +13030,11 @@ TABLET & SMALLER LAPTOPS
     has the possibility of being a mobile device.
     */
   }
-  /* line 22, ../scss/modules/_menus768up.scss */
+  /* line 30, ../scss/modules/_menus768up.scss */
   .nav li a:hover, .nav li a:focus {
     text-decoration: none;
   }
-  /* line 33, ../scss/modules/_menus768up.scss */
+  /* line 41, ../scss/modules/_menus768up.scss */
   .nav li ul.sub-menu,
   .nav li ul.children {
     margin-top: 0;
@@ -13029,7 +13045,7 @@ TABLET & SMALLER LAPTOPS
     z-index: 8999;
     /* highlight sub-menu current page */
   }
-  /* line 42, ../scss/modules/_menus768up.scss */
+  /* line 50, ../scss/modules/_menus768up.scss */
   .nav li ul.sub-menu li,
   .nav li ul.children li {
     /*
@@ -13038,7 +13054,7 @@ TABLET & SMALLER LAPTOPS
     for usability. k, bai.
     */
   }
-  /* line 44, ../scss/modules/_menus768up.scss */
+  /* line 52, ../scss/modules/_menus768up.scss */
   .nav li ul.sub-menu li a,
   .nav li ul.children li a {
     padding-left: 10px;
@@ -13047,18 +13063,18 @@ TABLET & SMALLER LAPTOPS
     width: 180px;
     border-bottom: 1px solid #ccc;
   }
-  /* line 61, ../scss/modules/_menus768up.scss */
+  /* line 69, ../scss/modules/_menus768up.scss */
   .nav li ul.sub-menu li:last-child a,
   .nav li ul.children li:last-child a {
     border-bottom: 0;
   }
-  /* line 71, ../scss/modules/_menus768up.scss */
+  /* line 79, ../scss/modules/_menus768up.scss */
   .nav li ul.sub-menu li ul,
   .nav li ul.children li ul {
     top: 0;
     left: 100%;
   }
-  /* line 86, ../scss/modules/_menus768up.scss */
+  /* line 94, ../scss/modules/_menus768up.scss */
   .nav li:hover > ul {
     top: auto;
     visibility: visible;
