@@ -45,7 +45,9 @@
 		<div id="container">
 
 			<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
-
+				
+				<a class="ttfdown menu-toggle" href="toggle-menu"><i class="fa fa-bars fa-lg"></i></a>
+				
 				<div id="inner-header" class="wrap cf">
 
 					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>

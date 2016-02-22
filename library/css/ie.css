@@ -396,6 +396,11 @@ be seen on the Desktop.
   width: 1040px;
 }
 
+/* line 16, ../scss/breakpoints/_1030up.scss */
+.ttfdown {
+  display: none;
+}
+
 /*
 you can call the larger styles if you want, but there's really no need
 */
