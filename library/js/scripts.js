@@ -115,6 +115,18 @@ jQuery(document).ready(function($) {
    * You can remove this if you don't need it
   */
   loadGravatars();
+  
+  var nav = $('header');
+  var height= nav.outerHeight();
+	
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > height) {
+			nav.addClass("scroll");
+		} else {
+			nav.removeClass("scroll");
+		}
+	});
+
 
 
 }); /* end of as page load scripts */

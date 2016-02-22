@@ -282,19 +282,19 @@ HEADER STYLES
 NAVIGATION STYLES
 *********************/
 /* line 54, ../scss/breakpoints/_768up.scss */
-.nav {
+.nav.notbase {
   border: 0;
   /* end .menu ul li */
   /* highlight current page */
   /* end current highlighters */
 }
 /* line 56, ../scss/breakpoints/_768up.scss */
-.nav ul {
-  background: #323944;
+.nav.notbase ul {
+  background: #333;
   margin-top: 0;
 }
 /* line 60, ../scss/breakpoints/_768up.scss */
-.nav li {
+.nav.notbase li {
   float: left;
   position: relative;
   /*
@@ -303,7 +303,7 @@ NAVIGATION STYLES
   /* showing sub-menus */
 }
 /* line 64, ../scss/breakpoints/_768up.scss */
-.nav li a {
+.nav.notbase li a {
   border-bottom: 0;
   /*
   you can use hover styles here even though this size
@@ -311,13 +311,13 @@ NAVIGATION STYLES
   */
 }
 /* line 71, ../scss/breakpoints/_768up.scss */
-.nav li a:hover, .nav li a:focus {
+.nav.notbase li a:hover, .nav.notbase li a:focus {
   color: #fff;
   text-decoration: underline;
 }
 /* line 83, ../scss/breakpoints/_768up.scss */
-.nav li ul.sub-menu,
-.nav li ul.children {
+.nav.notbase li ul.sub-menu,
+.nav.notbase li ul.children {
   margin-top: 0;
   border: 1px solid #ccc;
   border-top: 0;
@@ -327,8 +327,8 @@ NAVIGATION STYLES
   /* highlight sub-menu current page */
 }
 /* line 92, ../scss/breakpoints/_768up.scss */
-.nav li ul.sub-menu li,
-.nav li ul.children li {
+.nav.notbase li ul.sub-menu li,
+.nav.notbase li ul.children li {
   /*
   if you need to go deeper, go nuts
   just remember deeper menus suck
@@ -336,8 +336,8 @@ NAVIGATION STYLES
   */
 }
 /* line 94, ../scss/breakpoints/_768up.scss */
-.nav li ul.sub-menu li a,
-.nav li ul.children li a {
+.nav.notbase li ul.sub-menu li a,
+.nav.notbase li ul.children li a {
   padding-left: 10px;
   border-right: 0;
   display: block;
@@ -345,18 +345,18 @@ NAVIGATION STYLES
   border-bottom: 1px solid #ccc;
 }
 /* line 111, ../scss/breakpoints/_768up.scss */
-.nav li ul.sub-menu li:last-child a,
-.nav li ul.children li:last-child a {
+.nav.notbase li ul.sub-menu li:last-child a,
+.nav.notbase li ul.children li:last-child a {
   border-bottom: 0;
 }
 /* line 121, ../scss/breakpoints/_768up.scss */
-.nav li ul.sub-menu li ul,
-.nav li ul.children li ul {
+.nav.notbase li ul.sub-menu li ul,
+.nav.notbase li ul.children li ul {
   top: 0;
   left: 100%;
 }
 /* line 136, ../scss/breakpoints/_768up.scss */
-.nav li:hover > ul {
+.nav.notbase li:hover > ul {
   top: auto;
   visibility: visible;
 }
