@@ -167,6 +167,7 @@ HEADER STYLES
 .header {
 	background-color: $dark-gray;
 	@include transition(all 2s ease-in-out);
+	position: relative;
 	
 	&.scroll {
 		position: fixed;
@@ -186,7 +187,8 @@ HEADER STYLES
 	#logo {
 		margin: 0.75em 0;
 		display: inline;
-
+		max-width: 50%;
+		max-height: 3em;
 	}
 
 }
@@ -205,6 +207,8 @@ and more scalable.
 
 nav {
 	display: inline;
+	position: relative;
+	top: -1em;
 	
 	.nav {
 		border-bottom: 0;
@@ -218,7 +222,8 @@ nav {
 				display: block;
 				color: $white;
 				text-decoration: none;
-				padding: 0.75em;
+				padding: 0.5em;
+				text-transform: uppercase;
 
 				/*
 				remember this is for mobile ONLY, so there's no need
