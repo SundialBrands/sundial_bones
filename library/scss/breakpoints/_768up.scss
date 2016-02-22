@@ -45,14 +45,20 @@ HEADER STYLES
 
 .header {}
 
-	#logo {}
+	#logo {
+	
+		img {
+			max-height: 2em;
+		}
+	
+	}
 
 /*********************
 NAVIGATION STYLES
 *********************/
 nav {
 	position: relative;
-    top: -1em;
+    top: -0.5em;
 	.nav {
 		border: 0;
 		
@@ -64,6 +70,7 @@ nav {
 				a {
 					border-bottom: 0;
 					position: relative;
+					@include transition(all .5s ease-in);
 
 					/*
 					you can use hover styles here even though this size

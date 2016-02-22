@@ -278,38 +278,45 @@ img.sseup_img {
 /*********************
 HEADER STYLES
 *********************/
+/* line 50, ../scss/breakpoints/_768up.scss */
+#logo img {
+  max-height: 2em;
+}
+
 /*********************
 NAVIGATION STYLES
 *********************/
-/* line 53, ../scss/breakpoints/_768up.scss */
+/* line 59, ../scss/breakpoints/_768up.scss */
 nav {
   position: relative;
-  top: -1em;
+  top: -0.5em;
   /* end .nav */
 }
-/* line 56, ../scss/breakpoints/_768up.scss */
+/* line 62, ../scss/breakpoints/_768up.scss */
 nav .nav {
   border: 0;
   /* highlight sub-menu current page */
   /* highlight current page */
   /* end current highlighters */
 }
-/* line 59, ../scss/breakpoints/_768up.scss */
+/* line 65, ../scss/breakpoints/_768up.scss */
 nav .nav li {
   display: inline-block;
   position: relative;
   height: auto;
 }
-/* line 64, ../scss/breakpoints/_768up.scss */
+/* line 70, ../scss/breakpoints/_768up.scss */
 nav .nav li a {
   border-bottom: 0;
   position: relative;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
   /*
   you can use hover styles here even though this size
   has the possibility of being a mobile device.
   */
 }
-/* line 72, ../scss/breakpoints/_768up.scss */
+/* line 79, ../scss/breakpoints/_768up.scss */
 nav .nav li a:hover, nav .nav li a:focus {
   color: #fff;
   text-decoration: underline;
@@ -318,28 +325,28 @@ nav .nav li a:hover, nav .nav li a:focus {
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 109, ../scss/breakpoints/_768up.scss */
+/* line 116, ../scss/breakpoints/_768up.scss */
 .sidebar {
   margin-top: 2.2em;
 }
 
-/* line 113, ../scss/breakpoints/_768up.scss */
+/* line 120, ../scss/breakpoints/_768up.scss */
 .widgettitle {
   border-bottom: 2px solid #444;
   margin-bottom: 0.75em;
 }
 
-/* line 118, ../scss/breakpoints/_768up.scss */
+/* line 125, ../scss/breakpoints/_768up.scss */
 .widget {
   padding: 0 10px;
   margin: 2.2em 0;
 }
-/* line 123, ../scss/breakpoints/_768up.scss */
+/* line 130, ../scss/breakpoints/_768up.scss */
 .widget ul li {
   margin-bottom: 0.75em;
   /* deep nesting */
 }
-/* line 131, ../scss/breakpoints/_768up.scss */
+/* line 138, ../scss/breakpoints/_768up.scss */
 .widget ul li ul {
   margin-top: 0.75em;
   padding-left: 1em;
@@ -364,7 +371,7 @@ you'll probably need to do quite a bit
 of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
-/* line 239, ../scss/breakpoints/_768up.scss */
+/* line 246, ../scss/breakpoints/_768up.scss */
 .footer-links ul li {
   /*
   be careful with the depth of your menus.
