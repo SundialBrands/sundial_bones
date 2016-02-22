@@ -189,10 +189,26 @@ HEADER STYLES
 		display: inline;
 		max-width: 50%;
 		max-height: 3em;
+		
+		.base-img {
+			max-height: 3em;
+		}
+		
 	}
 	
 	.menu-toggle {
 		float: right;
+		font-size: 2em;
+		color: $white;
+		
+		&:hover, &:active {
+		color:  rgba( $white, 0.3 );
+		}
+		
+		&:link {
+			-webkit-tap-highlight-color: rgba( $white, 0.3 );
+		}
+		
 	}
 
 }

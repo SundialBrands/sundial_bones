@@ -127,6 +127,17 @@ jQuery(document).ready(function($) {
 			nav.removeClass("scroll");
 		}
 	});
+	
+	if ($('.menu-toggle').length > 0) {
+	
+		$('.menu-toggle').click( function(e) {
+		
+			e.preventDefault();
+			$('header.header').toggleClass('active');
+		
+		});
+	
+	}
 
 
 
