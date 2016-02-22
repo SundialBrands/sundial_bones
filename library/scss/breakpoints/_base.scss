@@ -20,7 +20,7 @@ body {
 	font-size: 100%;
 	line-height: 1.5;
 	color: $text-color;
-	background-color: $gray;
+	background-color: $white;
   	-webkit-font-smoothing: antialiased;
   	-moz-osx-font-smoothing: grayscale;
 }
@@ -216,7 +216,8 @@ nav {
 		display: inline;
 
 		li {
-			display: inline-block;
+			@include transition(all 1s ease-in-out);
+			height: 0;
 			
 			a {
 				display: block;
@@ -280,6 +281,14 @@ nav {
 			a {}
 
 		}  /* end current highlighters */
+		
+		&.active {
+		
+			li{
+				height: auto;
+			}
+		
+		}
 
 	} /* end .nav */
 	
