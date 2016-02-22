@@ -212,7 +212,8 @@ nav {
 		display: inline;
 
 		li {
-
+			display: inline-block;
+			
 			a {
 				display: block;
 				color: $white;

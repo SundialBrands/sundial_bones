@@ -117,9 +117,10 @@ jQuery(document).ready(function($) {
   loadGravatars();
   
   var nav = $('header');
-  var height= nav.outerHeight();
+  
 	
 	$(window).scroll(function () {
+		var height= nav.outerHeight();
 		if ($(this).scrollTop() > height) {
 			nav.addClass("scroll");
 		} else {
