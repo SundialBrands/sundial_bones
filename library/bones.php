@@ -126,9 +126,12 @@ function bones_scripts_and_styles() {
 
 		// modernizr (without media query polyfill)
 		wp_register_script( 'bones-modernizr', get_stylesheet_directory_uri() . '/library/js/libs/modernizr.custom.min.js', array(), '2.5.3', false );
+		
+		// register external fonts stylesheet
+		wp_register_style( 'mcjw_external_fonts', 'http://fast.fonts.net/cssapi/c37e8ea6-ebdd-4195-9288-749fe05ceb5e.css', array( ), '' );
 
 		// register main stylesheet
-		wp_register_style( 'bones-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.css', array(), '', 'all' );
+		wp_register_style( 'bones-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.css', array( 'mcjw_external_fonts' ), '', 'all' );
 
 		// ie-only style sheet
 		wp_register_style( 'bones-ie-only', get_stylesheet_directory_uri() . '/library/css/ie.css', array(), '' );

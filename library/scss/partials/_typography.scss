@@ -49,14 +49,9 @@ I've edited it a bit, but it's a nice starting point.
 
 
 // font stacks
-$sans-serif:        "Helvetica Neue", Helvetica, Arial, sans-serif;
-$serif:             "Georgia", Cambria, Times New Roman, Times, serif;
-
-/*
- i imported this one in the functions file so bones would look sweet.
- don't forget to remove it for your site.
-*/
-$lato:              'Lato', $sans-serif;
+$sans-serif:        "Trade Gothic W01", Helvetica, Arial, sans-serif;
+$serif:             "Times New Roman W01 SmText", Times New Roman, Times, serif;
+$serif-full:        "Times New Roman W01", Times New Roman, Times, serif;
 
 /*
 some nice typographical defaults
