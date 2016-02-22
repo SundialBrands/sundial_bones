@@ -49,7 +49,13 @@
 				<div id="inner-header" class="wrap cf">
 
 					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
-					<p id="logo" class="h1" itemscope itemtype="http://schema.org/Organization"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
+					<div id="logo" class="h1" itemscope itemtype="http://schema.org/Organization">
+						<a href="/" rel="nofollow">
+						<img class="base_img" src="/wp-content/themes/sundial_bones/library/images/menu_logo-base.png" alt="Madam C.J. Walker." />
+						<img class="sseup_img" src="/wp-content/themes/sundial_bones/library/images/menu_logo-768.png" alt="Madam C.J. Walker." />
+						</a>
+					</div>
+
 
 					<?php // if you'd like to use the site description you can un-comment it below ?>
 					<?php // bloginfo('description'); ?>

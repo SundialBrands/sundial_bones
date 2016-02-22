@@ -27,6 +27,18 @@ LAYOUT & GRID STYLES
 	width: 760px;
 }
 
+img {
+
+	&.base_img {
+		display: none;
+	}
+	
+	&.sseup_img {
+		display: inline;
+	}
+
+}
+
 /*********************
 HEADER STYLES
 *********************/
