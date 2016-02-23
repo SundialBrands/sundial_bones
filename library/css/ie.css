@@ -365,27 +365,27 @@ be seen on the Desktop.
 /*********************
 NAVIGATION STYLES
 *********************/
-/* line 23, ../scss/breakpoints/_1030up.scss */
-nav {
+/* line 25, ../scss/breakpoints/_1030up.scss */
+header nav {
   position: relative;
   top: -0.5em;
   /* end .nav */
 }
-/* line 26, ../scss/breakpoints/_1030up.scss */
-nav .nav {
+/* line 28, ../scss/breakpoints/_1030up.scss */
+header nav .nav {
   border: 0;
   /* highlight sub-menu current page */
   /* highlight current page */
   /* end current highlighters */
 }
-/* line 29, ../scss/breakpoints/_1030up.scss */
-nav .nav li {
+/* line 31, ../scss/breakpoints/_1030up.scss */
+header nav .nav li {
   display: inline-block;
   position: relative;
   height: auto;
 }
-/* line 34, ../scss/breakpoints/_1030up.scss */
-nav .nav li a {
+/* line 36, ../scss/breakpoints/_1030up.scss */
+header nav .nav li a {
   border-bottom: 0;
   position: relative;
   opacity: 1;
@@ -394,8 +394,8 @@ nav .nav li a {
   has the possibility of being a mobile device.
   */
 }
-/* line 43, ../scss/breakpoints/_1030up.scss */
-nav .nav li a:hover, nav .nav li a:focus {
+/* line 45, ../scss/breakpoints/_1030up.scss */
+header nav .nav li a:hover, header nav .nav li a:focus {
   color: #fff;
   text-decoration: underline;
 }
