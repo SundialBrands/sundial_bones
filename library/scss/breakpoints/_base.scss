@@ -249,7 +249,7 @@ header{
 				@include transition(all 1s ease-in-out);
 				max-height: 0;
 				position: relative;
-				left: 1024px;
+				left: -1024px;
 			
 				a {
 					display: block;
