@@ -106,15 +106,7 @@ function loadGravatars() {
 
 var cAc_wpsmlViewport;
 
-$(window).resize(function () {
 
-	waitForFinalEvent( function() {
-	
-		cAc_wpsmlViewport = updateViewportDimensions();
-	
-	});
-
-});
 
 /*
  * Put all your regular jQuery in here.
@@ -122,6 +114,16 @@ $(window).resize(function () {
 jQuery(document).ready(function($) {
 
 	cAc_wpsmlViewport = updateViewportDimensions();
+	
+	$(window).resize(function () {
+
+		waitForFinalEvent( function() {
+	
+			cAc_wpsmlViewport = updateViewportDimensions();
+	
+		});
+
+	});
   /*
    * Let's fire off the gravatar function
    * You can remove this if you don't need it
