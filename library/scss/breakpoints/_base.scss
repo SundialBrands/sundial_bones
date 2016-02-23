@@ -954,6 +954,7 @@ FOOTER STYLES
 	@include transition(all 2s ease-in-out);
 	color: $white;
 	opacity: 0.75;
+	padding: 0.5em 0;
 	
 	&:active, &:hover {
 		opacity: 1;
@@ -974,7 +975,7 @@ FOOTER STYLES
 		text-align: center;
 		
 		ul {
-
+			margin: 0;
 			li {
 				display: inline-block;
 				
@@ -998,4 +999,8 @@ FOOTER STYLES
 	} /* end .footer-links */
 
 
-	.copyright {}
+	.copyright {
+		font-weight: 700;
+		text-align: center;
+		margin: 0;
+	}

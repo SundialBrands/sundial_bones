@@ -2210,8 +2210,9 @@ FOOTER STYLES
   transition: all 2s ease-in-out;
   color: #fff;
   opacity: 0.75;
+  padding: 0.5em 0;
 }
-/* line 958, ../scss/breakpoints/_base.scss */
+/* line 959, ../scss/breakpoints/_base.scss */
 .footer:active, .footer:hover {
   opacity: 1;
 }
@@ -2225,25 +2226,36 @@ it simple because you'll have to
 override these styles for the desktop
 view.
 */
-/* line 973, ../scss/breakpoints/_base.scss */
+/* line 974, ../scss/breakpoints/_base.scss */
 .footer-links {
   text-align: center;
 }
-/* line 978, ../scss/breakpoints/_base.scss */
+/* line 977, ../scss/breakpoints/_base.scss */
+.footer-links ul {
+  margin: 0;
+}
+/* line 979, ../scss/breakpoints/_base.scss */
 .footer-links ul li {
   display: inline-block;
 }
-/* line 981, ../scss/breakpoints/_base.scss */
+/* line 982, ../scss/breakpoints/_base.scss */
 .footer-links ul li a {
   border-right: 1px solid;
   padding-right: 0.25em;
 }
-/* line 988, ../scss/breakpoints/_base.scss */
+/* line 989, ../scss/breakpoints/_base.scss */
 .footer-links ul li:last-child a {
   border-right: 0;
 }
 
 /* end .footer-links */
+/* line 1002, ../scss/breakpoints/_base.scss */
+.copyright {
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+}
+
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
