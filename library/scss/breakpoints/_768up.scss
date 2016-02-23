@@ -61,20 +61,24 @@ HEADER STYLES
 	
 	}
 	
-	nav {
+	&.active {
+
+		nav {
 	
-		.nav {
+			.nav {
 		
-			li {
+				li {
 			
-				&:first-child {
-					padding-top: 2em;
+					&:first-child {
+						padding-top: 2em;
+					}
+			
 				}
-			
-			}
 		
-		}
+			}
 	
+		}
+
 	}
 
 }
