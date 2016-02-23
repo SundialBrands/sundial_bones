@@ -104,16 +104,29 @@ function loadGravatars() {
 	}
 } // end function
 
+var cAc_wpsmlViewport;
+
+$(window).resize(function () {
+
+	waitForFinalEvent( function() {
+	
+		cAc_wpsmlViewport = updateViewportDimensions();
+	
+	});
+
+});
 
 /*
  * Put all your regular jQuery in here.
 */
 jQuery(document).ready(function($) {
 
+	cAc_wpsmlViewport = updateViewportDimensions();
   /*
    * Let's fire off the gravatar function
    * You can remove this if you don't need it
   */
+  
   loadGravatars();
   
   var nav = $('header');
@@ -126,8 +139,10 @@ jQuery(document).ready(function($) {
 		}
 		if ($(this).scrollTop() > 0) {
 			nav.addClass("scroll");
+			$('section').css("padding-top", nav.height() + 'px');
 		} else {
 			nav.removeClass("scroll");
+			$('section').css("padding-top", '0');
 		}
 	});
 	
