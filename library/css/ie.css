@@ -284,69 +284,30 @@ HEADER STYLES
 }
 
 /*********************
-NAVIGATION STYLES
-*********************/
-/* line 59, ../scss/breakpoints/_768up.scss */
-nav {
-  position: relative;
-  top: -0.5em;
-  /* end .nav */
-}
-/* line 62, ../scss/breakpoints/_768up.scss */
-nav .nav {
-  border: 0;
-  /* highlight sub-menu current page */
-  /* highlight current page */
-  /* end current highlighters */
-}
-/* line 65, ../scss/breakpoints/_768up.scss */
-nav .nav li {
-  display: inline-block;
-  position: relative;
-  height: auto;
-}
-/* line 70, ../scss/breakpoints/_768up.scss */
-nav .nav li a {
-  border-bottom: 0;
-  position: relative;
-  -webkit-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
-  /*
-  you can use hover styles here even though this size
-  has the possibility of being a mobile device.
-  */
-}
-/* line 79, ../scss/breakpoints/_768up.scss */
-nav .nav li a:hover, nav .nav li a:focus {
-  color: #fff;
-  text-decoration: underline;
-}
-
-/*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 116, ../scss/breakpoints/_768up.scss */
+/* line 62, ../scss/breakpoints/_768up.scss */
 .sidebar {
   margin-top: 2.2em;
 }
 
-/* line 120, ../scss/breakpoints/_768up.scss */
+/* line 66, ../scss/breakpoints/_768up.scss */
 .widgettitle {
   border-bottom: 2px solid #444;
   margin-bottom: 0.75em;
 }
 
-/* line 125, ../scss/breakpoints/_768up.scss */
+/* line 71, ../scss/breakpoints/_768up.scss */
 .widget {
   padding: 0 10px;
   margin: 2.2em 0;
 }
-/* line 130, ../scss/breakpoints/_768up.scss */
+/* line 76, ../scss/breakpoints/_768up.scss */
 .widget ul li {
   margin-bottom: 0.75em;
   /* deep nesting */
 }
-/* line 138, ../scss/breakpoints/_768up.scss */
+/* line 84, ../scss/breakpoints/_768up.scss */
 .widget ul li ul {
   margin-top: 0.75em;
   padding-left: 1em;
@@ -371,7 +332,7 @@ you'll probably need to do quite a bit
 of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
-/* line 246, ../scss/breakpoints/_768up.scss */
+/* line 192, ../scss/breakpoints/_768up.scss */
 .footer-links ul li {
   /*
   be careful with the depth of your menus.
@@ -399,6 +360,44 @@ be seen on the Desktop.
 /* line 16, ../scss/breakpoints/_1030up.scss */
 .ttfdown {
   display: none;
+}
+
+/*********************
+NAVIGATION STYLES
+*********************/
+/* line 23, ../scss/breakpoints/_1030up.scss */
+nav {
+  position: relative;
+  top: -0.5em;
+  /* end .nav */
+}
+/* line 26, ../scss/breakpoints/_1030up.scss */
+nav .nav {
+  border: 0;
+  /* highlight sub-menu current page */
+  /* highlight current page */
+  /* end current highlighters */
+}
+/* line 29, ../scss/breakpoints/_1030up.scss */
+nav .nav li {
+  display: inline-block;
+  position: relative;
+  height: auto;
+}
+/* line 34, ../scss/breakpoints/_1030up.scss */
+nav .nav li a {
+  border-bottom: 0;
+  position: relative;
+  opacity: 1;
+  /*
+  you can use hover styles here even though this size
+  has the possibility of being a mobile device.
+  */
+}
+/* line 43, ../scss/breakpoints/_1030up.scss */
+nav .nav li a:hover, nav .nav li a:focus {
+  color: #fff;
+  text-decoration: underline;
 }
 
 /*

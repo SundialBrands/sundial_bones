@@ -217,10 +217,14 @@ HEADER STYLES
 			.nav {
 			
 				li {
-					height: auto;
+					max-height: 1024px;
 				
 					a {
 						opacity: 1;
+					}
+					
+					&:first-child {
+						padding-top: 1em;
 					}
 				
 				}
@@ -255,7 +259,7 @@ nav {
 
 		li {
 			@include transition(all 1s ease-in-out);
-			height: 0;
+			max-height: 0;
 			
 			a {
 				display: block;
@@ -263,6 +267,7 @@ nav {
 				text-decoration: none;
 				padding: 0.5em;
 				text-transform: uppercase;
+				@include transition(all .5s ease-in);
 				opacity: 0;
 
 				/*
