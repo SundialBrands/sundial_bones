@@ -96,6 +96,7 @@ LINK STYLES
 
 a, a:visited {
 	color: $link-color;
+	text-decoration: none;
 
 	/* on hover */
 	&:hover, &:focus {
@@ -114,7 +115,7 @@ a, a:visited {
 		so it basically works like the :hover selector
 		for mobile devices.
 		*/
-		-webkit-tap-highlight-color : rgba( 0, 0, 0, 0.3 );
+		-webkit-tap-highlight-color : $link-hover;
 	}
 }
 
@@ -950,7 +951,14 @@ FOOTER STYLES
 .footer {
 	clear: both;
 	background-color: $dark-gray;
+	@include transition(all 2s ease-in-out);
 	color: $white;
+	opacity: 0.75;
+	
+	&:active, &:hover {
+		opacity: 1;
+	}
+	
 }
 
 	/*
@@ -963,7 +971,8 @@ FOOTER STYLES
 	view.
 	*/
 	.footer-links {
-
+		text-align: center;
+		
 		ul {
 
 			li {
@@ -971,6 +980,7 @@ FOOTER STYLES
 				
 				a {
 					border-right: 1px solid;
+					padding-right: 0.25em;
 				}
 				
 				&:last-child {
