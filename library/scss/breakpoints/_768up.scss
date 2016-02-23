@@ -43,7 +43,15 @@ img {
 HEADER STYLES
 *********************/
 
-.header {}
+.header {
+
+	.menu-toggle {
+	
+		.fa-lg {
+			vertical-align: 15%;
+		}
+	
+	}
 
 	#logo {
 	
@@ -52,8 +60,24 @@ HEADER STYLES
 		}
 	
 	}
+	
+	nav {
+	
+		.nav {
+		
+			li {
+			
+				&:first-child {
+					padding-top: 2em;
+				}
+			
+			}
+		
+		}
+	
+	}
 
-
+}
 
 /*********************
 SIDEBARS & ASIDES
