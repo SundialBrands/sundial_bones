@@ -172,6 +172,7 @@ HEADER STYLES
 	background-color: $dark-gray;
 	@include transition(all 2s ease-in-out);
 	position: relative;
+	padding: 1em 0;
 	
 	&.scroll {
 		position: fixed;
@@ -193,6 +194,7 @@ HEADER STYLES
 		display: inline;
 		max-width: 50%;
 		max-height: 3em;
+		margin-left: 1em;
 		
 		.base_img {
 			max-height: 3em;
