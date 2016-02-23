@@ -1184,7 +1184,7 @@ textarea,
   padding: 0 12px;
   margin-bottom: 14px;
   font-size: 1em;
-  color: #5c6b80;
+  color: #a7a9ac;
   border-radius: 3px;
   vertical-align: middle;
   box-shadow: none;
@@ -1476,7 +1476,7 @@ body {
   font-family: "Trade Gothic W01", Helvetica, Arial, sans-serif;
   font-size: 100%;
   line-height: 1.5;
-  color: #5c6b80;
+  color: #a7a9ac;
   background-color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1973,12 +1973,12 @@ PAGE NAVI STYLES
 /* line 632, ../scss/breakpoints/_base.scss */
 .pagination .current {
   cursor: default;
-  color: #5c6b80;
+  color: #a7a9ac;
 }
 /* line 636, ../scss/breakpoints/_base.scss */
 .pagination .current:hover, .pagination .current:focus {
   background-color: #fff;
-  color: #5c6b80;
+  color: #a7a9ac;
 }
 
 /* end .bones_page_navi */
@@ -2141,7 +2141,7 @@ COMMENT FORM STYLES
 }
 /* line 870, ../scss/breakpoints/_base.scss */
 .logged-in-as a {
-  color: #5c6b80;
+  color: #a7a9ac;
 }
 
 /* line 875, ../scss/breakpoints/_base.scss */

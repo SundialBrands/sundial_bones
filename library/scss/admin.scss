@@ -10,3 +10,15 @@ is empty, but you can just start dropping your styles here to
 start customizing. All admin functions are located in lib/admin/
 
 ******************************************************************/
+
+img.wp-post-image {
+	min-width: 100% !important;
+	width: 100% !important; 
+	height: auto !important;
+}
+
+td.media-icon img[src$=".svg"] { 
+	min-width: 100% !important;
+	width: 100% !important; 
+	height: auto !important;
+}

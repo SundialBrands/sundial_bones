@@ -27,16 +27,32 @@ $white:             #fff;
 
 $light-gray:        #f8f9fa;
 $gray:              #eaedf2;
-$text-color:        #5c6b80;
-$meta-gray:         #9fa6b4;
 $dark-gray:			#666;
-
 $tan:               #eceee5;
-
 $green:             #7dd667;
-
 $blue:              #2980b9;
 
+$mcjw-gray:			rgb(167, 169, 172);
+$mcjw-light-gray:	lighten($mcjw-gray, 26%);
+
+$mcjw-yellow: 		rgb(236, 186, 75);
+$mcjw-light-yellow:	lighten($mcjw-yellow, 11%);
+$mcjw-dark-yellow:	saturate( darken($mcjw-yellow, 28%), 19% );
+
+$mcjw-pink: 		rgb(206, 126, 157);
+$mcjw-light-pink:	lighten($mcjw-pink, 7%);
+$mcjw-dark-pink:	saturate( darken($mcjw-pink, 35%), 37% );
+
+$mcjw-teal: 		rgb(99, 176, 187);
+$mcjw-light-teal:	lighten($mcjw-teal, 5%);
+$mcjw-dark-teal:	saturate( darken($mcjw-teal, 21%), 61% );
+
+$mcjw-lilac: 		rgb(175, 149, 198);
+$mcjw-light-lilac:	lighten($mcjw-lilac, 7%);
+$mcjw-dark-lilac:	darken($mcjw-lilac, 25%);
+
+$text-color:        $mcjw-gray;
+$meta-gray:         #9fa6b4;
 $link-color:        $white;
 $link-hover:        rgba($link-color, 0.3);
 
