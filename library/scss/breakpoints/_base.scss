@@ -243,10 +243,13 @@ header{
 			border-bottom: 0;
 			margin: 0;
 			display: inline;
+			
 
 			li {
 				@include transition(all 1s ease-in-out);
 				max-height: 0;
+				position: relative;
+				left: 1024px;
 			
 				a {
 					display: block;
@@ -324,6 +327,7 @@ header{
 		
 			li {
 				max-height: 1024px;
+				left: 0;
 			
 				a {
 					opacity: 1;
