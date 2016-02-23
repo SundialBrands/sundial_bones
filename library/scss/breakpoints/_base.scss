@@ -210,6 +210,23 @@ HEADER STYLES
 		}
 		
 	}
+	
+	&.active {
+		
+			.nav {
+			
+				li {
+					height: auto;
+				
+					a {
+						opacity: 1;
+					}
+				
+				}
+		
+			}
+		
+		}
 
 }
 
@@ -245,6 +262,7 @@ nav {
 				text-decoration: none;
 				padding: 0.5em;
 				text-transform: uppercase;
+				opacity: 0;
 
 				/*
 				remember this is for mobile ONLY, so there's no need
@@ -302,18 +320,6 @@ nav {
 
 		}  /* end current highlighters */
 		
-		&.active {
-		
-			li{
-				height: auto;
-				
-				a {
-					opacity: 1;
-				}
-				
-			}
-		
-		}
 
 	} /* end .nav */
 	
