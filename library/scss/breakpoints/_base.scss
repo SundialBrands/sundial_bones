@@ -190,7 +190,7 @@ HEADER STYLES
 		max-width: 50%;
 		max-height: 3em;
 		
-		.base-img {
+		.base_img {
 			max-height: 3em;
 		}
 		
@@ -199,10 +199,11 @@ HEADER STYLES
 	.menu-toggle {
 		float: right;
 		font-size: 2em;
+		margin-right: 0.5em;
 		color: $white;
 		
 		&:hover, &:active {
-		color:  rgba( $white, 0.3 );
+			color:  rgba( $white, 0.3 );
 		}
 		
 		&:link {

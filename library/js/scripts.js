@@ -121,7 +121,10 @@ jQuery(document).ready(function($) {
 	
 	$(window).scroll(function () {
 		var height= nav.outerHeight();
-		if ($(this).scrollTop() > height) {
+		if ($('header').hasClass('active')) {
+			$('header').removeClass('active');
+		}
+		if ($(this).scrollTop() > 0) {
 			nav.addClass("scroll");
 		} else {
 			nav.removeClass("scroll");
