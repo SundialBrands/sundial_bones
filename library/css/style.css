@@ -1575,8 +1575,8 @@ a:link, a:visited:link {
 }
 /* line 122, ../scss/breakpoints/_base.scss */
 a[name], a:visited[name] {
-  padding-top: 8rem;
-  margin-top: -8rem;
+  padding-top: 16rem;
+  margin-top: -16rem;
   display: inline-block;
 }
 
@@ -2583,15 +2583,22 @@ This is for the larger monitors and possibly full screen viewers.
     max-width: 1240px;
   }
 
-  /* line 20, ../scss/breakpoints/_1240up.scss */
+  /* line 18, ../scss/breakpoints/_1240up.scss */
+  a[name], a:visited[name] {
+    padding-top: 8rem;
+    margin-top: -8rem;
+    display: inline-block;
+  }
+
+  /* line 30, ../scss/breakpoints/_1240up.scss */
   header.header #logo img {
     max-height: 2em;
   }
-  /* line 26, ../scss/breakpoints/_1240up.scss */
+  /* line 36, ../scss/breakpoints/_1240up.scss */
   header.header nav {
     top: -0.5em;
   }
-  /* line 33, ../scss/breakpoints/_1240up.scss */
+  /* line 43, ../scss/breakpoints/_1240up.scss */
   header.header nav .nav li a {
     font-size: 1em;
   }
