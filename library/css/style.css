@@ -1549,7 +1549,7 @@ LINK STYLES
 *********************/
 /* line 97, ../scss/breakpoints/_base.scss */
 a, a:visited {
-  color: #fff;
+  color: #ebecec;
   text-decoration: none;
   /* on hover */
   /* on click */
@@ -1557,7 +1557,7 @@ a, a:visited {
 }
 /* line 102, ../scss/breakpoints/_base.scss */
 a:hover, a:focus, a:visited:hover, a:visited:focus {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(235, 236, 236, 0.6);
 }
 /* line 112, ../scss/breakpoints/_base.scss */
 a:link, a:visited:link {
@@ -1566,7 +1566,7 @@ a:link, a:visited:link {
   so it basically works like the :hover selector
   for mobile devices.
   */
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0.3);
+  -webkit-tap-highlight-color: rgba(235, 236, 236, 0.6);
 }
 
 /******************************************************************
