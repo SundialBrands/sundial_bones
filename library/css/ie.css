@@ -391,8 +391,9 @@ header nav .nav li {
   display: inline-block;
   position: relative;
   height: auto;
+  left: 0;
 }
-/* line 36, ../scss/breakpoints/_1030up.scss */
+/* line 37, ../scss/breakpoints/_1030up.scss */
 header nav .nav li a {
   border-bottom: 0;
   position: relative;
@@ -402,7 +403,7 @@ header nav .nav li a {
   has the possibility of being a mobile device.
   */
 }
-/* line 45, ../scss/breakpoints/_1030up.scss */
+/* line 46, ../scss/breakpoints/_1030up.scss */
 header nav .nav li a:hover, header nav .nav li a:focus {
   color: #fff;
   text-decoration: underline;
