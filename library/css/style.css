@@ -1798,7 +1798,7 @@ POSTS & CONTENT STYLES
 /* entry content */
 /* line 408, ../scss/breakpoints/_base.scss */
 .entry-content {
-  padding: 1.5em 1.5em 0;
+  padding: 1.5em 0 0;
   /*
   image alignment on a screen this size may be
   a bit difficult. It's set to start aligning
