@@ -270,14 +270,21 @@ img.sseup_img {
   display: inline;
 }
 
+/* line 41, ../scss/breakpoints/_768up.scss */
+a[name], a:visited[name] {
+  padding-top: 10rem;
+  margin-top: -10rem;
+  display: inline-block;
+}
+
 /*********************
 HEADER STYLES
 *********************/
-/* line 47, ../scss/breakpoints/_768up.scss */
+/* line 57, ../scss/breakpoints/_768up.scss */
 .header .menu-toggle .fa-lg {
   vertical-align: 15%;
 }
-/* line 61, ../scss/breakpoints/_768up.scss */
+/* line 71, ../scss/breakpoints/_768up.scss */
 .header.active nav .nav li:first-child {
   padding-top: 2em;
 }
@@ -285,28 +292,28 @@ HEADER STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 79, ../scss/breakpoints/_768up.scss */
+/* line 89, ../scss/breakpoints/_768up.scss */
 .sidebar {
   margin-top: 2.2em;
 }
 
-/* line 83, ../scss/breakpoints/_768up.scss */
+/* line 93, ../scss/breakpoints/_768up.scss */
 .widgettitle {
   border-bottom: 2px solid #444;
   margin-bottom: 0.75em;
 }
 
-/* line 88, ../scss/breakpoints/_768up.scss */
+/* line 98, ../scss/breakpoints/_768up.scss */
 .widget {
   padding: 0 10px;
   margin: 2.2em 0;
 }
-/* line 93, ../scss/breakpoints/_768up.scss */
+/* line 103, ../scss/breakpoints/_768up.scss */
 .widget ul li {
   margin-bottom: 0.75em;
   /* deep nesting */
 }
-/* line 101, ../scss/breakpoints/_768up.scss */
+/* line 111, ../scss/breakpoints/_768up.scss */
 .widget ul li ul {
   margin-top: 0.75em;
   padding-left: 1em;
@@ -331,7 +338,7 @@ you'll probably need to do quite a bit
 of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
-/* line 209, ../scss/breakpoints/_768up.scss */
+/* line 219, ../scss/breakpoints/_768up.scss */
 .footer-links ul li {
   /*
   be careful with the depth of your menus.
