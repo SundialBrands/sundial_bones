@@ -58,3 +58,15 @@ $link-hover:        rgba($link-color, 0.6);
 
 $border-color:      #ccc;
 $disabled-gray:     #cfcfcf;
+
+
+/*********************
+Class Color Map
+*********************/
+$colorclasses: (
+	"gray": 	$mcjw-gray $mcjw-light-gray $white,
+	"lilac": 	$mcjw-lilac $mcjw-light-lilac $mcjw-dark-lilac,
+	"pink": 	$mcjw-pink $mcjw-light-pink $mcjw-dark-pink,
+	"teal": 	$mcjw-teal $mcjw-light-teal $mcjw-dark-teal,
+	"yellow": 	$mcjw-yellow $mcjw-light-yellow $mcjw-dark-yellow,
+);

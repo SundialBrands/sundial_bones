@@ -364,6 +364,108 @@ POSTS & CONTENT STYLES
 
 #content {
 	margin-top: 1.5em;
+	
+	.cAc_wpsml-pageSection {
+	
+		&.cAc_wpsml-bg {
+			background-color: $white;
+			color: $mcjw-gray;
+			
+			a {
+				color: $mcjw-gray;
+				
+				&:hover, &:active {
+					color: rgba($mcjw-gray, 0.3);
+				}
+				
+				&:link {
+					-webkit-tap-highlight-color: rgba($mcjw-gray, 0.3);
+				}
+				
+			}
+			
+			.light {
+				color: $mcjw-light-gray;
+				
+				a {
+					color: $mcjw-light-gray;
+					
+					&:hover, &:active {
+						color: rgba($mcjw-light-gray, 0.3);
+					}
+				
+					&:link {
+						-webkit-tap-highlight-color: rgba($mcjw-light-gray, 0.3);
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+		@each $class, $colors in $colorclasses {
+		
+			&.cAc_wpsml-bg.#{$class} {
+			
+				background-color: nth($colors, 1);
+				color: $white;
+			
+				a {
+					color: $white;
+				
+					&:hover, &:active {
+						color: rgba($white, 0.3);
+					}
+				
+					&:link {
+						-webkit-tap-highlight-color: rgba($white, 0.3);
+					}
+				
+				}
+			
+				.light {
+					color: nth($colors, 2);
+				
+					a {
+						color: nth($colors, 2);
+					
+						&:hover, &:active {
+							color: rgba(nth($colors, 2), 0.3);
+						}
+				
+						&:link {
+							-webkit-tap-highlight-color: rgba(nth($colors, 2), 0.3);
+						}
+					
+					}
+				
+				}
+				
+				.dark {
+					color: nth($colors, 3);
+				
+					a {
+						color: nth($colors, 3);
+					
+						&:hover, &:active {
+							color: rgba(nth($colors, 3), 0.3);
+						}
+				
+						&:link {
+							-webkit-tap-highlight-color: rgba(nth($colors, 3), 0.3);
+						}
+					
+					}
+				
+				}
+			
+			}
+		
+		}
+	
+	}
+	
 }
 
 		.hentry {
