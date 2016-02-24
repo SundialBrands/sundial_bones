@@ -1575,8 +1575,8 @@ a:link, a:visited:link {
 }
 /* line 122, ../scss/breakpoints/_base.scss */
 a[name], a:visited[name] {
-  padding-top: 4rem;
-  margin-top: -4rem;
+  padding-top: 8rem;
+  margin-top: -8rem;
   display: inline-block;
 }
 
