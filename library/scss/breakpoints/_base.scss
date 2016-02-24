@@ -118,6 +118,13 @@ a, a:visited {
 		*/
 		-webkit-tap-highlight-color : $link-hover;
 	}
+	
+	&[name] {
+	  padding-top: 4rem;
+	  margin-top: -4rem;
+	  display: inline-block;
+	}
+	
 }
 
 /******************************************************************
