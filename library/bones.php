@@ -300,5 +300,14 @@ function bones_excerpt_more($more) {
 }
 
 
+//crazy ampersand styling changes... because.
+add_filter( 'the_content', 'bones_content_wrap_amps' ); 
+
+function bones_content_wrap_amps( $content ) { 
+
+	$content = str_replace( '&amp;', '<span class="mcjw-amp">&amp;</span>', $content );
+	return $content;
+
+}
 
 ?>
