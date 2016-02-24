@@ -2494,28 +2494,32 @@ you can add resource intensive styles.
   /*********************
   NAVIGATION STYLES
   *********************/
-  /* line 22, ../scss/breakpoints/_1030up.scss */
-  header nav {
+  /* line 24, ../scss/breakpoints/_1030up.scss */
+  header.header #logo img {
+    max-height: 1em;
+  }
+  /* line 30, ../scss/breakpoints/_1030up.scss */
+  header.header nav {
     position: relative;
     top: -0.25em;
     /* end .nav */
   }
-  /* line 25, ../scss/breakpoints/_1030up.scss */
-  header nav .nav {
+  /* line 34, ../scss/breakpoints/_1030up.scss */
+  header.header nav .nav {
     border: 0;
     /* highlight sub-menu current page */
     /* highlight current page */
     /* end current highlighters */
   }
-  /* line 28, ../scss/breakpoints/_1030up.scss */
-  header nav .nav li {
+  /* line 37, ../scss/breakpoints/_1030up.scss */
+  header.header nav .nav li {
     display: inline-block;
     position: relative;
     height: auto;
     left: 0;
   }
-  /* line 34, ../scss/breakpoints/_1030up.scss */
-  header nav .nav li a {
+  /* line 43, ../scss/breakpoints/_1030up.scss */
+  header.header nav .nav li a {
     border-bottom: 0;
     position: relative;
     opacity: 1;
@@ -2525,8 +2529,8 @@ you can add resource intensive styles.
     has the possibility of being a mobile device.
     */
   }
-  /* line 44, ../scss/breakpoints/_1030up.scss */
-  header nav .nav li a:hover, header nav .nav li a:focus {
+  /* line 53, ../scss/breakpoints/_1030up.scss */
+  header.header nav .nav li a:hover, header.header nav .nav li a:focus {
     color: #fff;
     text-decoration: underline;
   }
@@ -2552,15 +2556,15 @@ This is for the larger monitors and possibly full screen viewers.
   }
 
   /* line 20, ../scss/breakpoints/_1240up.scss */
-  header #logo img {
+  header.header #logo img {
     max-height: 2em;
   }
   /* line 26, ../scss/breakpoints/_1240up.scss */
-  header nav {
+  header.header nav {
     top: -0.5em;
   }
   /* line 33, ../scss/breakpoints/_1240up.scss */
-  header nav .nav li a {
+  header.header nav .nav li a {
     font-size: 1em;
   }
 }

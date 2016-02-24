@@ -17,11 +17,20 @@ be seen on the Desktop.
 /*********************
 NAVIGATION STYLES
 *********************/
-header{
-
+header.header{
+	
+	#logo {
+	
+		img {
+			max-height: 1em;
+		}
+	
+	}
+	
 	nav {
 		position: relative;
 		top: -0.25em;
+		
 		.nav {
 			border: 0;
 		
