@@ -2402,7 +2402,7 @@ you can add resource intensive styles.
   }
   /* line 55, ../scss/breakpoints/_768up.scss */
   .header #logo img {
-    max-height: 2em;
+    max-height: 1em;
   }
   /* line 69, ../scss/breakpoints/_768up.scss */
   .header.active nav .nav li:first-child {
@@ -2497,7 +2497,7 @@ you can add resource intensive styles.
   /* line 22, ../scss/breakpoints/_1030up.scss */
   header nav {
     position: relative;
-    top: -0.5em;
+    top: -0.25em;
     /* end .nav */
   }
   /* line 25, ../scss/breakpoints/_1030up.scss */
@@ -2519,12 +2519,13 @@ you can add resource intensive styles.
     border-bottom: 0;
     position: relative;
     opacity: 1;
+    font-size: 0.75em;
     /*
     you can use hover styles here even though this size
     has the possibility of being a mobile device.
     */
   }
-  /* line 43, ../scss/breakpoints/_1030up.scss */
+  /* line 44, ../scss/breakpoints/_1030up.scss */
   header nav .nav li a:hover, header nav .nav li a:focus {
     color: #fff;
     text-decoration: underline;
@@ -2548,6 +2549,19 @@ This is for the larger monitors and possibly full screen viewers.
   /* line 12, ../scss/breakpoints/_1240up.scss */
   .wrap {
     max-width: 1240px;
+  }
+
+  /* line 20, ../scss/breakpoints/_1240up.scss */
+  header #logo img {
+    max-height: 2em;
+  }
+  /* line 26, ../scss/breakpoints/_1240up.scss */
+  header nav {
+    top: -0.5em;
+  }
+  /* line 33, ../scss/breakpoints/_1240up.scss */
+  header nav .nav li a {
+    font-size: 1em;
   }
 }
 /*********************

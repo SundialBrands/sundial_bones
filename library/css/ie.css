@@ -279,7 +279,7 @@ HEADER STYLES
 }
 /* line 55, ../scss/breakpoints/_768up.scss */
 .header #logo img {
-  max-height: 2em;
+  max-height: 1em;
 }
 /* line 69, ../scss/breakpoints/_768up.scss */
 .header.active nav .nav li:first-child {
@@ -366,7 +366,7 @@ NAVIGATION STYLES
 /* line 22, ../scss/breakpoints/_1030up.scss */
 header nav {
   position: relative;
-  top: -0.5em;
+  top: -0.25em;
   /* end .nav */
 }
 /* line 25, ../scss/breakpoints/_1030up.scss */
@@ -388,12 +388,13 @@ header nav .nav li a {
   border-bottom: 0;
   position: relative;
   opacity: 1;
+  font-size: 0.75em;
   /*
   you can use hover styles here even though this size
   has the possibility of being a mobile device.
   */
 }
-/* line 43, ../scss/breakpoints/_1030up.scss */
+/* line 44, ../scss/breakpoints/_1030up.scss */
 header nav .nav li a:hover, header nav .nav li a:focus {
   color: #fff;
   text-decoration: underline;

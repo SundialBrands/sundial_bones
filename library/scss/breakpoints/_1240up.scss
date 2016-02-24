@@ -12,3 +12,32 @@ on larger screens.
 .wrap {
   max-width: 1240px;
 }
+
+header{
+	
+	#logo {
+	
+		img {
+			max-height: 2em;
+		}
+	
+	}
+	
+	nav {
+		top: -0.5em;
+		
+		.nav {
+		
+			li {
+
+				a {
+					font-size: 1em;
+				}
+			
+			}
+			
+		}
+	
+	}
+
+}
