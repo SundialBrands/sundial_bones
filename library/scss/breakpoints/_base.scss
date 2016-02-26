@@ -370,37 +370,79 @@ POSTS & CONTENT STYLES
 	.cAc_wpsml-pageSection {
 		font-size: 1rem;
 		color: $white;
+		
+		.cAc_wpsml-media {
+			margin: 0 auto;
+			max-width: 75%;
+			text-align: center;
+			
+			img {
+				width: auto;
+				max-width: 100%;
+				max-height: 28rem;
+				padding: 1rem 1.5rem;
+				background: $white;
+				-webkit-box-shadow: 5px 5px 10px 0px rgba($mcjw-gray, 0.43);
+				-moz-box-shadow: 5px 5px 10px 0px rgba($mcjw-gray, 0.43);
+				box-shadow: 5px 5px 10px 0px rgba($mcjw-gray, 0.43);
+			}
+			
+		}
+		
+		.cAc_wpsml-content {
+			text-align: center;
 	
-		.benefit {
-			font-size: 4em;
-			font-weight: 700;
-			letter-spacing: 0.015em;
-			word-spacing: 0.015em;
-			text-transform: uppercase;
+			.benefit {
+				font-size: 4em;
+				font-weight: 700;
+				letter-spacing: 0.015em;
+				word-spacing: 0.015em;
+				text-transform: uppercase;
+			}
+		
+			.ingredients {
+				font-size: 1.875em;
+				font-weight: 700;
+				letter-spacing: 0.015em;
+				word-spacing: 0.015em;
+				text-transform: uppercase;
+			}
+		
+			.need-state {
+				font-size: 1.875em;
+				font-weight: 400;
+				letter-spacing: -0.005em;
+				word-spacing: -0.005em;
+				text-transform: uppercase;
+			}
+		
+			.btn {
+				font-size: 1.875em;
+				font-weight: 700;
+				text-transform: uppercase;
+				letter-spacing: 0.025em;
+				word-spacing: 0.025em;
+				padding: 0.25em 0.5em;
+			}
+		
 		}
 		
-		.ingredients {
-			font-size: 1.875em;
-			font-weight: 700;
-			letter-spacing: 0.015em;
-			word-spacing: 0.015em;
-			text-transform: uppercase;
-		}
+		.cAc_wpsml-trim {
 		
-		.need-state {
-			font-size: 1.875em;
-			font-weight: 700;
-			letter-spacing: -0.005em;
-			word-spacing: -0.005em;
-			text-transform: uppercase;
-		}
-		
-		.btn {
-			font-size: 1.875em;
-			font-weight: 700;
-			text-transform: uppercase;
-			letter-spacing: 0.025em;
-			word-spacing: 0.025em;
+			
+			div {
+				width: 25%;
+				
+				&.cAc_wpsml_trim-left img {
+					float: left;
+				}
+				
+				&.cAc_wpsml_trim-right {
+					float: right;
+				}
+			
+			}
+			
 		}
 	
 		&.cAc_wpsml-bg {
