@@ -163,9 +163,9 @@ jQuery(document).ready(function($) {
 	
 		$('.cAc_wpsml-content').each( function() {
 		
-			$(this).find('h1').addClass('benefit');
+			$(this).find('h1').addClass('benefit', 'dark');
 			$(this).find('h2').addClass('ingredients');
-			$(this).find('p').addClass('need-state');
+			$(this).find('h3').addClass('need-state');
 			$(this).find('a').addClass('btn');
 		
 		});
