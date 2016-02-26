@@ -41,7 +41,7 @@ img {
 HEADER STYLES
 *********************/
 
-.header {
+header.header {
 
 	.menu-toggle {
 	
@@ -49,6 +49,13 @@ HEADER STYLES
 			vertical-align: 15%;
 		}
 	
+	}
+	#logo {
+		
+		img {
+			max-height: 2em;
+		}
+		
 	}
 	
 	&.active {
