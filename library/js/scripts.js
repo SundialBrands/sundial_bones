@@ -163,7 +163,7 @@ jQuery(document).ready(function($) {
 	
 		$('.cAc_wpsml-content').each( function() {
 		
-			$(this).find('h1').addClass('benefit', 'dark');
+			$(this).find('h1').addClass('benefit dark');
 			$(this).find('h2').addClass('ingredients');
 			$(this).find('h3').addClass('need-state');
 			$(this).find('a').addClass('btn');
