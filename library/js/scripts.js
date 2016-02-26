@@ -158,20 +158,5 @@ jQuery(document).ready(function($) {
 		});
 	
 	}
-	
-	if ($('.cAc_wpsml-pageSection').length > 0) {
-	
-		$('.cAc_wpsml-pageSection').each( function() {
-		
-			$(this).find('h1').addClass('benefit');
-			$(this).find('h2').addClass('ingredients');
-			$(this).find('p').addClass('need-state');
-			$(this).find('a').addClass('btn');
-		
-		});
-	
-	}
-
-
 
 }); /* end of as page load scripts */
