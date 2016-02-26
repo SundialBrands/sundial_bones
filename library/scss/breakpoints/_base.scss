@@ -370,11 +370,23 @@ POSTS & CONTENT STYLES
 	.cAc_wpsml-pageSection {
 		font-size: 1rem;
 		color: $white;
+		position: relative;
+  		top: 5%;
+		
+		.cAc_wpsml-mg {
+			z-index: 10;
+			position: relative;
+			opacity: 0.2;
+		}
 		
 		.cAc_wpsml-media {
 			margin: 0 auto;
 			max-width: 75%;
 			text-align: center;
+			position: absolute;
+			top:50%;
+			left:25%;
+			z-index:20;
 			
 			img {
 				width: auto;
@@ -391,6 +403,9 @@ POSTS & CONTENT STYLES
 		
 		.cAc_wpsml-content {
 			text-align: center;
+			position: absolute;
+			top:50%;
+			z-index: 30;
 	
 			.benefit {
 				font-size: 4em;
@@ -434,11 +449,13 @@ POSTS & CONTENT STYLES
 				width: 50%;
 				
 				&.cAc_wpsml_trim-left img {
-					float: left;
+					left: 0;
+					right: auto;
 				}
 				
 				&.cAc_wpsml_trim-right {
-					float: right;
+					left: auto;
+					right: 0;
 				}
 			
 			}
