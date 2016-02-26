@@ -1880,7 +1880,7 @@ POSTS & CONTENT STYLES
 }
 /* line 468, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.left .cAc_wpsml-media {
-  left: 75%;
+  left: 40%;
 }
 /* line 470, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.left .cAc_wpsml-media img {
@@ -1892,7 +1892,7 @@ POSTS & CONTENT STYLES
 }
 /* line 476, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.left .cAc_wpsml-content {
-  left: 25%;
+  left: auto;
 }
 /* line 482, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.right .cAc_wpsml-media {

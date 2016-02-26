@@ -466,7 +466,7 @@ POSTS & CONTENT STYLES
 		
 		&.left {
 			.cAc_wpsml-media {
-				left: 75%;
+				left: 40%;
 				img {
 					-ms-transform: rotate(7deg); /* IE 9 */
 					-webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
@@ -474,7 +474,7 @@ POSTS & CONTENT STYLES
 				}
 			}
 			.cAc_wpsml-content {
-				left: 25%;
+				left: auto;
 			}
 		}
 		
