@@ -1884,11 +1884,11 @@ POSTS & CONTENT STYLES
 }
 /* line 470, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.left .cAc_wpsml-media img {
-  -ms-transform: rotate(7deg);
+  -ms-transform: rotate(-20deg);
   /* IE 9 */
-  -webkit-transform: rotate(7deg);
+  -webkit-transform: rotate(-20deg);
   /* Chrome, Safari, Opera */
-  transform: rotate(7deg);
+  transform: rotate(-20deg);
 }
 /* line 476, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.left .cAc_wpsml-content {
