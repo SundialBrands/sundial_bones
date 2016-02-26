@@ -129,7 +129,7 @@ jQuery(document).ready(function($) {
    * You can remove this if you don't need it
   */
   
-  loadGravatars();
+//   loadGravatars();
   
   var nav = $('header');
   
@@ -154,6 +154,19 @@ jQuery(document).ready(function($) {
 		
 			e.preventDefault();
 			$('header.header').toggleClass('active');
+		
+		});
+	
+	}
+	
+	if ($('.cAc_wpsml-pageSection').length > 0) {
+	
+		$('.cAc_wpsml-pageSection').each( function() {
+		
+			$(this).find('h1').addClass('benefit');
+			$(this).find('h2').addClass('ingredients');
+			$(this).find('p').addClass('need-state');
+			$(this).find('a').addClass('btn');
 		
 		});
 	

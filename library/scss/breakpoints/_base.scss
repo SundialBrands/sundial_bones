@@ -267,6 +267,8 @@ header{
 					text-transform: uppercase;
 					@include transition(all .5s ease-in);
 					opacity: 0;
+					letter-spacing: -.03em;
+					word-spacing: -.03em;
 
 					/*
 					remember this is for mobile ONLY, so there's no need
@@ -366,6 +368,40 @@ POSTS & CONTENT STYLES
 	margin-top: 1.5em;
 	
 	.cAc_wpsml-pageSection {
+		font-size: 1rem;
+		color: $white;
+	
+		.benefit {
+			font-size: 4em;
+			font-weight: 700;
+			letter-spacing: 0.15em;
+			word-spacing: 0.15em;
+			text-transform: uppercase;
+		}
+		
+		.ingredients {
+			font-size: 1.875em;
+			font-weight: 700;
+			letter-spacing: 0.15em;
+			word-spacing: 0.15em;
+			text-transform: uppercase;
+		}
+		
+		.need-state {
+			font-size: 1.875em;
+			font-weight: 700;
+			letter-spacing: -0.05em;
+			word-spacing: -0.05em;
+			text-transform: uppercase;
+		}
+		
+		.btn {
+			font-size: 1.875em;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 0.025em;
+			word-spacing: 0.025em;
+		}
 	
 		&.cAc_wpsml-bg {
 			background-color: $white;
@@ -568,7 +604,7 @@ POSTS & CONTENT STYLES
 				border-bottom: 1px solid $mcjw-light-gray;
 
 				&:nth-child(even) {
-					background-color: $light-gray;
+					background-color: $mcjw-light-gray;
 				}
 			}
 
@@ -699,6 +735,147 @@ POSTS & CONTENT STYLES
 	.tags {
 		margin: 0;
 	}
+
+
+/*********************
+PRODUCT INFORMATION
+*********************/
+
+.product-information {
+	border: 2px solid $mcjw-gray;
+	padding: 2em;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	font-size: 1rem;
+	position: fixed;
+	background: transparent;
+	
+	.interior {
+		background: $white;
+		opacity: 0.9;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+	}
+	
+	.benefits {
+		font-size: 2.1875em;
+		text-transform: uppercase;
+		color: $mcjw-light-gray;
+		letter-spacing: -0.05em;
+		word-spacing: -0.05em;
+	}
+
+	.title {
+		font-size: 2.5em;
+		text-transform: uppercase;
+		color: $mcjw-gray;
+		font-weight: 800;
+		letter-spacing: -0.04em;
+		word-spacing: -0.04em;
+	}
+
+	.ingredients {
+		font-size: 2.1875em;
+		text-transform: uppercase;
+		color: $mcjw-gray;
+		letter-spacing: -0.05em;
+		word-spacing: -0.05em;
+	}
+
+	.need-state {
+		font-size: 2.1875em;
+		text-transform: uppercase;
+		color: $mcjw-light-gray;
+		font-style: italic;
+		font-family: $serif;
+		letter-spacing: 0.025em;
+		word-spacing: 0.025em;
+	}
+
+	.description {
+		font-size: 1.875em;
+		letter-spacing: -0.075em;
+		word-spacing: -0.075em;
+		color: $mcjw-light-gray;
+	}
+
+	.btn {
+		background: $mcjw-gray;
+		padding: 0.5em;
+		font-size: 2em;
+		color: $white;
+		letter-spacing: 0.025em;
+		word-spacing: 0.025em;
+		
+		&:hover, &:active {
+			background: rgba($mcjw-gray, 0.3);
+		}
+		
+		&:link {
+			-webkit-tap-highlight-color: transparent;
+		}
+		
+		&:active {
+		  -webkit-transform: scale3d(0.9, 0.9, 1);
+		}
+		
+	}
+
+}
+
+@each $class, $colors in $colorclasses {
+
+	.product-information {
+		border-color: nth($colors, 3);
+
+		.benefits {
+			color: $mcjw-gray;
+		}
+
+		.title {
+			color: nth($colors, 3);
+		}
+
+		.ingredients {
+			color: nth($colors, 3);
+		}
+
+		.need-state {
+			color: $mcjw-gray;
+		}
+
+		.description {
+			font-size: 1.875em;
+			letter-spacing: -0.075em;
+			word-spacing: -0.075em;
+			color: $mcjw-gray;
+		}
+
+		.btn {
+			background: nth($colors, 3);
+		
+			&:hover, &:active {
+				background: nth($colors, 2);
+			}
+		
+			&:link {
+				-webkit-tap-highlight-color: transparent;
+			}
+		
+			&:active {
+			  -webkit-transform: scale3d(0.9, 0.9, 1);
+			}
+		
+		}
+
+	}
+
+}
+
 
 /******************************************************************
 PAGE NAVI STYLES
