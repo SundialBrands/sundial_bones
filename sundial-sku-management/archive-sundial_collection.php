@@ -58,7 +58,7 @@ $product_navcats = array(
 					}
 				}
 				?>
-				<?php echo '<div class="sundial_prev_static_post"'>; ?>
+				<?php echo '<div class="sundial_prev_static_post">'; ?>
 				<?php if( $i == 0 ) { echo '<div class="sundial_active_static_post">'; } ?>
 				<?php if( $i > 1 ) { echo '<div class="sundial_' . $i . '_static_post">'; } ?>
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
