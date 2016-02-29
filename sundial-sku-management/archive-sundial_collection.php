@@ -123,7 +123,6 @@ $product_navcats = array(
 
 			
 		?>
-	</div><!-- .entry-content -->
 
 	
 				
