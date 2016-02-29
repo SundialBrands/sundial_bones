@@ -33,7 +33,7 @@ $product_navcats = array(
 
 ?>
 
-	<div id="primary" class="content-area">
+	<div id="content" class="content-area">
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
@@ -49,7 +49,44 @@ $product_navcats = array(
 			while ( have_posts() ) : the_post();
 
 				$collection = get_collection_meta( get_the_ID(), $product_navcats );
+				$nsarray = wp_get_post_terms( $post_id, 'need_states' );
+				$need_state = '';
+				foreach( $nsarray as $state ) {
+					if( strpos( strtolower( $state->name ), 'for ' ) ) {
+						$need_state = $state->name;
+					}
+				}
 				?>
+				
+				<div class="sundial_static_post_container">
+				
+					<div class="sundial_static_post_block" style="background:<?php echo $collection['color1'] ?>;">
+					</div>
+				
+					<div class="sundial_static_post wrap cf">
+					
+						<div class="sundial_static_post-burst">
+							<img src="<?php echo get_template_directory_uri() . '/library/images/burst.svg' ?>" />
+						</div>
+							
+						<div class="sundial_static_post-benefit">
+							<h2><?php echo $collection['tagline']; ?></h2>
+						</div>
+						
+						<div class="sundial_static_post-title" style="color:<?php echo $collection['color2'] ?>;">
+							<h1><?php the_title(); ?></h1>
+						</div>
+						
+						<div class="sundial_static_post-image">
+							<?php the_post_thumbnail( 'large', array( 'class' => 'aligncenter' ) ); ?>
+						</div>
+						
+						<div class="sundial_static_post-needstate">
+							<h2><?php echo $need_state; ?></h2>
+						</div>
+					
+					</div>
+				</div>
 				
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
 	<header class="entry-header" style="color:<?php echo $collection['color2'] ?>;background:<?php echo $collection['color1'] ?>;padding: 2em 1em;">
