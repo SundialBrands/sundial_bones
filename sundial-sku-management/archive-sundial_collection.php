@@ -91,8 +91,22 @@ $product_navcats = array(
 							</div>
 					
 						</div>
-					</div>
+
 				</article>
+				<footer class="entry-footer">
+				<?php
+					edit_post_link(
+						sprintf(
+							/* translators: %s: Name of current post */
+							'<i class="fa fa-pencil-square-o fa-2x"></i>Edit<span class="screen-reader-text"> "%s"</span>',
+							get_the_title()
+						),
+						'<span class="sundial-button edit-link">',
+						'</span>'
+					);
+				?>
+				</footer><!-- .entry-footer -->
+				</article><!-- #post-## -->
 				<?php  echo '</div>'; ?>
 			
 	
@@ -111,20 +125,7 @@ $product_navcats = array(
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
-		<?php
-			edit_post_link(
-				sprintf(
-					/* translators: %s: Name of current post */
-					'<i class="fa fa-pencil-square-o fa-2x"></i>Edit<span class="screen-reader-text"> "%s"</span>',
-					get_the_title()
-				),
-				'<span class="sundial-button edit-link">',
-				'</span>'
-			);
-		?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-## -->
+	
 				
 				<?php
 
