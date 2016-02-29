@@ -38,7 +38,7 @@ be seen on the Desktop.
 		margin: 0 auto;
 	}
 
-	div[class*="col-md-"] {
+	div[class*="col-md-"], [class*="col-md-"] {
 		float: left;
 	
 		&.margin-auto {
@@ -47,6 +47,31 @@ be seen on the Desktop.
 		}
 
 	}
+	
+	&.youtube {
+		position: relative;
+		left: 0;
+	}
+
+	.trimmed {
+		
+		position: relative;
+	
+	}
+		
+	.trim {
+		display: block;
+		
+		img {
+			max-width: 100%;
+			width: 100%;
+			height: auto;
+		}
+		
+	}
+		
+	
+
 	
 }
 

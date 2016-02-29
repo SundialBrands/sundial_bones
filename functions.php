@@ -167,6 +167,36 @@ function bones_register_sidebars() {
 		'after_title' => '</h4>',
 	));
 
+	register_sidebar(array(
+		'id' => 'header_right',
+		'name' => __( 'Header Right', 'bonestheme' ),
+		'description' => __( 'This area is on the right side of the header, stacks below the logo', 'bonestheme' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4 class="widgettitle">',
+		'after_title' => '</h4>',
+	));
+	
+	register_sidebar(array(
+		'id' => 'trim_right',
+		'name' => __( 'Right Side Trim', 'bonestheme' ),
+		'description' => __( 'This area is on the right side of the page above 1024px wide', 'bonestheme' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4 class="widgettitle">',
+		'after_title' => '</h4>',
+	));
+	
+	register_sidebar(array(
+		'id' => 'trim_left',
+		'name' => __( 'Left Side Trim', 'bonestheme' ),
+		'description' => __( 'This area is on the left side of the page above 1024px wide', 'bonestheme' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4 class="widgettitle">',
+		'after_title' => '</h4>',
+	));
+	
 	/*
 	to add more sidebars or widgetized areas, just copy
 	and edit the above sidebar code. In order to call

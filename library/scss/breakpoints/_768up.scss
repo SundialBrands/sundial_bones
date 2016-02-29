@@ -91,20 +91,27 @@ LAYOUT & GRID STYLES
 }
 
 /*********************
-HEADER STYLES
+GRID STYLES
 *********************/
 
-.header {}
-
-	#logo {}
 
 .row {
 	margin-right: -1em;
     margin-left: -1em;
+    position: relative;
 
 	[class*="col-"] {
 		padding-right: 2em;
 		padding-left: 2em;
+	}
+	
+	&.youtube  div[class*="col-sm-"] {
+	
+		iframe {
+			max-width: 100%;
+			max-height: 180px;
+		}
+	
 	}
 	
 }
@@ -178,6 +185,8 @@ HEADER STYLES
 
 
 
+
+
 /* UTILITY */
 
 .alignjustify {
@@ -229,16 +238,19 @@ SIDEBARS & ASIDES
 
 .sidebar {
 	margin-top: 2.2em;
-}
+
+	&#header_right {
+		margin: 0;
+	}
 
 	.widgettitle {
-		border-bottom: 2px solid #444;
+		border-bottom: 2px solid $shea-brown;
 		margin-bottom: 0.75em;
 	}
 
 	.widget {
 		padding: 0 10px;
-		margin: 2.2em 0;
+		margin: 0;
 
 		ul {
 			li {
@@ -257,7 +269,7 @@ SIDEBARS & ASIDES
 		}
 	}
 
-
+}
 	/* links widget */
 	.widget_links {}
 	.widget_links ul {}
@@ -1060,9 +1072,34 @@ footer {
 		clear: both;
 	}
 	
-	.wrapper {
+	.footer-links {
 		margin: 1em;
 		position: relative;
+		
+		.footer-nav {
+		
+			a {
+				margin: 0.5em;
+			}
+			
+			&li:first-child {
+			
+				a {
+					margin-left: 0;
+				}
+			
+			}
+			
+			&li:last-child {
+			
+				a {
+					margin-right: 0;
+				}
+			
+			}
+		
+		}
+		
 	}
 	
 }
