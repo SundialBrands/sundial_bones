@@ -92,7 +92,7 @@ $product_navcats = array(
 						</div>
 					</div>
 				</article>
-				<?php if( $i == 0 ) { echo '</div><div class="sundial_next_static_post">'; } else { echo '</div>' } ?>
+				<?php if( $i == 0 ) { echo '</div><div class="sundial_next_static_post">'; } else { echo '</div>'; } ?>
 			
 	
 		
