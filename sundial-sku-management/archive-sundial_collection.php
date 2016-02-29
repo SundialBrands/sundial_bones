@@ -58,123 +58,39 @@ $product_navcats = array(
 				}
 				?>
 				
-				<div class="sundial_static_post_container">
-				
-					<div class="sundial_static_post_block" style="background:<?php echo $collection['color1'] ?>;">
-					</div>
-				
-					<div class="sundial_static_post wrap cf">
-					
-						<div class="sundial_static_post-burst">
-							<img src="<?php echo get_template_directory_uri() . '/library/images/burst.svg' ?>" />
-						</div>
-							
-						<div class="sundial_static_post-benefit">
-							<h2><?php echo $collection['tagline']; ?></h2>
-						</div>
-						
-						<div class="sundial_static_post-title" style="color:<?php echo $collection['color2'] ?>;">
-							<h1><?php the_title(); ?></h1>
-						</div>
-						
-						<div class="sundial_static_post-image">
-							<?php the_post_thumbnail( 'large', array( 'class' => 'aligncenter' ) ); ?>
-						</div>
-						
-						<div class="sundial_static_post-needstate">
-							<h2><?php echo $need_state; ?></h2>
-						</div>
-					
-					</div>
-				</div>
-				
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
-	<header class="entry-header" style="color:<?php echo $collection['color2'] ?>;background:<?php echo $collection['color1'] ?>;padding: 2em 1em;">
-		<h1 class="entry-title">Collection:</h1>
-		<h2><?php echo $collection['title'] ?></h2>
-	</header><!-- .entry-header -->
+					<div class="sundial_static_post_container">
+				
+						<div class="sundial_static_post_block" style="background:<?php echo $collection['color1'] ?>;">
+						</div>
+				
+						<div class="sundial_static_post wrap cf">
+					
+							<div class="sundial_static_post-burst">
+								<img src="<?php echo get_template_directory_uri() . '/library/images/burst.svg' ?>" />
+							</div>
+							
+							<div class="sundial_static_post-benefit">
+								<h2><?php echo $collection['tagline']; ?></h2>
+							</div>
+						
+							<div class="sundial_static_post-title" style="color:<?php echo $collection['color2'] ?>;">
+								<h1><?php the_title(); ?></h1>
+							</div>
+						
+							<div class="sundial_static_post-image">
+								<?php the_post_thumbnail( 'large', array( 'class' => 'aligncenter' ) ); ?>
+							</div>
+						
+							<div class="sundial_static_post-needstate">
+								<h2><?php echo $need_state; ?></h2>
+							</div>
+					
+						</div>
+					</div>
+				</article>
+				
 	
-	
-
-
-	<div class="sundial-productImages">
-		<?php if( !empty( $collection['thumburl'] ) ) : ?>
-			<a href="<?php echo $collection['thumburl'] ?>" download="<?php echo sanitize_title( get_the_title() ) ?>.png" class="main"><?php the_post_thumbnail( 'large', array( 'class' => 'aligncenter' ) ); ?></a>
-		<?php endif ?>
-	</div>
-	
-	
-	<div class="entry-content">
-		<div class="sundial-collection-shipDate">
-			<h3><?php echo $names['ship_date'] ?>: </h3>
-			<p><?php echo $collection['shipdate'] ?></p>
-		</div>
-		<div class="sundial-collection-overview">
-			<h3><?php echo $names['positioning_strategy_overview'] ?> </h3>
-			<p>
-				<?php echo $collection['overview'] ?>
-			</p>
-		</div>
-		<div class="sundial-collection-content">
-			<h3>Key Selling Points & Points of Difference: </h3>
-		</div>
-		<?php the_content(); ?>
-			
-		<div class="sundial-collection-needStates">
-			<h3>Need States: </h3>
-			<?php echo $collection['needstates'] ?>
-		</div>
-		
-		<div class="sundial-collection-products">
-			<h3>Products: </h3>
-			<?php echo $collection['products'] ?>
-		</div>
-		<div class="sundial-collection-keyIngredients">
-			<h3>Key Ingredients: </h3>
-			<?php echo $collection['kingredients'] ?>
-		</div>
-		<div class="sundial-collection-tagLine">
-			<h3><?php echo $names['tag_line'] ?> </h3>
-			<p>
-				<?php echo $collection['tagline'] ?>
-			</p>
-		</div>
-		<div class="sundial-collection-keyWords">
-			<h3><?php echo $names['key_words'] ?> </h3>
-			<p>
-				<?php echo $collection['keywords'] ?>
-			</p>
-		</div>
-		<div class="sundial-collection-adCopy">
-			<h3><?php echo $names['ad_copy'] ?> </h3>
-			<p>
-				<?php echo $collection['adcopy'] ?>
-			</p>
-		</div>
-		<div class="sundial-collection-adSupport">
-			<h3><?php echo $names['advertising_support']['title'] ?> </h3>
-			<p>
-				<?php echo $collection['adsupport'] ?>
-			</p>
-		</div>
-		<div class="sundial-collection-socialOutlets">
-			<h3><?php echo $names['social_outlets'] ?> </h3>
-			<p>
-				<?php echo $collection['social'] ?>
-			</p>
-		</div>
-		<div class="sundial-collection-misc">
-			<h3><?php echo $names['misc'] ?> </h3>
-			<p>
-				<?php echo $collection['misc'] ?>
-			</p>
-		</div>
-		<div class="sundial-collection-competitors">
-			<h3>Competitive Product: </h3>
-			<p>
-				<?php echo $collection['competitors'] ?>
-			</p>
-		</div>
 		
 		<?php
 			wp_link_pages( array(
