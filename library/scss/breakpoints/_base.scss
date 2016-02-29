@@ -606,44 +606,61 @@ POSTS & CONTENT STYLES
 	
 	}
 	
+	.sundial_prev_static_post {
+		position: relative;
+		top: 0;
+		left: -100%;
+	}
 	
-	.sundial_static_post_container {
-		position: fixed;
-   		width: 100%;
-		height: 100%;
-
-		.sundial_static_post_block {		
-			height: 25%;
-			width: 100%;
+	.sundial_next_static_post {
+		position: relative;
+		top: 0;
+		left: 100%;
+	}
+	
+	.sundial_active_static_post {
+	
+		.sundial_static_post_container {
 			position: fixed;
-			bottom: 0;
-		}
-		
-		.sundial_static_post {
-			position: absolute;
 			top: 0;
 			left: 0;
 			width: 100%;
 			height: 100%;
-			
-			.sundial_static_post-burst {
+
+			.sundial_static_post_block {		
+				height: 25%;
 				width: 100%;
-				height: 50%;
+				position: fixed;
+				bottom: 0;
 			}
+		
+			.sundial_static_post {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
 			
-			.sundial_static_post-benefit {
-				text-align: center;
+				.sundial_static_post-burst {
+					width: 100%;
+					height: 50%;
+				}
+			
+				.sundial_static_post-benefit {
+					text-align: center;
+				}
+			
+				.sundial_static_post-title {
+					text-align: center;
+				}
+			
+				.sundial_static_post-needstate {
+					text-align: center;
+					font-family: $serif;
+				}
+			
 			}
-			
-			.sundial_static_post-title {
-				text-align: center;
-			}
-			
-			.sundial_static_post-needstate {
-				text-align: center;
-				font-family: $serif;
-			}
-			
+	
 		}
 	
 	}

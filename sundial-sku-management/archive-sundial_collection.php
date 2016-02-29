@@ -46,6 +46,7 @@ $product_navcats = array(
 
 			<?php
 			// Start the Loop.
+			$i=0;
 			while ( have_posts() ) : the_post();
 
 				$collection = get_collection_meta( get_the_ID(), $product_navcats );
@@ -57,7 +58,9 @@ $product_navcats = array(
 					}
 				}
 				?>
-				
+				<?php echo '<div class="sundial_prev_static_post"'>; ?>
+				<?php if( $i == 0 ) { echo '<div class="sundial_active_static_post">'; } ?>
+				<?php if( $i > 1 ) { echo '<div class="sundial_' . $i . '_static_post">'; } ?>
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
 					<div class="sundial_static_post_container">
 				
@@ -89,7 +92,8 @@ $product_navcats = array(
 						</div>
 					</div>
 				</article>
-				
+				<?php if( $i == 0 ) { echo '</div><div class="sundial_next_static_post">'; } else { echo '</div>' } ?>
+			
 	
 		
 		<?php
