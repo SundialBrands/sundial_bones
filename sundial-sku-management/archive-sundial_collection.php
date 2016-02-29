@@ -43,7 +43,7 @@ $product_navcats = array(
 				
 				?>
 			</header><!-- .page-header -->
-
+			<?php echo '<div class="sundial_prev_static_post"></div>'; ?>
 			<?php
 			// Start the Loop.
 			$i=0;
@@ -58,7 +58,7 @@ $product_navcats = array(
 					}
 				}
 				?>
-				<?php echo '<div class="sundial_prev_static_post"></div>'; ?>
+				
 				<?php if( $i == 0 ) { echo '<div class="sundial_active_static_post">'; } ?>
 				<?php if( $i == 1 ) { echo '<div class="sundial_next_static_post">'; } ?>
 				<?php if( $i > 1 ) { echo '<div class="sundial_' . $i . '_static_post">'; } ?>
@@ -128,6 +128,7 @@ $product_navcats = array(
 				
 				<?php
 
+				$i++;
 			// End the loop.
 			endwhile;
 
