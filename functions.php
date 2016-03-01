@@ -178,9 +178,9 @@ function bones_register_sidebars() {
 	));
 	
 	register_sidebar(array(
-		'id' => 'trim_right',
-		'name' => __( 'Right Side Trim', 'bonestheme' ),
-		'description' => __( 'This area is on the right side of the page above 1024px wide', 'bonestheme' ),
+		'id' => 'header_trim',
+		'name' => __( 'Header Trim', 'bonestheme' ),
+		'description' => __( 'This area is on the top of the page above 1024px wide', 'bonestheme' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget' => '</div>',
 		'before_title' => '<h4 class="widgettitle">',
@@ -188,9 +188,9 @@ function bones_register_sidebars() {
 	));
 	
 	register_sidebar(array(
-		'id' => 'trim_left',
-		'name' => __( 'Left Side Trim', 'bonestheme' ),
-		'description' => __( 'This area is on the left side of the page above 1024px wide', 'bonestheme' ),
+		'id' => 'footer_trim',
+		'name' => __( 'Footer Trim', 'bonestheme' ),
+		'description' => __( 'This area is on the bottom of the page above 1024px wide', 'bonestheme' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget' => '</div>',
 		'before_title' => '<h4 class="widgettitle">',
@@ -262,6 +262,15 @@ function bones_comments( $comment, $args, $depth ) {
   <?php // </li> is added by WordPress automatically ?>
 <?php
 } // don't remove this bracket!
+
+
+/*****
+custom fields for cac_wfs_sample
+*****/
+
+if( function_exists( 'create_post_type_cac_wfs_sample' ) ) {
+	require_once get_stylesheet_directory() . '/cAc-wp-free-samples/metabox.php';
+}
 
 
 /* DON'T DELETE THIS CLOSING TAG */ ?>

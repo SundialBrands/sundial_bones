@@ -72,8 +72,6 @@
 			<div id="content">
 
 				<div id="inner-content" class="row">
-				
-						<?php get_template_part( 'partials/content', 'left_trim' ); ?>
 
 						<main id="main" class="col-md-6 wrap" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
@@ -136,8 +134,6 @@
 							<?php endif; ?>
 
 						</main>
-						
-						<?php get_template_part( 'partials/content', 'right_trim' ); ?>
 
 				</div>
 
