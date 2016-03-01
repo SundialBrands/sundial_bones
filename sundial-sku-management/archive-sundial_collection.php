@@ -69,9 +69,8 @@ $product_navcats = array(
 				
 						<div class="sundial_static_post wrap cf">
 					
-							<div class="sundial_static_post-burst">
-								<img src="<?php echo get_template_directory_uri() . '/library/images/burst.svg' ?>" />
-							</div>
+							
+								
 							
 							<div class="sundial_static_post-benefit">
 								<h2><?php echo $collection['tagline']; ?></h2>
@@ -83,6 +82,7 @@ $product_navcats = array(
 						
 							<div class="sundial_static_post-image">
 								<?php the_post_thumbnail( 'large', array( 'class' => 'aligncenter' ) ); ?>
+								<img class="sundial_static_post-burst" src="<?php echo get_template_directory_uri() . '/library/images/burst.svg' ?>" />
 							</div>
 							
 							<div class="sundial_static_post_block" style="background:<?php echo $collection['color1'] ?>;">
