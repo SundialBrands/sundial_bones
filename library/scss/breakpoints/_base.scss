@@ -672,18 +672,19 @@ POSTS & CONTENT STYLES
 				}
 			
 				.sundial_static_post_block {		
-				height: 25%;
-				width: 100%;
-				position: fixed;
-				bottom: 0;
+					height: 25%;
+					width: 100%;
+					position: fixed;
+					bottom: 0;
 			
 					.sundial_static_post-needstate {
 						text-align: center;
 						font-family: $serif;
-						position: fixed;
+						position: relative;
 						top: 1em;
 						text-transform: lowercase;
 						color: $white;
+						font-style: italic;
 					}
 					
 				}
