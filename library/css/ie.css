@@ -343,6 +343,7 @@ SIDEBARS & ASIDES
   width: 50%;
   max-height: 75%;
   height: auto;
+  margin: 0 auto;
 }
 
 /*********************
@@ -353,7 +354,7 @@ you'll probably need to do quite a bit
 of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
-/* line 316, ../scss/breakpoints/_768up.scss */
+/* line 317, ../scss/breakpoints/_768up.scss */
 .footer-links ul li {
   /*
   be careful with the depth of your menus.
