@@ -633,9 +633,12 @@ POSTS & CONTENT STYLES
 			
 				.sundial_static_post-benefit {
 					text-align: center;
+					text-transform: uppercase;
 					
 						h2 {
 							font-weight: 400;
+							font-size: 2.5em;
+							margin: 0;
 						}
 						
 				}
@@ -646,6 +649,7 @@ POSTS & CONTENT STYLES
 					
 						h1 {
 							font-weight: 400;
+							margin: 0
 						}
 						
 				}
@@ -682,6 +686,7 @@ POSTS & CONTENT STYLES
 						text-align: center;
 						font-family: $serif;
 						position: relative;
+						font-size: 2.5em;
 						top: 1em;
 						text-transform: lowercase;
 						color: $white;
