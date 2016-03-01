@@ -2302,7 +2302,7 @@ POSTS & CONTENT STYLES
 /* line 662, ../scss/breakpoints/_base.scss */
 #content .sundial_active_static_post .sundial_static_post_container .sundial_static_post .sundial_static_post-image img.collection-image {
   max-height: 100%;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 /* line 668, ../scss/breakpoints/_base.scss */
