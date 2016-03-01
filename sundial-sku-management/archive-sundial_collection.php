@@ -81,7 +81,7 @@ $product_navcats = array(
 							</div>
 						
 							<div class="sundial_static_post-image">
-								<?php the_post_thumbnail( 'large', array( 'class' => 'aligncenter' ) ); ?>
+								<?php the_post_thumbnail( 'large', array( 'class' => 'aligncenter collection-image' ) ); ?>
 								<img class="sundial_static_post-burst" src="<?php echo get_template_directory_uri() . '/library/images/burst.svg' ?>" />
 							</div>
 							
