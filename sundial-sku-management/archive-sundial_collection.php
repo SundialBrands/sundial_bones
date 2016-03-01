@@ -85,13 +85,6 @@ $product_navcats = array(
 								<img class="sundial_static_post-burst" src="<?php echo get_template_directory_uri() . '/library/images/burst.svg' ?>" />
 							</div>
 							
-							<div class="sundial_static_post_block" style="background:<?php echo $collection['color1'] ?>;">
-						
-								<div class="sundial_static_post-needstate">
-									<h2><?php echo $need_state; ?></h2>
-								</div>
-							
-							</div>
 					
 							<footer class="entry-footer">
 							<?php
@@ -106,6 +99,13 @@ $product_navcats = array(
 								);
 							?>
 							</footer><!-- .entry-footer -->
+						</div>
+						<div class="sundial_static_post_block" style="background:<?php echo $collection['color1'] ?>;">
+						
+							<div class="sundial_static_post-needstate">
+								<h2><?php echo $need_state; ?></h2>
+							</div>
+						
 						</div>
 
 				</article>
