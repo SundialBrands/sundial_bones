@@ -65,8 +65,7 @@ $product_navcats = array(
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
 					<div class="sundial_static_post_container">
 				
-						<div class="sundial_static_post_block" style="background:<?php echo $collection['color1'] ?>;">
-						</div>
+						
 				
 						<div class="sundial_static_post wrap cf">
 					
@@ -85,48 +84,42 @@ $product_navcats = array(
 							<div class="sundial_static_post-image">
 								<?php the_post_thumbnail( 'large', array( 'class' => 'aligncenter' ) ); ?>
 							</div>
+							
+							<div class="sundial_static_post_block" style="background:<?php echo $collection['color1'] ?>;">
 						
-							<div class="sundial_static_post-needstate">
-								<h2><?php echo $need_state; ?></h2>
+								<div class="sundial_static_post-needstate">
+									<h2><?php echo $need_state; ?></h2>
+								</div>
+							
 							</div>
 					
+							<footer class="entry-footer">
+							<?php
+								edit_post_link(
+									sprintf(
+										/* translators: %s: Name of current post */
+										'<i class="fa fa-pencil-square-o fa-2x"></i>Edit<span class="screen-reader-text"> "%s"</span>',
+										get_the_title()
+									),
+									'<span class="sundial-button edit-link">',
+									'</span>'
+								);
+							?>
+							</footer><!-- .entry-footer -->
 						</div>
 
 				</article>
-				<footer class="entry-footer">
-				<?php
-					edit_post_link(
-						sprintf(
-							/* translators: %s: Name of current post */
-							'<i class="fa fa-pencil-square-o fa-2x"></i>Edit<span class="screen-reader-text"> "%s"</span>',
-							get_the_title()
-						),
-						'<span class="sundial-button edit-link">',
-						'</span>'
-					);
-				?>
-				</footer><!-- .entry-footer -->
-				</article><!-- #post-## -->
-				<?php  echo '</div>'; ?>
-			
-	
-		
-		<?php
-			wp_link_pages( array(
-				'before'      => '<div class="page-links"><span class="page-links-title">Pages:</span>',
-				'after'       => '</div>',
-				'link_before' => '<span>',
-				'link_after'  => '</span>',
-				'pagelink'    => '<span class="screen-reader-text">Page </span>%',
-				'separator'   => '<span class="screen-reader-text">, </span>',
-			) );
-
-			
-		?>
-
-	
 				
-				<?php
+			</div>		
+			<?php
+				wp_link_pages( array(
+					'before'      => '<div class="page-links"><span class="page-links-title">Pages:</span>',
+					'after'       => '</div>',
+					'link_before' => '<span>',
+					'link_after'  => '</span>',
+					'pagelink'    => '<span class="screen-reader-text">Page </span>%',
+					'separator'   => '<span class="screen-reader-text">, </span>',
+				) );
 
 				$i++;
 			// End the loop.
