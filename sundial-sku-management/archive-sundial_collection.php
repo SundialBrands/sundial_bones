@@ -50,7 +50,7 @@ $product_navcats = array(
 			while ( have_posts() ) : the_post();
 
 				$collection = get_collection_meta( get_the_ID(), $product_navcats );
-				$nsarray = wp_get_post_terms( $post_id, 'need_states' );
+				$nsarray = wp_get_post_terms( get_the_ID(), 'need_states' );
 				$need_state = '';
 				foreach( $nsarray as $state ) {
 					if( strpos( strtolower( $state->name ), 'for ' ) ) {
@@ -89,6 +89,7 @@ $product_navcats = array(
 						
 								<div class="sundial_static_post-needstate">
 									<h2><?php echo $need_state; ?></h2>
+									
 								</div>
 							
 							</div>
