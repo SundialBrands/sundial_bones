@@ -64,16 +64,16 @@ $product_navcats = array(
 					case '#a7a9ac':
 						$color = 'gray';
 						break;
-					case: '#af95c6':
+					case '#af95c6':
 						$color = 'lilac';
 						break;
-					case: '#ce7e9c':
+					case '#ce7e9c':
 						$color = 'pink';
 						break;
-					case: '#63b0bb':
+					case '#63b0bb':
 						$color = 'teal';
 						break;
-					case: '#ecba4b':
+					case '#ecba4b':
 						$color = 'yellow';
 						break;
 					default:
