@@ -661,7 +661,7 @@ POSTS & CONTENT STYLES
 					text-align: center;
 					text-transform: uppercase;
 					
-						h2 {
+						h1 {
 							font-weight: 400;
 						}
 						
@@ -669,6 +669,9 @@ POSTS & CONTENT STYLES
 				
 				.sundial_static_post-image {
 					text-align: center;
+					img {
+						z-index: -1;
+					}
 				}
 			
 				.sundial_static_post_block {		
