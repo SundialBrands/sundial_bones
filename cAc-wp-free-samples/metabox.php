@@ -14,6 +14,19 @@ function cac_wfs_sample_sm_metabox() {
 
 
 
+add_action('admin_enqueue_scripts', 'sundial_cAc_wfs_admin_enqueue');
+
+function sundial_cAc_wfs_admin_enqueue() {
+
+	global $post;
+	wp_register_script( 'sundial-sm-cac_wfs', get_stylesheet_directory_uri() . '/library/js/cac_wfs-admin.js', array( 'jquery' ) );
+	wp_localize_script( 'sundial-sm-cac_wfs', 'sundialCacwfsSampleId', $post->ID );
+	wp_enqueue_script( 'sundial-sm-cac_wfs' );
+
+}
+
+
+
 function cac_wfs_sample_display_sm_metabox( $sample ) {
 
 	//get saved data and create nonce field
@@ -139,10 +152,10 @@ function cac_wfs_sample_display_sm_metabox( $sample ) {
 					<img class="cac_wfs_sample_sm_ingredientone_img" src="<?php echo $ingredient_one['image_url'] ?>" style="max-width: 100%; height: auto;" />
 					<input type="hidden" id="cac_wfs_sample_sm_ingredientone_img" name="cac_wfs_sample_sm_ingredientone_img" value="<?php echo $ingredient_one['img'] ?>" />
 					<p>
-						<a class="set-sundial-media-field" title="Set Ingredient One Image" href="#!" id="set-cac_wfs_sample_sm_ingredientone_img">Select Image</a>
+						<a class="set-sundial-cAc_wfs-media-field" title="Set Ingredient One Image" href="#!" id="set-cac_wfs_sample_sm_ingredientone_img">Select Image</a>
 					</p>
 					<p>
-						<a class="remove-sundial-media-field" title="Remove Ingredient One Image" href="#!" id="remove-cac_wfs_sample_sm_ingredientone_img" style="<?php echo( empty( $ingredient_one['image_url'] ) ? 'display:none;' : '' ) ?>">Remove Image</a>
+						<a class="remove-sundial-cAc_wfs-media-field" title="Remove Ingredient One Image" href="#!" id="remove-cac_wfs_sample_sm_ingredientone_img" style="<?php echo( empty( $ingredient_one['image_url'] ) ? 'display:none;' : '' ) ?>">Remove Image</a>
 					</p>
 				</td>
 			</tr>
@@ -175,10 +188,10 @@ function cac_wfs_sample_display_sm_metabox( $sample ) {
 					<img class="cac_wfs_sample_sm_ingredienttwo_img" src="<?php echo $ingredient_two['image_url'] ?>" style="max-width: 100%; height: auto;" />
 					<input type="hidden" id="cac_wfs_sample_sm_ingredienttwo_img" name="cac_wfs_sample_sm_ingredienttwo_img" value="<?php echo $ingredient_two['img'] ?>" />
 					<p>
-						<a class="set-sundial-media-field" title="Set Ingredient Two Image" href="#!" id="set-cac_wfs_sample_sm_ingredienttwo_img">Select Image</a>
+						<a class="set-sundial-cAc_wfs-media-field" title="Set Ingredient Two Image" href="#!" id="set-cac_wfs_sample_sm_ingredienttwo_img">Select Image</a>
 					</p>
 					<p>
-						<a class="remove-sundial-media-field" title="Remove Ingredient Two Image" href="#!" id="remove-cac_wfs_sample_sm_ingredienttwo_img" style="<?php echo ( empty( $ingredient_two['image_url'] ) ? 'display:none;' : '' ) ?>">Remove Image</a>
+						<a class="remove-sundial-cAc_wfs-media-field" title="Remove Ingredient Two Image" href="#!" id="remove-cac_wfs_sample_sm_ingredienttwo_img" style="<?php echo ( empty( $ingredient_two['image_url'] ) ? 'display:none;' : '' ) ?>">Remove Image</a>
 					</p>
 				</td>
 			</tr>
@@ -211,10 +224,10 @@ function cac_wfs_sample_display_sm_metabox( $sample ) {
 					<img class="cac_wfs_sample_sm_ingredientthree_img" src="<?php echo $ingredient_three['image_url'] ?>" style="max-width: 100%; height: auto;" />
 					<input type="hidden" id="cac_wfs_sample_sm_ingredientthree_img" name="cac_wfs_sample_sm_ingredientthree_img" value="<?php echo $ingredient_three['img'] ?>" />
 					<p>
-						<a class="set-sundial-media-field" title="Set Ingredient Three Image" href="#!" id="set-cac_wfs_sample_sm_ingredientthree_img">Select Image</a>
+						<a class="set-sundial-cAc_wfs-media-field" title="Set Ingredient Three Image" href="#!" id="set-cac_wfs_sample_sm_ingredientthree_img">Select Image</a>
 					</p>
 					<p>
-						<a class="remove-sundial-media-field" title="Remove Ingredient Three Image" href="#!" id="remove-cac_wfs_sample_sm_ingredientthree_img" style="<?php echo ( empty( $ingredient_three['image_url'] ) ? 'display:none;' : '' ) ?>">Remove Image</a>
+						<a class="remove-sundial-cAc_wfs-media-field" title="Remove Ingredient Three Image" href="#!" id="remove-cac_wfs_sample_sm_ingredientthree_img" style="<?php echo ( empty( $ingredient_three['image_url'] ) ? 'display:none;' : '' ) ?>">Remove Image</a>
 					</p>
 				</td>
 			</tr>
