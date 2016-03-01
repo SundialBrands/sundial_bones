@@ -1033,51 +1033,55 @@ PRODUCT INFORMATION
 
 @each $class, $colors in $colorclasses {
 
-	.product-information {
-		border-color: nth($colors, 3);
+	.#{$class} {
+	
+		.product-information {
+			border-color: nth($colors, 3);
 
-		.benefits {
-			color: $mcjw-gray;
-		}
-
-		.title {
-			color: nth($colors, 3);
-		}
-
-		.ingredients {
-			color: nth($colors, 3);
-		}
-
-		.need-state {
-			color: $mcjw-gray;
-		}
-
-		.description {
-			font-size: 1.875em;
-			letter-spacing: -0.075em;
-			word-spacing: -0.075em;
-			color: $mcjw-gray;
-		}
-
-		.btn {
-			background: nth($colors, 3);
-		
-			&:hover, &:active {
-				background: nth($colors, 2);
+			.benefits {
+				color: $mcjw-gray;
 			}
-		
-			&:link {
-				-webkit-tap-highlight-color: transparent;
+
+			.title {
+				color: nth($colors, 3);
 			}
-		
-			&:active {
-			  -webkit-transform: scale3d(0.9, 0.9, 1);
+
+			.ingredients {
+				color: nth($colors, 3);
 			}
+
+			.need-state {
+				color: $mcjw-gray;
+			}
+
+			.description {
+				font-size: 1.875em;
+				letter-spacing: -0.075em;
+				word-spacing: -0.075em;
+				color: $mcjw-gray;
+			}
+
+			.btn {
+				background: nth($colors, 3);
 		
+				&:hover, &:active {
+					background: nth($colors, 2);
+				}
+		
+				&:link {
+					-webkit-tap-highlight-color: transparent;
+				}
+		
+				&:active {
+				  -webkit-transform: scale3d(0.9, 0.9, 1);
+				}
+		
+			}
+
 		}
 
 	}
-
+	
 }
 
 
