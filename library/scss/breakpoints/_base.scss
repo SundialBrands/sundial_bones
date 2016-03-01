@@ -950,8 +950,9 @@ PRODUCT INFORMATION
 	height: 100%;
 	text-align: center;
 	font-size: 1rem;
-	position: fixed;
+	position: static;
 	background: transparent;
+	z-index: 5;
 	
 	.interior {
 		background: $white;
@@ -961,6 +962,7 @@ PRODUCT INFORMATION
 		left: 0;
 		height: 100%;
 		width: 100%;
+		z-index: -1;
 	}
 	
 	.benefits {

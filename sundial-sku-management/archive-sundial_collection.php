@@ -57,12 +57,36 @@ $product_navcats = array(
 						$need_state = $state->name;
 					}
 				}
+				
+				$color = strtolower( $collection['color1'] );
+				switch( $color ) {
+				
+					case '#a7a9ac':
+						$color = 'gray';
+						break;
+					case: '#af95c6':
+						$color = 'lilac';
+						break;
+					case: '#ce7e9c':
+						$color = 'pink';
+						break;
+					case: '#63b0bb':
+						$color = 'teal';
+						break;
+					case: '#ecba4b':
+						$color = 'yellow';
+						break;
+					default:
+						$color = '';
+				
+				}
+				
 				?>
 				
 				<?php if( $i == 0 ) { echo '<div class="sundial_active_static_post">'; } ?>
 				<?php if( $i == 1 ) { echo '<div class="sundial_next_static_post">'; } ?>
 				<?php if( $i > 1 ) { echo '<div class="sundial_' . $i . '_static_post">'; } ?>
-				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
+				<article id="post-<?php the_ID(); ?>" <?php post_class( $color ); ?> >
 					<div class="sundial_static_post_container">
 				
 						
@@ -106,6 +130,13 @@ $product_navcats = array(
 								<h2><?php echo $need_state; ?></h2>
 							</div>
 						
+						</div>
+						
+						<div class="product-information">
+							<div class="interior"></div>
+							<div class="description">
+								<?php the_content(); ?>
+							</div>
 						</div>
 
 				</article>
