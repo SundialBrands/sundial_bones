@@ -32,6 +32,11 @@ body {
   	background-size: cover;
   	@include transition(all .25s ease-in-out);
   	padding: 0;
+  	position: relative;
+  	
+  	#container {
+  		background-color: rgba($white, 0.75);
+  	}
 }
 
 
@@ -287,8 +292,6 @@ HEADER STYLES
 *********************/
 
 .header {
-
-	background-color: transparent;
 		
 	#logo {
 		max-width: 100%;
@@ -654,7 +657,7 @@ POSTS & CONTENT STYLES
 }
 
 		.hentry {
-			background-color: $white;
+			background-color: transparent;
 			margin-bottom: 1.5em;
 			
 
@@ -664,7 +667,7 @@ POSTS & CONTENT STYLES
 
 			footer {
 				padding: 1.5em;
-				border-top: 1px solid $light-gray;
+				border-top: 0;
 
 				p {
 					margin: 0;
@@ -1691,9 +1694,47 @@ footer {
 
 
 
+/*****
+	Header/Footer Trim
+*****/
 
+#trim-top {
+	position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    
+    .trim-top {
+		overflow: hidden;
+		width: 100%;
+		height: 320px;
+		
+		img {
+			max-width: 3000px;
+		}
+			
+    }
 
+}
 
+#trim-bottom {
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    
+    .trim-bottom {
+		overflow: hidden;
+		width: 100%;
+		height: 320px;
+		
+		img {
+			max-width: 3000px;
+		}
+			
+    }
+
+}
 
 
 

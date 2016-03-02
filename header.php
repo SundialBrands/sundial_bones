@@ -44,6 +44,10 @@
 
 	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
 
+		<div id="trim-top">
+			<?php get_sidebar( 'trim_top' ); ?>
+		</div>
+		
 		<div id="container">
 
 			<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">

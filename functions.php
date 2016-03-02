@@ -178,7 +178,7 @@ function bones_register_sidebars() {
 	));
 	
 	register_sidebar(array(
-		'id' => 'header_trim',
+		'id' => 'trim_top',
 		'name' => __( 'Header Trim', 'bonestheme' ),
 		'description' => __( 'This area is on the top of the page above 1024px wide', 'bonestheme' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
@@ -188,7 +188,7 @@ function bones_register_sidebars() {
 	));
 	
 	register_sidebar(array(
-		'id' => 'footer_trim',
+		'id' => 'trim_bottom',
 		'name' => __( 'Footer Trim', 'bonestheme' ),
 		'description' => __( 'This area is on the bottom of the page above 1024px wide', 'bonestheme' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
@@ -270,6 +270,17 @@ custom fields for cac_wfs_sample
 
 if( function_exists( 'create_post_type_cac_wfs_sample' ) ) {
 	require_once get_stylesheet_directory() . '/cAc-wp-free-samples/metabox.php';
+	add_action('admin_head', 'sundial_cAc_wfs_admin_enqueue');
+}
+
+function sundial_cAc_wfs_admin_enqueue() {
+
+	global $post;
+	wp_register_script( 'sundial-sm-cac_wfs', get_stylesheet_directory_uri() . '/library/js/cac_wfs-admin.js', array( 'jquery' ) );
+	$this_post = $post->ID;
+	wp_localize_script( 'sundial-sm-cac_wfs', 'sundialCacwfsSampleId',  $this_post );
+	wp_enqueue_script( 'sundial-sm-cac_wfs' );
+
 }
 
 

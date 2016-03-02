@@ -22,7 +22,7 @@
 					</div>
  -->
 					
-					<div id="logo" class="col-sm-3" itemscope itemtype="http://schema.org/Organization">
+					<div id="logo" class="col-sm-4" itemscope itemtype="http://schema.org/Organization">
 						<a href="http://www.sheamoisture.com" rel="nofollow"><img src="/wp-content/themes/sundial_bones/library/images/logo.png" alt="SheaMoisture. Established 1912." />
 						</a>
 					</div>
@@ -73,7 +73,7 @@
 
 				<div id="inner-content" class="row">
 
-						<main id="main" class="col-md-6 wrap" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+						<main id="main" class="wrap" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 

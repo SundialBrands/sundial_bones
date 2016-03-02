@@ -1,0 +1,202 @@
+/******************************************************************
+Site Name: SheaMoisture v1.5
+Author: Chad A. Carino
+
+Stylesheet: cAc_wfs Styles
+
+If you want to use these alerts in your design, you can. If not,
+you can just remove this stylesheet.
+
+******************************************************************/
+
+.cac_wfs_sample {
+
+	.cAc_wfs-sample-header {
+	
+		position: relative;
+		width: 100%;
+		text-align: center;
+	
+		img.header-right {
+			position: absolute;
+			max-width: 25%;
+			right: 0;
+			top: 25%;
+			height: auto;
+		}
+		
+		img.header-left {
+			position: absolute;
+			max-width: 25%;
+			left: 0;
+			top: 0;
+		}
+		
+		.cAc_wfs-sample-benefit {
+			display: block;
+			margin: 0 auto;
+			width: 25%;
+			text-align: center;
+			color: white;
+			text-transform: uppercase;
+			font-size: 1.5em;
+			background-size: cover;
+			min-width: 300px;
+		}
+		
+		.cAc_wfs-sample-needstate {
+			font-family: $serif;
+			font-style: italic;
+			font-size: 2em;
+			margin: 0 auto 1em;
+			text-transform: lowercase;
+			width: 50%;
+			min-width: 300px;
+		}
+		
+		.cAc_wfs-sample-title {
+			text-align: center;
+			font-size: 3em;
+			text-transform: uppercase;
+			margin: 0.25em auto;
+			width: 50%;
+			min-width: 300px;
+		}
+	
+	}
+	
+	.entry-content {
+	
+		margin-bottom: 25%;
+		position: relative;
+	
+		.cAc_wfs-sample-content {
+			font-family: $serif;
+			font-size: 2em;
+			font-weight: 700;
+			font-style: italic;
+			text-align: center;
+			width: 50%;
+			margin: 0 auto;
+			min-width: 300px;
+			
+			img.body-right {
+				position: absolute;
+				max-width: 10%;
+				right: 0;
+				top: 0;
+				
+			}
+
+		}
+		
+		.cAc_wfs-sample-ingredients-header {
+			font-size: 2.5em;
+			font-family: $serif;
+			font-weight: 700;
+			font-style: italic;
+			text-align: center;
+			width: 85%;
+			margin: 0 auto;
+			min-width: 300px;
+		}
+		
+		.cAc_wfs-sample-ingredients {
+		
+			.cAc_wfs-sample-ingredient {
+				text-align: center;
+			
+				.cAc_wfs-sample-ingredient-name {
+					text-align: center;
+					font-weight: 700;
+					font-style: italic;
+					text-align: center;
+					font-family: $serif;
+					font-size: 1.75em;
+				}
+				
+				.cAc_wfs-sample-ingredient-copy {
+					text-align: center;
+				}
+				
+				.cAc_wfs-sample-img-ingredient {
+					max-width: 200px;
+				}
+				
+			}
+		
+		}
+	
+	}
+	
+	.cAc_wfs-sample-footer {
+		
+		width: 100%;
+		position: fixed;
+		bottom: 2em;
+		z-index: 25;
+		border: 0;
+		
+		.cAc_wfs-sample-form-close {
+			display: none;
+			position: absolute;
+			right: 1em;
+			top: 1em;
+			color: $white;
+			font-size: 1.5em;
+		}
+		
+		.cAc_wfs-sample-cta {
+			text-align: center;
+			
+			.cAc_wfs-sample-cta-title {
+				text-transform: uppercase;
+			}
+			
+			.cAc_wfs-sample-cta-includes {
+				margin-bottom: 1em;
+			}
+			
+		}
+		
+		.cAc_wfs-sample-form {
+			display: none;
+		}
+		
+		&.active {
+			height: 100%;
+			
+			.cAc_wfs-sample-form-close {
+				display: block;
+			}
+			
+			.cAc_wfs-sample-form  {
+				display: block;
+			}
+			
+			.cAc_wfs-sample-cta {
+				display: none;
+			}
+		
+		}
+		
+	}
+
+}
+
+@media only screen and (max-width: 640px) {
+
+	.header-left,
+	.body-right {
+		display:none;
+	}
+	
+	.header-right {
+		poaition: static;
+	}
+	
+	.cAc_wfs-sample-ingredient {
+		margin: 0 1em !important;
+	}
+
+}

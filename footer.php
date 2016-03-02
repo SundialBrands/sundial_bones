@@ -29,7 +29,9 @@
 
 		<?php // all js scripts are loaded in library/bones.php ?>
 		<?php wp_footer(); ?>
-
+		<div id="trim-bottom">
+			<?php get_sidebar( 'trim_bottom' ); ?>
+		</div>
 	</body>
 
 </html> <!-- end of site. what a ride! -->

@@ -13,20 +13,6 @@ function cac_wfs_sample_sm_metabox() {
 }	//end cac_wfs_sample_sm_metabox()
 
 
-
-add_action('admin_enqueue_scripts', 'sundial_cAc_wfs_admin_enqueue');
-
-function sundial_cAc_wfs_admin_enqueue() {
-
-	global $post;
-	wp_register_script( 'sundial-sm-cac_wfs', get_stylesheet_directory_uri() . '/library/js/cac_wfs-admin.js', array( 'jquery' ) );
-	wp_localize_script( 'sundial-sm-cac_wfs', 'sundialCacwfsSampleId', $post->ID );
-	wp_enqueue_script( 'sundial-sm-cac_wfs' );
-
-}
-
-
-
 function cac_wfs_sample_display_sm_metabox( $sample ) {
 
 	//get saved data and create nonce field
@@ -35,7 +21,7 @@ function cac_wfs_sample_display_sm_metabox( $sample ) {
 	$needstate = esc_html( get_post_meta( $sample->ID, 'cac_wfs_sample_sm_needstate', true ) );
 	$ingredient_one = array(
 		
-		'image_url'	=> get_attachment_url( get_post_meta( $sample->ID, 'cac_wfs_sample_sm_ingredientone_img', true ) ),
+		'image_url'	=> wp_get_attachment_url( get_post_meta( $sample->ID, 'cac_wfs_sample_sm_ingredientone_img', true ) ),
 		'img'		=> get_post_meta( $sample->ID, 'cac_wfs_sample_sm_ingredientone_img', true ),
 		'name'		=> esc_html( get_post_meta( $sample->ID, 'cac_wfs_sample_sm_ingredientone_name', true ) ),
 		'copy'		=> esc_html( get_post_meta( $sample->ID, 'cac_wfs_sample_sm_ingredientone_copy', true ) ),
@@ -43,7 +29,7 @@ function cac_wfs_sample_display_sm_metabox( $sample ) {
 	);	//end $ingredient_one
 	$ingredient_two = array(
 		
-		'image_url'	=> get_attachment_url( get_post_meta( $sample->ID, 'cac_wfs_sample_sm_ingredienttwo_img', true ) ),
+		'image_url'	=> wp_get_attachment_url( get_post_meta( $sample->ID, 'cac_wfs_sample_sm_ingredienttwo_img', true ) ),
 		'img'		=> get_post_meta( $sample->ID, 'cac_wfs_sample_sm_ingredienttwo_img', true ),
 		'name'		=> esc_html( get_post_meta( $sample->ID, 'cac_wfs_sample_sm_ingredienttwo_name', true ) ),
 		'copy'		=> esc_html( get_post_meta( $sample->ID, 'cac_wfs_sample_sm_ingredienttwo_copy', true ) ),
@@ -51,7 +37,7 @@ function cac_wfs_sample_display_sm_metabox( $sample ) {
 	);	//end $ingredient_two
 	$ingredient_three = array(
 		
-		'image_url'	=> get_attachment_url( get_post_meta( $sample->ID, 'cac_wfs_sample_sm_ingredientthree_img', true ) ),
+		'image_url'	=> wp_get_attachment_url( get_post_meta( $sample->ID, 'cac_wfs_sample_sm_ingredientthree_img', true ) ),
 		'img'		=> get_post_meta( $sample->ID, 'cac_wfs_sample_sm_ingredientthree_img', true ),
 		'name'		=> esc_html( get_post_meta( $sample->ID, 'cac_wfs_sample_sm_ingredientthree_name', true ) ),
 		'copy'		=> esc_html( get_post_meta( $sample->ID, 'cac_wfs_sample_sm_ingredientthree_copy', true ) ),

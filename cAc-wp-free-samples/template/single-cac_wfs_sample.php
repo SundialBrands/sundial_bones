@@ -48,42 +48,43 @@
 
 							<?php
 							$sample_id =  get_the_ID();
+							
 							$sample_data = array(
 							
-								'benefit' 		=> esc_html( get_post_meta( $sample->ID, 'cac_wfs_sample_sm_benefit', true ) ),
-								'needstate' 	=> esc_html( get_post_meta( $sample->ID, 'cac_wfs_sample_sm_needstate', true ) ),
-								'color' 		=> get_post_meta( $sample->ID, 'cac_wfs_sample_sm_color', true ),
-								'item_one' 		=> esc_html( get_post_meta( $sample->ID, 'cac_wfs_sample_sm_itemone', true ) ),
-								'item_two' 		=> esc_html( get_post_meta( $sample->ID, 'cac_wfs_sample_sm_itemtwo', true ) ),
+								'benefit' 		=> esc_html( get_post_meta( $sample_id, 'cac_wfs_sample_sm_benefit', true ) ),
+								'needstate' 	=> esc_html( get_post_meta( $sample_id, 'cac_wfs_sample_sm_needstate', true ) ),
+								'color' 		=> get_post_meta( $sample_id, 'cac_wfs_sample_sm_color', true ),
+								'item_one' 		=> esc_html( get_post_meta( $sample_id, 'cac_wfs_sample_sm_itemone', true ) ),
+								'item_two' 		=> esc_html( get_post_meta( $sample_id, 'cac_wfs_sample_sm_itemtwo', true ) ),
 								'ingredient_one' => array(
 		
-									'image_url'	=> get_attachment_url( get_post_meta( $sample->ID, 'cac_wfs_sample_sm_ingredientone_img', true ) ),
-									'img'		=> get_post_meta( $sample->ID, 'cac_wfs_sample_sm_ingredientone_img', true ),
-									'name'		=> esc_html( get_post_meta( $sample->ID, 'cac_wfs_sample_sm_ingredientone_name', true ) ),
-									'copy'		=> esc_html( get_post_meta( $sample->ID, 'cac_wfs_sample_sm_ingredientone_copy', true ) ),
+									'image_url'	=> wp_get_attachment_url( get_post_meta( $sample_id, 'cac_wfs_sample_sm_ingredientone_img', true ) ),
+									'img'		=> get_post_meta( $sample_id, 'cac_wfs_sample_sm_ingredientone_img', true ),
+									'name'		=> esc_html( get_post_meta( $sample_id, 'cac_wfs_sample_sm_ingredientone_name', true ) ),
+									'copy'		=> esc_html( get_post_meta( $sample_id, 'cac_wfs_sample_sm_ingredientone_copy', true ) ),
 	
 								),	//end $ingredient_one
-								$ingredient_two => array(
+								'ingredient_two' => array(
 		
-									'image_url'	=> get_attachment_url( get_post_meta( $sample->ID, 'cac_wfs_sample_sm_ingredienttwo_img', true ) ),
-									'img'		=> get_post_meta( $sample->ID, 'cac_wfs_sample_sm_ingredienttwo_img', true ),
-									'name'		=> esc_html( get_post_meta( $sample->ID, 'cac_wfs_sample_sm_ingredienttwo_name', true ) ),
-									'copy'		=> esc_html( get_post_meta( $sample->ID, 'cac_wfs_sample_sm_ingredienttwo_copy', true ) ),
+									'image_url'	=> wp_get_attachment_url( get_post_meta( $sample_id, 'cac_wfs_sample_sm_ingredienttwo_img', true ) ),
+									'img'		=> get_post_meta( $sample_id, 'cac_wfs_sample_sm_ingredienttwo_img', true ),
+									'name'		=> esc_html( get_post_meta( $sample_id, 'cac_wfs_sample_sm_ingredienttwo_name', true ) ),
+									'copy'		=> esc_html( get_post_meta( $sample_id, 'cac_wfs_sample_sm_ingredienttwo_copy', true ) ),
 	
 								),	//end $ingredient_two
-								$ingredient_three => array(
+								'ingredient_three' => array(
 		
-									'image_url'	=> get_attachment_url( get_post_meta( $sample->ID, 'cac_wfs_sample_sm_ingredientthree_img', true ) ),
-									'img'		=> get_post_meta( $sample->ID, 'cac_wfs_sample_sm_ingredientthree_img', true ),
-									'name'		=> esc_html( get_post_meta( $sample->ID, 'cac_wfs_sample_sm_ingredientthree_name', true ) ),
-									'copy'		=> esc_html( get_post_meta( $sample->ID, 'cac_wfs_sample_sm_ingredientthree_copy', true ) ),
+									'image_url'	=> wp_get_attachment_url( get_post_meta( $sample_id, 'cac_wfs_sample_sm_ingredientthree_img', true ) ),
+									'img'		=> get_post_meta( $sample_id, 'cac_wfs_sample_sm_ingredientthree_img', true ),
+									'name'		=> esc_html( get_post_meta( $sample_id, 'cac_wfs_sample_sm_ingredientthree_name', true ) ),
+									'copy'		=> esc_html( get_post_meta( $sample_id, 'cac_wfs_sample_sm_ingredientthree_copy', true ) ),
 	
 								)	//end $ingredient_three
 							
 							);	//end $sample_data 
 							
 							$ingredients = array(
-								'count' => 0;
+								'count' => 0
 							);
 							if( !empty( $sample_data['ingredient_one']['image_url'] ) ) { 
 								$ingredients['count']++;
@@ -136,7 +137,7 @@
 
 								<header class="article-header entry-header cAc_wfs-sample-header">
 
-								  	<?php if( has_post_thumbnail ) { the_post_thumbnail( 'thumbnail', array( 'class' => 'cAc_wfs-sample-img-main header-right' ) ); }?>
+								  	<?php if( has_post_thumbnail() ) { the_post_thumbnail( 'thumbnail', array( 'class' => 'cAc_wfs-sample-img-main header-right' ) ); }?>
 								  	<div class="box paint-bg <?php echo $sample_data['color'] ?> cAc_wfs-sample-benefit">
 								  		<?php echo $sample_data['benefit']; ?>
 								  	</div>
@@ -152,7 +153,8 @@
 								</header> <?php // end article header ?>
 
 								<section class="entry-content" itemprop="articleBody">
-								<div classs="cAc_wfs-sample-content">
+								<div class="cAc_wfs-sample-content">
+								
 								<?php
 									// the content (pretty self explanatory huh)
 									the_content();
@@ -161,80 +163,65 @@
 								</div>
 								<hr />
 								<?php if( $ingredients > 0 ): ?>
+								<h2 class="cAc_wfs-sample-ingredients-header">The story is in our ingredients&hellip;</h2>
 								<div class="cAc_wfs-sample-ingredients row">
 									<?php if( $ingredients['count'] == 1 ): ?>
-										<div class="cAc_wfs-sample-ingredient col-sm-4 aligncenter" style="margin: 0 auto;">
+										<div class="cAc_wfs-sample-ingredient col-sm-4" style="margin: 0 auto;">
 											<?php 
 											$first = 'ingredient_' . $ingredients['first'];
-											
-											echo '<img src="' . $sample_data[$first]['image_url']. '" class="cAc_wfs-sample-img-ingredient />'; 
+											echo '<img src="' . $sample_data[$first]['image_url']. '" class="cAc_wfs-sample-img-ingredient" />'; 
 											?>
-											<h3 class="cAc_wfs-sample-ingredient-name">
-												<?php echo $sample_data[$first]['name']; ?>
-											</h3>
+											<h3 class="cAc_wfs-sample-ingredient-name"><?php echo $sample_data[$first]['name']; ?></h3>
 											<p class="cAc_wfs-sample-ingredient-copy">
-												<?php echo $sample_data[$first]['name']; ?>
+												<?php echo $sample_data[$first]['copy']; ?>
 											</p>
 										</div>
 									<?php endif; ?>
 									<?php if( $ingredients['count'] == 2 ): ?>
-										<div class="cAc_wfs-sample-ingredient col-sm-4 aligncenter" style="margin-left: 33%;">
+										<div class="cAc_wfs-sample-ingredient col-sm-4" style="margin-left: 16%;">
 											<?php 
 											$first = 'ingredient_' . $ingredients['first'];
 											$second = 'ingredient_' . $ingredients['second'];
-											echo '<img src="' . $sample_data[$first]['image_url']. '" class="cAc_wfs-sample-img-ingredient />'; 
+											echo '<img src="' . $sample_data[$first]['image_url']. '" class="cAc_wfs-sample-img-ingredient" />'; 
 											?>
-											<h3 class="cAc_wfs-sample-ingredient-name">
-												<?php echo $sample_data[$first]['name']; ?>
-											</h3>
+											<h3 class="cAc_wfs-sample-ingredient-name"><?php echo $sample_data[$first]['name']; ?></h3>
 											<p class="cAc_wfs-sample-ingredient-copy">
-												<?php echo $sample_data[$first]['name']; ?>
+												<?php echo $sample_data[$first]['copy']; ?>
 											</p>
 										</div>
-										<div class="cAc_wfs-sample-ingredient col-sm-4 aligncenter" style="margin-right: 33%;">
-											echo '<img src="' . $sample_data[$second]['image_url']. '" class="cAc_wfs-sample-img-ingredient />'; 
-											?>
-											<h3 class="cAc_wfs-sample-ingredient-name">
-												<?php echo $sample_data[$second]['name']; ?>
-											</h3>
+										<div class="cAc_wfs-sample-ingredient col-sm-4" style="margin-right: 16%;">
+											<?php echo '<img src="' . $sample_data[$second]['image_url']. '" class="cAc_wfs-sample-img-ingredient" />'; ?>
+											<h3 class="cAc_wfs-sample-ingredient-name"><?php echo $sample_data[$second]['name']; ?></h3>
 											<p class="cAc_wfs-sample-ingredient-copy">
-												<?php echo $sample_data[$second]['name']; ?>
+												<?php echo $sample_data[$second]['copy']; ?>
 											</p>
 										</div>
 									<?php endif; ?>
 									<?php if( $ingredients['count'] == 3 ): ?>
-										<div class="cAc_wfs-sample-ingredient col-sm-4 aligncenter">
+										<div class="cAc_wfs-sample-ingredient col-sm-4">
 											<?php 
 											$first = 'ingredient_' . $ingredients['first'];
 											$second = 'ingredient_' . $ingredients['second'];
 											$third = 'ingredient_' . $ingredients['third'];
-											echo '<img src="' . $sample_data[$first]['image_url']. '" class="cAc_wfs-sample-img-ingredient />'; 
+											echo '<img src="' . $sample_data[$first]['image_url']. '" class="cAc_wfs-sample-img-ingredient" />'; 
 											?>
-											<h3 class="cAc_wfs-sample-ingredient-name">
-												<?php echo $sample_data[$first]['name']; ?>
-											</h3>
+											<h3 class="cAc_wfs-sample-ingredient-name"><?php echo $sample_data[$first]['name']; ?></h3>
 											<p class="cAc_wfs-sample-ingredient-copy">
-												<?php echo $sample_data[$first]['name']; ?>
+												<?php echo $sample_data[$first]['copy']; ?>
 											</p>
 										</div>
-										<div class="cAc_wfs-sample-ingredient col-sm-4 aligncenter">
-											echo '<img src="' . $sample_data[$second]['image_url']. '" class="cAc_wfs-sample-img-ingredient />'; 
-											?>
-											<h3 class="cAc_wfs-sample-ingredient-name">
-												<?php echo $sample_data[$second]['name']; ?>
-											</h3>
+										<div class="cAc_wfs-sample-ingredient col-sm-4">
+											<?php echo '<img src="' . $sample_data[$second]['image_url']. '" class="cAc_wfs-sample-img-ingredient" />'; ?>
+											<h3 class="cAc_wfs-sample-ingredient-name"><?php echo $sample_data[$second]['name']; ?></h3>
 											<p class="cAc_wfs-sample-ingredient-copy">
-												<?php echo $sample_data[$second]['name']; ?>
+												<?php echo $sample_data[$second]['copy']; ?>
 											</p>
 										</div>
-										<div class="cAc_wfs-sample-ingredient col-sm-4 aligncenter">
-											echo '<img src="' . $sample_data[$third]['image_url']. '" class="cAc_wfs-sample-img-ingredient />'; 
-											?>
-											<h3 class="cAc_wfs-sample-ingredient-name">
-												<?php echo $sample_data[$third]['name']; ?>
-											</h3>
+										<div class="cAc_wfs-sample-ingredient col-sm-4">
+											<?php echo '<img src="' . $sample_data[$third]['image_url']. '" class="cAc_wfs-sample-img-ingredient" />'; ?>
+											<h3 class="cAc_wfs-sample-ingredient-name"><?php echo $sample_data[$third]['name']; ?></h3>
 											<p class="cAc_wfs-sample-ingredient-copy">
-												<?php echo $sample_data[$third]['name']; ?>
+												<?php echo $sample_data[$third]['copy']; ?>
 											</p>
 										</div>
 									<?php endif; ?>
@@ -244,9 +231,11 @@
 								</section> <?php // end article section ?>
 
 								<footer class="article-footer cAc_wfs-sample-footer">
-
+									
+									<a class="cAc_wfs-sample-form-close" href="#!"> X </a>
+									
 									<div class="cAc_wfs-sample-cta box <?php echo $sample_data['color']; ?>">
-										<h1 class"cAc_wfs-sample-cta-title">
+										<h1 class="cAc_wfs-sample-cta-title">
 											Free Deluxe Sample Pack
 										</h1>
 										<p class="cAc_wfs-sample-cta-includes">
