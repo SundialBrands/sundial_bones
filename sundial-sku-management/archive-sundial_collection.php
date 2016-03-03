@@ -43,6 +43,12 @@ $product_navcats = array(
 				
 				?>
 			</header><!-- .page-header -->
+			<div class="previous_sundial_static_post">
+				<i class="fa fa-chevron-left"></i>
+			</div>
+			<div class="next_sundial_static_post">
+				<i class="fa fa-chevron-right"></i>
+			</div>
 			<?php echo '<div class="sundial_prev_static_post"></div>'; ?>
 			<?php
 			// Start the Loop.
@@ -85,89 +91,66 @@ $product_navcats = array(
 				
 				<?php if( $i == 0 ) { echo '<div class="sundial_active_static_post">'; } ?>
 				<?php if( $i == 1 ) { echo '<div class="sundial_next_static_post">'; } ?>
-				<?php if( $i > 1 ) { echo '<div class="sundial_' . $i . '_static_post">'; } ?>
-				<div class="previous_sundial_static_post">
-					<i class="fa fa-chevron-left"></i>
-				</div>
-				<div class="next_sundial_static_post">
-					<i class="fa fa-chevron-right"></i>
-				</div>
-				<article id="post-<?php the_ID(); ?>" <?php post_class( $color ); ?> >
-					<div class="sundial_static_post_container">
+				<?php if( $i > 1 ) { echo '<div class="sundial_numbered_static_post right-side number' . $i . '">'; } ?>
 				
-						
-				
-						<div class="sundial_static_post wrap cf">
-					
-							
+					<article id="post-<?php the_ID(); ?>" <?php post_class( $color ); ?> >
+						<div class="sundial_static_post_container">
+							<div class="sundial_static_post wrap cf">
 								
-							
-							<div class="sundial_static_post-benefit">
-								<h2><?php echo $collection['tagline']; ?></h2>
-							</div>
+								<div class="sundial_static_post-benefit">
+									<h2><?php echo $collection['tagline']; ?></h2>
+								</div>
 						
-							<div class="sundial_static_post-title" style="color:<?php echo $collection['color2'] ?>;">
-								<h1><?php the_title(); ?></h1>
-							</div>
+								<div class="sundial_static_post-title" style="color:<?php echo $collection['color2'] ?>;">
+									<h1><?php the_title(); ?></h1>
+								</div>
 						
-							<div class="sundial_static_post-image">
-								<?php the_post_thumbnail( 'large', array( 'class' => 'aligncenter collection-image' ) ); ?>
-								<img class="sundial_static_post-burst" src="<?php echo get_template_directory_uri() . '/library/images/burst.svg' ?>" />
-							</div>
+								<div class="sundial_static_post-image">
+									<?php the_post_thumbnail( 'large', array( 'class' => 'aligncenter collection-image' ) ); ?>
+									<img class="sundial_static_post-burst" src="<?php echo get_template_directory_uri() . '/library/images/burst.svg' ?>" />
+								</div>
 							
 					
-							<footer class="entry-footer">
-							<?php
-								edit_post_link(
-									sprintf(
-										/* translators: %s: Name of current post */
-										'<i class="fa fa-pencil-square-o fa-2x"></i>Edit<span class="screen-reader-text"> "%s"</span>',
-										get_the_title()
-									),
-									'<span class="sundial-button edit-link">',
-									'</span>'
-								);
-							?>
-							</footer><!-- .entry-footer -->
-						</div>
-						<div class="sundial_static_post_block" style="background:<?php echo $collection['color1'] ?>;">
+								<footer class="entry-footer">
+								<?php
+									edit_post_link(
+										sprintf(
+											/* translators: %s: Name of current post */
+											'<i class="fa fa-pencil-square-o fa-2x"></i>Edit<span class="screen-reader-text"> "%s"</span>',
+											get_the_title()
+										),
+										'<span class="sundial-button edit-link">',
+										'</span>'
+									);
+								?>
+								</footer><!-- .entry-footer -->
+							</div>
+							<div class="sundial_static_post_block" style="background:<?php echo $collection['color1'] ?>;">
 						
-							<div class="sundial_static_post-needstate">
-								<h2><?php echo $need_state; ?></h2>
+								<div class="sundial_static_post-needstate">
+									<h2><?php echo $need_state; ?></h2>
+								</div>
+						
 							</div>
 						
-						</div>
-						
-						<div class="product-information">
-							<div class="interior"></div>
-							<div class="description">
-								<?php the_content(); ?>
+							<div class="product-information">
+								<div class="interior"></div>
+								<div class="description">
+									<?php the_content(); ?>
+								</div>
 							</div>
+							
 						</div>
 
-				</article>
+					</article>
 				
-			</div>		
+				</div>		
 			<?php
-				wp_link_pages( array(
-					'before'      => '<div class="page-links"><span class="page-links-title">Pages:</span>',
-					'after'       => '</div>',
-					'link_before' => '<span>',
-					'link_after'  => '</span>',
-					'pagelink'    => '<span class="screen-reader-text">Page </span>%',
-					'separator'   => '<span class="screen-reader-text">, </span>',
-				) );
 
 				$i++;
 			// End the loop.
 			endwhile;
 
-			// Previous/next page navigation.
-			the_posts_pagination( array(
-				'prev_text'          => __( 'Previous page', 'twentysixteen' ),
-				'next_text'          => __( 'Next page', 'twentysixteen' ),
-				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentysixteen' ) . ' </span>',
-			) );
 
 		// If no content, include the "No posts found" template.
 		
