@@ -124,11 +124,47 @@ function sundialSkuParallaxProductViews( $info ) {
 	jQuery('.previous_sundial_static_post').click( function(e) {
 	
 		e.preventDefault();
-		target = jQuery(this).attr('target');
+		var target = jQuery(this).attr('target');
 		if (target != 'none') {
 		
 			target = parseInt(target);
+			var last = jQuery('article').length - 1;
+		
+		}
+		
+	});
+	
+	jQuery('.next_sundial_static_post').click( function(e) {
+	
+		e.preventDefault();
+		var target = jQuery(this).attr('target');
+		if (target != 'none') {
+		
+			target = parseInt(target);
+			var current = target - 1;
+			var last = jQuery('article').length - 1;
+			for (i=0; i < last, i++) {
 			
+				var $article = jQuery('.targetId'+i);
+				if (i == current) {
+					$article.parent().removeClass().addClass('sundial_prev_static_post left-side number1')
+				}
+				if (i == (current-1)) {
+					$article.parent().removeClass().addClass('sundial_numbered_static_post left-side number2')
+				}
+				if (i < (current-1)) {
+					var leftNo = current - i;
+					$article.parent().removeClass().addClass('sundial_numbered_static_post left-side number'+leftNo);
+				}
+				if (i == target) {
+					$article.parent().removeClass().addClass('sundial_active_static_post')
+				}
+				if (i < target) {
+					var rightNo = i - target;
+					$article.parent().removeClass().addClass('sundial_numbered_static_post right-side number'+rightNo);
+				}
+			
+			}
 		
 		}
 		
@@ -160,10 +196,12 @@ jQuery(document).ready(function($) {
 		infoTop = (cAc_wpsmlViewport.height + $info.height())/-2;
 // 		$info.css('visibility', 'hidden');
 		if (cAc_wpsmlViewport.width >= 768) {
+			$info.css('position', 'relative');
 			$info.css('top', infoTop+'px');
 		}
 		else {
-			$info.css('top', '-'+cAc_wpsmlViewport.height+'px');
+			$info.css('position', 'absolute');
+			$info.css('top', 0);
 		}
 				
 		if (typeof(ScrollMagic) == 'function') {

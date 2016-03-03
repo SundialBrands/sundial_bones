@@ -86,7 +86,7 @@ $product_navcats = array(
 					?>
 				
 					<?php if( $i == 0 ) {  echo '<div class="sundial_active_static_post">'; } ?>
-					<?php if( $i == 1 ) { echo '<div class="sundial_next_static_post">'; } ?>
+					<?php if( $i == 1 ) { echo '<div class="sundial_next_static_post right-side number1">'; } ?>
 					<?php if( $i > 1 ) { echo '<div class="sundial_numbered_static_post right-side number' . $i . '">'; } ?>
 						
 						<article id="post-<?php the_ID(); ?>" <?php post_class( array( $color, 'targetId' . $i ) ); ?> >
