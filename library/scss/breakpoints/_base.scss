@@ -607,6 +607,27 @@ POSTS & CONTENT STYLES
 	}
 	.sundial_static_post_containers {
 	
+		.previous_sundial_static_post {
+			position: fixed;
+			top: 50%;
+			font-size: 2em;
+			left: 1em;
+			cursor: pointer;
+			display: none;
+			z-index: 40;
+		}
+	
+	
+		.next_sundial_static_post {
+			position: fixed;
+			top: 50%;
+			font-size: 2em;
+			right: 1em;
+			cursor: pointer;
+			display: none;
+			z-index: 40;
+		}
+		
 		.sundial_prev_static_post {
 			position: relative;
 			top: 0;
@@ -620,27 +641,6 @@ POSTS & CONTENT STYLES
 		}
 	
 		.sundial_active_static_post {
-	
-			.previous_sundial_static_post {
-				position: fixed;
-				top: 50%;
-				font-size: 2em;
-				left: 1em;
-				cursor: pointer;
-				display: none;
-				z-index: 40;
-			}
-		
-		
-			.next_sundial_static_post {
-				position: fixed;
-				top: 50%;
-				font-size: 2em;
-				right: 1em;
-				cursor: pointer;
-				display: none;
-				z-index: 40;
-			}
 		
 			.sundial_static_post_container {
 				position: fixed;
