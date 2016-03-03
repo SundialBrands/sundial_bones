@@ -121,6 +121,18 @@ function sundialSkuParallaxProductViews( $info ) {
 	
 	});
 	
+	jQuery('.previous_sundial_static_post').click( function(e) {
+	
+		e.preventDefault();
+		target = jQuery(this).attr('target');
+		if (target != 'none') {
+		
+			
+		
+		}
+		
+	});
+	
 	return false;
 
 }
