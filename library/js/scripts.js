@@ -166,6 +166,9 @@ function sundialSkuParallaxProductViews( $info ) {
 					var rightNo = i - target;
 					$article.parent().removeClass().addClass('sundial_numbered_static_post right-side number'+rightNo);
 				}
+				if (target == last) {
+					jQuery('.trigger_next_sundial_static_post').hide()
+				}
 			
 			}
 		
