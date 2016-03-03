@@ -270,17 +270,22 @@ custom fields for cac_wfs_sample
 
 if( function_exists( 'create_post_type_cac_wfs_sample' ) ) {
 	require_once get_stylesheet_directory() . '/cAc-wp-free-samples/metabox.php';
-	add_action('admin_head', 'sundial_cAc_wfs_admin_enqueue');
+	add_action( 'admin_head', 'sundial_cAc_wfs_admin_enqueue' );
+	add_action( 'wp_enqueue_scripts', 'sundial_cAc_wfs_enqueue' );
 }
 
 function sundial_cAc_wfs_admin_enqueue() {
 
 	global $post;
-	wp_register_script( 'sundial-sm-cac_wfs', get_stylesheet_directory_uri() . '/library/js/cac_wfs-admin.js', array( 'jquery' ) );
+	wp_register_script( 'sundial-sm-cac_wfs-admin', get_stylesheet_directory_uri() . '/library/js/cac_wfs-admin.js', array( 'jquery' ) );
 	$this_post = $post->ID;
-	wp_localize_script( 'sundial-sm-cac_wfs', 'sundialCacwfsSampleId',  $this_post );
-	wp_enqueue_script( 'sundial-sm-cac_wfs' );
+	wp_localize_script( 'sundial-sm-cac_wfs-admin', 'sundialCacwfsSampleId',  $this_post );
+	wp_enqueue_script( 'sundial-sm-cac_wfs-admin' );
 
+}
+
+function sundial_cAc_wfs_enqueue() {
+	wp_enqueue_script( 'sundial-sm-cac_wfs', get_stylesheet_directory_uri() . '/library/js/cac_wfs.js', array( 'jquery' ) );
 }
 
 

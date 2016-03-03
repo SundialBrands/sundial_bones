@@ -137,7 +137,7 @@
 
 								<header class="article-header entry-header cAc_wfs-sample-header">
 
-								  	<?php if( has_post_thumbnail() ) { the_post_thumbnail( 'thumbnail', array( 'class' => 'cAc_wfs-sample-img-main header-right' ) ); }?>
+								  	<?php if( has_post_thumbnail() ) { the_post_thumbnail( array(800,800), array( 'class' => 'cAc_wfs-sample-img-main header-right' ) ); }?>
 								  	<div class="box paint-bg <?php echo $sample_data['color'] ?> cAc_wfs-sample-benefit">
 								  		<?php echo $sample_data['benefit']; ?>
 								  	</div>
@@ -235,40 +235,56 @@
 									<a class="cAc_wfs-sample-form-close" href="#!"> X </a>
 									
 									<div class="cAc_wfs-sample-cta box <?php echo $sample_data['color']; ?>">
-										<h1 class="cAc_wfs-sample-cta-title">
-											Free Deluxe Sample Pack
-										</h1>
-										<p class="cAc_wfs-sample-cta-includes">
-											Deluxe Sample Pack Includes:<br/>
-											<?php echo $sample_data['item_one'] ?><br />
-											<?php echo $sample_data['item_two'] ?>
-										</p>
-										<a class="btn" href="#!">Get Your Sample</a>
+										
+										<div class="cAc_wfs-sample-cta-initial row">
+											<div class="col-sm-6">
+												<h1 class="cAc_wfs-sample-cta-title">
+													Free Deluxe Sample Pack
+												</h1>
+												<p class="cAc_wfs-sample-cta-includes">
+													Deluxe Sample Pack Includes:<br/>
+													<?php echo $sample_data['item_one'] ?><br />
+													<?php echo $sample_data['item_two'] ?>
+												</p>
+											</div>
+											<div class="col-sm-6">
+												<a class="btn" href="#!">Get Your Sample</a>
+											</div>
+										</div>
+										
+										<div class="cAc_wfs-sample-form row">
+											<div class="col-sm-12">
+												<h1>Enter your information to receive your free sample of SheaMoisture <?php the_title()  ?>:</h1>
+											</div>
+											<form id="cAc_wfs-sample-form">
+												<div class="col-sm-6">
+													<h3>Your Name</h3>
+													<label for="cAc_wfs_firstname">First:</label>
+													<input type="text" name="cAc_wfs_firstname" />
+													<label for="cAc_wfs_lastname">Last:</label>
+													<input type="text" name="cAc_wfs_lastname" />
+													<h3>Your Contact Information</h3>
+													<label for="cAc_wfs_email">Email:</label>
+													<input type="email" name="cAc_wfs_email" />
+													<label for="cAc_wfs_phone">Phone:</label>
+													<input type="tel" name="cAc_wfs_phone" />
+												</div>
+												<div class="col-sm-6">
+													<h3>Your Address</h3>
+													<label for="cAc_wfs_address">Street Address:</label>
+													<input type="text" name="cAc_wfs_address" />
+													<label for="cAc_wfs_city">City:</label>
+													<input type="text" name="cAc_wfs_city" />
+													<label for="cAc_wfs_state">State:</label>
+													<input type="text" name="cAc_wfs_state" />
+													<label for="cAc_wfs_code">Postal Code:</label>
+													<input type="text" name="cAc_wfs_code" />
+												</div>
+												
+											</form>
+										</div>
 									</div>
-									<div class="cAc_wfs-sample-form">
-										<form id="cAc_wfs-sample-form">
-											<h3>Your Name</h3>
-											<label for="cAc_wfs_firstname">First:</label>
-											<input type="text" name="cAc_wfs_firstname" />
-											<label for="cAc_wfs_lastname">Last:</label>
-											<input type="text" name="cAc_wfs_lastname" />
-											<h3>Your Address</h3>
-											<label for="cAc_wfs_address">Street Address:</label>
-											<input type="text" name="cAc_wfs_address" />
-											<label for="cAc_wfs_city">City:</label>
-											<input type="text" name="cAc_wfs_city" />
-											<label for="cAc_wfs_state">State:</label>
-											<input type="text" name="cAc_wfs_state" />
-											<label for="cAc_wfs_code">Postal Code:</label>
-											<input type="text" name="cAc_wfs_code" />
-											<h3>Your Contact Information</h3>
-											<label for="cAc_wfs_email">Email:</label>
-											<input type="email" name="cAc_wfs_email" />
-											<label for="cAc_wfs_phone">Phone:</label>
-											<input type="tel" name="cAc_wfs_phone" />
-											
-										</form>
-									</div>
+									
 								
 								</footer> <?php // end article footer ?>
 

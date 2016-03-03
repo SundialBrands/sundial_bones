@@ -32,12 +32,11 @@ form > div, div.form-field {
 	}
 	
 	select {
-		float: left;
 		width: 100%;
 	}
 	
 	label {
-		float: left;
+		
 		line-height: 2.4em;
 		width: auto;
 		text-transform: uppercase;
@@ -45,7 +44,6 @@ form > div, div.form-field {
 	}
 	
 	input {
-		float: left;
 		margin: 0;
 		width: 100% !important;	//override 'responsive.css' !important directive
 		border: 1px solid $shea-brown;
@@ -73,8 +71,7 @@ form > div, div.form-field {
 	
 	textarea {
 		border: 1px solid $shea-brown;
-		float: left;
-		height: 100px;
+		height: 10em;
 		width: 100%;
 		padding:10px;
 	}
@@ -373,7 +370,6 @@ form > div, div.form-field {
 		margin-bottom: 0.75em;
 		
 		label {
-			float: left;
 			line-height: 2.5em;
 			margin-right: 0;
 			text-align: left;
@@ -381,7 +377,6 @@ form > div, div.form-field {
 		}
 		
 		input, select, textarea {
-			@include float(100% !important);
 			border: 1px solid $shea-brown;
 			padding: 0.75em;
 		}

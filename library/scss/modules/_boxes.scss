@@ -76,12 +76,13 @@ Stylesheet: Box Styles
 			&:focus,
 			&:active {
 				background-color: nth($colors, 3);
+				color: nth($colors, 1);
 			}
 				
 		}
 		
 		&.paint-bg, &.paint-bg a {
-// 			text-shadow: 1px 1px $shea-brown;
+			text-shadow: 1px 1px $dark-gray;
 		}
 		
 	}
