@@ -162,6 +162,8 @@ jQuery(document).ready(function($) {
 		if (cAc_wpsmlViewport.width >= 768) {
 			$info.css('top', infoTop+'px');
 		}
+		else {
+			$info.css('top', '-'+cAc_wpsmlViewport.height+'px');
 	
 		if (typeof(ScrollMagic) == 'function') {
 		
