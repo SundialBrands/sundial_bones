@@ -143,7 +143,7 @@ function sundialSkuParallaxProductViews( $info ) {
 			target = parseInt(target);
 			var current = target - 1;
 			var last = jQuery('article').length - 1;
-			for (i=0; i < last, i++) {
+			for (i=0; i < last; i++) {
 			
 				var $article = jQuery('.targetId'+i);
 				if (i == current) {
