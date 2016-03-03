@@ -113,7 +113,7 @@ function sundialSkuParallaxProductViews( $info ) {
 	console.log('using parallax');
 	//testing fallback click behavior here, rather than disabling checks or things they check.
 	//#BackwardLaziness.
-	jQuery('.sundial_static_post wrap').click( function(e) {
+	jQuery('.sundial_static_post_container').click( function(e) {
 	
 		e.preventDefault();
 		$info.toggleClass('visible');
@@ -121,7 +121,7 @@ function sundialSkuParallaxProductViews( $info ) {
 	
 	});
 	
-	jQuery('.previous_sundial_static_post').click( function(e) {
+	jQuery('.trigger_previous_sundial_static_post').click( function(e) {
 	
 		e.preventDefault();
 		var target = jQuery(this).attr('target');
@@ -134,7 +134,7 @@ function sundialSkuParallaxProductViews( $info ) {
 		
 	});
 	
-	jQuery('.next_sundial_static_post').click( function(e) {
+	jQuery('.trigger_next_sundial_static_post').click( function(e) {
 	
 		e.preventDefault();
 		var target = jQuery(this).attr('target');
