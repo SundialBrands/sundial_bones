@@ -3387,7 +3387,7 @@ you can add resource intensive styles.
   /* line 296, ../scss/breakpoints/_768up.scss */
   #content .product-information {
     width: 50%;
-    max-height: 75%;
+    max-height: 100%;
     height: auto;
     margin: 0 auto;
   }
@@ -3523,6 +3523,11 @@ This is for the larger monitors and possibly full screen viewers.
   /* line 34, ../scss/breakpoints/_1240up.scss */
   header.header nav .nav li a {
     font-size: 1em;
+  }
+
+  /* line 47, ../scss/breakpoints/_1240up.scss */
+  #content .product-information {
+    max-height: 70%;
   }
 }
 /*********************

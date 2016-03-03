@@ -341,7 +341,7 @@ SIDEBARS & ASIDES
 /* line 296, ../scss/breakpoints/_768up.scss */
 #content .product-information {
   width: 50%;
-  max-height: 75%;
+  max-height: 100%;
   height: auto;
   margin: 0 auto;
 }
