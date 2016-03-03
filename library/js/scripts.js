@@ -110,7 +110,17 @@ var cAc_wpsmlViewport;
 
 function sundialSkuParallaxProductViews( $info ) {
 	
-	console.log('using parallax');	
+	console.log('using parallax');
+	//testing fallback click behavior here, rather than disabling checks or things they check.
+	//#BackwardLaziness.
+	jQuery('.sundial_static_post_container').click( function(e) {
+	
+		e.preventDefault();
+		$info.toggleClass('visible');
+		$info.toggleClass('opaque');
+	
+	});
+	
 	return false;
 
 }

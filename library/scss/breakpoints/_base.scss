@@ -701,6 +701,21 @@ POSTS & CONTENT STYLES
 			
 			}
 	
+			.product-info {
+				@include transition(opacity 0.75s ease-in-out);
+				opacity: 0;
+				visibility: hidden;
+				
+				&.opaque {
+					opacity: 1;
+				}
+				
+				&.visible {
+					visibility: visible;
+				}
+				
+			}
+	
 		}
 	
 	}
