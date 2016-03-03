@@ -108,12 +108,42 @@ var cAc_wpsmlViewport;
 
 
 
+function sundialSkuParallaxProductViews() {
+	
+	console.log('using parallax');	
+	return false;
+
+}
+
+function sundialSkuClickProductViews() {
+	
+	console.log('using click');	
+	return false;
+
+}
+
+
+
 /*
  * Put all your regular jQuery in here.
 */
 jQuery(document).ready(function($) {
 
 	cAc_wpsmlViewport = updateViewportDimensions();
+	
+	if (SKU_MANAGEMENT_LOADED) {
+	
+		if (typeof('ScrollMagic')=='function') {
+		
+			sundialSkuParallaxProductViews();
+			
+		}
+		else {
+			
+			sundialSkuClickProductViews();
+		}
+	
+	}
 	
 	$(window).resize(function () {
 
