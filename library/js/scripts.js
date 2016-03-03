@@ -116,8 +116,14 @@ function sundialSkuParallaxProductViews( $info ) {
 	jQuery('.sundial_static_post-benefit, .sundial_static_post-title, .sundial_static_post-image, .sundial_static_post-needstate, .product-information .description').click( function(e) {
 	
 		e.preventDefault();
-		$info.toggleClass('visible');
-		$info.toggleClass('opaque');
+		if ($info.hasClass('visible') {
+			$info.toggleClass('opaque');
+			$info.toggleClass('visible');
+		}
+		else {
+			$info.toggleClass('visible');
+			$info.toggleClass('opaque');
+		}
 	
 	});
 	
@@ -139,6 +145,8 @@ function sundialSkuParallaxProductViews( $info ) {
 		e.preventDefault();
 		var target = jQuery(this).attr('target');
 		var last = jQuery('article').length;
+		$info.removeClass('opaque');
+		$info.removeClass('visible');
 		if (target != 'none' && target != last) {
 		
 			target = parseInt(target);
