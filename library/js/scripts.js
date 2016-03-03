@@ -164,7 +164,8 @@ jQuery(document).ready(function($) {
 		}
 		else {
 			$info.css('top', '-'+cAc_wpsmlViewport.height+'px');
-	
+		}
+				
 		if (typeof(ScrollMagic) == 'function') {
 		
 			sundialSkuParallaxProductViews($info);
