@@ -44,12 +44,6 @@ $product_navcats = array(
 				?>
 			</header><!-- .page-header -->
 			<div class="sundial_static_post_containers">
-				<div class="previous_sundial_static_post">
-					<i class="fa fa-chevron-left"></i>
-				</div>
-				<div class="next_sundial_static_post">
-					<i class="fa fa-chevron-right"></i>
-				</div>
 				<div class="sundial_prev_static_post">
 				</div>
 				<?php
@@ -91,10 +85,15 @@ $product_navcats = array(
 				
 					?>
 				
-					<?php if( $i == 0 ) { echo '<div class="sundial_active_static_post">'; } ?>
+					<?php if( $i == 0 ) {  echo '<div class="sundial_active_static_post">'; } ?>
 					<?php if( $i == 1 ) { echo '<div class="sundial_next_static_post">'; } ?>
 					<?php if( $i > 1 ) { echo '<div class="sundial_numbered_static_post right-side number' . $i . '">'; } ?>
-				
+						<div target="<?php echo ($i==0) ? 'none' : 'article.targetId'.($i-1); ?>" class="previous_sundial_static_post">
+							<i class="fa fa-chevron-left"></i>
+						</div>
+						<div target="article.targetId<?php echo ($i+1); ?>" class="next_sundial_static_post">
+							<i class="fa fa-chevron-right"></i>
+						</div>
 						<article id="post-<?php the_ID(); ?>" <?php post_class( $color ); ?> >
 							<div class="sundial_static_post_container">
 								<div class="sundial_static_post wrap cf">
