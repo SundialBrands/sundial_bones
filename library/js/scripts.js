@@ -108,14 +108,14 @@ var cAc_wpsmlViewport;
 
 
 
-function sundialSkuParallaxProductViews() {
+function sundialSkuParallaxProductViews( $info ) {
 	
 	console.log('using parallax');	
 	return false;
 
 }
 
-function sundialSkuClickProductViews() {
+function sundialSkuClickProductViews( $info ) {
 	
 	console.log('using click');	
 	return false;
@@ -131,16 +131,21 @@ jQuery(document).ready(function($) {
 
 	cAc_wpsmlViewport = updateViewportDimensions();
 	
-	if (SKU_MANAGEMENT_LOADED) {
+	if (SKU_MANAGEMENT_LOADED && $('.sundial_static_post_container').length > 0) {
+	
+		$info = $('.sundial_static_post_container .product-information');
+		infoTop = (cAc_wpsmlViewport.height - $info.height())/2;
+		$info.css('visibility', 'hidden');
+		$info.css('top', infoTop+'px');
 	
 		if (typeof(ScrollMagic) == 'function') {
 		
-			sundialSkuParallaxProductViews();
+			sundialSkuParallaxProductViews($info);
 			
 		}
 		else {
 			
-			sundialSkuClickProductViews();
+			sundialSkuClickProductViews($info);
 		}
 	
 	}
