@@ -145,7 +145,7 @@ jQuery(document).ready(function($) {
 	
 		$info = $('.sundial_static_post_container .product-information');
 		infoTop = (cAc_wpsmlViewport.height + $info.height())/-2;
-		$info.css('visibility', 'hidden');
+// 		$info.css('visibility', 'hidden');
 		$info.css('top', infoTop+'px');
 	
 		if (typeof(ScrollMagic) == 'function') {
