@@ -91,10 +91,10 @@ $product_navcats = array(
 						
 						<article id="post-<?php the_ID(); ?>" <?php post_class( array( $color, 'targetId' . $i ) ); ?> >
 							<div class="sundial_static_post_container">
-								<div target="<?php echo ($i==0) ? 'none' : ($i-1); ?>" class="previous_sundial_static_post">
+								<div target="<?php echo ($i==0) ? 'none' : ($i-1); ?>" class="trigger_previous_sundial_static_post">
 									<i class="fa fa-chevron-left"></i>
 								</div>
-								<div target="<?php echo ($i+1); ?>" class="next_sundial_static_post">
+								<div target="<?php echo ($i+1); ?>" class="trigger_next_sundial_static_post">
 									<i class="fa fa-chevron-right"></i>
 								</div>
 								<div class="sundial_static_post wrap cf">
