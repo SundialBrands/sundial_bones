@@ -133,7 +133,7 @@ jQuery(document).ready(function($) {
 	
 	if (SKU_MANAGEMENT_LOADED) {
 	
-		if (typeof('ScrollMagic')=='function') {
+		if (typeof(ScrollMagic) == 'function') {
 		
 			sundialSkuParallaxProductViews();
 			
