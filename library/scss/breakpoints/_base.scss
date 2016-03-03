@@ -709,7 +709,7 @@ POSTS & CONTENT STYLES
 					
 						img.collection-image {
 							max-height: 100%;
-							max-width: 100%;
+							max-width: 50%;
 							height: auto;
 							cursor: pointer;
 						}
@@ -739,6 +739,10 @@ POSTS & CONTENT STYLES
 					&.visible {
 						visibility: visible;
 						cursor: pointer;
+					}
+					
+					.description p {
+						margin: 0;
 					}
 				
 				}
