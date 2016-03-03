@@ -134,7 +134,7 @@ jQuery(document).ready(function($) {
 	if (SKU_MANAGEMENT_LOADED && $('.sundial_static_post_container').length > 0) {
 	
 		$info = $('.sundial_static_post_container .product-information');
-		infoTop = (cAc_wpsmlViewport.height - $info.height())/2;
+		infoTop = (cAc_wpsmlViewport.height)/-2;
 		$info.css('visibility', 'hidden');
 		$info.css('top', infoTop+'px');
 	
