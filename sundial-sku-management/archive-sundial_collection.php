@@ -44,8 +44,7 @@ $product_navcats = array(
 				?>
 			</header><!-- .page-header -->
 			<div class="sundial_static_post_containers">
-				<div class="sundial_prev_static_post">
-				</div>
+				
 				<?php
 				// Start the Loop.
 				$i=0;
