@@ -607,13 +607,15 @@ POSTS & CONTENT STYLES
 	}
 	.sundial_static_post_containers {
 	
-		.sundial_prev_static_post {
+		.sundial_prev_static_post,
+		.sundial_numbered_static_post.left-side {
 			position: relative;
 			top: 0;
 			left: -100%;
 		}
 	
-		.sundial_next_static_post {
+		.sundial_next_static_post,
+		.sundial_numbered_static_post.right-side {
 			position: relative;
 			top: 0;
 			left: 100%;
