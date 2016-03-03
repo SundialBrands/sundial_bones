@@ -116,7 +116,7 @@ function sundialSkuParallaxProductViews( $info ) {
 	jQuery('.sundial_static_post-benefit, .sundial_static_post-title, .sundial_static_post-image, .sundial_static_post-needstate, .product-information .description').click( function(e) {
 	
 		e.preventDefault();
-		if ($info.hasClass('visible') {
+		if ($info.hasClass('visible') ) {
 			$info.toggleClass('opaque');
 			$info.toggleClass('visible');
 		}
