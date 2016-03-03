@@ -2337,7 +2337,7 @@ POSTS & CONTENT STYLES
   left: 0;
 }
 /* line 704, ../scss/breakpoints/_base.scss */
-#content .sundial_active_static_post .sundial_static_post_container .product-info {
+#content .sundial_active_static_post .sundial_static_post_container .product-information {
   -webkit-transition: opacity 0.75s ease-in-out;
   -moz-transition: opacity 0.75s ease-in-out;
   -ms-transition: opacity 0.75s ease-in-out;
@@ -2347,11 +2347,11 @@ POSTS & CONTENT STYLES
   visibility: hidden;
 }
 /* line 709, ../scss/breakpoints/_base.scss */
-#content .sundial_active_static_post .sundial_static_post_container .product-info.opaque {
+#content .sundial_active_static_post .sundial_static_post_container .product-information.opaque {
   opacity: 1;
 }
 /* line 713, ../scss/breakpoints/_base.scss */
-#content .sundial_active_static_post .sundial_static_post_container .product-info.visible {
+#content .sundial_active_static_post .sundial_static_post_container .product-information.visible {
   visibility: visible;
 }
 
