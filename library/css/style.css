@@ -2347,7 +2347,7 @@ POSTS & CONTENT STYLES
 /* line 710, ../scss/breakpoints/_base.scss */
 #content .sundial_static_post_containers .sundial_active_static_post .sundial_static_post_container .sundial_static_post .sundial_static_post-image img.collection-image {
   max-height: 100%;
-  max-width: 50%;
+  max-width: 60%;
   height: auto;
   cursor: pointer;
 }
@@ -3407,6 +3407,10 @@ you can add resource intensive styles.
     height: auto;
     margin: 0 auto;
   }
+  /* line 302, ../scss/breakpoints/_768up.scss */
+  #content .product-information .description {
+    font-size: 1.7em;
+  }
 
   /*********************
   FOOTER STYLES
@@ -3416,7 +3420,7 @@ you can add resource intensive styles.
   of overriding here if you styled them for
   mobile. Make sure to double check these!
   */
-  /* line 317, ../scss/breakpoints/_768up.scss */
+  /* line 322, ../scss/breakpoints/_768up.scss */
   .footer-links ul li {
     /*
     be careful with the depth of your menus.
