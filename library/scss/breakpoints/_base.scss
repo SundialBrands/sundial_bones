@@ -605,145 +605,146 @@ POSTS & CONTENT STYLES
 		}
 	
 	}
+	.sundial_static_post_containers {
 	
-	.sundial_prev_static_post {
-		position: relative;
-		top: 0;
-		left: -100%;
-	}
-	
-	.sundial_next_static_post {
-		position: relative;
-		top: 0;
-		left: 100%;
-	}
-	
-	.sundial_active_static_post {
-	
-		.previous_sundial_static_post {
-			position: fixed;
-			top: 50%;
-			font-size: 2em;
-			left: 1em;
-			cursor: pointer;
-			display: none;
-			z-index: 40;
+		.sundial_prev_static_post {
+			position: relative;
+			top: 0;
+			left: -100%;
 		}
-		
-		
-		.next_sundial_static_post {
-			position: fixed;
-			top: 50%;
-			font-size: 2em;
-			right: 1em;
-			cursor: pointer;
-			display: none;
-			z-index: 40;
+	
+		.sundial_next_static_post {
+			position: relative;
+			top: 0;
+			left: 100%;
 		}
-		
-		.sundial_static_post_container {
-			position: fixed;
-			top: 15%;
-			left: 0;
-			width: 100%;
-			height: 85%;
-		
-			.sundial_static_post_block {		
-				height: 25%;
-				width: 100%;
+	
+		.sundial_active_static_post {
+	
+			.previous_sundial_static_post {
 				position: fixed;
-				bottom: 0;
-				z-index: -1;
-		
-				.sundial_static_post-needstate {
-					text-align: center;
-					font-family: $serif;
-					position: relative;
-					top: 1em;
-					
-					h2 {
-						font-size: 2.5em;
-						text-transform: lowercase;
-						color: $white;
-						font-style: italic;
-					}
-					
-				}
-				
+				top: 50%;
+				font-size: 2em;
+				left: 1em;
+				cursor: pointer;
+				display: none;
+				z-index: 40;
 			}
-			
-			.sundial_static_post {
-				position: relative;
-			
-				.sundial_static_post-benefit {
-					text-align: center;
-					text-transform: uppercase;
+		
+		
+			.next_sundial_static_post {
+				position: fixed;
+				top: 50%;
+				font-size: 2em;
+				right: 1em;
+				cursor: pointer;
+				display: none;
+				z-index: 40;
+			}
+		
+			.sundial_static_post_container {
+				position: fixed;
+				top: 15%;
+				left: 0;
+				width: 100%;
+				height: 85%;
+		
+				.sundial_static_post_block {		
+					height: 25%;
+					width: 100%;
+					position: fixed;
+					bottom: 0;
+					z-index: -1;
+		
+					.sundial_static_post-needstate {
+						text-align: center;
+						font-family: $serif;
+						position: relative;
+						top: 1em;
 					
 						h2 {
-							font-weight: 400;
 							font-size: 2.5em;
-							margin: 0;
+							text-transform: lowercase;
+							color: $white;
+							font-style: italic;
 						}
-						
+					
+					}
+				
 				}
 			
-				.sundial_static_post-title {
-					text-align: center;
-					text-transform: uppercase;
-					cursor: pointer;
-					
-						h1 {
-							font-weight: 400;
-							margin: 0
-						}
-						
-				}
-				
-				.sundial_static_post-image {
-					text-align: center;
+				.sundial_static_post {
 					position: relative;
-					max-height: 40%; 
+			
+					.sundial_static_post-benefit {
+						text-align: center;
+						text-transform: uppercase;
 					
-					img.collection-image {
-						max-height: 100%;
-						max-width: 100%;
-						height: auto;
+							h2 {
+								font-weight: 400;
+								font-size: 2.5em;
+								margin: 0;
+							}
+						
+					}
+			
+					.sundial_static_post-title {
+						text-align: center;
+						text-transform: uppercase;
+						cursor: pointer;
+					
+							h1 {
+								font-weight: 400;
+								margin: 0
+							}
+						
+					}
+				
+					.sundial_static_post-image {
+						text-align: center;
+						position: relative;
+						max-height: 40%; 
+					
+						img.collection-image {
+							max-height: 100%;
+							max-width: 100%;
+							height: auto;
+							cursor: pointer;
+						}
+					
+						img.sundial_static_post-burst {
+							max-width: 100%;
+							max-height: 100%;
+							z-index: -1;
+							position: absolute;
+							top: 0;
+							left: 0;
+						}
+					
+					}
+			
+				}
+	
+				.product-information {
+					@include transition(opacity 0.75s ease-in-out);
+					opacity: 0;
+					visibility: hidden;
+				
+					&.opaque {
+						opacity: 1;
+					}
+				
+					&.visible {
+						visibility: visible;
 						cursor: pointer;
 					}
-					
-					img.sundial_static_post-burst {
-    					max-width: 100%;
-    					max-height: 100%;
-    					z-index: -1;
-    					position: absolute;
-    					top: 0;
-    					left: 0;
-    				}
-					
+				
 				}
-			
-			}
 	
-			.product-information {
-				@include transition(opacity 0.75s ease-in-out);
-				opacity: 0;
-				visibility: hidden;
-				
-				&.opaque {
-					opacity: 1;
-				}
-				
-				&.visible {
-					visibility: visible;
-					cursor: pointer;
-				}
-				
 			}
 	
 		}
-	
 	}
-	
 }
 
 		.hentry {
