@@ -70,7 +70,7 @@ style a page via class
 LAYOUT & GRID STYLES
 *********************/
 #container {
-	overflow-x: hidden;
+	overflow: hidden;
 }
 
 .wrap {
@@ -382,6 +382,7 @@ POSTS & CONTENT STYLES
 			z-index: 10;
 			position: relative;
 			opacity: 0.2;
+			min-height: 600px;
 		}
 		
 		.cAc_wpsml-media {
