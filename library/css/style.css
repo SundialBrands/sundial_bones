@@ -2930,72 +2930,72 @@ PRODUCT INFORMATION
 }
 
 /* line 1210, ../scss/breakpoints/_base.scss */
-div.class.bgcolor {
+div.gray.bgcolor {
   background-color: #a7a9ac;
   color: white;
 }
 /* line 1213, ../scss/breakpoints/_base.scss */
-div.class.bgcolor a {
+div.gray.bgcolor a {
   color: #fff;
 }
 /* line 1216, ../scss/breakpoints/_base.scss */
-div.class.bgcolor a:hover {
+div.gray.bgcolor a:hover {
   color: #ebecec;
 }
 
 /* line 1210, ../scss/breakpoints/_base.scss */
-div.class.bgcolor {
+div.lilac.bgcolor {
   background-color: #af95c6;
   color: white;
 }
 /* line 1213, ../scss/breakpoints/_base.scss */
-div.class.bgcolor a {
+div.lilac.bgcolor a {
   color: #704d8f;
 }
 /* line 1216, ../scss/breakpoints/_base.scss */
-div.class.bgcolor a:hover {
+div.lilac.bgcolor a:hover {
   color: #c1acd2;
 }
 
 /* line 1210, ../scss/breakpoints/_base.scss */
-div.class.bgcolor {
+div.pink.bgcolor {
   background-color: #ce7e9d;
   color: white;
 }
 /* line 1213, ../scss/breakpoints/_base.scss */
-div.class.bgcolor a {
+div.pink.bgcolor a {
   color: #8c0e3f;
 }
 /* line 1216, ../scss/breakpoints/_base.scss */
-div.class.bgcolor a:hover {
+div.pink.bgcolor a:hover {
   color: #d898b1;
 }
 
 /* line 1210, ../scss/breakpoints/_base.scss */
-div.class.bgcolor {
+div.teal.bgcolor {
   background-color: #63b0bb;
   color: white;
 }
 /* line 1213, ../scss/breakpoints/_base.scss */
-div.class.bgcolor a {
+div.teal.bgcolor a {
   color: #009db3;
 }
 /* line 1216, ../scss/breakpoints/_base.scss */
-div.class.bgcolor a:hover {
+div.teal.bgcolor a:hover {
   color: #75b9c3;
 }
 
 /* line 1210, ../scss/breakpoints/_base.scss */
-div.class.bgcolor {
+div.yellow.bgcolor {
   background-color: #ecba4b;
   color: white;
 }
 /* line 1213, ../scss/breakpoints/_base.scss */
-div.class.bgcolor a {
+div.yellow.bgcolor a {
   color: #a87400;
 }
 /* line 1216, ../scss/breakpoints/_base.scss */
-div.class.bgcolor a:hover {
+div.yellow.bgcolor a:hover {
   color: #f1cd7e;
 }
 

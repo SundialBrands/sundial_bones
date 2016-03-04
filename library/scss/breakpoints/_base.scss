@@ -1207,7 +1207,7 @@ PRODUCT INFORMATION
 
 @each $class, $colors in $colorclasses {
 	
-	div.#{class}.bgcolor {
+	div.#{$class}.bgcolor {
 		background-color: nth($colors, 1);
 		color: white;
 			a {
