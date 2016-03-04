@@ -706,6 +706,11 @@ POSTS & CONTENT STYLES
 						position: relative;
 						max-height: 40%;
 						background-repeat: no-repeat;
+						background-size: cover;
+					
+						&.product {
+							z-index: -1;
+						}
 					
 						img.collection-image {
 // 							max-height: 40%;
@@ -775,6 +780,22 @@ POSTS & CONTENT STYLES
 	
 		}
 	}
+	
+	.sundial_product {
+		.sundial_static_post_containers {
+
+			.sundial_active_static_post {
+
+				.sundial_static_post_container {
+					position: static;
+				}
+			
+			}
+		
+		}
+		
+	}
+
 }
 
 		.hentry {
