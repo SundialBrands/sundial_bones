@@ -131,11 +131,45 @@ function sundialSkuParallaxProductViews( $info ) {
 	
 		e.preventDefault();
 		var target = jQuery(this).attr('target');
-		if (target != 'none') {
+		var last = jQuery('article').length;
+		$info.removeClass('opaque');
+		$info.removeClass('visible');
+		if (target != 'none' && target != last) {
 		
 			target = parseInt(target);
-			var last = jQuery('article').length;
+			var current = target + 1;
+			for (i=0; i < last; i++) {
+			
+				var $article = jQuery('.targetId'+i);
+				if (i == current) {
+					$article.parent().removeClass().addClass('sundial_next_static_post right-side number1')
+				}
+				if (i == (current+1)) {
+					$article.parent().removeClass().addClass('sundial_numbered_static_post right-side number2')
+				}
+				if (i > (current+1)) {
+					var rightNo = last - i;
+					$article.parent().removeClass().addClass('sundial_numbered_static_post right-side number'+rightNo);
+				}
+				if (i == target) {
+					$article.parent().removeClass().addClass('sundial_active_static_post');
+					if ($article.find('.trigger_previous_sundial_static_post').attr('target') == 'none') {
+						$article.find('.trigger_previous_sundial_static_post').hide();
+					}
+				}
+				if (i == (target-1)) {
+					$article.parent().removeClass().addClass('sundial_prev_static_post left-side number1');
+				}
+				if (i > (target-1)) {
+					var leftNo = last - target;
+					$article.parent().removeClass().addClass('sundial_numbered_static_post left-side number'+left);
+				}
+			
+			}
 		
+		}
+		if (target == 'none') {
+			jQuery('.trigger_next_sundial_static_post').hide()
 		}
 		
 	});
@@ -158,14 +192,17 @@ function sundialSkuParallaxProductViews( $info ) {
 					$article.parent().removeClass().addClass('sundial_prev_static_post left-side number1')
 				}
 				if (i == (current-1)) {
-					$article.parent().removeClass().addClass('sundial_numbered_static_post left-side number2')
+					$article.parent().removeClass().addClass('sundial_numbered_static_post left-side number2');
 				}
 				if (i < (current-1)) {
 					var leftNo = current - i;
 					$article.parent().removeClass().addClass('sundial_numbered_static_post left-side number'+leftNo);
 				}
 				if (i == target) {
-					$article.parent().removeClass().addClass('sundial_active_static_post')
+					$article.parent().removeClass().addClass('sundial_active_static_post');
+					if ($article.find('.trigger_next_sundial_static_post').attr('target') == last) {
+						$article.find('.trigger_next_sundial_static_post').hide();
+					}
 				}
 				if (i == (target+1)) {
 					$article.parent().removeClass().addClass('sundial_next_static_post right-side number1');
