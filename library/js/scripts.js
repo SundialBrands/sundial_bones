@@ -138,7 +138,7 @@ function sundialSkuParallaxProductViews( $info ) {
 		
 			target = parseInt(target);
 			var current = target + 1;
-			for (i=last; i >= 0; i--) {
+			for (i=last; i > 0; i--) {
 			
 				var $article = jQuery('.targetId'+i);
 				if (i == current) {
@@ -160,7 +160,7 @@ function sundialSkuParallaxProductViews( $info ) {
 				if (i == (target-1)) {
 					$article.parent().removeClass().addClass('sundial_prev_static_post left-side number1');
 				}
-				if (i > (target-1)) {
+				if (i < (target-1)) {
 					var leftNo = last - target;
 					$article.parent().removeClass().addClass('sundial_numbered_static_post left-side number'+leftNo);
 				}
