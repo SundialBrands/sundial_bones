@@ -2414,10 +2414,6 @@ POSTS & CONTENT STYLES
 #content .sundial_static_post_containers .sundial_active_static_post .sundial_static_post_container .product-information .description p {
   margin: 0;
 }
-/* line 796, ../scss/breakpoints/_base.scss */
-#content .sundial_static_post_containers .sundial_active_static_post .sundial_product .sundial_static_post_container {
-  position: static;
-}
 
 /* line 810, ../scss/breakpoints/_base.scss */
 .hentry .mcjw-amp {
