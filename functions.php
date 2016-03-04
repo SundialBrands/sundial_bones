@@ -231,8 +231,13 @@ function bones_comments( $comment, $args, $depth ) {
 } // don't remove this bracket!
 
 
-function sundial_products_only( $query ) {
-	$query->set( 'posts_type', 'sundial_product' );
+add_action( 'pre_get_posts', 'add_sundial_products' );
+function add_sundial_products( $query ) {
+	if( is_category() || is_tag() && empty( $query->query_vars['suppress_filters'] ) ) {
+    $query->set( 'post_type', array(
+     'post', 'nav_menu_item', 'sundial_product'
+		));
+	  return $query;
+	}
 }
-
 /* DON'T DELETE THIS CLOSING TAG */ ?>
