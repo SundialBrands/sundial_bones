@@ -305,14 +305,16 @@ SIDEBARS & ASIDES
 		
 	}
 	
+ 
 	.sundial_static_post_containers {
 
 		.sundial_active_static_post {
 
 			.sundial_static_post_container {
-			
-				.sundial_static_post-image {
-					background-size: cover;
+				.sundial_static_post {
+					.sundial_static_post-image {
+						background-size: cover;
+					}
 				}
 
 				.sundial_static_post_block {
