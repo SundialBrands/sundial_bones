@@ -203,6 +203,9 @@ function sundialSkuParallaxProductViews( $info ) {
 					if ($article.find('.trigger_next_sundial_static_post').attr('target') == last) {
 						$article.find('.trigger_next_sundial_static_post').hide();
 					}
+					if ($article.find('.trigger_previous_sundial_static_post').attr('target') != 'none') {
+						$article.find('.trigger_previous_sundial_static_post').show();
+					}
 				}
 				if (i == (target+1)) {
 					$article.parent().removeClass().addClass('sundial_next_static_post right-side number1');
