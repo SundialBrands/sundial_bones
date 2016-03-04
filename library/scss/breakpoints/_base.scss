@@ -1070,15 +1070,17 @@ PRODUCT INFORMATION
 		color: $mcjw-light-gray;
 		letter-spacing: -0.05em;
 		word-spacing: -0.05em;
+		line-height: 1.1;
 	}
 
 	.title {
-		font-size: 2.5em;
+		font-size: 2.25em;
 		text-transform: uppercase;
 		color: $mcjw-gray;
 		font-weight: 800;
 		letter-spacing: -0.04em;
 		word-spacing: -0.04em;
+		line-height: 1;
 	}
 
 	.ingredients {
@@ -1087,6 +1089,7 @@ PRODUCT INFORMATION
 		color: $mcjw-gray;
 		letter-spacing: -0.05em;
 		word-spacing: -0.05em;
+		line-height: 1.1;
 	}
 
 	.need-state {
