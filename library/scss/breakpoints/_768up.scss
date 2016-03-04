@@ -216,14 +216,14 @@ SIDEBARS & ASIDES
 				color: $white;
 			
 				.cAc_wpsml-content {
-					background-color: rgba(nth($colors, 1), 0);
+					background-color: rgba(nth($colors, 1), 0.2);
 				}
 			}
 		}
 		
 		
 		.cAc_wpsml-mg {
-			min-height: 0;
+			
 		}
 		
 		.cAc_wpsml-media {

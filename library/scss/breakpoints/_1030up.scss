@@ -94,3 +94,25 @@ header.header{
 	}	//end nav
 
 }
+
+#content {
+	
+	
+	.cAc_wpsml-pageSection {
+	
+		@each $class, $colors in $colorclasses {
+		
+			&.cAc_wpsml-bg.#{$class} {
+			
+				background-color: nth($colors, 1);
+				color: $white;
+			
+				.cAc_wpsml-content {
+					background-color: rgba(nth($colors, 1), 0);
+				}
+			}
+		}
+		
+	}
+	
+}
