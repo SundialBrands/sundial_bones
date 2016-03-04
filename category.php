@@ -24,6 +24,7 @@ global $sundial_product_price_input_fields;
 global $sundial_product_textarea_fields;
 $names = array_merge( $sundial_product_text_input_fields, $sundial_product_number_input_fields, $sundial_product_price_input_fields, $sundial_product_textarea_fields );
 
+add_action( 'pre_get_posts', 'sundial_products_only' );
 
 ?>
 
