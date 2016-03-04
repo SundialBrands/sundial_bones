@@ -144,10 +144,10 @@ function sundialSkuParallaxProductViews( $info ) {
 				if (i == current) {
 					$article.parent().removeClass().addClass('sundial_next_static_post right-side number1')
 				}
-				if (i == (targe+1)) {
+				if (i == (target+1)) {
 					$article.parent().removeClass().addClass('sundial_numbered_static_post right-side number2')
 				}
-				if (i > (targe+1)) {
+				if (i > (target+1)) {
 					var rightNo = last - i;
 					$article.parent().removeClass().addClass('sundial_numbered_static_post right-side number'+rightNo);
 				}
