@@ -271,6 +271,8 @@ jQuery(document).ready(function($) {
 			
 			sundialSkuClickProductViews($info);
 		}
+		
+		$('.sundial_static_post-image product img').height(2*$('.sundial_static_post_block').height());
 	
 	}
 	
@@ -279,7 +281,9 @@ jQuery(document).ready(function($) {
 		waitForFinalEvent( function() {
 	
 			cAc_wpsmlViewport = updateViewportDimensions();
-	
+			if ($('.sundial_static_post_container').length > 0) {
+				$('.sundial_static_post-image product img').height(2*$('.sundial_static_post_block').height());
+			}
 		});
 
 	});
