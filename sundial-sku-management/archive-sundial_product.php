@@ -145,7 +145,7 @@ $names = array_merge( $sundial_product_text_input_fields, $sundial_product_numbe
 										<?php echo $need_state; ?>
 									</div>
 									<div class="description">
-										<?php the_content(); ?>
+										<?php the_excerpt(); ?>
 									</div>
 									<div class="cta">
 										<a href="<?php echo $product['link']; ?>" class="btn">SHOP</a>
