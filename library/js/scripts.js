@@ -273,7 +273,7 @@ jQuery(document).ready(function($) {
 		}
 		var imght = $('.sundial_static_post_block').height();
 		imght = imght*2;
-		$('.sundial_static_post-image product img').css('height', imght+'px');
+		$('.sundial_static_post-image.product img').css('height', imght+'px');
 	
 	}
 	
@@ -283,7 +283,7 @@ jQuery(document).ready(function($) {
 	
 			cAc_wpsmlViewport = updateViewportDimensions();
 			if ($('.sundial_static_post_container').length > 0) {
-				$('.sundial_static_post-image product img').height(2*$('.sundial_static_post_block').height());
+				$('.sundial_static_post-image.product img').height(2*$('.sundial_static_post_block').height());
 			}
 		});
 
