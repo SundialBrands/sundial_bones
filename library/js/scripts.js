@@ -251,7 +251,7 @@ jQuery(document).ready(function($) {
 	jQuery('a').filter(function() {
 		return this.hostname && this.hostname !== location.hostname;
 	  }).click(function(e) {
-		   if(!confirm("You are now leaving the MCJWBeautyCulture.com site."))
+		   if(!confirm("You are now leaving the MCJWBeautyCulture.com site. Click OK to proceed to the external site."))
 		   {
 				// if user clicks 'no' then dont proceed to link.
 				e.preventDefault();
