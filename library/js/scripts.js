@@ -273,7 +273,7 @@ jQuery(document).ready(function($) {
 		}
 		var imght = $('.sundial_static_post_block').height();
 		imght = imght*2;
-		$('.sundial_static_post-image product img').height(imght);
+		$('.sundial_static_post-image product img').css('height', imght+'px');
 	
 	}
 	
