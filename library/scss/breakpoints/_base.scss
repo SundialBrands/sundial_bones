@@ -1205,6 +1205,24 @@ PRODUCT INFORMATION
 	
 }
 
+@each $class, $colors in $colorclasses {
+	
+	div.#{class}.bgcolor {
+		background-color: nth($colors, 1);
+		color: white;
+			a {
+				color: nth($colors, 3);
+				
+				&:hover {
+					color: nth($colors, 2);
+				}
+				
+			}
+			
+	}
+
+}
+
 
 /******************************************************************
 PAGE NAVI STYLES
