@@ -372,6 +372,17 @@ POSTS & CONTENT STYLES
 #content {
 	margin-top: 1.5em;
 	
+	.giant-footer {
+		position:relative; background: transparent url(/wp-content/uploads/2016/02/MCJW_Burst_1024px.svg) no-repeat center; background-size: cover; top:10em;
+		h1{
+			text-align: center;
+			text-transform: uppercase;
+			line-height: 1;
+		}
+		p {
+			margin-bottom: 0;
+		}
+	}
 	.cAc_wpsml-pageSection {
 		font-size: 1rem;
 		color: $white;

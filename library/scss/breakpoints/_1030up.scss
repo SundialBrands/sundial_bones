@@ -96,8 +96,14 @@ header.header{
 }
 
 #content {
+
 	
-	
+	.giant-footer {
+			top:10em;
+		h1{
+			font-size: 10em;
+		}
+	}
 	.cAc_wpsml-pageSection {
 	
 		@each $class, $colors in $colorclasses {
