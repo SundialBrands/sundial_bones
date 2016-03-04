@@ -332,28 +332,29 @@ SIDEBARS & ASIDES
 /* text widget */
 /* line 271, ../scss/breakpoints/_768up.scss */
 #content .cAc_wpsml-pageSection.left .cAc_wpsml-content {
-  left: auto;
+  left: 1em;
+  width: 50%;
 }
-/* line 284, ../scss/breakpoints/_768up.scss */
+/* line 285, ../scss/breakpoints/_768up.scss */
 #content .cAc_wpsml-pageSection.right .cAc_wpsml-content {
   left: 50%;
 }
-/* line 296, ../scss/breakpoints/_768up.scss */
+/* line 297, ../scss/breakpoints/_768up.scss */
 #content .product-information {
   width: 60%;
   max-height: 100%;
   height: auto;
   margin: 0 auto;
 }
-/* line 302, ../scss/breakpoints/_768up.scss */
+/* line 303, ../scss/breakpoints/_768up.scss */
 #content .product-information .description {
   font-size: 1.475em;
 }
-/* line 315, ../scss/breakpoints/_768up.scss */
+/* line 316, ../scss/breakpoints/_768up.scss */
 #content .sundial_static_post_containers .sundial_active_static_post .sundial_static_post_container .sundial_static_post .sundial_static_post-image {
   background-size: cover;
 }
-/* line 324, ../scss/breakpoints/_768up.scss */
+/* line 325, ../scss/breakpoints/_768up.scss */
 #content .sundial_static_post_containers .sundial_active_static_post .sundial_static_post_container .sundial_static_post_block .sundial_static_post-needstate h1, #content .sundial_static_post_containers .sundial_active_static_post .sundial_static_post_container .sundial_static_post_block .sundial_static_post-needstate h2 {
   font-size: 2.5em;
 }
@@ -366,7 +367,7 @@ you'll probably need to do quite a bit
 of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
-/* line 353, ../scss/breakpoints/_768up.scss */
+/* line 354, ../scss/breakpoints/_768up.scss */
 .footer-links ul li {
   /*
   be careful with the depth of your menus.
