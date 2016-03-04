@@ -27,6 +27,11 @@ $names = array_merge( $sundial_product_text_input_fields, $sundial_product_numbe
 
 
 ?>
+<script>
+jQuery.ready( function() {
+	jQuery('.trigger_next_sundial_static_post').click();
+});
+</script>
 
 	<div id="content" class="content-area">
 		<main id="main" class="site-main" role="main">
