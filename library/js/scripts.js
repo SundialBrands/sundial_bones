@@ -271,8 +271,9 @@ jQuery(document).ready(function($) {
 			
 			sundialSkuClickProductViews($info);
 		}
-		
-		$('.sundial_static_post-image product img').height(2*$('.sundial_static_post_block').height());
+		var imght = $('.sundial_static_post_block').height();
+		imght = imght*2;
+		$('.sundial_static_post-image product img').height(imght);
 	
 	}
 	
