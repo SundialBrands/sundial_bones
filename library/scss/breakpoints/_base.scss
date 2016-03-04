@@ -543,6 +543,10 @@ POSTS & CONTENT STYLES
 				background-color: nth($colors, 1);
 				color: $white;
 			
+				.cAc_wpsml-content {
+					background-color: rgba(nth($colors, 1), 0.66);
+				}
+				
 				a {
 					color: $white;
 				
