@@ -1453,6 +1453,12 @@ select {
   background-position: 97.5% center;
 }
 
+/* line 129, ../scss/modules/_forms.scss */
+div#mc_embed_signup {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
 /*********************
 BASE (MOBILE) SIZE
 This are the mobile styles. It's what people see on their phones. If
