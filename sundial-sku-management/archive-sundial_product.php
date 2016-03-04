@@ -110,7 +110,13 @@ $names = array_merge( $sundial_product_text_input_fields, $sundial_product_numbe
 										<img class="sundial_static_post-burst" src="<?php echo get_template_directory_uri() . '/library/images/burst.svg' ?>" />
 									</div>
 							
-					
+									<div class="sundial_static_post_block" style="background:<?php echo $collection_color1 ?>;">
+						
+									<div class="sundial_static_post-needstate">
+										<h1><?php the_title(); ?></h1>
+									</div>
+						
+								</div>
 									<footer class="entry-footer">
 									<?php
 										edit_post_link(
@@ -125,13 +131,7 @@ $names = array_merge( $sundial_product_text_input_fields, $sundial_product_numbe
 									?>
 									</footer><!-- .entry-footer -->
 								</div>
-								<div class="sundial_static_post_block" style="background:<?php echo $collection_color1 ?>;">
-						
-									<div class="sundial_static_post-needstate">
-										<h1><?php the_title(); ?></h1>
-									</div>
-						
-								</div>
+								
 						
 								<div class="product-information">
 									<div class="interior"></div>
