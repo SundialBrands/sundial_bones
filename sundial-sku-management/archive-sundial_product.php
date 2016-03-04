@@ -95,7 +95,7 @@ $names = array_merge( $sundial_product_text_input_fields, $sundial_product_numbe
 								<div target="<?php echo ($i+1); ?>" class="trigger_next_sundial_static_post">
 									<i class="fa fa-chevron-right"></i>
 								</div>
-								<div class="sundial_static_post wrap cf">
+								<div class="sundial_static_post cf">
 								
 									<div class="sundial_static_post-benefit">
 										<!-- <h2><?php //echo $product['verbal']; ?></h2> -->
