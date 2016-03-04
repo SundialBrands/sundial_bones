@@ -113,6 +113,7 @@ function sundialSkuParallaxProductViews( $info ) {
 	console.log('using parallax');
 	//testing fallback click behavior here, rather than disabling checks or things they check.
 	//#BackwardLaziness.
+	//gonna get the same thing going for products, load some data, and come back to add parallax methods
 	jQuery('.sundial_static_post-benefit, .sundial_static_post-title, .sundial_static_post-image, .sundial_static_post-needstate, .product-information .description').click( function(e) {
 	
 		e.preventDefault();
