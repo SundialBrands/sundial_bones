@@ -1145,9 +1145,11 @@ PRODUCT INFORMATION
 		color: $white;
 		letter-spacing: 0.025em;
 		word-spacing: 0.025em;
+		@include transition(opacity 0 ease-in);
+		@include transition(background-color 1s ease-in-out);
 		
 		&:hover, &:active {
-			background: rgba($mcjw-gray, 0.3);
+			background: $mcjw-light-gray;
 		}
 		
 		&:link {
