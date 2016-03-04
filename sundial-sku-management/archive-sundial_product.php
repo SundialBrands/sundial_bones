@@ -137,6 +137,9 @@ $names = array_merge( $sundial_product_text_input_fields, $sundial_product_numbe
 									<div class="benefits">
 										<?php echo $product['verbal']; ?>
 									</div>
+									<div class="title">
+										<?php the_title() ?>
+									</div>
 									<div class="ingredients">
 										<?php echo $collection_title; ?>
 									</div>

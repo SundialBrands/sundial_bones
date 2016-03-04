@@ -143,6 +143,9 @@ jQuery(document).ready(function($) {
 									<div class="benefits">
 										<?php echo $product['verbal']; ?>
 									</div>
+									<div class="title">
+										<?php the_title() ?>
+									</div>
 									<div class="ingredients">
 										<?php echo $collection_title; ?>
 									</div>
