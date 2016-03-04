@@ -130,37 +130,37 @@ function sundialSkuParallaxProductViews( $info ) {
 	jQuery('.trigger_previous_sundial_static_post').click( function(e) {
 	
 		e.preventDefault();
-		var target = jQuery(this).attr('target');
-		var last = jQuery('article').length - 1;
+		var target = jQuery(this).attr('target'); //0
+		var last = jQuery('article').length - 1; //2
 		$info.removeClass('opaque');
 		$info.removeClass('visible');
 		if (target != 'none' && target != last) {
 		
 			target = parseInt(target);
-			var current = target + 1;
-			for (i=last; i >= 0; i--) {
+			var current = target + 1; //1
+			for (i=last; i >= 0; i--) {  //i=2 //i=1 /i=0
 			
-				var $article = jQuery('.targetId'+i);
-				if (i == current) {
-					$article.parent().removeClass().addClass('sundial_next_static_post right-side number1')
+				var $article = jQuery('.targetId'+i); //next //current //prev
+				if (i == current) {  //f //t //f
+					$article.parent().removeClass().addClass('sundial_next_static_post right-side number1') //current>next
 				}
-				if (i == (target+1)) {
-					$article.parent().removeClass().addClass('sundial_numbered_static_post right-side number2')
+				if (i == (current+1)) { //t //f //f
+					$article.parent().removeClass().addClass('sundial_numbered_static_post right-side number2') //next>r1
 				}
-				if (i > (target+1)) {
+				if (i > (current+1)) { //f //f //f
 					var rightNo = last - i;
 					$article.parent().removeClass().addClass('sundial_numbered_static_post right-side number'+rightNo);
 				}
-				if (i == target) {
-					$article.parent().removeClass().addClass('sundial_active_static_post');
+				if (i == target) { //f //f //t
+					$article.parent().removeClass().addClass('sundial_active_static_post'); //prev>current
 					if ($article.find('.trigger_previous_sundial_static_post').attr('target') == 'none') {
 						$article.find('.trigger_previous_sundial_static_post').hide();
 					}
 				}
-				if (i == (current-1)) {
+				if (i == (target-1)) { //f //f //f
 					$article.parent().removeClass().addClass('sundial_prev_static_post left-side number1');
 				}
-				if (i < (current-1)) {
+				if (i < (target-1)) { //f //f //f
 					var leftNo = last - target;
 					$article.parent().removeClass().addClass('sundial_numbered_static_post left-side number'+leftNo);
 				}
