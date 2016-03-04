@@ -28,8 +28,8 @@ $names = array_merge( $sundial_product_text_input_fields, $sundial_product_numbe
 
 ?>
 <script>
-jQuery.ready( function() {
-	jQuery('.trigger_next_sundial_static_post').click();
+jQuery(document).ready(function($) {
+	$('.trigger_next_sundial_static_post').click();
 });
 </script>
 
