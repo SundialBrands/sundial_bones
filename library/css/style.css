@@ -2676,43 +2676,47 @@ PRODUCT INFORMATION
 .sundial_active_static_post .gray .fa {
   color: #fff;
 }
-/* line 1146, ../scss/breakpoints/_base.scss */
+/* line 1144, ../scss/breakpoints/_base.scss */
+.sundial_active_static_post .gray .fa:hover {
+  color: #ebecec;
+}
+/* line 1149, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .gray .product-information {
   border-color: #fff;
 }
-/* line 1149, ../scss/breakpoints/_base.scss */
+/* line 1152, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .gray .product-information .benefits {
   color: #a7a9ac;
 }
-/* line 1153, ../scss/breakpoints/_base.scss */
+/* line 1156, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .gray .product-information .title {
   color: #fff;
 }
-/* line 1157, ../scss/breakpoints/_base.scss */
+/* line 1160, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .gray .product-information .ingredients {
   color: #fff;
 }
-/* line 1161, ../scss/breakpoints/_base.scss */
+/* line 1164, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .gray .product-information .need-state {
   color: #a7a9ac;
 }
-/* line 1165, ../scss/breakpoints/_base.scss */
+/* line 1168, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .gray .product-information .description {
   color: #a7a9ac;
 }
-/* line 1169, ../scss/breakpoints/_base.scss */
+/* line 1172, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .gray .product-information .btn {
   background: #fff;
 }
-/* line 1172, ../scss/breakpoints/_base.scss */
+/* line 1175, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .gray .product-information .btn:hover, .sundial_active_static_post .gray .product-information .btn:active {
   background: #ebecec;
 }
-/* line 1176, ../scss/breakpoints/_base.scss */
+/* line 1179, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .gray .product-information .btn:link {
   -webkit-tap-highlight-color: transparent;
 }
-/* line 1180, ../scss/breakpoints/_base.scss */
+/* line 1183, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .gray .product-information .btn:active {
   -webkit-transform: scale3d(0.9, 0.9, 1);
 }
@@ -2721,43 +2725,47 @@ PRODUCT INFORMATION
 .sundial_active_static_post .lilac .fa {
   color: #704d8f;
 }
-/* line 1146, ../scss/breakpoints/_base.scss */
+/* line 1144, ../scss/breakpoints/_base.scss */
+.sundial_active_static_post .lilac .fa:hover {
+  color: #c1acd2;
+}
+/* line 1149, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .lilac .product-information {
   border-color: #704d8f;
 }
-/* line 1149, ../scss/breakpoints/_base.scss */
+/* line 1152, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .lilac .product-information .benefits {
   color: #a7a9ac;
 }
-/* line 1153, ../scss/breakpoints/_base.scss */
+/* line 1156, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .lilac .product-information .title {
   color: #704d8f;
 }
-/* line 1157, ../scss/breakpoints/_base.scss */
+/* line 1160, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .lilac .product-information .ingredients {
   color: #704d8f;
 }
-/* line 1161, ../scss/breakpoints/_base.scss */
+/* line 1164, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .lilac .product-information .need-state {
   color: #a7a9ac;
 }
-/* line 1165, ../scss/breakpoints/_base.scss */
+/* line 1168, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .lilac .product-information .description {
   color: #a7a9ac;
 }
-/* line 1169, ../scss/breakpoints/_base.scss */
+/* line 1172, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .lilac .product-information .btn {
   background: #704d8f;
 }
-/* line 1172, ../scss/breakpoints/_base.scss */
+/* line 1175, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .lilac .product-information .btn:hover, .sundial_active_static_post .lilac .product-information .btn:active {
   background: #c1acd2;
 }
-/* line 1176, ../scss/breakpoints/_base.scss */
+/* line 1179, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .lilac .product-information .btn:link {
   -webkit-tap-highlight-color: transparent;
 }
-/* line 1180, ../scss/breakpoints/_base.scss */
+/* line 1183, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .lilac .product-information .btn:active {
   -webkit-transform: scale3d(0.9, 0.9, 1);
 }
@@ -2766,43 +2774,47 @@ PRODUCT INFORMATION
 .sundial_active_static_post .pink .fa {
   color: #8c0e3f;
 }
-/* line 1146, ../scss/breakpoints/_base.scss */
+/* line 1144, ../scss/breakpoints/_base.scss */
+.sundial_active_static_post .pink .fa:hover {
+  color: #d898b1;
+}
+/* line 1149, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .pink .product-information {
   border-color: #8c0e3f;
 }
-/* line 1149, ../scss/breakpoints/_base.scss */
+/* line 1152, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .pink .product-information .benefits {
   color: #a7a9ac;
 }
-/* line 1153, ../scss/breakpoints/_base.scss */
+/* line 1156, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .pink .product-information .title {
   color: #8c0e3f;
 }
-/* line 1157, ../scss/breakpoints/_base.scss */
+/* line 1160, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .pink .product-information .ingredients {
   color: #8c0e3f;
 }
-/* line 1161, ../scss/breakpoints/_base.scss */
+/* line 1164, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .pink .product-information .need-state {
   color: #a7a9ac;
 }
-/* line 1165, ../scss/breakpoints/_base.scss */
+/* line 1168, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .pink .product-information .description {
   color: #a7a9ac;
 }
-/* line 1169, ../scss/breakpoints/_base.scss */
+/* line 1172, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .pink .product-information .btn {
   background: #8c0e3f;
 }
-/* line 1172, ../scss/breakpoints/_base.scss */
+/* line 1175, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .pink .product-information .btn:hover, .sundial_active_static_post .pink .product-information .btn:active {
   background: #d898b1;
 }
-/* line 1176, ../scss/breakpoints/_base.scss */
+/* line 1179, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .pink .product-information .btn:link {
   -webkit-tap-highlight-color: transparent;
 }
-/* line 1180, ../scss/breakpoints/_base.scss */
+/* line 1183, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .pink .product-information .btn:active {
   -webkit-transform: scale3d(0.9, 0.9, 1);
 }
@@ -2811,43 +2823,47 @@ PRODUCT INFORMATION
 .sundial_active_static_post .teal .fa {
   color: #009db3;
 }
-/* line 1146, ../scss/breakpoints/_base.scss */
+/* line 1144, ../scss/breakpoints/_base.scss */
+.sundial_active_static_post .teal .fa:hover {
+  color: #75b9c3;
+}
+/* line 1149, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .teal .product-information {
   border-color: #009db3;
 }
-/* line 1149, ../scss/breakpoints/_base.scss */
+/* line 1152, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .teal .product-information .benefits {
   color: #a7a9ac;
 }
-/* line 1153, ../scss/breakpoints/_base.scss */
+/* line 1156, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .teal .product-information .title {
   color: #009db3;
 }
-/* line 1157, ../scss/breakpoints/_base.scss */
+/* line 1160, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .teal .product-information .ingredients {
   color: #009db3;
 }
-/* line 1161, ../scss/breakpoints/_base.scss */
+/* line 1164, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .teal .product-information .need-state {
   color: #a7a9ac;
 }
-/* line 1165, ../scss/breakpoints/_base.scss */
+/* line 1168, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .teal .product-information .description {
   color: #a7a9ac;
 }
-/* line 1169, ../scss/breakpoints/_base.scss */
+/* line 1172, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .teal .product-information .btn {
   background: #009db3;
 }
-/* line 1172, ../scss/breakpoints/_base.scss */
+/* line 1175, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .teal .product-information .btn:hover, .sundial_active_static_post .teal .product-information .btn:active {
   background: #75b9c3;
 }
-/* line 1176, ../scss/breakpoints/_base.scss */
+/* line 1179, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .teal .product-information .btn:link {
   -webkit-tap-highlight-color: transparent;
 }
-/* line 1180, ../scss/breakpoints/_base.scss */
+/* line 1183, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .teal .product-information .btn:active {
   -webkit-transform: scale3d(0.9, 0.9, 1);
 }
@@ -2856,43 +2872,47 @@ PRODUCT INFORMATION
 .sundial_active_static_post .yellow .fa {
   color: #a87400;
 }
-/* line 1146, ../scss/breakpoints/_base.scss */
+/* line 1144, ../scss/breakpoints/_base.scss */
+.sundial_active_static_post .yellow .fa:hover {
+  color: #f1cd7e;
+}
+/* line 1149, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .yellow .product-information {
   border-color: #a87400;
 }
-/* line 1149, ../scss/breakpoints/_base.scss */
+/* line 1152, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .yellow .product-information .benefits {
   color: #a7a9ac;
 }
-/* line 1153, ../scss/breakpoints/_base.scss */
+/* line 1156, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .yellow .product-information .title {
   color: #a87400;
 }
-/* line 1157, ../scss/breakpoints/_base.scss */
+/* line 1160, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .yellow .product-information .ingredients {
   color: #a87400;
 }
-/* line 1161, ../scss/breakpoints/_base.scss */
+/* line 1164, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .yellow .product-information .need-state {
   color: #a7a9ac;
 }
-/* line 1165, ../scss/breakpoints/_base.scss */
+/* line 1168, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .yellow .product-information .description {
   color: #a7a9ac;
 }
-/* line 1169, ../scss/breakpoints/_base.scss */
+/* line 1172, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .yellow .product-information .btn {
   background: #a87400;
 }
-/* line 1172, ../scss/breakpoints/_base.scss */
+/* line 1175, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .yellow .product-information .btn:hover, .sundial_active_static_post .yellow .product-information .btn:active {
   background: #f1cd7e;
 }
-/* line 1176, ../scss/breakpoints/_base.scss */
+/* line 1179, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .yellow .product-information .btn:link {
   -webkit-tap-highlight-color: transparent;
 }
-/* line 1180, ../scss/breakpoints/_base.scss */
+/* line 1183, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .yellow .product-information .btn:active {
   -webkit-transform: scale3d(0.9, 0.9, 1);
 }
@@ -2900,17 +2920,17 @@ PRODUCT INFORMATION
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
-/* line 1198, ../scss/breakpoints/_base.scss */
+/* line 1201, ../scss/breakpoints/_base.scss */
 .pagination,
 .wp-prev-next {
   margin: 1.5em 0;
 }
 
-/* line 1202, ../scss/breakpoints/_base.scss */
+/* line 1205, ../scss/breakpoints/_base.scss */
 .pagination {
   text-align: center;
 }
-/* line 1205, ../scss/breakpoints/_base.scss */
+/* line 1208, ../scss/breakpoints/_base.scss */
 .pagination ul {
   display: inline-block;
   background-color: #fff;
@@ -2919,7 +2939,7 @@ PAGE NAVI STYLES
   clear: both;
   border-radius: 3px;
 }
-/* line 1214, ../scss/breakpoints/_base.scss */
+/* line 1217, ../scss/breakpoints/_base.scss */
 .pagination li {
   padding: 0;
   margin: 0;
@@ -2928,7 +2948,7 @@ PAGE NAVI STYLES
   overflow: hidden;
   border-right: 1px solid #fff;
 }
-/* line 1223, ../scss/breakpoints/_base.scss */
+/* line 1226, ../scss/breakpoints/_base.scss */
 .pagination a, .pagination span {
   margin: 0;
   text-decoration: none;
@@ -2941,17 +2961,17 @@ PAGE NAVI STYLES
   display: block;
   color: #2980b9;
 }
-/* line 1235, ../scss/breakpoints/_base.scss */
+/* line 1238, ../scss/breakpoints/_base.scss */
 .pagination a:hover, .pagination a:focus, .pagination span:hover, .pagination span:focus {
   background-color: #2980b9;
   color: #fff;
 }
-/* line 1241, ../scss/breakpoints/_base.scss */
+/* line 1244, ../scss/breakpoints/_base.scss */
 .pagination .current {
   cursor: default;
   color: #a7a9ac;
 }
-/* line 1245, ../scss/breakpoints/_base.scss */
+/* line 1248, ../scss/breakpoints/_base.scss */
 .pagination .current:hover, .pagination .current:focus {
   background-color: #fff;
   color: #a7a9ac;
@@ -2959,11 +2979,11 @@ PAGE NAVI STYLES
 
 /* end .bones_page_navi */
 /* fallback previous & next links */
-/* line 1258, ../scss/breakpoints/_base.scss */
+/* line 1261, ../scss/breakpoints/_base.scss */
 .wp-prev-next .prev-link {
   float: left;
 }
-/* line 1262, ../scss/breakpoints/_base.scss */
+/* line 1265, ../scss/breakpoints/_base.scss */
 .wp-prev-next .next-link {
   float: right;
 }
@@ -2973,7 +2993,7 @@ PAGE NAVI STYLES
 COMMENT STYLES
 ******************************************************************/
 /* h3 comment title */
-/* line 1273, ../scss/breakpoints/_base.scss */
+/* line 1276, ../scss/breakpoints/_base.scss */
 #comments-title {
   padding: 0.75em;
   margin: 0;
@@ -2981,13 +3001,13 @@ COMMENT STYLES
   /* number of comments span */
 }
 
-/* line 1293, ../scss/breakpoints/_base.scss */
+/* line 1296, ../scss/breakpoints/_base.scss */
 .commentlist {
   margin: 0;
   list-style-type: none;
 }
 
-/* line 1298, ../scss/breakpoints/_base.scss */
+/* line 1301, ../scss/breakpoints/_base.scss */
 .comment {
   position: relative;
   clear: both;
@@ -2999,78 +3019,78 @@ COMMENT STYLES
   /* end children */
   /* general comment classes */
 }
-/* line 1305, ../scss/breakpoints/_base.scss */
+/* line 1308, ../scss/breakpoints/_base.scss */
 .comment .comment-author {
   padding: 7px;
   border: 0;
 }
-/* line 1311, ../scss/breakpoints/_base.scss */
+/* line 1314, ../scss/breakpoints/_base.scss */
 .comment .vcard {
   margin-left: 50px;
 }
-/* line 1314, ../scss/breakpoints/_base.scss */
+/* line 1317, ../scss/breakpoints/_base.scss */
 .comment .vcard cite.fn {
   font-weight: 700;
   font-style: normal;
 }
-/* line 1322, ../scss/breakpoints/_base.scss */
+/* line 1325, ../scss/breakpoints/_base.scss */
 .comment .vcard time {
   display: block;
   font-size: 0.9em;
   font-style: italic;
 }
-/* line 1327, ../scss/breakpoints/_base.scss */
+/* line 1330, ../scss/breakpoints/_base.scss */
 .comment .vcard time a {
   color: #9fa6b4;
   text-decoration: none;
 }
-/* line 1331, ../scss/breakpoints/_base.scss */
+/* line 1334, ../scss/breakpoints/_base.scss */
 .comment .vcard time a:hover {
   text-decoration: underline;
 }
-/* line 1341, ../scss/breakpoints/_base.scss */
+/* line 1344, ../scss/breakpoints/_base.scss */
 .comment .vcard .avatar {
   position: absolute;
   left: 16px;
   border-radius: 50%;
 }
-/* line 1349, ../scss/breakpoints/_base.scss */
+/* line 1352, ../scss/breakpoints/_base.scss */
 .comment:last-child {
   margin-bottom: 0;
 }
-/* line 1353, ../scss/breakpoints/_base.scss */
+/* line 1356, ../scss/breakpoints/_base.scss */
 .comment .children {
   margin: 0;
   /* variations */
   /* change number for different depth */
 }
-/* line 1371, ../scss/breakpoints/_base.scss */
+/* line 1374, ../scss/breakpoints/_base.scss */
 .comment[class*=depth-] {
   margin-top: 1.1em;
 }
-/* line 1375, ../scss/breakpoints/_base.scss */
+/* line 1378, ../scss/breakpoints/_base.scss */
 .comment.depth-1 {
   margin-left: 0;
   margin-top: 0;
 }
-/* line 1380, ../scss/breakpoints/_base.scss */
+/* line 1383, ../scss/breakpoints/_base.scss */
 .comment:not(.depth-1) {
   margin-top: 0;
   margin-left: 7px;
   padding: 7px;
 }
-/* line 1393, ../scss/breakpoints/_base.scss */
+/* line 1396, ../scss/breakpoints/_base.scss */
 .comment.odd {
   background-color: #fff;
 }
-/* line 1396, ../scss/breakpoints/_base.scss */
+/* line 1399, ../scss/breakpoints/_base.scss */
 .comment.even {
   background: #f8f9fa;
 }
 
 /* comment meta */
 /* comment content */
-/* line 1430, ../scss/breakpoints/_base.scss */
+/* line 1433, ../scss/breakpoints/_base.scss */
 .comment_content p {
   margin: 0.7335em 0 1.5em;
   font-size: 1em;
@@ -3079,7 +3099,7 @@ COMMENT STYLES
 
 /* end .commentlist .comment_content */
 /* comment reply link */
-/* line 1439, ../scss/breakpoints/_base.scss */
+/* line 1442, ../scss/breakpoints/_base.scss */
 .comment-reply-link {
   font-size: 0.9em;
   float: right;
@@ -3087,7 +3107,7 @@ COMMENT STYLES
 
 /* end .commentlist .comment-reply-link */
 /* edit comment link */
-/* line 1451, ../scss/breakpoints/_base.scss */
+/* line 1454, ../scss/breakpoints/_base.scss */
 .comment-edit-link {
   font-style: italic;
   margin: 0 7px;
@@ -3098,34 +3118,34 @@ COMMENT STYLES
 /******************************************************************
 COMMENT FORM STYLES
 ******************************************************************/
-/* line 1464, ../scss/breakpoints/_base.scss */
+/* line 1467, ../scss/breakpoints/_base.scss */
 .comment-respond {
   padding: 1.5em;
   border-top: 1px solid #f8f9fa;
 }
 
-/* line 1470, ../scss/breakpoints/_base.scss */
+/* line 1473, ../scss/breakpoints/_base.scss */
 #reply-title {
   margin: 0;
 }
 
-/* line 1474, ../scss/breakpoints/_base.scss */
+/* line 1477, ../scss/breakpoints/_base.scss */
 .logged-in-as {
   color: #9fa6b4;
   font-style: italic;
   margin: 0;
 }
-/* line 1479, ../scss/breakpoints/_base.scss */
+/* line 1482, ../scss/breakpoints/_base.scss */
 .logged-in-as a {
   color: #a7a9ac;
 }
 
-/* line 1484, ../scss/breakpoints/_base.scss */
+/* line 1487, ../scss/breakpoints/_base.scss */
 .comment-form-comment {
   margin: 1.5em 0 0.75em;
 }
 
-/* line 1488, ../scss/breakpoints/_base.scss */
+/* line 1491, ../scss/breakpoints/_base.scss */
 .form-allowed-tags {
   padding: 1.5em;
   background-color: #f8f9fa;
@@ -3133,14 +3153,14 @@ COMMENT FORM STYLES
 }
 
 /* comment submit button */
-/* line 1495, ../scss/breakpoints/_base.scss */
+/* line 1498, ../scss/breakpoints/_base.scss */
 #submit {
   float: right;
   font-size: 1em;
 }
 
 /* comment form title */
-/* line 1502, ../scss/breakpoints/_base.scss */
+/* line 1505, ../scss/breakpoints/_base.scss */
 #comment-form-title {
   margin: 0 0 1.1em;
 }
@@ -3148,13 +3168,13 @@ COMMENT FORM STYLES
 /* cancel comment reply link */
 /* logged in comments */
 /* allowed tags */
-/* line 1515, ../scss/breakpoints/_base.scss */
+/* line 1518, ../scss/breakpoints/_base.scss */
 #allowed_tags {
   margin: 1.5em 10px 0.7335em 0;
 }
 
 /* no comments */
-/* line 1520, ../scss/breakpoints/_base.scss */
+/* line 1523, ../scss/breakpoints/_base.scss */
 .nocomments {
   margin: 0 20px 1.1em;
 }
@@ -3162,12 +3182,12 @@ COMMENT FORM STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 1536, ../scss/breakpoints/_base.scss */
+/* line 1539, ../scss/breakpoints/_base.scss */
 .widget ul li {
   /* deep nesting */
 }
 
-/* line 1553, ../scss/breakpoints/_base.scss */
+/* line 1556, ../scss/breakpoints/_base.scss */
 .no-widgets {
   background-color: #fff;
   padding: 1.5em;
@@ -3180,7 +3200,7 @@ SIDEBARS & ASIDES
 /*********************
 FOOTER STYLES
 *********************/
-/* line 1566, ../scss/breakpoints/_base.scss */
+/* line 1569, ../scss/breakpoints/_base.scss */
 .footer {
   clear: both;
   background-color: #666;
@@ -3193,7 +3213,7 @@ FOOTER STYLES
   opacity: 0.75;
   padding: 0.5em 0;
 }
-/* line 1574, ../scss/breakpoints/_base.scss */
+/* line 1577, ../scss/breakpoints/_base.scss */
 .footer:active, .footer:hover {
   opacity: 1;
 }
@@ -3207,39 +3227,39 @@ it simple because you'll have to
 override these styles for the desktop
 view.
 */
-/* line 1589, ../scss/breakpoints/_base.scss */
+/* line 1592, ../scss/breakpoints/_base.scss */
 .footer-links {
   text-align: center;
 }
-/* line 1592, ../scss/breakpoints/_base.scss */
+/* line 1595, ../scss/breakpoints/_base.scss */
 .footer-links ul {
   margin: 0;
 }
-/* line 1594, ../scss/breakpoints/_base.scss */
+/* line 1597, ../scss/breakpoints/_base.scss */
 .footer-links ul li {
   display: inline-block;
 }
-/* line 1597, ../scss/breakpoints/_base.scss */
+/* line 1600, ../scss/breakpoints/_base.scss */
 .footer-links ul li a {
   border-right: 1px solid;
   padding-right: 0.25em;
   color: #fff;
 }
-/* line 1602, ../scss/breakpoints/_base.scss */
+/* line 1605, ../scss/breakpoints/_base.scss */
 .footer-links ul li a:hover, .footer-links ul li a:active {
   color: rgba(255, 255, 255, 0.3);
 }
-/* line 1606, ../scss/breakpoints/_base.scss */
+/* line 1609, ../scss/breakpoints/_base.scss */
 .footer-links ul li a:link {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0.3);
 }
-/* line 1614, ../scss/breakpoints/_base.scss */
+/* line 1617, ../scss/breakpoints/_base.scss */
 .footer-links ul li:last-child a {
   border-right: 0;
 }
 
 /* end .footer-links */
-/* line 1627, ../scss/breakpoints/_base.scss */
+/* line 1630, ../scss/breakpoints/_base.scss */
 .copyright {
   font-weight: 700;
   text-align: center;

@@ -1141,6 +1141,9 @@ PRODUCT INFORMATION
 		
 		.fa {
 			color: nth($colors, 3);
+			&:hover {
+				color: nth($colors, 2);
+			}
 		}
 		
 		.product-information {
