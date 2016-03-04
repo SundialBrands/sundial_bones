@@ -1085,13 +1085,14 @@ PRODUCT INFORMATION
 	}
 
 	.need-state {
-		font-size: 2.1875em;
-		text-transform: uppercase;
+		font-size: 1.1875em;
+		text-transform: lowercase;
 		color: $mcjw-light-gray;
 		font-style: italic;
 		font-family: $serif;
-		letter-spacing: 0.025em;
-		word-spacing: 0.025em;
+		font-weight: 700;
+		letter-spacing: 0.0025em;
+		word-spacing: 0.0025em;
 	}
 
 	.description {
@@ -1100,11 +1101,14 @@ PRODUCT INFORMATION
 		word-spacing: -0.075em;
 		color: $mcjw-light-gray;
 	}
-
+	.cta {
+		margin-top: 1rem;
+	}
 	.btn {
 		background: $mcjw-gray;
+		margin-top: 1rem;
 		padding: 0.5em;
-		font-size: 2em;
+		font-size: 1.5em;
 		color: $white;
 		letter-spacing: 0.025em;
 		word-spacing: 0.025em;
