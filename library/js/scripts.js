@@ -248,6 +248,16 @@ jQuery(document).ready(function($) {
 
 	cAc_wpsmlViewport = updateViewportDimensions();
 	
+	jQuery('a').filter(function() {
+		return this.hostname && this.hostname !== location.hostname;
+	  }).click(function(e) {
+		   if(!confirm("You are now leaving the MCJWBeautyCulture.com site."))
+		   {
+				// if user clicks 'no' then dont proceed to link.
+				e.preventDefault();
+		   };
+	  });
+	
 	if (SKU_MANAGEMENT_LOADED && $('.sundial_static_post_container').length > 0) {
 	
 		$info = $('.sundial_static_post_container .product-information');
@@ -272,6 +282,7 @@ jQuery(document).ready(function($) {
 			sundialSkuClickProductViews($info);
 		}
 		$('.sundial_static_post-image.product img').height(2*$('.sundial_static_post_block').height());
+		
 	
 	}
 	
