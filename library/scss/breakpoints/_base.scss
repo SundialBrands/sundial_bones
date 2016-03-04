@@ -706,7 +706,7 @@ POSTS & CONTENT STYLES
 						position: relative;
 						max-height: 40%;
 						background-repeat: no-repeat;
-						background-size: cover;
+						background-size: contain;
 					
 						&.product {
 							z-index: -1;
@@ -717,6 +717,11 @@ POSTS & CONTENT STYLES
 							max-width: 45%;
 							height: auto;
 							cursor: pointer;
+						}
+						
+						img.product-image {
+							width: auto;
+							margin: 5% 0;
 						}
 					
 						img.sundial_static_post-burst {

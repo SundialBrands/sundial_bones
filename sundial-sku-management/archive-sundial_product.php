@@ -106,7 +106,7 @@ $names = array_merge( $sundial_product_text_input_fields, $sundial_product_numbe
 									</div>
 						
 									<div class="sundial_static_post-image product" style="background-image: url(<?php echo get_template_directory_uri() . '/library/images/burst.svg' ?>);">
-										<?php the_post_thumbnail( 'large', array( 'class' => 'aligncenter collection-image' ) ); ?>
+										<?php the_post_thumbnail( 'large', array( 'class' => 'aligncenter product-image' ) ); ?>
 									</div>
 							
 									<div class="sundial_static_post_block" style="background:<?php echo $collection_color1 ?>;">
