@@ -238,6 +238,7 @@ function add_sundial_products( $query ) {
      'post', 'nav_menu_item', 'sundial_product'
 		));
 	$query->set( 'orderby', 'name' );
+	$query->set( 'order', 'ASC' );
 	  return $query;
 	}
 }
