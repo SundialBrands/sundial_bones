@@ -411,7 +411,9 @@ POSTS & CONTENT STYLES
 				max-width: 100%;
 				max-height: 28rem;
 				padding: 1rem 1.5rem;
-				background: $white;
+				background: #eee;
+				@include filter-gradient(#dbdbdb, #f7f7f7, horizontal); // IE6-9 fallback on horizontal gradient
+				@include background-image(linear-gradient(left bottom, rgb(219,219,219) 0%,rgb(247,247,247) 100%));
 				-webkit-box-shadow: 5px 5px 10px -4px rgba(0,0,0,0.43);
 				-moz-box-shadow: 5px 5px 10px -4px rgba(0,0,0,0.43);
 				box-shadow: 5px 5px 10px -4px rgba(0,0,0,0.43);
