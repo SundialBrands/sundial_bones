@@ -23,6 +23,7 @@ body {
 	background-color: $white;
   	-webkit-font-smoothing: antialiased;
   	-moz-osx-font-smoothing: grayscale;
+  	margin-bottom: 3em;
 }
 
 /********************
@@ -375,7 +376,7 @@ POSTS & CONTENT STYLES
 	.giant-footer {
 		position:relative; 
 		background-size: cover; 
-		top:7em;
+		top:6em;
 		h1{
 			text-align: center;
 			text-transform: uppercase;
