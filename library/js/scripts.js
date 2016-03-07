@@ -289,6 +289,41 @@ jQuery(document).ready(function($) {
 		});
 	
 	}
+	
+	
+	if (jQuery('div.typeform').length > 0 ) {
+	
+		viewport = updateViewportDimensions();
+	  // if the viewport is tablet or larger, we load in the gravatars
+	  if (viewport.width < 768) {
+	  
+	  	jQuery('div.typeform iframe').remove();
+	  	var src = jQuery('div.typeform').attr('data-url');
+	  	var title = jQuery('div.typeform').attr('data-title');
+		var button = '<h2>' + title + '</h2><a class="typeform-share button" href="' + src +  '" data-mode="2" target="_blank">Take the Quiz</a><br />';
+		jQuery('div.typeform').html(button);
+		(function(){
+			var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';
+			if(!gi.call(d,id)) {
+				js=ce.call(d,'script');
+				js.id=id;
+				js.src=b+'share.js';
+				q=gt.call(d,'script')[0];
+				q.parentNode.insertBefore(js,q);
+			}
+			id=id+'_';
+			if(!gi.call(d,id)) {
+				qs=ce.call(d,'link');
+				qs.rel='stylesheet';
+				qs.id=id;qs.href=b+'share-button.css';
+				s=gt.call(d,'head')[0];
+				s.appendChild(qs,s)
+			}
+		})()
+
+		}
+	
+	}
 
 
 }); /* end of as page load scripts */

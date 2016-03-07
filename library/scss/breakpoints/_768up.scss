@@ -116,6 +116,21 @@ GRID STYLES
 	
 }
 
+.typeform {
+
+	iframe {
+		width: 100%;
+		min-height: 500px;
+		border: 0;
+		width: 100%;
+		min-width: 500px;
+		border: 0;
+		overflow: hidden;
+		display: inline-block;
+	}
+	
+}
+
 .row div[class*="col-sm-"] {
 	float: left;
 	
