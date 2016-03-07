@@ -1861,24 +1861,28 @@ POSTS & CONTENT STYLES
   letter-spacing: 0.015em;
   word-spacing: 0.015em;
   text-transform: uppercase;
+  margin-bottom: 0;
 }
-/* line 434, ../scss/breakpoints/_base.scss */
+/* line 435, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection .cAc_wpsml-content .ingredients {
   font-size: 1.875em;
   font-weight: 700;
   letter-spacing: 0.015em;
   word-spacing: 0.015em;
   text-transform: uppercase;
+  margin: 0;
 }
-/* line 442, ../scss/breakpoints/_base.scss */
+/* line 444, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection .cAc_wpsml-content .need-state {
   font-size: 1.875em;
   font-weight: 400;
   letter-spacing: -0.005em;
   word-spacing: -0.005em;
   text-transform: uppercase;
+  margin-top: 0;
+  line-height: 1;
 }
-/* line 450, ../scss/breakpoints/_base.scss */
+/* line 454, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection .cAc_wpsml-content .btn {
   font-size: 1.875em;
   font-weight: 700;
@@ -1887,28 +1891,28 @@ POSTS & CONTENT STYLES
   word-spacing: 0.025em;
   padding: 0.25em 0.5em;
 }
-/* line 464, ../scss/breakpoints/_base.scss */
+/* line 468, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection .cAc_wpsml-trim div {
   width: 50%;
   position: absolute;
   bottom: 0;
   z-index: 40;
 }
-/* line 470, ../scss/breakpoints/_base.scss */
+/* line 474, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection .cAc_wpsml-trim div.cAc_wpsml_trim-left img {
   left: 0;
   right: auto;
 }
-/* line 475, ../scss/breakpoints/_base.scss */
+/* line 479, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection .cAc_wpsml-trim div.cAc_wpsml_trim-right {
   left: auto;
   right: 0;
 }
-/* line 485, ../scss/breakpoints/_base.scss */
+/* line 489, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.left .cAc_wpsml-media {
   left: 40%;
 }
-/* line 487, ../scss/breakpoints/_base.scss */
+/* line 491, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.left .cAc_wpsml-media img {
   -ms-transform: rotate(-20deg);
   /* IE 9 */
@@ -1916,15 +1920,15 @@ POSTS & CONTENT STYLES
   /* Chrome, Safari, Opera */
   transform: rotate(-20deg);
 }
-/* line 493, ../scss/breakpoints/_base.scss */
+/* line 497, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.left .cAc_wpsml-content {
   left: 0;
 }
-/* line 499, ../scss/breakpoints/_base.scss */
+/* line 503, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.right .cAc_wpsml-media {
   left: 25%;
 }
-/* line 501, ../scss/breakpoints/_base.scss */
+/* line 505, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.right .cAc_wpsml-media img {
   -ms-transform: rotate(-4deg);
   /* IE 9 */
@@ -1932,388 +1936,388 @@ POSTS & CONTENT STYLES
   /* Chrome, Safari, Opera */
   transform: rotate(-4deg);
 }
-/* line 508, ../scss/breakpoints/_base.scss */
+/* line 512, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.right .cAc_wpsml-content {
   left: 0;
 }
-/* line 513, ../scss/breakpoints/_base.scss */
+/* line 517, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg {
   background-color: #fff;
   color: #a7a9ac;
 }
-/* line 517, ../scss/breakpoints/_base.scss */
+/* line 521, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg a {
   color: #a7a9ac;
 }
-/* line 520, ../scss/breakpoints/_base.scss */
+/* line 524, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg a:hover, #content .cAc_wpsml-pageSection.cAc_wpsml-bg a:active {
   color: rgba(167, 169, 172, 0.3);
 }
-/* line 524, ../scss/breakpoints/_base.scss */
+/* line 528, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg a:link {
   -webkit-tap-highlight-color: rgba(167, 169, 172, 0.3);
 }
-/* line 530, ../scss/breakpoints/_base.scss */
+/* line 534, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg .light {
   color: #ebecec;
 }
-/* line 533, ../scss/breakpoints/_base.scss */
+/* line 537, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg .light a {
   color: #ebecec;
 }
-/* line 536, ../scss/breakpoints/_base.scss */
+/* line 540, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg .light a:hover, #content .cAc_wpsml-pageSection.cAc_wpsml-bg .light a:active {
   color: rgba(235, 236, 236, 0.3);
 }
-/* line 540, ../scss/breakpoints/_base.scss */
+/* line 544, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg .light a:link {
   -webkit-tap-highlight-color: rgba(235, 236, 236, 0.3);
 }
-/* line 552, ../scss/breakpoints/_base.scss */
+/* line 556, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.gray {
   background-color: #a7a9ac;
   color: #fff;
 }
-/* line 557, ../scss/breakpoints/_base.scss */
+/* line 561, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.gray .cAc_wpsml-content {
   background-color: rgba(167, 169, 172, 0.66);
 }
-/* line 561, ../scss/breakpoints/_base.scss */
+/* line 565, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.gray a {
   color: #fff;
 }
-/* line 564, ../scss/breakpoints/_base.scss */
+/* line 568, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.gray a:hover, #content .cAc_wpsml-pageSection.cAc_wpsml-bg.gray a:active {
   color: rgba(255, 255, 255, 0.3);
 }
-/* line 568, ../scss/breakpoints/_base.scss */
+/* line 572, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.gray a:link {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0.3);
 }
-/* line 572, ../scss/breakpoints/_base.scss */
+/* line 576, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.gray a.btn {
   background-color: #fff;
 }
-/* line 575, ../scss/breakpoints/_base.scss */
+/* line 579, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.gray a.btn:hover, #content .cAc_wpsml-pageSection.cAc_wpsml-bg.gray a.btn:active {
   background-color: rgba(255, 255, 255, 0.3);
 }
-/* line 579, ../scss/breakpoints/_base.scss */
+/* line 583, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.gray a.btn:link {
   -webkit-tap-highlight-color: transparent;
 }
-/* line 587, ../scss/breakpoints/_base.scss */
+/* line 591, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.gray .light {
   color: #ebecec;
 }
-/* line 590, ../scss/breakpoints/_base.scss */
+/* line 594, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.gray .light a {
   color: #ebecec;
 }
-/* line 593, ../scss/breakpoints/_base.scss */
+/* line 597, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.gray .light a:hover, #content .cAc_wpsml-pageSection.cAc_wpsml-bg.gray .light a:active {
   color: rgba(235, 236, 236, 0.3);
 }
-/* line 597, ../scss/breakpoints/_base.scss */
+/* line 601, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.gray .light a:link {
   -webkit-tap-highlight-color: rgba(235, 236, 236, 0.3);
 }
-/* line 605, ../scss/breakpoints/_base.scss */
+/* line 609, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.gray .dark {
   color: #fff;
 }
-/* line 608, ../scss/breakpoints/_base.scss */
+/* line 612, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.gray .dark a {
   color: #fff;
 }
-/* line 611, ../scss/breakpoints/_base.scss */
+/* line 615, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.gray .dark a:hover, #content .cAc_wpsml-pageSection.cAc_wpsml-bg.gray .dark a:active {
   color: rgba(255, 255, 255, 0.3);
 }
-/* line 615, ../scss/breakpoints/_base.scss */
+/* line 619, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.gray .dark a:link {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0.3);
 }
-/* line 552, ../scss/breakpoints/_base.scss */
+/* line 556, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.lilac {
   background-color: #af95c6;
   color: #fff;
 }
-/* line 557, ../scss/breakpoints/_base.scss */
+/* line 561, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.lilac .cAc_wpsml-content {
   background-color: rgba(175, 149, 198, 0.66);
 }
-/* line 561, ../scss/breakpoints/_base.scss */
+/* line 565, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.lilac a {
   color: #fff;
 }
-/* line 564, ../scss/breakpoints/_base.scss */
+/* line 568, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.lilac a:hover, #content .cAc_wpsml-pageSection.cAc_wpsml-bg.lilac a:active {
   color: rgba(255, 255, 255, 0.3);
 }
-/* line 568, ../scss/breakpoints/_base.scss */
+/* line 572, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.lilac a:link {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0.3);
 }
-/* line 572, ../scss/breakpoints/_base.scss */
+/* line 576, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.lilac a.btn {
   background-color: #704d8f;
 }
-/* line 575, ../scss/breakpoints/_base.scss */
+/* line 579, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.lilac a.btn:hover, #content .cAc_wpsml-pageSection.cAc_wpsml-bg.lilac a.btn:active {
   background-color: rgba(112, 77, 143, 0.3);
 }
-/* line 579, ../scss/breakpoints/_base.scss */
+/* line 583, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.lilac a.btn:link {
   -webkit-tap-highlight-color: transparent;
 }
-/* line 587, ../scss/breakpoints/_base.scss */
+/* line 591, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.lilac .light {
   color: #c1acd2;
 }
-/* line 590, ../scss/breakpoints/_base.scss */
+/* line 594, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.lilac .light a {
   color: #c1acd2;
 }
-/* line 593, ../scss/breakpoints/_base.scss */
+/* line 597, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.lilac .light a:hover, #content .cAc_wpsml-pageSection.cAc_wpsml-bg.lilac .light a:active {
   color: rgba(193, 172, 210, 0.3);
 }
-/* line 597, ../scss/breakpoints/_base.scss */
+/* line 601, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.lilac .light a:link {
   -webkit-tap-highlight-color: rgba(193, 172, 210, 0.3);
 }
-/* line 605, ../scss/breakpoints/_base.scss */
+/* line 609, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.lilac .dark {
   color: #704d8f;
 }
-/* line 608, ../scss/breakpoints/_base.scss */
+/* line 612, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.lilac .dark a {
   color: #704d8f;
 }
-/* line 611, ../scss/breakpoints/_base.scss */
+/* line 615, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.lilac .dark a:hover, #content .cAc_wpsml-pageSection.cAc_wpsml-bg.lilac .dark a:active {
   color: rgba(112, 77, 143, 0.3);
 }
-/* line 615, ../scss/breakpoints/_base.scss */
+/* line 619, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.lilac .dark a:link {
   -webkit-tap-highlight-color: rgba(112, 77, 143, 0.3);
 }
-/* line 552, ../scss/breakpoints/_base.scss */
+/* line 556, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.pink {
   background-color: #ce7e9d;
   color: #fff;
 }
-/* line 557, ../scss/breakpoints/_base.scss */
+/* line 561, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.pink .cAc_wpsml-content {
   background-color: rgba(206, 126, 157, 0.66);
 }
-/* line 561, ../scss/breakpoints/_base.scss */
+/* line 565, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.pink a {
   color: #fff;
 }
-/* line 564, ../scss/breakpoints/_base.scss */
+/* line 568, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.pink a:hover, #content .cAc_wpsml-pageSection.cAc_wpsml-bg.pink a:active {
   color: rgba(255, 255, 255, 0.3);
 }
-/* line 568, ../scss/breakpoints/_base.scss */
+/* line 572, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.pink a:link {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0.3);
 }
-/* line 572, ../scss/breakpoints/_base.scss */
+/* line 576, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.pink a.btn {
   background-color: #8c0e3f;
 }
-/* line 575, ../scss/breakpoints/_base.scss */
+/* line 579, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.pink a.btn:hover, #content .cAc_wpsml-pageSection.cAc_wpsml-bg.pink a.btn:active {
   background-color: rgba(140, 14, 63, 0.3);
 }
-/* line 579, ../scss/breakpoints/_base.scss */
+/* line 583, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.pink a.btn:link {
   -webkit-tap-highlight-color: transparent;
 }
-/* line 587, ../scss/breakpoints/_base.scss */
+/* line 591, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.pink .light {
   color: #d898b1;
 }
-/* line 590, ../scss/breakpoints/_base.scss */
+/* line 594, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.pink .light a {
   color: #d898b1;
 }
-/* line 593, ../scss/breakpoints/_base.scss */
+/* line 597, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.pink .light a:hover, #content .cAc_wpsml-pageSection.cAc_wpsml-bg.pink .light a:active {
   color: rgba(216, 152, 177, 0.3);
 }
-/* line 597, ../scss/breakpoints/_base.scss */
+/* line 601, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.pink .light a:link {
   -webkit-tap-highlight-color: rgba(216, 152, 177, 0.3);
 }
-/* line 605, ../scss/breakpoints/_base.scss */
+/* line 609, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.pink .dark {
   color: #8c0e3f;
 }
-/* line 608, ../scss/breakpoints/_base.scss */
+/* line 612, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.pink .dark a {
   color: #8c0e3f;
 }
-/* line 611, ../scss/breakpoints/_base.scss */
+/* line 615, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.pink .dark a:hover, #content .cAc_wpsml-pageSection.cAc_wpsml-bg.pink .dark a:active {
   color: rgba(140, 14, 63, 0.3);
 }
-/* line 615, ../scss/breakpoints/_base.scss */
+/* line 619, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.pink .dark a:link {
   -webkit-tap-highlight-color: rgba(140, 14, 63, 0.3);
 }
-/* line 552, ../scss/breakpoints/_base.scss */
+/* line 556, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.teal {
   background-color: #63b0bb;
   color: #fff;
 }
-/* line 557, ../scss/breakpoints/_base.scss */
+/* line 561, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.teal .cAc_wpsml-content {
   background-color: rgba(99, 176, 187, 0.66);
 }
-/* line 561, ../scss/breakpoints/_base.scss */
+/* line 565, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.teal a {
   color: #fff;
 }
-/* line 564, ../scss/breakpoints/_base.scss */
+/* line 568, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.teal a:hover, #content .cAc_wpsml-pageSection.cAc_wpsml-bg.teal a:active {
   color: rgba(255, 255, 255, 0.3);
 }
-/* line 568, ../scss/breakpoints/_base.scss */
+/* line 572, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.teal a:link {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0.3);
 }
-/* line 572, ../scss/breakpoints/_base.scss */
+/* line 576, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.teal a.btn {
   background-color: #009db3;
 }
-/* line 575, ../scss/breakpoints/_base.scss */
+/* line 579, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.teal a.btn:hover, #content .cAc_wpsml-pageSection.cAc_wpsml-bg.teal a.btn:active {
   background-color: rgba(0, 157, 179, 0.3);
 }
-/* line 579, ../scss/breakpoints/_base.scss */
+/* line 583, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.teal a.btn:link {
   -webkit-tap-highlight-color: transparent;
 }
-/* line 587, ../scss/breakpoints/_base.scss */
+/* line 591, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.teal .light {
   color: #75b9c3;
 }
-/* line 590, ../scss/breakpoints/_base.scss */
+/* line 594, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.teal .light a {
   color: #75b9c3;
 }
-/* line 593, ../scss/breakpoints/_base.scss */
+/* line 597, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.teal .light a:hover, #content .cAc_wpsml-pageSection.cAc_wpsml-bg.teal .light a:active {
   color: rgba(117, 185, 195, 0.3);
 }
-/* line 597, ../scss/breakpoints/_base.scss */
+/* line 601, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.teal .light a:link {
   -webkit-tap-highlight-color: rgba(117, 185, 195, 0.3);
 }
-/* line 605, ../scss/breakpoints/_base.scss */
+/* line 609, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.teal .dark {
   color: #009db3;
 }
-/* line 608, ../scss/breakpoints/_base.scss */
+/* line 612, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.teal .dark a {
   color: #009db3;
 }
-/* line 611, ../scss/breakpoints/_base.scss */
+/* line 615, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.teal .dark a:hover, #content .cAc_wpsml-pageSection.cAc_wpsml-bg.teal .dark a:active {
   color: rgba(0, 157, 179, 0.3);
 }
-/* line 615, ../scss/breakpoints/_base.scss */
+/* line 619, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.teal .dark a:link {
   -webkit-tap-highlight-color: rgba(0, 157, 179, 0.3);
 }
-/* line 552, ../scss/breakpoints/_base.scss */
+/* line 556, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.yellow {
   background-color: #ecba4b;
   color: #fff;
 }
-/* line 557, ../scss/breakpoints/_base.scss */
+/* line 561, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.yellow .cAc_wpsml-content {
   background-color: rgba(236, 186, 75, 0.66);
 }
-/* line 561, ../scss/breakpoints/_base.scss */
+/* line 565, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.yellow a {
   color: #fff;
 }
-/* line 564, ../scss/breakpoints/_base.scss */
+/* line 568, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.yellow a:hover, #content .cAc_wpsml-pageSection.cAc_wpsml-bg.yellow a:active {
   color: rgba(255, 255, 255, 0.3);
 }
-/* line 568, ../scss/breakpoints/_base.scss */
+/* line 572, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.yellow a:link {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0.3);
 }
-/* line 572, ../scss/breakpoints/_base.scss */
+/* line 576, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.yellow a.btn {
   background-color: #a87400;
 }
-/* line 575, ../scss/breakpoints/_base.scss */
+/* line 579, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.yellow a.btn:hover, #content .cAc_wpsml-pageSection.cAc_wpsml-bg.yellow a.btn:active {
   background-color: rgba(168, 116, 0, 0.3);
 }
-/* line 579, ../scss/breakpoints/_base.scss */
+/* line 583, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.yellow a.btn:link {
   -webkit-tap-highlight-color: transparent;
 }
-/* line 587, ../scss/breakpoints/_base.scss */
+/* line 591, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.yellow .light {
   color: #f1cd7e;
 }
-/* line 590, ../scss/breakpoints/_base.scss */
+/* line 594, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.yellow .light a {
   color: #f1cd7e;
 }
-/* line 593, ../scss/breakpoints/_base.scss */
+/* line 597, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.yellow .light a:hover, #content .cAc_wpsml-pageSection.cAc_wpsml-bg.yellow .light a:active {
   color: rgba(241, 205, 126, 0.3);
 }
-/* line 597, ../scss/breakpoints/_base.scss */
+/* line 601, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.yellow .light a:link {
   -webkit-tap-highlight-color: rgba(241, 205, 126, 0.3);
 }
-/* line 605, ../scss/breakpoints/_base.scss */
+/* line 609, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.yellow .dark {
   color: #a87400;
 }
-/* line 608, ../scss/breakpoints/_base.scss */
+/* line 612, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.yellow .dark a {
   color: #a87400;
 }
-/* line 611, ../scss/breakpoints/_base.scss */
+/* line 615, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.yellow .dark a:hover, #content .cAc_wpsml-pageSection.cAc_wpsml-bg.yellow .dark a:active {
   color: rgba(168, 116, 0, 0.3);
 }
-/* line 615, ../scss/breakpoints/_base.scss */
+/* line 619, ../scss/breakpoints/_base.scss */
 #content .cAc_wpsml-pageSection.cAc_wpsml-bg.yellow .dark a:link {
   -webkit-tap-highlight-color: rgba(168, 116, 0, 0.3);
 }
-/* line 630, ../scss/breakpoints/_base.scss */
+/* line 634, ../scss/breakpoints/_base.scss */
 #content .sundial_static_post_containers .sundial_prev_static_post,
 #content .sundial_static_post_containers .sundial_numbered_static_post.left-side {
   position: relative;
   top: 0;
   left: -100%;
 }
-/* line 637, ../scss/breakpoints/_base.scss */
+/* line 641, ../scss/breakpoints/_base.scss */
 #content .sundial_static_post_containers .sundial_next_static_post,
 #content .sundial_static_post_containers .sundial_numbered_static_post.right-side {
   position: relative;
   top: 0;
   left: 100%;
 }
-/* line 644, ../scss/breakpoints/_base.scss */
+/* line 648, ../scss/breakpoints/_base.scss */
 #content .sundial_static_post_containers img.product-image {
   width: auto;
   margin: 5% 0;
 }
-/* line 651, ../scss/breakpoints/_base.scss */
+/* line 655, ../scss/breakpoints/_base.scss */
 #content .sundial_static_post_containers .sundial_active_static_post .sundial_static_post_container {
   position: fixed;
   top: 15%;
@@ -2321,7 +2325,7 @@ POSTS & CONTENT STYLES
   width: 100%;
   height: 85%;
 }
-/* line 658, ../scss/breakpoints/_base.scss */
+/* line 662, ../scss/breakpoints/_base.scss */
 #content .sundial_static_post_containers .sundial_active_static_post .sundial_static_post_container .trigger_previous_sundial_static_post {
   position: fixed;
   top: 50%;
@@ -2331,7 +2335,7 @@ POSTS & CONTENT STYLES
   display: none;
   z-index: 40;
 }
-/* line 669, ../scss/breakpoints/_base.scss */
+/* line 673, ../scss/breakpoints/_base.scss */
 #content .sundial_static_post_containers .sundial_active_static_post .sundial_static_post_container .trigger_next_sundial_static_post {
   position: fixed;
   top: 50%;
@@ -2340,7 +2344,7 @@ POSTS & CONTENT STYLES
   cursor: pointer;
   z-index: 40;
 }
-/* line 678, ../scss/breakpoints/_base.scss */
+/* line 682, ../scss/breakpoints/_base.scss */
 #content .sundial_static_post_containers .sundial_active_static_post .sundial_static_post_container .sundial_static_post_block {
   height: 25%;
   width: 100%;
@@ -2348,47 +2352,47 @@ POSTS & CONTENT STYLES
   bottom: 0;
   z-index: -1;
 }
-/* line 685, ../scss/breakpoints/_base.scss */
+/* line 689, ../scss/breakpoints/_base.scss */
 #content .sundial_static_post_containers .sundial_active_static_post .sundial_static_post_container .sundial_static_post_block .sundial_static_post-needstate {
   text-align: center;
   font-family: "Times New Roman W01 SmText", Times New Roman, Times, serif;
   position: relative;
   top: 1em;
 }
-/* line 691, ../scss/breakpoints/_base.scss */
+/* line 695, ../scss/breakpoints/_base.scss */
 #content .sundial_static_post_containers .sundial_active_static_post .sundial_static_post_container .sundial_static_post_block .sundial_static_post-needstate h2 {
   font-size: 1.5em;
   text-transform: lowercase;
   color: #fff;
   font-style: italic;
 }
-/* line 702, ../scss/breakpoints/_base.scss */
+/* line 706, ../scss/breakpoints/_base.scss */
 #content .sundial_static_post_containers .sundial_active_static_post .sundial_static_post_container .sundial_static_post {
   position: relative;
 }
-/* line 705, ../scss/breakpoints/_base.scss */
+/* line 709, ../scss/breakpoints/_base.scss */
 #content .sundial_static_post_containers .sundial_active_static_post .sundial_static_post_container .sundial_static_post .sundial_static_post-benefit {
   text-align: center;
   text-transform: uppercase;
 }
-/* line 709, ../scss/breakpoints/_base.scss */
+/* line 713, ../scss/breakpoints/_base.scss */
 #content .sundial_static_post_containers .sundial_active_static_post .sundial_static_post_container .sundial_static_post .sundial_static_post-benefit h2 {
   font-weight: 400;
   font-size: 2.5em;
   margin: 0;
 }
-/* line 717, ../scss/breakpoints/_base.scss */
+/* line 721, ../scss/breakpoints/_base.scss */
 #content .sundial_static_post_containers .sundial_active_static_post .sundial_static_post_container .sundial_static_post .sundial_static_post-title {
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
 }
-/* line 722, ../scss/breakpoints/_base.scss */
+/* line 726, ../scss/breakpoints/_base.scss */
 #content .sundial_static_post_containers .sundial_active_static_post .sundial_static_post_container .sundial_static_post .sundial_static_post-title h1 {
   font-weight: 400;
   margin: 0;
 }
-/* line 729, ../scss/breakpoints/_base.scss */
+/* line 733, ../scss/breakpoints/_base.scss */
 #content .sundial_static_post_containers .sundial_active_static_post .sundial_static_post_container .sundial_static_post .sundial_static_post-image {
   text-align: center;
   position: relative;
@@ -2396,22 +2400,22 @@ POSTS & CONTENT STYLES
   background-repeat: no-repeat;
   background-size: contain;
 }
-/* line 736, ../scss/breakpoints/_base.scss */
+/* line 740, ../scss/breakpoints/_base.scss */
 #content .sundial_static_post_containers .sundial_active_static_post .sundial_static_post_container .sundial_static_post .sundial_static_post-image.product {
   z-index: -1;
 }
-/* line 740, ../scss/breakpoints/_base.scss */
+/* line 744, ../scss/breakpoints/_base.scss */
 #content .sundial_static_post_containers .sundial_active_static_post .sundial_static_post_container .sundial_static_post .sundial_static_post-image img.collection-image {
   max-width: 45%;
   height: auto;
   cursor: pointer;
 }
-/* line 747, ../scss/breakpoints/_base.scss */
+/* line 751, ../scss/breakpoints/_base.scss */
 #content .sundial_static_post_containers .sundial_active_static_post .sundial_static_post_container .sundial_static_post .sundial_static_post-image img.product-image {
   width: auto;
   margin: 5% 0;
 }
-/* line 752, ../scss/breakpoints/_base.scss */
+/* line 756, ../scss/breakpoints/_base.scss */
 #content .sundial_static_post_containers .sundial_active_static_post .sundial_static_post_container .sundial_static_post .sundial_static_post-image img.sundial_static_post-burst {
   max-width: 100%;
   max-height: 100%;
@@ -2420,7 +2424,7 @@ POSTS & CONTENT STYLES
   top: 0;
   left: 0;
 }
-/* line 763, ../scss/breakpoints/_base.scss */
+/* line 767, ../scss/breakpoints/_base.scss */
 #content .sundial_static_post_containers .sundial_active_static_post .sundial_static_post_container .sundial_static_post .sundial_static_post_block {
   height: 25%;
   width: 100%;
@@ -2428,21 +2432,21 @@ POSTS & CONTENT STYLES
   bottom: 0;
   z-index: -1;
 }
-/* line 770, ../scss/breakpoints/_base.scss */
+/* line 774, ../scss/breakpoints/_base.scss */
 #content .sundial_static_post_containers .sundial_active_static_post .sundial_static_post_container .sundial_static_post .sundial_static_post_block .sundial_static_post-needstate {
   text-align: center;
   font-family: "Times New Roman W01 SmText", Times New Roman, Times, serif;
   position: relative;
   top: 1em;
 }
-/* line 776, ../scss/breakpoints/_base.scss */
+/* line 780, ../scss/breakpoints/_base.scss */
 #content .sundial_static_post_containers .sundial_active_static_post .sundial_static_post_container .sundial_static_post .sundial_static_post_block .sundial_static_post-needstate h1 {
   font-size: 1.5em;
   text-transform: lowercase;
   color: #fff;
   font-style: italic;
 }
-/* line 789, ../scss/breakpoints/_base.scss */
+/* line 793, ../scss/breakpoints/_base.scss */
 #content .sundial_static_post_containers .sundial_active_static_post .sundial_static_post_container .product-information {
   -webkit-transition: opacity 0.75s ease-in-out;
   -moz-transition: opacity 0.75s ease-in-out;
@@ -2452,31 +2456,31 @@ POSTS & CONTENT STYLES
   opacity: 0;
   visibility: hidden;
 }
-/* line 794, ../scss/breakpoints/_base.scss */
+/* line 798, ../scss/breakpoints/_base.scss */
 #content .sundial_static_post_containers .sundial_active_static_post .sundial_static_post_container .product-information.opaque {
   opacity: 1;
 }
-/* line 798, ../scss/breakpoints/_base.scss */
+/* line 802, ../scss/breakpoints/_base.scss */
 #content .sundial_static_post_containers .sundial_active_static_post .sundial_static_post_container .product-information.visible {
   visibility: visible;
   cursor: pointer;
 }
-/* line 803, ../scss/breakpoints/_base.scss */
+/* line 807, ../scss/breakpoints/_base.scss */
 #content .sundial_static_post_containers .sundial_active_static_post .sundial_static_post_container .product-information .description p {
   margin: 0;
 }
 
-/* line 835, ../scss/breakpoints/_base.scss */
+/* line 839, ../scss/breakpoints/_base.scss */
 .hentry .mcjw-amp {
   font: italic inherit inherit inherit "Times New Roman W01 SmText", Times New Roman, Times, serif;
 }
-/* line 846, ../scss/breakpoints/_base.scss */
+/* line 850, ../scss/breakpoints/_base.scss */
 .hentry footer p {
   margin: 0;
 }
 
 /* end .hentry */
-/* line 853, ../scss/breakpoints/_base.scss */
+/* line 857, ../scss/breakpoints/_base.scss */
 .single-title,
 .page-title,
 .entry-title {
@@ -2493,7 +2497,7 @@ POSTS & CONTENT STYLES
 /* style by category (i.e. category-videos) */
 /* style by tag (i.e. tag-news) */
 /* post meta */
-/* line 878, ../scss/breakpoints/_base.scss */
+/* line 882, ../scss/breakpoints/_base.scss */
 .byline {
   color: #9fa6b4;
   font-style: italic;
@@ -2501,7 +2505,7 @@ POSTS & CONTENT STYLES
 }
 
 /* entry content */
-/* line 887, ../scss/breakpoints/_base.scss */
+/* line 891, ../scss/breakpoints/_base.scss */
 .entry-content {
   padding: 1.5em 0 0;
   /*
@@ -2511,17 +2515,17 @@ POSTS & CONTENT STYLES
   but it's up to you. Feel free to change it up.
   */
 }
-/* line 890, ../scss/breakpoints/_base.scss */
+/* line 894, ../scss/breakpoints/_base.scss */
 .entry-content p {
   margin: 0 0 1.5em;
 }
-/* line 915, ../scss/breakpoints/_base.scss */
+/* line 919, ../scss/breakpoints/_base.scss */
 .entry-content table {
   width: 100%;
   border: 1px solid #ebecec;
   margin-bottom: 1.5em;
 }
-/* line 920, ../scss/breakpoints/_base.scss */
+/* line 924, ../scss/breakpoints/_base.scss */
 .entry-content table caption {
   margin: 0 0 7px;
   font-size: 0.75em;
@@ -2529,35 +2533,35 @@ POSTS & CONTENT STYLES
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-/* line 929, ../scss/breakpoints/_base.scss */
+/* line 933, ../scss/breakpoints/_base.scss */
 .entry-content tr {
   border-bottom: 1px solid #ebecec;
 }
-/* line 932, ../scss/breakpoints/_base.scss */
+/* line 936, ../scss/breakpoints/_base.scss */
 .entry-content tr:nth-child(even) {
   background-color: #ebecec;
 }
-/* line 937, ../scss/breakpoints/_base.scss */
+/* line 941, ../scss/breakpoints/_base.scss */
 .entry-content td {
   padding: 7px;
   border-right: 1px solid #ebecec;
 }
-/* line 941, ../scss/breakpoints/_base.scss */
+/* line 945, ../scss/breakpoints/_base.scss */
 .entry-content td:last-child {
   border-right: 0;
 }
-/* line 946, ../scss/breakpoints/_base.scss */
+/* line 950, ../scss/breakpoints/_base.scss */
 .entry-content th {
   background-color: #a7a9ac;
   border-bottom: 1px solid #ebecec;
   border-right: 1px solid #eaedf2;
   color: #fff;
 }
-/* line 952, ../scss/breakpoints/_base.scss */
+/* line 956, ../scss/breakpoints/_base.scss */
 .entry-content th:last-child {
   border-right: 0;
 }
-/* line 957, ../scss/breakpoints/_base.scss */
+/* line 961, ../scss/breakpoints/_base.scss */
 .entry-content blockquote {
   margin: 0 0 1.5em 0.75em;
   padding: 0 0 0 0.75em;
@@ -2565,20 +2569,20 @@ POSTS & CONTENT STYLES
   font-style: italic;
   color: #9fa6b4;
 }
-/* line 972, ../scss/breakpoints/_base.scss */
+/* line 976, ../scss/breakpoints/_base.scss */
 .entry-content dd {
   margin-left: 0;
   font-size: 0.9em;
   color: #787878;
   margin-bottom: 1.5em;
 }
-/* line 979, ../scss/breakpoints/_base.scss */
+/* line 983, ../scss/breakpoints/_base.scss */
 .entry-content img {
   margin: 0 0 1.5em 0;
   max-width: 100%;
   height: auto;
 }
-/* line 995, ../scss/breakpoints/_base.scss */
+/* line 999, ../scss/breakpoints/_base.scss */
 .entry-content .size-auto,
 .entry-content .size-full,
 .entry-content .size-large,
@@ -2587,7 +2591,7 @@ POSTS & CONTENT STYLES
   max-width: 100%;
   height: auto;
 }
-/* line 1004, ../scss/breakpoints/_base.scss */
+/* line 1008, ../scss/breakpoints/_base.scss */
 .entry-content pre {
   background: #333;
   color: #f8f9fa;
@@ -2598,20 +2602,20 @@ POSTS & CONTENT STYLES
 }
 
 /* end .entry-content */
-/* line 1015, ../scss/breakpoints/_base.scss */
+/* line 1019, ../scss/breakpoints/_base.scss */
 .wp-caption {
   max-width: 100%;
   background: #eee;
   padding: 5px;
   /* images inside wp-caption */
 }
-/* line 1021, ../scss/breakpoints/_base.scss */
+/* line 1025, ../scss/breakpoints/_base.scss */
 .wp-caption img {
   max-width: 100%;
   margin-bottom: 0;
   width: 100%;
 }
-/* line 1027, ../scss/breakpoints/_base.scss */
+/* line 1031, ../scss/breakpoints/_base.scss */
 .wp-caption p.wp-caption-text {
   font-size: 0.85em;
   margin: 4px 0 7px;
@@ -2622,7 +2626,7 @@ POSTS & CONTENT STYLES
 /* image gallery styles */
 /* end .gallery */
 /* gallery caption styles */
-/* line 1061, ../scss/breakpoints/_base.scss */
+/* line 1065, ../scss/breakpoints/_base.scss */
 .tags {
   margin: 0;
 }
@@ -2630,7 +2634,7 @@ POSTS & CONTENT STYLES
 /*********************
 PRODUCT INFORMATION
 *********************/
-/* line 1070, ../scss/breakpoints/_base.scss */
+/* line 1074, ../scss/breakpoints/_base.scss */
 .product-information {
   border: 2px solid #a7a9ac;
   padding: 2em;
@@ -2642,7 +2646,7 @@ PRODUCT INFORMATION
   background: transparent;
   z-index: 5;
 }
-/* line 1081, ../scss/breakpoints/_base.scss */
+/* line 1085, ../scss/breakpoints/_base.scss */
 .product-information .interior {
   background: #fff;
   opacity: 0.9;
@@ -2653,7 +2657,7 @@ PRODUCT INFORMATION
   width: 100%;
   z-index: -1;
 }
-/* line 1092, ../scss/breakpoints/_base.scss */
+/* line 1096, ../scss/breakpoints/_base.scss */
 .product-information .benefits {
   font-size: 2.1875em;
   text-transform: uppercase;
@@ -2662,7 +2666,7 @@ PRODUCT INFORMATION
   word-spacing: -0.05em;
   line-height: 1.1;
 }
-/* line 1101, ../scss/breakpoints/_base.scss */
+/* line 1105, ../scss/breakpoints/_base.scss */
 .product-information .title {
   font-size: 2.25em;
   text-transform: uppercase;
@@ -2672,7 +2676,7 @@ PRODUCT INFORMATION
   word-spacing: -0.04em;
   line-height: 1;
 }
-/* line 1111, ../scss/breakpoints/_base.scss */
+/* line 1115, ../scss/breakpoints/_base.scss */
 .product-information .ingredients {
   font-size: 2.1875em;
   text-transform: uppercase;
@@ -2681,7 +2685,7 @@ PRODUCT INFORMATION
   word-spacing: -0.05em;
   line-height: 1.1;
 }
-/* line 1120, ../scss/breakpoints/_base.scss */
+/* line 1124, ../scss/breakpoints/_base.scss */
 .product-information .need-state {
   font-size: 1.1875em;
   text-transform: lowercase;
@@ -2692,18 +2696,18 @@ PRODUCT INFORMATION
   letter-spacing: 0.0025em;
   word-spacing: 0.0025em;
 }
-/* line 1131, ../scss/breakpoints/_base.scss */
+/* line 1135, ../scss/breakpoints/_base.scss */
 .product-information .description {
   font-size: 1em;
   letter-spacing: -0.075em;
   word-spacing: -0.075em;
   color: #ebecec;
 }
-/* line 1137, ../scss/breakpoints/_base.scss */
+/* line 1141, ../scss/breakpoints/_base.scss */
 .product-information .cta {
   margin-top: 1rem;
 }
-/* line 1140, ../scss/breakpoints/_base.scss */
+/* line 1144, ../scss/breakpoints/_base.scss */
 .product-information .btn {
   background: #a7a9ac;
   margin-top: 1rem;
@@ -2723,330 +2727,330 @@ PRODUCT INFORMATION
   -o-transition: background-color 1s ease-in-out;
   transition: background-color 1s ease-in-out;
 }
-/* line 1151, ../scss/breakpoints/_base.scss */
+/* line 1155, ../scss/breakpoints/_base.scss */
 .product-information .btn:hover, .product-information .btn:active {
   background: #ebecec;
 }
-/* line 1155, ../scss/breakpoints/_base.scss */
+/* line 1159, ../scss/breakpoints/_base.scss */
 .product-information .btn:link {
   -webkit-tap-highlight-color: transparent;
 }
-/* line 1159, ../scss/breakpoints/_base.scss */
+/* line 1163, ../scss/breakpoints/_base.scss */
 .product-information .btn:active {
   -webkit-transform: scale3d(0.9, 0.9, 1);
 }
 
-/* line 1172, ../scss/breakpoints/_base.scss */
+/* line 1176, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .gray .fa {
   color: #fff;
 }
-/* line 1174, ../scss/breakpoints/_base.scss */
+/* line 1178, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .gray .fa:hover {
   color: #ebecec;
 }
-/* line 1179, ../scss/breakpoints/_base.scss */
+/* line 1183, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .gray .product-information {
   border-color: #fff;
 }
-/* line 1182, ../scss/breakpoints/_base.scss */
+/* line 1186, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .gray .product-information .benefits {
   color: #a7a9ac;
 }
-/* line 1186, ../scss/breakpoints/_base.scss */
+/* line 1190, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .gray .product-information .title {
   color: #fff;
 }
-/* line 1190, ../scss/breakpoints/_base.scss */
+/* line 1194, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .gray .product-information .ingredients {
   color: #fff;
 }
-/* line 1194, ../scss/breakpoints/_base.scss */
+/* line 1198, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .gray .product-information .need-state {
   color: #a7a9ac;
 }
-/* line 1198, ../scss/breakpoints/_base.scss */
+/* line 1202, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .gray .product-information .description {
   color: #a7a9ac;
 }
-/* line 1202, ../scss/breakpoints/_base.scss */
+/* line 1206, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .gray .product-information .btn {
   background: #fff;
 }
-/* line 1205, ../scss/breakpoints/_base.scss */
+/* line 1209, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .gray .product-information .btn:hover, .sundial_active_static_post .gray .product-information .btn:active {
   background: #ebecec;
 }
-/* line 1209, ../scss/breakpoints/_base.scss */
+/* line 1213, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .gray .product-information .btn:link {
   -webkit-tap-highlight-color: transparent;
 }
-/* line 1213, ../scss/breakpoints/_base.scss */
+/* line 1217, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .gray .product-information .btn:active {
   -webkit-transform: scale3d(0.9, 0.9, 1);
 }
 
-/* line 1172, ../scss/breakpoints/_base.scss */
+/* line 1176, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .lilac .fa {
   color: #704d8f;
 }
-/* line 1174, ../scss/breakpoints/_base.scss */
+/* line 1178, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .lilac .fa:hover {
   color: #c1acd2;
 }
-/* line 1179, ../scss/breakpoints/_base.scss */
+/* line 1183, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .lilac .product-information {
   border-color: #704d8f;
 }
-/* line 1182, ../scss/breakpoints/_base.scss */
+/* line 1186, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .lilac .product-information .benefits {
   color: #a7a9ac;
 }
-/* line 1186, ../scss/breakpoints/_base.scss */
+/* line 1190, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .lilac .product-information .title {
   color: #704d8f;
 }
-/* line 1190, ../scss/breakpoints/_base.scss */
+/* line 1194, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .lilac .product-information .ingredients {
   color: #704d8f;
 }
-/* line 1194, ../scss/breakpoints/_base.scss */
+/* line 1198, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .lilac .product-information .need-state {
   color: #a7a9ac;
 }
-/* line 1198, ../scss/breakpoints/_base.scss */
+/* line 1202, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .lilac .product-information .description {
   color: #a7a9ac;
 }
-/* line 1202, ../scss/breakpoints/_base.scss */
+/* line 1206, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .lilac .product-information .btn {
   background: #704d8f;
 }
-/* line 1205, ../scss/breakpoints/_base.scss */
+/* line 1209, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .lilac .product-information .btn:hover, .sundial_active_static_post .lilac .product-information .btn:active {
   background: #c1acd2;
 }
-/* line 1209, ../scss/breakpoints/_base.scss */
+/* line 1213, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .lilac .product-information .btn:link {
   -webkit-tap-highlight-color: transparent;
 }
-/* line 1213, ../scss/breakpoints/_base.scss */
+/* line 1217, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .lilac .product-information .btn:active {
   -webkit-transform: scale3d(0.9, 0.9, 1);
 }
 
-/* line 1172, ../scss/breakpoints/_base.scss */
+/* line 1176, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .pink .fa {
   color: #8c0e3f;
 }
-/* line 1174, ../scss/breakpoints/_base.scss */
+/* line 1178, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .pink .fa:hover {
   color: #d898b1;
 }
-/* line 1179, ../scss/breakpoints/_base.scss */
+/* line 1183, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .pink .product-information {
   border-color: #8c0e3f;
 }
-/* line 1182, ../scss/breakpoints/_base.scss */
+/* line 1186, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .pink .product-information .benefits {
   color: #a7a9ac;
 }
-/* line 1186, ../scss/breakpoints/_base.scss */
+/* line 1190, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .pink .product-information .title {
   color: #8c0e3f;
 }
-/* line 1190, ../scss/breakpoints/_base.scss */
+/* line 1194, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .pink .product-information .ingredients {
   color: #8c0e3f;
 }
-/* line 1194, ../scss/breakpoints/_base.scss */
+/* line 1198, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .pink .product-information .need-state {
   color: #a7a9ac;
 }
-/* line 1198, ../scss/breakpoints/_base.scss */
+/* line 1202, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .pink .product-information .description {
   color: #a7a9ac;
 }
-/* line 1202, ../scss/breakpoints/_base.scss */
+/* line 1206, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .pink .product-information .btn {
   background: #8c0e3f;
 }
-/* line 1205, ../scss/breakpoints/_base.scss */
+/* line 1209, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .pink .product-information .btn:hover, .sundial_active_static_post .pink .product-information .btn:active {
   background: #d898b1;
 }
-/* line 1209, ../scss/breakpoints/_base.scss */
+/* line 1213, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .pink .product-information .btn:link {
   -webkit-tap-highlight-color: transparent;
 }
-/* line 1213, ../scss/breakpoints/_base.scss */
+/* line 1217, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .pink .product-information .btn:active {
   -webkit-transform: scale3d(0.9, 0.9, 1);
 }
 
-/* line 1172, ../scss/breakpoints/_base.scss */
+/* line 1176, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .teal .fa {
   color: #009db3;
 }
-/* line 1174, ../scss/breakpoints/_base.scss */
+/* line 1178, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .teal .fa:hover {
   color: #75b9c3;
 }
-/* line 1179, ../scss/breakpoints/_base.scss */
+/* line 1183, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .teal .product-information {
   border-color: #009db3;
 }
-/* line 1182, ../scss/breakpoints/_base.scss */
+/* line 1186, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .teal .product-information .benefits {
   color: #a7a9ac;
 }
-/* line 1186, ../scss/breakpoints/_base.scss */
+/* line 1190, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .teal .product-information .title {
   color: #009db3;
 }
-/* line 1190, ../scss/breakpoints/_base.scss */
+/* line 1194, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .teal .product-information .ingredients {
   color: #009db3;
 }
-/* line 1194, ../scss/breakpoints/_base.scss */
+/* line 1198, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .teal .product-information .need-state {
   color: #a7a9ac;
 }
-/* line 1198, ../scss/breakpoints/_base.scss */
+/* line 1202, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .teal .product-information .description {
   color: #a7a9ac;
 }
-/* line 1202, ../scss/breakpoints/_base.scss */
+/* line 1206, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .teal .product-information .btn {
   background: #009db3;
 }
-/* line 1205, ../scss/breakpoints/_base.scss */
+/* line 1209, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .teal .product-information .btn:hover, .sundial_active_static_post .teal .product-information .btn:active {
   background: #75b9c3;
 }
-/* line 1209, ../scss/breakpoints/_base.scss */
+/* line 1213, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .teal .product-information .btn:link {
   -webkit-tap-highlight-color: transparent;
 }
-/* line 1213, ../scss/breakpoints/_base.scss */
+/* line 1217, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .teal .product-information .btn:active {
   -webkit-transform: scale3d(0.9, 0.9, 1);
 }
 
-/* line 1172, ../scss/breakpoints/_base.scss */
+/* line 1176, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .yellow .fa {
   color: #a87400;
 }
-/* line 1174, ../scss/breakpoints/_base.scss */
+/* line 1178, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .yellow .fa:hover {
   color: #f1cd7e;
 }
-/* line 1179, ../scss/breakpoints/_base.scss */
+/* line 1183, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .yellow .product-information {
   border-color: #a87400;
 }
-/* line 1182, ../scss/breakpoints/_base.scss */
+/* line 1186, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .yellow .product-information .benefits {
   color: #a7a9ac;
 }
-/* line 1186, ../scss/breakpoints/_base.scss */
+/* line 1190, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .yellow .product-information .title {
   color: #a87400;
 }
-/* line 1190, ../scss/breakpoints/_base.scss */
+/* line 1194, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .yellow .product-information .ingredients {
   color: #a87400;
 }
-/* line 1194, ../scss/breakpoints/_base.scss */
+/* line 1198, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .yellow .product-information .need-state {
   color: #a7a9ac;
 }
-/* line 1198, ../scss/breakpoints/_base.scss */
+/* line 1202, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .yellow .product-information .description {
   color: #a7a9ac;
 }
-/* line 1202, ../scss/breakpoints/_base.scss */
+/* line 1206, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .yellow .product-information .btn {
   background: #a87400;
 }
-/* line 1205, ../scss/breakpoints/_base.scss */
+/* line 1209, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .yellow .product-information .btn:hover, .sundial_active_static_post .yellow .product-information .btn:active {
   background: #f1cd7e;
 }
-/* line 1209, ../scss/breakpoints/_base.scss */
+/* line 1213, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .yellow .product-information .btn:link {
   -webkit-tap-highlight-color: transparent;
 }
-/* line 1213, ../scss/breakpoints/_base.scss */
+/* line 1217, ../scss/breakpoints/_base.scss */
 .sundial_active_static_post .yellow .product-information .btn:active {
   -webkit-transform: scale3d(0.9, 0.9, 1);
 }
 
-/* line 1228, ../scss/breakpoints/_base.scss */
+/* line 1232, ../scss/breakpoints/_base.scss */
 div.gray.bgcolor {
   background-color: #a7a9ac;
   color: white;
 }
-/* line 1231, ../scss/breakpoints/_base.scss */
+/* line 1235, ../scss/breakpoints/_base.scss */
 div.gray.bgcolor a {
   color: #fff;
 }
-/* line 1234, ../scss/breakpoints/_base.scss */
+/* line 1238, ../scss/breakpoints/_base.scss */
 div.gray.bgcolor a:hover {
   color: #ebecec;
 }
 
-/* line 1228, ../scss/breakpoints/_base.scss */
+/* line 1232, ../scss/breakpoints/_base.scss */
 div.lilac.bgcolor {
   background-color: #af95c6;
   color: white;
 }
-/* line 1231, ../scss/breakpoints/_base.scss */
+/* line 1235, ../scss/breakpoints/_base.scss */
 div.lilac.bgcolor a {
   color: #704d8f;
 }
-/* line 1234, ../scss/breakpoints/_base.scss */
+/* line 1238, ../scss/breakpoints/_base.scss */
 div.lilac.bgcolor a:hover {
   color: #c1acd2;
 }
 
-/* line 1228, ../scss/breakpoints/_base.scss */
+/* line 1232, ../scss/breakpoints/_base.scss */
 div.pink.bgcolor {
   background-color: #ce7e9d;
   color: white;
 }
-/* line 1231, ../scss/breakpoints/_base.scss */
+/* line 1235, ../scss/breakpoints/_base.scss */
 div.pink.bgcolor a {
   color: #8c0e3f;
 }
-/* line 1234, ../scss/breakpoints/_base.scss */
+/* line 1238, ../scss/breakpoints/_base.scss */
 div.pink.bgcolor a:hover {
   color: #d898b1;
 }
 
-/* line 1228, ../scss/breakpoints/_base.scss */
+/* line 1232, ../scss/breakpoints/_base.scss */
 div.teal.bgcolor {
   background-color: #63b0bb;
   color: white;
 }
-/* line 1231, ../scss/breakpoints/_base.scss */
+/* line 1235, ../scss/breakpoints/_base.scss */
 div.teal.bgcolor a {
   color: #009db3;
 }
-/* line 1234, ../scss/breakpoints/_base.scss */
+/* line 1238, ../scss/breakpoints/_base.scss */
 div.teal.bgcolor a:hover {
   color: #75b9c3;
 }
 
-/* line 1228, ../scss/breakpoints/_base.scss */
+/* line 1232, ../scss/breakpoints/_base.scss */
 div.yellow.bgcolor {
   background-color: #ecba4b;
   color: white;
 }
-/* line 1231, ../scss/breakpoints/_base.scss */
+/* line 1235, ../scss/breakpoints/_base.scss */
 div.yellow.bgcolor a {
   color: #a87400;
 }
-/* line 1234, ../scss/breakpoints/_base.scss */
+/* line 1238, ../scss/breakpoints/_base.scss */
 div.yellow.bgcolor a:hover {
   color: #f1cd7e;
 }
@@ -3054,17 +3058,17 @@ div.yellow.bgcolor a:hover {
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
-/* line 1249, ../scss/breakpoints/_base.scss */
+/* line 1253, ../scss/breakpoints/_base.scss */
 .pagination,
 .wp-prev-next {
   margin: 1.5em 0;
 }
 
-/* line 1253, ../scss/breakpoints/_base.scss */
+/* line 1257, ../scss/breakpoints/_base.scss */
 .pagination {
   text-align: center;
 }
-/* line 1256, ../scss/breakpoints/_base.scss */
+/* line 1260, ../scss/breakpoints/_base.scss */
 .pagination ul {
   display: inline-block;
   background-color: #fff;
@@ -3073,7 +3077,7 @@ PAGE NAVI STYLES
   clear: both;
   border-radius: 3px;
 }
-/* line 1265, ../scss/breakpoints/_base.scss */
+/* line 1269, ../scss/breakpoints/_base.scss */
 .pagination li {
   padding: 0;
   margin: 0;
@@ -3082,7 +3086,7 @@ PAGE NAVI STYLES
   overflow: hidden;
   border-right: 1px solid #fff;
 }
-/* line 1274, ../scss/breakpoints/_base.scss */
+/* line 1278, ../scss/breakpoints/_base.scss */
 .pagination a, .pagination span {
   margin: 0;
   text-decoration: none;
@@ -3095,17 +3099,17 @@ PAGE NAVI STYLES
   display: block;
   color: #2980b9;
 }
-/* line 1286, ../scss/breakpoints/_base.scss */
+/* line 1290, ../scss/breakpoints/_base.scss */
 .pagination a:hover, .pagination a:focus, .pagination span:hover, .pagination span:focus {
   background-color: #2980b9;
   color: #fff;
 }
-/* line 1292, ../scss/breakpoints/_base.scss */
+/* line 1296, ../scss/breakpoints/_base.scss */
 .pagination .current {
   cursor: default;
   color: #a7a9ac;
 }
-/* line 1296, ../scss/breakpoints/_base.scss */
+/* line 1300, ../scss/breakpoints/_base.scss */
 .pagination .current:hover, .pagination .current:focus {
   background-color: #fff;
   color: #a7a9ac;
@@ -3113,11 +3117,11 @@ PAGE NAVI STYLES
 
 /* end .bones_page_navi */
 /* fallback previous & next links */
-/* line 1309, ../scss/breakpoints/_base.scss */
+/* line 1313, ../scss/breakpoints/_base.scss */
 .wp-prev-next .prev-link {
   float: left;
 }
-/* line 1313, ../scss/breakpoints/_base.scss */
+/* line 1317, ../scss/breakpoints/_base.scss */
 .wp-prev-next .next-link {
   float: right;
 }
@@ -3127,7 +3131,7 @@ PAGE NAVI STYLES
 COMMENT STYLES
 ******************************************************************/
 /* h3 comment title */
-/* line 1324, ../scss/breakpoints/_base.scss */
+/* line 1328, ../scss/breakpoints/_base.scss */
 #comments-title {
   padding: 0.75em;
   margin: 0;
@@ -3135,13 +3139,13 @@ COMMENT STYLES
   /* number of comments span */
 }
 
-/* line 1344, ../scss/breakpoints/_base.scss */
+/* line 1348, ../scss/breakpoints/_base.scss */
 .commentlist {
   margin: 0;
   list-style-type: none;
 }
 
-/* line 1349, ../scss/breakpoints/_base.scss */
+/* line 1353, ../scss/breakpoints/_base.scss */
 .comment {
   position: relative;
   clear: both;
@@ -3153,78 +3157,78 @@ COMMENT STYLES
   /* end children */
   /* general comment classes */
 }
-/* line 1356, ../scss/breakpoints/_base.scss */
+/* line 1360, ../scss/breakpoints/_base.scss */
 .comment .comment-author {
   padding: 7px;
   border: 0;
 }
-/* line 1362, ../scss/breakpoints/_base.scss */
+/* line 1366, ../scss/breakpoints/_base.scss */
 .comment .vcard {
   margin-left: 50px;
 }
-/* line 1365, ../scss/breakpoints/_base.scss */
+/* line 1369, ../scss/breakpoints/_base.scss */
 .comment .vcard cite.fn {
   font-weight: 700;
   font-style: normal;
 }
-/* line 1373, ../scss/breakpoints/_base.scss */
+/* line 1377, ../scss/breakpoints/_base.scss */
 .comment .vcard time {
   display: block;
   font-size: 0.9em;
   font-style: italic;
 }
-/* line 1378, ../scss/breakpoints/_base.scss */
+/* line 1382, ../scss/breakpoints/_base.scss */
 .comment .vcard time a {
   color: #9fa6b4;
   text-decoration: none;
 }
-/* line 1382, ../scss/breakpoints/_base.scss */
+/* line 1386, ../scss/breakpoints/_base.scss */
 .comment .vcard time a:hover {
   text-decoration: underline;
 }
-/* line 1392, ../scss/breakpoints/_base.scss */
+/* line 1396, ../scss/breakpoints/_base.scss */
 .comment .vcard .avatar {
   position: absolute;
   left: 16px;
   border-radius: 50%;
 }
-/* line 1400, ../scss/breakpoints/_base.scss */
+/* line 1404, ../scss/breakpoints/_base.scss */
 .comment:last-child {
   margin-bottom: 0;
 }
-/* line 1404, ../scss/breakpoints/_base.scss */
+/* line 1408, ../scss/breakpoints/_base.scss */
 .comment .children {
   margin: 0;
   /* variations */
   /* change number for different depth */
 }
-/* line 1422, ../scss/breakpoints/_base.scss */
+/* line 1426, ../scss/breakpoints/_base.scss */
 .comment[class*=depth-] {
   margin-top: 1.1em;
 }
-/* line 1426, ../scss/breakpoints/_base.scss */
+/* line 1430, ../scss/breakpoints/_base.scss */
 .comment.depth-1 {
   margin-left: 0;
   margin-top: 0;
 }
-/* line 1431, ../scss/breakpoints/_base.scss */
+/* line 1435, ../scss/breakpoints/_base.scss */
 .comment:not(.depth-1) {
   margin-top: 0;
   margin-left: 7px;
   padding: 7px;
 }
-/* line 1444, ../scss/breakpoints/_base.scss */
+/* line 1448, ../scss/breakpoints/_base.scss */
 .comment.odd {
   background-color: #fff;
 }
-/* line 1447, ../scss/breakpoints/_base.scss */
+/* line 1451, ../scss/breakpoints/_base.scss */
 .comment.even {
   background: #f8f9fa;
 }
 
 /* comment meta */
 /* comment content */
-/* line 1481, ../scss/breakpoints/_base.scss */
+/* line 1485, ../scss/breakpoints/_base.scss */
 .comment_content p {
   margin: 0.7335em 0 1.5em;
   font-size: 1em;
@@ -3233,7 +3237,7 @@ COMMENT STYLES
 
 /* end .commentlist .comment_content */
 /* comment reply link */
-/* line 1490, ../scss/breakpoints/_base.scss */
+/* line 1494, ../scss/breakpoints/_base.scss */
 .comment-reply-link {
   font-size: 0.9em;
   float: right;
@@ -3241,7 +3245,7 @@ COMMENT STYLES
 
 /* end .commentlist .comment-reply-link */
 /* edit comment link */
-/* line 1502, ../scss/breakpoints/_base.scss */
+/* line 1506, ../scss/breakpoints/_base.scss */
 .comment-edit-link {
   font-style: italic;
   margin: 0 7px;
@@ -3252,34 +3256,34 @@ COMMENT STYLES
 /******************************************************************
 COMMENT FORM STYLES
 ******************************************************************/
-/* line 1515, ../scss/breakpoints/_base.scss */
+/* line 1519, ../scss/breakpoints/_base.scss */
 .comment-respond {
   padding: 1.5em;
   border-top: 1px solid #f8f9fa;
 }
 
-/* line 1521, ../scss/breakpoints/_base.scss */
+/* line 1525, ../scss/breakpoints/_base.scss */
 #reply-title {
   margin: 0;
 }
 
-/* line 1525, ../scss/breakpoints/_base.scss */
+/* line 1529, ../scss/breakpoints/_base.scss */
 .logged-in-as {
   color: #9fa6b4;
   font-style: italic;
   margin: 0;
 }
-/* line 1530, ../scss/breakpoints/_base.scss */
+/* line 1534, ../scss/breakpoints/_base.scss */
 .logged-in-as a {
   color: #a7a9ac;
 }
 
-/* line 1535, ../scss/breakpoints/_base.scss */
+/* line 1539, ../scss/breakpoints/_base.scss */
 .comment-form-comment {
   margin: 1.5em 0 0.75em;
 }
 
-/* line 1539, ../scss/breakpoints/_base.scss */
+/* line 1543, ../scss/breakpoints/_base.scss */
 .form-allowed-tags {
   padding: 1.5em;
   background-color: #f8f9fa;
@@ -3287,14 +3291,14 @@ COMMENT FORM STYLES
 }
 
 /* comment submit button */
-/* line 1546, ../scss/breakpoints/_base.scss */
+/* line 1550, ../scss/breakpoints/_base.scss */
 #submit {
   float: right;
   font-size: 1em;
 }
 
 /* comment form title */
-/* line 1553, ../scss/breakpoints/_base.scss */
+/* line 1557, ../scss/breakpoints/_base.scss */
 #comment-form-title {
   margin: 0 0 1.1em;
 }
@@ -3302,13 +3306,13 @@ COMMENT FORM STYLES
 /* cancel comment reply link */
 /* logged in comments */
 /* allowed tags */
-/* line 1566, ../scss/breakpoints/_base.scss */
+/* line 1570, ../scss/breakpoints/_base.scss */
 #allowed_tags {
   margin: 1.5em 10px 0.7335em 0;
 }
 
 /* no comments */
-/* line 1571, ../scss/breakpoints/_base.scss */
+/* line 1575, ../scss/breakpoints/_base.scss */
 .nocomments {
   margin: 0 20px 1.1em;
 }
@@ -3316,12 +3320,12 @@ COMMENT FORM STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 1587, ../scss/breakpoints/_base.scss */
+/* line 1591, ../scss/breakpoints/_base.scss */
 .widget ul li {
   /* deep nesting */
 }
 
-/* line 1604, ../scss/breakpoints/_base.scss */
+/* line 1608, ../scss/breakpoints/_base.scss */
 .no-widgets {
   background-color: #fff;
   padding: 1.5em;
@@ -3334,7 +3338,7 @@ SIDEBARS & ASIDES
 /*********************
 FOOTER STYLES
 *********************/
-/* line 1617, ../scss/breakpoints/_base.scss */
+/* line 1621, ../scss/breakpoints/_base.scss */
 .footer {
   clear: both;
   background-color: #666;
@@ -3347,7 +3351,7 @@ FOOTER STYLES
   opacity: 0.75;
   padding: 0.5em 0;
 }
-/* line 1625, ../scss/breakpoints/_base.scss */
+/* line 1629, ../scss/breakpoints/_base.scss */
 .footer:active, .footer:hover {
   opacity: 1;
 }
@@ -3361,39 +3365,39 @@ it simple because you'll have to
 override these styles for the desktop
 view.
 */
-/* line 1640, ../scss/breakpoints/_base.scss */
+/* line 1644, ../scss/breakpoints/_base.scss */
 .footer-links {
   text-align: center;
 }
-/* line 1643, ../scss/breakpoints/_base.scss */
+/* line 1647, ../scss/breakpoints/_base.scss */
 .footer-links ul {
   margin: 0;
 }
-/* line 1645, ../scss/breakpoints/_base.scss */
+/* line 1649, ../scss/breakpoints/_base.scss */
 .footer-links ul li {
   display: inline-block;
 }
-/* line 1648, ../scss/breakpoints/_base.scss */
+/* line 1652, ../scss/breakpoints/_base.scss */
 .footer-links ul li a {
   border-right: 1px solid;
   padding-right: 0.25em;
   color: #fff;
 }
-/* line 1653, ../scss/breakpoints/_base.scss */
+/* line 1657, ../scss/breakpoints/_base.scss */
 .footer-links ul li a:hover, .footer-links ul li a:active {
   color: rgba(255, 255, 255, 0.3);
 }
-/* line 1657, ../scss/breakpoints/_base.scss */
+/* line 1661, ../scss/breakpoints/_base.scss */
 .footer-links ul li a:link {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0.3);
 }
-/* line 1665, ../scss/breakpoints/_base.scss */
+/* line 1669, ../scss/breakpoints/_base.scss */
 .footer-links ul li:last-child a {
   border-right: 0;
 }
 
 /* end .footer-links */
-/* line 1678, ../scss/breakpoints/_base.scss */
+/* line 1682, ../scss/breakpoints/_base.scss */
 .copyright {
   font-weight: 700;
   text-align: center;
