@@ -11025,14 +11025,14 @@ h5, .h5 {
 HEADER STYLES
 *********************/
 /* line 302, ../scss/breakpoints/_base.scss */
-.header #logo {
+header #logo {
   max-width: 100%;
   height: auto;
   margin: 0 auto;
 }
 /* line 307, ../scss/breakpoints/_base.scss */
-.header #logo img {
-  max-height: 50px;
+header #logo img {
+  max-height: 6em;
 }
 
 /* MAIN */
