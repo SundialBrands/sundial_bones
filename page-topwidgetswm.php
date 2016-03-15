@@ -20,7 +20,7 @@
 						<a id="show-menu" class="btn" href="#menu-main"><i class="fa fa-bars fa-lg"></i></a>
 					</div>
 					
-					<div id="logo" class="col-sm-4" itemscope itemtype="http://schema.org/Organization">
+					<div id="logo" class="col-md-4" itemscope itemtype="http://schema.org/Organization">
 						<a href="http://www.sheamoisture.com" rel="nofollow"><img src="/wp-content/themes/sundial_bones/library/images/logo.png" alt="SheaMoisture. Established 1912." />
 						</a>
 					</div>

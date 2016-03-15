@@ -1,4 +1,4 @@
-				<div id="header_right" class="sidebar col-sm-9" role="complementary">
+				<div id="header_right" class="sidebar col-lg-9" role="complementary">
 
 					<?php if ( is_active_sidebar( 'header_right' ) ) : ?>
 

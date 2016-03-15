@@ -118,15 +118,18 @@ GRID STYLES
 
 .typeform {
 
+	
+	
 	iframe {
 		width: 100%;
-		min-height: 500px;
+		min-height: 640px;
 		border: 0;
 		width: 100%;
 		min-width: 500px;
 		border: 0;
 		overflow: hidden;
 		display: inline-block;
+		position: relative;
 	}
 	
 }
