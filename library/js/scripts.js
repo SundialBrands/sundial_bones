@@ -42,6 +42,7 @@ var waitForFinalEvent = (function () {
 
 // how long to wait before deciding the resize has stopped, in ms. Around 50-100 should work ok.
 var timeToWaitForLast = 100;
+var needFootpad = false;
 
 
 /*
@@ -105,6 +106,25 @@ function loadGravatars() {
 } // end function
 
 
+
+function fixFootpad( $pad, $toPad ) {
+
+	viewport = updateViewportDimensions();
+	var pad = jQuery($pad).height() + 'px';
+	if (viewport.width >= 640) {
+	
+		jQuery($toPad).css('marginBottom', pad);
+		jQuery('footer.footer').css('marginBottom', '0');
+		
+	}
+	else {
+		
+		jQuery($toPad).css('marginBottom', '0');
+		jQuery('footer.footer').css('marginBottom', pad);
+		
+	}
+
+}	//end fixFootpad()
 
 
 /*
@@ -290,6 +310,15 @@ jQuery(document).ready(function($) {
 	
 	}
 	
+	if (jQuery('.cAc_wfs-sample-footer').length > 0) {
+	
+		var $pad = jQuery('.cAc_wfs-sample-footer');
+		var $toPad = jQuery('.cac_wfs_sample section.entry-content');
+		fixFootpad( $pad, $toPad );
+		needFootpad = true;
+	
+	}
+	
 	
 	if (jQuery('div.typeform').length > 0 ) {
 	
@@ -304,6 +333,22 @@ jQuery(document).ready(function($) {
 		}
 	
 	}
+	
+	$(window).resize(function () {
+	
+		if (needFootpad) {
+			
+			waitForFinalEvent( function() {
+			
+				var $pad = jQuery('.cAc_wfs-sample-footer');
+				var $toPad = jQuery('.cac_wfs_sample section.entry-content');
+				fixFootpad( $pad, $toPad );
+			
+			}, timeToWaitForLast, 'footPadFix' );
+		
+		}
+	
+	});
 
 
 }); /* end of as page load scripts */

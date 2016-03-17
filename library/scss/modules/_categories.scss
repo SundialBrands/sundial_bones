@@ -148,6 +148,7 @@ Stylesheet: Category Styles
 				}
 			
 			}
+			
 	
 		}
 		
@@ -157,6 +158,16 @@ Stylesheet: Category Styles
 	
 		&.active {
 			background-color: nth($colors, 1);
+			
+			.img > a {
+			
+				.subcat-name {
+					color: nth($colors, 2);
+					background-color: nth($colors, 1);
+				}
+			
+			}
+			
 		}
 	
 	}
@@ -179,7 +190,7 @@ Stylesheet: Category Styles
 			background-color: nth($colors, 2);
 			
 			&:visited {
-				color: nth($colors, 2);
+				color: nth($colors, 1);
 			}
 			
 			&:hover, &:active {

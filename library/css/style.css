@@ -7865,38 +7865,43 @@ Stylesheet: Category Styles
   color: #f6efe9;
   background-color: #333;
 }
-/* line 154, ../scss/modules/_categories.scss */
+/* line 155, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.black:hover {
   background-color: #333;
 }
-/* line 158, ../scss/modules/_categories.scss */
+/* line 159, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.black.active {
   background-color: #333;
 }
-
 /* line 164, ../scss/modules/_categories.scss */
+#subcategoriesBlock ul li .sub-categories.black.active .img > a .subcat-name {
+  color: #f6efe9;
+  background-color: #333;
+}
+
+/* line 175, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.black {
   background-color: #333;
   color: #f6efe9;
 }
-/* line 168, ../scss/modules/_categories.scss */
+/* line 179, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.black a {
   color: #f6efe9;
 }
-/* line 171, ../scss/modules/_categories.scss */
+/* line 182, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.black a:hover, #subcategoriesBlock .sub-cat-info.black a:active {
   color: #d8baa1;
 }
-/* line 177, ../scss/modules/_categories.scss */
+/* line 188, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.black .btn, #subcategoriesBlock .sub-cat-info.black .comment-reply-link, #subcategoriesBlock .sub-cat-info.black #submit {
   color: #333;
   background-color: #f6efe9;
 }
-/* line 181, ../scss/modules/_categories.scss */
+/* line 192, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.black .btn:visited, #subcategoriesBlock .sub-cat-info.black .comment-reply-link:visited, #subcategoriesBlock .sub-cat-info.black #submit:visited {
-  color: #f6efe9;
+  color: #333;
 }
-/* line 185, ../scss/modules/_categories.scss */
+/* line 196, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.black .btn:hover, #subcategoriesBlock .sub-cat-info.black .comment-reply-link:hover, #subcategoriesBlock .sub-cat-info.black #submit:hover, #subcategoriesBlock .sub-cat-info.black .btn:active, #subcategoriesBlock .sub-cat-info.black .comment-reply-link:active, #subcategoriesBlock .sub-cat-info.black #submit:active {
   background-color: #d8baa1;
   color: #333;
@@ -7930,38 +7935,43 @@ Stylesheet: Category Styles
   color: #572701;
   background-color: #f9fCfc;
 }
-/* line 154, ../scss/modules/_categories.scss */
+/* line 155, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.lightgray:hover {
   background-color: #f9fCfc;
 }
-/* line 158, ../scss/modules/_categories.scss */
+/* line 159, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.lightgray.active {
   background-color: #f9fCfc;
 }
-
 /* line 164, ../scss/modules/_categories.scss */
+#subcategoriesBlock ul li .sub-categories.lightgray.active .img > a .subcat-name {
+  color: #572701;
+  background-color: #f9fCfc;
+}
+
+/* line 175, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.lightgray {
   background-color: #f9fCfc;
   color: #572701;
 }
-/* line 168, ../scss/modules/_categories.scss */
+/* line 179, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.lightgray a {
   color: #572701;
 }
-/* line 171, ../scss/modules/_categories.scss */
+/* line 182, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.lightgray a:hover, #subcategoriesBlock .sub-cat-info.lightgray a:active {
   color: #bc5402;
 }
-/* line 177, ../scss/modules/_categories.scss */
+/* line 188, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.lightgray .btn, #subcategoriesBlock .sub-cat-info.lightgray .comment-reply-link, #subcategoriesBlock .sub-cat-info.lightgray #submit {
   color: #f9fCfc;
   background-color: #572701;
 }
-/* line 181, ../scss/modules/_categories.scss */
+/* line 192, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.lightgray .btn:visited, #subcategoriesBlock .sub-cat-info.lightgray .comment-reply-link:visited, #subcategoriesBlock .sub-cat-info.lightgray #submit:visited {
-  color: #572701;
+  color: #f9fCfc;
 }
-/* line 185, ../scss/modules/_categories.scss */
+/* line 196, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.lightgray .btn:hover, #subcategoriesBlock .sub-cat-info.lightgray .comment-reply-link:hover, #subcategoriesBlock .sub-cat-info.lightgray #submit:hover, #subcategoriesBlock .sub-cat-info.lightgray .btn:active, #subcategoriesBlock .sub-cat-info.lightgray .comment-reply-link:active, #subcategoriesBlock .sub-cat-info.lightgray #submit:active {
   background-color: #bc5402;
   color: #f9fCfc;
@@ -7995,38 +8005,43 @@ Stylesheet: Category Styles
   color: #572701;
   background-color: #eaedf2;
 }
-/* line 154, ../scss/modules/_categories.scss */
+/* line 155, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.gray:hover {
   background-color: #eaedf2;
 }
-/* line 158, ../scss/modules/_categories.scss */
+/* line 159, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.gray.active {
   background-color: #eaedf2;
 }
-
 /* line 164, ../scss/modules/_categories.scss */
+#subcategoriesBlock ul li .sub-categories.gray.active .img > a .subcat-name {
+  color: #572701;
+  background-color: #eaedf2;
+}
+
+/* line 175, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.gray {
   background-color: #eaedf2;
   color: #572701;
 }
-/* line 168, ../scss/modules/_categories.scss */
+/* line 179, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.gray a {
   color: #572701;
 }
-/* line 171, ../scss/modules/_categories.scss */
+/* line 182, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.gray a:hover, #subcategoriesBlock .sub-cat-info.gray a:active {
   color: #bc5402;
 }
-/* line 177, ../scss/modules/_categories.scss */
+/* line 188, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.gray .btn, #subcategoriesBlock .sub-cat-info.gray .comment-reply-link, #subcategoriesBlock .sub-cat-info.gray #submit {
   color: #eaedf2;
   background-color: #572701;
 }
-/* line 181, ../scss/modules/_categories.scss */
+/* line 192, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.gray .btn:visited, #subcategoriesBlock .sub-cat-info.gray .comment-reply-link:visited, #subcategoriesBlock .sub-cat-info.gray #submit:visited {
-  color: #572701;
+  color: #eaedf2;
 }
-/* line 185, ../scss/modules/_categories.scss */
+/* line 196, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.gray .btn:hover, #subcategoriesBlock .sub-cat-info.gray .comment-reply-link:hover, #subcategoriesBlock .sub-cat-info.gray #submit:hover, #subcategoriesBlock .sub-cat-info.gray .btn:active, #subcategoriesBlock .sub-cat-info.gray .comment-reply-link:active, #subcategoriesBlock .sub-cat-info.gray #submit:active {
   background-color: #bc5402;
   color: #eaedf2;
@@ -8060,38 +8075,43 @@ Stylesheet: Category Styles
   color: #572701;
   background-color: #a5a2a7;
 }
-/* line 154, ../scss/modules/_categories.scss */
+/* line 155, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.darkgray:hover {
   background-color: #a5a2a7;
 }
-/* line 158, ../scss/modules/_categories.scss */
+/* line 159, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.darkgray.active {
   background-color: #a5a2a7;
 }
-
 /* line 164, ../scss/modules/_categories.scss */
+#subcategoriesBlock ul li .sub-categories.darkgray.active .img > a .subcat-name {
+  color: #572701;
+  background-color: #a5a2a7;
+}
+
+/* line 175, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.darkgray {
   background-color: #a5a2a7;
   color: #572701;
 }
-/* line 168, ../scss/modules/_categories.scss */
+/* line 179, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.darkgray a {
   color: #572701;
 }
-/* line 171, ../scss/modules/_categories.scss */
+/* line 182, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.darkgray a:hover, #subcategoriesBlock .sub-cat-info.darkgray a:active {
   color: #bc5402;
 }
-/* line 177, ../scss/modules/_categories.scss */
+/* line 188, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.darkgray .btn, #subcategoriesBlock .sub-cat-info.darkgray .comment-reply-link, #subcategoriesBlock .sub-cat-info.darkgray #submit {
   color: #a5a2a7;
   background-color: #572701;
 }
-/* line 181, ../scss/modules/_categories.scss */
+/* line 192, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.darkgray .btn:visited, #subcategoriesBlock .sub-cat-info.darkgray .comment-reply-link:visited, #subcategoriesBlock .sub-cat-info.darkgray #submit:visited {
-  color: #572701;
+  color: #a5a2a7;
 }
-/* line 185, ../scss/modules/_categories.scss */
+/* line 196, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.darkgray .btn:hover, #subcategoriesBlock .sub-cat-info.darkgray .comment-reply-link:hover, #subcategoriesBlock .sub-cat-info.darkgray #submit:hover, #subcategoriesBlock .sub-cat-info.darkgray .btn:active, #subcategoriesBlock .sub-cat-info.darkgray .comment-reply-link:active, #subcategoriesBlock .sub-cat-info.darkgray #submit:active {
   background-color: #bc5402;
   color: #a5a2a7;
@@ -8125,38 +8145,43 @@ Stylesheet: Category Styles
   color: #f6efe9;
   background-color: #572701;
 }
-/* line 154, ../scss/modules/_categories.scss */
+/* line 155, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.sheabrown:hover {
   background-color: #572701;
 }
-/* line 158, ../scss/modules/_categories.scss */
+/* line 159, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.sheabrown.active {
   background-color: #572701;
 }
-
 /* line 164, ../scss/modules/_categories.scss */
+#subcategoriesBlock ul li .sub-categories.sheabrown.active .img > a .subcat-name {
+  color: #f6efe9;
+  background-color: #572701;
+}
+
+/* line 175, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.sheabrown {
   background-color: #572701;
   color: #f6efe9;
 }
-/* line 168, ../scss/modules/_categories.scss */
+/* line 179, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.sheabrown a {
   color: #f6efe9;
 }
-/* line 171, ../scss/modules/_categories.scss */
+/* line 182, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.sheabrown a:hover, #subcategoriesBlock .sub-cat-info.sheabrown a:active {
   color: #d8baa1;
 }
-/* line 177, ../scss/modules/_categories.scss */
+/* line 188, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.sheabrown .btn, #subcategoriesBlock .sub-cat-info.sheabrown .comment-reply-link, #subcategoriesBlock .sub-cat-info.sheabrown #submit {
   color: #572701;
   background-color: #f6efe9;
 }
-/* line 181, ../scss/modules/_categories.scss */
+/* line 192, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.sheabrown .btn:visited, #subcategoriesBlock .sub-cat-info.sheabrown .comment-reply-link:visited, #subcategoriesBlock .sub-cat-info.sheabrown #submit:visited {
-  color: #f6efe9;
+  color: #572701;
 }
-/* line 185, ../scss/modules/_categories.scss */
+/* line 196, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.sheabrown .btn:hover, #subcategoriesBlock .sub-cat-info.sheabrown .comment-reply-link:hover, #subcategoriesBlock .sub-cat-info.sheabrown #submit:hover, #subcategoriesBlock .sub-cat-info.sheabrown .btn:active, #subcategoriesBlock .sub-cat-info.sheabrown .comment-reply-link:active, #subcategoriesBlock .sub-cat-info.sheabrown #submit:active {
   background-color: #d8baa1;
   color: #572701;
@@ -8190,38 +8215,43 @@ Stylesheet: Category Styles
   color: #f6eee3;
   background-color: #623835;
 }
-/* line 154, ../scss/modules/_categories.scss */
+/* line 155, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.sienna:hover {
   background-color: #623835;
 }
-/* line 158, ../scss/modules/_categories.scss */
+/* line 159, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.sienna.active {
   background-color: #623835;
 }
-
 /* line 164, ../scss/modules/_categories.scss */
+#subcategoriesBlock ul li .sub-categories.sienna.active .img > a .subcat-name {
+  color: #f6eee3;
+  background-color: #623835;
+}
+
+/* line 175, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.sienna {
   background-color: #623835;
   color: #f6eee3;
 }
-/* line 168, ../scss/modules/_categories.scss */
+/* line 179, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.sienna a {
   color: #f6eee3;
 }
-/* line 171, ../scss/modules/_categories.scss */
+/* line 182, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.sienna a:hover, #subcategoriesBlock .sub-cat-info.sienna a:active {
   color: #ddbf96;
 }
-/* line 177, ../scss/modules/_categories.scss */
+/* line 188, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.sienna .btn, #subcategoriesBlock .sub-cat-info.sienna .comment-reply-link, #subcategoriesBlock .sub-cat-info.sienna #submit {
   color: #623835;
   background-color: #f6eee3;
 }
-/* line 181, ../scss/modules/_categories.scss */
+/* line 192, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.sienna .btn:visited, #subcategoriesBlock .sub-cat-info.sienna .comment-reply-link:visited, #subcategoriesBlock .sub-cat-info.sienna #submit:visited {
-  color: #f6eee3;
+  color: #623835;
 }
-/* line 185, ../scss/modules/_categories.scss */
+/* line 196, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.sienna .btn:hover, #subcategoriesBlock .sub-cat-info.sienna .comment-reply-link:hover, #subcategoriesBlock .sub-cat-info.sienna #submit:hover, #subcategoriesBlock .sub-cat-info.sienna .btn:active, #subcategoriesBlock .sub-cat-info.sienna .comment-reply-link:active, #subcategoriesBlock .sub-cat-info.sienna #submit:active {
   background-color: #ddbf96;
   color: #623835;
@@ -8255,38 +8285,43 @@ Stylesheet: Category Styles
   color: #f6efe9;
   background-color: #786101;
 }
-/* line 154, ../scss/modules/_categories.scss */
+/* line 155, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.brown:hover {
   background-color: #786101;
 }
-/* line 158, ../scss/modules/_categories.scss */
+/* line 159, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.brown.active {
   background-color: #786101;
 }
-
 /* line 164, ../scss/modules/_categories.scss */
+#subcategoriesBlock ul li .sub-categories.brown.active .img > a .subcat-name {
+  color: #f6efe9;
+  background-color: #786101;
+}
+
+/* line 175, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.brown {
   background-color: #786101;
   color: #f6efe9;
 }
-/* line 168, ../scss/modules/_categories.scss */
+/* line 179, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.brown a {
   color: #f6efe9;
 }
-/* line 171, ../scss/modules/_categories.scss */
+/* line 182, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.brown a:hover, #subcategoriesBlock .sub-cat-info.brown a:active {
   color: #d8baa1;
 }
-/* line 177, ../scss/modules/_categories.scss */
+/* line 188, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.brown .btn, #subcategoriesBlock .sub-cat-info.brown .comment-reply-link, #subcategoriesBlock .sub-cat-info.brown #submit {
   color: #786101;
   background-color: #f6efe9;
 }
-/* line 181, ../scss/modules/_categories.scss */
+/* line 192, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.brown .btn:visited, #subcategoriesBlock .sub-cat-info.brown .comment-reply-link:visited, #subcategoriesBlock .sub-cat-info.brown #submit:visited {
-  color: #f6efe9;
+  color: #786101;
 }
-/* line 185, ../scss/modules/_categories.scss */
+/* line 196, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.brown .btn:hover, #subcategoriesBlock .sub-cat-info.brown .comment-reply-link:hover, #subcategoriesBlock .sub-cat-info.brown #submit:hover, #subcategoriesBlock .sub-cat-info.brown .btn:active, #subcategoriesBlock .sub-cat-info.brown .comment-reply-link:active, #subcategoriesBlock .sub-cat-info.brown #submit:active {
   background-color: #d8baa1;
   color: #786101;
@@ -8320,38 +8355,43 @@ Stylesheet: Category Styles
   color: #f6eee3;
   background-color: #856D13;
 }
-/* line 154, ../scss/modules/_categories.scss */
+/* line 155, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.lightbrown:hover {
   background-color: #856D13;
 }
-/* line 158, ../scss/modules/_categories.scss */
+/* line 159, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.lightbrown.active {
   background-color: #856D13;
 }
-
 /* line 164, ../scss/modules/_categories.scss */
+#subcategoriesBlock ul li .sub-categories.lightbrown.active .img > a .subcat-name {
+  color: #f6eee3;
+  background-color: #856D13;
+}
+
+/* line 175, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.lightbrown {
   background-color: #856D13;
   color: #f6eee3;
 }
-/* line 168, ../scss/modules/_categories.scss */
+/* line 179, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.lightbrown a {
   color: #f6eee3;
 }
-/* line 171, ../scss/modules/_categories.scss */
+/* line 182, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.lightbrown a:hover, #subcategoriesBlock .sub-cat-info.lightbrown a:active {
   color: #ddbf96;
 }
-/* line 177, ../scss/modules/_categories.scss */
+/* line 188, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.lightbrown .btn, #subcategoriesBlock .sub-cat-info.lightbrown .comment-reply-link, #subcategoriesBlock .sub-cat-info.lightbrown #submit {
   color: #856D13;
   background-color: #f6eee3;
 }
-/* line 181, ../scss/modules/_categories.scss */
+/* line 192, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.lightbrown .btn:visited, #subcategoriesBlock .sub-cat-info.lightbrown .comment-reply-link:visited, #subcategoriesBlock .sub-cat-info.lightbrown #submit:visited {
-  color: #f6eee3;
+  color: #856D13;
 }
-/* line 185, ../scss/modules/_categories.scss */
+/* line 196, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.lightbrown .btn:hover, #subcategoriesBlock .sub-cat-info.lightbrown .comment-reply-link:hover, #subcategoriesBlock .sub-cat-info.lightbrown #submit:hover, #subcategoriesBlock .sub-cat-info.lightbrown .btn:active, #subcategoriesBlock .sub-cat-info.lightbrown .comment-reply-link:active, #subcategoriesBlock .sub-cat-info.lightbrown #submit:active {
   background-color: #ddbf96;
   color: #856D13;
@@ -8385,38 +8425,43 @@ Stylesheet: Category Styles
   color: #572701;
   background-color: #f6eee3;
 }
-/* line 154, ../scss/modules/_categories.scss */
+/* line 155, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.cooltan:hover {
   background-color: #f6eee3;
 }
-/* line 158, ../scss/modules/_categories.scss */
+/* line 159, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.cooltan.active {
   background-color: #f6eee3;
 }
-
 /* line 164, ../scss/modules/_categories.scss */
+#subcategoriesBlock ul li .sub-categories.cooltan.active .img > a .subcat-name {
+  color: #572701;
+  background-color: #f6eee3;
+}
+
+/* line 175, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.cooltan {
   background-color: #f6eee3;
   color: #572701;
 }
-/* line 168, ../scss/modules/_categories.scss */
+/* line 179, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.cooltan a {
   color: #572701;
 }
-/* line 171, ../scss/modules/_categories.scss */
+/* line 182, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.cooltan a:hover, #subcategoriesBlock .sub-cat-info.cooltan a:active {
   color: #bc5402;
 }
-/* line 177, ../scss/modules/_categories.scss */
+/* line 188, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.cooltan .btn, #subcategoriesBlock .sub-cat-info.cooltan .comment-reply-link, #subcategoriesBlock .sub-cat-info.cooltan #submit {
   color: #f6eee3;
   background-color: #572701;
 }
-/* line 181, ../scss/modules/_categories.scss */
+/* line 192, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.cooltan .btn:visited, #subcategoriesBlock .sub-cat-info.cooltan .comment-reply-link:visited, #subcategoriesBlock .sub-cat-info.cooltan #submit:visited {
-  color: #572701;
+  color: #f6eee3;
 }
-/* line 185, ../scss/modules/_categories.scss */
+/* line 196, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.cooltan .btn:hover, #subcategoriesBlock .sub-cat-info.cooltan .comment-reply-link:hover, #subcategoriesBlock .sub-cat-info.cooltan #submit:hover, #subcategoriesBlock .sub-cat-info.cooltan .btn:active, #subcategoriesBlock .sub-cat-info.cooltan .comment-reply-link:active, #subcategoriesBlock .sub-cat-info.cooltan #submit:active {
   background-color: #bc5402;
   color: #f6eee3;
@@ -8450,38 +8495,43 @@ Stylesheet: Category Styles
   color: #572701;
   background-color: #f6efe9;
 }
-/* line 154, ../scss/modules/_categories.scss */
+/* line 155, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.warmtan:hover {
   background-color: #f6efe9;
 }
-/* line 158, ../scss/modules/_categories.scss */
+/* line 159, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.warmtan.active {
   background-color: #f6efe9;
 }
-
 /* line 164, ../scss/modules/_categories.scss */
+#subcategoriesBlock ul li .sub-categories.warmtan.active .img > a .subcat-name {
+  color: #572701;
+  background-color: #f6efe9;
+}
+
+/* line 175, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.warmtan {
   background-color: #f6efe9;
   color: #572701;
 }
-/* line 168, ../scss/modules/_categories.scss */
+/* line 179, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.warmtan a {
   color: #572701;
 }
-/* line 171, ../scss/modules/_categories.scss */
+/* line 182, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.warmtan a:hover, #subcategoriesBlock .sub-cat-info.warmtan a:active {
   color: #bc5402;
 }
-/* line 177, ../scss/modules/_categories.scss */
+/* line 188, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.warmtan .btn, #subcategoriesBlock .sub-cat-info.warmtan .comment-reply-link, #subcategoriesBlock .sub-cat-info.warmtan #submit {
   color: #f6efe9;
   background-color: #572701;
 }
-/* line 181, ../scss/modules/_categories.scss */
+/* line 192, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.warmtan .btn:visited, #subcategoriesBlock .sub-cat-info.warmtan .comment-reply-link:visited, #subcategoriesBlock .sub-cat-info.warmtan #submit:visited {
-  color: #572701;
+  color: #f6efe9;
 }
-/* line 185, ../scss/modules/_categories.scss */
+/* line 196, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.warmtan .btn:hover, #subcategoriesBlock .sub-cat-info.warmtan .comment-reply-link:hover, #subcategoriesBlock .sub-cat-info.warmtan #submit:hover, #subcategoriesBlock .sub-cat-info.warmtan .btn:active, #subcategoriesBlock .sub-cat-info.warmtan .comment-reply-link:active, #subcategoriesBlock .sub-cat-info.warmtan #submit:active {
   background-color: #bc5402;
   color: #f6efe9;
@@ -8515,38 +8565,43 @@ Stylesheet: Category Styles
   color: #572701;
   background-color: #FFE4C9;
 }
-/* line 154, ../scss/modules/_categories.scss */
+/* line 155, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.warmertan:hover {
   background-color: #FFE4C9;
 }
-/* line 158, ../scss/modules/_categories.scss */
+/* line 159, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.warmertan.active {
   background-color: #FFE4C9;
 }
-
 /* line 164, ../scss/modules/_categories.scss */
+#subcategoriesBlock ul li .sub-categories.warmertan.active .img > a .subcat-name {
+  color: #572701;
+  background-color: #FFE4C9;
+}
+
+/* line 175, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.warmertan {
   background-color: #FFE4C9;
   color: #572701;
 }
-/* line 168, ../scss/modules/_categories.scss */
+/* line 179, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.warmertan a {
   color: #572701;
 }
-/* line 171, ../scss/modules/_categories.scss */
+/* line 182, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.warmertan a:hover, #subcategoriesBlock .sub-cat-info.warmertan a:active {
   color: #bc5402;
 }
-/* line 177, ../scss/modules/_categories.scss */
+/* line 188, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.warmertan .btn, #subcategoriesBlock .sub-cat-info.warmertan .comment-reply-link, #subcategoriesBlock .sub-cat-info.warmertan #submit {
   color: #FFE4C9;
   background-color: #572701;
 }
-/* line 181, ../scss/modules/_categories.scss */
+/* line 192, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.warmertan .btn:visited, #subcategoriesBlock .sub-cat-info.warmertan .comment-reply-link:visited, #subcategoriesBlock .sub-cat-info.warmertan #submit:visited {
-  color: #572701;
+  color: #FFE4C9;
 }
-/* line 185, ../scss/modules/_categories.scss */
+/* line 196, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.warmertan .btn:hover, #subcategoriesBlock .sub-cat-info.warmertan .comment-reply-link:hover, #subcategoriesBlock .sub-cat-info.warmertan #submit:hover, #subcategoriesBlock .sub-cat-info.warmertan .btn:active, #subcategoriesBlock .sub-cat-info.warmertan .comment-reply-link:active, #subcategoriesBlock .sub-cat-info.warmertan #submit:active {
   background-color: #bc5402;
   color: #FFE4C9;
@@ -8580,38 +8635,43 @@ Stylesheet: Category Styles
   color: #f6eee3;
   background-color: #790032;
 }
-/* line 154, ../scss/modules/_categories.scss */
+/* line 155, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.darkred:hover {
   background-color: #790032;
 }
-/* line 158, ../scss/modules/_categories.scss */
+/* line 159, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.darkred.active {
   background-color: #790032;
 }
-
 /* line 164, ../scss/modules/_categories.scss */
+#subcategoriesBlock ul li .sub-categories.darkred.active .img > a .subcat-name {
+  color: #f6eee3;
+  background-color: #790032;
+}
+
+/* line 175, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.darkred {
   background-color: #790032;
   color: #f6eee3;
 }
-/* line 168, ../scss/modules/_categories.scss */
+/* line 179, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.darkred a {
   color: #f6eee3;
 }
-/* line 171, ../scss/modules/_categories.scss */
+/* line 182, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.darkred a:hover, #subcategoriesBlock .sub-cat-info.darkred a:active {
   color: #ddbf96;
 }
-/* line 177, ../scss/modules/_categories.scss */
+/* line 188, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.darkred .btn, #subcategoriesBlock .sub-cat-info.darkred .comment-reply-link, #subcategoriesBlock .sub-cat-info.darkred #submit {
   color: #790032;
   background-color: #f6eee3;
 }
-/* line 181, ../scss/modules/_categories.scss */
+/* line 192, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.darkred .btn:visited, #subcategoriesBlock .sub-cat-info.darkred .comment-reply-link:visited, #subcategoriesBlock .sub-cat-info.darkred #submit:visited {
-  color: #f6eee3;
+  color: #790032;
 }
-/* line 185, ../scss/modules/_categories.scss */
+/* line 196, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.darkred .btn:hover, #subcategoriesBlock .sub-cat-info.darkred .comment-reply-link:hover, #subcategoriesBlock .sub-cat-info.darkred #submit:hover, #subcategoriesBlock .sub-cat-info.darkred .btn:active, #subcategoriesBlock .sub-cat-info.darkred .comment-reply-link:active, #subcategoriesBlock .sub-cat-info.darkred #submit:active {
   background-color: #ddbf96;
   color: #790032;
@@ -8645,38 +8705,43 @@ Stylesheet: Category Styles
   color: #f6eee3;
   background-color: #A40045;
 }
-/* line 154, ../scss/modules/_categories.scss */
+/* line 155, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.deeppink:hover {
   background-color: #A40045;
 }
-/* line 158, ../scss/modules/_categories.scss */
+/* line 159, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.deeppink.active {
   background-color: #A40045;
 }
-
 /* line 164, ../scss/modules/_categories.scss */
+#subcategoriesBlock ul li .sub-categories.deeppink.active .img > a .subcat-name {
+  color: #f6eee3;
+  background-color: #A40045;
+}
+
+/* line 175, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.deeppink {
   background-color: #A40045;
   color: #f6eee3;
 }
-/* line 168, ../scss/modules/_categories.scss */
+/* line 179, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.deeppink a {
   color: #f6eee3;
 }
-/* line 171, ../scss/modules/_categories.scss */
+/* line 182, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.deeppink a:hover, #subcategoriesBlock .sub-cat-info.deeppink a:active {
   color: #ddbf96;
 }
-/* line 177, ../scss/modules/_categories.scss */
+/* line 188, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.deeppink .btn, #subcategoriesBlock .sub-cat-info.deeppink .comment-reply-link, #subcategoriesBlock .sub-cat-info.deeppink #submit {
   color: #A40045;
   background-color: #f6eee3;
 }
-/* line 181, ../scss/modules/_categories.scss */
+/* line 192, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.deeppink .btn:visited, #subcategoriesBlock .sub-cat-info.deeppink .comment-reply-link:visited, #subcategoriesBlock .sub-cat-info.deeppink #submit:visited {
-  color: #f6eee3;
+  color: #A40045;
 }
-/* line 185, ../scss/modules/_categories.scss */
+/* line 196, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.deeppink .btn:hover, #subcategoriesBlock .sub-cat-info.deeppink .comment-reply-link:hover, #subcategoriesBlock .sub-cat-info.deeppink #submit:hover, #subcategoriesBlock .sub-cat-info.deeppink .btn:active, #subcategoriesBlock .sub-cat-info.deeppink .comment-reply-link:active, #subcategoriesBlock .sub-cat-info.deeppink #submit:active {
   background-color: #ddbf96;
   color: #A40045;
@@ -8710,38 +8775,43 @@ Stylesheet: Category Styles
   color: #572701;
   background-color: #F68E75;
 }
-/* line 154, ../scss/modules/_categories.scss */
+/* line 155, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.salmon:hover {
   background-color: #F68E75;
 }
-/* line 158, ../scss/modules/_categories.scss */
+/* line 159, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.salmon.active {
   background-color: #F68E75;
 }
-
 /* line 164, ../scss/modules/_categories.scss */
+#subcategoriesBlock ul li .sub-categories.salmon.active .img > a .subcat-name {
+  color: #572701;
+  background-color: #F68E75;
+}
+
+/* line 175, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.salmon {
   background-color: #F68E75;
   color: #572701;
 }
-/* line 168, ../scss/modules/_categories.scss */
+/* line 179, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.salmon a {
   color: #572701;
 }
-/* line 171, ../scss/modules/_categories.scss */
+/* line 182, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.salmon a:hover, #subcategoriesBlock .sub-cat-info.salmon a:active {
   color: #bc5402;
 }
-/* line 177, ../scss/modules/_categories.scss */
+/* line 188, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.salmon .btn, #subcategoriesBlock .sub-cat-info.salmon .comment-reply-link, #subcategoriesBlock .sub-cat-info.salmon #submit {
   color: #F68E75;
   background-color: #572701;
 }
-/* line 181, ../scss/modules/_categories.scss */
+/* line 192, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.salmon .btn:visited, #subcategoriesBlock .sub-cat-info.salmon .comment-reply-link:visited, #subcategoriesBlock .sub-cat-info.salmon #submit:visited {
-  color: #572701;
+  color: #F68E75;
 }
-/* line 185, ../scss/modules/_categories.scss */
+/* line 196, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.salmon .btn:hover, #subcategoriesBlock .sub-cat-info.salmon .comment-reply-link:hover, #subcategoriesBlock .sub-cat-info.salmon #submit:hover, #subcategoriesBlock .sub-cat-info.salmon .btn:active, #subcategoriesBlock .sub-cat-info.salmon .comment-reply-link:active, #subcategoriesBlock .sub-cat-info.salmon #submit:active {
   background-color: #bc5402;
   color: #F68E75;
@@ -8775,38 +8845,43 @@ Stylesheet: Category Styles
   color: #623835;
   background-color: #F0A76B;
 }
-/* line 154, ../scss/modules/_categories.scss */
+/* line 155, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.lightsalmon:hover {
   background-color: #F0A76B;
 }
-/* line 158, ../scss/modules/_categories.scss */
+/* line 159, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.lightsalmon.active {
   background-color: #F0A76B;
 }
-
 /* line 164, ../scss/modules/_categories.scss */
+#subcategoriesBlock ul li .sub-categories.lightsalmon.active .img > a .subcat-name {
+  color: #623835;
+  background-color: #F0A76B;
+}
+
+/* line 175, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.lightsalmon {
   background-color: #F0A76B;
   color: #623835;
 }
-/* line 168, ../scss/modules/_categories.scss */
+/* line 179, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.lightsalmon a {
   color: #623835;
 }
-/* line 171, ../scss/modules/_categories.scss */
+/* line 182, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.lightsalmon a:hover, #subcategoriesBlock .sub-cat-info.lightsalmon a:active {
   color: #a45e59;
 }
-/* line 177, ../scss/modules/_categories.scss */
+/* line 188, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.lightsalmon .btn, #subcategoriesBlock .sub-cat-info.lightsalmon .comment-reply-link, #subcategoriesBlock .sub-cat-info.lightsalmon #submit {
   color: #F0A76B;
   background-color: #623835;
 }
-/* line 181, ../scss/modules/_categories.scss */
+/* line 192, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.lightsalmon .btn:visited, #subcategoriesBlock .sub-cat-info.lightsalmon .comment-reply-link:visited, #subcategoriesBlock .sub-cat-info.lightsalmon #submit:visited {
-  color: #623835;
+  color: #F0A76B;
 }
-/* line 185, ../scss/modules/_categories.scss */
+/* line 196, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.lightsalmon .btn:hover, #subcategoriesBlock .sub-cat-info.lightsalmon .comment-reply-link:hover, #subcategoriesBlock .sub-cat-info.lightsalmon #submit:hover, #subcategoriesBlock .sub-cat-info.lightsalmon .btn:active, #subcategoriesBlock .sub-cat-info.lightsalmon .comment-reply-link:active, #subcategoriesBlock .sub-cat-info.lightsalmon #submit:active {
   background-color: #a45e59;
   color: #F0A76B;
@@ -8840,38 +8915,43 @@ Stylesheet: Category Styles
   color: #572701;
   background-color: #E7A614;
 }
-/* line 154, ../scss/modules/_categories.scss */
+/* line 155, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.orange:hover {
   background-color: #E7A614;
 }
-/* line 158, ../scss/modules/_categories.scss */
+/* line 159, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.orange.active {
   background-color: #E7A614;
 }
-
 /* line 164, ../scss/modules/_categories.scss */
+#subcategoriesBlock ul li .sub-categories.orange.active .img > a .subcat-name {
+  color: #572701;
+  background-color: #E7A614;
+}
+
+/* line 175, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.orange {
   background-color: #E7A614;
   color: #572701;
 }
-/* line 168, ../scss/modules/_categories.scss */
+/* line 179, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.orange a {
   color: #572701;
 }
-/* line 171, ../scss/modules/_categories.scss */
+/* line 182, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.orange a:hover, #subcategoriesBlock .sub-cat-info.orange a:active {
   color: #bc5402;
 }
-/* line 177, ../scss/modules/_categories.scss */
+/* line 188, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.orange .btn, #subcategoriesBlock .sub-cat-info.orange .comment-reply-link, #subcategoriesBlock .sub-cat-info.orange #submit {
   color: #E7A614;
   background-color: #572701;
 }
-/* line 181, ../scss/modules/_categories.scss */
+/* line 192, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.orange .btn:visited, #subcategoriesBlock .sub-cat-info.orange .comment-reply-link:visited, #subcategoriesBlock .sub-cat-info.orange #submit:visited {
-  color: #572701;
+  color: #E7A614;
 }
-/* line 185, ../scss/modules/_categories.scss */
+/* line 196, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.orange .btn:hover, #subcategoriesBlock .sub-cat-info.orange .comment-reply-link:hover, #subcategoriesBlock .sub-cat-info.orange #submit:hover, #subcategoriesBlock .sub-cat-info.orange .btn:active, #subcategoriesBlock .sub-cat-info.orange .comment-reply-link:active, #subcategoriesBlock .sub-cat-info.orange #submit:active {
   background-color: #bc5402;
   color: #E7A614;
@@ -8905,38 +8985,43 @@ Stylesheet: Category Styles
   color: #f6eee3;
   background-color: #986813;
 }
-/* line 154, ../scss/modules/_categories.scss */
+/* line 155, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.darkorange:hover {
   background-color: #986813;
 }
-/* line 158, ../scss/modules/_categories.scss */
+/* line 159, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.darkorange.active {
   background-color: #986813;
 }
-
 /* line 164, ../scss/modules/_categories.scss */
+#subcategoriesBlock ul li .sub-categories.darkorange.active .img > a .subcat-name {
+  color: #f6eee3;
+  background-color: #986813;
+}
+
+/* line 175, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.darkorange {
   background-color: #986813;
   color: #f6eee3;
 }
-/* line 168, ../scss/modules/_categories.scss */
+/* line 179, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.darkorange a {
   color: #f6eee3;
 }
-/* line 171, ../scss/modules/_categories.scss */
+/* line 182, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.darkorange a:hover, #subcategoriesBlock .sub-cat-info.darkorange a:active {
   color: white;
 }
-/* line 177, ../scss/modules/_categories.scss */
+/* line 188, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.darkorange .btn, #subcategoriesBlock .sub-cat-info.darkorange .comment-reply-link, #subcategoriesBlock .sub-cat-info.darkorange #submit {
   color: #986813;
   background-color: #f6eee3;
 }
-/* line 181, ../scss/modules/_categories.scss */
+/* line 192, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.darkorange .btn:visited, #subcategoriesBlock .sub-cat-info.darkorange .comment-reply-link:visited, #subcategoriesBlock .sub-cat-info.darkorange #submit:visited {
-  color: #f6eee3;
+  color: #986813;
 }
-/* line 185, ../scss/modules/_categories.scss */
+/* line 196, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.darkorange .btn:hover, #subcategoriesBlock .sub-cat-info.darkorange .comment-reply-link:hover, #subcategoriesBlock .sub-cat-info.darkorange #submit:hover, #subcategoriesBlock .sub-cat-info.darkorange .btn:active, #subcategoriesBlock .sub-cat-info.darkorange .comment-reply-link:active, #subcategoriesBlock .sub-cat-info.darkorange #submit:active {
   background-color: white;
   color: #986813;
@@ -8970,38 +9055,43 @@ Stylesheet: Category Styles
   color: #572701;
   background-color: #F9A634;
 }
-/* line 154, ../scss/modules/_categories.scss */
+/* line 155, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.brightorange:hover {
   background-color: #F9A634;
 }
-/* line 158, ../scss/modules/_categories.scss */
+/* line 159, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.brightorange.active {
   background-color: #F9A634;
 }
-
 /* line 164, ../scss/modules/_categories.scss */
+#subcategoriesBlock ul li .sub-categories.brightorange.active .img > a .subcat-name {
+  color: #572701;
+  background-color: #F9A634;
+}
+
+/* line 175, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.brightorange {
   background-color: #F9A634;
   color: #572701;
 }
-/* line 168, ../scss/modules/_categories.scss */
+/* line 179, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.brightorange a {
   color: #572701;
 }
-/* line 171, ../scss/modules/_categories.scss */
+/* line 182, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.brightorange a:hover, #subcategoriesBlock .sub-cat-info.brightorange a:active {
   color: #bc5402;
 }
-/* line 177, ../scss/modules/_categories.scss */
+/* line 188, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.brightorange .btn, #subcategoriesBlock .sub-cat-info.brightorange .comment-reply-link, #subcategoriesBlock .sub-cat-info.brightorange #submit {
   color: #F9A634;
   background-color: #572701;
 }
-/* line 181, ../scss/modules/_categories.scss */
+/* line 192, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.brightorange .btn:visited, #subcategoriesBlock .sub-cat-info.brightorange .comment-reply-link:visited, #subcategoriesBlock .sub-cat-info.brightorange #submit:visited {
-  color: #572701;
+  color: #F9A634;
 }
-/* line 185, ../scss/modules/_categories.scss */
+/* line 196, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.brightorange .btn:hover, #subcategoriesBlock .sub-cat-info.brightorange .comment-reply-link:hover, #subcategoriesBlock .sub-cat-info.brightorange #submit:hover, #subcategoriesBlock .sub-cat-info.brightorange .btn:active, #subcategoriesBlock .sub-cat-info.brightorange .comment-reply-link:active, #subcategoriesBlock .sub-cat-info.brightorange #submit:active {
   background-color: #bc5402;
   color: #F9A634;
@@ -9035,38 +9125,43 @@ Stylesheet: Category Styles
   color: #572701;
   background-color: #FEC149;
 }
-/* line 154, ../scss/modules/_categories.scss */
+/* line 155, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.lightorange:hover {
   background-color: #FEC149;
 }
-/* line 158, ../scss/modules/_categories.scss */
+/* line 159, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.lightorange.active {
   background-color: #FEC149;
 }
-
 /* line 164, ../scss/modules/_categories.scss */
+#subcategoriesBlock ul li .sub-categories.lightorange.active .img > a .subcat-name {
+  color: #572701;
+  background-color: #FEC149;
+}
+
+/* line 175, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.lightorange {
   background-color: #FEC149;
   color: #572701;
 }
-/* line 168, ../scss/modules/_categories.scss */
+/* line 179, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.lightorange a {
   color: #572701;
 }
-/* line 171, ../scss/modules/_categories.scss */
+/* line 182, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.lightorange a:hover, #subcategoriesBlock .sub-cat-info.lightorange a:active {
   color: #bc5402;
 }
-/* line 177, ../scss/modules/_categories.scss */
+/* line 188, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.lightorange .btn, #subcategoriesBlock .sub-cat-info.lightorange .comment-reply-link, #subcategoriesBlock .sub-cat-info.lightorange #submit {
   color: #FEC149;
   background-color: #572701;
 }
-/* line 181, ../scss/modules/_categories.scss */
+/* line 192, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.lightorange .btn:visited, #subcategoriesBlock .sub-cat-info.lightorange .comment-reply-link:visited, #subcategoriesBlock .sub-cat-info.lightorange #submit:visited {
-  color: #572701;
+  color: #FEC149;
 }
-/* line 185, ../scss/modules/_categories.scss */
+/* line 196, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.lightorange .btn:hover, #subcategoriesBlock .sub-cat-info.lightorange .comment-reply-link:hover, #subcategoriesBlock .sub-cat-info.lightorange #submit:hover, #subcategoriesBlock .sub-cat-info.lightorange .btn:active, #subcategoriesBlock .sub-cat-info.lightorange .comment-reply-link:active, #subcategoriesBlock .sub-cat-info.lightorange #submit:active {
   background-color: #bc5402;
   color: #FEC149;
@@ -9100,38 +9195,43 @@ Stylesheet: Category Styles
   color: #572701;
   background-color: #DF791B;
 }
-/* line 154, ../scss/modules/_categories.scss */
+/* line 155, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.deeporange:hover {
   background-color: #DF791B;
 }
-/* line 158, ../scss/modules/_categories.scss */
+/* line 159, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.deeporange.active {
   background-color: #DF791B;
 }
-
 /* line 164, ../scss/modules/_categories.scss */
+#subcategoriesBlock ul li .sub-categories.deeporange.active .img > a .subcat-name {
+  color: #572701;
+  background-color: #DF791B;
+}
+
+/* line 175, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.deeporange {
   background-color: #DF791B;
   color: #572701;
 }
-/* line 168, ../scss/modules/_categories.scss */
+/* line 179, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.deeporange a {
   color: #572701;
 }
-/* line 171, ../scss/modules/_categories.scss */
+/* line 182, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.deeporange a:hover, #subcategoriesBlock .sub-cat-info.deeporange a:active {
   color: #bc5402;
 }
-/* line 177, ../scss/modules/_categories.scss */
+/* line 188, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.deeporange .btn, #subcategoriesBlock .sub-cat-info.deeporange .comment-reply-link, #subcategoriesBlock .sub-cat-info.deeporange #submit {
   color: #DF791B;
   background-color: #572701;
 }
-/* line 181, ../scss/modules/_categories.scss */
+/* line 192, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.deeporange .btn:visited, #subcategoriesBlock .sub-cat-info.deeporange .comment-reply-link:visited, #subcategoriesBlock .sub-cat-info.deeporange #submit:visited {
-  color: #572701;
+  color: #DF791B;
 }
-/* line 185, ../scss/modules/_categories.scss */
+/* line 196, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.deeporange .btn:hover, #subcategoriesBlock .sub-cat-info.deeporange .comment-reply-link:hover, #subcategoriesBlock .sub-cat-info.deeporange #submit:hover, #subcategoriesBlock .sub-cat-info.deeporange .btn:active, #subcategoriesBlock .sub-cat-info.deeporange .comment-reply-link:active, #subcategoriesBlock .sub-cat-info.deeporange #submit:active {
   background-color: #bc5402;
   color: #DF791B;
@@ -9165,38 +9265,43 @@ Stylesheet: Category Styles
   color: #572701;
   background-color: #F57D2F;
 }
-/* line 154, ../scss/modules/_categories.scss */
+/* line 155, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.carrot:hover {
   background-color: #F57D2F;
 }
-/* line 158, ../scss/modules/_categories.scss */
+/* line 159, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.carrot.active {
   background-color: #F57D2F;
 }
-
 /* line 164, ../scss/modules/_categories.scss */
+#subcategoriesBlock ul li .sub-categories.carrot.active .img > a .subcat-name {
+  color: #572701;
+  background-color: #F57D2F;
+}
+
+/* line 175, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.carrot {
   background-color: #F57D2F;
   color: #572701;
 }
-/* line 168, ../scss/modules/_categories.scss */
+/* line 179, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.carrot a {
   color: #572701;
 }
-/* line 171, ../scss/modules/_categories.scss */
+/* line 182, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.carrot a:hover, #subcategoriesBlock .sub-cat-info.carrot a:active {
   color: #bc5402;
 }
-/* line 177, ../scss/modules/_categories.scss */
+/* line 188, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.carrot .btn, #subcategoriesBlock .sub-cat-info.carrot .comment-reply-link, #subcategoriesBlock .sub-cat-info.carrot #submit {
   color: #F57D2F;
   background-color: #572701;
 }
-/* line 181, ../scss/modules/_categories.scss */
+/* line 192, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.carrot .btn:visited, #subcategoriesBlock .sub-cat-info.carrot .comment-reply-link:visited, #subcategoriesBlock .sub-cat-info.carrot #submit:visited {
-  color: #572701;
+  color: #F57D2F;
 }
-/* line 185, ../scss/modules/_categories.scss */
+/* line 196, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.carrot .btn:hover, #subcategoriesBlock .sub-cat-info.carrot .comment-reply-link:hover, #subcategoriesBlock .sub-cat-info.carrot #submit:hover, #subcategoriesBlock .sub-cat-info.carrot .btn:active, #subcategoriesBlock .sub-cat-info.carrot .comment-reply-link:active, #subcategoriesBlock .sub-cat-info.carrot #submit:active {
   background-color: #bc5402;
   color: #F57D2F;
@@ -9230,38 +9335,43 @@ Stylesheet: Category Styles
   color: #572701;
   background-color: #F5DB00;
 }
-/* line 154, ../scss/modules/_categories.scss */
+/* line 155, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.yellow:hover {
   background-color: #F5DB00;
 }
-/* line 158, ../scss/modules/_categories.scss */
+/* line 159, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.yellow.active {
   background-color: #F5DB00;
 }
-
 /* line 164, ../scss/modules/_categories.scss */
+#subcategoriesBlock ul li .sub-categories.yellow.active .img > a .subcat-name {
+  color: #572701;
+  background-color: #F5DB00;
+}
+
+/* line 175, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.yellow {
   background-color: #F5DB00;
   color: #572701;
 }
-/* line 168, ../scss/modules/_categories.scss */
+/* line 179, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.yellow a {
   color: #572701;
 }
-/* line 171, ../scss/modules/_categories.scss */
+/* line 182, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.yellow a:hover, #subcategoriesBlock .sub-cat-info.yellow a:active {
   color: #bc5402;
 }
-/* line 177, ../scss/modules/_categories.scss */
+/* line 188, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.yellow .btn, #subcategoriesBlock .sub-cat-info.yellow .comment-reply-link, #subcategoriesBlock .sub-cat-info.yellow #submit {
   color: #F5DB00;
   background-color: #572701;
 }
-/* line 181, ../scss/modules/_categories.scss */
+/* line 192, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.yellow .btn:visited, #subcategoriesBlock .sub-cat-info.yellow .comment-reply-link:visited, #subcategoriesBlock .sub-cat-info.yellow #submit:visited {
-  color: #572701;
+  color: #F5DB00;
 }
-/* line 185, ../scss/modules/_categories.scss */
+/* line 196, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.yellow .btn:hover, #subcategoriesBlock .sub-cat-info.yellow .comment-reply-link:hover, #subcategoriesBlock .sub-cat-info.yellow #submit:hover, #subcategoriesBlock .sub-cat-info.yellow .btn:active, #subcategoriesBlock .sub-cat-info.yellow .comment-reply-link:active, #subcategoriesBlock .sub-cat-info.yellow #submit:active {
   background-color: #bc5402;
   color: #F5DB00;
@@ -9295,38 +9405,43 @@ Stylesheet: Category Styles
   color: #572701;
   background-color: #D3E14C;
 }
-/* line 154, ../scss/modules/_categories.scss */
+/* line 155, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.limegreen:hover {
   background-color: #D3E14C;
 }
-/* line 158, ../scss/modules/_categories.scss */
+/* line 159, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.limegreen.active {
   background-color: #D3E14C;
 }
-
 /* line 164, ../scss/modules/_categories.scss */
+#subcategoriesBlock ul li .sub-categories.limegreen.active .img > a .subcat-name {
+  color: #572701;
+  background-color: #D3E14C;
+}
+
+/* line 175, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.limegreen {
   background-color: #D3E14C;
   color: #572701;
 }
-/* line 168, ../scss/modules/_categories.scss */
+/* line 179, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.limegreen a {
   color: #572701;
 }
-/* line 171, ../scss/modules/_categories.scss */
+/* line 182, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.limegreen a:hover, #subcategoriesBlock .sub-cat-info.limegreen a:active {
   color: #bc5402;
 }
-/* line 177, ../scss/modules/_categories.scss */
+/* line 188, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.limegreen .btn, #subcategoriesBlock .sub-cat-info.limegreen .comment-reply-link, #subcategoriesBlock .sub-cat-info.limegreen #submit {
   color: #D3E14C;
   background-color: #572701;
 }
-/* line 181, ../scss/modules/_categories.scss */
+/* line 192, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.limegreen .btn:visited, #subcategoriesBlock .sub-cat-info.limegreen .comment-reply-link:visited, #subcategoriesBlock .sub-cat-info.limegreen #submit:visited {
-  color: #572701;
+  color: #D3E14C;
 }
-/* line 185, ../scss/modules/_categories.scss */
+/* line 196, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.limegreen .btn:hover, #subcategoriesBlock .sub-cat-info.limegreen .comment-reply-link:hover, #subcategoriesBlock .sub-cat-info.limegreen #submit:hover, #subcategoriesBlock .sub-cat-info.limegreen .btn:active, #subcategoriesBlock .sub-cat-info.limegreen .comment-reply-link:active, #subcategoriesBlock .sub-cat-info.limegreen #submit:active {
   background-color: #bc5402;
   color: #D3E14C;
@@ -9360,38 +9475,43 @@ Stylesheet: Category Styles
   color: #f6eee3;
   background-color: #3F4B02;
 }
-/* line 154, ../scss/modules/_categories.scss */
+/* line 155, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.darkgreen:hover {
   background-color: #3F4B02;
 }
-/* line 158, ../scss/modules/_categories.scss */
+/* line 159, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.darkgreen.active {
   background-color: #3F4B02;
 }
-
 /* line 164, ../scss/modules/_categories.scss */
+#subcategoriesBlock ul li .sub-categories.darkgreen.active .img > a .subcat-name {
+  color: #f6eee3;
+  background-color: #3F4B02;
+}
+
+/* line 175, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.darkgreen {
   background-color: #3F4B02;
   color: #f6eee3;
 }
-/* line 168, ../scss/modules/_categories.scss */
+/* line 179, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.darkgreen a {
   color: #f6eee3;
 }
-/* line 171, ../scss/modules/_categories.scss */
+/* line 182, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.darkgreen a:hover, #subcategoriesBlock .sub-cat-info.darkgreen a:active {
   color: #ddbf96;
 }
-/* line 177, ../scss/modules/_categories.scss */
+/* line 188, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.darkgreen .btn, #subcategoriesBlock .sub-cat-info.darkgreen .comment-reply-link, #subcategoriesBlock .sub-cat-info.darkgreen #submit {
   color: #3F4B02;
   background-color: #f6eee3;
 }
-/* line 181, ../scss/modules/_categories.scss */
+/* line 192, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.darkgreen .btn:visited, #subcategoriesBlock .sub-cat-info.darkgreen .comment-reply-link:visited, #subcategoriesBlock .sub-cat-info.darkgreen #submit:visited {
-  color: #f6eee3;
+  color: #3F4B02;
 }
-/* line 185, ../scss/modules/_categories.scss */
+/* line 196, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.darkgreen .btn:hover, #subcategoriesBlock .sub-cat-info.darkgreen .comment-reply-link:hover, #subcategoriesBlock .sub-cat-info.darkgreen #submit:hover, #subcategoriesBlock .sub-cat-info.darkgreen .btn:active, #subcategoriesBlock .sub-cat-info.darkgreen .comment-reply-link:active, #subcategoriesBlock .sub-cat-info.darkgreen #submit:active {
   background-color: #ddbf96;
   color: #3F4B02;
@@ -9425,38 +9545,43 @@ Stylesheet: Category Styles
   color: #f6eee3;
   background-color: #215352;
 }
-/* line 154, ../scss/modules/_categories.scss */
+/* line 155, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.slate:hover {
   background-color: #215352;
 }
-/* line 158, ../scss/modules/_categories.scss */
+/* line 159, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.slate.active {
   background-color: #215352;
 }
-
 /* line 164, ../scss/modules/_categories.scss */
+#subcategoriesBlock ul li .sub-categories.slate.active .img > a .subcat-name {
+  color: #f6eee3;
+  background-color: #215352;
+}
+
+/* line 175, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.slate {
   background-color: #215352;
   color: #f6eee3;
 }
-/* line 168, ../scss/modules/_categories.scss */
+/* line 179, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.slate a {
   color: #f6eee3;
 }
-/* line 171, ../scss/modules/_categories.scss */
+/* line 182, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.slate a:hover, #subcategoriesBlock .sub-cat-info.slate a:active {
   color: #ddbf96;
 }
-/* line 177, ../scss/modules/_categories.scss */
+/* line 188, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.slate .btn, #subcategoriesBlock .sub-cat-info.slate .comment-reply-link, #subcategoriesBlock .sub-cat-info.slate #submit {
   color: #215352;
   background-color: #f6eee3;
 }
-/* line 181, ../scss/modules/_categories.scss */
+/* line 192, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.slate .btn:visited, #subcategoriesBlock .sub-cat-info.slate .comment-reply-link:visited, #subcategoriesBlock .sub-cat-info.slate #submit:visited {
-  color: #f6eee3;
+  color: #215352;
 }
-/* line 185, ../scss/modules/_categories.scss */
+/* line 196, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.slate .btn:hover, #subcategoriesBlock .sub-cat-info.slate .comment-reply-link:hover, #subcategoriesBlock .sub-cat-info.slate #submit:hover, #subcategoriesBlock .sub-cat-info.slate .btn:active, #subcategoriesBlock .sub-cat-info.slate .comment-reply-link:active, #subcategoriesBlock .sub-cat-info.slate #submit:active {
   background-color: #ddbf96;
   color: #215352;
@@ -9490,38 +9615,43 @@ Stylesheet: Category Styles
   color: #572701;
   background-color: #82D0C0;
 }
-/* line 154, ../scss/modules/_categories.scss */
+/* line 155, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.seagreen:hover {
   background-color: #82D0C0;
 }
-/* line 158, ../scss/modules/_categories.scss */
+/* line 159, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.seagreen.active {
   background-color: #82D0C0;
 }
-
 /* line 164, ../scss/modules/_categories.scss */
+#subcategoriesBlock ul li .sub-categories.seagreen.active .img > a .subcat-name {
+  color: #572701;
+  background-color: #82D0C0;
+}
+
+/* line 175, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.seagreen {
   background-color: #82D0C0;
   color: #572701;
 }
-/* line 168, ../scss/modules/_categories.scss */
+/* line 179, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.seagreen a {
   color: #572701;
 }
-/* line 171, ../scss/modules/_categories.scss */
+/* line 182, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.seagreen a:hover, #subcategoriesBlock .sub-cat-info.seagreen a:active {
   color: #bc5402;
 }
-/* line 177, ../scss/modules/_categories.scss */
+/* line 188, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.seagreen .btn, #subcategoriesBlock .sub-cat-info.seagreen .comment-reply-link, #subcategoriesBlock .sub-cat-info.seagreen #submit {
   color: #82D0C0;
   background-color: #572701;
 }
-/* line 181, ../scss/modules/_categories.scss */
+/* line 192, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.seagreen .btn:visited, #subcategoriesBlock .sub-cat-info.seagreen .comment-reply-link:visited, #subcategoriesBlock .sub-cat-info.seagreen #submit:visited {
-  color: #572701;
+  color: #82D0C0;
 }
-/* line 185, ../scss/modules/_categories.scss */
+/* line 196, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.seagreen .btn:hover, #subcategoriesBlock .sub-cat-info.seagreen .comment-reply-link:hover, #subcategoriesBlock .sub-cat-info.seagreen #submit:hover, #subcategoriesBlock .sub-cat-info.seagreen .btn:active, #subcategoriesBlock .sub-cat-info.seagreen .comment-reply-link:active, #subcategoriesBlock .sub-cat-info.seagreen #submit:active {
   background-color: #bc5402;
   color: #82D0C0;
@@ -9555,38 +9685,43 @@ Stylesheet: Category Styles
   color: #f6efe9;
   background-color: #0F4C8D;
 }
-/* line 154, ../scss/modules/_categories.scss */
+/* line 155, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.blue:hover {
   background-color: #0F4C8D;
 }
-/* line 158, ../scss/modules/_categories.scss */
+/* line 159, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.blue.active {
   background-color: #0F4C8D;
 }
-
 /* line 164, ../scss/modules/_categories.scss */
+#subcategoriesBlock ul li .sub-categories.blue.active .img > a .subcat-name {
+  color: #f6efe9;
+  background-color: #0F4C8D;
+}
+
+/* line 175, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.blue {
   background-color: #0F4C8D;
   color: #f6efe9;
 }
-/* line 168, ../scss/modules/_categories.scss */
+/* line 179, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.blue a {
   color: #f6efe9;
 }
-/* line 171, ../scss/modules/_categories.scss */
+/* line 182, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.blue a:hover, #subcategoriesBlock .sub-cat-info.blue a:active {
   color: #d8baa1;
 }
-/* line 177, ../scss/modules/_categories.scss */
+/* line 188, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.blue .btn, #subcategoriesBlock .sub-cat-info.blue .comment-reply-link, #subcategoriesBlock .sub-cat-info.blue #submit {
   color: #0F4C8D;
   background-color: #f6efe9;
 }
-/* line 181, ../scss/modules/_categories.scss */
+/* line 192, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.blue .btn:visited, #subcategoriesBlock .sub-cat-info.blue .comment-reply-link:visited, #subcategoriesBlock .sub-cat-info.blue #submit:visited {
-  color: #f6efe9;
+  color: #0F4C8D;
 }
-/* line 185, ../scss/modules/_categories.scss */
+/* line 196, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.blue .btn:hover, #subcategoriesBlock .sub-cat-info.blue .comment-reply-link:hover, #subcategoriesBlock .sub-cat-info.blue #submit:hover, #subcategoriesBlock .sub-cat-info.blue .btn:active, #subcategoriesBlock .sub-cat-info.blue .comment-reply-link:active, #subcategoriesBlock .sub-cat-info.blue #submit:active {
   background-color: #d8baa1;
   color: #0F4C8D;
@@ -9620,38 +9755,43 @@ Stylesheet: Category Styles
   color: #FFE4C9;
   background-color: #6B8F9E;
 }
-/* line 154, ../scss/modules/_categories.scss */
+/* line 155, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.lightblue:hover {
   background-color: #6B8F9E;
 }
-/* line 158, ../scss/modules/_categories.scss */
+/* line 159, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.lightblue.active {
   background-color: #6B8F9E;
 }
-
 /* line 164, ../scss/modules/_categories.scss */
+#subcategoriesBlock ul li .sub-categories.lightblue.active .img > a .subcat-name {
+  color: #FFE4C9;
+  background-color: #6B8F9E;
+}
+
+/* line 175, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.lightblue {
   background-color: #6B8F9E;
   color: #FFE4C9;
 }
-/* line 168, ../scss/modules/_categories.scss */
+/* line 179, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.lightblue a {
   color: #FFE4C9;
 }
-/* line 171, ../scss/modules/_categories.scss */
+/* line 182, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.lightblue a:hover, #subcategoriesBlock .sub-cat-info.lightblue a:active {
   color: #ffb163;
 }
-/* line 177, ../scss/modules/_categories.scss */
+/* line 188, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.lightblue .btn, #subcategoriesBlock .sub-cat-info.lightblue .comment-reply-link, #subcategoriesBlock .sub-cat-info.lightblue #submit {
   color: #6B8F9E;
   background-color: #FFE4C9;
 }
-/* line 181, ../scss/modules/_categories.scss */
+/* line 192, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.lightblue .btn:visited, #subcategoriesBlock .sub-cat-info.lightblue .comment-reply-link:visited, #subcategoriesBlock .sub-cat-info.lightblue #submit:visited {
-  color: #FFE4C9;
+  color: #6B8F9E;
 }
-/* line 185, ../scss/modules/_categories.scss */
+/* line 196, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.lightblue .btn:hover, #subcategoriesBlock .sub-cat-info.lightblue .comment-reply-link:hover, #subcategoriesBlock .sub-cat-info.lightblue #submit:hover, #subcategoriesBlock .sub-cat-info.lightblue .btn:active, #subcategoriesBlock .sub-cat-info.lightblue .comment-reply-link:active, #subcategoriesBlock .sub-cat-info.lightblue #submit:active {
   background-color: #ffb163;
   color: #6B8F9E;
@@ -9685,38 +9825,43 @@ Stylesheet: Category Styles
   color: #572701;
   background-color: #BFB2D6;
 }
-/* line 154, ../scss/modules/_categories.scss */
+/* line 155, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.lavender:hover {
   background-color: #BFB2D6;
 }
-/* line 158, ../scss/modules/_categories.scss */
+/* line 159, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.lavender.active {
   background-color: #BFB2D6;
 }
-
 /* line 164, ../scss/modules/_categories.scss */
+#subcategoriesBlock ul li .sub-categories.lavender.active .img > a .subcat-name {
+  color: #572701;
+  background-color: #BFB2D6;
+}
+
+/* line 175, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.lavender {
   background-color: #BFB2D6;
   color: #572701;
 }
-/* line 168, ../scss/modules/_categories.scss */
+/* line 179, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.lavender a {
   color: #572701;
 }
-/* line 171, ../scss/modules/_categories.scss */
+/* line 182, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.lavender a:hover, #subcategoriesBlock .sub-cat-info.lavender a:active {
   color: #bc5402;
 }
-/* line 177, ../scss/modules/_categories.scss */
+/* line 188, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.lavender .btn, #subcategoriesBlock .sub-cat-info.lavender .comment-reply-link, #subcategoriesBlock .sub-cat-info.lavender #submit {
   color: #BFB2D6;
   background-color: #572701;
 }
-/* line 181, ../scss/modules/_categories.scss */
+/* line 192, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.lavender .btn:visited, #subcategoriesBlock .sub-cat-info.lavender .comment-reply-link:visited, #subcategoriesBlock .sub-cat-info.lavender #submit:visited {
-  color: #572701;
+  color: #BFB2D6;
 }
-/* line 185, ../scss/modules/_categories.scss */
+/* line 196, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.lavender .btn:hover, #subcategoriesBlock .sub-cat-info.lavender .comment-reply-link:hover, #subcategoriesBlock .sub-cat-info.lavender #submit:hover, #subcategoriesBlock .sub-cat-info.lavender .btn:active, #subcategoriesBlock .sub-cat-info.lavender .comment-reply-link:active, #subcategoriesBlock .sub-cat-info.lavender #submit:active {
   background-color: #bc5402;
   color: #BFB2D6;
@@ -9750,38 +9895,43 @@ Stylesheet: Category Styles
   color: #f6efe9;
   background-color: #AC238E;
 }
-/* line 154, ../scss/modules/_categories.scss */
+/* line 155, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.magenta:hover {
   background-color: #AC238E;
 }
-/* line 158, ../scss/modules/_categories.scss */
+/* line 159, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.magenta.active {
   background-color: #AC238E;
 }
-
 /* line 164, ../scss/modules/_categories.scss */
+#subcategoriesBlock ul li .sub-categories.magenta.active .img > a .subcat-name {
+  color: #f6efe9;
+  background-color: #AC238E;
+}
+
+/* line 175, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.magenta {
   background-color: #AC238E;
   color: #f6efe9;
 }
-/* line 168, ../scss/modules/_categories.scss */
+/* line 179, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.magenta a {
   color: #f6efe9;
 }
-/* line 171, ../scss/modules/_categories.scss */
+/* line 182, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.magenta a:hover, #subcategoriesBlock .sub-cat-info.magenta a:active {
   color: #d8baa1;
 }
-/* line 177, ../scss/modules/_categories.scss */
+/* line 188, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.magenta .btn, #subcategoriesBlock .sub-cat-info.magenta .comment-reply-link, #subcategoriesBlock .sub-cat-info.magenta #submit {
   color: #AC238E;
   background-color: #f6efe9;
 }
-/* line 181, ../scss/modules/_categories.scss */
+/* line 192, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.magenta .btn:visited, #subcategoriesBlock .sub-cat-info.magenta .comment-reply-link:visited, #subcategoriesBlock .sub-cat-info.magenta #submit:visited {
-  color: #f6efe9;
+  color: #AC238E;
 }
-/* line 185, ../scss/modules/_categories.scss */
+/* line 196, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.magenta .btn:hover, #subcategoriesBlock .sub-cat-info.magenta .comment-reply-link:hover, #subcategoriesBlock .sub-cat-info.magenta #submit:hover, #subcategoriesBlock .sub-cat-info.magenta .btn:active, #subcategoriesBlock .sub-cat-info.magenta .comment-reply-link:active, #subcategoriesBlock .sub-cat-info.magenta #submit:active {
   background-color: #d8baa1;
   color: #AC238E;
@@ -9815,38 +9965,43 @@ Stylesheet: Category Styles
   color: #f6efe9;
   background-color: #63194B;
 }
-/* line 154, ../scss/modules/_categories.scss */
+/* line 155, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.darkviolet:hover {
   background-color: #63194B;
 }
-/* line 158, ../scss/modules/_categories.scss */
+/* line 159, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.darkviolet.active {
   background-color: #63194B;
 }
-
 /* line 164, ../scss/modules/_categories.scss */
+#subcategoriesBlock ul li .sub-categories.darkviolet.active .img > a .subcat-name {
+  color: #f6efe9;
+  background-color: #63194B;
+}
+
+/* line 175, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.darkviolet {
   background-color: #63194B;
   color: #f6efe9;
 }
-/* line 168, ../scss/modules/_categories.scss */
+/* line 179, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.darkviolet a {
   color: #f6efe9;
 }
-/* line 171, ../scss/modules/_categories.scss */
+/* line 182, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.darkviolet a:hover, #subcategoriesBlock .sub-cat-info.darkviolet a:active {
   color: #d8baa1;
 }
-/* line 177, ../scss/modules/_categories.scss */
+/* line 188, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.darkviolet .btn, #subcategoriesBlock .sub-cat-info.darkviolet .comment-reply-link, #subcategoriesBlock .sub-cat-info.darkviolet #submit {
   color: #63194B;
   background-color: #f6efe9;
 }
-/* line 181, ../scss/modules/_categories.scss */
+/* line 192, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.darkviolet .btn:visited, #subcategoriesBlock .sub-cat-info.darkviolet .comment-reply-link:visited, #subcategoriesBlock .sub-cat-info.darkviolet #submit:visited {
-  color: #f6efe9;
+  color: #63194B;
 }
-/* line 185, ../scss/modules/_categories.scss */
+/* line 196, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.darkviolet .btn:hover, #subcategoriesBlock .sub-cat-info.darkviolet .comment-reply-link:hover, #subcategoriesBlock .sub-cat-info.darkviolet #submit:hover, #subcategoriesBlock .sub-cat-info.darkviolet .btn:active, #subcategoriesBlock .sub-cat-info.darkviolet .comment-reply-link:active, #subcategoriesBlock .sub-cat-info.darkviolet #submit:active {
   background-color: #d8baa1;
   color: #63194B;
@@ -9880,38 +10035,43 @@ Stylesheet: Category Styles
   color: #572701;
   background-color: #FFD64A;
 }
-/* line 154, ../scss/modules/_categories.scss */
+/* line 155, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.salonyellow:hover {
   background-color: #FFD64A;
 }
-/* line 158, ../scss/modules/_categories.scss */
+/* line 159, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.salonyellow.active {
   background-color: #FFD64A;
 }
-
 /* line 164, ../scss/modules/_categories.scss */
+#subcategoriesBlock ul li .sub-categories.salonyellow.active .img > a .subcat-name {
+  color: #572701;
+  background-color: #FFD64A;
+}
+
+/* line 175, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.salonyellow {
   background-color: #FFD64A;
   color: #572701;
 }
-/* line 168, ../scss/modules/_categories.scss */
+/* line 179, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.salonyellow a {
   color: #572701;
 }
-/* line 171, ../scss/modules/_categories.scss */
+/* line 182, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.salonyellow a:hover, #subcategoriesBlock .sub-cat-info.salonyellow a:active {
   color: black;
 }
-/* line 177, ../scss/modules/_categories.scss */
+/* line 188, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.salonyellow .btn, #subcategoriesBlock .sub-cat-info.salonyellow .comment-reply-link, #subcategoriesBlock .sub-cat-info.salonyellow #submit {
   color: #FFD64A;
   background-color: #572701;
 }
-/* line 181, ../scss/modules/_categories.scss */
+/* line 192, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.salonyellow .btn:visited, #subcategoriesBlock .sub-cat-info.salonyellow .comment-reply-link:visited, #subcategoriesBlock .sub-cat-info.salonyellow #submit:visited {
-  color: #572701;
+  color: #FFD64A;
 }
-/* line 185, ../scss/modules/_categories.scss */
+/* line 196, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.salonyellow .btn:hover, #subcategoriesBlock .sub-cat-info.salonyellow .comment-reply-link:hover, #subcategoriesBlock .sub-cat-info.salonyellow #submit:hover, #subcategoriesBlock .sub-cat-info.salonyellow .btn:active, #subcategoriesBlock .sub-cat-info.salonyellow .comment-reply-link:active, #subcategoriesBlock .sub-cat-info.salonyellow #submit:active {
   background-color: black;
   color: #FFD64A;
@@ -9945,38 +10105,43 @@ Stylesheet: Category Styles
   color: #f6eee3;
   background-color: #6C6AA9;
 }
-/* line 154, ../scss/modules/_categories.scss */
+/* line 155, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.saloncornflowerblue:hover {
   background-color: #6C6AA9;
 }
-/* line 158, ../scss/modules/_categories.scss */
+/* line 159, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.saloncornflowerblue.active {
   background-color: #6C6AA9;
 }
-
 /* line 164, ../scss/modules/_categories.scss */
+#subcategoriesBlock ul li .sub-categories.saloncornflowerblue.active .img > a .subcat-name {
+  color: #f6eee3;
+  background-color: #6C6AA9;
+}
+
+/* line 175, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.saloncornflowerblue {
   background-color: #6C6AA9;
   color: #f6eee3;
 }
-/* line 168, ../scss/modules/_categories.scss */
+/* line 179, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.saloncornflowerblue a {
   color: #f6eee3;
 }
-/* line 171, ../scss/modules/_categories.scss */
+/* line 182, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.saloncornflowerblue a:hover, #subcategoriesBlock .sub-cat-info.saloncornflowerblue a:active {
   color: #ddbf96;
 }
-/* line 177, ../scss/modules/_categories.scss */
+/* line 188, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.saloncornflowerblue .btn, #subcategoriesBlock .sub-cat-info.saloncornflowerblue .comment-reply-link, #subcategoriesBlock .sub-cat-info.saloncornflowerblue #submit {
   color: #6C6AA9;
   background-color: #f6eee3;
 }
-/* line 181, ../scss/modules/_categories.scss */
+/* line 192, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.saloncornflowerblue .btn:visited, #subcategoriesBlock .sub-cat-info.saloncornflowerblue .comment-reply-link:visited, #subcategoriesBlock .sub-cat-info.saloncornflowerblue #submit:visited {
-  color: #f6eee3;
+  color: #6C6AA9;
 }
-/* line 185, ../scss/modules/_categories.scss */
+/* line 196, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.saloncornflowerblue .btn:hover, #subcategoriesBlock .sub-cat-info.saloncornflowerblue .comment-reply-link:hover, #subcategoriesBlock .sub-cat-info.saloncornflowerblue #submit:hover, #subcategoriesBlock .sub-cat-info.saloncornflowerblue .btn:active, #subcategoriesBlock .sub-cat-info.saloncornflowerblue .comment-reply-link:active, #subcategoriesBlock .sub-cat-info.saloncornflowerblue #submit:active {
   background-color: #ddbf96;
   color: #6C6AA9;
@@ -10010,38 +10175,43 @@ Stylesheet: Category Styles
   color: #f6eee3;
   background-color: #B64740;
 }
-/* line 154, ../scss/modules/_categories.scss */
+/* line 155, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.salonfirebrick:hover {
   background-color: #B64740;
 }
-/* line 158, ../scss/modules/_categories.scss */
+/* line 159, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.salonfirebrick.active {
   background-color: #B64740;
 }
-
 /* line 164, ../scss/modules/_categories.scss */
+#subcategoriesBlock ul li .sub-categories.salonfirebrick.active .img > a .subcat-name {
+  color: #f6eee3;
+  background-color: #B64740;
+}
+
+/* line 175, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.salonfirebrick {
   background-color: #B64740;
   color: #f6eee3;
 }
-/* line 168, ../scss/modules/_categories.scss */
+/* line 179, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.salonfirebrick a {
   color: #f6eee3;
 }
-/* line 171, ../scss/modules/_categories.scss */
+/* line 182, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.salonfirebrick a:hover, #subcategoriesBlock .sub-cat-info.salonfirebrick a:active {
   color: #ddbf96;
 }
-/* line 177, ../scss/modules/_categories.scss */
+/* line 188, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.salonfirebrick .btn, #subcategoriesBlock .sub-cat-info.salonfirebrick .comment-reply-link, #subcategoriesBlock .sub-cat-info.salonfirebrick #submit {
   color: #B64740;
   background-color: #f6eee3;
 }
-/* line 181, ../scss/modules/_categories.scss */
+/* line 192, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.salonfirebrick .btn:visited, #subcategoriesBlock .sub-cat-info.salonfirebrick .comment-reply-link:visited, #subcategoriesBlock .sub-cat-info.salonfirebrick #submit:visited {
-  color: #f6eee3;
+  color: #B64740;
 }
-/* line 185, ../scss/modules/_categories.scss */
+/* line 196, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.salonfirebrick .btn:hover, #subcategoriesBlock .sub-cat-info.salonfirebrick .comment-reply-link:hover, #subcategoriesBlock .sub-cat-info.salonfirebrick #submit:hover, #subcategoriesBlock .sub-cat-info.salonfirebrick .btn:active, #subcategoriesBlock .sub-cat-info.salonfirebrick .comment-reply-link:active, #subcategoriesBlock .sub-cat-info.salonfirebrick #submit:active {
   background-color: #ddbf96;
   color: #B64740;
@@ -10075,38 +10245,43 @@ Stylesheet: Category Styles
   color: #f6eee3;
   background-color: #323B80;
 }
-/* line 154, ../scss/modules/_categories.scss */
+/* line 155, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.highporosity:hover {
   background-color: #323B80;
 }
-/* line 158, ../scss/modules/_categories.scss */
+/* line 159, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.highporosity.active {
   background-color: #323B80;
 }
-
 /* line 164, ../scss/modules/_categories.scss */
+#subcategoriesBlock ul li .sub-categories.highporosity.active .img > a .subcat-name {
+  color: #f6eee3;
+  background-color: #323B80;
+}
+
+/* line 175, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.highporosity {
   background-color: #323B80;
   color: #f6eee3;
 }
-/* line 168, ../scss/modules/_categories.scss */
+/* line 179, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.highporosity a {
   color: #f6eee3;
 }
-/* line 171, ../scss/modules/_categories.scss */
+/* line 182, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.highporosity a:hover, #subcategoriesBlock .sub-cat-info.highporosity a:active {
   color: white;
 }
-/* line 177, ../scss/modules/_categories.scss */
+/* line 188, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.highporosity .btn, #subcategoriesBlock .sub-cat-info.highporosity .comment-reply-link, #subcategoriesBlock .sub-cat-info.highporosity #submit {
   color: #323B80;
   background-color: #f6eee3;
 }
-/* line 181, ../scss/modules/_categories.scss */
+/* line 192, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.highporosity .btn:visited, #subcategoriesBlock .sub-cat-info.highporosity .comment-reply-link:visited, #subcategoriesBlock .sub-cat-info.highporosity #submit:visited {
-  color: #f6eee3;
+  color: #323B80;
 }
-/* line 185, ../scss/modules/_categories.scss */
+/* line 196, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.highporosity .btn:hover, #subcategoriesBlock .sub-cat-info.highporosity .comment-reply-link:hover, #subcategoriesBlock .sub-cat-info.highporosity #submit:hover, #subcategoriesBlock .sub-cat-info.highporosity .btn:active, #subcategoriesBlock .sub-cat-info.highporosity .comment-reply-link:active, #subcategoriesBlock .sub-cat-info.highporosity #submit:active {
   background-color: white;
   color: #323B80;
@@ -10140,38 +10315,43 @@ Stylesheet: Category Styles
   color: #f6eee3;
   background-color: #E06C00;
 }
-/* line 154, ../scss/modules/_categories.scss */
+/* line 155, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.lowporosity:hover {
   background-color: #E06C00;
 }
-/* line 158, ../scss/modules/_categories.scss */
+/* line 159, ../scss/modules/_categories.scss */
 #subcategoriesBlock ul li .sub-categories.lowporosity.active {
   background-color: #E06C00;
 }
-
 /* line 164, ../scss/modules/_categories.scss */
+#subcategoriesBlock ul li .sub-categories.lowporosity.active .img > a .subcat-name {
+  color: #f6eee3;
+  background-color: #E06C00;
+}
+
+/* line 175, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.lowporosity {
   background-color: #E06C00;
   color: #f6eee3;
 }
-/* line 168, ../scss/modules/_categories.scss */
+/* line 179, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.lowporosity a {
   color: #f6eee3;
 }
-/* line 171, ../scss/modules/_categories.scss */
+/* line 182, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.lowporosity a:hover, #subcategoriesBlock .sub-cat-info.lowporosity a:active {
   color: white;
 }
-/* line 177, ../scss/modules/_categories.scss */
+/* line 188, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.lowporosity .btn, #subcategoriesBlock .sub-cat-info.lowporosity .comment-reply-link, #subcategoriesBlock .sub-cat-info.lowporosity #submit {
   color: #E06C00;
   background-color: #f6eee3;
 }
-/* line 181, ../scss/modules/_categories.scss */
+/* line 192, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.lowporosity .btn:visited, #subcategoriesBlock .sub-cat-info.lowporosity .comment-reply-link:visited, #subcategoriesBlock .sub-cat-info.lowporosity #submit:visited {
-  color: #f6eee3;
+  color: #E06C00;
 }
-/* line 185, ../scss/modules/_categories.scss */
+/* line 196, ../scss/modules/_categories.scss */
 #subcategoriesBlock .sub-cat-info.lowporosity .btn:hover, #subcategoriesBlock .sub-cat-info.lowporosity .comment-reply-link:hover, #subcategoriesBlock .sub-cat-info.lowporosity #submit:hover, #subcategoriesBlock .sub-cat-info.lowporosity .btn:active, #subcategoriesBlock .sub-cat-info.lowporosity .comment-reply-link:active, #subcategoriesBlock .sub-cat-info.lowporosity #submit:active {
   background-color: white;
   color: #E06C00;
@@ -10521,29 +10701,30 @@ If you want to use these alerts in your design, you can. If not,
 you can just remove this stylesheet.
 
 ******************************************************************/
-/* line 14, ../scss/modules/_samples.scss */
-.cac_wfs_sample .cAc_wfs-sample-header {
+/* line 16, ../scss/modules/_samples.scss */
+.single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-header {
   position: relative;
   width: 100%;
   text-align: center;
 }
-/* line 20, ../scss/modules/_samples.scss */
-.cac_wfs_sample .cAc_wfs-sample-header img.header-right {
+/* line 22, ../scss/modules/_samples.scss */
+.single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-header img.header-right {
   position: absolute;
   max-width: 20%;
   right: 0;
   top: 0;
   height: auto;
 }
-/* line 28, ../scss/modules/_samples.scss */
-.cac_wfs_sample .cAc_wfs-sample-header img.header-left {
+/* line 30, ../scss/modules/_samples.scss */
+.single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-header img.header-left {
   position: absolute;
   max-width: 20%;
   left: 0;
   top: 0;
+  z-index: -1;
 }
-/* line 35, ../scss/modules/_samples.scss */
-.cac_wfs_sample .cAc_wfs-sample-header .cAc_wfs-sample-benefit {
+/* line 38, ../scss/modules/_samples.scss */
+.single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-header .cAc_wfs-sample-benefit {
   display: block;
   margin: 0 auto;
   width: 33%;
@@ -10554,8 +10735,8 @@ you can just remove this stylesheet.
   background-size: cover;
   min-width: 300px;
 }
-/* line 47, ../scss/modules/_samples.scss */
-.cac_wfs_sample .cAc_wfs-sample-header .cAc_wfs-sample-needstate {
+/* line 50, ../scss/modules/_samples.scss */
+.single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-header .cAc_wfs-sample-needstate {
   font-family: "adobe-garamond-pro", Garamond, Palatino, "Times New Roman", Times, serif;
   font-style: italic;
   font-size: 2em;
@@ -10564,8 +10745,8 @@ you can just remove this stylesheet.
   width: 50%;
   min-width: 300px;
 }
-/* line 57, ../scss/modules/_samples.scss */
-.cac_wfs_sample .cAc_wfs-sample-header .cAc_wfs-sample-title {
+/* line 60, ../scss/modules/_samples.scss */
+.single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-header .cAc_wfs-sample-title {
   text-align: center;
   font-size: 3em;
   text-transform: uppercase;
@@ -10573,46 +10754,52 @@ you can just remove this stylesheet.
   width: 50%;
   min-width: 300px;
 }
-/* line 68, ../scss/modules/_samples.scss */
-.cac_wfs_sample .entry-content {
+/* line 71, ../scss/modules/_samples.scss */
+.single-cac_wfs_sample .cac_wfs_sample .entry-content {
   margin-bottom: 25%;
   position: relative;
 }
-/* line 73, ../scss/modules/_samples.scss */
-.cac_wfs_sample .entry-content .cAc_wfs-sample-content {
-  font-family: "adobe-garamond-pro", Garamond, Palatino, "Times New Roman", Times, serif;
+/* line 76, ../scss/modules/_samples.scss */
+.single-cac_wfs_sample .cac_wfs_sample .entry-content .cAc_wfs-sample-content {
   font-size: 2em;
-  font-weight: 700;
-  font-style: italic;
   text-align: center;
   width: 50%;
   margin: 0 auto;
   min-width: 300px;
 }
-/* line 83, ../scss/modules/_samples.scss */
-.cac_wfs_sample .entry-content .cAc_wfs-sample-content img.body-right {
+/* line 84, ../scss/modules/_samples.scss */
+.single-cac_wfs_sample .cac_wfs_sample .entry-content .cAc_wfs-sample-content img.body-right {
   position: absolute;
   max-width: 10%;
   right: 0;
   top: 0;
+  z-index: -1;
 }
-/* line 93, ../scss/modules/_samples.scss */
-.cac_wfs_sample .entry-content .cAc_wfs-sample-ingredients-header {
-  font-size: 2.5em;
+/* line 92, ../scss/modules/_samples.scss */
+.single-cac_wfs_sample .cac_wfs_sample .entry-content .cAc_wfs-sample-content img.body-left {
+  position: absolute;
+  max-width: 10%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+/* line 102, ../scss/modules/_samples.scss */
+.single-cac_wfs_sample .cac_wfs_sample .entry-content .cAc_wfs-sample-ingredients-header {
+  font-size: 3em;
   font-family: "adobe-garamond-pro", Garamond, Palatino, "Times New Roman", Times, serif;
-  font-weight: 700;
-  font-style: italic;
+  text-transform: uppercase;
   text-align: center;
   width: 85%;
-  margin: 0 auto;
+  margin: 1em auto;
   min-width: 300px;
+  line-height: 1;
 }
-/* line 106, ../scss/modules/_samples.scss */
-.cac_wfs_sample .entry-content .cAc_wfs-sample-ingredients .cAc_wfs-sample-ingredient {
+/* line 115, ../scss/modules/_samples.scss */
+.single-cac_wfs_sample .cac_wfs_sample .entry-content .cAc_wfs-sample-ingredients .cAc_wfs-sample-ingredient {
   text-align: center;
 }
-/* line 109, ../scss/modules/_samples.scss */
-.cac_wfs_sample .entry-content .cAc_wfs-sample-ingredients .cAc_wfs-sample-ingredient .cAc_wfs-sample-ingredient-name {
+/* line 118, ../scss/modules/_samples.scss */
+.single-cac_wfs_sample .cac_wfs_sample .entry-content .cAc_wfs-sample-ingredients .cAc_wfs-sample-ingredient .cAc_wfs-sample-ingredient-name {
   text-align: center;
   font-weight: 700;
   font-style: italic;
@@ -10620,20 +10807,20 @@ you can just remove this stylesheet.
   font-family: "adobe-garamond-pro", Garamond, Palatino, "Times New Roman", Times, serif;
   font-size: 1.75em;
 }
-/* line 118, ../scss/modules/_samples.scss */
-.cac_wfs_sample .entry-content .cAc_wfs-sample-ingredients .cAc_wfs-sample-ingredient .cAc_wfs-sample-ingredient-copy {
+/* line 127, ../scss/modules/_samples.scss */
+.single-cac_wfs_sample .cac_wfs_sample .entry-content .cAc_wfs-sample-ingredients .cAc_wfs-sample-ingredient .cAc_wfs-sample-ingredient-copy {
   text-align: center;
 }
-/* line 122, ../scss/modules/_samples.scss */
-.cac_wfs_sample .entry-content .cAc_wfs-sample-ingredients .cAc_wfs-sample-ingredient .cAc_wfs-sample-img-ingredient {
+/* line 131, ../scss/modules/_samples.scss */
+.single-cac_wfs_sample .cac_wfs_sample .entry-content .cAc_wfs-sample-ingredients .cAc_wfs-sample-ingredient .cAc_wfs-sample-img-ingredient {
   max-height: 200px;
   width: auto;
 }
-/* line 133, ../scss/modules/_samples.scss */
-.cac_wfs_sample .cAc_wfs-sample-footer {
+/* line 142, ../scss/modules/_samples.scss */
+.single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer {
   width: 100%;
   position: fixed;
-  bottom: 2em;
+  bottom: 3em;
   z-index: 25;
   border: 0;
   opacity: 0.85;
@@ -10644,96 +10831,145 @@ you can just remove this stylesheet.
   transition: all 0.5s ease-out;
   padding: 0;
 }
-/* line 144, ../scss/modules/_samples.scss */
-.cac_wfs_sample .cAc_wfs-sample-footer:hover {
+/* line 153, ../scss/modules/_samples.scss */
+.single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer:hover {
   opacity: 1;
 }
-/* line 148, ../scss/modules/_samples.scss */
-.cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-form-close {
+/* line 157, ../scss/modules/_samples.scss */
+.single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-form-close {
   display: none;
   position: absolute;
-  right: 1em;
+  right: 2em;
   top: 2em;
   color: #fff;
-  font-size: 1.5em;
+  font-size: 2em;
   z-index: 10;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  line-height: 2;
 }
-/* line 160, ../scss/modules/_samples.scss */
-.cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-cta .cAc_wfs-sample-cta-initial {
+/* line 174, ../scss/modules/_samples.scss */
+.single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-cta .cAc_wfs-sample-cta-initial {
   width: 50%;
   margin: 0 auto;
   min-width: 300px;
+  text-align: center;
 }
-/* line 165, ../scss/modules/_samples.scss */
-.cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-cta .cAc_wfs-sample-cta-initial .cAc_wfs-sample-cta-title {
+/* line 180, ../scss/modules/_samples.scss */
+.single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-cta .cAc_wfs-sample-cta-initial .cAc_wfs-sample-cta-title {
   text-transform: uppercase;
   font-size: 1.5rem;
   margin: 0;
 }
-/* line 171, ../scss/modules/_samples.scss */
-.cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-cta .cAc_wfs-sample-cta-initial .cAc_wfs-sample-cta-includes {
+/* line 186, ../scss/modules/_samples.scss */
+.single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-cta .cAc_wfs-sample-cta-initial .cAc_wfs-sample-cta-includes {
   margin-bottom: 1em;
 }
-/* line 175, ../scss/modules/_samples.scss */
-.cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-cta .cAc_wfs-sample-cta-initial .btn, .cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-cta .cAc_wfs-sample-cta-initial .comment-reply-link, .cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-cta .cAc_wfs-sample-cta-initial #submit {
+/* line 190, ../scss/modules/_samples.scss */
+.single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-cta .cAc_wfs-sample-cta-initial .btn, .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-cta .cAc_wfs-sample-cta-initial .comment-reply-link, .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-cta .cAc_wfs-sample-cta-initial #submit {
   font-size: 2em;
 }
-/* line 181, ../scss/modules/_samples.scss */
-.cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-cta .cAc_wfs-sample-form {
+/* line 196, ../scss/modules/_samples.scss */
+.single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-cta .cAc_wfs-sample-form {
   display: none;
 }
-/* line 187, ../scss/modules/_samples.scss */
-.cac_wfs_sample .cAc_wfs-sample-footer.active {
+/* line 202, ../scss/modules/_samples.scss */
+.single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer.active {
   height: 100%;
   margin-top: 1.5em;
   opacity: 1;
   bottom: 0;
 }
-/* line 193, ../scss/modules/_samples.scss */
-.cac_wfs_sample .cAc_wfs-sample-footer.active .cAc_wfs-sample-form-close {
+/* line 208, ../scss/modules/_samples.scss */
+.single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer.active .cAc_wfs-sample-form-close {
   display: block;
 }
-/* line 196, ../scss/modules/_samples.scss */
-.cac_wfs_sample .cAc_wfs-sample-footer.active .cAc_wfs-sample-form-close:hover {
+/* line 211, ../scss/modules/_samples.scss */
+.single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer.active .cAc_wfs-sample-form-close:hover {
   color: rgba(255, 255, 255, 0.3);
 }
-/* line 201, ../scss/modules/_samples.scss */
-.cac_wfs_sample .cAc_wfs-sample-footer.active .cAc_wfs-sample-cta {
+/* line 216, ../scss/modules/_samples.scss */
+.single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer.active .cAc_wfs-sample-cta {
   height: 100%;
 }
-/* line 204, ../scss/modules/_samples.scss */
-.cac_wfs_sample .cAc_wfs-sample-footer.active .cAc_wfs-sample-cta .cAc_wfs-sample-form {
+/* line 219, ../scss/modules/_samples.scss */
+.single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer.active .cAc_wfs-sample-cta .cAc_wfs-sample-form {
   display: block;
 }
-/* line 208, ../scss/modules/_samples.scss */
-.cac_wfs_sample .cAc_wfs-sample-footer.active .cAc_wfs-sample-cta .cAc_wfs-sample-cta-initial {
+/* line 223, ../scss/modules/_samples.scss */
+.single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer.active .cAc_wfs-sample-cta .cAc_wfs-sample-cta-initial {
   display: none;
+}
+/* line 237, ../scss/modules/_samples.scss */
+.single-cac_wfs_sample .footer .row [class*="col-"] {
+  padding-bottom: 0;
+  margin-bottom: 0.5em;
+  float: left;
+}
+/* line 242, ../scss/modules/_samples.scss */
+.single-cac_wfs_sample .footer .row [class*="col-"].copyright {
+  line-height: 1.1;
+  text-align: right;
+}
+/* line 247, ../scss/modules/_samples.scss */
+.single-cac_wfs_sample .footer .row [class*="col-"] .footer-links {
+  margin: 1em 1em 0;
+}
+/* line 252, ../scss/modules/_samples.scss */
+.single-cac_wfs_sample .footer .row [class*="col-"] .footer-links > ul > li {
+  border-right: 1px solid #572701;
+  float: left;
+  padding: 0 0.5em;
+  margin: 0;
+}
+/* line 258, ../scss/modules/_samples.scss */
+.single-cac_wfs_sample .footer .row [class*="col-"] .footer-links > ul > li:last-child {
+  border-right: 0;
 }
 
 @media only screen and (max-width: 640px) {
-  /* line 222, ../scss/modules/_samples.scss */
-  .header-left,
-  .body-right {
+  /* line 284, ../scss/modules/_samples.scss */
+  .single-cac_wfs_sample .header #logo {
+    max-width: 150px;
+  }
+  /* line 292, ../scss/modules/_samples.scss */
+  .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-header img.header-left,
+  .single-cac_wfs_sample .cac_wfs_sample .body-right,
+  .single-cac_wfs_sample .cac_wfs_sample .body-left {
     display: none;
   }
-
-  /* line 227, ../scss/modules/_samples.scss */
-  .header-right {
-    poaition: static;
+  /* line 298, ../scss/modules/_samples.scss */
+  .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-header img.header-right {
+    position: static;
+    min-width: 300px;
   }
-
-  /* line 231, ../scss/modules/_samples.scss */
-  .cAc_wfs-sample-ingredient {
+  /* line 303, ../scss/modules/_samples.scss */
+  .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-ingredient {
     margin: 0 1em !important;
   }
-
-  /* line 235, ../scss/modules/_samples.scss */
-  .cAc_wfs-sample-form {
-    font-size: 0.5em;
+  /* line 307, ../scss/modules/_samples.scss */
+  .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer {
+    bottom: 0;
+    font-size: 0.75em;
   }
-  /* line 237, ../scss/modules/_samples.scss */
-  .cAc_wfs-sample-form h1 {
+  /* line 314, ../scss/modules/_samples.scss */
+  .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-form .cAc_wfs-sample-form-header, .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-form #cAc_wfs-sample-form h3 {
     display: none;
+  }
+  /* line 320, ../scss/modules/_samples.scss */
+  .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-form #cAc_wfs-sample-form input {
+    height: auto;
+  }
+  /* line 334, ../scss/modules/_samples.scss */
+  .single-cac_wfs_sample .footer .row [class*="col-"] {
+    display: inline;
+    width: auto;
+  }
+  /* line 339, ../scss/modules/_samples.scss */
+  .single-cac_wfs_sample .footer .row [class*="col-"] .footer-links {
+    margin: 0;
   }
 }
 /*********************
@@ -11270,40 +11506,39 @@ header #logo img {
 }
 /* line 549, ../scss/breakpoints/_base.scss */
 #subcategoriesBlock .sub-cat-info {
-  float: left;
   width: auto;
   padding: 1em 1.5em;
   background: #eaedf2;
 }
-/* line 555, ../scss/breakpoints/_base.scss */
+/* line 554, ../scss/breakpoints/_base.scss */
 #subcategoriesBlock .sub-cat-info > .name {
   font-size: 1.5em;
   font-family: "news-gothic-std", Futura, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 900;
 }
-/* line 562, ../scss/breakpoints/_base.scss */
+/* line 561, ../scss/breakpoints/_base.scss */
 #subcategoriesBlock .sub-cat-info .desc .name {
   font-size: 1.25em;
   font-family: "news-gothic-std", Futura, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 600;
 }
-/* line 570, ../scss/breakpoints/_base.scss */
+/* line 569, ../scss/breakpoints/_base.scss */
 #subcategoriesBlock .sub-cat-info .action {
   margin-top: 1em;
 }
-/* line 576, ../scss/breakpoints/_base.scss */
+/* line 575, ../scss/breakpoints/_base.scss */
 #subcategoriesBlock ul {
   margin: 0;
   width: 100%;
   clear: none;
 }
-/* line 581, ../scss/breakpoints/_base.scss */
+/* line 580, ../scss/breakpoints/_base.scss */
 #subcategoriesBlock ul:after, #subcategoriesBlock ul:before {
   display: table;
   content: " ";
   clear: both;
 }
-/* line 587, ../scss/breakpoints/_base.scss */
+/* line 586, ../scss/breakpoints/_base.scss */
 #subcategoriesBlock ul li {
   width: 100%;
   padding-right: 0;
@@ -11313,10 +11548,15 @@ header #logo img {
   margin-left: 0;
   margin-bottom: 0;
 }
-/* line 597, ../scss/breakpoints/_base.scss */
+/* line 596, ../scss/breakpoints/_base.scss */
 #subcategoriesBlock ul li .sub-categories {
   margin: 0;
   padding: 0;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  -moz-transition: background-color 0.25s ease-in-out;
+  -ms-transition: background-color 0.25s ease-in-out;
+  -o-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
 }
 /* line 601, ../scss/breakpoints/_base.scss */
 #subcategoriesBlock ul li .sub-categories .action {
@@ -12842,67 +13082,68 @@ TABLET & SMALLER LAPTOPS
   }
   /* line 544, ../scss/breakpoints/_768up.scss */
   #subcategoriesBlock .sub-cat-info {
+    float: left;
     margin: 0;
     width: 99%;
     padding: 2em 0;
   }
-  /* line 549, ../scss/breakpoints/_768up.scss */
+  /* line 550, ../scss/breakpoints/_768up.scss */
   #subcategoriesBlock .sub-cat-info > div {
     margin: 0 2em;
   }
-  /* line 552, ../scss/breakpoints/_768up.scss */
+  /* line 553, ../scss/breakpoints/_768up.scss */
   #subcategoriesBlock .sub-cat-info > div.name {
     margin-left: 1.25em;
   }
-  /* line 560, ../scss/breakpoints/_768up.scss */
+  /* line 561, ../scss/breakpoints/_768up.scss */
   #subcategoriesBlock ul {
     margin: 0;
     padding: 0;
   }
-  /* line 564, ../scss/breakpoints/_768up.scss */
+  /* line 565, ../scss/breakpoints/_768up.scss */
   #subcategoriesBlock ul li {
     float: left;
   }
-  /* line 567, ../scss/breakpoints/_768up.scss */
+  /* line 568, ../scss/breakpoints/_768up.scss */
   #subcategoriesBlock ul li .sub-categories {
     padding: 0;
     background-color: #f9fCfc;
   }
-  /* line 571, ../scss/breakpoints/_768up.scss */
+  /* line 572, ../scss/breakpoints/_768up.scss */
   #subcategoriesBlock ul li .sub-categories.active {
     background-color: #eaedf2;
   }
-  /* line 576, ../scss/breakpoints/_768up.scss */
+  /* line 577, ../scss/breakpoints/_768up.scss */
   #subcategoriesBlock ul li .sub-categories.active .img .subcat-name {
     background: inherit;
     color: inherit;
   }
-  /* line 587, ../scss/breakpoints/_768up.scss */
+  /* line 588, ../scss/breakpoints/_768up.scss */
   #subcategoriesBlock ul li .sub-categories .img img {
     width: 100%;
   }
-  /* line 591, ../scss/breakpoints/_768up.scss */
+  /* line 592, ../scss/breakpoints/_768up.scss */
   #subcategoriesBlock ul li .sub-categories .img .subcat-name {
     font-size: 0.75em;
     padding: 1em 0;
   }
-  /* line 619, ../scss/breakpoints/_768up.scss */
+  /* line 620, ../scss/breakpoints/_768up.scss */
   #subcategoriesBlock ul.columns-5 li {
     width: 19.5%;
   }
 
   /* PRODUCT GRID */
-  /* line 636, ../scss/breakpoints/_768up.scss */
+  /* line 637, ../scss/breakpoints/_768up.scss */
   .productBlockContainer .product-container {
     padding-left: 0;
     min-height: 320px;
     float: left !important;
   }
-  /* line 642, ../scss/breakpoints/_768up.scss */
+  /* line 643, ../scss/breakpoints/_768up.scss */
   .productBlockContainer .product-container.first-item {
     padding-left: 1em !important;
   }
-  /* line 656, ../scss/breakpoints/_768up.scss */
+  /* line 657, ../scss/breakpoints/_768up.scss */
   .productBlockContainer.columns-2 .product-container.first-item .product-item:after, .productBlockContainer.columns-2 .product-container.middle-item .product-item:after {
     background: url(/wp-content/themes/sundial_bones/library/images/stroke_v.png) repeat-y center;
     height: 300px;
@@ -12917,11 +13158,11 @@ TABLET & SMALLER LAPTOPS
     top: 20px;
     right: -4px;
   }
-  /* line 666, ../scss/breakpoints/_768up.scss */
+  /* line 667, ../scss/breakpoints/_768up.scss */
   .productBlockContainer.columns-2 .product-container.first-item .product-item:empty:after, .productBlockContainer.columns-2 .product-container.middle-item .product-item:empty:after {
     width: 0;
   }
-  /* line 677, ../scss/breakpoints/_768up.scss */
+  /* line 678, ../scss/breakpoints/_768up.scss */
   .productBlockContainer.columns-3 .product-container.first-item .product-item:after, .productBlockContainer.columns-3 .product-container.middle-item .product-item:after {
     background: url(/wp-content/themes/sundial_bones/library/images/stroke_v.png) repeat-y center;
     height: 300px;
@@ -12936,11 +13177,11 @@ TABLET & SMALLER LAPTOPS
     top: 20px;
     right: -4px;
   }
-  /* line 687, ../scss/breakpoints/_768up.scss */
+  /* line 688, ../scss/breakpoints/_768up.scss */
   .productBlockContainer.columns-3 .product-container.first-item .product-item:empty:after, .productBlockContainer.columns-3 .product-container.middle-item .product-item:empty:after {
     width: 0;
   }
-  /* line 698, ../scss/breakpoints/_768up.scss */
+  /* line 699, ../scss/breakpoints/_768up.scss */
   .productBlockContainer.columns-4 .product-container.first-item .product-item:after, .productBlockContainer.columns-4 .product-container.middle-item .product-item:after {
     background: url(/wp-content/themes/sundial_bones/library/images/stroke_v.png) repeat-y center;
     height: 300px;
@@ -12955,15 +13196,15 @@ TABLET & SMALLER LAPTOPS
     top: 20px;
     right: -4px;
   }
-  /* line 708, ../scss/breakpoints/_768up.scss */
+  /* line 709, ../scss/breakpoints/_768up.scss */
   .productBlockContainer.columns-4 .product-container.first-item .product-item:empty:after, .productBlockContainer.columns-4 .product-container.middle-item .product-item:empty:after {
     width: 0;
   }
-  /* line 715, ../scss/breakpoints/_768up.scss */
+  /* line 716, ../scss/breakpoints/_768up.scss */
   .productBlockContainer.columns-5 .product-container {
     width: 19.5%;
   }
-  /* line 719, ../scss/breakpoints/_768up.scss */
+  /* line 720, ../scss/breakpoints/_768up.scss */
   .productBlockContainer.columns-5 .product-container.first-item .product-item:after, .productBlockContainer.columns-5 .product-container.middle-item .product-item:after {
     background: url(/wp-content/themes/sundial_bones/library/images/stroke_v.png) repeat-y center;
     height: 300px;
@@ -12978,11 +13219,11 @@ TABLET & SMALLER LAPTOPS
     top: 20px;
     right: -4px;
   }
-  /* line 729, ../scss/breakpoints/_768up.scss */
+  /* line 730, ../scss/breakpoints/_768up.scss */
   .productBlockContainer.columns-5 .product-container.first-item .product-item:empty:after, .productBlockContainer.columns-5 .product-container.middle-item .product-item:empty:after {
     width: 0;
   }
-  /* line 740, ../scss/breakpoints/_768up.scss */
+  /* line 741, ../scss/breakpoints/_768up.scss */
   .productBlockContainer.columns-6 .product-container.first-item .product-item:after, .productBlockContainer.columns-6 .product-container.middle-item .product-item:after {
     background: url(/wp-content/themes/sundial_bones/library/images/stroke_v.png) repeat-y center;
     height: 300px;
@@ -12997,236 +13238,236 @@ TABLET & SMALLER LAPTOPS
     top: 20px;
     right: -4px;
   }
-  /* line 750, ../scss/breakpoints/_768up.scss */
+  /* line 751, ../scss/breakpoints/_768up.scss */
   .productBlockContainer.columns-6 .product-container.first-item .product-item:empty:after, .productBlockContainer.columns-6 .product-container.middle-item .product-item:empty:after {
     width: 0;
   }
 
   /* LISTING */
-  /* line 771, ../scss/breakpoints/_768up.scss */
+  /* line 772, ../scss/breakpoints/_768up.scss */
   #listing0 .basic-info .item-images .main-image a {
     max-width: initial;
   }
-  /* line 774, ../scss/breakpoints/_768up.scss */
+  /* line 775, ../scss/breakpoints/_768up.scss */
   #listing0 .basic-info .item-images .main-image a img {
     max-height: initial;
     max-width: 100%;
   }
-  /* line 785, ../scss/breakpoints/_768up.scss */
+  /* line 786, ../scss/breakpoints/_768up.scss */
   #listing0 .basic-info .item-description {
     text-align: left;
   }
-  /* line 788, ../scss/breakpoints/_768up.scss */
+  /* line 789, ../scss/breakpoints/_768up.scss */
   #listing0 .basic-info .item-description .item-title {
     font-size: 1.5em;
   }
-  /* line 794, ../scss/breakpoints/_768up.scss */
+  /* line 795, ../scss/breakpoints/_768up.scss */
   #listing0 .basic-info .item-description .addToCartBlock .qtybox {
     width: 33%;
   }
-  /* line 797, ../scss/breakpoints/_768up.scss */
+  /* line 798, ../scss/breakpoints/_768up.scss */
   #listing0 .basic-info .item-description .addToCartBlock .qtybox label {
     display: inline;
   }
-  /* line 801, ../scss/breakpoints/_768up.scss */
+  /* line 802, ../scss/breakpoints/_768up.scss */
   #listing0 .basic-info .item-description .addToCartBlock .qtybox input {
     float: none;
     max-width: 3em;
   }
-  /* line 808, ../scss/breakpoints/_768up.scss */
+  /* line 809, ../scss/breakpoints/_768up.scss */
   #listing0 .basic-info .item-description .addToCartBlock .addcart-button {
     display: inline-block;
     margin: 0 0 0 1%;
     width: 65%;
   }
-  /* line 813, ../scss/breakpoints/_768up.scss */
+  /* line 814, ../scss/breakpoints/_768up.scss */
   #listing0 .basic-info .item-description .addToCartBlock .addcart-button .btn, #listing0 .basic-info .item-description .addToCartBlock .addcart-button .comment-reply-link, #listing0 .basic-info .item-description .addToCartBlock .addcart-button #submit {
     width: 100%;
     min-width: 100%;
   }
-  /* line 824, ../scss/breakpoints/_768up.scss */
+  /* line 825, ../scss/breakpoints/_768up.scss */
   #listing0 .basic-info .item-description .addToListBlock .addGiftRegistry, #listing0 .basic-info .item-description .addToListBlock .addWishlist {
     display: inline-block;
     margin: 0.5em 0 0.5em 1%;
     width: 48%;
   }
-  /* line 834, ../scss/breakpoints/_768up.scss */
+  /* line 835, ../scss/breakpoints/_768up.scss */
   #listing0 .basic-info .item-description .extended_descriptionBlock h2 {
     font-size: 1.5em;
     text-align: left;
   }
-  /* line 845, ../scss/breakpoints/_768up.scss */
+  /* line 846, ../scss/breakpoints/_768up.scss */
   #listing0 #listing-tabs {
     padding: 0 1em;
   }
-  /* line 853, ../scss/breakpoints/_768up.scss */
+  /* line 854, ../scss/breakpoints/_768up.scss */
   #listing0 .reviewsBlock .user_reviews .review-info {
     float: none;
   }
-  /* line 865, ../scss/breakpoints/_768up.scss */
+  /* line 866, ../scss/breakpoints/_768up.scss */
   #listing0 .extrafieldsBlock .extra_field > h4 {
     float: none;
     display: block;
   }
-  /* line 870, ../scss/breakpoints/_768up.scss */
+  /* line 871, ../scss/breakpoints/_768up.scss */
   #listing0 .extrafieldsBlock .extra_field > div {
     float: none;
     display: block;
   }
-  /* line 879, ../scss/breakpoints/_768up.scss */
+  /* line 880, ../scss/breakpoints/_768up.scss */
   #listing0 .relatedBlock {
     margin: 0 2em 1em;
   }
 
   /* CART */
-  /* line 892, ../scss/breakpoints/_768up.scss */
+  /* line 893, ../scss/breakpoints/_768up.scss */
   #viewCart .shoppingCartItems {
     margin-left: 1em;
   }
-  /* line 895, ../scss/breakpoints/_768up.scss */
+  /* line 896, ../scss/breakpoints/_768up.scss */
   #viewCart .shoppingCartItems .item, #viewCart .shoppingCartItems .cart-titles {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  /* line 900, ../scss/breakpoints/_768up.scss */
+  /* line 901, ../scss/breakpoints/_768up.scss */
   #viewCart .shoppingCartItems .item > div, #viewCart .shoppingCartItems .cart-titles > div {
     float: none;
     width: auto;
     line-height: 1;
   }
-  /* line 907, ../scss/breakpoints/_768up.scss */
+  /* line 908, ../scss/breakpoints/_768up.scss */
   #viewCart .shoppingCartItems .item > div.item-info .product-image, #viewCart .shoppingCartItems .cart-titles > div.item-info .product-image {
     margin: 0;
   }
-  /* line 911, ../scss/breakpoints/_768up.scss */
+  /* line 912, ../scss/breakpoints/_768up.scss */
   #viewCart .shoppingCartItems .item > div.item-info .product-name-options, #viewCart .shoppingCartItems .cart-titles > div.item-info .product-name-options {
     float: none;
     width: auto;
     text-align: center;
     margin-top: 0.5em;
   }
-  /* line 915, ../scss/breakpoints/_768up.scss */
+  /* line 916, ../scss/breakpoints/_768up.scss */
   #viewCart .shoppingCartItems .item > div.item-info .product-name-options > *, #viewCart .shoppingCartItems .cart-titles > div.item-info .product-name-options > * {
     text-align: center;
   }
-  /* line 926, ../scss/breakpoints/_768up.scss */
+  /* line 927, ../scss/breakpoints/_768up.scss */
   #viewCart .shoppingCartItems .item > div.item-price, #viewCart .shoppingCartItems .cart-titles > div.item-price {
     display: none;
   }
-  /* line 933, ../scss/breakpoints/_768up.scss */
+  /* line 934, ../scss/breakpoints/_768up.scss */
   #viewCart .shoppingCartItems .item > div.item-qty input, #viewCart .shoppingCartItems .cart-titles > div.item-qty input {
     width: auto !important;
   }
-  /* line 939, ../scss/breakpoints/_768up.scss */
+  /* line 940, ../scss/breakpoints/_768up.scss */
   #viewCart .shoppingCartItems .item > div.item-remove, #viewCart .shoppingCartItems .cart-titles > div.item-remove {
     top: 0.5em;
   }
-  /* line 942, ../scss/breakpoints/_768up.scss */
+  /* line 943, ../scss/breakpoints/_768up.scss */
   #viewCart .shoppingCartItems .item > div.item-remove i, #viewCart .shoppingCartItems .cart-titles > div.item-remove i {
     font-size: 2em;
     line-height: 2em;
   }
-  /* line 955, ../scss/breakpoints/_768up.scss */
+  /* line 956, ../scss/breakpoints/_768up.scss */
   #viewCart .chk-buttons {
     margin-right: 1em;
   }
-  /* line 959, ../scss/breakpoints/_768up.scss */
+  /* line 960, ../scss/breakpoints/_768up.scss */
   #viewCart .chk-buttons .btn, #viewCart .chk-buttons .comment-reply-link, #viewCart .chk-buttons #submit {
     width: auto;
     display: inline-block;
     padding: 1em;
   }
-  /* line 965, ../scss/breakpoints/_768up.scss */
+  /* line 966, ../scss/breakpoints/_768up.scss */
   #viewCart .chk-buttons:before {
     clear: none;
   }
-  /* line 973, ../scss/breakpoints/_768up.scss */
+  /* line 974, ../scss/breakpoints/_768up.scss */
   #viewCart #recalculate:before, #viewCart #recalculate:after {
     display: table;
     content: " ";
     clear: both;
   }
-  /* line 981, ../scss/breakpoints/_768up.scss */
+  /* line 982, ../scss/breakpoints/_768up.scss */
   #viewCart #recalculate .shipQuote > div {
     float: none;
     width: 100%;
   }
-  /* line 986, ../scss/breakpoints/_768up.scss */
+  /* line 987, ../scss/breakpoints/_768up.scss */
   #viewCart #recalculate .shipQuote .shipquote-location {
     height: 2em;
   }
-  /* line 996, ../scss/breakpoints/_768up.scss */
+  /* line 997, ../scss/breakpoints/_768up.scss */
   #viewCart .displayPromotions .promo-desc {
     width: 50%;
   }
-  /* line 1002, ../scss/breakpoints/_768up.scss */
+  /* line 1003, ../scss/breakpoints/_768up.scss */
   #viewCart .displayPromotions .promo-remove input {
     margin-right: 2%;
     min-width: 0;
   }
-  /* line 1011, ../scss/breakpoints/_768up.scss */
+  /* line 1012, ../scss/breakpoints/_768up.scss */
   #viewCart .authorize_net {
     float: left;
     margin: 0;
     width: 16.33%;
   }
-  /* line 1017, ../scss/breakpoints/_768up.scss */
+  /* line 1018, ../scss/breakpoints/_768up.scss */
   #viewCart .authorize_net .AuthorizeNetSeal {
     margin-left: 2em !important;
   }
-  /* line 1021, ../scss/breakpoints/_768up.scss */
+  /* line 1022, ../scss/breakpoints/_768up.scss */
   #viewCart .authorize_net:before, #viewCart .authorize_net:after {
     display: none;
     clear: none;
   }
-  /* line 1028, ../scss/breakpoints/_768up.scss */
+  /* line 1029, ../scss/breakpoints/_768up.scss */
   #viewCart .third-party-payment {
     float: right;
   }
-  /* line 1032, ../scss/breakpoints/_768up.scss */
+  /* line 1033, ../scss/breakpoints/_768up.scss */
   #viewCart .third-party-payment:before, #viewCart .third-party-payment:after {
     display: table;
     content: " ";
     clear: both;
   }
 
-  /* line 1055, ../scss/breakpoints/_768up.scss */
+  /* line 1056, ../scss/breakpoints/_768up.scss */
   #myaccount .trackOrders tbody tr td .btn-transparent, #myaccount .savedOrders tbody tr td .btn-transparent {
     break-word: normal;
     display: inline-block;
     text-align: center;
   }
-  /* line 1060, ../scss/breakpoints/_768up.scss */
+  /* line 1061, ../scss/breakpoints/_768up.scss */
   #myaccount .trackOrders tbody tr td .btn-transparent:first-child, #myaccount .savedOrders tbody tr td .btn-transparent:first-child {
     padding-left: 0;
   }
-  /* line 1068, ../scss/breakpoints/_768up.scss */
+  /* line 1069, ../scss/breakpoints/_768up.scss */
   #myaccount .trackOrders tbody tr:nth-child(2n), #myaccount .savedOrders tbody tr:nth-child(2n) {
     background: #f6efe9;
   }
 
   /* FOOTER */
-  /* line 1087, ../scss/breakpoints/_768up.scss */
+  /* line 1088, ../scss/breakpoints/_768up.scss */
   footer:before, footer:after {
     display: table;
     content: " ";
     clear: both;
   }
-  /* line 1093, ../scss/breakpoints/_768up.scss */
+  /* line 1094, ../scss/breakpoints/_768up.scss */
   footer .footer-links {
     margin: 1em;
     position: relative;
   }
-  /* line 1099, ../scss/breakpoints/_768up.scss */
+  /* line 1100, ../scss/breakpoints/_768up.scss */
   footer .footer-links .footer-nav a {
     margin: 0.5em;
   }
-  /* line 1105, ../scss/breakpoints/_768up.scss */
+  /* line 1106, ../scss/breakpoints/_768up.scss */
   footer .footer-links .footer-navli:first-child a {
     margin-left: 0;
   }
-  /* line 1113, ../scss/breakpoints/_768up.scss */
+  /* line 1114, ../scss/breakpoints/_768up.scss */
   footer .footer-links .footer-navli:last-child a {
     margin-right: 0;
   }
@@ -13234,10 +13475,6 @@ TABLET & SMALLER LAPTOPS
   /*********************
   NAVIGATION STYLES
   *********************/
-  /* line 5, ../scss/modules/_menus768up.scss */
-  nav .bones-dropdown-sentence {
-    text-align: right;
-  }
   /* line 13, ../scss/modules/_menus768up.scss */
   nav .nav#body-nav {
     width: 100%;

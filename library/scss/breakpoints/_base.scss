@@ -547,7 +547,6 @@ header {
 	margin: 1em 1em 0;
 	
 	.sub-cat-info {
-				float: left;
 				width: auto;
 				padding: 1em 1.5em;
 				background: $gray;
@@ -597,6 +596,7 @@ header {
 			.sub-categories {
 				margin: 0;
 				padding: 0;
+				@include transition(background-color 0.25s ease-in-out);
 
 				.action {
 				

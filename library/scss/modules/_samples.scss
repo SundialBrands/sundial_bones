@@ -9,234 +9,349 @@ you can just remove this stylesheet.
 
 ******************************************************************/
 
-.cac_wfs_sample {
+.single-cac_wfs_sample {
 
-	.cAc_wfs-sample-header {
+	.cac_wfs_sample {
+
+		.cAc_wfs-sample-header {
 	
-		position: relative;
-		width: 100%;
-		text-align: center;
-	
-		img.header-right {
-			position: absolute;
-			max-width: 20%;
-			right: 0;
-			top: 0;
-			height: auto;
-		}
-		
-		img.header-left {
-			position: absolute;
-			max-width: 20%;
-			left: 0;
-			top: 0;
-		}
-		
-		.cAc_wfs-sample-benefit {
-			display: block;
-			margin: 0 auto;
-			width: 33%;
+			position: relative;
+			width: 100%;
 			text-align: center;
-			color: white;
-			text-transform: uppercase;
-			font-size: 1.5em;
-			background-size: cover;
-			min-width: 300px;
-		}
-		
-		.cAc_wfs-sample-needstate {
-			font-family: $serif;
-			font-style: italic;
-			font-size: 2em;
-			margin: 0 auto 1em;
-			text-transform: lowercase;
-			width: 50%;
-			min-width: 300px;
-		}
-		
-		.cAc_wfs-sample-title {
-			text-align: center;
-			font-size: 3em;
-			text-transform: uppercase;
-			margin: 0.25em auto;
-			width: 50%;
-			min-width: 300px;
-		}
 	
-	}
-	
-	.entry-content {
-	
-		margin-bottom: 25%;
-		position: relative;
-	
-		.cAc_wfs-sample-content {
-			font-family: $serif;
-			font-size: 2em;
-			font-weight: 700;
-			font-style: italic;
-			text-align: center;
-			width: 50%;
-			margin: 0 auto;
-			min-width: 300px;
-			
-			img.body-right {
+			img.header-right {
 				position: absolute;
-				max-width: 10%;
+				max-width: 20%;
 				right: 0;
 				top: 0;
-				
+				height: auto;
 			}
-
-		}
 		
-		.cAc_wfs-sample-ingredients-header {
-			font-size: 2.5em;
-			font-family: $serif;
-			font-weight: 700;
-			font-style: italic;
-			text-align: center;
-			width: 85%;
-			margin: 0 auto;
-			min-width: 300px;
-		}
+			img.header-left {
+				position: absolute;
+				max-width: 20%;
+				left: 0;
+				top: 0;
+				z-index: -1;
+			}
 		
-		.cAc_wfs-sample-ingredients {
-		
-			.cAc_wfs-sample-ingredient {
+			.cAc_wfs-sample-benefit {
+				display: block;
+				margin: 0 auto;
+				width: 33%;
 				text-align: center;
-			
-				.cAc_wfs-sample-ingredient-name {
-					text-align: center;
-					font-weight: 700;
-					font-style: italic;
-					text-align: center;
-					font-family: $serif;
-					font-size: 1.75em;
-				}
-				
-				.cAc_wfs-sample-ingredient-copy {
-					text-align: center;
-				}
-				
-				.cAc_wfs-sample-img-ingredient {
-					max-height: 200px;
-					width: auto;
-				}
-				
+				color: white;
+				text-transform: uppercase;
+				font-size: 1.5em;
+				background-size: cover;
+				min-width: 300px;
 			}
 		
+			.cAc_wfs-sample-needstate {
+				font-family: $serif;
+				font-style: italic;
+				font-size: 2em;
+				margin: 0 auto 1em;
+				text-transform: lowercase;
+				width: 50%;
+				min-width: 300px;
+			}
+		
+			.cAc_wfs-sample-title {
+				text-align: center;
+				font-size: 3em;
+				text-transform: uppercase;
+				margin: 0.25em auto;
+				width: 50%;
+				min-width: 300px;
+			}
+	
 		}
 	
-	}
+		.entry-content {
 	
-	.cAc_wfs-sample-footer {
-		
-		width: 100%;
-		position: fixed;
-		bottom: 2em;
-		z-index: 25;
-		border: 0;
-		opacity: 0.85;
-		@include transition(all 0.5s ease-out);
-		padding: 0;
-		
-		&:hover{
-			opacity: 1;
-		}
-		
-		.cAc_wfs-sample-form-close {
-			display: none;
-			position: absolute;
-			right: 1em;
-			top: 2em;
-			color: $white;
-			font-size: 1.5em;
-			z-index: 10;
-		}
-		
-		.cAc_wfs-sample-cta {
+			margin-bottom: 25%;
+			position: relative;
+	
+			.cAc_wfs-sample-content {
 			
-			.cAc_wfs-sample-cta-initial{
+				font-size: 2em;
+				text-align: center;
 				width: 50%;
 				margin: 0 auto;
 				min-width: 300px;
-				
-				.cAc_wfs-sample-cta-title {
-					text-transform: uppercase;
-					font-size: 1.5rem;
-					margin: 0;
+			
+				img.body-right {
+					position: absolute;
+					max-width: 10%;
+					right: 0;
+					top: 0;
+					z-index: -1;
 				}
 			
-				.cAc_wfs-sample-cta-includes {
-					margin-bottom: 1em;
+				img.body-left {
+					position: absolute;
+					max-width: 10%;
+					left: 0;
+					top: 0;
+					z-index: -1;
 				}
-			
-				.btn {
-					font-size: 2em;
-				}
-			
+
 			}
 		
-			.cAc_wfs-sample-form {
-				display: none;
+			.cAc_wfs-sample-ingredients-header {
+				font-size: 3em;
+				font-family: $serif;
+				text-transform: uppercase;
+				text-align: center;
+				width: 85%;
+				margin: 1em auto;
+				min-width: 300px;
+				line-height: 1;
 			}
+		
+			.cAc_wfs-sample-ingredients {
+		
+				.cAc_wfs-sample-ingredient {
+					text-align: center;
 			
+					.cAc_wfs-sample-ingredient-name {
+						text-align: center;
+						font-weight: 700;
+						font-style: italic;
+						text-align: center;
+						font-family: $serif;
+						font-size: 1.75em;
+					}
+				
+					.cAc_wfs-sample-ingredient-copy {
+						text-align: center;
+					}
+				
+					.cAc_wfs-sample-img-ingredient {
+						max-height: 200px;
+						width: auto;
+					}
+				
+				}
+		
+			}
+	
 		}
+	
+		.cAc_wfs-sample-footer {
 		
-		&.active {
-			height: 100%;
-			margin-top:1.5em;
-			opacity: 1;
-			bottom: 0;
-			
-			.cAc_wfs-sample-form-close {
-				display: block;
-				
-				&:hover {
-					color: rgba($white, 0.3);
-				}
+			width: 100%;
+			position: fixed;
+			bottom: 3em;
+			z-index: 25;
+			border: 0;
+			opacity: 0.85;
+			@include transition(all 0.5s ease-out);
+			padding: 0;
+		
+			&:hover{
+				opacity: 1;
 			}
-			
+		
+			.cAc_wfs-sample-form-close {
+				display: none;
+				position: absolute;
+				right: 2em;
+				top: 2em;
+				color: $white;
+				font-size: 2em;
+				z-index: 10;
+				background-color: rgba(255, 255, 255, 0.2);
+				width: 2em;
+				height: 2em;
+				text-align: center;
+				line-height: 2;
+			}
+		
 			.cAc_wfs-sample-cta {
-				height: 100%;
 			
-				.cAc_wfs-sample-form  {
-					display: block;
+				.cAc_wfs-sample-cta-initial{
+					width: 50%;
+					margin: 0 auto;
+					min-width: 300px;
+					text-align: center;
+				
+					.cAc_wfs-sample-cta-title {
+						text-transform: uppercase;
+						font-size: 1.5rem;
+						margin: 0;
+					}
+			
+					.cAc_wfs-sample-cta-includes {
+						margin-bottom: 1em;
+					}
+			
+					.btn {
+						font-size: 2em;
+					}
+			
 				}
-			
-				.cAc_wfs-sample-cta-initial {
+		
+				.cAc_wfs-sample-form {
 					display: none;
 				}
-		
+			
 			}
-
-		}
 		
+			&.active {
+				height: 100%;
+				margin-top:1.5em;
+				opacity: 1;
+				bottom: 0;
+			
+				.cAc_wfs-sample-form-close {
+					display: block;
+				
+					&:hover {
+						color: rgba($white, 0.3);
+					}
+				}
+			
+				.cAc_wfs-sample-cta {
+					height: 100%;
+			
+					.cAc_wfs-sample-form  {
+						display: block;
+					}
+			
+					.cAc_wfs-sample-cta-initial {
+						display: none;
+					}
+		
+				}
+
+			}
+		
+		}
+
+	}
+	
+	.footer {
+	
+		.row [class*="col-"] {
+			padding-bottom: 0;
+			margin-bottom: 0.5em;
+			float: left;
+			
+			&.copyright {
+				line-height: 1.1;
+				text-align: right;
+			}
+			
+			.footer-links {
+				margin: 1em 1em 0;
+			
+				> ul {
+			
+					> li {
+						border-right: 1px solid $shea-brown;
+						float: left;
+						padding: 0 0.5em;
+						margin: 0;
+					
+						&:last-child {
+							border-right: 0;
+						}
+					
+						a {
+						
+						}
+					
+					}
+			
+				}
+			
+			}
+					
+		}
+	
 	}
 
 }
 
 @media only screen and (max-width: 640px) {
 
-	.header-left,
-	.body-right {
-		display:none;
-	}
+	.single-cac_wfs_sample {
 	
-	.header-right {
-		poaition: static;
-	}
-	
-	.cAc_wfs-sample-ingredient {
-		margin: 0 1em !important;
-	}
-	
-	.cAc_wfs-sample-form  {
-		font-size: 0.5em;
-		h1 {
-			display: none;
+		.header {
+		
+			#logo {
+				max-width: 150px;
+			}
+		
 		}
+	
+		.cac_wfs_sample {
+			
+			.cAc_wfs-sample-header img.header-left,
+			.body-right,
+			.body-left {
+				display:none;
+			}
+	
+			.cAc_wfs-sample-header img.header-right {
+				position: static;
+				min-width: 300px;
+			}
+	
+			.cAc_wfs-sample-ingredient {
+				margin: 0 1em !important;
+			}
+		
+			.cAc_wfs-sample-footer {
+				bottom: 0;
+				font-size: 0.75em;
+				
+			
+				.cAc_wfs-sample-form  {
+					
+					.cAc_wfs-sample-form-header, #cAc_wfs-sample-form h3  {
+						display: none;
+					}
+					
+					#cAc_wfs-sample-form {
+					
+						input{
+							height: auto;
+						}
+						
+					}
+					
+				}
+			
+			}
+			
+		}
+
+		.footer {
+		
+			.row [class*="col-"] {
+				display: inline;
+				width: auto;
+				
+				
+				.footer-links {
+					margin: 0;
+					> ul {
+				
+						> li {
+					
+						}
+				
+					}
+			
+				}
+		
+			}
+
+		}
+	
 	}
 
 }
