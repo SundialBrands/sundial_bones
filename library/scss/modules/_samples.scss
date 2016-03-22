@@ -355,3 +355,46 @@ you can just remove this stylesheet.
 	}
 
 }
+
+
+@media only screen and (min-width: 1030px) {
+
+
+	.single-cac_wfs_sample {
+		
+		.cac_wfs_sample {
+		
+			.cAc_wfs-sample-footer {
+				top: 18em;
+				bottom: auto;
+				opacity: 0.95;
+				width: 25%;
+				
+				.cAc_wfs-sample-cta {
+				
+					.cAc_wfs-sample-cta-initial {
+						min-width: 0;
+						width: 100%;
+						
+						div[class*="col-sm-"]{
+							float:none;
+							width: 100%;
+							padding: 0;
+							
+							.btn {
+								font-size: 1.5em;
+							}
+							
+						}
+						
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+
+}

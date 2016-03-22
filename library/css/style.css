@@ -10972,6 +10972,30 @@ you can just remove this stylesheet.
     margin: 0;
   }
 }
+@media only screen and (min-width: 1030px) {
+  /* line 367, ../scss/modules/_samples.scss */
+  .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer {
+    top: 18em;
+    bottom: auto;
+    opacity: 0.95;
+    width: 25%;
+  }
+  /* line 375, ../scss/modules/_samples.scss */
+  .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-cta .cAc_wfs-sample-cta-initial {
+    min-width: 0;
+    width: 100%;
+  }
+  /* line 379, ../scss/modules/_samples.scss */
+  .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-cta .cAc_wfs-sample-cta-initial div[class*="col-sm-"] {
+    float: none;
+    width: 100%;
+    padding: 0;
+  }
+  /* line 384, ../scss/modules/_samples.scss */
+  .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-cta .cAc_wfs-sample-cta-initial div[class*="col-sm-"] .btn, .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-cta .cAc_wfs-sample-cta-initial div[class*="col-sm-"] .comment-reply-link, .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-cta .cAc_wfs-sample-cta-initial div[class*="col-sm-"] #submit {
+    font-size: 1.5em;
+  }
+}
 /*********************
 BASE (MOBILE) SIZE
 This are the mobile styles. It's what people see on their phones.
