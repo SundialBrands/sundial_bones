@@ -10962,36 +10962,44 @@ you can just remove this stylesheet.
   .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-form #cAc_wfs-sample-form input {
     height: auto;
   }
-  /* line 334, ../scss/modules/_samples.scss */
+  /* line 328, ../scss/modules/_samples.scss */
+  .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer.active {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+  /* line 342, ../scss/modules/_samples.scss */
   .single-cac_wfs_sample .footer .row [class*="col-"] {
     display: inline;
     width: auto;
   }
-  /* line 339, ../scss/modules/_samples.scss */
+  /* line 347, ../scss/modules/_samples.scss */
   .single-cac_wfs_sample .footer .row [class*="col-"] .footer-links {
     margin: 0;
   }
 }
 @media only screen and (min-width: 1030px) {
-  /* line 367, ../scss/modules/_samples.scss */
+  /* line 375, ../scss/modules/_samples.scss */
   .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer {
     top: 18em;
     bottom: auto;
     opacity: 0.95;
     width: 25%;
   }
-  /* line 375, ../scss/modules/_samples.scss */
+  /* line 383, ../scss/modules/_samples.scss */
   .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-cta .cAc_wfs-sample-cta-initial {
     min-width: 0;
     width: 100%;
   }
-  /* line 379, ../scss/modules/_samples.scss */
+  /* line 387, ../scss/modules/_samples.scss */
   .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-cta .cAc_wfs-sample-cta-initial div[class*="col-sm-"] {
     float: none;
     width: 100%;
     padding: 0;
   }
-  /* line 384, ../scss/modules/_samples.scss */
+  /* line 392, ../scss/modules/_samples.scss */
   .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-cta .cAc_wfs-sample-cta-initial div[class*="col-sm-"] .btn, .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-cta .cAc_wfs-sample-cta-initial div[class*="col-sm-"] .comment-reply-link, .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-cta .cAc_wfs-sample-cta-initial div[class*="col-sm-"] #submit {
     font-size: 1.5em;
   }
