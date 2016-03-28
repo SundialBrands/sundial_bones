@@ -4486,37 +4486,51 @@ you can just remove this stylesheet.
 ******************************************************************/
 /* line 15, ../scss/modules/_alerts.scss */
 .alert-help, .alert-info, .alert-error, .alert-success {
-  background: rgba(255, 228, 201, 0.5) url("/wp-content/themes/sundial_bones/library/images/error.png") no-repeat scroll 1% 50%;
-  min-height: 400px;
+  background: #FFE4C9 url("/wp-content/themes/sundial_bones/library/images/error.png") no-repeat scroll 1% 50%;
+  background-size: contain;
+  min-height: 12em !important;
   text-align: center;
+  padding: 0 !important;
 }
-/* line 21, ../scss/modules/_alerts.scss */
-.alert-help form, .alert-info form, .alert-error form, .alert-success form {
-  padding-left: 33%;
+/* line 24, ../scss/modules/_alerts.scss */
+.alert-help .screenMask, .alert-info .screenMask, .alert-error .screenMask, .alert-success .screenMask {
+  background: rgba(255, 228, 201, 0.5);
+  height: 100%;
+  width: 100%;
+  min-height: 12em;
+  display: inline-block;
 }
-/* line 25, ../scss/modules/_alerts.scss */
-.alert-help form h1, .alert-info form h1, .alert-error form h1, .alert-success form h1 {
+/* line 32, ../scss/modules/_alerts.scss */
+.alert-help h1, .alert-info h1, .alert-error h1, .alert-success h1 {
   text-transform: uppercase;
-  font-size: 2em;
+  font-size: 1.25em;
   margin-bottom: 0.1em;
   line-height: 0.8em;
-  padding-top: 15%;
+  text-align: right;
+  margin-right: 4em;
 }
-/* line 33, ../scss/modules/_alerts.scss */
-.alert-help form .notice, .alert-info form .notice, .alert-error form .notice, .alert-success form .notice {
+/* line 41, ../scss/modules/_alerts.scss */
+.alert-help .notice, .alert-info .notice, .alert-error .notice, .alert-success .notice {
   font-family: "news-gothic-std", Futura, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-size: 1.1em;
 }
-/* line 39, ../scss/modules/_alerts.scss */
-.alert-help form .button, .alert-info form .button, .alert-error form .button, .alert-success form .button, .alert-help form .button .btn, .alert-info form .button .btn, .alert-error form .button .btn, .alert-success form .button .btn, .alert-help form .button .comment-reply-link, .alert-info form .button .comment-reply-link, .alert-error form .button .comment-reply-link, .alert-success form .button .comment-reply-link, .alert-help form .button #submit, .alert-info form .button #submit, .alert-error form .button #submit, .alert-success form .button #submit {
+/* line 47, ../scss/modules/_alerts.scss */
+.alert-help ul, .alert-info ul, .alert-error ul, .alert-success ul {
+  text-align: left;
+  margin-right: 4em;
+  list-style-type: disc;
+  float: right;
+}
+/* line 54, ../scss/modules/_alerts.scss */
+.alert-help .button, .alert-info .button, .alert-error .button, .alert-success .button, .alert-help .button .btn, .alert-info .button .btn, .alert-error .button .btn, .alert-success .button .btn, .alert-help .button .comment-reply-link, .alert-info .button .comment-reply-link, .alert-error .button .comment-reply-link, .alert-success .button .comment-reply-link, .alert-help .button #submit, .alert-info .button #submit, .alert-error .button #submit, .alert-success .button #submit {
   min-width: 1em;
   width: auto;
   display: inline-block;
   margin-top: 1em;
 }
 
-/* line 68, ../scss/modules/_alerts.scss */
+/* line 81, ../scss/modules/_alerts.scss */
 .alert-img {
   line-height: 2.5em;
   margin: 0 .5em 0 0;
@@ -4525,19 +4539,37 @@ you can just remove this stylesheet.
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 78, ../scss/modules/_alerts.scss */
+  /* line 91, ../scss/modules/_alerts.scss */
   .alert-help, .alert-info, .alert-error, .alert-success {
     background-color: #FFE4C9;
-    background-position: 50% 5%;
+    background-position: 5% 5%;
     background-size: 25% auto;
   }
-  /* line 83, ../scss/modules/_alerts.scss */
+  /* line 96, ../scss/modules/_alerts.scss */
   .alert-help form, .alert-info form, .alert-error form, .alert-success form {
     padding-left: 0;
   }
-  /* line 87, ../scss/modules/_alerts.scss */
+  /* line 100, ../scss/modules/_alerts.scss */
   .alert-help form h1, .alert-info form h1, .alert-error form h1, .alert-success form h1 {
     padding-top: 35%;
+  }
+}
+@media only screen and (min-width: 1030px) {
+  /* line 112, ../scss/modules/_alerts.scss */
+  .alert-help, .alert-info, .alert-error, .alert-success {
+    text-align: center;
+  }
+  /* line 115, ../scss/modules/_alerts.scss */
+  .alert-help h1, .alert-info h1, .alert-error h1, .alert-success h1 {
+    text-align: inherit;
+    margin-right: 0;
+  }
+  /* line 120, ../scss/modules/_alerts.scss */
+  .alert-help ul.notice, .alert-info ul.notice, .alert-error ul.notice, .alert-success ul.notice {
+    float: none;
+    margin-right: 0;
+    text-align: inherit;
+    list-style-position: inside;
   }
 }
 /******************************************************************
