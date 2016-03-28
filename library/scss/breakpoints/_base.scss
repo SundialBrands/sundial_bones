@@ -627,6 +627,7 @@ header {
 							background-color: $white;
 							color: $shea-brown;
 							width: 100%;
+							min-height: 3em;
 							@include transition(all 0.25s ease-in-out);
 							display: inline-block;
 							text-align: center;
