@@ -278,7 +278,7 @@ function sundial_cAc_wfs_admin_enqueue() {
 
 	global $post;
 	wp_register_script( 'sundial-sm-cac_wfs-admin', get_stylesheet_directory_uri() . '/library/js/cac_wfs-admin.js', array( 'jquery' ) );
-	if( $post ) {
+	if( isset( $post ) ) {
 		$this_post = $post->ID;
 		wp_localize_script( 'sundial-sm-cac_wfs-admin', 'sundialCacwfsSampleId',  $this_post );
 	}
