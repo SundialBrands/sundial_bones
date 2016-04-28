@@ -277,10 +277,12 @@ if( function_exists( 'create_post_type_cac_wfs_sample' ) ) {
 function sundial_cAc_wfs_admin_enqueue() {
 
 	global $post;
+	$sundialCacwfsData = array();
 	wp_register_script( 'sundial-sm-cac_wfs-admin', get_stylesheet_directory_uri() . '/library/js/cac_wfs-admin.js', array( 'jquery' ) );
 	if( isset( $post ) ) {
 		$this_post = $post->ID;
-		wp_localize_script( 'sundial-sm-cac_wfs-admin', 'sundialCacwfsSampleId',  $this_post );
+		$sundialCacwfsData['SampleId'] = $this_post;
+		wp_localize_script( 'sundial-sm-cac_wfs-admin', 'sundialCacwfsData',  $sundialCacwfsData );
 	}
 	wp_enqueue_script( 'sundial-sm-cac_wfs-admin' );
 

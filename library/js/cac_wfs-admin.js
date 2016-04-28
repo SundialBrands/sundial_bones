@@ -11,7 +11,7 @@ jQuery( document ).ready(function( $ ) {
 			fieldID = $(this).attr('id');
 			// replace the default send_to_editor handler function with our own
 			window.send_to_editor = window.attach_scacwfs_image;
-			var query = 'media-upload.php?post_id=' + sundialCacwfsSampleId + '&amp;type=image&amp;TB_iframe=true';
+			var query = 'media-upload.php?post_id=' + sundialCacwfsData.SampleId + '&amp;type=image&amp;TB_iframe=true';
 			tb_show('', query);
 			return false;
 		
