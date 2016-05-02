@@ -49,6 +49,7 @@ $lightbrown:			#856D13;
 $cool-tan:              #f6eee3;
 $warm-tan:				#f6efe9;
 $warmer-tan:			#FFE4C9;
+$red:					#A40E11;
 $darkred:				#790032;
 $deeppink:				#A40045;
 $salmon:				#F68E75;
@@ -112,6 +113,7 @@ $boxcolors: (
 	"cooltan":      		    $cool-tan $shea-brown lighten($shea-brown, 20%) $deeporange,
 	"warmtan":					$warm-tan $shea-brown lighten($shea-brown, 20%) $deeporange,
 	"warmertan":				$warmer-tan $shea-brown lighten($shea-brown, 20%) $deeporange,
+	"red":						$red $cool-tan lighten($cool-tan, 20%) $lightblue,
 	"darkred":					$darkred $cool-tan darken($cool-tan, 20%) $lightblue,
 	"deeppink":					$deeppink $cool-tan darken($cool-tan, 20%) $lightblue,
 	"salmon":					$salmon $shea-brown lighten($shea-brown, 20%) $lightblue,

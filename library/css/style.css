@@ -5968,6 +5968,32 @@ Stylesheet: Price Styles
 }
 
 /* line 54, ../scss/modules/_prices.scss */
+.red .prices .price, .red .pricingBlock .price {
+  color: white;
+}
+/* line 58, ../scss/modules/_prices.scss */
+.red .prices .retail, .red .pricingBlock .retail {
+  color: #f6eee3;
+}
+/* line 62, ../scss/modules/_prices.scss */
+.red .prices .sale, .red .pricingBlock .sale {
+  color: #6B8F9E;
+}
+/* line 66, ../scss/modules/_prices.scss */
+.red .prices .on-sale, .red .pricingBlock .on-sale {
+  background-color: #6B8F9E;
+}
+/* line 70, ../scss/modules/_prices.scss */
+.red .prices ~ .btn, .red .prices ~ .comment-reply-link, .red .prices ~ #submit, .red .pricingBlock ~ .btn, .red .pricingBlock ~ .comment-reply-link, .red .pricingBlock ~ #submit {
+  color: #A40E11;
+  background-color: #f6eee3;
+}
+/* line 75, ../scss/modules/_prices.scss */
+.red .prices ~ .btn:hover, .red .prices ~ .comment-reply-link:hover, .red .prices ~ #submit:hover, .red .prices ~ .btn:focus, .red .prices ~ .comment-reply-link:focus, .red .prices ~ #submit:focus, .red .prices ~ .btn:active, .red .prices ~ .comment-reply-link:active, .red .prices ~ #submit:active, .red .pricingBlock ~ .btn:hover, .red .pricingBlock ~ .comment-reply-link:hover, .red .pricingBlock ~ #submit:hover, .red .pricingBlock ~ .btn:focus, .red .pricingBlock ~ .comment-reply-link:focus, .red .pricingBlock ~ #submit:focus, .red .pricingBlock ~ .btn:active, .red .pricingBlock ~ .comment-reply-link:active, .red .pricingBlock ~ #submit:active {
+  background-color: white;
+}
+
+/* line 54, ../scss/modules/_prices.scss */
 .darkred .prices .price, .darkred .pricingBlock .price {
   color: #ddbf96;
 }
@@ -7069,6 +7095,34 @@ Stylesheet: Box Styles
 }
 /* line 84, ../scss/modules/_boxes.scss */
 .box.warmertan.paint-bg, .box.warmertan.paint-bg a {
+  text-shadow: 1px 1px #a5a2a7;
+}
+
+/* line 57, ../scss/modules/_boxes.scss */
+.box.red {
+  background-color: #A40E11;
+  color: #f6eee3;
+}
+/* line 62, ../scss/modules/_boxes.scss */
+.box.red a {
+  color: #f6eee3;
+}
+/* line 65, ../scss/modules/_boxes.scss */
+.box.red a:hover, .box.red a:active {
+  color: white;
+}
+/* line 71, ../scss/modules/_boxes.scss */
+.box.red .btn, .box.red .comment-reply-link, .box.red #submit {
+  color: #A40E11;
+  background-color: #f6eee3;
+}
+/* line 75, ../scss/modules/_boxes.scss */
+.box.red .btn:hover, .box.red .comment-reply-link:hover, .box.red #submit:hover, .box.red .btn:focus, .box.red .comment-reply-link:focus, .box.red #submit:focus, .box.red .btn:active, .box.red .comment-reply-link:active, .box.red #submit:active {
+  background-color: white;
+  color: #A40E11;
+}
+/* line 84, ../scss/modules/_boxes.scss */
+.box.red.paint-bg, .box.red.paint-bg a {
   text-shadow: 1px 1px #a5a2a7;
 }
 
@@ -8638,6 +8692,76 @@ Stylesheet: Category Styles
 #subcategoriesBlock .sub-cat-info.warmertan .btn:hover, #subcategoriesBlock .sub-cat-info.warmertan .comment-reply-link:hover, #subcategoriesBlock .sub-cat-info.warmertan #submit:hover, #subcategoriesBlock .sub-cat-info.warmertan .btn:active, #subcategoriesBlock .sub-cat-info.warmertan .comment-reply-link:active, #subcategoriesBlock .sub-cat-info.warmertan #submit:active {
   background-color: #bc5402;
   color: #FFE4C9;
+}
+
+/* line 123, ../scss/modules/_categories.scss */
+.titles.red {
+  background-color: #A40E11;
+  color: #f6eee3;
+}
+
+/* line 130, ../scss/modules/_categories.scss */
+#subcategoriesBlock ul li .sub-categories.red {
+  background-color: #5d5555;
+}
+/* line 134, ../scss/modules/_categories.scss */
+#subcategoriesBlock ul li .sub-categories.red .img > a {
+  outline: none;
+  color: #f6eee3;
+}
+/* line 138, ../scss/modules/_categories.scss */
+#subcategoriesBlock ul li .sub-categories.red .img > a:visited {
+  color: #f6eee3;
+}
+/* line 142, ../scss/modules/_categories.scss */
+#subcategoriesBlock ul li .sub-categories.red .img > a:hover, #subcategoriesBlock ul li .sub-categories.red .img > a:active {
+  color: #f6eee3;
+}
+/* line 145, ../scss/modules/_categories.scss */
+#subcategoriesBlock ul li .sub-categories.red .img > a:hover .subcat-name, #subcategoriesBlock ul li .sub-categories.red .img > a:active .subcat-name {
+  color: #f6eee3;
+  background-color: #A40E11;
+}
+/* line 155, ../scss/modules/_categories.scss */
+#subcategoriesBlock ul li .sub-categories.red:hover {
+  background-color: #A40E11;
+}
+/* line 159, ../scss/modules/_categories.scss */
+#subcategoriesBlock ul li .sub-categories.red.active {
+  background-color: #A40E11;
+}
+/* line 164, ../scss/modules/_categories.scss */
+#subcategoriesBlock ul li .sub-categories.red.active .img > a .subcat-name {
+  color: #f6eee3;
+  background-color: #A40E11;
+}
+
+/* line 175, ../scss/modules/_categories.scss */
+#subcategoriesBlock .sub-cat-info.red {
+  background-color: #A40E11;
+  color: #f6eee3;
+}
+/* line 179, ../scss/modules/_categories.scss */
+#subcategoriesBlock .sub-cat-info.red a {
+  color: #f6eee3;
+}
+/* line 182, ../scss/modules/_categories.scss */
+#subcategoriesBlock .sub-cat-info.red a:hover, #subcategoriesBlock .sub-cat-info.red a:active {
+  color: white;
+}
+/* line 188, ../scss/modules/_categories.scss */
+#subcategoriesBlock .sub-cat-info.red .btn, #subcategoriesBlock .sub-cat-info.red .comment-reply-link, #subcategoriesBlock .sub-cat-info.red #submit {
+  color: #A40E11;
+  background-color: #f6eee3;
+}
+/* line 192, ../scss/modules/_categories.scss */
+#subcategoriesBlock .sub-cat-info.red .btn:visited, #subcategoriesBlock .sub-cat-info.red .comment-reply-link:visited, #subcategoriesBlock .sub-cat-info.red #submit:visited {
+  color: #A40E11;
+}
+/* line 196, ../scss/modules/_categories.scss */
+#subcategoriesBlock .sub-cat-info.red .btn:hover, #subcategoriesBlock .sub-cat-info.red .comment-reply-link:hover, #subcategoriesBlock .sub-cat-info.red #submit:hover, #subcategoriesBlock .sub-cat-info.red .btn:active, #subcategoriesBlock .sub-cat-info.red .comment-reply-link:active, #subcategoriesBlock .sub-cat-info.red #submit:active {
+  background-color: white;
+  color: #A40E11;
 }
 
 /* line 123, ../scss/modules/_categories.scss */

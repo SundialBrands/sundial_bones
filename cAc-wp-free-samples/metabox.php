@@ -75,6 +75,7 @@ function cac_wfs_sample_display_sm_metabox( $sample ) {
 				<td>
 					<select id="cac_wfs_sample_sm_color" name="cac_wfs_sample_sm_color" >
 						<option value=""></option>
+						<option value="black" <?php selected( $color, 'black' ); ?> >Black</option>
 						<option value="darkgray" <?php selected( $color, 'darkgray' ); ?> >Gray</option>
 						<option value="sheabrown" <?php selected( $color, 'sheabrown' ); ?> >Brown</option>
 						<option value="orange" <?php selected( $color, 'orange' ); ?> >Orange</option>
@@ -84,7 +85,7 @@ function cac_wfs_sample_display_sm_metabox( $sample ) {
 						<option value="slate" <?php selected( $color, 'slate' ); ?> >Slate</option>
 						<option value="blue" <?php selected( $color, 'blue' ); ?> >Blue</option>
 						<option value="magenta" <?php selected( $color, 'magenta' ); ?> >Magenta</option>
-						<option value="darkred" <?php selected( $color, 'darkred' ); ?> >Red</option>
+						<option value="red" <?php selected( $color, 'red' ); ?> >Red</option>
 						<option value="deeppink" <?php selected( $color, 'deeppink' ); ?> >Pink</option>
 					</select>
 				</td>
