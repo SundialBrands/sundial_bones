@@ -11007,152 +11007,172 @@ you can just remove this stylesheet.
   text-align: center;
   line-height: 2;
 }
-/* line 174, ../scss/modules/_samples.scss */
+/* line 176, ../scss/modules/_samples.scss */
 .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-cta .cAc_wfs-sample-cta-initial {
   width: 50%;
   margin: 0 auto;
   min-width: 300px;
   text-align: center;
+  min-height: 18em;
 }
-/* line 180, ../scss/modules/_samples.scss */
+/* line 183, ../scss/modules/_samples.scss */
+.single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-cta .cAc_wfs-sample-cta-initial img {
+  display: none;
+}
+/* line 187, ../scss/modules/_samples.scss */
 .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-cta .cAc_wfs-sample-cta-initial .cAc_wfs-sample-cta-title {
   text-transform: uppercase;
   font-size: 1.5rem;
   margin: 0;
 }
-/* line 186, ../scss/modules/_samples.scss */
+/* line 193, ../scss/modules/_samples.scss */
 .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-cta .cAc_wfs-sample-cta-initial .cAc_wfs-sample-cta-includes {
   margin-bottom: 1em;
 }
-/* line 190, ../scss/modules/_samples.scss */
+/* line 197, ../scss/modules/_samples.scss */
 .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-cta .cAc_wfs-sample-cta-initial .btn, .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-cta .cAc_wfs-sample-cta-initial .comment-reply-link, .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-cta .cAc_wfs-sample-cta-initial #submit {
   font-size: 2em;
 }
-/* line 196, ../scss/modules/_samples.scss */
+/* line 203, ../scss/modules/_samples.scss */
 .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-cta .cAc_wfs-sample-form {
   display: none;
 }
-/* line 202, ../scss/modules/_samples.scss */
+/* line 209, ../scss/modules/_samples.scss */
 .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer.active {
   height: 100%;
   margin-top: 1.5em;
   opacity: 1;
   bottom: 0;
 }
-/* line 208, ../scss/modules/_samples.scss */
+/* line 215, ../scss/modules/_samples.scss */
 .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer.active .cAc_wfs-sample-form-close {
   display: block;
 }
-/* line 211, ../scss/modules/_samples.scss */
+/* line 218, ../scss/modules/_samples.scss */
 .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer.active .cAc_wfs-sample-form-close:hover {
   color: rgba(255, 255, 255, 0.3);
 }
-/* line 216, ../scss/modules/_samples.scss */
+/* line 223, ../scss/modules/_samples.scss */
 .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer.active .cAc_wfs-sample-cta {
   height: 100%;
 }
-/* line 219, ../scss/modules/_samples.scss */
+/* line 226, ../scss/modules/_samples.scss */
 .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer.active .cAc_wfs-sample-cta .cAc_wfs-sample-form {
   display: block;
 }
-/* line 223, ../scss/modules/_samples.scss */
+/* line 230, ../scss/modules/_samples.scss */
 .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer.active .cAc_wfs-sample-cta .cAc_wfs-sample-cta-initial {
   display: none;
 }
-/* line 237, ../scss/modules/_samples.scss */
+/* line 244, ../scss/modules/_samples.scss */
 .single-cac_wfs_sample .footer .row [class*="col-"] {
   padding-bottom: 0;
   margin-bottom: 0.5em;
   float: left;
 }
-/* line 242, ../scss/modules/_samples.scss */
+/* line 249, ../scss/modules/_samples.scss */
 .single-cac_wfs_sample .footer .row [class*="col-"].copyright {
   line-height: 1.1;
   text-align: right;
 }
-/* line 247, ../scss/modules/_samples.scss */
+/* line 254, ../scss/modules/_samples.scss */
 .single-cac_wfs_sample .footer .row [class*="col-"] .footer-links {
   margin: 1em 1em 0;
 }
-/* line 252, ../scss/modules/_samples.scss */
+/* line 259, ../scss/modules/_samples.scss */
 .single-cac_wfs_sample .footer .row [class*="col-"] .footer-links > ul > li {
   border-right: 1px solid #572701;
   float: left;
   padding: 0 0.5em;
   margin: 0;
 }
-/* line 258, ../scss/modules/_samples.scss */
+/* line 265, ../scss/modules/_samples.scss */
 .single-cac_wfs_sample .footer .row [class*="col-"] .footer-links > ul > li:last-child {
   border-right: 0;
 }
 
 @media only screen and (max-width: 640px) {
-  /* line 284, ../scss/modules/_samples.scss */
+  /* line 291, ../scss/modules/_samples.scss */
   .single-cac_wfs_sample .header #logo {
     max-width: 150px;
   }
-  /* line 292, ../scss/modules/_samples.scss */
+  /* line 299, ../scss/modules/_samples.scss */
   .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-header img.header-left,
   .single-cac_wfs_sample .cac_wfs_sample .body-right,
   .single-cac_wfs_sample .cac_wfs_sample .body-left {
     display: none;
   }
-  /* line 298, ../scss/modules/_samples.scss */
+  /* line 305, ../scss/modules/_samples.scss */
   .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-header img.header-right {
     position: static;
     min-width: 300px;
   }
-  /* line 303, ../scss/modules/_samples.scss */
+  /* line 310, ../scss/modules/_samples.scss */
   .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-ingredient {
     margin: 0 1em !important;
   }
-  /* line 307, ../scss/modules/_samples.scss */
+  /* line 314, ../scss/modules/_samples.scss */
   .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer {
     bottom: 0;
     font-size: 0.75em;
+    min-height: 0;
   }
-  /* line 314, ../scss/modules/_samples.scss */
+  /* line 319, ../scss/modules/_samples.scss */
+  .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-cta-initial {
+    min-height: initial;
+  }
+  /* line 321, ../scss/modules/_samples.scss */
+  .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-cta-initial img {
+    display: initial;
+  }
+  /* line 328, ../scss/modules/_samples.scss */
   .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-form .cAc_wfs-sample-form-header, .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-form #cAc_wfs-sample-form h3 {
     display: none;
   }
-  /* line 320, ../scss/modules/_samples.scss */
+  /* line 334, ../scss/modules/_samples.scss */
   .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-form #cAc_wfs-sample-form input {
     height: auto;
   }
-  /* line 334, ../scss/modules/_samples.scss */
+  /* line 348, ../scss/modules/_samples.scss */
   .single-cac_wfs_sample .footer .row [class*="col-"] {
     display: inline;
     width: auto;
   }
-  /* line 339, ../scss/modules/_samples.scss */
+  /* line 353, ../scss/modules/_samples.scss */
   .single-cac_wfs_sample .footer .row [class*="col-"] .footer-links {
     margin: 0;
   }
 }
 @media only screen and (min-width: 1030px) {
-  /* line 367, ../scss/modules/_samples.scss */
+  /* line 381, ../scss/modules/_samples.scss */
   .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer {
     top: 18em;
     bottom: auto;
     opacity: 0.95;
     width: 25%;
+    min-height: 0;
   }
-  /* line 375, ../scss/modules/_samples.scss */
+  /* line 390, ../scss/modules/_samples.scss */
   .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-cta .cAc_wfs-sample-cta-initial {
     min-width: 0;
     width: 100%;
+    min-height: initial;
   }
-  /* line 379, ../scss/modules/_samples.scss */
+  /* line 395, ../scss/modules/_samples.scss */
+  .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-cta .cAc_wfs-sample-cta-initial img {
+    display: initial;
+  }
+  /* line 400, ../scss/modules/_samples.scss */
   .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-cta .cAc_wfs-sample-cta-initial div[class*="col-sm-"] {
     float: none;
     width: 100%;
     padding: 0;
   }
-  /* line 384, ../scss/modules/_samples.scss */
+  /* line 405, ../scss/modules/_samples.scss */
   .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-cta .cAc_wfs-sample-cta-initial div[class*="col-sm-"] .btn, .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-cta .cAc_wfs-sample-cta-initial div[class*="col-sm-"] .comment-reply-link, .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer .cAc_wfs-sample-cta .cAc_wfs-sample-cta-initial div[class*="col-sm-"] #submit {
     font-size: 1.5em;
   }
-  /* line 394, ../scss/modules/_samples.scss */
+  /* line 415, ../scss/modules/_samples.scss */
   .single-cac_wfs_sample .cac_wfs_sample .cAc_wfs-sample-footer.active {
     top: 0;
     bottom: 0;

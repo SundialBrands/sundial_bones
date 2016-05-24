@@ -171,11 +171,18 @@ you can just remove this stylesheet.
 		
 			.cAc_wfs-sample-cta {
 			
+				
+			
 				.cAc_wfs-sample-cta-initial{
 					width: 50%;
 					margin: 0 auto;
 					min-width: 300px;
 					text-align: center;
+					min-height: 18em;
+					
+					img {
+						display: none;
+					}
 				
 					.cAc_wfs-sample-cta-title {
 						text-transform: uppercase;
@@ -307,7 +314,14 @@ you can just remove this stylesheet.
 			.cAc_wfs-sample-footer {
 				bottom: 0;
 				font-size: 0.75em;
+				min-height: 0;
 				
+				.cAc_wfs-sample-cta-initial {
+					min-height: initial;
+					img {
+						display: initial;
+					}
+				}
 			
 				.cAc_wfs-sample-form  {
 					
@@ -369,12 +383,19 @@ you can just remove this stylesheet.
 				bottom: auto;
 				opacity: 0.95;
 				width: 25%;
+				min-height: 0;
 				
 				.cAc_wfs-sample-cta {
 				
 					.cAc_wfs-sample-cta-initial {
 						min-width: 0;
 						width: 100%;
+						min-height: initial;
+						
+						img {
+							display: initial;
+						}
+				
 						
 						div[class*="col-sm-"]{
 							float:none;
