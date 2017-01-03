@@ -118,11 +118,11 @@ new image size.
 /* 
   A good tutorial for creating your own Sections, Controls and Settings:
   http://code.tutsplus.com/series/a-guide-to-the-wordpress-theme-customizer--wp-33722
-  
+
   Good articles on modifying the default options:
   http://natko.com/changing-default-wordpress-theme-customization-api-sections/
   http://code.tutsplus.com/tutorials/digging-into-the-theme-customizer-components--wp-27162
-  
+
   To do:
   - Create a js for the postmessage transport method
   - Create some sanitize functions to sanitize inputs
@@ -132,7 +132,7 @@ new image size.
 function bones_theme_customizer($wp_customize) {
   // $wp_customize calls go here.
   //
-  // Uncomment the below lines to remove the default customize sections 
+  // Uncomment the below lines to remove the default customize sections
 
   // $wp_customize->remove_section('title_tagline');
   // $wp_customize->remove_section('colors');
@@ -142,7 +142,7 @@ function bones_theme_customizer($wp_customize) {
 
   // Uncomment the below lines to remove the default controls
   // $wp_customize->remove_control('blogdescription');
-  
+
   // Uncomment the following to change the default section titles
   // $wp_customize->get_section('colors')->title = __( 'Theme Colors' );
   // $wp_customize->get_section('background_image')->title = __( 'Images' );
@@ -244,4 +244,76 @@ function bones_fonts() {
 
 add_action('wp_enqueue_scripts', 'bones_fonts');
 
+
 /* DON'T DELETE THIS CLOSING TAG */ ?>
+
+
+<?php
+//add extra fields to category edit form hook
+add_action ( 'category_edit_form_fields', 'addEditCatFields',10, 2);
+//add extra fields to category edit form callback function
+
+//add extra fields to category edit form hook
+  add_action ( 'category_add_form_fields', 'addEditCatFields', 10, 2);
+
+function addEditCatFields( $term, $txn) {    //check for existing featured ID
+  $t_id = $term->term_id;
+  //$cat_meta = get_option( "category_$t_id");
+  //$cat_meta_field = $cat_meta['cat_tmpl_type'];
+
+$cat_meta_field = get_term_meta($term->term_id, 'cat_meta_field', true);
+echo "+++++++++++".$cat_meta_field;
+//print_r($cat_meta_field);
+echo "<br>=====================================<br>";
+  var_dump($term);
+//echo "<br>==================+" . get_option("category_$t_id");
+var_dump($txn);
+
+?>
+  <tr class="form-field">
+		<th scope="row">
+      <label for="cat_meta_field"><?php _e( 'Category Template Type' ); ?></label>
+    </th>
+			<td>
+        <select name="cat_meta_field" id="cat_meta_field">
+          <?php
+            foreach(array(
+              'default'=>'Select Template Type',
+              'full_width'=>'Full Width',
+              'left_menu'=>'Left Menu',
+            ) as $key =>$val) {
+          ?>
+              <option value="<?php echo $key; ?>" <?php selected($key, $cat_meta_field); ?>><?php echo $val; ?></option>
+          <?php
+            }
+           ?>
+        </select>
+		    <p class="description"><?php _e( 'Please choose template type for category', 'cat_meta_field' ); ?></p>
+      </td>
+	</tr>
+
+<?php
+}
+
+
+add_action( 'edited_category', 'saveCatFields',10, 2);
+add_action( 'create_category', 'saveCatFields', 10, 2);
+
+
+function saveCatFields( $term_id, $tt_id ) {
+  error_log("saveCatFields func is called");
+  error_log("term=>".$term_id);
+  error_log("ttt id=>".print_r($tt_id), 0);
+  error_log("cat_meta_field post value=>".$_POST['cat_meta_field'],0);
+  error_log("slug value=>".$_POST['slug'],0);
+  if( isset( $_POST['cat_meta_field'] ) && '' !== $_POST['cat_meta_field'] ){
+      $group = sanitize_title( $_POST['cat_meta_field'] );
+      if($_POST['slug'] !== ''){
+        update_term_meta( $term_id, 'cat_meta_field', $group );
+      } else {
+        add_term_meta( $term_id, 'cat_meta_field', $group );
+      }
+  }
+}
+
+?>
